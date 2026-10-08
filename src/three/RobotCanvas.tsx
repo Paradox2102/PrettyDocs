@@ -7,6 +7,7 @@ import type { Scene, Vec3 } from '../content/types';
 import { frame, frameGroups, sceneByRegistryKey } from '../logic/scene';
 import { subsystemStyle, type StyleItem } from '../logic/viewer';
 import { CanLoops, DeviceTags, LayerCables } from './Cables';
+import { controlSettings } from './controls';
 import { cameraPosition, VIEWS, type ViewName } from './cameraViews';
 import { RobotModel, type DeviceEvent } from './RobotModel';
 import { useCssColor, useReducedMotion } from './theme-color';
@@ -20,8 +21,6 @@ const INCH = 0.0254;
 /** The width / height of the old viewer's 3D area, where the camera presets were tuned. */
 const ASPECT_TUNED = 1.3;
 
-/** 2π/60 × speed rad/s: 2.8 is about 0.3 rad/s, one turn in 21 s. */
-const AUTO_ROTATE_SPEED = 2.8;
 const NO_SELECTION = new Set<string>();
 
 export interface RobotCanvasProps {
@@ -114,10 +113,7 @@ function Controls({ target, enabled, autoRotate }: { target: Vec3; enabled: bool
     };
   }, [controls, set]);
   useLayoutEffect(() => {
-    controls.enableDamping = true;
-    controls.enabled = enabled;
-    controls.autoRotate = autoRotate;
-    controls.autoRotateSpeed = AUTO_ROTATE_SPEED;
+    Object.assign(controls, controlSettings(enabled, autoRotate));
   }, [controls, enabled, autoRotate]);
   useEffect(() => {
     controls.target.set(...target);
