@@ -1,0 +1,1716 @@
+{
+ "built": "2026-10-08T11:20:56-07:00",
+ "devices": {
+  "battery": {
+   "key": "battery",
+   "icon": null,
+   "type": "Battery",
+   "role": "12 V battery",
+   "mechanism": "Power",
+   "notes": [
+    "Standard FRC power path (REV and WPILib docs). Not checked on the robot."
+   ],
+   "derived": {
+    "wire_order": null,
+    "pdh_tag": [
+     "",
+     "none"
+    ],
+    "cad_comment": null,
+    "open": false,
+    "open_reasons": [],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": null,
+    "top_bbox": [
+     207.97,
+     61.1,
+     117.1,
+     88.69
+    ]
+   }
+  },
+  "main-breaker": {
+   "key": "main-breaker",
+   "icon": null,
+   "type": "Breaker",
+   "role": "120 A main breaker",
+   "mechanism": "Power",
+   "notes": [
+    "6 AWG wire"
+   ],
+   "derived": {
+    "wire_order": null,
+    "pdh_tag": [
+     "",
+     "none"
+    ],
+    "cad_comment": null,
+    "open": false,
+    "open_reasons": [],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": null,
+    "top_bbox": [
+     97.72,
+     177.0,
+     54.33,
+     20.6
+    ]
+   }
+  },
+  "systemcore": {
+   "key": "systemcore",
+   "icon": "systemcore",
+   "type": "SystemCore",
+   "role": "SystemCore (Beta)",
+   "mechanism": "Control",
+   "power": {
+    "pdh_channel": null,
+    "note": "PWR/BRIDGE input; no published fuse size"
+   },
+   "network": {
+    "ip": "10.21.2.2",
+    "name": "robot.local",
+    "mac": "88:a2:9e:52:3b:f9",
+    "host_note": "SystemCore (robot.local, roboRIO-2102-FRC.local)"
+   },
+   "derived": {
+    "wire_order": null,
+    "pdh_tag": [
+     "ch ?",
+     "amber"
+    ],
+    "cad_comment": null,
+    "open": true,
+    "open_reasons": [
+     "PDH channel not recorded"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     137.71,
+     112.22,
+     45.04,
+     37.16
+    ],
+    "top_bbox": [
+     91.62,
+     115.8,
+     80.71,
+     57.99
+    ]
+   }
+  },
+  "radio": {
+   "key": "radio",
+   "icon": "vh-109",
+   "type": "VH-109 radio",
+   "role": "VH-109 radio",
+   "mechanism": "Control",
+   "power": {
+    "pdh_channel": null,
+    "note": "WPILib: low-current channel, 10 A fuse"
+   },
+   "network": {
+    "ip": "10.21.2.1",
+    "name": "radio-2.local",
+    "mac": null,
+    "mac_note": "not in the neighbour table",
+    "host_note": "VH-109 radio (radio-2.local)"
+   },
+   "derived": {
+    "wire_order": null,
+    "pdh_tag": [
+     "ch ?",
+     "amber"
+    ],
+    "cad_comment": null,
+    "open": true,
+    "open_reasons": [
+     "PDH channel not recorded"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     10.5,
+     236.02,
+     40.33,
+     31.88
+    ],
+    "top_bbox": [
+     227.44,
+     166.8,
+     112.74,
+     68.35
+    ]
+   }
+  },
+  "rsl": {
+   "key": "rsl",
+   "icon": null,
+   "type": "Allen-Bradley RSL",
+   "role": "Robot Signal Light (RSL)",
+   "mechanism": "Control",
+   "notes": [
+    "The robot controller drives the RSL in FRC wiring, not a PDH channel. Which SystemCore port it uses is not recorded.",
+    "CAD part: Robot Signal Light (RSL) (Allen Bradley)."
+   ],
+   "derived": {
+    "wire_order": null,
+    "pdh_tag": [
+     "",
+     "none"
+    ],
+    "cad_comment": null,
+    "open": false,
+    "open_reasons": [],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": null,
+    "top_bbox": [
+     270.03,
+     223.37,
+     73.05,
+     13.83
+    ]
+   }
+  },
+  "pdh": {
+   "key": "pdh",
+   "icon": "rev-pdh",
+   "type": "REV PDH",
+   "role": "Power Distribution Hub",
+   "mechanism": "Power",
+   "module": null,
+   "can": {
+    "bus": "can_s0",
+    "id": "21",
+    "id_uncertain": false,
+    "code_name": null
+   },
+   "power": null,
+   "notes": [],
+   "derived": {
+    "wire_order": "1 of 1 on can_s0",
+    "pdh_tag": [
+     "",
+     "none"
+    ],
+    "cad_comment": null,
+    "open": false,
+    "open_reasons": [],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     53.42,
+     37.5,
+     40.33,
+     80.62
+    ],
+    "top_bbox": [
+     91.72,
+     95.4,
+     149.35,
+     86.12
+    ]
+   }
+  },
+  "indexer-tunnel-bottom": {
+   "key": "indexer-tunnel-bottom",
+   "icon": "kraken-x60",
+   "type": "Talon FX",
+   "role": "Bottom belt tunnel",
+   "mechanism": "Indexer",
+   "module": null,
+   "can": {
+    "bus": "can_s1",
+    "id": "31 / 32",
+    "id_uncertain": true,
+    "code_name": "indexerConveyorLeader or indexerConveyorFollower"
+   },
+   "power": {
+    "pdh_channel": 12,
+    "pdh_uncertain": false
+   },
+   "notes": [],
+   "derived": {
+    "wire_order": "1 of 3 on can_s1",
+    "pdh_tag": [
+     "ch 12",
+     "red"
+    ],
+    "cad_comment": "Motor Name: bottom Belt Tunnel",
+    "open": true,
+    "open_reasons": [
+     "CAN ID not confirmed"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     191.75,
+     29.5,
+     32.98,
+     38.57
+    ],
+    "top_bbox": [
+     232.63,
+     156.6,
+     104.43,
+     72.44
+    ]
+   }
+  },
+  "indexer-roller": {
+   "key": "indexer-roller",
+   "icon": "kraken-x60",
+   "type": "Talon FX",
+   "role": "Roller drive",
+   "mechanism": "Indexer",
+   "module": null,
+   "can": {
+    "bus": "can_s1",
+    "id": "30",
+    "id_uncertain": false,
+    "code_name": "indexerRoller"
+   },
+   "power": {
+    "pdh_channel": 13,
+    "pdh_uncertain": true
+   },
+   "notes": [],
+   "derived": {
+    "wire_order": "2 of 3 on can_s1",
+    "pdh_tag": [
+     "ch 13?",
+     "red"
+    ],
+    "cad_comment": "Motor name: Roller drive",
+    "open": true,
+    "open_reasons": [
+     "PDH channel not sure"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     227.73,
+     29.5,
+     24.69,
+     38.57
+    ],
+    "top_bbox": [
+     264.88,
+     215.56,
+     62.03,
+     15.6
+    ]
+   }
+  },
+  "indexer-tunnel-top": {
+   "key": "indexer-tunnel-top",
+   "icon": "kraken-x60",
+   "type": "Talon FX",
+   "role": "Top belt tunnel",
+   "mechanism": "Indexer",
+   "module": null,
+   "can": {
+    "bus": "can_s1",
+    "id": "31 / 32",
+    "id_uncertain": true,
+    "code_name": "indexerConveyorLeader or indexerConveyorFollower"
+   },
+   "power": {
+    "pdh_channel": 14,
+    "pdh_uncertain": false
+   },
+   "notes": [],
+   "derived": {
+    "wire_order": "3 of 3 on can_s1",
+    "pdh_tag": [
+     "ch 14",
+     "red"
+    ],
+    "cad_comment": "not attached to a part: 'Motor Name: Top Belt Tunnel'",
+    "open": true,
+    "open_reasons": [
+     "CAN ID not confirmed"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     255.42,
+     29.5,
+     32.98,
+     38.57
+    ],
+    "top_bbox": [
+     266.42,
+     187.2,
+     70.64,
+     34.66
+    ]
+   }
+  },
+  "swerve-bl-drive": {
+   "key": "swerve-bl-drive",
+   "icon": "kraken-x60",
+   "type": "Talon FX",
+   "role": "BL drive",
+   "mechanism": "Swerve",
+   "module": "BL",
+   "can": {
+    "bus": "can_s2",
+    "id": "5",
+    "id_uncertain": false,
+    "code_name": "bl_drive"
+   },
+   "power": {
+    "pdh_channel": 10,
+    "pdh_uncertain": true
+   },
+   "notes": [],
+   "derived": {
+    "wire_order": "1 of 13 on can_s2",
+    "pdh_tag": [
+     "ch 10?",
+     "red"
+    ],
+    "cad_comment": "Location: BL Drive / Loop: S2 / CAN ID: 5",
+    "open": true,
+    "open_reasons": [
+     "PDH channel not sure"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     191.75,
+     84.79,
+     24.69,
+     38.57
+    ],
+    "top_bbox": [
+     107.22,
+     184.4,
+     52.45,
+     27.42
+    ]
+   }
+  },
+  "swerve-bl-encoder": {
+   "key": "swerve-bl-encoder",
+   "icon": "wcp-throughbore",
+   "type": "ThroughBore",
+   "role": "BL encoder",
+   "mechanism": "Swerve",
+   "module": "BL",
+   "can": {
+    "bus": "can_s2",
+    "id": "11",
+    "id_uncertain": false,
+    "code_name": "bl_encoder"
+   },
+   "power": {
+    "pdh_channel": null,
+    "pdh_uncertain": false
+   },
+   "notes": [],
+   "derived": {
+    "wire_order": "2 of 13 on can_s2",
+    "pdh_tag": [
+     "ch ?",
+     "amber"
+    ],
+    "cad_comment": null,
+    "open": true,
+    "open_reasons": [
+     "PDH channel not recorded"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     219.44,
+     80.07,
+     20.1,
+     43.29
+    ],
+    "top_bbox": [
+     108.0,
+     204.8,
+     55.18,
+     22.06
+    ]
+   }
+  },
+  "swerve-bl-turn": {
+   "key": "swerve-bl-turn",
+   "icon": "kraken-x60",
+   "type": "Talon FX",
+   "role": "BL turn",
+   "mechanism": "Swerve",
+   "module": "BL",
+   "can": {
+    "bus": "can_s2",
+    "id": "6",
+    "id_uncertain": false,
+    "code_name": "bl_steer"
+   },
+   "power": {
+    "pdh_channel": 10,
+    "pdh_uncertain": true
+   },
+   "notes": [],
+   "derived": {
+    "wire_order": "3 of 13 on can_s2",
+    "pdh_tag": [
+     "ch 10?",
+     "red"
+    ],
+    "cad_comment": "Location: BL Turn / Loop: S2 / CAN ID: 6",
+    "open": true,
+    "open_reasons": [
+     "PDH channel not sure"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     242.54,
+     84.79,
+     24.69,
+     38.57
+    ],
+    "top_bbox": [
+     107.22,
+     216.25,
+     72.46,
+     20.94
+    ]
+   }
+  },
+  "swerve-br-turn": {
+   "key": "swerve-br-turn",
+   "icon": "kraken-x60",
+   "type": "Talon FX",
+   "role": "BR turn",
+   "mechanism": "Swerve",
+   "module": "BR",
+   "can": {
+    "bus": "can_s2",
+    "id": "8",
+    "id_uncertain": false,
+    "code_name": "br_steer"
+   },
+   "power": {
+    "pdh_channel": null,
+    "pdh_uncertain": false
+   },
+   "notes": [],
+   "derived": {
+    "wire_order": "4 of 13 on can_s2",
+    "pdh_tag": [
+     "ch ?",
+     "amber"
+    ],
+    "cad_comment": "Location: BR Turn / Loop: S2 / CAN ID: 8",
+    "open": true,
+    "open_reasons": [
+     "PDH channel not recorded"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     270.23,
+     84.79,
+     24.69,
+     38.57
+    ],
+    "top_bbox": [
+     272.13,
+     177.0,
+     49.33,
+     34.82
+    ]
+   }
+  },
+  "swerve-br-encoder": {
+   "key": "swerve-br-encoder",
+   "icon": "wcp-throughbore",
+   "type": "ThroughBore",
+   "role": "BR encoder",
+   "mechanism": "Swerve",
+   "module": "BR",
+   "can": {
+    "bus": "can_s2",
+    "id": "12",
+    "id_uncertain": false,
+    "code_name": "br_encoder"
+   },
+   "power": {
+    "pdh_channel": null,
+    "pdh_uncertain": false
+   },
+   "notes": [],
+   "derived": {
+    "wire_order": "5 of 13 on can_s2",
+    "pdh_tag": [
+     "ch ?",
+     "amber"
+    ],
+    "cad_comment": null,
+    "open": true,
+    "open_reasons": [
+     "PDH channel not recorded"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     297.92,
+     80.07,
+     20.1,
+     43.29
+    ],
+    "top_bbox": [
+     268.62,
+     207.6,
+     55.18,
+     19.26
+    ]
+   }
+  },
+  "swerve-br-drive": {
+   "key": "swerve-br-drive",
+   "icon": "kraken-x60",
+   "type": "Talon FX",
+   "role": "BR drive",
+   "mechanism": "Swerve",
+   "module": "BR",
+   "can": {
+    "bus": "can_s2",
+    "id": "7",
+    "id_uncertain": false,
+    "code_name": "br_drive"
+   },
+   "power": {
+    "pdh_channel": null,
+    "pdh_uncertain": false
+   },
+   "notes": [],
+   "derived": {
+    "wire_order": "6 of 13 on can_s2",
+    "pdh_tag": [
+     "ch ?",
+     "amber"
+    ],
+    "cad_comment": "Location: BR Drive / Loop: S2 / CAN ID: 7",
+    "open": true,
+    "open_reasons": [
+     "PDH channel not recorded"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     321.02,
+     84.79,
+     24.69,
+     38.57
+    ],
+    "top_bbox": [
+     252.12,
+     197.4,
+     69.34,
+     34.41
+    ]
+   }
+  },
+  "swerve-fr-drive": {
+   "key": "swerve-fr-drive",
+   "icon": "kraken-x60",
+   "type": "Talon FX",
+   "role": "FR drive",
+   "mechanism": "Swerve",
+   "module": "FR",
+   "can": {
+    "bus": "can_s2",
+    "id": "3",
+    "id_uncertain": false,
+    "code_name": "fr_drive"
+   },
+   "power": {
+    "pdh_channel": null,
+    "pdh_uncertain": false
+   },
+   "notes": [],
+   "derived": {
+    "wire_order": "7 of 13 on can_s2",
+    "pdh_tag": [
+     "ch ?",
+     "amber"
+    ],
+    "cad_comment": "Location: FR Drive / Loop: S2 / CAN ID: 3",
+    "open": true,
+    "open_reasons": [
+     "PDH channel not recorded"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     191.75,
+     130.08,
+     24.69,
+     38.57
+    ],
+    "top_bbox": [
+     272.13,
+     95.4,
+     49.33,
+     44.41
+    ]
+   }
+  },
+  "swerve-fr-encoder": {
+   "key": "swerve-fr-encoder",
+   "icon": "wcp-throughbore",
+   "type": "ThroughBore",
+   "role": "FR encoder",
+   "mechanism": "Swerve",
+   "module": "FR",
+   "can": {
+    "bus": "can_s2",
+    "id": "10",
+    "id_uncertain": false,
+    "code_name": "fr_encoder"
+   },
+   "power": {
+    "pdh_channel": null,
+    "pdh_uncertain": false
+   },
+   "notes": [],
+   "derived": {
+    "wire_order": "8 of 13 on can_s2",
+    "pdh_tag": [
+     "ch ?",
+     "amber"
+    ],
+    "cad_comment": null,
+    "open": true,
+    "open_reasons": [
+     "PDH channel not recorded"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     219.44,
+     125.36,
+     20.1,
+     43.29
+    ],
+    "top_bbox": [
+     268.62,
+     75.0,
+     55.18,
+     48.31
+    ]
+   }
+  },
+  "swerve-fr-turn": {
+   "key": "swerve-fr-turn",
+   "icon": "kraken-x60",
+   "type": "Talon FX",
+   "role": "FR turn",
+   "mechanism": "Swerve",
+   "module": "FR",
+   "can": {
+    "bus": "can_s2",
+    "id": "4",
+    "id_uncertain": false,
+    "code_name": "fr_steer"
+   },
+   "power": {
+    "pdh_channel": null,
+    "pdh_uncertain": false
+   },
+   "notes": [],
+   "derived": {
+    "wire_order": "9 of 13 on can_s2",
+    "pdh_tag": [
+     "ch ?",
+     "amber"
+    ],
+    "cad_comment": "Location: FR Turn / Loop: S2 / CAN ID: 4",
+    "open": true,
+    "open_reasons": [
+     "PDH channel not recorded"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     242.54,
+     130.08,
+     24.69,
+     38.57
+    ],
+    "top_bbox": [
+     252.12,
+     64.8,
+     69.34,
+     55.0
+    ]
+   }
+  },
+  "swerve-fl-turn": {
+   "key": "swerve-fl-turn",
+   "icon": "kraken-x60",
+   "type": "Talon FX",
+   "role": "FL turn",
+   "mechanism": "Swerve",
+   "module": "FL",
+   "can": {
+    "bus": "can_s2",
+    "id": "2",
+    "id_uncertain": false,
+    "code_name": "fl_steer"
+   },
+   "power": {
+    "pdh_channel": null,
+    "pdh_uncertain": false
+   },
+   "notes": [],
+   "derived": {
+    "wire_order": "10 of 13 on can_s2",
+    "pdh_tag": [
+     "ch ?",
+     "amber"
+    ],
+    "cad_comment": "Location: FL Turn / Loop: S2 / CAN ID: 2",
+    "open": true,
+    "open_reasons": [
+     "PDH channel not recorded"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     270.23,
+     130.08,
+     24.69,
+     38.57
+    ],
+    "top_bbox": [
+     110.34,
+     105.6,
+     49.33,
+     34.21
+    ]
+   }
+  },
+  "swerve-fl-encoder": {
+   "key": "swerve-fl-encoder",
+   "icon": "wcp-throughbore",
+   "type": "ThroughBore",
+   "role": "FL encoder",
+   "mechanism": "Swerve",
+   "module": "FL",
+   "can": {
+    "bus": "can_s2",
+    "id": "9",
+    "id_uncertain": false,
+    "code_name": "fl_encoder"
+   },
+   "power": {
+    "pdh_channel": null,
+    "pdh_uncertain": false
+   },
+   "notes": [],
+   "derived": {
+    "wire_order": "11 of 13 on can_s2",
+    "pdh_tag": [
+     "ch ?",
+     "amber"
+    ],
+    "cad_comment": null,
+    "open": true,
+    "open_reasons": [
+     "PDH channel not recorded"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     297.92,
+     125.36,
+     20.1,
+     43.29
+    ],
+    "top_bbox": [
+     109.72,
+     85.2,
+     53.46,
+     38.11
+    ]
+   }
+  },
+  "swerve-fl-drive": {
+   "key": "swerve-fl-drive",
+   "icon": "kraken-x60",
+   "type": "Talon FX",
+   "role": "FL drive",
+   "mechanism": "Swerve",
+   "module": "FL",
+   "can": {
+    "bus": "can_s2",
+    "id": "1",
+    "id_uncertain": false,
+    "code_name": "fl_drive"
+   },
+   "power": {
+    "pdh_channel": null,
+    "pdh_uncertain": false
+   },
+   "notes": [],
+   "derived": {
+    "wire_order": "12 of 13 on can_s2",
+    "pdh_tag": [
+     "ch ?",
+     "amber"
+    ],
+    "cad_comment": "Location: FL Drive / Loop: S2 / CAN ID: 1",
+    "open": true,
+    "open_reasons": [
+     "PDH channel not recorded"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     321.02,
+     130.08,
+     24.69,
+     38.57
+    ],
+    "top_bbox": [
+     110.34,
+     64.8,
+     69.34,
+     55.0
+    ]
+   }
+  },
+  "gyro": {
+   "key": "gyro",
+   "icon": "pigeon2",
+   "type": "Pigeon 2",
+   "role": "Gyro",
+   "mechanism": "Swerve",
+   "module": null,
+   "can": {
+    "bus": "can_s2",
+    "id": "0",
+    "id_uncertain": false,
+    "code_name": "gyro"
+   },
+   "power": {
+    "pdh_channel": 20,
+    "pdh_uncertain": false
+   },
+   "notes": [],
+   "derived": {
+    "wire_order": "13 of 13 on can_s2",
+    "pdh_tag": [
+     "ch 20",
+     "red"
+    ],
+    "cad_comment": null,
+    "open": false,
+    "open_reasons": [],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     348.71,
+     129.07,
+     21.24,
+     39.58
+    ],
+    "top_bbox": [
+     108.78,
+     75.0,
+     115.7,
+     99.99
+    ]
+   }
+  },
+  "shooter-vertical-roller": {
+   "key": "shooter-vertical-roller",
+   "icon": "kraken-x60",
+   "type": "Talon FX",
+   "role": "Vertical roller",
+   "mechanism": "Shooter",
+   "module": null,
+   "can": {
+    "bus": "can_s3",
+    "id": "40?",
+    "id_uncertain": true,
+    "code_name": "kicker"
+   },
+   "power": {
+    "pdh_channel": null,
+    "pdh_uncertain": false
+   },
+   "notes": [],
+   "derived": {
+    "wire_order": "1 of 6 on can_s3",
+    "pdh_tag": [
+     "ch ?",
+     "amber"
+    ],
+    "cad_comment": "Motor Name: Vertical Roller",
+    "open": true,
+    "open_reasons": [
+     "CAN ID not confirmed",
+     "PDH channel not recorded"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     191.75,
+     180.65,
+     25.5,
+     38.57
+    ],
+    "top_bbox": [
+     102.22,
+     156.6,
+     70.32,
+     30.02
+    ]
+   }
+  },
+  "shooter-scotty-rollers": {
+   "key": "shooter-scotty-rollers",
+   "icon": "kraken-x60",
+   "type": "Talon FX",
+   "role": "Scotty rollers",
+   "mechanism": "Shooter",
+   "module": null,
+   "can": {
+    "bus": "can_s3",
+    "id": "45?",
+    "id_uncertain": true,
+    "code_name": "goUp"
+   },
+   "power": {
+    "pdh_channel": null,
+    "pdh_uncertain": false
+   },
+   "notes": [],
+   "derived": {
+    "wire_order": "2 of 6 on can_s3",
+    "pdh_tag": [
+     "ch ?",
+     "amber"
+    ],
+    "cad_comment": "Motor Name: Scotty Rollers",
+    "open": true,
+    "open_reasons": [
+     "CAN ID not confirmed",
+     "PDH channel not recorded"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     220.25,
+     180.65,
+     24.69,
+     38.57
+    ],
+    "top_bbox": [
+     103.72,
+     194.6,
+     55.38,
+     33.37
+    ]
+   }
+  },
+  "turret-rotation": {
+   "key": "turret-rotation",
+   "icon": "kraken-x60",
+   "type": "Talon FX",
+   "role": "Turret rotation",
+   "mechanism": "Shooter",
+   "module": null,
+   "can": {
+    "bus": "can_s3",
+    "id": "44",
+    "id_uncertain": false,
+    "code_name": "shooterAzimuth"
+   },
+   "power": {
+    "pdh_channel": null,
+    "pdh_uncertain": false
+   },
+   "notes": [],
+   "derived": {
+    "wire_order": "3 of 6 on can_s3",
+    "pdh_tag": [
+     "ch ?",
+     "amber"
+    ],
+    "cad_comment": "Motor name: turret rotation",
+    "open": true,
+    "open_reasons": [
+     "PDH channel not recorded"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     247.94,
+     180.65,
+     25.5,
+     38.57
+    ],
+    "top_bbox": [
+     208.52,
+     105.6,
+     121.06,
+     124.89
+    ]
+   }
+  },
+  "flywheel-x44-side": {
+   "key": "flywheel-x44-side",
+   "icon": "kraken-x60",
+   "type": "Talon FX",
+   "role": "X44-side flywheel",
+   "mechanism": "Shooter",
+   "module": null,
+   "can": {
+    "bus": "can_s3",
+    "id": "42 / 43",
+    "id_uncertain": true,
+    "code_name": "shooterLeader or shooterFollower"
+   },
+   "power": {
+    "pdh_channel": null,
+    "pdh_uncertain": false
+   },
+   "notes": [],
+   "derived": {
+    "wire_order": "4 of 6 on can_s3",
+    "pdh_tag": [
+     "ch ?",
+     "amber"
+    ],
+    "cad_comment": "Motor Name: x44 side flywheel",
+    "open": true,
+    "open_reasons": [
+     "CAN ID not confirmed",
+     "PDH channel not recorded"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     276.44,
+     180.65,
+     31.42,
+     38.57
+    ],
+    "top_bbox": [
+     96.3,
+     146.4,
+     80.09,
+     45.97
+    ]
+   }
+  },
+  "hood": {
+   "key": "hood",
+   "icon": "kraken-x44",
+   "type": "Talon FX",
+   "role": "Hood (Kraken X44)?",
+   "mechanism": "Shooter",
+   "module": null,
+   "can": {
+    "bus": "can_s3",
+    "id": "41?",
+    "id_uncertain": true,
+    "code_name": "hood"
+   },
+   "power": {
+    "pdh_channel": null,
+    "pdh_uncertain": false
+   },
+   "notes": [],
+   "derived": {
+    "wire_order": "5 of 6 on can_s3",
+    "pdh_tag": [
+     "ch ?",
+     "amber"
+    ],
+    "cad_comment": "Motor name: Turret x44",
+    "open": true,
+    "open_reasons": [
+     "CAN ID not confirmed",
+     "PDH channel not recorded"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     310.86,
+     185.22,
+     30.0,
+     33.99
+    ],
+    "top_bbox": [
+     97.72,
+     136.2,
+     91.43,
+     45.17
+    ]
+   }
+  },
+  "flywheel-other-side": {
+   "key": "flywheel-other-side",
+   "icon": "kraken-x60",
+   "type": "Talon FX",
+   "role": "Other-side flywheel",
+   "mechanism": "Shooter",
+   "module": null,
+   "can": {
+    "bus": "can_s3",
+    "id": "42 / 43",
+    "id_uncertain": true,
+    "code_name": "shooterLeader or shooterFollower"
+   },
+   "power": {
+    "pdh_channel": null,
+    "pdh_uncertain": false
+   },
+   "notes": [],
+   "derived": {
+    "wire_order": "6 of 6 on can_s3",
+    "pdh_tag": [
+     "ch ?",
+     "amber"
+    ],
+    "cad_comment": "Motor name: other side flywheel",
+    "open": true,
+    "open_reasons": [
+     "CAN ID not confirmed",
+     "PDH channel not recorded"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     343.86,
+     180.65,
+     31.5,
+     38.57
+    ],
+    "top_bbox": [
+     96.22,
+     207.69,
+     80.17,
+     26.46
+    ]
+   }
+  },
+  "intake-rack-turret-side": {
+   "key": "intake-rack-turret-side",
+   "icon": "kraken-x44",
+   "type": "Talon FX",
+   "role": "Turret-side rack",
+   "mechanism": "Intake",
+   "module": null,
+   "can": {
+    "bus": "can_s4",
+    "id": "21 / 22",
+    "id_uncertain": true,
+    "code_name": "intakeExtensionLeader or intakeExtensionFollower"
+   },
+   "power": {
+    "pdh_channel": 7,
+    "pdh_uncertain": false
+   },
+   "notes": [
+    "left side (CAD)"
+   ],
+   "derived": {
+    "wire_order": "1 of 3 on can_s4",
+    "pdh_tag": [
+     "ch 7",
+     "red"
+    ],
+    "cad_comment": "Motor name: turret side rack",
+    "open": true,
+    "open_reasons": [
+     "CAN ID not confirmed"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     310.4,
+     34.07,
+     31.42,
+     33.99
+    ],
+    "top_bbox": [
+     96.3,
+     126.0,
+     67.42,
+     26.94
+    ]
+   }
+  },
+  "intake-rack-other-side": {
+   "key": "intake-rack-other-side",
+   "icon": "kraken-x44",
+   "type": "Talon FX",
+   "role": "Other-side rack",
+   "mechanism": "Intake",
+   "module": null,
+   "can": {
+    "bus": "can_s4",
+    "id": "21 / 22",
+    "id_uncertain": true,
+    "code_name": "intakeExtensionLeader or intakeExtensionFollower"
+   },
+   "power": {
+    "pdh_channel": 2,
+    "pdh_uncertain": false
+   },
+   "notes": [
+    "right side (CAD)"
+   ],
+   "derived": {
+    "wire_order": "2 of 3 on can_s4",
+    "pdh_tag": [
+     "ch 2",
+     "red"
+    ],
+    "cad_comment": "Motor Name: non turret side rack",
+    "open": true,
+    "open_reasons": [
+     "CAN ID not confirmed"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     344.82,
+     34.07,
+     31.42,
+     33.99
+    ],
+    "top_bbox": [
+     268.08,
+     115.8,
+     67.42,
+     37.12
+    ]
+   }
+  },
+  "intake-rollers": {
+   "key": "intake-rollers",
+   "icon": "kraken-x60",
+   "type": "Talon FX",
+   "role": "Rollers",
+   "mechanism": "Intake",
+   "module": null,
+   "can": {
+    "bus": "can_s4",
+    "id": "20",
+    "id_uncertain": false,
+    "code_name": "intakeRoller"
+   },
+   "power": {
+    "pdh_channel": null,
+    "pdh_uncertain": false
+   },
+   "notes": [],
+   "derived": {
+    "wire_order": "3 of 3 on can_s4",
+    "pdh_tag": [
+     "ch ?",
+     "amber"
+    ],
+    "cad_comment": "not attached to a part: 'Motor Name: Rollers'",
+    "open": true,
+    "open_reasons": [
+     "PDH channel not recorded"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     379.24,
+     29.5,
+     24.69,
+     38.57
+    ],
+    "top_bbox": [
+     266.4,
+     39.52,
+     57.4,
+     16.25
+    ]
+   }
+  },
+  "zinc-v-1": {
+   "key": "zinc-v-1",
+   "icon": "redux-zinc-v",
+   "type": "Redux Zinc-V",
+   "role": "Zinc-V #1",
+   "mechanism": "Vision",
+   "power": {
+    "pdh_channel": 21
+   },
+   "notes": [
+    "CAD part Zinc-V Step-Down Regulator <2> is a guess: the Zinc-V nearest left-pi, the Pi it feeds. Need to confirm (user, 2026-10-08)."
+   ],
+   "derived": {
+    "wire_order": null,
+    "pdh_tag": [
+     "ch 21",
+     "red"
+    ],
+    "cad_comment": null,
+    "open": false,
+    "open_reasons": [],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": null,
+    "top_bbox": [
+     269.86,
+     146.4,
+     52.22,
+     38.35
+    ]
+   }
+  },
+  "left-pi": {
+   "key": "left-pi",
+   "icon": "orangepi-5-pro",
+   "type": "Orange Pi 5 Pro",
+   "role": "Orange Pi 5 Pro · left-pi",
+   "mechanism": "Vision",
+   "power": {
+    "pdh_channel": null,
+    "fed_by": "zinc-v-1",
+    "pdh_uncertain": true
+   },
+   "network": {
+    "ip": "10.21.2.12",
+    "name": "NT client left-pi",
+    "mac": null,
+    "radio_port": "eth_aux1",
+    "radio_port_uncertain": true,
+    "host_note": "Orange Pi left-pi: NetworkTables client 'left-pi' (journal, 18:39)"
+   },
+   "notes": [
+    "CAD part Orange Pi <2> is a guess from the camera names: it is the Pi next to front_left and side_left. Need to confirm."
+   ],
+   "derived": {
+    "wire_order": null,
+    "pdh_tag": [
+     "ch 21 via Zinc-V",
+     "red"
+    ],
+    "cad_comment": null,
+    "open": true,
+    "open_reasons": [
+     "PDH channel not sure",
+     "radio port assumed"
+    ],
+    "fed_by_role": "Zinc-V #1",
+    "attached_to_role": null,
+    "bbox": [
+     91.33,
+     234.31,
+     57.16,
+     33.59
+    ],
+    "top_bbox": [
+     254.93,
+     85.2,
+     106.31,
+     73.97
+    ]
+   }
+  },
+  "camera-front-left": {
+   "key": "camera-front-left",
+   "icon": "arducam-ov9281-usb",
+   "type": "innomaker OV9281 USB",
+   "role": "front_left · back right",
+   "mechanism": "Vision",
+   "attached_to": "left-pi",
+   "attached_uncertain": true,
+   "notes": [
+    "PhotonVision name front_left; in the code's robot frame it is the back right camera. The PhotonVision names follow the CAD, where the intake side is the back. The code's robot frame and the programmers put the front at the intake side (user, 2026-10-08).",
+    "CAD part: cambrea <2> (Camera 2), matched by its position in Constants.java VisionConstants.",
+    "innomaker USB 2.0 UVC camera module: OV9281, 1 MP, global shutter, mono, 120 fps: amazon.com/dp/B0CLRN9QRC."
+   ],
+   "derived": {
+    "wire_order": null,
+    "pdh_tag": [
+     "",
+     "none"
+    ],
+    "cad_comment": null,
+    "open": true,
+    "open_reasons": [
+     "camera pairing assumed"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": "Orange Pi 5 Pro · left-pi",
+    "bbox": [
+     151.5,
+     232.6,
+     37.5,
+     35.3
+    ],
+    "top_bbox": [
+     258.88,
+     224.55,
+     82.7,
+     16.35
+    ]
+   }
+  },
+  "camera-side-left": {
+   "key": "camera-side-left",
+   "icon": "arducam-ov9281-usb",
+   "type": "innomaker OV9281 USB",
+   "role": "side_left · side right",
+   "mechanism": "Vision",
+   "attached_to": "left-pi",
+   "attached_uncertain": true,
+   "notes": [
+    "PhotonVision name side_left; in the code's robot frame it is the right side, at the back camera. The PhotonVision names follow the CAD, where the intake side is the back. The code's robot frame and the programmers put the front at the intake side (user, 2026-10-08).",
+    "CAD part: cambrea <3> (Camera 3), matched by its position in Constants.java VisionConstants.",
+    "innomaker USB 2.0 UVC camera module: OV9281, 1 MP, global shutter, mono, 120 fps: amazon.com/dp/B0CLRN9QRC."
+   ],
+   "derived": {
+    "wire_order": null,
+    "pdh_tag": [
+     "",
+     "none"
+    ],
+    "cad_comment": null,
+    "open": true,
+    "open_reasons": [
+     "camera pairing assumed"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": "Orange Pi 5 Pro · left-pi",
+    "bbox": [
+     192.0,
+     232.6,
+     36.0,
+     35.3
+    ],
+    "top_bbox": [
+     279.65,
+     224.11,
+     60.43,
+     9.47
+    ]
+   }
+  },
+  "zinc-v-2": {
+   "key": "zinc-v-2",
+   "icon": "redux-zinc-v",
+   "type": "Redux Zinc-V",
+   "role": "Zinc-V #2",
+   "mechanism": "Vision",
+   "power": {
+    "pdh_channel": null,
+    "fed_by": "zinc-v-1",
+    "pdh_uncertain": true
+   },
+   "notes": [
+    "CAD part Zinc-V Step-Down Regulator <1> is a guess: the Zinc-V nearest right-pi, the Pi it feeds. Need to confirm (user, 2026-10-08)."
+   ],
+   "derived": {
+    "wire_order": null,
+    "pdh_tag": [
+     "ch 21 via Zinc-V",
+     "red"
+    ],
+    "cad_comment": null,
+    "open": true,
+    "open_reasons": [
+     "PDH channel not sure"
+    ],
+    "fed_by_role": "Zinc-V #1",
+    "attached_to_role": null,
+    "bbox": null,
+    "top_bbox": [
+     223.2,
+     136.2,
+     111.24,
+     87.49
+    ]
+   }
+  },
+  "right-pi": {
+   "key": "right-pi",
+   "icon": "orangepi-5-pro",
+   "type": "Orange Pi 5 Pro",
+   "role": "Orange Pi 5 Pro · right-pi",
+   "mechanism": "Vision",
+   "power": {
+    "pdh_channel": null,
+    "fed_by": "zinc-v-2",
+    "pdh_uncertain": true
+   },
+   "network": {
+    "ip": "10.21.2.11",
+    "name": "NT client right-pi",
+    "mac": null,
+    "radio_port": "eth_aux2",
+    "radio_port_uncertain": true,
+    "host_note": "Orange Pi right-pi: NetworkTables client 'right-pi' (journal, 18:39)"
+   },
+   "notes": [
+    "CAD part Orange Pi <1> is a guess from the camera names: it is the Pi next to front_right. Need to confirm."
+   ],
+   "derived": {
+    "wire_order": null,
+    "pdh_tag": [
+     "ch 21 via Zinc-V",
+     "red"
+    ],
+    "cad_comment": null,
+    "open": true,
+    "open_reasons": [
+     "PDH channel not sure",
+     "radio port assumed"
+    ],
+    "fed_by_role": "Zinc-V #2",
+    "attached_to_role": null,
+    "bbox": [
+     231.0,
+     234.31,
+     57.16,
+     33.59
+    ],
+    "top_bbox": [
+     70.56,
+     166.8,
+     142.3,
+     57.39
+    ]
+   }
+  },
+  "camera-front-right": {
+   "key": "camera-front-right",
+   "icon": "arducam-ov9281-usb",
+   "type": "innomaker OV9281 USB",
+   "role": "front_right · back left",
+   "mechanism": "Vision",
+   "attached_to": "right-pi",
+   "attached_uncertain": true,
+   "notes": [
+    "PhotonVision name front_right; in the code's robot frame it is the back left camera. The PhotonVision names follow the CAD, where the intake side is the back. The code's robot frame and the programmers put the front at the intake side (user, 2026-10-08).",
+    "CAD part: cambrea <1> (Camera 1), matched by its position in Constants.java VisionConstants.",
+    "innomaker USB 2.0 UVC camera module: OV9281, 1 MP, global shutter, mono, 120 fps: amazon.com/dp/B0CLRN9QRC."
+   ],
+   "derived": {
+    "wire_order": null,
+    "pdh_tag": [
+     "",
+     "none"
+    ],
+    "cad_comment": null,
+    "open": true,
+    "open_reasons": [
+     "camera pairing assumed"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": "Orange Pi 5 Pro · right-pi",
+    "bbox": [
+     291.15,
+     232.6,
+     37.5,
+     35.3
+    ],
+    "top_bbox": [
+     90.22,
+     224.55,
+     61.34,
+     16.35
+    ]
+   }
+  },
+  "led-brick": {
+   "key": "led-brick",
+   "icon": null,
+   "type": "Protooma 5 V 10 A converter",
+   "role": "LED Brick (5 V supply)",
+   "mechanism": "Lights",
+   "power": {
+    "pdh_channel": null,
+    "pdh_uncertain": false,
+    "note": "no LEDs connected yet"
+   },
+   "notes": [
+    "Protooma DC 12/24 V to 5 V, 10 A (50 W) step-down converter: amazon.com/dp/B0B9XMNB7M.",
+    "No LEDs are connected yet: the team ran out of time (user, 2026-10-08).",
+    "Its PDH channel, if it has one, is not recorded."
+   ],
+   "derived": {
+    "wire_order": null,
+    "pdh_tag": [
+     "ch ?",
+     "amber"
+    ],
+    "cad_comment": null,
+    "open": true,
+    "open_reasons": [
+     "PDH channel not recorded"
+    ],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": null,
+    "top_bbox": [
+     252.54,
+     126.0,
+     87.54,
+     58.02
+    ]
+   }
+  },
+  "ds-laptop": {
+   "key": "ds-laptop",
+   "icon": null,
+   "type": "Laptop",
+   "role": "Driver station laptop",
+   "mechanism": "Off-robot",
+   "network": {
+    "ip": "10.21.2.200",
+    "name": null,
+    "mac": "e4:b9:7a:03:c4:2e",
+    "host_note": "Driver station laptop: the Elastic dashboard connects from it (journal, 18:39)"
+   },
+   "derived": {
+    "wire_order": null,
+    "pdh_tag": [
+     "",
+     "none"
+    ],
+    "cad_comment": null,
+    "open": false,
+    "open_reasons": [],
+    "fed_by_role": null,
+    "attached_to_role": null,
+    "bbox": [
+     53.83,
+     242.4,
+     34.5,
+     25.5
+    ],
+    "top_bbox": null
+   }
+  }
+ },
+ "view": [
+  0,
+  0,
+  431.8,
+  279.4
+ ]
+}

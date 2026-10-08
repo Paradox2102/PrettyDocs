@@ -1,0 +1,17 @@
+{
+ "latest": "2026-offseason",
+ "robots": [
+  {
+   "id": "2026-offseason",
+   "name": "2026 Offseason",
+   "season": "2026",
+   "summary": "Wiring and 3D views of the 2026 offseason robot.",
+   "built": "2026-10-08T11:20:56-07:00",
+   "docs": [
+    "wiring",
+    "3d",
+    "devices"
+   ]
+  }
+ ]
+}

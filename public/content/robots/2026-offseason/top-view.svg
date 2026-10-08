@@ -1,0 +1,955 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 431.8 279.4" width="431.8mm" height="279.4mm" font-family="Helvetica, Arial, sans-serif">
+<title>Robot top view · Team 2102</title>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<g >
+<text x="10.00" y="17.00" font-size="7.0" fill="#1f2328" text-anchor="start" font-weight="bold">Robot top view · Team 2102</text>
+</g>
+<g >
+<text x="10.00" y="22.50" font-size="3.0" fill="#57606a" text-anchor="start">Front (intake side) up · CAD microversion e5d5f776 · positions from positions.json · scale 1 : 4.8 · lines join devices in wire order, not the cable path</text>
+</g>
+<g >
+<text x="12.00" y="247.80" font-size="2.6" fill="#1f2328" text-anchor="start" font-weight="bold">Lines: CAN, in wire order from the SystemCore</text>
+</g>
+<g >
+<text x="20.00" y="251.90" font-size="2.2" fill="#1f2328" text-anchor="start">can_s0 · PDH only</text>
+</g>
+<g >
+<text x="20.00" y="255.00" font-size="2.2" fill="#1f2328" text-anchor="start">can_s1 · Indexer</text>
+</g>
+<g >
+<text x="20.00" y="258.10" font-size="2.2" fill="#1f2328" text-anchor="start">can_s2 · Swerve and gyro</text>
+</g>
+<g >
+<text x="20.00" y="261.20" font-size="2.2" fill="#1f2328" text-anchor="start">can_s3 · Shooter</text>
+</g>
+<g >
+<text x="20.00" y="264.30" font-size="2.2" fill="#1f2328" text-anchor="start">can_s4 · Intake</text>
+</g>
+<g >
+<text x="88.20" y="247.80" font-size="2.6" fill="#1f2328" text-anchor="start" font-weight="bold">Lines: power and network</text>
+</g>
+<g >
+<text x="96.20" y="251.90" font-size="2.2" fill="#1f2328" text-anchor="start">Battery → main breaker → PDH</text>
+</g>
+<g >
+<text x="96.20" y="255.00" font-size="2.2" fill="#1f2328" text-anchor="start">PDH channel or Zinc-V feed; dashed: not sure</text>
+</g>
+<g >
+<text x="96.20" y="258.10" font-size="2.2" fill="#1f2328" text-anchor="start">On the PDH, channel not recorded ("ch ?")</text>
+</g>
+<g >
+<text x="96.20" y="261.20" font-size="2.2" fill="#1f2328" text-anchor="start">Ethernet; dashed: radio port assumed</text>
+</g>
+<g >
+<text x="96.20" y="264.30" font-size="2.2" fill="#1f2328" text-anchor="start">Camera USB to its Pi; dashed, "USB?": pairing assumed</text>
+</g>
+<g >
+<text x="172.16" y="247.80" font-size="2.6" fill="#1f2328" text-anchor="start" font-weight="bold">Not in the CAD</text>
+</g>
+<g >
+<text x="172.16" y="251.90" font-size="2.2" fill="#1f2328" text-anchor="start">Driver station laptop: not on the robot</text>
+</g>
+<g >
+<text x="229.64" y="247.80" font-size="2.6" fill="#1f2328" text-anchor="start" font-weight="bold">Notes</text>
+</g>
+<g >
+<text x="229.64" y="251.90" font-size="2.2" fill="#1f2328" text-anchor="start">Grey: CAD part, not linked to the registry</text>
+</g>
+<g >
+<text x="229.64" y="255.00" font-size="2.2" fill="#1f2328" text-anchor="start">Amber name with ?: which CAD part it is, is a guess</text>
+</g>
+<g >
+<text x="229.64" y="258.10" font-size="2.2" fill="#1f2328" text-anchor="start">Front = intake side, as in the code (the CAD calls it the back)</text>
+</g>
+<g class="robot">
+<rect x="139.88" y="100.01" width="152.04" height="137.36" rx="3" fill="#f6f8fa" stroke="#8c959f" stroke-width="0.6"/>
+<rect x="138.22" y="36.00" width="155.36" height="128.02" rx="2" fill="none" stroke="#8c959f" stroke-width="0.4" stroke-dasharray="1.5 1"/>
+<text x="292.08" y="39.20" font-size="2.2" fill="#57606a" text-anchor="end">Intake (as placed in the CAD)</text>
+<path d="M 215.90 34.00 L 215.90 28.00" stroke="#57606a" stroke-width="0.5" stroke-linecap="round" fill="none"/>
+<path d="M 214.30 29.80 L 215.90 27.60 L 217.50 29.80" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.5" stroke-linecap="round"/>
+<text x="218.90" y="31.80" font-size="2.2" fill="#57606a" text-anchor="start" font-weight="bold">FRONT</text>
+</g>
+<g class="dev" data-key="pdh" data-systems="can power" data-open="0">
+<rect x="191.90" y="156.04" width="47.67" height="23.98" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="indexer-tunnel-bottom" data-systems="can power" data-open="1" data-open-in="can">
+<rect x="234.13" y="204.10" width="13.27" height="23.44" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="indexer-roller" data-systems="can power" data-open="1" data-open-in="power">
+<rect x="266.38" y="217.06" width="23.44" height="12.60" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="indexer-tunnel-top" data-systems="can power" data-open="1" data-open-in="can">
+<rect x="267.92" y="196.92" width="13.19" height="23.44" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="swerve-bl-drive" data-systems="can power" data-open="1" data-open-in="power">
+<rect x="145.61" y="197.74" width="12.56" height="12.58" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="swerve-bl-encoder" data-systems="can power" data-open="1" data-open-in="power">
+<rect x="150.57" y="214.25" width="11.11" height="11.11" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="swerve-bl-turn" data-systems="can power" data-open="1" data-open-in="power">
+<rect x="165.61" y="217.75" width="12.58" height="12.56" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="swerve-br-turn" data-systems="can power" data-open="1" data-open-in="power">
+<rect x="273.63" y="197.74" width="12.56" height="12.58" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="swerve-br-encoder" data-systems="can power" data-open="1" data-open-in="power">
+<rect x="270.12" y="214.25" width="11.11" height="11.11" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="swerve-br-drive" data-systems="can power" data-open="1" data-open-in="power">
+<rect x="253.62" y="217.75" width="12.58" height="12.56" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="swerve-fr-drive" data-systems="can power" data-open="1" data-open-in="power">
+<rect x="273.63" y="125.73" width="12.56" height="12.58" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="swerve-fr-encoder" data-systems="can power" data-open="1" data-open-in="power">
+<rect x="270.12" y="110.70" width="11.11" height="11.11" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="swerve-fr-turn" data-systems="can power" data-open="1" data-open-in="power">
+<rect x="253.62" y="105.74" width="12.58" height="12.56" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="swerve-fl-turn" data-systems="can power" data-open="1" data-open-in="power">
+<rect x="145.61" y="125.73" width="12.56" height="12.58" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="swerve-fl-encoder" data-systems="can power" data-open="1" data-open-in="power">
+<rect x="150.57" y="110.70" width="11.11" height="11.11" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="swerve-fl-drive" data-systems="can power" data-open="1" data-open-in="power">
+<rect x="165.61" y="105.74" width="12.58" height="12.56" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="gyro" data-systems="can power" data-open="0">
+<rect x="208.82" y="162.57" width="14.15" height="10.92" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="shooter-vertical-roller" data-systems="can power" data-open="1" data-open-in="can power">
+<rect x="157.79" y="172.52" width="13.25" height="12.60" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="shooter-scotty-rollers" data-systems="can power" data-open="1" data-open-in="can power">
+<rect x="144.33" y="203.03" width="13.27" height="23.44" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="turret-rotation" data-systems="can power" data-open="1" data-open-in="power">
+<rect x="210.02" y="216.41" width="13.25" height="12.58" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="flywheel-x44-side" data-systems="can power" data-open="1" data-open-in="can power">
+<rect x="162.29" y="167.42" width="12.60" height="23.46" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="hood" data-systems="can power" data-open="1" data-open-in="can power">
+<rect x="165.21" y="170.65" width="22.45" height="9.22" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="flywheel-other-side" data-systems="can power" data-open="1" data-open-in="can power">
+<rect x="162.29" y="209.19" width="12.60" height="23.46" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="intake-rack-turret-side" data-systems="can power" data-open="1" data-open-in="can">
+<rect x="138.79" y="141.55" width="23.44" height="9.89" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="intake-rack-other-side" data-systems="can power" data-open="1" data-open-in="can">
+<rect x="269.58" y="141.55" width="23.44" height="9.87" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="intake-rollers" data-systems="can power" data-open="1" data-open-in="power">
+<rect x="267.90" y="41.02" width="23.46" height="13.25" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="radio" data-systems="power network" data-open="1" data-open-in="power">
+<rect x="228.94" y="222.42" width="24.36" height="11.24" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="left-pi" data-systems="power network" data-open="1" data-open-in="power network">
+<rect x="256.43" y="144.02" width="19.49" height="13.65" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="right-pi" data-systems="power network" data-open="1" data-open-in="power network">
+<rect x="191.90" y="209.04" width="19.47" height="13.65" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="zinc-v-1" data-systems="power" data-open="0">
+<rect x="271.36" y="168.45" width="4.54" height="14.81" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="zinc-v-2" data-systems="power" data-open="1" data-open-in="power">
+<rect x="224.70" y="207.38" width="4.54" height="14.81" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="led-brick" data-systems="power" data-open="1" data-open-in="power">
+<rect x="254.04" y="168.53" width="11.99" height="13.99" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="battery" data-systems="power" data-open="0">
+<rect x="209.47" y="110.42" width="35.09" height="37.86" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="main-breaker" data-systems="power" data-open="0">
+<rect x="141.29" y="185.96" width="9.26" height="10.14" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="rsl" data-systems="none" data-open="0">
+<rect x="271.53" y="224.87" width="12.01" height="9.43" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="camera-front-right" data-systems="network" data-open="1" data-open-in="network">
+<rect x="142.40" y="226.05" width="7.66" height="7.90" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="camera-front-left" data-systems="network" data-open="1" data-open-in="network">
+<rect x="260.38" y="226.05" width="7.69" height="7.90" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="dev" data-key="camera-side-left" data-systems="network" data-open="1" data-open-in="network">
+<rect x="281.15" y="225.61" width="7.79" height="6.47" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="cad-part">
+<rect x="140.15" y="186.15" width="7.92" height="8.38" rx="0.6" fill="#ffffff" stroke="#afb8c1" stroke-width="0.25" stroke-dasharray="0.8 0.6"/>
+</g>
+<g class="dev" data-key="systemcore" data-systems="can power network" data-open="1" data-open-in="power">
+<rect x="155.94" y="144.02" width="14.89" height="28.27" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
+</g>
+<g class="wire" data-layer="can_s0" data-info="can">
+<path d="M 163.38 158.16 L 215.73 168.03" fill="none" stroke-linejoin="round" stroke="#d98e04" stroke-width="0.6" stroke-linecap="round"/>
+</g>
+<g class="wire" data-layer="can_s1" data-info="can">
+<path d="M 163.38 158.16 L 240.76 215.82 L 278.10 223.36 L 274.51 208.64" fill="none" stroke-linejoin="round" stroke="#0f9d8a" stroke-width="0.6" stroke-linecap="round"/>
+</g>
+<g class="wire" data-layer="can_s2" data-info="can">
+<path d="M 163.38 158.16 L 151.89 204.04 L 156.11 219.81 L 171.88 224.03 L 279.91 204.04 L 275.69 219.81 L 259.92 224.03 L 279.91 132.01 L 275.69 116.24 L 259.92 112.02 L 151.89 132.01 L 156.11 116.24 L 171.88 112.02 L 215.90 168.03" fill="none" stroke-linejoin="round" stroke="#2f6fde" stroke-width="0.6" stroke-linecap="round"/>
+</g>
+<g class="wire" data-layer="can_s3" data-info="can">
+<path d="M 163.38 158.16 L 164.41 178.82 L 150.97 214.75 L 216.66 222.69 L 168.59 179.14 L 176.42 175.25 L 168.59 220.93" fill="none" stroke-linejoin="round" stroke="#c23b8f" stroke-width="0.6" stroke-linecap="round"/>
+</g>
+<g class="wire" data-layer="can_s4" data-info="can">
+<path d="M 163.38 158.16 L 150.51 146.50 L 281.29 146.48 L 279.63 47.66" fill="none" stroke-linejoin="round" stroke="#4f9d2a" stroke-width="0.6" stroke-linecap="round"/>
+</g>
+<g class="wire" data-layer="power" data-info="power">
+<path d="M 227.03 129.37 L 145.93 191.02" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.9" stroke-linecap="round"/>
+<path d="M 145.93 191.02 L 215.73 168.03" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.9" stroke-linecap="round"/>
+<path d="M 215.73 168.03 L 240.76 215.82" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round"/>
+<path d="M 215.73 168.03 L 278.10 223.36" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="1.4 1"/>
+<path d="M 215.73 168.03 L 274.51 208.64" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round"/>
+<path d="M 215.73 168.03 L 151.89 204.04" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="1.4 1"/>
+<path d="M 215.73 168.03 L 156.11 219.81" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+<path d="M 215.73 168.03 L 171.88 224.03" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="1.4 1"/>
+<path d="M 215.73 168.03 L 279.91 204.04" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+<path d="M 215.73 168.03 L 275.69 219.81" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+<path d="M 215.73 168.03 L 259.92 224.03" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+<path d="M 215.73 168.03 L 279.91 132.01" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+<path d="M 215.73 168.03 L 275.69 116.24" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+<path d="M 215.73 168.03 L 259.92 112.02" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+<path d="M 215.73 168.03 L 151.89 132.01" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+<path d="M 215.73 168.03 L 156.11 116.24" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+<path d="M 215.73 168.03 L 171.88 112.02" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+<path d="M 215.73 168.03 L 215.90 168.03" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round"/>
+<path d="M 215.73 168.03 L 164.41 178.82" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+<path d="M 215.73 168.03 L 150.97 214.75" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+<path d="M 215.73 168.03 L 216.66 222.69" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+<path d="M 215.73 168.03 L 168.59 179.14" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+<path d="M 215.73 168.03 L 176.42 175.25" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+<path d="M 215.73 168.03 L 168.59 220.93" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+<path d="M 215.73 168.03 L 150.51 146.50" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round"/>
+<path d="M 215.73 168.03 L 281.29 146.48" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round"/>
+<path d="M 215.73 168.03 L 279.63 47.66" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+<path d="M 215.73 168.03 L 241.12 228.02" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+<path d="M 273.63 175.86 L 266.17 150.85" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="1.4 1"/>
+<path d="M 226.97 214.79 L 201.64 215.86" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="1.4 1"/>
+<path d="M 215.73 168.03 L 273.63 175.86" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round"/>
+<path d="M 273.63 175.86 L 226.97 214.79" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="1.4 1"/>
+<path d="M 215.73 168.03 L 260.04 175.52" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+<path d="M 215.73 168.03 L 163.38 158.16" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+</g>
+<g class="wire" data-layer="network" data-info="network">
+<path d="M 163.38 158.16 L 241.12 228.02" fill="none" stroke-linejoin="round" stroke="#0969da" stroke-width="1.1" stroke-linecap="round"/>
+<path d="M 163.38 158.16 L 241.12 228.02" fill="none" stroke-linejoin="round" stroke="#ffffff" stroke-width="0.45" stroke-linecap="round"/>
+<path d="M 241.12 228.02 L 266.17 150.85" fill="none" stroke-linejoin="round" stroke="#0969da" stroke-width="1.1" stroke-linecap="round" stroke-dasharray="1.4 1"/>
+<path d="M 241.12 228.02 L 266.17 150.85" fill="none" stroke-linejoin="round" stroke="#ffffff" stroke-width="0.45" stroke-linecap="round" stroke-dasharray="1.4 1"/>
+<path d="M 241.12 228.02 L 201.64 215.86" fill="none" stroke-linejoin="round" stroke="#0969da" stroke-width="1.1" stroke-linecap="round" stroke-dasharray="1.4 1"/>
+<path d="M 241.12 228.02 L 201.64 215.86" fill="none" stroke-linejoin="round" stroke="#ffffff" stroke-width="0.45" stroke-linecap="round" stroke-dasharray="1.4 1"/>
+<path d="M 264.22 230.00 L 266.17 150.85" fill="none" stroke-linejoin="round" stroke="#8250df" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="1.4 1"/>
+<text x="265.20" y="189.82" font-size="2.2" fill="#8250df" text-anchor="middle" font-weight="bold">USB?</text>
+<path d="M 285.03 228.84 L 266.17 150.85" fill="none" stroke-linejoin="round" stroke="#8250df" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="1.4 1"/>
+<text x="275.60" y="189.25" font-size="2.2" fill="#8250df" text-anchor="middle" font-weight="bold">USB?</text>
+<path d="M 146.24 230.00 L 201.64 215.86" fill="none" stroke-linejoin="round" stroke="#8250df" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="1.4 1"/>
+<text x="173.94" y="222.33" font-size="2.2" fill="#8250df" text-anchor="middle" font-weight="bold">USB?</text>
+</g>
+<g class="dev-dot" data-key="pdh" data-systems="can power" data-open="0">
+<circle cx="215.73" cy="168.03" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="indexer-tunnel-bottom" data-systems="can power" data-open="1" data-open-in="can">
+<circle cx="240.76" cy="215.82" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="indexer-roller" data-systems="can power" data-open="1" data-open-in="power">
+<circle cx="278.10" cy="223.36" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="indexer-tunnel-top" data-systems="can power" data-open="1" data-open-in="can">
+<circle cx="274.51" cy="208.64" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="swerve-bl-drive" data-systems="can power" data-open="1" data-open-in="power">
+<circle cx="151.89" cy="204.04" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="swerve-bl-encoder" data-systems="can power" data-open="1" data-open-in="power">
+<circle cx="156.11" cy="219.81" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="swerve-bl-turn" data-systems="can power" data-open="1" data-open-in="power">
+<circle cx="171.88" cy="224.03" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="swerve-br-turn" data-systems="can power" data-open="1" data-open-in="power">
+<circle cx="279.91" cy="204.04" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="swerve-br-encoder" data-systems="can power" data-open="1" data-open-in="power">
+<circle cx="275.69" cy="219.81" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="swerve-br-drive" data-systems="can power" data-open="1" data-open-in="power">
+<circle cx="259.92" cy="224.03" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="swerve-fr-drive" data-systems="can power" data-open="1" data-open-in="power">
+<circle cx="279.91" cy="132.01" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="swerve-fr-encoder" data-systems="can power" data-open="1" data-open-in="power">
+<circle cx="275.69" cy="116.24" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="swerve-fr-turn" data-systems="can power" data-open="1" data-open-in="power">
+<circle cx="259.92" cy="112.02" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="swerve-fl-turn" data-systems="can power" data-open="1" data-open-in="power">
+<circle cx="151.89" cy="132.01" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="swerve-fl-encoder" data-systems="can power" data-open="1" data-open-in="power">
+<circle cx="156.11" cy="116.24" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="swerve-fl-drive" data-systems="can power" data-open="1" data-open-in="power">
+<circle cx="171.88" cy="112.02" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="gyro" data-systems="can power" data-open="0">
+<circle cx="215.90" cy="168.03" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="shooter-vertical-roller" data-systems="can power" data-open="1" data-open-in="can power">
+<circle cx="164.41" cy="178.82" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="shooter-scotty-rollers" data-systems="can power" data-open="1" data-open-in="can power">
+<circle cx="150.97" cy="214.75" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="turret-rotation" data-systems="can power" data-open="1" data-open-in="power">
+<circle cx="216.66" cy="222.69" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="flywheel-x44-side" data-systems="can power" data-open="1" data-open-in="can power">
+<circle cx="168.59" cy="179.14" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="hood" data-systems="can power" data-open="1" data-open-in="can power">
+<circle cx="176.42" cy="175.25" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="flywheel-other-side" data-systems="can power" data-open="1" data-open-in="can power">
+<circle cx="168.59" cy="220.93" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="intake-rack-turret-side" data-systems="can power" data-open="1" data-open-in="can">
+<circle cx="150.51" cy="146.50" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="intake-rack-other-side" data-systems="can power" data-open="1" data-open-in="can">
+<circle cx="281.29" cy="146.48" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="intake-rollers" data-systems="can power" data-open="1" data-open-in="power">
+<circle cx="279.63" cy="47.66" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="radio" data-systems="power network" data-open="1" data-open-in="power">
+<circle cx="241.12" cy="228.02" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="left-pi" data-systems="power network" data-open="1" data-open-in="power network">
+<circle cx="266.17" cy="150.85" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="right-pi" data-systems="power network" data-open="1" data-open-in="power network">
+<circle cx="201.64" cy="215.86" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="zinc-v-1" data-systems="power" data-open="0">
+<circle cx="273.63" cy="175.86" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="zinc-v-2" data-systems="power" data-open="1" data-open-in="power">
+<circle cx="226.97" cy="214.79" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="led-brick" data-systems="power" data-open="1" data-open-in="power">
+<circle cx="260.04" cy="175.52" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="battery" data-systems="power" data-open="0">
+<circle cx="227.03" cy="129.37" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="main-breaker" data-systems="power" data-open="0">
+<circle cx="145.93" cy="191.02" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="rsl" data-systems="none" data-open="0">
+<circle cx="277.54" cy="229.60" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="camera-front-right" data-systems="network" data-open="1" data-open-in="network">
+<circle cx="146.24" cy="230.00" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="camera-front-left" data-systems="network" data-open="1" data-open-in="network">
+<circle cx="264.22" cy="230.00" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-dot" data-key="camera-side-left" data-systems="network" data-open="1" data-open-in="network">
+<circle cx="285.03" cy="228.84" r="0.8" fill="#1f2328"/>
+</g>
+<g class="cad-dot">
+<circle cx="144.10" cy="190.33" r="0.8" fill="#afb8c1"/>
+</g>
+<g class="dev-dot" data-key="systemcore" data-systems="can power network" data-open="1" data-open-in="power">
+<circle cx="163.38" cy="158.16" r="0.8" fill="#1f2328"/>
+</g>
+<g class="dev-label" data-systems="can power" data-key="pdh" data-open="0">
+<path d="M 127.22 98.40 L 135.22 98.40 L 215.73 168.03" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="126.22" y="99.40" font-size="2.5" fill="#1f2328" text-anchor="end">Power Distribution Hub</text>
+</g>
+<g class="dev-label" data-info="can" data-key="pdh" data-open="0">
+<rect x="119.14" y="100.40" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="122.68" y="104.50" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">21</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="indexer-tunnel-bottom" data-open="1" data-open-in="can">
+<path d="M 304.58 159.60 L 296.58 159.60 L 240.76 215.82" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="305.58" y="160.60" font-size="2.5" fill="#1f2328" text-anchor="start">Bottom belt tunnel</text>
+</g>
+<g class="dev-label" data-info="can" data-key="indexer-tunnel-bottom" data-open="1" data-open-in="can">
+<rect x="305.58" y="161.60" width="18.78" height="5.50" rx="1.2" fill="#fff8c5" stroke="#9a6700" stroke-width="0.35" stroke-dasharray="1 0.6"/>
+<text x="314.97" y="165.70" font-size="3.9" fill="#9a6700" text-anchor="middle" font-weight="bold">31 / 32</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="indexer-tunnel-bottom" data-open="1" data-open-in="can">
+<rect x="325.36" y="161.60" width="10.20" height="5.50" rx="2.7" fill="#cf222e"/>
+<text x="330.46" y="165.40" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 12</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="indexer-roller" data-open="1" data-open-in="power">
+<path d="M 304.58 220.80 L 296.58 220.80 L 278.10 223.36" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="305.58" y="221.80" font-size="2.5" fill="#1f2328" text-anchor="start">Roller drive</text>
+</g>
+<g class="dev-label" data-info="can" data-key="indexer-roller" data-open="1" data-open-in="power">
+<rect x="305.58" y="222.80" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="309.12" y="226.90" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">30</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="indexer-roller" data-open="1" data-open-in="power">
+<rect x="313.66" y="222.80" width="11.76" height="5.50" rx="2.7" fill="#cf222e"/>
+<text x="319.54" y="226.60" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 13?</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="indexer-tunnel-top" data-open="1" data-open-in="can">
+<path d="M 304.58 190.20 L 296.58 190.20 L 274.51 208.64" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="305.58" y="191.20" font-size="2.5" fill="#1f2328" text-anchor="start">Top belt tunnel</text>
+</g>
+<g class="dev-label" data-info="can" data-key="indexer-tunnel-top" data-open="1" data-open-in="can">
+<rect x="305.58" y="192.20" width="18.78" height="5.50" rx="1.2" fill="#fff8c5" stroke="#9a6700" stroke-width="0.35" stroke-dasharray="1 0.6"/>
+<text x="314.97" y="196.30" font-size="3.9" fill="#9a6700" text-anchor="middle" font-weight="bold">31 / 32</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="indexer-tunnel-top" data-open="1" data-open-in="can">
+<rect x="325.36" y="192.20" width="10.20" height="5.50" rx="2.7" fill="#cf222e"/>
+<text x="330.46" y="196.00" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 14</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="swerve-bl-drive" data-open="1" data-open-in="power">
+<path d="M 127.22 187.40 L 135.22 187.40 L 151.89 204.04" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="126.22" y="188.40" font-size="2.5" fill="#1f2328" text-anchor="end">BL drive</text>
+</g>
+<g class="dev-label" data-info="can" data-key="swerve-bl-drive" data-open="1" data-open-in="power">
+<rect x="108.72" y="189.40" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="111.09" y="193.50" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">5</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="swerve-bl-drive" data-open="1" data-open-in="power">
+<rect x="114.46" y="189.40" width="11.76" height="5.50" rx="2.7" fill="#cf222e"/>
+<text x="120.34" y="193.20" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 10?</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="swerve-bl-encoder" data-open="1" data-open-in="power">
+<path d="M 127.22 207.80 L 135.22 207.80 L 156.11 219.81" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="126.22" y="208.80" font-size="2.5" fill="#1f2328" text-anchor="end">BL encoder</text>
+</g>
+<g class="dev-label" data-info="can" data-key="swerve-bl-encoder" data-open="1" data-open-in="power">
+<rect x="109.50" y="209.80" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="113.04" y="213.90" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">11</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="swerve-bl-encoder" data-open="1" data-open-in="power">
+<rect x="117.58" y="209.80" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="121.90" y="213.60" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="swerve-bl-turn" data-open="1" data-open-in="power">
+<path d="M 127.22 228.20 L 135.22 228.20 L 171.88 224.03" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="126.22" y="229.20" font-size="2.5" fill="#1f2328" text-anchor="end">BL turn</text>
+</g>
+<g class="dev-label" data-info="can" data-key="swerve-bl-turn" data-open="1" data-open-in="power">
+<rect x="108.72" y="230.20" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="111.09" y="234.30" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">6</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="swerve-bl-turn" data-open="1" data-open-in="power">
+<rect x="114.46" y="230.20" width="11.76" height="5.50" rx="2.7" fill="#cf222e"/>
+<text x="120.34" y="234.00" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 10?</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="swerve-br-turn" data-open="1" data-open-in="power">
+<path d="M 304.58 180.00 L 296.58 180.00 L 279.91 204.04" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="305.58" y="181.00" font-size="2.5" fill="#1f2328" text-anchor="start">BR turn</text>
+</g>
+<g class="dev-label" data-info="can" data-key="swerve-br-turn" data-open="1" data-open-in="power">
+<rect x="305.58" y="182.00" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="307.95" y="186.10" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">8</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="swerve-br-turn" data-open="1" data-open-in="power">
+<rect x="311.32" y="182.00" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="315.64" y="185.80" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="swerve-br-encoder" data-open="1" data-open-in="power">
+<path d="M 304.58 210.60 L 296.58 210.60 L 275.69 219.81" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="305.58" y="211.60" font-size="2.5" fill="#1f2328" text-anchor="start">BR encoder</text>
+</g>
+<g class="dev-label" data-info="can" data-key="swerve-br-encoder" data-open="1" data-open-in="power">
+<rect x="305.58" y="212.60" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="309.12" y="216.70" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">12</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="swerve-br-encoder" data-open="1" data-open-in="power">
+<rect x="313.66" y="212.60" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="317.98" y="216.40" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="swerve-br-drive" data-open="1" data-open-in="power">
+<path d="M 304.58 200.40 L 296.58 200.40 L 259.92 224.03" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="305.58" y="201.40" font-size="2.5" fill="#1f2328" text-anchor="start">BR drive</text>
+</g>
+<g class="dev-label" data-info="can" data-key="swerve-br-drive" data-open="1" data-open-in="power">
+<rect x="305.58" y="202.40" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="307.95" y="206.50" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">7</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="swerve-br-drive" data-open="1" data-open-in="power">
+<rect x="311.32" y="202.40" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="315.64" y="206.20" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="swerve-fr-drive" data-open="1" data-open-in="power">
+<path d="M 304.58 98.40 L 296.58 98.40 L 279.91 132.01" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="305.58" y="99.40" font-size="2.5" fill="#1f2328" text-anchor="start">FR drive</text>
+</g>
+<g class="dev-label" data-info="can" data-key="swerve-fr-drive" data-open="1" data-open-in="power">
+<rect x="305.58" y="100.40" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="307.95" y="104.50" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">3</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="swerve-fr-drive" data-open="1" data-open-in="power">
+<rect x="311.32" y="100.40" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="315.64" y="104.20" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="swerve-fr-encoder" data-open="1" data-open-in="power">
+<path d="M 304.58 78.00 L 296.58 78.00 L 275.69 116.24" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="305.58" y="79.00" font-size="2.5" fill="#1f2328" text-anchor="start">FR encoder</text>
+</g>
+<g class="dev-label" data-info="can" data-key="swerve-fr-encoder" data-open="1" data-open-in="power">
+<rect x="305.58" y="80.00" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="309.12" y="84.10" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="swerve-fr-encoder" data-open="1" data-open-in="power">
+<rect x="313.66" y="80.00" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="317.98" y="83.80" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="swerve-fr-turn" data-open="1" data-open-in="power">
+<path d="M 304.58 67.80 L 296.58 67.80 L 259.92 112.02" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="305.58" y="68.80" font-size="2.5" fill="#1f2328" text-anchor="start">FR turn</text>
+</g>
+<g class="dev-label" data-info="can" data-key="swerve-fr-turn" data-open="1" data-open-in="power">
+<rect x="305.58" y="69.80" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="307.95" y="73.90" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">4</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="swerve-fr-turn" data-open="1" data-open-in="power">
+<rect x="311.32" y="69.80" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="315.64" y="73.60" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="swerve-fl-turn" data-open="1" data-open-in="power">
+<path d="M 127.22 108.60 L 135.22 108.60 L 151.89 132.01" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="126.22" y="109.60" font-size="2.5" fill="#1f2328" text-anchor="end">FL turn</text>
+</g>
+<g class="dev-label" data-info="can" data-key="swerve-fl-turn" data-open="1" data-open-in="power">
+<rect x="111.84" y="110.60" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="114.21" y="114.70" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">2</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="swerve-fl-turn" data-open="1" data-open-in="power">
+<rect x="117.58" y="110.60" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="121.90" y="114.40" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="swerve-fl-encoder" data-open="1" data-open-in="power">
+<path d="M 127.22 88.20 L 135.22 88.20 L 156.11 116.24" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="126.22" y="89.20" font-size="2.5" fill="#1f2328" text-anchor="end">FL encoder</text>
+</g>
+<g class="dev-label" data-info="can" data-key="swerve-fl-encoder" data-open="1" data-open-in="power">
+<rect x="111.84" y="90.20" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="114.21" y="94.30" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">9</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="swerve-fl-encoder" data-open="1" data-open-in="power">
+<rect x="117.58" y="90.20" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="121.90" y="94.00" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="swerve-fl-drive" data-open="1" data-open-in="power">
+<path d="M 127.22 67.80 L 135.22 67.80 L 171.88 112.02" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="126.22" y="68.80" font-size="2.5" fill="#1f2328" text-anchor="end">FL drive</text>
+</g>
+<g class="dev-label" data-info="can" data-key="swerve-fl-drive" data-open="1" data-open-in="power">
+<rect x="111.84" y="69.80" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="114.21" y="73.90" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="swerve-fl-drive" data-open="1" data-open-in="power">
+<rect x="117.58" y="69.80" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="121.90" y="73.60" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="gyro" data-open="0">
+<path d="M 127.22 78.00 L 135.22 78.00 L 215.90 168.03" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="126.22" y="79.00" font-size="2.5" fill="#1f2328" text-anchor="end">Gyro</text>
+</g>
+<g class="dev-label" data-info="can" data-key="gyro" data-open="0">
+<rect x="110.28" y="80.00" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="112.65" y="84.10" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="gyro" data-open="0">
+<rect x="116.02" y="80.00" width="10.20" height="5.50" rx="2.7" fill="#cf222e"/>
+<text x="121.12" y="83.80" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 20</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="shooter-vertical-roller" data-open="1" data-open-in="can power">
+<path d="M 127.22 159.60 L 135.22 159.60 L 164.41 178.82" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="126.22" y="160.60" font-size="2.5" fill="#1f2328" text-anchor="end">Vertical roller</text>
+</g>
+<g class="dev-label" data-info="can" data-key="shooter-vertical-roller" data-open="1" data-open-in="can power">
+<rect x="107.16" y="161.60" width="9.42" height="5.50" rx="1.2" fill="#fff8c5" stroke="#9a6700" stroke-width="0.35" stroke-dasharray="1 0.6"/>
+<text x="111.87" y="165.70" font-size="3.9" fill="#9a6700" text-anchor="middle" font-weight="bold">40?</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="shooter-vertical-roller" data-open="1" data-open-in="can power">
+<rect x="117.58" y="161.60" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="121.90" y="165.40" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="shooter-scotty-rollers" data-open="1" data-open-in="can power">
+<path d="M 127.22 197.60 L 135.22 197.60 L 150.97 214.75" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="126.22" y="198.60" font-size="2.5" fill="#1f2328" text-anchor="end">Scotty rollers</text>
+</g>
+<g class="dev-label" data-info="can" data-key="shooter-scotty-rollers" data-open="1" data-open-in="can power">
+<rect x="107.16" y="199.60" width="9.42" height="5.50" rx="1.2" fill="#fff8c5" stroke="#9a6700" stroke-width="0.35" stroke-dasharray="1 0.6"/>
+<text x="111.87" y="203.70" font-size="3.9" fill="#9a6700" text-anchor="middle" font-weight="bold">45?</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="shooter-scotty-rollers" data-open="1" data-open-in="can power">
+<rect x="117.58" y="199.60" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="121.90" y="203.40" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="turret-rotation" data-open="1" data-open-in="power">
+<path d="M 304.58 108.60 L 296.58 108.60 L 216.66 222.69" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="305.58" y="109.60" font-size="2.5" fill="#1f2328" text-anchor="start">Turret rotation</text>
+</g>
+<g class="dev-label" data-info="can" data-key="turret-rotation" data-open="1" data-open-in="power">
+<rect x="305.58" y="110.60" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="309.12" y="114.70" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">44</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="turret-rotation" data-open="1" data-open-in="power">
+<rect x="313.66" y="110.60" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="317.98" y="114.40" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="flywheel-x44-side" data-open="1" data-open-in="can power">
+<path d="M 127.22 149.40 L 135.22 149.40 L 168.59 179.14" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="126.22" y="150.40" font-size="2.5" fill="#1f2328" text-anchor="end">X44-side flywheel</text>
+</g>
+<g class="dev-label" data-info="can" data-key="flywheel-x44-side" data-open="1" data-open-in="can power">
+<rect x="97.80" y="151.40" width="18.78" height="5.50" rx="1.2" fill="#fff8c5" stroke="#9a6700" stroke-width="0.35" stroke-dasharray="1 0.6"/>
+<text x="107.19" y="155.50" font-size="3.9" fill="#9a6700" text-anchor="middle" font-weight="bold">42 / 43</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="flywheel-x44-side" data-open="1" data-open-in="can power">
+<rect x="117.58" y="151.40" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="121.90" y="155.20" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="hood" data-open="1" data-open-in="can power">
+<path d="M 127.22 139.20 L 135.22 139.20 L 176.42 175.25" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="126.22" y="140.20" font-size="2.5" fill="#1f2328" text-anchor="end">Hood (Kraken X44)?</text>
+</g>
+<g class="dev-label" data-info="can" data-key="hood" data-open="1" data-open-in="can power">
+<rect x="107.16" y="141.20" width="9.42" height="5.50" rx="1.2" fill="#fff8c5" stroke="#9a6700" stroke-width="0.35" stroke-dasharray="1 0.6"/>
+<text x="111.87" y="145.30" font-size="3.9" fill="#9a6700" text-anchor="middle" font-weight="bold">41?</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="hood" data-open="1" data-open-in="can power">
+<rect x="117.58" y="141.20" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="121.90" y="145.00" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="flywheel-other-side" data-open="1" data-open-in="can power">
+<path d="M 127.22 218.00 L 135.22 218.00 L 168.59 220.93" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="126.22" y="219.00" font-size="2.5" fill="#1f2328" text-anchor="end">Other-side flywheel</text>
+</g>
+<g class="dev-label" data-info="can" data-key="flywheel-other-side" data-open="1" data-open-in="can power">
+<rect x="97.80" y="220.00" width="18.78" height="5.50" rx="1.2" fill="#fff8c5" stroke="#9a6700" stroke-width="0.35" stroke-dasharray="1 0.6"/>
+<text x="107.19" y="224.10" font-size="3.9" fill="#9a6700" text-anchor="middle" font-weight="bold">42 / 43</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="flywheel-other-side" data-open="1" data-open-in="can power">
+<rect x="117.58" y="220.00" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="121.90" y="223.80" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="intake-rack-turret-side" data-open="1" data-open-in="can">
+<path d="M 127.22 129.00 L 135.22 129.00 L 150.51 146.50" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="126.22" y="130.00" font-size="2.5" fill="#1f2328" text-anchor="end">Turret-side rack</text>
+</g>
+<g class="dev-label" data-info="can" data-key="intake-rack-turret-side" data-open="1" data-open-in="can">
+<rect x="97.80" y="131.00" width="18.78" height="5.50" rx="1.2" fill="#fff8c5" stroke="#9a6700" stroke-width="0.35" stroke-dasharray="1 0.6"/>
+<text x="107.19" y="135.10" font-size="3.9" fill="#9a6700" text-anchor="middle" font-weight="bold">21 / 22</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="intake-rack-turret-side" data-open="1" data-open-in="can">
+<rect x="117.58" y="131.00" width="8.64" height="5.50" rx="2.7" fill="#cf222e"/>
+<text x="121.90" y="134.80" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 7</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="intake-rack-other-side" data-open="1" data-open-in="can">
+<path d="M 304.58 118.80 L 296.58 118.80 L 281.29 146.48" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="305.58" y="119.80" font-size="2.5" fill="#1f2328" text-anchor="start">Other-side rack</text>
+</g>
+<g class="dev-label" data-info="can" data-key="intake-rack-other-side" data-open="1" data-open-in="can">
+<rect x="305.58" y="120.80" width="18.78" height="5.50" rx="1.2" fill="#fff8c5" stroke="#9a6700" stroke-width="0.35" stroke-dasharray="1 0.6"/>
+<text x="314.97" y="124.90" font-size="3.9" fill="#9a6700" text-anchor="middle" font-weight="bold">21 / 22</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="intake-rack-other-side" data-open="1" data-open-in="can">
+<rect x="325.36" y="120.80" width="8.64" height="5.50" rx="2.7" fill="#cf222e"/>
+<text x="329.68" y="124.60" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 2</text>
+</g>
+<g class="dev-label" data-systems="can power" data-key="intake-rollers" data-open="1" data-open-in="power">
+<path d="M 304.58 44.66 L 296.58 44.66 L 279.63 47.66" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="305.58" y="45.66" font-size="2.5" fill="#1f2328" text-anchor="start">Rollers</text>
+</g>
+<g class="dev-label" data-info="can" data-key="intake-rollers" data-open="1" data-open-in="power">
+<rect x="305.58" y="46.66" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="309.12" y="50.76" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">20</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="intake-rollers" data-open="1" data-open-in="power">
+<rect x="313.66" y="46.66" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="317.98" y="50.45" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+</g>
+<g class="dev-label" data-systems="power network" data-key="radio" data-open="1" data-open-in="power">
+<path d="M 304.58 169.80 L 296.58 169.80 L 241.12 228.02" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="305.58" y="170.80" font-size="2.5" fill="#1f2328" text-anchor="start">VH-109 radio</text>
+</g>
+<g class="dev-label" data-info="network" data-key="radio" data-open="1" data-open-in="power">
+<rect x="305.58" y="171.80" width="23.46" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="317.31" y="175.90" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10.21.2.1</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="radio" data-open="1" data-open-in="power">
+<rect x="330.04" y="171.80" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="334.36" y="175.60" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+</g>
+<g class="dev-label" data-systems="power network" data-key="left-pi" data-open="1" data-open-in="power network">
+<path d="M 304.58 88.20 L 296.58 88.20 L 266.17 150.85" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="305.58" y="89.20" font-size="2.5" fill="#9a6700" text-anchor="start">Orange Pi 5 Pro · left-pi?</text>
+</g>
+<g class="dev-label" data-info="network" data-key="left-pi" data-open="1" data-open-in="power network">
+<rect x="305.58" y="90.20" width="25.80" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="318.48" y="94.30" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10.21.2.12</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="left-pi" data-open="1" data-open-in="power network">
+<rect x="332.38" y="90.20" width="27.36" height="5.50" rx="2.7" fill="#cf222e"/>
+<text x="346.06" y="94.00" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 21 via Zinc-V</text>
+</g>
+<g class="dev-label" data-systems="power network" data-key="right-pi" data-open="1" data-open-in="power network">
+<path d="M 127.22 169.80 L 135.22 169.80 L 201.64 215.86" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="126.22" y="170.80" font-size="2.5" fill="#9a6700" text-anchor="end">Orange Pi 5 Pro · right-pi?</text>
+</g>
+<g class="dev-label" data-info="network" data-key="right-pi" data-open="1" data-open-in="power network">
+<rect x="72.06" y="171.80" width="25.80" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="84.96" y="175.90" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10.21.2.11</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="right-pi" data-open="1" data-open-in="power network">
+<rect x="98.86" y="171.80" width="27.36" height="5.50" rx="2.7" fill="#cf222e"/>
+<text x="112.54" y="175.60" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 21 via Zinc-V</text>
+</g>
+<g class="dev-label" data-systems="power" data-key="zinc-v-1" data-open="0">
+<path d="M 304.58 149.40 L 296.58 149.40 L 273.63 175.86" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="305.58" y="150.40" font-size="2.5" fill="#9a6700" text-anchor="start">Zinc-V #1?</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="zinc-v-1" data-open="0">
+<rect x="305.58" y="151.40" width="10.20" height="5.50" rx="2.7" fill="#cf222e"/>
+<text x="310.68" y="155.20" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 21</text>
+</g>
+<g class="dev-label" data-systems="power" data-key="zinc-v-2" data-open="1" data-open-in="power">
+<path d="M 304.58 139.20 L 296.58 139.20 L 226.97 214.79" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="305.58" y="140.20" font-size="2.5" fill="#9a6700" text-anchor="start">Zinc-V #2?</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="zinc-v-2" data-open="1" data-open-in="power">
+<rect x="305.58" y="141.20" width="27.36" height="5.50" rx="2.7" fill="#cf222e"/>
+<text x="319.26" y="145.00" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 21 via Zinc-V</text>
+</g>
+<g class="dev-label" data-systems="power" data-key="led-brick" data-open="1" data-open-in="power">
+<path d="M 304.58 129.00 L 296.58 129.00 L 260.04 175.52" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="305.58" y="130.00" font-size="2.5" fill="#1f2328" text-anchor="start">LED Brick (5 V supply)</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="led-brick" data-open="1" data-open-in="power">
+<rect x="305.58" y="131.00" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="309.90" y="134.80" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+</g>
+<g class="dev-label" data-systems="power" data-key="battery" data-open="0">
+<path d="M 304.58 64.10 L 296.58 64.10 L 227.03 129.37" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="305.58" y="65.10" font-size="2.5" fill="#1f2328" text-anchor="start">12 V battery</text>
+</g>
+<g class="dev-label" data-systems="power" data-key="main-breaker" data-open="0">
+<path d="M 127.22 180.00 L 135.22 180.00 L 145.93 191.02" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="126.22" y="181.00" font-size="2.5" fill="#1f2328" text-anchor="end">120 A main breaker</text>
+</g>
+<g class="dev-label" data-systems="none" data-key="rsl" data-open="0">
+<path d="M 304.58 234.70 L 296.58 234.70 L 277.54 229.60" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="305.58" y="235.70" font-size="2.5" fill="#1f2328" text-anchor="start">Robot Signal Light (RSL)</text>
+</g>
+<g class="dev-label" data-systems="network" data-key="camera-front-right" data-open="1" data-open-in="network">
+<path d="M 127.22 238.40 L 135.22 238.40 L 146.24 230.00" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="126.22" y="239.40" font-size="2.5" fill="#1f2328" text-anchor="end">front_right · back left</text>
+</g>
+<g class="dev-label" data-systems="network" data-key="camera-front-left" data-open="1" data-open-in="network">
+<path d="M 304.58 238.40 L 296.58 238.40 L 264.22 230.00" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="305.58" y="239.40" font-size="2.5" fill="#1f2328" text-anchor="start">front_left · back right</text>
+</g>
+<g class="dev-label" data-systems="network" data-key="camera-side-left" data-open="1" data-open-in="network">
+<path d="M 304.58 231.00 L 296.58 231.00 L 285.03 228.84" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="305.58" y="232.00" font-size="2.5" fill="#1f2328" text-anchor="start">side_left · side right</text>
+</g>
+<g class="cad-label">
+<path d="M 127.22 183.70 L 135.22 183.70 L 144.10 190.33" fill="none" stroke-linejoin="round" stroke="#afb8c1" stroke-width="0.2" stroke-linecap="round"/>
+<text x="126.22" y="184.70" font-size="2.5" fill="#57606a" text-anchor="end">Camera 4 · not on the robot</text>
+</g>
+<g class="dev-label" data-systems="can power network" data-key="systemcore" data-open="1" data-open-in="power">
+<path d="M 127.22 118.80 L 135.22 118.80 L 163.38 158.16" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
+<text x="126.22" y="119.80" font-size="2.5" fill="#1f2328" text-anchor="end">SystemCore (Beta)</text>
+</g>
+<g class="dev-label" data-info="network" data-key="systemcore" data-open="1" data-open-in="power">
+<rect x="93.12" y="120.80" width="23.46" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="104.85" y="124.90" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10.21.2.2</text>
+</g>
+<g class="dev-tag" data-info="power" data-key="systemcore" data-open="1" data-open-in="power">
+<rect x="117.58" y="120.80" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="121.90" y="124.60" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+</g>
+<g >
+<rect x="10.00" y="243.40" width="411.80" height="26.00" rx="2.5" fill="none" stroke="#d0d7de" stroke-width="0.5"/>
+<path d="M 13.00 251.02 L 18.50 251.02" fill="none" stroke-linejoin="round" stroke="#d98e04" stroke-width="0.6" stroke-linecap="round"/>
+<path d="M 13.00 254.12 L 18.50 254.12" fill="none" stroke-linejoin="round" stroke="#0f9d8a" stroke-width="0.6" stroke-linecap="round"/>
+<path d="M 13.00 257.22 L 18.50 257.22" fill="none" stroke-linejoin="round" stroke="#2f6fde" stroke-width="0.6" stroke-linecap="round"/>
+<path d="M 13.00 260.32 L 18.50 260.32" fill="none" stroke-linejoin="round" stroke="#c23b8f" stroke-width="0.6" stroke-linecap="round"/>
+<path d="M 13.00 263.42 L 18.50 263.42" fill="none" stroke-linejoin="round" stroke="#4f9d2a" stroke-width="0.6" stroke-linecap="round"/>
+<path d="M 89.20 251.02 L 94.70 251.02" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.9" stroke-linecap="round"/>
+<path d="M 89.20 254.12 L 94.70 254.12" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round"/>
+<path d="M 89.20 257.22 L 94.70 257.22" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+<path d="M 89.20 260.32 L 94.70 260.32" fill="none" stroke-linejoin="round" stroke="#0969da" stroke-width="1.1" stroke-linecap="round"/>
+<path d="M 89.20 260.32 L 94.70 260.32" fill="none" stroke-linejoin="round" stroke="#ffffff" stroke-width="0.45" stroke-linecap="round"/>
+<path d="M 89.20 263.42 L 94.70 263.42" fill="none" stroke-linejoin="round" stroke="#8250df" stroke-width="0.35" stroke-linecap="round"/>
+</g>
+<g class="hl" data-key="pdh" display="none">
+<rect x="91.72" y="95.40" width="36.00" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="190.40" y="154.54" width="50.67" height="26.98" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="indexer-tunnel-bottom" display="none">
+<rect x="304.08" y="156.60" width="32.98" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="232.63" y="202.60" width="16.27" height="26.44" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="indexer-roller" display="none">
+<rect x="304.08" y="217.80" width="22.84" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="264.88" y="215.56" width="26.44" height="15.60" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="indexer-tunnel-top" display="none">
+<rect x="304.08" y="187.20" width="32.98" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="266.42" y="195.42" width="16.19" height="26.44" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="swerve-bl-drive" display="none">
+<rect x="107.22" y="184.40" width="20.50" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="144.11" y="196.24" width="15.56" height="15.58" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="swerve-bl-encoder" display="none">
+<rect x="108.00" y="204.80" width="19.72" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="149.07" y="212.75" width="14.11" height="14.11" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="swerve-bl-turn" display="none">
+<rect x="107.22" y="225.20" width="20.50" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="164.11" y="216.25" width="15.58" height="15.56" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="swerve-br-turn" display="none">
+<rect x="304.08" y="177.00" width="17.38" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="272.13" y="196.24" width="15.56" height="15.58" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="swerve-br-encoder" display="none">
+<rect x="304.08" y="207.60" width="19.72" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="268.62" y="212.75" width="14.11" height="14.11" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="swerve-br-drive" display="none">
+<rect x="304.08" y="197.40" width="17.38" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="252.12" y="216.25" width="15.58" height="15.56" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="swerve-fr-drive" display="none">
+<rect x="304.08" y="95.40" width="17.38" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="272.13" y="124.23" width="15.56" height="15.58" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="swerve-fr-encoder" display="none">
+<rect x="304.08" y="75.00" width="19.72" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="268.62" y="109.20" width="14.11" height="14.11" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="swerve-fr-turn" display="none">
+<rect x="304.08" y="64.80" width="17.38" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="252.12" y="104.24" width="15.58" height="15.56" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="swerve-fl-turn" display="none">
+<rect x="110.34" y="105.60" width="17.38" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="144.11" y="124.23" width="15.56" height="15.58" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="swerve-fl-encoder" display="none">
+<rect x="109.72" y="85.20" width="18.00" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="149.07" y="109.20" width="14.11" height="14.11" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="swerve-fl-drive" display="none">
+<rect x="110.34" y="64.80" width="17.38" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="164.11" y="104.24" width="15.58" height="15.56" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="gyro" display="none">
+<rect x="108.78" y="75.00" width="18.94" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="207.32" y="161.07" width="17.15" height="13.92" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="shooter-vertical-roller" display="none">
+<rect x="102.22" y="156.60" width="25.50" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="156.29" y="171.02" width="16.25" height="15.60" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="shooter-scotty-rollers" display="none">
+<rect x="103.72" y="194.60" width="24.00" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="142.83" y="201.53" width="16.27" height="26.44" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="turret-rotation" display="none">
+<rect x="304.08" y="105.60" width="25.50" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="208.52" y="214.91" width="16.25" height="15.58" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="flywheel-x44-side" display="none">
+<rect x="96.30" y="146.40" width="31.42" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="160.79" y="165.92" width="15.60" height="26.46" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="hood" display="none">
+<rect x="97.72" y="136.20" width="30.00" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="163.71" y="169.15" width="25.45" height="12.22" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="flywheel-other-side" display="none">
+<rect x="96.22" y="215.00" width="31.50" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="160.79" y="207.69" width="15.60" height="26.46" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="intake-rack-turret-side" display="none">
+<rect x="96.30" y="126.00" width="31.42" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="137.29" y="140.05" width="26.44" height="12.89" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="intake-rack-other-side" display="none">
+<rect x="304.08" y="115.80" width="31.42" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="268.08" y="140.05" width="26.44" height="12.87" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="intake-rollers" display="none">
+<rect x="304.08" y="41.66" width="19.72" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="266.40" y="39.52" width="26.46" height="16.25" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="radio" display="none">
+<rect x="304.08" y="166.80" width="36.10" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="227.44" y="220.92" width="27.36" height="14.24" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="left-pi" display="none">
+<rect x="304.08" y="85.20" width="57.16" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="254.93" y="142.52" width="22.49" height="16.65" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="right-pi" display="none">
+<rect x="70.56" y="166.80" width="57.16" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="190.40" y="207.54" width="22.47" height="16.65" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="zinc-v-1" display="none">
+<rect x="304.08" y="146.40" width="18.00" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="269.86" y="166.95" width="7.54" height="17.81" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="zinc-v-2" display="none">
+<rect x="304.08" y="136.20" width="30.36" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="223.20" y="205.88" width="7.54" height="17.81" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="led-brick" display="none">
+<rect x="304.08" y="126.00" width="36.00" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="252.54" y="167.03" width="14.99" height="16.99" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="battery" display="none">
+<rect x="304.08" y="61.10" width="21.00" height="5.50" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="207.97" y="108.92" width="38.09" height="40.86" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="main-breaker" display="none">
+<rect x="97.72" y="177.00" width="30.00" height="5.50" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="139.79" y="184.46" width="12.26" height="13.14" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="rsl" display="none">
+<rect x="304.08" y="231.70" width="39.00" height="5.50" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="270.03" y="223.37" width="15.01" height="12.43" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="camera-front-right" display="none">
+<rect x="90.22" y="235.40" width="37.50" height="5.50" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="140.90" y="224.55" width="10.66" height="10.90" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="camera-front-left" display="none">
+<rect x="304.08" y="235.40" width="37.50" height="5.50" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="258.88" y="224.55" width="10.69" height="10.90" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="camera-side-left" display="none">
+<rect x="304.08" y="228.00" width="36.00" height="5.50" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="279.65" y="224.11" width="10.79" height="9.47" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="systemcore" display="none">
+<rect x="91.62" y="115.80" width="36.10" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="154.44" y="142.52" width="17.89" height="31.27" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+</svg>
