@@ -17,7 +17,7 @@ Node 24 or newer.
 
 ## Update a robot's docs
 
-The content in `public/content/` is generated. Do not edit it by hand.
+The export writes `public/content/`. Do not edit its files by hand, except `mechanical.json` (see below), which the export leaves alone. `robots.json` lists the robots in selector order and names the latest one; the export keeps any page kinds it does not write, such as `"mechanical"`.
 
 1. Rebuild the wiring outputs in the wiring tools (`~/systemcore/wiring`): after a change to `devices.json`, or after a new CAD export (`build_scene.py`).
 2. Export into this repo:
@@ -37,10 +37,10 @@ Each robot has a folder `public/content/robots/<id>/` with `wiring.json`, `poste
 
 - `mechanisms`: registry `mechanism` values; the page's devices table comes from `wiring.json` by these.
 - `groups`: `scene.json` group ids shown solid in the 3D view.
-- `facts`: each with a `source` (where the value comes from); add `uncertain` with the reason when a value is not sure.
+- `facts`: each with a `source` (where the value comes from); add `uncertain` with the reason when a value is not sure. Gear and belt reductions come from the CAD: `python3 -I wiring/tools/gear_trains.py` in the wiring tools writes `wiring/gear-trains.json` (tooth counts from part names, links from part positions).
 - `notes`: service steps, one sentence each.
 
-Change `updated` when you edit it, and add `"mechanical"` to the robot's `docs` in `robots.json`. `npm run check` fails if a mechanism or group name does not exist in the export. `public/content/robots.json` lists the robots in selector order and names the latest one.
+Change `updated` when you edit it, and add `"mechanical"` to the robot's `docs` in `robots.json`. `npm run check` fails if a mechanism or group name does not exist in the export.
 
 ## Deploy
 

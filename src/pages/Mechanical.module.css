@@ -6,7 +6,8 @@
 
 .body { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(20px, 3vw, 40px); margin-top: 28px; align-items: start; }
 .no3d { grid-template-columns: minmax(0, 1fr); max-width: 820px; }
-.view { position: sticky; top: 24px; height: min(70vh, 640px); }
+.text { min-width: 0; overflow-wrap: anywhere; } /* a long note, link or part number must not widen the page */
+.view { position: sticky; top: 24px; height: max(min(70vh, 640px), 360px); }
 
 .h2 { font-size: 30px; }
 .summary { margin: 8px 0 0; font-size: 17px; max-width: 62ch; }
@@ -36,7 +37,7 @@
 
 @media (max-width: 1099px) {
   .body { grid-template-columns: minmax(0, 1fr); }
-  .view { position: relative; top: 0; order: -1; height: 50vh; }
+  .view { position: relative; top: 0; order: -1; height: max(50vh, 300px); }
 }
 @media (max-width: 699px) {
   .fact { grid-template-columns: minmax(0, 1fr); gap: 2px; }

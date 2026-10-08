@@ -27,7 +27,10 @@ export function pageOf(pathname: string): PageKind | null {
 export function formatBuilt(iso: string): string {
   const d = new Date(iso);
   if (Number.isNaN(d.getTime())) return iso;
-  return new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }).format(d);
+  // A date-only value ("2026-10-08") parses as UTC midnight: format it in UTC, or a US viewer sees the day before.
+  const dateOnly = /^\d{4}-\d{2}-\d{2}$/.test(iso);
+  return new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric',
+    ...(dateOnly ? { timeZone: 'UTC' } : {}) }).format(d);
 }
 
 export function pageTitle(page: string | null, robotName: string): string {

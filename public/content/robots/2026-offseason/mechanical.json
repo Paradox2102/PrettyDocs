@@ -38,6 +38,11 @@
      "source": "TunerConstants.kSpeedAt12Volts = 4.54 m/s (robot code main f1fdf68)"
     },
     {
+     "label": "Motor pinions",
+     "value": "10T steel spur gear (20 DP, WCP-1008) on all eight motors",
+     "source": "CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)"
+    },
+    {
      "label": "Drive supply current limit",
      "value": "60 A",
      "source": "TunerConstants driveInitialConfigs, SupplyCurrentLimit 60 A (robot code main f1fdf68)"
@@ -72,14 +77,25 @@
    ],
    "facts": [
     {
+     "label": "Roller reduction",
+     "value": "1.5:1",
+     "source": "24T pulley on the motor (CAN 20) to a 36T pulley on a 60T belt; the rollers are linked 1:1 by 36T pulleys on 65T belts. CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)"
+    },
+    {
+     "label": "Rack drive reduction",
+     "value": "2.8:1 per side",
+     "source": "10T spur gear on each Kraken X44 to a 28T spur gear, which drives the toothed rack plate. CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)"
+    },
+    {
      "label": "Roller supply current limit",
      "value": "25 A",
      "source": "IntakeConstants.k_rollerSupplyLimit = 25 (robot code main f1fdf68)"
     },
     {
-     "label": "Extension supply current limit",
+     "label": "Extension supply current limit (leader motor)",
      "value": "30 A",
-     "source": "IntakeConstants.k_extensionSupplyLimit = 30 (robot code main f1fdf68)"
+     "source": "IntakeConstants.k_extensionSupplyLimit = 30 (robot code main f1fdf68)",
+     "uncertain": "The code gives the follower rack motor no current limit config"
     },
     {
      "label": "Roller speed, intake",
@@ -106,9 +122,37 @@
    ],
    "facts": [
     {
-     "label": "Flywheel supply current limit",
+     "label": "Turret reduction",
+     "value": "67.86:1",
+     "source": "12T to 60T spur gears (5:1), 14T to 28T pulleys on a 45T belt (2:1), 14T driving gear to the 95T turret gear (6.79:1). The turret gears' tooth counts come from their diameters and centre distance (module 2.54); ShooterConstants.k_shooterGearReduction = 67.86 (robot code main f1fdf68) agrees. CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)"
+    },
+    {
+     "label": "Flywheel drive",
+     "value": "0.55:1 (flywheel shaft about 1.8x motor speed)",
+     "source": "Printed motor pulley (G4012) to a 14T pulley on a 35T belt, then 40T to 22T spur gears. CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)",
+     "uncertain": "The printed motor pulley has no tooth count in its name; its belt gives 13.5 teeth (14 teeth gives 0.55:1, 13 gives 0.59:1)"
+    },
+    {
+     "label": "Scotty (sushi) rollers drive",
+     "value": "1.15:1",
+     "source": "16T pulley on the motor to 16T pulleys on a 105T belt (1:1), then 26T to 30T spur gears. CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)"
+    },
+    {
+     "label": "Vertical roller drive",
+     "value": "1:1",
+     "source": "20T pulley on the motor to a 20T pulley on a 75T belt. CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)"
+    },
+    {
+     "label": "Hood drive",
+     "value": "5:1 planetary, then not known",
+     "source": "Kraken X44 into a REV MAXPlanetary with one 5:1 slice; then WCP-2140 and two 9T helical gears (module 2.54). CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)",
+     "uncertain": "The parts after the planetary have no tooth counts in their names"
+    },
+    {
+     "label": "Flywheel supply current limit (leader motor)",
      "value": "37 A",
-     "source": "ShooterConstants.k_shooterSupplyLimit = 37 (robot code main f1fdf68)"
+     "source": "ShooterConstants.k_shooterSupplyLimit = 37 (robot code main f1fdf68)",
+     "uncertain": "The code gives the follower flywheel motor no current limit config"
     },
     {
      "label": "Turret aim supply current limit",
@@ -129,17 +173,6 @@
      "label": "Secondary kicker supply current limit",
      "value": "23 A",
      "source": "ShooterConstants.k_secondaryKickerSupplyLimit = 23 (robot code main f1fdf68)"
-    },
-    {
-     "label": "Hood max angle",
-     "value": "90°",
-     "source": "ShooterConstants.k_hoodMaxAngle = 90 (robot code main f1fdf68)"
-    },
-    {
-     "label": "Gear reduction",
-     "value": "67.86:1",
-     "source": "ShooterConstants.k_shooterGearReduction = 67.86 (robot code main f1fdf68)",
-     "uncertain": "The code does not say which mechanism this reduction belongs to"
     }
    ],
    "notes": []
