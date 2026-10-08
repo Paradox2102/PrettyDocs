@@ -1,6 +1,6 @@
 import { expect, test } from 'vitest';
 import { SCENE } from '../test/fixtures';
-import { focusFor, frame, sceneByRegistryKey, tipLines, toggleList } from './scene';
+import { focusFor, frame, frameGroups, sceneByRegistryKey, tipLines, toggleList } from './scene';
 
 test('sceneByRegistryKey finds devices and the SystemCore', () => {
   const m = sceneByRegistryKey(SCENE);
@@ -43,4 +43,19 @@ test('tipLines adds the wire order from the bus length', () => {
   const motor = SCENE.devices[0];
   expect(tipLines(SCENE, motor)).toContain('Wire order: 1 of 1 on can_s2');
   expect(tipLines(SCENE, SCENE.devices[1]).some((l) => l.startsWith('Wire order'))).toBe(false);
+});
+
+test('frameGroups centres on the union of the named group boxes', () => {
+  const f = frameGroups(SCENE, ['swerve']);
+  expect(f.center[0]).toBeCloseTo(0);
+  expect(f.center[1]).toBeCloseTo(0);
+  expect(f.center[2]).toBeCloseTo(0.085);
+  expect(f.radius).toBeCloseTo(0.95 * 0.8);
+});
+
+test('frameGroups with no matching group falls back to the whole-robot frame', () => {
+  const f = frameGroups(SCENE, ['nope']);
+  const whole = frame(SCENE);
+  expect(f.center).toEqual(whole.center);
+  expect(f.radius).toBeCloseTo(whole.radius);
 });

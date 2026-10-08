@@ -58,3 +58,21 @@ export function tipLines(scene: Scene, device: SceneDevice): string[] {
   const bus = device.bus ? scene.buses.find((b) => b.bus === device.bus) : undefined;
   return labelLines(device, bus?.chain.length);
 }
+
+/**
+ * The view centre and radius for some groups (a subsystem): the union of their boxes, centred in all three axes.
+ * Box order is [xmin, ymin, xmax, ymax, zmin, zmax]. No matching group: the whole-robot frame.
+ */
+export function frameGroups(scene: Scene, ids: string[]): { center: Vec3; radius: number } {
+  const boxes = scene.groups.filter((g) => ids.includes(g.id)).map((g) => g.box);
+  if (boxes.length === 0) {
+    const f = frame(scene);
+    return { center: f.center, radius: f.radius };
+  }
+  const lo = [0, 1, 4].map((i) => Math.min(...boxes.map((b) => b[i])));
+  const hi = [2, 3, 5].map((i) => Math.max(...boxes.map((b) => b[i])));
+  return {
+    center: [(lo[0] + hi[0]) / 2, (lo[1] + hi[1]) / 2, (lo[2] + hi[2]) / 2],
+    radius: 0.95 * Math.max(hi[0] - lo[0], hi[1] - lo[1], hi[2] - lo[2]),
+  };
+}

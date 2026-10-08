@@ -31,6 +31,8 @@ export interface StyleItem {
   group?: string;
   bus?: string | null;
   layers?: string[];
+  /** The device's registry key, for the subsystem view. */
+  registryKey?: string | null;
 }
 
 export interface Style {
@@ -96,6 +98,21 @@ export function styleFor(item: StyleItem, selected: Set<string>, ghost: number):
 export function canTag(device: { can_id?: string | null; chain_index?: number }): string {
   const id = (device.can_id ?? '').replace(/\s*\/\s*/g, '/');
   return id || String((device.chain_index ?? 0) + 1);
+}
+
+/**
+ * The mechanical page's subsystem view: the subsystem's groups solid in their neutral color, other groups at
+ * `ghost`, the subsystem's devices in their bus color (no bus: the device neutral color), every other device hidden.
+ */
+export function subsystemStyle(item: StyleItem, focus: { groups: Set<string>; devices: Set<string> }, ghost: number): Style {
+  if (item.kind === 'group') {
+    const color = neutralColor(item);
+    return focus.groups.has(item.group ?? '') ? { color, opacity: 1, transparent: false } : { color, opacity: ghost, transparent: true };
+  }
+  if (item.registryKey && focus.devices.has(item.registryKey)) {
+    return { color: item.bus ? BUS_COLORS[item.bus] ?? DEVICE_NEUTRAL : DEVICE_NEUTRAL, opacity: 1, transparent: false };
+  }
+  return { color: neutralColor(item), opacity: 0, transparent: true };
 }
 
 type LabelDevice = Pick<SceneDevice, 'bus' | 'role' | 'mechanism' | 'device_type' | 'status'> &

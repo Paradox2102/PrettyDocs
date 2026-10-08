@@ -143,3 +143,17 @@ test('hover label keeps the wire order', () => {
 test('a device with no CAN ID falls back to its wire order in the bubble', () => {
   assert.equal(L.canTag({ can_id: null, chain_index: 2 }), '3');
 });
+
+test('subsystem view: its groups solid, other groups faint, its devices in bus color, other devices hidden', () => {
+  const focus = { groups: new Set(['shooter']), devices: new Set(['turret-rotation', 'hood-camera']) };
+  assert.deepEqual(L.subsystemStyle({ kind: 'group', group: 'shooter' }, focus, 0.06),
+    { color: L.GROUP_COLORS.shooter, opacity: 1, transparent: false });
+  assert.deepEqual(L.subsystemStyle({ kind: 'group', group: 'swerve' }, focus, 0.06),
+    { color: L.GROUP_COLORS.swerve, opacity: 0.06, transparent: true });
+  assert.deepEqual(L.subsystemStyle({ kind: 'motor', bus: 'can_s3', registryKey: 'turret-rotation' }, focus, 0.06),
+    { color: L.BUS_COLORS.can_s3, opacity: 1, transparent: false });
+  assert.deepEqual(L.subsystemStyle({ kind: 'electronics', bus: null, registryKey: 'hood-camera' }, focus, 0.06),
+    { color: L.DEVICE_NEUTRAL, opacity: 1, transparent: false });
+  assert.equal(L.subsystemStyle({ kind: 'motor', bus: 'can_s2', registryKey: 'swerve-fl-drive' }, focus, 0.06).opacity, 0);
+  assert.equal(L.subsystemStyle({ kind: 'systemcore', registryKey: 'systemcore' }, focus, 0.06).opacity, 0);
+});
