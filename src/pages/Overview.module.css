@@ -2,7 +2,7 @@
 
 .top { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(24px, 3vw, 48px); align-items: center; }
 .noHero { grid-template-columns: minmax(0, 1fr); }
-.eyebrow { margin: 0 0 14px; font: 600 12px/1 var(--font-mono); letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
+.eyebrow { margin: 0 0 14px; font: 600 12px/1 var(--font-mono); letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-ink); }
 .name { font-size: clamp(2.75rem, 6.5vw, 5.5rem); line-height: 0.95; letter-spacing: -0.01em; }
 .season { margin: 14px 0 0; font: 13px/1.4 var(--font-mono); color: var(--muted); }
 .summary { margin: 16px 0 0; font-size: 18px; max-width: 42ch; }
@@ -25,7 +25,7 @@
 .card:hover { border-color: var(--ink); transform: translateY(-1px); }
 .cardHead { display: flex; align-items: center; gap: 10px; }
 .cardTitle { font: 600 22px/1.1 var(--font-display); }
-.arrow { margin-left: auto; color: var(--accent); font-weight: 600; }
+.arrow { margin-left: auto; color: var(--accent-ink); font-weight: 600; }
 .cardText { color: var(--muted); font-size: 15px; }
 .openCard { background: var(--warn-bg); border-color: transparent; }
 .openCard .cardTitle, .openCard .cardText, .openCard .arrow { color: var(--warn-fg); }

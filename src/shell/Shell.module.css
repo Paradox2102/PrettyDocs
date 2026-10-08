@@ -8,7 +8,7 @@
 
 .mark { display: flex; align-items: baseline; gap: 8px; text-decoration: none; padding-inline: 6px; }
 .markWord { font: 600 19px/1 var(--font-display); letter-spacing: 0.16em; }
-.markNum { font: 600 13px/1 var(--font-mono); color: var(--accent); letter-spacing: 0.04em; }
+.markNum { font: 600 13px/1 var(--font-mono); color: var(--accent-ink); letter-spacing: 0.04em; }
 
 .select { display: grid; gap: 6px; padding-inline: 6px; }
 .selectLabel { font: 600 11px/1 var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
