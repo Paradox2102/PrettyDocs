@@ -74,3 +74,14 @@ test('a failed index shows a message and Retry loads it', async () => {
   await settle(() => user.click(screen.getByRole('button', { name: 'Retry' })));
   expect(await screen.findByRole('heading', { level: 1, name: '2026 Offseason' })).toBeInTheDocument();
 });
+
+test('a slow failed index shows its message after one fetch, with no refetch loop', async () => {
+  // Regression: a rejected promise left the cache, so each Suspense retry fetched again and the spinner never ended.
+  const slow404 = vi.fn(() => new Promise<Response>((resolve) =>
+    setTimeout(() => resolve(new Response('no', { status: 404, statusText: 'Not Found' })), 50)));
+  vi.stubGlobal('fetch', slow404);
+  await renderAt('/');
+  expect(await screen.findByText('The docs index did not load', {}, { timeout: 2000 })).toBeInTheDocument();
+  await new Promise((r) => setTimeout(r, 300));
+  expect(slow404).toHaveBeenCalledTimes(1);
+});

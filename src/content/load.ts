@@ -1,5 +1,6 @@
 // Fetch content files once per URL. The cache holds the promise, so React 19 use() gets the same promise on
-// every render. A failed load leaves the cache, so Retry fetches again.
+// every render. A failed promise stays cached too, so the error reaches the ErrorBoundary instead of a new fetch
+// on every retry render; Retry calls forget() and the next render fetches again.
 export const INDEX_URL = '/content/robots.json';
 
 export type ContentFile = 'wiring.json' | 'poster.svg' | 'top-view.svg' | 'scene.json';
@@ -17,7 +18,7 @@ function cached<T>(url: string, read: (r: Response) => Promise<T>): Promise<T> {
       if (!r.ok) throw new Error(`${url} did not load (${r.status} ${r.statusText})`.trim());
       return read(r);
     });
-    p.catch(() => cache.delete(url));
+    p.catch(() => {}); // handled by use() and the ErrorBoundary; this only marks it handled
     cache.set(url, p);
   }
   return p;

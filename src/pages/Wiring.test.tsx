@@ -1,4 +1,4 @@
-import { screen, waitFor } from '@testing-library/react';
+import { fireEvent, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { afterEach, beforeEach, expect, test, vi } from 'vitest';
 import { AppRoutes } from '../App';
@@ -71,4 +71,13 @@ test('Close clears the device', async () => {
   await settle(() => user.click(screen.getByRole('button', { name: 'Close device details' })));
   expect(screen.queryByRole('heading', { level: 2 })).toBeNull();
   expect(where()).toBe('/2026-offseason/wiring');
+});
+
+test('a press on a search result keeps focus in the search box (Safari closes the list on blur)', async () => {
+  const user = userEvent.setup();
+  await open('/2026-offseason/wiring');
+  await settle(() => user.type(screen.getByRole('searchbox', { name: 'Search devices' }), 'drive'));
+  const result = screen.getByRole('button', { name: /FL drive/ });
+  // fireEvent returns false when a handler called preventDefault(): the press does not take focus from the input.
+  expect(fireEvent.mouseDown(result)).toBe(false);
 });

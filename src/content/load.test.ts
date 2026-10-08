@@ -21,10 +21,15 @@ test('two loads of one URL fetch once', async () => {
   expect(fetchMock).toHaveBeenCalledTimes(1);
 });
 
-test('a 404 rejects with the URL and the status, and the next load fetches again', async () => {
+test('a 404 rejects with the URL and the status; the failure stays cached until forget()', async () => {
+  // A failed load must stay failed: React 19 use() calls the loader again on every retry render, and a fresh
+  // fetch each time would loop forever behind the Suspense spinner. Retry calls forget().
   const fetchMock = vi.fn(async () => new Response('no', { status: 404, statusText: 'Not Found' }));
   vi.stubGlobal('fetch', fetchMock);
   await expect(loadText('/missing.svg')).rejects.toThrow(/\/missing\.svg.*404/);
+  await expect(loadText('/missing.svg')).rejects.toThrow(/404/);
+  expect(fetchMock).toHaveBeenCalledTimes(1);
+  forget('/missing.svg');
   await expect(loadText('/missing.svg')).rejects.toThrow(/404/);
   expect(fetchMock).toHaveBeenCalledTimes(2);
 });

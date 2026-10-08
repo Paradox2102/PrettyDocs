@@ -89,7 +89,9 @@ export default function Wiring() {
               if (e.key === 'Escape') setListOpen(false);
             }} />
           {listOpen && query.trim() ? (
-            <div className={styles.results}>
+            // preventDefault on mousedown keeps focus in the input. Safari does not focus a pressed button, so a blur
+            // would close the list before the click reached the result.
+            <div className={styles.results} onMouseDown={(e) => e.preventDefault()}>
               <p className={styles.count} aria-live="polite">
                 {matches.length === 0 ? 'No match' : `${matches.length} match${matches.length === 1 ? '' : 'es'}`}
               </p>
