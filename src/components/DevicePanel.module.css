@@ -1,0 +1,20 @@
+.panel {
+  display: grid; gap: 14px; padding: 18px; border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--surface); box-shadow: 0 10px 30px rgb(11 18 32 / 0.14); overflow-y: auto;
+}
+.head { display: flex; align-items: start; justify-content: space-between; gap: 12px; }
+.title { font-size: 22px; }
+.sub { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+.close {
+  flex: none; display: grid; place-items: center; width: 30px; height: 30px; border: 1px solid var(--line);
+  border-radius: 6px; background: transparent; color: var(--muted); cursor: pointer;
+}
+.close:hover { color: var(--ink); border-color: var(--muted); }
+.rows { margin: 0; display: grid; gap: 0; }
+.row { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 10px; padding: 7px 0; border-top: 1px solid var(--line); font-size: 14px; }
+.row dt { color: var(--muted); }
+.row dd { margin: 0; overflow-wrap: anywhere; }
+.amber dd { color: var(--warn-fg); background: var(--warn-bg); margin-inline: -6px; padding-inline: 6px; border-radius: 4px; font-weight: 600; }
+.note { margin: 0; color: var(--muted); font-size: 13px; }
+.links { margin: 0; display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.links a { font-weight: 600; font-size: 14px; text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 4px; }

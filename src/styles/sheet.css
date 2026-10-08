@@ -1,0 +1,16 @@
+/* Rules for the injected wiring SVGs (from the old robot-wiring.html). The SVG classes are set by WiringSheet. */
+.wiring-sheet [data-key] { cursor: pointer; }
+.wiring-sheet svg g.hl.on { display: inline; }
+/* One system's view: the wires, IDs, tags and channel labels of the other systems hide (data-info), and the
+   devices, labels and frames that are not part of this system fade (data-systems). */
+.wiring-sheet svg.mode-can [data-info]:not([data-info="can"]),
+.wiring-sheet svg.mode-power [data-info]:not([data-info="power"]),
+.wiring-sheet svg.mode-network [data-info]:not([data-info="network"]) { display: none; }
+.wiring-sheet svg.mode-can [data-systems]:not([data-systems~="can"]),
+.wiring-sheet svg.mode-power [data-systems]:not([data-systems~="power"]),
+.wiring-sheet svg.mode-network [data-systems]:not([data-systems~="network"]) { opacity: .15; }
+/* Open items: in All, any open item stays bright; in one system's view, only that system's open items do. */
+.wiring-sheet svg.open-only g[data-open="0"],
+.wiring-sheet svg.open-only.mode-can g[data-open]:not([data-open-in~="can"]),
+.wiring-sheet svg.open-only.mode-power g[data-open]:not([data-open-in~="power"]),
+.wiring-sheet svg.open-only.mode-network g[data-open]:not([data-open-in~="network"]) { opacity: .15; }
