@@ -131,7 +131,7 @@ Overview:
 - The hero: the 3D robot in neutral colors, turning, no labels. It loads after the text shows. Until
   then, a quiet placeholder with the same height shows. The hero takes no pointer input.
 - A facts strip computed from the data: devices, motors, CAN buses, PDH channels in use,
-  coprocessors, cameras, open items.
+  network devices, open items.
 - Cards: Wiring, 3D viewer, Devices. Each card has one line of text and a link.
 - An "Open items" card when the count is above 0: the count and a link to `wiring` with the
   "Show only open items" switch on (`?open=1`).
