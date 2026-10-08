@@ -1,0 +1,59 @@
+import { screen, within } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { afterEach, beforeEach, expect, test, vi } from 'vitest';
+import { AppRoutes } from '../App';
+import { forget } from '../content/load';
+import { fakeFetch, SITE_FILES } from '../test/fixtures';
+import { renderRouted, settle } from '../test/render';
+
+const open = (path: string) => renderRouted(<AppRoutes />, path);
+const bodyRows = () => within(screen.getByRole('table')).getAllByRole('row').slice(1);
+
+beforeEach(() => {
+  forget();
+  vi.stubGlobal('fetch', vi.fn(fakeFetch(SITE_FILES)));
+});
+afterEach(() => vi.unstubAllGlobals());
+
+test('the table lists every device', async () => {
+  await open('/2026-offseason/devices');
+  expect(screen.getByRole('heading', { level: 1, name: 'Devices' })).toBeInTheDocument();
+  expect(bodyRows()).toHaveLength(4);
+});
+
+test('search "43" leaves only the matching rows', async () => {
+  const user = userEvent.setup();
+  await open('/2026-offseason/devices');
+  await settle(() => user.type(screen.getByRole('searchbox', { name: 'Search devices' }), '43'));
+  expect(bodyRows()).toHaveLength(1);
+  expect(bodyRows()[0]).toHaveTextContent('X44-side flywheel');
+});
+
+test('the Open items chip shows its count and filters', async () => {
+  const user = userEvent.setup();
+  await open('/2026-offseason/devices');
+  const chip = screen.getByRole('radio', { name: /Open items\s*2/ });
+  await settle(() => user.click(chip));
+  expect(bodyRows()).toHaveLength(2);
+});
+
+test('a click on a row opens the device panel', async () => {
+  const user = userEvent.setup();
+  await open('/2026-offseason/devices');
+  await settle(() => user.click(screen.getByRole('button', { name: 'FL drive' })));
+  expect(screen.getByRole('heading', { level: 2, name: 'FL drive' })).toBeInTheDocument();
+  expect(screen.getByTestId('where')).toHaveTextContent('?device=swerve-fl-drive');
+});
+
+test('?device= opens the panel on load', async () => {
+  await open('/2026-offseason/devices?device=camera-front-left');
+  expect(screen.getByRole('heading', { level: 2, name: 'front_left' })).toBeInTheDocument();
+});
+
+test('a header click sorts and sets aria-sort', async () => {
+  const user = userEvent.setup();
+  await open('/2026-offseason/devices');
+  await settle(() => user.click(screen.getByRole('button', { name: /^CAN/ })));
+  expect(screen.getByRole('columnheader', { name: /^CAN/ })).toHaveAttribute('aria-sort', 'ascending');
+  expect(bodyRows()[0]).toHaveTextContent('FL drive');
+});
