@@ -35,7 +35,7 @@ Source: the execution ledger. Spec: `docs/specs/2026-10-08-prettydocs-site-desig
 ## Deferred minor findings (final review)
 
 - OrbitControls made in useMemo; StrictMode dev keeps an orphan listener instance (production fine).
-- LabelRenderer useFrame runs before Controls.update: labels trail one frame while turning.
+- ~~LabelRenderer useFrame runs before Controls.update: labels trail one frame while turning.~~ Fixed in 5739399 after the user saw the bubbles jump on the live site (drawFrame owns the frame order).
 - page Retry forgets every cached URL, not only the failed one.
 - top-level boundary calls any render error "The docs index did not load".
 - hero renders at 60 fps under reduced motion and off-screen (frameloop="demand" when not turning).
