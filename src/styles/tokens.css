@@ -1,0 +1,47 @@
+/* Design tokens. Colors come from the Paradox griffin logo: navy ink, gold accent, red for power only.
+   Fonts match the pit poster and the 3D viewer. Spec: docs/specs/2026-10-08-prettydocs-site-design.md, Section 1. */
+:root {
+  --bg: #f4f6f9;
+  --surface: #ffffff;
+  --ink: #14213d;
+  --muted: #5b6578;
+  --line: #d8dee8;
+  --accent: #c8960c;
+  --power: #cf222e;
+  --warn-bg: #fff4dc;
+  --warn-fg: #6b4a00;
+
+  --font-display: "Barlow Semi Condensed", "Barlow", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Barlow", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --radius: 8px;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b1220;
+    --surface: #121a2b;
+    --ink: #e6ebf3;
+    --muted: #93a0b5;
+    --line: #243049;
+    --accent: #f0b429;
+    --power: #ff6b6b;
+    --warn-bg: #3a2e12;
+    --warn-fg: #f3d58c;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #0b1220;
+  --surface: #121a2b;
+  --ink: #e6ebf3;
+  --muted: #93a0b5;
+  --line: #243049;
+  --accent: #f0b429;
+  --power: #ff6b6b;
+  --warn-bg: #3a2e12;
+  --warn-fg: #f3d58c;
+  color-scheme: dark;
+}
