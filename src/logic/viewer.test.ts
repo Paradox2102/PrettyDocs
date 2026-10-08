@@ -198,4 +198,5 @@ test('a power tag in 3D draws a lightning bolt before its channel; other tags do
   const { readFileSync } = await import('node:fs');
   const css = readFileSync(`${process.cwd()}/src/three/Labels.css`, 'utf8');
   assert.match(css, /\.chain-num\.pdh::before \{[^}]*mask:[^}]*\}/);
+  assert.match(css, /\.chain-num\.pdh::before \{[^}]*width: 0\.46em; height: 0\.73em;[^}]*vertical-align: baseline;/);
 });
