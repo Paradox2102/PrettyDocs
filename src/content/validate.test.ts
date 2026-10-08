@@ -6,6 +6,10 @@ const clone = <T,>(x: T): T => structuredClone(x);
 const SCENE = { meta: { document: 'd', microversion: 'm', cell_mm: 4, built: 'b', triangles: 1 }, groups: [],
   devices: [], systemcore: { anchor: [0, 0, 0] }, buses: [], layers: [] };
 
+const group = (tris: number, drive: unknown) => ({ id: 'shooter', label: 'Shooter', box: [0, 0, 1, 1, 0, 1],
+  mesh: { pos: '', min: [0, 0, 0], scale: [1, 1, 1], idx: '', idx32: false, tris },
+  ...(drive === undefined ? {} : { drive_tris: drive }) });
+
 describe('validateIndex', () => {
   test('a good index passes and comes back unchanged', () => {
     expect(validateIndex(clone(INDEX))).toEqual(INDEX);
@@ -48,6 +52,15 @@ describe('validateWiring', () => {
 describe('validateScene', () => {
   test('a good scene passes', () => {
     expect(validateScene(clone(SCENE))).toEqual(SCENE);
+  });
+  test('a group may count its power-transfer triangles; an older scene without the count still passes', () => {
+    const scene = { ...clone(SCENE), groups: [group(4, 2), group(4, undefined)] };
+    expect(validateScene(scene)).toEqual(scene);
+  });
+  test('drive_tris must be a whole number no larger than the group mesh', () => {
+    for (const bad of [5, -1, 1.5, '2']) {
+      expect(() => validateScene({ ...clone(SCENE), groups: [group(4, bad)] })).toThrow(/groups\[0\]\.drive_tris/);
+    }
   });
   test('a scene without buses is refused', () => {
     const { buses: _buses, ...bad } = clone(SCENE);

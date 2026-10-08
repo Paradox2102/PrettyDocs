@@ -120,6 +120,8 @@ export interface SceneGroup {
   label: string;
   box: number[];
   mesh: MeshData;
+  /** The last drive_tris triangles of `mesh` are power-transfer parts (gears, pulleys, belts, shafts, wheels). */
+  drive_tris?: number;
 }
 
 export interface SceneBus {

@@ -1,6 +1,7 @@
 import { Suspense, useMemo, useRef, useState, type CSSProperties } from 'react';
 import { Link } from 'react-router';
 import { DevicePanel } from '../components/DevicePanel';
+import { DriveKey } from '../components/DriveKey';
 import { Loading } from '../components/Loading';
 import { useScene, useWiring } from '../content/hooks';
 import type { SceneDevice, Vec3 } from '../content/types';
@@ -106,6 +107,7 @@ function ViewerPage() {
             <button type="button" className={styles.btn} onClick={() => setSelected(new Set(toggles.map((t) => t.id)))}>All</button>
             <button type="button" className={styles.btn} onClick={() => setSelected(new Set())}>None</button>
           </div>
+          <DriveKey className={styles.key} />
         </div>
 
         {warnings.length ? (

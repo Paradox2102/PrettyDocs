@@ -22,6 +22,7 @@
 .toggleCount { font: 400 12px/1 var(--font-mono); color: var(--muted); }
 
 .row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.key { margin-top: 12px; }
 .btn {
   flex: 1 1 0; min-width: 52px; padding: 7px 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface);
   font-weight: 500; font-size: 14px; cursor: pointer;

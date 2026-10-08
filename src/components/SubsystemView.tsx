@@ -1,6 +1,7 @@
 import { lazy, Suspense, useState } from 'react';
 import { useScene } from '../content/hooks';
 import { hasWebGL } from '../three/webgl';
+import { DriveKey } from './DriveKey';
 import { ErrorBoundary } from './ErrorBoundary';
 import styles from './SubsystemView.module.css';
 
@@ -27,7 +28,12 @@ export function SubsystemView({ robot, groups, devices, label }: Props) {
           </Suspense>
         </ErrorBoundary>
       ) : note('This browser cannot show 3D.')}
-      {webgl ? <figcaption className={styles.hint}>Drag to turn · scroll or pinch to zoom</figcaption> : null}
+      {webgl ? (
+        <figcaption className={styles.hint}>
+          <DriveKey group={groups[0]} />
+          <span>Drag to turn · scroll or pinch to zoom</span>
+        </figcaption>
+      ) : null}
     </figure>
   );
 }

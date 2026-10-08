@@ -24,6 +24,7 @@ export const USB_COLOR = '#8250df';
 /** A power cable to a "ch ?" device (channel not recorded). */
 export const AMBER = '#9a6700';
 export const DEVICE_NEUTRAL = '#5b616b';
+
 export const SYSTEMCORE_COLOR = '#e8e8e8';
 
 export interface StyleItem {
@@ -95,6 +96,43 @@ export function styleFor(item: StyleItem, selected: Set<string>, ghost: number):
 }
 
 /** The bubble on a CAN device: its CAN ID ("21/22" for an open pair). The wire order is in the hover label. */
+/**
+ * The power-transfer shade of a mechanism color (user, 2026-10-08): the same hue, darker and stronger, so gears,
+ * pulleys, belts, shafts, wheels and rollers stand out from the structure and still read as their mechanism's.
+ */
+export function driveShade(hex: string): string {
+  const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255);
+  const max = Math.max(r, g, b);
+  const min = Math.min(r, g, b);
+  const d = max - min;
+  const l = (max + min) / 2;
+  const s = d === 0 ? 0 : d / (1 - Math.abs(2 * l - 1));
+  const h = d === 0 ? 0 : max === r ? ((g - b) / d + 6) % 6 : max === g ? (b - r) / d + 2 : (r - g) / d + 4;
+  const s2 = Math.min(1, s * 2.2 + 0.12);
+  const l2 = Math.max(0.12, l - 0.13);
+  const c = (1 - Math.abs(2 * l2 - 1)) * s2;
+  const x = c * (1 - Math.abs((h % 2) - 1));
+  const [r1, g1, b1] = h < 1 ? [c, x, 0] : h < 2 ? [x, c, 0] : h < 3 ? [0, c, x] : h < 4 ? [0, x, c] : h < 5 ? [x, 0, c] : [c, 0, x];
+  const m = l2 - c / 2;
+  return '#' + [r1, g1, b1].map((v) => Math.round((v + m) * 255).toString(16).padStart(2, '0')).join('');
+}
+
+/** Power-transfer parts take their group's opacity, in the power-transfer shade of its color. */
+export function driveStyle(s: Style): Style {
+  return { ...s, color: driveShade(s.color) };
+}
+
+/**
+ * Index ranges of a group mesh for its two materials: structure (0), then the last `driveTris` triangles, the
+ * power-transfer parts (1). No power-transfer parts: no ranges, one material.
+ */
+export function meshParts(tris: number, driveTris: number | undefined): { start: number; count: number; material: number }[] {
+  const drive = driveTris ?? 0;
+  if (drive <= 0) return [];
+  const parts = [{ start: 0, count: (tris - drive) * 3, material: 0 }, { start: (tris - drive) * 3, count: drive * 3, material: 1 }];
+  return parts.filter((p) => p.count > 0);
+}
+
 export function canTag(device: { can_id?: string | null; chain_index?: number }): string {
   const id = (device.can_id ?? '').replace(/\s*\/\s*/g, '/');
   return id || String((device.chain_index ?? 0) + 1);

@@ -68,6 +68,14 @@ export function validateScene(x: unknown): Scene {
   for (const k of ['groups', 'devices', 'buses', 'layers']) arr(s[k], k);
   const sc = obj(s.systemcore, 'systemcore');
   arr(sc.anchor, 'systemcore.anchor');
+  (s.groups as unknown[]).forEach((g, i) => {
+    const group = obj(g, `groups[${i}]`);
+    const tris = obj(group.mesh, `groups[${i}].mesh`).tris;
+    const drive = group.drive_tris;
+    if (drive !== undefined && !(Number.isInteger(drive) && (drive as number) >= 0 && (drive as number) <= (tris as number))) {
+      fail(`groups[${i}].drive_tris`, `must be a whole number from 0 to the mesh's ${String(tris)} triangles`);
+    }
+  });
   (s.devices as unknown[]).forEach((d, i) => {
     const dev = obj(d, `devices[${i}]`);
     arr(dev.anchor, `devices[${i}].anchor`);

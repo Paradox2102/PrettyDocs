@@ -157,3 +157,37 @@ test('subsystem view: its groups solid, other groups faint, its devices in bus c
   assert.equal(L.subsystemStyle({ kind: 'motor', bus: 'can_s2', registryKey: 'swerve-fl-drive' }, focus, 0.06).opacity, 0);
   assert.equal(L.subsystemStyle({ kind: 'systemcore', registryKey: 'systemcore' }, focus, 0.06).opacity, 0);
 });
+
+test('power-transfer parts: the last drive_tris triangles of a group mesh take the second material', () => {
+  assert.deepEqual(L.meshParts(10, 4), [{ start: 0, count: 18, material: 0 }, { start: 18, count: 12, material: 1 }]);
+  assert.deepEqual(L.meshParts(4, 4), [{ start: 0, count: 12, material: 1 }]);
+  assert.deepEqual(L.meshParts(10, 0), []);
+  assert.deepEqual(L.meshParts(10, undefined), []);
+});
+
+test('power-transfer parts keep their group style, in a shade of the group color', () => {
+  const ghosted = L.styleFor({ kind: 'group', group: 'shooter' }, new Set(['can_s1']), 0.15);
+  assert.deepEqual(L.driveStyle(ghosted), { ...ghosted, color: L.driveShade(L.GROUP_COLORS.shooter) });
+  const focus = { groups: new Set(['shooter']), devices: new Set() };
+  assert.deepEqual(L.driveStyle(L.subsystemStyle({ kind: 'group', group: 'shooter' }, focus, 0.06)),
+    { color: L.driveShade(L.GROUP_COLORS.shooter), opacity: 1, transparent: false });
+});
+
+const hsl = (hex) => {
+  const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255);
+  const max = Math.max(r, g, b), min = Math.min(r, g, b), l = (max + min) / 2, d = max - min;
+  const s = d === 0 ? 0 : d / (1 - Math.abs(2 * l - 1));
+  const h = d === 0 ? 0 : max === r ? 60 * (((g - b) / d) % 6) : max === g ? 60 * ((b - r) / d + 2) : 60 * ((r - g) / d + 4);
+  return { h: (h + 360) % 360, s, l };
+};
+
+test('the power-transfer shade of each mechanism: same hue, darker, stronger, and still its own', () => {
+  const shades = Object.values(L.GROUP_COLORS).map((c) => {
+    const [a, b] = [hsl(c), hsl(L.driveShade(c))];
+    assert.ok(Math.abs(a.h - b.h) < 3, `${c} hue`);
+    assert.ok(b.l < a.l - 0.08, `${c} darker`);
+    assert.ok(b.s > a.s + 0.1, `${c} stronger`);
+    return L.driveShade(c);
+  });
+  assert.equal(new Set(shades).size, shades.length);
+});
