@@ -2,13 +2,15 @@ import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { useEffect, useEffectEvent, useLayoutEffect, useMemo } from 'react';
 import { Object3D, Vector3 } from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { CSS2DRenderer } from 'three/addons/renderers/CSS2DRenderer.js';
 import type { Scene, Vec3 } from '../content/types';
 import { frame } from '../logic/scene';
 import { CanLoops, LayerCables } from './Cables';
 import { cameraPosition, VIEWS, type ViewName } from './cameraViews';
 import { RobotModel, type DeviceEvent } from './RobotModel';
 import { useCssColor, useReducedMotion } from './theme-color';
-import { Label, LabelRenderer } from './Labels';
+import { drawFrame } from './frame';
+import { Label, LabelLayer } from './Labels';
 
 // The CAD and the robot code use +z up.
 Object3D.DEFAULT_UP.set(0, 0, 1);
@@ -43,6 +45,7 @@ export default function RobotCanvas({ scene, mode, selected = NO_SELECTION, ghos
   const showcase = mode === 'showcase';
   const reduced = useReducedMotion();
   const start = cameraPosition('iso', f.center, f.radius);
+  const labels = useMemo(() => (showcase ? null : new CSS2DRenderer()), [showcase]);
 
   return (
     <Canvas className={className} dpr={[1, 2]} gl={{ antialias: true, alpha: showcase }}
@@ -55,7 +58,7 @@ export default function RobotCanvas({ scene, mode, selected = NO_SELECTION, ghos
       <RobotModel scene={scene} selected={selected} ghost={ghost} interactive={!showcase} onHover={onHover} onPick={onPick} />
       {showcase ? null : (
         <>
-          <LabelRenderer />
+          {labels ? <LabelLayer renderer={labels} /> : null}
           <Floor center={f.center} />
           <FrontArrow x={f.foot[2] + 0.06} y={f.center[1]} />
           <CanLoops scene={scene} selected={selected} />
@@ -63,6 +66,7 @@ export default function RobotCanvas({ scene, mode, selected = NO_SELECTION, ghos
         </>
       )}
       <Controls target={f.center} enabled={!showcase} autoRotate={showcase && !reduced} />
+      <FrameLoop labels={labels} />
       <CameraRig view={view} nonce={viewNonce} focus={focus} center={f.center} radius={f.radius} />
     </Canvas>
   );
@@ -91,7 +95,16 @@ function Controls({ target, enabled, autoRotate }: { target: Vec3; enabled: bool
     controls.target.set(...target);
     controls.update();
   }, [controls, target]);
-  useFrame((_, delta) => controls.update(delta));
+  return null;
+}
+
+/**
+ * Owns the frame: priority 1 turns off R3F's own render, so the order is fixed (drawFrame: camera, scene, labels).
+ * Controls come from the canvas state, because the Controls component registers them there.
+ */
+function FrameLoop({ labels }: { labels: CSS2DRenderer | null }) {
+  useFrame((state, delta) => drawFrame({ scene: state.scene, camera: state.camera,
+    controls: state.controls as OrbitControls | null, gl: state.gl, labels }, delta), 1);
   return null;
 }
 

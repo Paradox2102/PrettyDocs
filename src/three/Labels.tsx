@@ -1,17 +1,17 @@
-import { useFrame, useThree } from '@react-three/fiber';
+import { useThree } from '@react-three/fiber';
 import { useEffect, useLayoutEffect, useMemo } from 'react';
-import { CSS2DObject, CSS2DRenderer } from 'three/addons/renderers/CSS2DRenderer.js';
+import { CSS2DObject, type CSS2DRenderer } from 'three/addons/renderers/CSS2DRenderer.js';
 import type { Vec3 } from '../content/types';
 import './Labels.css';
 
 /**
- * Draws every Label in the scene as plain DOM over the canvas (three's CSS2DRenderer). One renderer per canvas;
- * no React root per label, so 70 labels cost little and unmount cleanly.
+ * The DOM layer for every Label: three's CSS2DRenderer over the canvas. One renderer per canvas; no React root per
+ * label, so 70 labels cost little and unmount cleanly. The frame loop (FrameLoop in RobotCanvas) draws it after
+ * the scene, with the camera of the same frame.
  */
-export function LabelRenderer() {
+export function LabelLayer({ renderer }: { renderer: CSS2DRenderer }) {
   const gl = useThree((s) => s.gl);
   const size = useThree((s) => s.size);
-  const renderer = useMemo(() => new CSS2DRenderer(), []);
   useEffect(() => {
     const el = renderer.domElement;
     el.className = 'label-layer';
@@ -20,7 +20,6 @@ export function LabelRenderer() {
     return () => el.remove();
   }, [gl, renderer]);
   useEffect(() => renderer.setSize(size.width, size.height), [renderer, size.width, size.height]);
-  useFrame(({ scene, camera }) => renderer.render(scene, camera));
   return null;
 }
 
