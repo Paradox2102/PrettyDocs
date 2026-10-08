@@ -95,7 +95,6 @@ export function styleFor(item: StyleItem, selected: Set<string>, ghost: number):
   return { color: neutralColor(item), opacity: ghost, transparent: true };
 }
 
-/** The bubble on a CAN device: its CAN ID ("21/22" for an open pair). The wire order is in the hover label. */
 /**
  * The power-transfer shade of a mechanism color (user, 2026-10-08): the same hue, darker and stronger, so gears,
  * pulleys, belts, shafts, wheels and rollers stand out from the structure and still read as their mechanism's.
@@ -133,6 +132,7 @@ export function meshParts(tris: number, driveTris: number | undefined): { start:
   return parts.filter((p) => p.count > 0);
 }
 
+/** The bubble on a CAN device: its CAN ID ("21/22" for an open pair). The wire order is in the hover label. */
 export function canTag(device: { can_id?: string | null; chain_index?: number }): string {
   const id = (device.can_id ?? '').replace(/\s*\/\s*/g, '/');
   return id || String((device.chain_index ?? 0) + 1);

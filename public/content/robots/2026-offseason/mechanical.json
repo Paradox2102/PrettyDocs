@@ -70,7 +70,7 @@
     {
      "label": "Drive gears in the CAD",
      "value": "X1-10 parts: 10T pinion (WCP-1008), 54T/38T central gear (WCP-1713), 18T second stage gear (WCP-0432)",
-     "source": "CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json); part numbers from the WCP Swerve X2 kit contents and ratio kits",
+     "source": "Part names WCP-1008 (10T pinion), WCP-1713 Rev1 and WCP-0432 Rev1 in the Onshape export of Main Assembly microversion e5d5f77 (wiring/cad3d/raw/export.gltf); part numbers from the WCP Swerve X2 kit contents and ratio kits",
      "uncertain": "The team runs X2-12 (12T pinion, 16T second stage gear); the CAD swerve gears are likely out of date"
     },
     {
@@ -144,7 +144,7 @@
   {
    "id": "indexer",
    "name": "Indexer",
-   "summary": "Three Kraken X60 motors on can_s1: the roller drive (CAN 30) and the top and bottom belt tunnels (CAN 31 and 32).",
+   "summary": "Three Kraken X60 motors on can_s1: the roller drive (CAN 30) and two belt tunnels, top and bottom (CAN 31 and 32; which is which is not recorded).",
    "mechanisms": [
     "Indexer"
    ],
