@@ -16,6 +16,8 @@
   --font-body: "Barlow", "Helvetica Neue", Arial, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
   --radius: 8px;
+  /* The top bar's height; a full-height page subtracts it, and a sticky panel sits under it. */
+  --bar-h: 56px;
   color-scheme: light;
 }
 

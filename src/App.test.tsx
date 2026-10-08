@@ -85,3 +85,16 @@ test('a slow failed index shows its message after one fetch, with no refetch loo
   await new Promise((r) => setTimeout(r, 300));
   expect(slow404).toHaveBeenCalledTimes(1);
 });
+
+test('the page tabs are a top bar: the mark, then the tabs, then the robot selector and the theme', async () => {
+  // User, 2026-10-08: a side rail grows with every new page; a top bar keeps the pages in one row.
+  await renderRouted(<AppRoutes />, '/2026-offseason/wiring');
+  const tabs = await screen.findByRole('navigation', { name: 'Pages' });
+  const bar = tabs.closest('header') as HTMLElement;
+  const robot = screen.getByRole('combobox', { name: 'Robot' });
+  expect(bar).toContainElement(tabs);
+  expect(bar.firstElementChild).toHaveAccessibleName(/Team 2102 Paradox docs/);
+  expect(tabs.compareDocumentPosition(robot) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+  expect(robot.compareDocumentPosition(screen.getByRole('button', { name: /Color theme/ })) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+  expect(screen.getByRole('link', { name: 'Wiring' })).toHaveAttribute('aria-current', 'page');
+});

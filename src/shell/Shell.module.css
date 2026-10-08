@@ -1,63 +1,66 @@
-/* Wide screen: a 248 px rail beside the page. Under 900 px: the rail is a top bar and the nav is a bottom tab bar. */
-.shell { display: grid; grid-template-columns: 248px minmax(0, 1fr); min-height: 100dvh; }
+/* A top bar: the mark, the page tabs, then the data date, the robot and the theme. Under 900 px the tabs move to a
+   bottom tab bar. The bar is var(--bar-h) tall; full-height pages subtract it. */
+.shell { display: grid; grid-template-rows: auto 1fr; min-height: 100dvh; }
 
-.rail {
-  position: sticky; top: 0; height: 100dvh; display: flex; flex-direction: column; gap: 26px;
-  padding: 24px 18px 18px; background: var(--surface); border-right: 1px solid var(--line); overflow-y: auto;
+.bar {
+  position: sticky; top: 0; z-index: 20; display: flex; align-items: center; gap: clamp(16px, 2.5vw, 32px);
+  height: var(--bar-h); padding: 0 clamp(16px, 2.5vw, 28px); background: var(--surface); border-bottom: 1px solid var(--line);
 }
 
-.mark { display: flex; align-items: baseline; gap: 8px; text-decoration: none; padding-inline: 6px; }
+.mark { flex: none; display: flex; align-items: baseline; gap: 8px; text-decoration: none; }
 .markWord { font: 600 19px/1 var(--font-display); letter-spacing: 0.16em; }
 .markNum { font: 600 13px/1 var(--font-mono); color: var(--accent-ink); letter-spacing: 0.04em; }
 
-.select { display: grid; gap: 6px; padding-inline: 6px; }
-.selectLabel { font: 600 11px/1 var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.nav { display: flex; align-self: stretch; gap: 2px; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+.navLink {
+  display: flex; align-items: center; gap: 8px; padding: 0 12px; white-space: nowrap;
+  color: var(--muted); text-decoration: none; font-weight: 500;
+}
+.navLink:hover { color: var(--ink); box-shadow: inset 0 -2px 0 var(--line); }
+.navLink:focus-visible { outline-offset: -3px; }
+.active, .active:hover { color: var(--ink); font-weight: 600; box-shadow: inset 0 -3px 0 var(--accent); }
+
+.tools { flex: none; margin-left: auto; display: flex; align-items: center; gap: 12px; }
+
+.select { display: block; }
+.selectLabel { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
 .select select {
-  appearance: none; width: 100%; padding: 9px 34px 9px 12px; border: 1px solid var(--line); border-radius: 6px;
+  appearance: none; padding: 7px 34px 7px 12px; border: 1px solid var(--line); border-radius: 6px;
   background: var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%235b6578' stroke-width='1.6'/%3E%3C/svg%3E") no-repeat right 12px center;
   font-weight: 600; cursor: pointer;
 }
 
-.nav { display: flex; flex-direction: column; gap: 2px; }
-.navLink {
-  display: flex; align-items: center; gap: 12px; padding: 9px 12px; border-radius: 6px;
-  color: var(--muted); text-decoration: none; font-weight: 500;
-}
-.navLink:hover { color: var(--ink); background: var(--bg); }
-.active { color: var(--ink); background: var(--bg); box-shadow: inset 3px 0 0 var(--accent); font-weight: 600; }
-
-.foot { margin-top: auto; display: grid; gap: 10px; padding-inline: 6px; }
 .theme {
-  display: inline-flex; align-items: center; gap: 8px; justify-self: start; padding: 6px 10px;
+  display: inline-flex; align-items: center; gap: 8px; padding: 7px 10px;
   border: 1px solid var(--line); border-radius: 6px; background: transparent; color: var(--muted); cursor: pointer;
   font-size: 14px;
 }
 .theme:hover { color: var(--ink); border-color: var(--muted); }
-.built { margin: 0; font: 12px/1.4 var(--font-mono); color: var(--muted); }
+.built { margin: 0; font: 12px/1.4 var(--font-mono); color: var(--muted); white-space: nowrap; }
 
 .main { min-width: 0; }
 
-@media (max-width: 899px) {
-  .shell { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto 1fr; }
-  .rail {
-    position: sticky; z-index: 20; height: auto; flex-direction: row; align-items: center; gap: 12px;
-    padding: 10px 16px; padding-top: max(10px, env(safe-area-inset-top)); border-right: 0;
-    border-bottom: 1px solid var(--line); overflow: visible;
-  }
-  .mark { padding-inline: 0; }
-  .markWord { font-size: 16px; letter-spacing: 0.12em; }
-  .select { margin-left: auto; padding-inline: 0; min-width: 0; }
-  .selectLabel { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
-  .select select { padding-block: 7px; max-width: 46vw; }
-  .foot { margin: 0; padding: 0; }
+@media (max-width: 1279px) {
   .built { display: none; }
+}
+@media (max-width: 1099px) {
   .themeText { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
   .theme { padding: 8px; }
+  .navLink { padding: 0 9px; }
+}
+
+@media (max-width: 899px) {
+  .bar { gap: 12px; padding: env(safe-area-inset-top) 16px 0; height: calc(var(--bar-h) + env(safe-area-inset-top)); }
+  .markWord { font-size: 16px; letter-spacing: 0.12em; }
+  .tools { min-width: 0; flex: 0 1 auto; }
+  .select { min-width: 0; }
+  .select select { max-width: 46vw; }
   .nav {
-    position: fixed; z-index: 20; inset: auto 0 0 0; flex-direction: row; gap: 0;
+    position: fixed; z-index: 20; inset: auto 0 0 0; align-self: auto; gap: 0; overflow: visible;
     padding: 4px 4px max(4px, env(safe-area-inset-bottom)); background: var(--surface); border-top: 1px solid var(--line);
   }
-  .navLink { flex: 1 1 0; flex-direction: column; gap: 2px; padding: 6px 4px; font-size: 12px; }
-  .active { box-shadow: inset 0 2px 0 var(--accent); background: transparent; }
+  .navLink { flex: 1 1 0; flex-direction: column; justify-content: center; gap: 2px; padding: 6px 4px; font-size: 12px; }
+  .navLink:hover { box-shadow: none; }
+  .active, .active:hover { box-shadow: inset 0 2px 0 var(--accent); }
   .main { padding-bottom: calc(64px + env(safe-area-inset-bottom)); }
 }

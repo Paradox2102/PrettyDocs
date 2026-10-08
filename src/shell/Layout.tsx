@@ -10,19 +10,18 @@ import { useRobot } from './robot-context';
 import { ThemeButton } from './ThemeButton';
 import styles from './Shell.module.css';
 
-/** The app shell: a side rail on a wide screen; a top bar and a bottom tab bar on a phone. */
+/** The app shell: a top bar with the page tabs; on a phone the tabs move to a bottom tab bar. */
 export function Layout() {
   const robot = useRobot();
   const { pathname } = useLocation();
   const pages: PageKind[] = ['overview', ...robot.docs];
   return (
     <div className={styles.shell}>
-      <header className={styles.rail}>
+      <header className={styles.bar}>
         <Link to="/" className={styles.mark} aria-label="Team 2102 Paradox docs, latest robot">
           <span className={styles.markWord}>PARADOX</span>
           <span className={styles.markNum}>2102</span>
         </Link>
-        <RobotSelect />
         <nav className={styles.nav} aria-label="Pages">
           {pages.map((p) => (
             <NavLink key={p} to={pagePath(robot.id, p)} end={p === 'overview'}
@@ -32,9 +31,10 @@ export function Layout() {
             </NavLink>
           ))}
         </nav>
-        <div className={styles.foot}>
-          <ThemeButton />
+        <div className={styles.tools}>
           <p className={styles.built}>Data built {formatBuilt(robot.built)}</p>
+          <RobotSelect />
+          <ThemeButton />
         </div>
       </header>
       <main className={styles.main} id="main">
