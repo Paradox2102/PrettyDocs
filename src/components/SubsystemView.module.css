@@ -1,0 +1,8 @@
+.view {
+  position: relative; margin: 0; height: 100%; min-height: 360px; border: 1px solid var(--line); border-radius: 12px;
+  overflow: hidden; background: var(--surface);
+}
+.canvas { position: absolute !important; inset: 0; }
+.note { position: absolute; inset: 0; display: grid; place-items: center; padding: 24px; color: var(--muted); text-align: center; }
+.note p { margin: 0; }
+.hint { position: absolute; left: 12px; bottom: 10px; font-size: 12px; color: var(--muted); pointer-events: none; }

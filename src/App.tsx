@@ -4,6 +4,7 @@ import { ErrorBoundary } from './components/ErrorBoundary';
 import { Loading } from './components/Loading';
 import { forget, INDEX_URL } from './content/load';
 import Devices from './pages/Devices';
+import Mechanical from './pages/Mechanical';
 import Overview from './pages/Overview';
 import Wiring from './pages/Wiring';
 import { DocGate, LatestRedirect, RobotRoute } from './shell/RobotRoute';
@@ -22,6 +23,7 @@ export function AppRoutes() {
             <Route path="wiring" element={<DocGate doc="wiring"><Wiring /></DocGate>} />
             <Route path="3d" element={<DocGate doc="3d"><Viewer3D /></DocGate>} />
             <Route path="devices" element={<DocGate doc="devices"><Devices /></DocGate>} />
+            <Route path="mechanical" element={<DocGate doc="mechanical"><Mechanical /></DocGate>} />
             <Route path="*" element={<NotFound kind="page" />} />
           </Route>
         </Routes>

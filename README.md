@@ -29,7 +29,18 @@ The content in `public/content/` is generated. Do not edit it by hand.
    Options: `--robot <id>` (lowercase, digits and dashes), `--name`, `--season`, `--summary`, and `--no-latest` to add an older robot without making it the default.
 3. Run `npm run check`, then commit `public/content` and push to `main`.
 
-Each robot has a folder `public/content/robots/<id>/` with `wiring.json`, `poster.svg`, `top-view.svg` and `scene.json`. `public/content/robots.json` lists the robots in selector order and names the latest one.
+Each robot has a folder `public/content/robots/<id>/` with `wiring.json`, `poster.svg`, `top-view.svg` and `scene.json`.
+
+### Mechanical page
+
+`public/content/robots/<id>/mechanical.json` is kept by hand (the export does not write it). Each subsystem lists:
+
+- `mechanisms`: registry `mechanism` values; the page's devices table comes from `wiring.json` by these.
+- `groups`: `scene.json` group ids shown solid in the 3D view.
+- `facts`: each with a `source` (where the value comes from); add `uncertain` with the reason when a value is not sure.
+- `notes`: service steps, one sentence each.
+
+Change `updated` when you edit it, and add `"mechanical"` to the robot's `docs` in `robots.json`. `npm run check` fails if a mechanism or group name does not exist in the export. `public/content/robots.json` lists the robots in selector order and names the latest one.
 
 ## Deploy
 
