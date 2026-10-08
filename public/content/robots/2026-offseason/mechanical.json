@@ -13,34 +13,65 @@
    ],
    "facts": [
     {
-     "label": "Drive gear ratio",
+     "label": "Module",
+     "value": "WCP Swerve X2i",
+     "source": "Team (user, 2026-10-08)"
+    },
+    {
+     "label": "Drive ratio set",
+     "value": "X2-12 (X2 Ratio Set, 12T pinion)",
+     "source": "Team (user, 2026-10-08)"
+    },
+    {
+     "label": "Drive gears",
+     "value": "12T pinion · 54T/38T central gear · 16T second stage gear",
+     "source": "WCP Swerve X2 ratio table, X2 Ratio Set, 12T pinion column (docs.wcproducts.com, WCP Swerve X2 Ratio Options)"
+    },
+    {
+     "label": "Overall drive ratio",
+     "value": "5.68:1 (free speed 18.42 ft/s with a Kraken X60)",
+     "source": "WCP Swerve X2 ratio table, X2 Ratio Set, 12T pinion column (docs.wcproducts.com, WCP Swerve X2 Ratio Options)"
+    },
+    {
+     "label": "Steering ratio",
+     "value": "12.1:1 (10T pinion, the same for every ratio set)",
+     "source": "WCP Swerve X2 Ratio Options: rotation ratio 12.1:1 with the 10T pinions (docs.wcproducts.com)"
+    },
+    {
+     "label": "Drive gear ratio in the robot code",
      "value": "7.36:1",
-     "source": "TunerConstants.kDriveGearRatio = 7.3636 (robot code main f1fdf68)"
+     "source": "TunerConstants.kDriveGearRatio = 7.3636 (robot code main f1fdf68)",
+     "uncertain": "X2-12 is 5.68:1. Odometry and the top speed use this value; check the module and the code"
     },
     {
-     "label": "Steer gear ratio",
+     "label": "Steer gear ratio in the robot code",
      "value": "5.68:1",
-     "source": "TunerConstants.kSteerGearRatio = 5.68 (robot code main f1fdf68)"
+     "source": "TunerConstants.kSteerGearRatio = 5.68 (robot code main f1fdf68)",
+     "uncertain": "WCP gives 12.1:1 for the X2 steering; 5.68:1 is the X2-12 drive ratio"
     },
     {
-     "label": "Coupling ratio",
+     "label": "Coupling ratio in the robot code",
      "value": "3.82",
-     "source": "TunerConstants.kCoupleRatio = 3.8182 (robot code main f1fdf68)"
+     "source": "TunerConstants.kCoupleRatio = 3.8182 (robot code main f1fdf68)",
+     "uncertain": "The robot code's swerve ratios do not match X2-12; check this value with them"
     },
     {
      "label": "Wheel diameter",
      "value": "4.33 in",
-     "source": "TunerConstants.kWheelRadius = 2.167 in (robot code main f1fdf68)"
+     "source": "TunerConstants.kWheelRadius = 2.167 in (robot code main f1fdf68)",
+     "uncertain": "The X2 wheel is 4 in OD (WCP); the code value can be a measured one"
     },
     {
      "label": "Top speed at 12 V",
      "value": "4.54 m/s",
-     "source": "TunerConstants.kSpeedAt12Volts = 4.54 m/s (robot code main f1fdf68)"
+     "source": "TunerConstants.kSpeedAt12Volts = 4.54 m/s (robot code main f1fdf68)",
+     "uncertain": "Set with the code's 7.36:1 drive ratio; X2-12 free speed is 18.42 ft/s (5.61 m/s)"
     },
     {
-     "label": "Motor pinions",
-     "value": "10T steel spur gear (20 DP, WCP-1008) on all eight motors",
-     "source": "CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)"
+     "label": "Drive gears in the CAD",
+     "value": "X1-10 parts: 10T pinion (WCP-1008), 54T/38T central gear (WCP-1713), 18T second stage gear (WCP-0432)",
+     "source": "CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json); part numbers from the WCP Swerve X2 kit contents and ratio kits",
+     "uncertain": "The team runs X2-12 (12T pinion, 16T second stage gear); the CAD swerve gears are likely out of date"
     },
     {
      "label": "Drive supply current limit",
@@ -106,6 +137,64 @@
      "label": "Roller speed, outtake",
      "value": "30 rps (reverse)",
      "source": "IntakeConstants.k_outRPS = -30 (robot code main f1fdf68)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "indexer",
+   "name": "Indexer",
+   "summary": "Three Kraken X60 motors on can_s1: the roller drive (CAN 30) and the top and bottom belt tunnels (CAN 31 and 32).",
+   "mechanisms": [
+    "Indexer"
+   ],
+   "groups": [
+    "indexer"
+   ],
+   "facts": [
+    {
+     "label": "Roller drive reduction",
+     "value": "2.42:1 to the 58T shaft",
+     "source": "24T spur gear on the motor (CAN 30) to 58T spur gears (20 DP; two 58T gears in mesh). CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)"
+    },
+    {
+     "label": "Roller outputs",
+     "value": "2.42:1 and 3.41:1",
+     "source": "From the 58T shaft: a 24T pulley to a 24T roller pulley (1:1, 2.42:1 overall), and a 17T pulley to 24T roller pulleys (3.41:1 overall), the next roller linked 1:1 by belt. CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)"
+    },
+    {
+     "label": "Belt tunnel drive",
+     "value": "24T pulley on each motor, then not known",
+     "source": "Bottom tunnel: 24T to 24T pulleys (1:1) to the shaft of the printed pulley G3031. Top tunnel: a 1.22 in wide 24T pulley (G3220) on the motor. CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)",
+     "uncertain": "G3031 (\"Weird Pulley\") and the parts after the top tunnel's pulley have no tooth counts in their names"
+    },
+    {
+     "label": "Belt tunnel motors",
+     "value": "CAN 31 leads, CAN 32 follows (opposed)",
+     "source": "IndexerConveyorSubsystem: Follower(indexerConveyorLeader, MotorAlignmentValue.Opposed); CANIDConstants.indexerConveyorLeader = 31, indexerConveyorFollower = 32 (robot code main f1fdf68)",
+     "uncertain": "Which tunnel has CAN 31 is not recorded (device registry: 31 / 32)"
+    },
+    {
+     "label": "Roller speed",
+     "value": "50 rps in; -40 rps to clear a jam",
+     "source": "IndexerConstants.k_rollerInRPS = 50, k_rollerOutRPS = -40; IndexerRollerSubsystem.isJammed (robot code main f1fdf68)",
+     "uncertain": "run(false) also asks for +50 rps: both sides of its in/out choice use k_rollerInRPS"
+    },
+    {
+     "label": "Belt tunnel speed",
+     "value": "20 rps in, 40 rps out (reverse)",
+     "source": "IndexerConstants.k_conveyorInRPS = 20, k_conveyorOutRPS = -40 (robot code main f1fdf68)"
+    },
+    {
+     "label": "Roller supply current limit",
+     "value": "25 A",
+     "source": "IndexerConstants.k_rollerSupplyLimit = 25 (robot code main f1fdf68)"
+    },
+    {
+     "label": "Belt tunnel supply current limit",
+     "value": "none applied (18 A defined)",
+     "source": "IndexerConstants.k_conveyorSupplyLimit = 18, k_conveyorLimitConfig (robot code main f1fdf68)",
+     "uncertain": "The static block applies k_rollerLimitConfig to the roller config twice and never applies k_conveyorLimitConfig"
     }
    ],
    "notes": []
