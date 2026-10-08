@@ -84,7 +84,7 @@ Tokens (CSS custom properties on `:root`, dark values under `prefers-color-schem
 | `--ink` | `#14213d` | `#e6ebf3` | text |
 | `--muted` | `#5b6578` | `#93a0b5` | secondary text |
 | `--line` | `#d8dee8` | `#243049` | borders |
-| `--accent` | `#c8960c` | `#f0b429` | gold: active nav, focus ring, key numbers |
+| `--accent` | `#a67c00` | `#f0b429` | gold: active nav, focus ring, key numbers |
 | `--power` | `#cf222e` | `#ff6b6b` | power layer only |
 | `--warn-bg` / `--warn-fg` | `#fff4dc` / `#6b4a00` | `#3a2e12` / `#f3d58c` | open items, warnings |
 

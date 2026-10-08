@@ -1,0 +1,9 @@
+.wrap { display: grid; place-items: center; min-height: 40vh; }
+.bar {
+  width: 120px; height: 3px; border-radius: 2px; overflow: hidden; position: relative; background: var(--line);
+}
+.bar::after {
+  content: ""; position: absolute; inset: 0; width: 40%; background: var(--accent);
+  animation: slide 1.1s ease-in-out infinite;
+}
+@keyframes slide { from { transform: translateX(-100%); } to { transform: translateX(250%); } }

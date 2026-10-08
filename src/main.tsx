@@ -9,6 +9,9 @@ import '@fontsource/jetbrains-mono/latin-600.css';
 import './styles/tokens.css';
 import './styles/base.css';
 import App from './App';
+import { applyTheme, readTheme } from './theme';
+
+applyTheme(readTheme());
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

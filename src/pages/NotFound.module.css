@@ -1,0 +1,9 @@
+.wrap { max-width: 560px; margin: 0 auto; padding: 72px 16px; }
+.code { margin: 0 0 8px; font: 600 13px/1 var(--font-mono); letter-spacing: 0.12em; color: var(--accent); }
+.wrap h1 { font-size: 40px; }
+.lead { color: var(--muted); margin: 12px 0 20px; }
+.list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.list li { display: flex; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.list a { font-weight: 600; text-decoration: none; }
+.list a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.season { color: var(--muted); font: 13px/1.6 var(--font-mono); }
