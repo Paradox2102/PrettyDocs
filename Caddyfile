@@ -23,7 +23,16 @@
 	@app not path /assets/* /content/*
 	header @app Cache-Control "no-cache"
 
-	# Single-page app: unknown paths get index.html. A missing asset or content file stays a 404.
-	try_files @app {path} /index.html
-	file_server
+	# Build files and content are served as they are: a missing file is a 404.
+	handle /assets/* {
+		file_server
+	}
+	handle /content/* {
+		file_server
+	}
+	# Single-page app: any other path that is not a file gets index.html.
+	handle {
+		try_files {path} /index.html
+		file_server
+	}
 }
