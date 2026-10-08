@@ -91,3 +91,58 @@ export interface SceneDevice {
   mesh: MeshData;
   layers?: string[];
 }
+
+export type DocKind = 'wiring' | '3d' | 'devices';
+export const DOC_KINDS: DocKind[] = ['wiring', '3d', 'devices'];
+
+export interface RobotEntry {
+  id: string;
+  name: string;
+  season: string;
+  summary: string;
+  built: string;
+  docs: DocKind[];
+}
+
+export interface RobotIndex {
+  latest: string;
+  robots: RobotEntry[];
+}
+
+export interface WiringData {
+  built: string;
+  view: [number, number, number, number];
+  devices: Record<string, Device>;
+}
+
+export interface SceneGroup {
+  id: string;
+  label: string;
+  box: number[];
+  mesh: MeshData;
+}
+
+export interface SceneBus {
+  bus: string;
+  function: string;
+  chain: string[];
+  warning: string | null;
+}
+
+export interface SceneLayer {
+  id: string;
+  label: string;
+  function: string;
+  members: string[];
+  cables?: { from: string; to: string; assumed?: boolean; main?: boolean; unknown?: boolean; usb?: boolean }[];
+  tags?: { device: string; text: string; style?: string }[];
+}
+
+export interface Scene {
+  meta: { document: string; microversion: string; cell_mm: number; built: string; triangles: number };
+  groups: SceneGroup[];
+  devices: SceneDevice[];
+  systemcore: SceneDevice;
+  buses: SceneBus[];
+  layers: SceneLayer[];
+}
