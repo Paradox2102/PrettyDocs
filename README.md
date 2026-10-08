@@ -36,7 +36,7 @@ Each robot has a folder `public/content/robots/<id>/` with `wiring.json`, `poste
 Railway builds the `Dockerfile` on every push to `main`: Node 24 runs `npm run check` and `npm run build`, then Caddy serves `dist/`. A failed check stops the deploy, and the old version stays live.
 
 - `Caddyfile`: single-page fallback, compression, cache headers (`/assets` one year, `/content` five minutes, pages no-cache) and security headers.
-- `railway.json`: Dockerfile builder, health check on `/`.
+- `.railway/railway.ts`: Railway service settings as code (Dockerfile builder, health check on `/`, restart on failure, source `main`, the `docs.team2102.org` domain). Railway does not read it on deploy. After an edit, run `railway config plan`, check that the plan destroys nothing, then run `railway config apply`. `npm run check` typechecks it.
 - `scripts/check-headers.sh <url>`: checks a running server (fallback, caching, compression, headers).
 
 ### Domain
