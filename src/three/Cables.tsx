@@ -2,7 +2,7 @@ import { useEffect, useMemo } from 'react';
 import { CurvePath, LineCurve3, TubeGeometry, Vector3 } from 'three';
 import type { Scene, SceneBus, SceneDevice, SceneLayer, Vec3 } from '../content/types';
 import { Label } from './Labels';
-import { AMBER, BUS_COLORS, cableLabel, cablePoints, LAYER_COLORS, layerCables, USB_COLOR } from '../logic/viewer';
+import { AMBER, BUS_COLORS, cableLabel, canTag, cablePoints, LAYER_COLORS, layerCables, USB_COLOR } from '../logic/viewer';
 
 /** Metres above the anchor, so a layer tag does not cover a chain number. */
 const TAG_LIFT: Record<string, number> = { power: 0.03, network: 0.055 };
@@ -11,7 +11,7 @@ function useDevicesByKey(scene: Scene) {
   return useMemo(() => Object.fromEntries(scene.devices.map((d) => [d.key ?? '', d])) as Record<string, SceneDevice>, [scene]);
 }
 
-/** Every CAN loop: a tube from the SystemCore through the chain, and the chain number at each device. */
+/** Every CAN loop: a tube from the SystemCore through the chain, and the CAN ID at each device (canTag). */
 export function CanLoops({ scene, selected }: { scene: Scene; selected: Set<string> }) {
   const byKey = useDevicesByKey(scene);
   return (
@@ -37,7 +37,7 @@ function BusLoop({ bus, byKey, start }: { bus: SceneBus; byKey: Record<string, S
     <group>
       {tube ? <mesh geometry={tube} renderOrder={3}><meshBasicMaterial color={color} /></mesh> : null}
       {chain.map((k) => (
-        <Label key={k} at={byKey[k].anchor} color={color} text={String((byKey[k].chain_index ?? 0) + 1)} />
+        <Label key={k} at={byKey[k].anchor} color={color} text={canTag(byKey[k])} />
       ))}
     </group>
   );

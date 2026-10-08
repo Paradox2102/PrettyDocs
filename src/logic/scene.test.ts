@@ -1,6 +1,6 @@
 import { expect, test } from 'vitest';
 import { SCENE } from '../test/fixtures';
-import { focusFor, frame, sceneByRegistryKey, toggleList } from './scene';
+import { focusFor, frame, sceneByRegistryKey, tipLines, toggleList } from './scene';
 
 test('sceneByRegistryKey finds devices and the SystemCore', () => {
   const m = sceneByRegistryKey(SCENE);
@@ -37,4 +37,10 @@ test('frame centres on the swerve footprint', () => {
   expect(f.center[1]).toBeCloseTo(0);
   expect(f.center[2]).toBe(0.25);
   expect(f.radius).toBeCloseTo(0.95 * 0.8);
+});
+
+test('tipLines adds the wire order from the bus length', () => {
+  const motor = SCENE.devices[0];
+  expect(tipLines(SCENE, motor)).toContain('Wire order: 1 of 1 on can_s2');
+  expect(tipLines(SCENE, SCENE.devices[1]).some((l) => l.startsWith('Wire order'))).toBe(false);
 });

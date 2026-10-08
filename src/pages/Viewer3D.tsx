@@ -4,8 +4,7 @@ import { DevicePanel } from '../components/DevicePanel';
 import { Loading } from '../components/Loading';
 import { useScene, useWiring } from '../content/hooks';
 import type { SceneDevice, Vec3 } from '../content/types';
-import { focusFor, toggleList } from '../logic/scene';
-import { labelLines } from '../logic/viewer';
+import { focusFor, tipLines, toggleList } from '../logic/scene';
 import { pagePath, pageTitle } from '../shell/paths';
 import { useRobot } from '../shell/robot-context';
 import { useUrlState } from '../shell/url-state';
@@ -69,7 +68,7 @@ function ViewerPage() {
       setTip(null);
       return;
     }
-    setTip({ lines: labelLines(d), x: x - rect.left, y: y - rect.top });
+    setTip({ lines: tipLines(scene, d), x: x - rect.left, y: y - rect.top });
   }
 
   function pick(d: SceneDevice | null, x: number, y: number) {

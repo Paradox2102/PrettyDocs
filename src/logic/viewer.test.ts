@@ -124,3 +124,22 @@ test('the page loads no third-party font, script or stylesheet', async () => {
   const html = readFileSync(`${process.cwd()}/index.html`, 'utf8');
   assert.doesNotMatch(html, /<(link|script)[^>]+(href|src)="https?:\/\//);
 });
+
+test('bubble shows the CAN ID, not the wire order', () => {
+  // User, 2026-10-08: FL drive is 12th on can_s2 but CAN ID 1; the bubble must say 1.
+  assert.equal(L.canTag({ can_id: '1', chain_index: 11 }), '1');
+  assert.equal(L.canTag({ can_id: '21 / 22', chain_index: 0 }), '21/22');
+  assert.equal(L.canTag({ can_id: '41?', chain_index: 4 }), '41?');
+});
+
+test('hover label keeps the wire order', () => {
+  const fl = { can_id: '1', bus: 'can_s2', role: 'FL drive', mechanism: 'Swerve FL drive', motor: 'Kraken X60',
+               status: 'confirmed', chain_index: 11 };
+  const lines = L.labelLines(fl, 13);
+  assert.equal(lines[lines.indexOf('Status: confirmed') - 1], 'Wire order: 12 of 13 on can_s2');
+  assert.ok(!L.labelLines(fl).some((l) => l.startsWith('Wire order')));
+});
+
+test('a device with no CAN ID falls back to its wire order in the bubble', () => {
+  assert.equal(L.canTag({ can_id: null, chain_index: 2 }), '3');
+});

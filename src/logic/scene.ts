@@ -1,6 +1,6 @@
 // Scene rules that need no WebGL: the registry-to-scene key map, the device focus, the toggle list and the frame.
 import type { Scene, SceneDevice, Vec3 } from '../content/types';
-import { BUS_COLORS, LAYER_COLORS } from './viewer';
+import { BUS_COLORS, LAYER_COLORS, labelLines } from './viewer';
 
 export interface Toggle {
   id: string;
@@ -51,4 +51,10 @@ export function frame(scene: Scene): { center: Vec3; radius: number; foot: [numb
     radius: Math.max(x1 - x0, y1 - y0) * 0.95,
     foot: [x0, y0, x1, y1],
   };
+}
+
+/** The hover label for a scene device, with its wire order when it is on a CAN bus. */
+export function tipLines(scene: Scene, device: SceneDevice): string[] {
+  const bus = device.bus ? scene.buses.find((b) => b.bus === device.bus) : undefined;
+  return labelLines(device, bus?.chain.length);
 }

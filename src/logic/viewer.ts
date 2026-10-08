@@ -92,10 +92,17 @@ export function styleFor(item: StyleItem, selected: Set<string>, ghost: number):
   return { color: neutralColor(item), opacity: ghost, transparent: true };
 }
 
-type LabelDevice = Pick<SceneDevice, 'bus' | 'role' | 'mechanism' | 'device_type' | 'status'> &
-  Partial<Pick<SceneDevice, 'can_id' | 'motor' | 'pdh' | 'ip' | 'comment'>>;
+/** The bubble on a CAN device: its CAN ID ("21/22" for an open pair). The wire order is in the hover label. */
+export function canTag(device: { can_id?: string | null; chain_index?: number }): string {
+  const id = (device.can_id ?? '').replace(/\s*\/\s*/g, '/');
+  return id || String((device.chain_index ?? 0) + 1);
+}
 
-export function labelLines(device: LabelDevice): string[] {
+type LabelDevice = Pick<SceneDevice, 'bus' | 'role' | 'mechanism' | 'device_type' | 'status'> &
+  Partial<Pick<SceneDevice, 'can_id' | 'motor' | 'pdh' | 'ip' | 'comment' | 'chain_index'>>;
+
+/** The hover label. `chainLength` (the device count on its bus) adds the wire order line. */
+export function labelLines(device: LabelDevice, chainLength?: number): string[] {
   if (!device.bus) {
     const lines = [device.role, `${device.mechanism} · ${device.device_type}`];
     if (device.pdh) lines.push(`PDH ${device.pdh}`);
@@ -108,6 +115,8 @@ export function labelLines(device: LabelDevice): string[] {
     device.role,
     `${device.mechanism} · ${device.motor || device.device_type}`,
     ...(device.pdh ? [`PDH ${device.pdh}`] : []),
+    ...(chainLength && device.chain_index != null
+      ? [`Wire order: ${device.chain_index + 1} of ${chainLength} on ${device.bus}`] : []),
     `Status: ${device.status}`,
   ];
   if (device.comment) lines.push(`CAD comment: ${device.comment}`);
