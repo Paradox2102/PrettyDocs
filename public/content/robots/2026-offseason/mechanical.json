@@ -1,0 +1,148 @@
+{
+ "updated": "2026-10-08",
+ "subsystems": [
+  {
+   "id": "swerve",
+   "name": "Swerve",
+   "summary": "Four swerve modules, each with a Kraken X60 drive motor, a Kraken X60 steer motor and a WCP ThroughBore encoder (CANcoder inside), on can_s2 with the Pigeon 2 gyro.",
+   "mechanisms": [
+    "Swerve"
+   ],
+   "groups": [
+    "swerve"
+   ],
+   "facts": [
+    {
+     "label": "Drive gear ratio",
+     "value": "7.36:1",
+     "source": "TunerConstants.kDriveGearRatio = 7.3636 (robot code main f1fdf68)"
+    },
+    {
+     "label": "Steer gear ratio",
+     "value": "5.68:1",
+     "source": "TunerConstants.kSteerGearRatio = 5.68 (robot code main f1fdf68)"
+    },
+    {
+     "label": "Coupling ratio",
+     "value": "3.82",
+     "source": "TunerConstants.kCoupleRatio = 3.8182 (robot code main f1fdf68)"
+    },
+    {
+     "label": "Wheel diameter",
+     "value": "4.33 in",
+     "source": "TunerConstants.kWheelRadius = 2.167 in (robot code main f1fdf68)"
+    },
+    {
+     "label": "Top speed at 12 V",
+     "value": "4.54 m/s",
+     "source": "TunerConstants.kSpeedAt12Volts = 4.54 m/s (robot code main f1fdf68)"
+    },
+    {
+     "label": "Drive supply current limit",
+     "value": "60 A",
+     "source": "TunerConstants driveInitialConfigs, SupplyCurrentLimit 60 A (robot code main f1fdf68)"
+    },
+    {
+     "label": "Steer stator current limit",
+     "value": "60 A",
+     "source": "TunerConstants steerInitialConfigs, StatorCurrentLimit 60 A (robot code main f1fdf68)"
+    },
+    {
+     "label": "Slip current",
+     "value": "120 A",
+     "source": "TunerConstants.kSlipCurrent = 120 A (robot code main f1fdf68)"
+    },
+    {
+     "label": "Encoders",
+     "value": "WCP ThroughBore, CANcoder inside",
+     "source": "device registry (wiring/devices.json)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "intake",
+   "name": "Intake",
+   "summary": "A roller driven by one Kraken X60 (CAN 20) on a rack that two Kraken X44 motors extend, all on can_s4.",
+   "mechanisms": [
+    "Intake"
+   ],
+   "groups": [
+    "intake"
+   ],
+   "facts": [
+    {
+     "label": "Roller supply current limit",
+     "value": "25 A",
+     "source": "IntakeConstants.k_rollerSupplyLimit = 25 (robot code main f1fdf68)"
+    },
+    {
+     "label": "Extension supply current limit",
+     "value": "30 A",
+     "source": "IntakeConstants.k_extensionSupplyLimit = 30 (robot code main f1fdf68)"
+    },
+    {
+     "label": "Roller speed, intake",
+     "value": "40 rps",
+     "source": "IntakeConstants.k_inRPS = 40 (robot code main f1fdf68)"
+    },
+    {
+     "label": "Roller speed, outtake",
+     "value": "30 rps (reverse)",
+     "source": "IntakeConstants.k_outRPS = -30 (robot code main f1fdf68)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "shooter",
+   "name": "Shooter",
+   "summary": "Two Kraken X60 flywheels on a turret with a hood, fed by the vertical roller and the scotty (sushi) rollers, all on can_s3.",
+   "mechanisms": [
+    "Shooter"
+   ],
+   "groups": [
+    "shooter"
+   ],
+   "facts": [
+    {
+     "label": "Flywheel supply current limit",
+     "value": "37 A",
+     "source": "ShooterConstants.k_shooterSupplyLimit = 37 (robot code main f1fdf68)"
+    },
+    {
+     "label": "Turret aim supply current limit",
+     "value": "29 A",
+     "source": "ShooterConstants.k_aimingSupplyLimit = 29 (robot code main f1fdf68)"
+    },
+    {
+     "label": "Hood supply current limit",
+     "value": "26 A",
+     "source": "ShooterConstants.k_hoodSupplyLimit = 26 (robot code main f1fdf68)"
+    },
+    {
+     "label": "Kicker supply current limit",
+     "value": "23 A",
+     "source": "ShooterConstants.k_kickerSupplyLimit = 23 (robot code main f1fdf68)"
+    },
+    {
+     "label": "Secondary kicker supply current limit",
+     "value": "23 A",
+     "source": "ShooterConstants.k_secondaryKickerSupplyLimit = 23 (robot code main f1fdf68)"
+    },
+    {
+     "label": "Hood max angle",
+     "value": "90°",
+     "source": "ShooterConstants.k_hoodMaxAngle = 90 (robot code main f1fdf68)"
+    },
+    {
+     "label": "Gear reduction",
+     "value": "67.86:1",
+     "source": "ShooterConstants.k_shooterGearReduction = 67.86 (robot code main f1fdf68)",
+     "uncertain": "The code does not say which mechanism this reduction belongs to"
+    }
+   ],
+   "notes": []
+  }
+ ]
+}

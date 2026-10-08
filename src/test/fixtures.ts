@@ -3,12 +3,14 @@ import type { Device, RobotIndex, WiringData } from '../content/types';
 
 export function robotEntry(id: string, extra: Partial<RobotIndex['robots'][number]> = {}) {
   return { id, name: id === '2026-offseason' ? '2026 Offseason' : id.toUpperCase(), season: '2026',
-    summary: 'Summary.', built: '2026-10-08T10:28:00-07:00', docs: ['wiring', '3d', 'devices'] as const, ...extra };
+    summary: 'Summary.', built: '2026-10-08T10:28:00-07:00',
+    docs: ['wiring', '3d', 'devices'] as RobotIndex['robots'][number]['docs'], ...extra };
 }
 
 export const INDEX: RobotIndex = {
   latest: '2026-offseason',
-  robots: [robotEntry('2026-offseason'), robotEntry('2025-robot', { name: '2025 Robot', docs: ['wiring', 'devices'] })]
+  robots: [robotEntry('2026-offseason', { docs: ['wiring', '3d', 'devices', 'mechanical'] }),
+    robotEntry('2025-robot', { name: '2025 Robot', docs: ['wiring', 'devices'] })]
     .map((r) => ({ ...r, docs: [...r.docs] })),
 };
 
@@ -66,7 +68,24 @@ export function fakeFetch(files: Record<string, unknown>) {
   };
 }
 
+/** Two subsystems over the WIRING devices: swerve (one motor) and shooter (a flywheel with an open CAN ID). */
+export const MECHANICAL = {
+  updated: '2026-10-08',
+  subsystems: [
+    { id: 'swerve', name: 'Swerve', summary: 'Four modules.', mechanisms: ['Swerve'], groups: ['swerve'],
+      facts: [{ label: 'Drive gear ratio', value: '7.36:1', source: 'TunerConstants.kDriveGearRatio' }], notes: [] },
+    { id: 'shooter', name: 'Shooter', summary: 'Two flywheels.', mechanisms: ['Shooter'], groups: ['shooter'],
+      facts: [
+        { label: 'Flywheel supply limit', value: '37 A', source: 'ShooterConstants.k_shooterSupplyLimit' },
+        { label: 'Gear reduction', value: '67.86:1', source: 'ShooterConstants.k_shooterGearReduction',
+          uncertain: 'The code does not say which mechanism' },
+      ],
+      notes: ['Check the flywheel belt tension before each event.'] },
+  ],
+};
+
 export const SITE_FILES = {
+  '/content/robots/2026-offseason/mechanical.json': MECHANICAL,
   '/content/robots.json': INDEX,
   '/content/robots/2026-offseason/wiring.json': WIRING,
   '/content/robots/2026-offseason/poster.svg': POSTER_SVG,

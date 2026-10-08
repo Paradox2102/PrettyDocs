@@ -3,7 +3,7 @@
 // on every retry render; Retry calls forget() and the next render fetches again.
 export const INDEX_URL = '/content/robots.json';
 
-export type ContentFile = 'wiring.json' | 'poster.svg' | 'top-view.svg' | 'scene.json';
+export type ContentFile = 'wiring.json' | 'poster.svg' | 'top-view.svg' | 'scene.json' | 'mechanical.json';
 
 export function contentUrl(robot: string, file: ContentFile): string {
   return `/content/robots/${robot}/${file}`;

@@ -1,6 +1,6 @@
 // Shape checks for the content files. They check the fields the pages read and name the path of the first bad
 // field, so a broken export says where it broke.
-import { DOC_KINDS, type RobotIndex, type Scene, type WiringData } from './types';
+import { DOC_KINDS, type MechanicalData, type RobotIndex, type Scene, type WiringData } from './types';
 
 export class ContentError extends Error {
   name = 'ContentError';
@@ -75,4 +75,34 @@ export function validateScene(x: unknown): Scene {
   });
   (s.buses as unknown[]).forEach((b, i) => arr(obj(b, `buses[${i}]`).chain, `buses[${i}].chain`));
   return x as Scene;
+}
+
+function strList(x: unknown, path: string): string[] {
+  return arr(x, path).map((v, i) => str(v, `${path}[${i}]`));
+}
+
+export function validateMechanical(x: unknown): MechanicalData {
+  const m = obj(x, 'mechanical.json');
+  str(m.updated, 'updated');
+  const subs = arr(m.subsystems, 'subsystems');
+  if (subs.length === 0) fail('subsystems', 'must list at least one subsystem');
+  const ids = subs.map((s, i) => {
+    const sub = obj(s, `subsystems[${i}]`);
+    const id = str(sub.id, `subsystems[${i}].id`);
+    if (!ROBOT_ID.test(id)) fail(`subsystems[${i}].id`, `"${id}" must match ${ROBOT_ID}`);
+    str(sub.name, `subsystems[${i}].name`);
+    str(sub.summary, `subsystems[${i}].summary`);
+    strList(sub.mechanisms, `subsystems[${i}].mechanisms`);
+    strList(sub.groups, `subsystems[${i}].groups`);
+    strList(sub.notes, `subsystems[${i}].notes`);
+    arr(sub.facts, `subsystems[${i}].facts`).forEach((f, j) => {
+      const path = `subsystems[${i}].facts[${j}]`;
+      const fact = obj(f, path);
+      for (const k of ['label', 'value', 'source']) str(fact[k], `${path}.${k}`);
+      if (fact.uncertain !== undefined) str(fact.uncertain, `${path}.uncertain`);
+    });
+    return id;
+  });
+  if (new Set(ids).size !== ids.length) fail('subsystems', 'subsystem ids must be unique');
+  return x as MechanicalData;
 }

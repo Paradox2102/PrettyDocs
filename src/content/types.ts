@@ -92,8 +92,8 @@ export interface SceneDevice {
   layers?: string[];
 }
 
-export type DocKind = 'wiring' | '3d' | 'devices';
-export const DOC_KINDS: DocKind[] = ['wiring', '3d', 'devices'];
+export type DocKind = 'wiring' | '3d' | 'devices' | 'mechanical';
+export const DOC_KINDS: DocKind[] = ['wiring', '3d', 'devices', 'mechanical'];
 
 export interface RobotEntry {
   id: string;
@@ -145,4 +145,30 @@ export interface Scene {
   systemcore: SceneDevice;
   buses: SceneBus[];
   layers: SceneLayer[];
+}
+
+/** One fact about a subsystem. `uncertain` says why the value is not sure; the page shows it in amber. */
+export interface Fact {
+  label: string;
+  value: string;
+  source: string;
+  uncertain?: string;
+}
+
+export interface Subsystem {
+  id: string;
+  name: string;
+  summary: string;
+  /** Registry `mechanism` values: the subsystem's devices come from wiring.json by these. */
+  mechanisms: string[];
+  /** scene.json group ids drawn solid in the subsystem's 3D view. */
+  groups: string[];
+  facts: Fact[];
+  notes: string[];
+}
+
+/** mechanical.json: kept by hand in PrettyDocs, not written by the export. */
+export interface MechanicalData {
+  updated: string;
+  subsystems: Subsystem[];
 }

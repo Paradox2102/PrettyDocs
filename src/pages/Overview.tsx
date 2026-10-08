@@ -12,6 +12,7 @@ const CARDS: Record<DocKind, { title: string; text: string }> = {
   wiring: { title: 'Wiring', text: 'CAN, power and network on one sheet, and a top view with every device at its CAD position.' },
   '3d': { title: '3D', text: 'The CAD model with each CAN loop, power cable and network link drawn in place.' },
   devices: { title: 'Devices', text: 'Every device with its CAN ID, PDH channel and IP address. Search, filter and sort.' },
+  mechanical: { title: 'Mechanical', text: 'Swerve, intake and shooter: ratios, current limits, devices and service notes.' },
 };
 
 export default function Overview() {

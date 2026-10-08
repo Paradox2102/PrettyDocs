@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest';
-import { ContentError, validateIndex, validateScene, validateWiring } from './validate';
-import { INDEX, WIRING } from '../test/fixtures';
+import { ContentError, validateIndex, validateMechanical, validateScene, validateWiring } from './validate';
+import { INDEX, MECHANICAL, WIRING } from '../test/fixtures';
 
 const clone = <T,>(x: T): T => structuredClone(x);
 const SCENE = { meta: { document: 'd', microversion: 'm', cell_mm: 4, built: 'b', triangles: 1 }, groups: [],
@@ -52,5 +52,30 @@ describe('validateScene', () => {
   test('a scene without buses is refused', () => {
     const { buses: _buses, ...bad } = clone(SCENE);
     expect(() => validateScene(bad)).toThrow(/buses/);
+  });
+});
+
+describe('validateMechanical', () => {
+  const good = () => structuredClone(MECHANICAL);
+  test('a good file passes', () => {
+    expect(validateMechanical(good())).toEqual(MECHANICAL);
+  });
+  test('a fact without a source is refused, by path', () => {
+    const bad = good() as unknown as { subsystems: { facts: { source?: string }[] }[] };
+    delete bad.subsystems[1].facts[1].source;
+    expect(() => validateMechanical(bad)).toThrow(/subsystems\[1\]\.facts\[1\]\.source/);
+  });
+  test('subsystem ids must be unique', () => {
+    const bad = good();
+    bad.subsystems[1].id = 'swerve';
+    expect(() => validateMechanical(bad)).toThrow(/subsystems.*unique/);
+  });
+  test('a bad subsystem id is refused', () => {
+    const bad = good();
+    bad.subsystems[0].id = 'Bad_ID';
+    expect(() => validateMechanical(bad)).toThrow(/subsystems\[0\]\.id/);
+  });
+  test('an empty subsystem list is refused', () => {
+    expect(() => validateMechanical({ updated: 'x', subsystems: [] })).toThrow(/subsystems/);
   });
 });

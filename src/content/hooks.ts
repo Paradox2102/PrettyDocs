@@ -2,8 +2,8 @@
 import { use } from 'react';
 import type { Sheet } from '../logic/wiring';
 import { contentUrl, INDEX_URL, loadJson, loadText } from './load';
-import type { RobotIndex, Scene, WiringData } from './types';
-import { validateIndex, validateScene, validateWiring } from './validate';
+import type { MechanicalData, RobotIndex, Scene, WiringData } from './types';
+import { validateIndex, validateMechanical, validateScene, validateWiring } from './validate';
 
 export function useIndex(): RobotIndex {
   return use(loadJson(INDEX_URL, validateIndex));
@@ -19,4 +19,8 @@ export function useSheetSvg(robot: string, sheet: Sheet): string {
 
 export function useScene(robot: string): Scene {
   return use(loadJson(contentUrl(robot, 'scene.json'), validateScene));
+}
+
+export function useMechanical(robot: string): MechanicalData {
+  return use(loadJson(contentUrl(robot, 'mechanical.json'), validateMechanical));
 }
