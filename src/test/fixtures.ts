@@ -75,3 +75,33 @@ export const SITE_FILES = {
   '/content/robots/2025-robot/poster.svg': POSTER_SVG,
   '/content/robots/2025-robot/top-view.svg': TOP_SVG,
 };
+
+const MESH = { pos: '', min: [0, 0, 0] as [number, number, number], scale: [1, 1, 1] as [number, number, number], idx: '', idx32: false, tris: 0 };
+
+/** A small 3D scene: one swerve group, a CAN motor, a camera, the PDH and the SystemCore. */
+export const SCENE = {
+  meta: { document: 'G0000 - Main', microversion: 'abc123', cell_mm: 4, built: '2026-10-08T17:25:52+00:00', triangles: 1234 },
+  groups: [{ id: 'swerve', label: 'Swerve modules', box: [-0.3, -0.4, 0.3, 0.4, 0, 0.17], mesh: MESH }],
+  devices: [
+    { key: 'can_s2:0', kind: 'motor', bus: 'can_s2', chain_index: 0, can_id: '1', role: 'FL drive', mechanism: 'Swerve',
+      device_type: 'Talon FX', motor: 'Kraken X60', status: 's', anchor: [0.2, 0.3, 0.1], box: [], registry_key: 'swerve-fl-drive',
+      pdh: 'ch 2', mesh: MESH, layers: ['power'] },
+    { key: 'electronics:camera-front-left', kind: 'electronics', bus: null, role: 'front_left', mechanism: 'Vision',
+      device_type: 'OV9281', status: 's', anchor: [0.1, 0, 0.4], box: [], registry_key: 'camera-front-left', pdh: null,
+      mesh: MESH, layers: ['network', 'electronics'] },
+    { key: 'can_s0:0', kind: 'pdh', bus: 'can_s0', chain_index: 0, can_id: '21', role: 'Power Distribution Hub',
+      mechanism: 'Power distribution', device_type: 'REV PDH', status: 's', anchor: [0, 0, 0.07], box: [], registry_key: 'pdh',
+      pdh: null, mesh: MESH, layers: ['electronics', 'power'] },
+  ],
+  systemcore: { kind: 'systemcore', bus: null, role: 'SystemCore', mechanism: 'Control', device_type: 'SystemCore', status: 's',
+    anchor: [0.05, 0.25, 0.08], box: [], registry_key: 'systemcore', pdh: null, mesh: MESH, layers: ['electronics'] },
+  buses: [
+    { bus: 'can_s0', function: 'PDH only', chain: ['can_s0:0'], warning: null },
+    { bus: 'can_s2', function: 'Swerve and gyro', chain: ['can_s2:0'], warning: 'Check the FL drive.' },
+  ],
+  layers: [
+    { id: 'electronics', label: 'Electronics', function: 'Radio, SystemCore, power, vision', members: ['a', 'b'], cables: [], tags: [] },
+    { id: 'power', label: 'Power', function: 'PDH channels', members: ['a', 'b', 'c'], cables: [], tags: [] },
+    { id: 'network', label: 'Network', function: 'Ethernet', members: ['a'], cables: [], tags: [] },
+  ],
+} satisfies import('../content/types').Scene;
