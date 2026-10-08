@@ -89,3 +89,14 @@ function Layer({ layer, byKey, systemcore }: { layer: SceneLayer; byKey: Record<
     </group>
   );
 }
+
+/** A CAN ID bubble (canTag) on each given scene device that is on a CAN bus: the mechanical page's subsystem view. */
+export function DeviceTags({ devices }: { devices: SceneDevice[] }) {
+  return (
+    <>
+      {devices.filter((d) => d.bus).map((d) => (
+        <Label key={d.key ?? d.role} at={d.anchor} color={BUS_COLORS[d.bus as string]} text={canTag(d)} />
+      ))}
+    </>
+  );
+}

@@ -2,7 +2,7 @@ import type { ThreeEvent } from '@react-three/fiber';
 import { useEffect, useLayoutEffect, useMemo } from 'react';
 import { BufferAttribute, BufferGeometry, DoubleSide, MeshStandardMaterial } from 'three';
 import type { MeshData, Scene, SceneDevice } from '../content/types';
-import { decodeMesh, styleFor, type StyleItem } from '../logic/viewer';
+import { decodeMesh, styleFor, type Style, type StyleItem } from '../logic/viewer';
 
 export type DeviceEvent = (device: SceneDevice | null, x: number, y: number) => void;
 
@@ -30,17 +30,20 @@ interface Props {
   interactive: boolean;
   onHover?: DeviceEvent;
   onPick?: DeviceEvent;
+  /** A different color rule (the mechanical page's subsystem view); the default is styleFor(selected, ghost). */
+  styleOf?: (item: StyleItem) => Style;
 }
 
 /** The mechanism groups, the devices and the SystemCore, colored by styleFor(). */
-export function RobotModel({ scene, selected, ghost, interactive, onHover, onPick }: Props) {
+export function RobotModel({ scene, selected, ghost, interactive, onHover, onPick, styleOf }: Props) {
   const items = useMemo<Item[]>(() => [
     ...scene.groups.map((g) => ({ key: `group:${g.id}`, geometry: geometry(g.mesh), style: { kind: 'group', group: g.id },
       renderOrder: 0 })),
     ...scene.devices.map((d) => ({ key: d.key ?? d.role, geometry: geometry(d.mesh),
-      style: { kind: d.kind, bus: d.bus, layers: d.layers ?? [] }, device: d, renderOrder: 2 })),
+      style: { kind: d.kind, bus: d.bus, layers: d.layers ?? [], registryKey: d.registry_key }, device: d, renderOrder: 2 })),
     { key: 'systemcore', geometry: geometry(scene.systemcore.mesh),
-      style: { kind: 'systemcore', layers: scene.systemcore.layers ?? [] }, device: scene.systemcore, renderOrder: 2 },
+      style: { kind: 'systemcore', layers: scene.systemcore.layers ?? [], registryKey: scene.systemcore.registry_key },
+      device: scene.systemcore, renderOrder: 2 },
   ], [scene]);
 
   useEffect(() => () => items.forEach((i) => i.geometry.dispose()), [items]);
@@ -49,17 +52,17 @@ export function RobotModel({ scene, selected, ghost, interactive, onHover, onPic
     <group>
       {items.map((it) => (
         <ItemMesh key={it.key} item={it} selected={selected} ghost={ghost} interactive={interactive}
-          onHover={onHover} onPick={onPick} />
+          onHover={onHover} onPick={onPick} styleOf={styleOf} />
       ))}
     </group>
   );
 }
 
-function ItemMesh({ item, selected, ghost, interactive, onHover, onPick }: { item: Item } & Omit<Props, 'scene'>) {
+function ItemMesh({ item, selected, ghost, interactive, onHover, onPick, styleOf }: { item: Item } & Omit<Props, 'scene'>) {
   const material = useMemo(() => new MeshStandardMaterial({ roughness: 0.72, metalness: 0.08, flatShading: true,
     side: DoubleSide }), []);
   useEffect(() => () => material.dispose(), [material]);
-  const s = styleFor(item.style, selected, ghost);
+  const s = styleOf ? styleOf(item.style) : styleFor(item.style, selected, ghost);
   useLayoutEffect(() => {
     material.color.set(s.color);
     material.opacity = s.opacity;

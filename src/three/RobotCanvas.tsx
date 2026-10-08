@@ -4,8 +4,9 @@ import { Object3D, Vector3 } from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { CSS2DRenderer } from 'three/addons/renderers/CSS2DRenderer.js';
 import type { Scene, Vec3 } from '../content/types';
-import { frame } from '../logic/scene';
-import { CanLoops, LayerCables } from './Cables';
+import { frame, frameGroups, sceneByRegistryKey } from '../logic/scene';
+import { subsystemStyle, type StyleItem } from '../logic/viewer';
+import { CanLoops, DeviceTags, LayerCables } from './Cables';
 import { cameraPosition, VIEWS, type ViewName } from './cameraViews';
 import { RobotModel, type DeviceEvent } from './RobotModel';
 import { useCssColor, useReducedMotion } from './theme-color';
@@ -25,8 +26,13 @@ const NO_SELECTION = new Set<string>();
 
 export interface RobotCanvasProps {
   scene: Scene;
-  /** showcase: neutral colors, slow turn, no input (the overview hero). viewer: the full 3D page. */
-  mode: 'showcase' | 'viewer';
+  /**
+   * showcase: neutral colors, slow turn, no input (the overview hero). viewer: the full 3D page. subsystem: one
+   * subsystem solid with its devices in bus color and CAN ID bubbles, the rest faint (the mechanical page).
+   */
+  mode: 'showcase' | 'viewer' | 'subsystem';
+  /** subsystem mode: scene group ids drawn solid and registry keys of the subsystem's devices. */
+  subsystem?: { groups: string[]; devices: string[] };
   selected?: Set<string>;
   ghost?: number;
   view?: ViewName;
@@ -39,10 +45,25 @@ export interface RobotCanvasProps {
   className?: string;
 }
 
+/** Other groups in the subsystem view: faint enough that the subsystem reads first. */
+const SUBSYSTEM_GHOST = 0.06;
+
 export default function RobotCanvas({ scene, mode, selected = NO_SELECTION, ghost = 0.15, view = 'iso', viewNonce = 0,
-  focus = null, onHover, onPick, className }: RobotCanvasProps) {
+  focus = null, onHover, onPick, className, subsystem }: RobotCanvasProps) {
   const f = useMemo(() => frame(scene), [scene]);
   const showcase = mode === 'showcase';
+  const sub = useMemo(() => {
+    if (mode !== 'subsystem' || !subsystem) return null;
+    const byKey = sceneByRegistryKey(scene);
+    const focusSets = { groups: new Set(subsystem.groups), devices: new Set(subsystem.devices) };
+    return {
+      frame: frameGroups(scene, subsystem.groups),
+      devices: subsystem.devices.map((k) => byKey.get(k)).filter((d) => d !== undefined),
+      styleOf: (item: StyleItem) => subsystemStyle(item, focusSets, SUBSYSTEM_GHOST),
+    };
+  }, [mode, scene, subsystem]);
+  const center = sub ? sub.frame.center : f.center;
+  const radius = sub ? sub.frame.radius : f.radius;
   const reduced = useReducedMotion();
   const start = cameraPosition('iso', f.center, f.radius);
   const labels = useMemo(() => (showcase ? null : new CSS2DRenderer()), [showcase]);
@@ -51,12 +72,19 @@ export default function RobotCanvas({ scene, mode, selected = NO_SELECTION, ghos
     <Canvas className={className} dpr={[1, 2]} gl={{ antialias: true, alpha: showcase }}
       camera={{ fov: 38, near: 0.01, far: 50, position: start }}
       style={showcase ? { pointerEvents: 'none' } : { touchAction: 'none' }}>
-      {showcase ? null : <Background />}
+      {showcase ? null : <Background token={sub ? '--surface' : '--bg'} />}
       <hemisphereLight args={[0xffffff, 0x50555c, 1.7]} />
       <directionalLight position={[2, 1.2, 3]} intensity={1.6} />
       <directionalLight position={[-2, -1.5, 1]} intensity={0.5} />
-      <RobotModel scene={scene} selected={selected} ghost={ghost} interactive={!showcase} onHover={onHover} onPick={onPick} />
-      {showcase ? null : (
+      <RobotModel scene={scene} selected={selected} ghost={ghost} interactive={mode === 'viewer'} onHover={onHover} onPick={onPick}
+        styleOf={sub?.styleOf} />
+      {sub ? (
+        <>
+          {labels ? <LabelLayer renderer={labels} /> : null}
+          <DeviceTags devices={sub.devices} />
+        </>
+      ) : null}
+      {mode !== 'viewer' ? null : (
         <>
           {labels ? <LabelLayer renderer={labels} /> : null}
           <Floor center={f.center} />
@@ -65,9 +93,9 @@ export default function RobotCanvas({ scene, mode, selected = NO_SELECTION, ghos
           <LayerCables scene={scene} selected={selected} />
         </>
       )}
-      <Controls target={f.center} enabled={!showcase} autoRotate={showcase && !reduced} />
+      <Controls target={center} enabled={!showcase} autoRotate={showcase && !reduced} />
       <FrameLoop labels={labels} />
-      <CameraRig view={view} nonce={viewNonce} focus={focus} center={f.center} radius={f.radius} />
+      <CameraRig view={view} nonce={viewNonce} focus={focus} center={center} radius={radius} />
     </Canvas>
   );
 }
@@ -108,8 +136,8 @@ function FrameLoop({ labels }: { labels: CSS2DRenderer | null }) {
   return null;
 }
 
-function Background() {
-  const bg = useCssColor('--bg');
+function Background({ token }: { token: string }) {
+  const bg = useCssColor(token);
   return <color attach="background" args={[bg || '#f4f6f9']} />;
 }
 
