@@ -1,5 +1,5 @@
 {
- "built": "2026-10-08T13:36:31-07:00",
+ "built": "2026-10-08T15:33:39-07:00",
  "devices": {
   "battery": {
    "key": "battery",
@@ -89,7 +89,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     137.71,
+     131.12,
      112.22,
      45.04,
      37.16
@@ -203,9 +203,9 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     53.42,
+     52.1,
      37.5,
-     40.33,
+     40.34,
      80.62
     ],
     "top_bbox": [
@@ -225,15 +225,17 @@
    "module": null,
    "can": {
     "bus": "can_s1",
-    "id": "31 / 32",
-    "id_uncertain": true,
-    "code_name": "indexerConveyorLeader or indexerConveyorFollower"
+    "id": "32",
+    "id_uncertain": false,
+    "code_name": "indexerConveyorFollower"
    },
    "power": {
     "pdh_channel": 12,
     "pdh_uncertain": false
    },
-   "notes": [],
+   "notes": [
+    "CAN ID 32 on can_s1 confirmed by a blink test with the robot on (user, 2026-10-08); code name indexerConveyorFollower (Constants.java)."
+   ],
    "derived": {
     "wire_order": "1 of 3 on can_s1",
     "pdh_tag": [
@@ -241,22 +243,20 @@
      "red"
     ],
     "cad_comment": "Motor Name: bottom Belt Tunnel",
-    "open": true,
-    "open_reasons": [
-     "CAN ID not confirmed"
-    ],
+    "open": false,
+    "open_reasons": [],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     191.75,
+     185.15,
      29.5,
-     32.98,
+     30.0,
      38.57
     ],
     "top_bbox": [
      232.63,
      156.6,
-     104.43,
+     101.45,
      72.44
     ]
    }
@@ -293,7 +293,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     227.73,
+     218.15,
      29.5,
      24.69,
      38.57
@@ -315,15 +315,17 @@
    "module": null,
    "can": {
     "bus": "can_s1",
-    "id": "31 / 32",
-    "id_uncertain": true,
-    "code_name": "indexerConveyorLeader or indexerConveyorFollower"
+    "id": "31",
+    "id_uncertain": false,
+    "code_name": "indexerConveyorLeader"
    },
    "power": {
     "pdh_channel": 14,
     "pdh_uncertain": false
    },
-   "notes": [],
+   "notes": [
+    "CAN ID 31 on can_s1 confirmed by a blink test with the robot on (user, 2026-10-08); code name indexerConveyorLeader (Constants.java)."
+   ],
    "derived": {
     "wire_order": "3 of 3 on can_s1",
     "pdh_tag": [
@@ -331,22 +333,20 @@
      "red"
     ],
     "cad_comment": "not attached to a part: 'Motor Name: Top Belt Tunnel'",
-    "open": true,
-    "open_reasons": [
-     "CAN ID not confirmed"
-    ],
+    "open": false,
+    "open_reasons": [],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     255.42,
+     245.84,
      29.5,
-     32.98,
+     25.5,
      38.57
     ],
     "top_bbox": [
      266.42,
      187.2,
-     70.64,
+     63.16,
      34.66
     ]
    }
@@ -383,7 +383,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     191.75,
+     185.15,
      84.79,
      24.69,
      38.57
@@ -428,7 +428,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     219.44,
+     212.84,
      80.07,
      20.1,
      43.29
@@ -473,7 +473,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     242.54,
+     235.94,
      84.79,
      24.69,
      38.57
@@ -518,7 +518,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     270.23,
+     263.63,
      84.79,
      24.69,
      38.57
@@ -563,7 +563,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     297.92,
+     291.32,
      80.07,
      20.1,
      43.29
@@ -608,7 +608,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     321.02,
+     314.42,
      84.79,
      24.69,
      38.57
@@ -653,7 +653,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     191.75,
+     185.15,
      130.08,
      24.69,
      38.57
@@ -698,7 +698,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     219.44,
+     212.84,
      125.36,
      20.1,
      43.29
@@ -743,7 +743,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     242.54,
+     235.94,
      130.08,
      24.69,
      38.57
@@ -788,7 +788,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     270.23,
+     263.63,
      130.08,
      24.69,
      38.57
@@ -833,7 +833,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     297.92,
+     291.32,
      125.36,
      20.1,
      43.29
@@ -878,7 +878,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     321.02,
+     314.42,
      130.08,
      24.69,
      38.57
@@ -921,7 +921,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     348.71,
+     342.11,
      129.07,
      21.24,
      39.58
@@ -943,15 +943,17 @@
    "module": null,
    "can": {
     "bus": "can_s3",
-    "id": "40?",
-    "id_uncertain": true,
+    "id": "40",
+    "id_uncertain": false,
     "code_name": "kicker"
    },
    "power": {
     "pdh_channel": null,
     "pdh_uncertain": false
    },
-   "notes": [],
+   "notes": [
+    "CAN ID 40 on can_s3 confirmed by a blink test with the robot on (user, 2026-10-08); code name kicker (Constants.java)."
+   ],
    "derived": {
     "wire_order": "1 of 6 on can_s3",
     "pdh_tag": [
@@ -961,13 +963,12 @@
     "cad_comment": "Motor Name: Vertical Roller",
     "open": true,
     "open_reasons": [
-     "CAN ID not confirmed",
      "PDH channel not recorded"
     ],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     191.75,
+     185.15,
      180.65,
      25.5,
      38.57
@@ -989,15 +990,17 @@
    "module": null,
    "can": {
     "bus": "can_s3",
-    "id": "45?",
-    "id_uncertain": true,
+    "id": "45",
+    "id_uncertain": false,
     "code_name": "goUp"
    },
    "power": {
     "pdh_channel": null,
     "pdh_uncertain": false
    },
-   "notes": [],
+   "notes": [
+    "CAN ID 45 on can_s3 confirmed by a blink test with the robot on (user, 2026-10-08); code name goUp (Constants.java)."
+   ],
    "derived": {
     "wire_order": "2 of 6 on can_s3",
     "pdh_tag": [
@@ -1007,13 +1010,12 @@
     "cad_comment": "Motor Name: Scotty Rollers",
     "open": true,
     "open_reasons": [
-     "CAN ID not confirmed",
      "PDH channel not recorded"
     ],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     220.25,
+     213.65,
      180.65,
      24.69,
      38.57
@@ -1058,7 +1060,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     247.94,
+     241.34,
      180.65,
      25.5,
      38.57
@@ -1080,15 +1082,17 @@
    "module": null,
    "can": {
     "bus": "can_s3",
-    "id": "42 / 43",
-    "id_uncertain": true,
-    "code_name": "shooterLeader or shooterFollower"
+    "id": "42",
+    "id_uncertain": false,
+    "code_name": "shooterLeader"
    },
    "power": {
     "pdh_channel": null,
     "pdh_uncertain": false
    },
-   "notes": [],
+   "notes": [
+    "CAN ID 42 on can_s3 confirmed by a blink test with the robot on (user, 2026-10-08); code name shooterLeader (Constants.java)."
+   ],
    "derived": {
     "wire_order": "4 of 6 on can_s3",
     "pdh_tag": [
@@ -1098,21 +1102,20 @@
     "cad_comment": "Motor Name: x44 side flywheel",
     "open": true,
     "open_reasons": [
-     "CAN ID not confirmed",
      "PDH channel not recorded"
     ],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     276.44,
+     269.84,
      180.65,
-     31.42,
+     28.5,
      38.57
     ],
     "top_bbox": [
-     96.3,
+     99.22,
      146.4,
-     80.09,
+     77.17,
      45.97
     ]
    }
@@ -1121,20 +1124,22 @@
    "key": "hood",
    "icon": "kraken-x44",
    "type": "Talon FX",
-   "role": "Hood (Kraken X44)?",
+   "role": "Hood (Kraken X44)",
    "mechanism": "Shooter",
    "module": null,
    "can": {
     "bus": "can_s3",
-    "id": "41?",
-    "id_uncertain": true,
+    "id": "41",
+    "id_uncertain": false,
     "code_name": "hood"
    },
    "power": {
     "pdh_channel": null,
     "pdh_uncertain": false
    },
-   "notes": [],
+   "notes": [
+    "CAN ID 41 on can_s3 confirmed by a blink test with the robot on (user, 2026-10-08); code name hood (Constants.java)."
+   ],
    "derived": {
     "wire_order": "5 of 6 on can_s3",
     "pdh_tag": [
@@ -1144,21 +1149,20 @@
     "cad_comment": "Motor name: Turret x44",
     "open": true,
     "open_reasons": [
-     "CAN ID not confirmed",
      "PDH channel not recorded"
     ],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     310.86,
+     301.34,
      185.22,
-     30.0,
+     28.5,
      33.99
     ],
     "top_bbox": [
-     97.72,
+     99.22,
      136.2,
-     91.43,
+     89.93,
      45.17
     ]
    }
@@ -1172,15 +1176,17 @@
    "module": null,
    "can": {
     "bus": "can_s3",
-    "id": "42 / 43",
-    "id_uncertain": true,
-    "code_name": "shooterLeader or shooterFollower"
+    "id": "43",
+    "id_uncertain": false,
+    "code_name": "shooterFollower"
    },
    "power": {
     "pdh_channel": null,
     "pdh_uncertain": false
    },
-   "notes": [],
+   "notes": [
+    "CAN ID 43 on can_s3 confirmed by a blink test with the robot on (user, 2026-10-08); code name shooterFollower (Constants.java)."
+   ],
    "derived": {
     "wire_order": "6 of 6 on can_s3",
     "pdh_tag": [
@@ -1190,13 +1196,12 @@
     "cad_comment": "Motor name: other side flywheel",
     "open": true,
     "open_reasons": [
-     "CAN ID not confirmed",
      "PDH channel not recorded"
     ],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     343.86,
+     332.84,
      180.65,
      31.5,
      38.57
@@ -1218,16 +1223,17 @@
    "module": null,
    "can": {
     "bus": "can_s4",
-    "id": "21 / 22",
-    "id_uncertain": true,
-    "code_name": "intakeExtensionLeader or intakeExtensionFollower"
+    "id": "21",
+    "id_uncertain": false,
+    "code_name": "intakeExtensionLeader"
    },
    "power": {
     "pdh_channel": 7,
     "pdh_uncertain": false
    },
    "notes": [
-    "left side (CAD)"
+    "left side (CAD)",
+    "CAN ID 21 on can_s4 confirmed by a blink test with the robot on (user, 2026-10-08); code name intakeExtensionLeader (Constants.java)."
    ],
    "derived": {
     "wire_order": "1 of 3 on can_s4",
@@ -1236,22 +1242,20 @@
      "red"
     ],
     "cad_comment": "Motor name: turret side rack",
-    "open": true,
-    "open_reasons": [
-     "CAN ID not confirmed"
-    ],
+    "open": false,
+    "open_reasons": [],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     310.4,
+     293.34,
      34.07,
-     31.42,
+     27.0,
      33.99
     ],
     "top_bbox": [
-     96.3,
+     100.72,
      126.0,
-     67.42,
+     63.0,
      26.94
     ]
    }
@@ -1265,16 +1269,17 @@
    "module": null,
    "can": {
     "bus": "can_s4",
-    "id": "21 / 22",
-    "id_uncertain": true,
-    "code_name": "intakeExtensionLeader or intakeExtensionFollower"
+    "id": "22",
+    "id_uncertain": false,
+    "code_name": "intakeExtensionFollower"
    },
    "power": {
     "pdh_channel": 2,
     "pdh_uncertain": false
    },
    "notes": [
-    "right side (CAD)"
+    "right side (CAD)",
+    "CAN ID 22 on can_s4 confirmed by a blink test with the robot on (user, 2026-10-08); code name intakeExtensionFollower (Constants.java)."
    ],
    "derived": {
     "wire_order": "2 of 3 on can_s4",
@@ -1283,22 +1288,20 @@
      "red"
     ],
     "cad_comment": "Motor Name: non turret side rack",
-    "open": true,
-    "open_reasons": [
-     "CAN ID not confirmed"
-    ],
+    "open": false,
+    "open_reasons": [],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     344.82,
+     323.34,
      34.07,
-     31.42,
+     25.5,
      33.99
     ],
     "top_bbox": [
      268.08,
      115.8,
-     67.42,
+     61.5,
      37.12
     ]
    }
@@ -1335,7 +1338,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     379.24,
+     351.84,
      29.5,
      24.69,
      38.57

@@ -123,7 +123,7 @@
      "source": "IntakeConstants.k_rollerSupplyLimit = 25 (robot code main f1fdf68)"
     },
     {
-     "label": "Extension supply current limit (leader motor)",
+     "label": "Extension supply current limit (leader motor, CAN 21)",
      "value": "30 A",
      "source": "IntakeConstants.k_extensionSupplyLimit = 30 (robot code main f1fdf68)",
      "uncertain": "The code gives the follower rack motor no current limit config"
@@ -144,7 +144,7 @@
   {
    "id": "indexer",
    "name": "Indexer",
-   "summary": "Three Kraken X60 motors on can_s1: the roller drive (CAN 30) and two belt tunnels, top and bottom (CAN 31 and 32; which is which is not recorded).",
+   "summary": "Three Kraken X60 motors on can_s1: the roller drive (CAN 30), the top belt tunnel (CAN 31) and the bottom belt tunnel (CAN 32).",
    "mechanisms": [
     "Indexer"
    ],
@@ -170,9 +170,8 @@
     },
     {
      "label": "Belt tunnel motors",
-     "value": "CAN 31 leads, CAN 32 follows (opposed)",
-     "source": "IndexerConveyorSubsystem: Follower(indexerConveyorLeader, MotorAlignmentValue.Opposed); CANIDConstants.indexerConveyorLeader = 31, indexerConveyorFollower = 32 (robot code main f1fdf68)",
-     "uncertain": "Which tunnel has CAN 31 is not recorded (device registry: 31 / 32)"
+     "value": "Top tunnel CAN 31 leads, bottom tunnel CAN 32 follows (opposed)",
+     "source": "IndexerConveyorSubsystem: Follower(indexerConveyorLeader, MotorAlignmentValue.Opposed); CANIDConstants.indexerConveyorLeader = 31, indexerConveyorFollower = 32 (robot code main f1fdf68); device registry (wiring/devices.json, 2026-10-08)"
     },
     {
      "label": "Roller speed",
@@ -237,7 +236,7 @@
      "uncertain": "The parts after the planetary have no tooth counts in their names"
     },
     {
-     "label": "Flywheel supply current limit (leader motor)",
+     "label": "Flywheel supply current limit (leader motor, CAN 42)",
      "value": "37 A",
      "source": "ShooterConstants.k_shooterSupplyLimit = 37 (robot code main f1fdf68)",
      "uncertain": "The code gives the follower flywheel motor no current limit config"

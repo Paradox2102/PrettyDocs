@@ -8,22 +8,22 @@
 <rect x="10.00" y="229.10" width="332.52" height="40.30" rx="2.5" fill="#ddf4ff" stroke="#0969da" stroke-width="0.5"/>
 </g>
 <g data-layer="power" data-systems="power">
-<rect x="10.00" y="26.00" width="123.22" height="199.10" rx="2.5" fill="#fff5f5" stroke="#cf222e" stroke-width="0.5"/>
+<rect x="10.00" y="26.00" width="116.62" height="199.10" rx="2.5" fill="#fff5f5" stroke="#cf222e" stroke-width="0.5"/>
 </g>
 <g data-layer="frame" data-systems="can power network">
-<rect x="137.22" y="26.00" width="46.04" height="199.10" rx="2.5" fill="#f6f8fa" stroke="#8c959f" stroke-width="0.5"/>
+<rect x="130.62" y="26.00" width="46.04" height="199.10" rx="2.5" fill="#f6f8fa" stroke="#8c959f" stroke-width="0.5"/>
 </g>
 <g data-layer="can_s1" data-systems="can">
-<rect x="191.25" y="26.00" width="114.65" height="46.57" rx="2.5" fill="#fffbe6" stroke="#d4a72c" stroke-width="0.5"/>
+<rect x="184.65" y="26.00" width="104.19" height="46.57" rx="2.5" fill="#fffbe6" stroke="#d4a72c" stroke-width="0.5"/>
 </g>
 <g data-layer="can_s4" data-systems="can">
-<rect x="309.90" y="26.00" width="111.53" height="46.57" rx="2.5" fill="#fffbe6" stroke="#d4a72c" stroke-width="0.5"/>
+<rect x="292.84" y="26.00" width="101.19" height="46.57" rx="2.5" fill="#fffbe6" stroke="#d4a72c" stroke-width="0.5"/>
 </g>
 <g data-layer="can_s2" data-systems="can">
-<rect x="191.25" y="76.57" width="196.19" height="96.58" rx="2.5" fill="#fffbe6" stroke="#d4a72c" stroke-width="0.5"/>
+<rect x="184.65" y="76.57" width="196.19" height="96.58" rx="2.5" fill="#fffbe6" stroke="#d4a72c" stroke-width="0.5"/>
 </g>
 <g data-layer="can_s3" data-systems="can">
-<rect x="191.25" y="177.15" width="201.61" height="50.27" rx="2.5" fill="#fffbe6" stroke="#d4a72c" stroke-width="0.5"/>
+<rect x="184.65" y="177.15" width="197.19" height="50.27" rx="2.5" fill="#fffbe6" stroke="#d4a72c" stroke-width="0.5"/>
 </g>
 <g class="dev" data-key="radio" data-layer="network" data-systems="power network" data-open="1" data-open-in="power">
 <svg x="12.00" y="248.02" width="37.335" height="18.382" viewBox="-8 -6 131 64.5" overflow="visible" font-family="Helvetica, Arial, sans-serif">
@@ -341,7 +341,7 @@
 </svg>
 </g>
 <g class="dev" data-key="pdh" data-layer="power" data-systems="can power" data-open="0">
-<svg x="54.92" y="49.50" width="37.335" height="67.117" viewBox="-10 -6 131 235.5" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="53.60" y="49.50" width="37.335" height="67.117" viewBox="-10 -6 131 235.5" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <rect x="0" y="0" width="111.1" height="225.4" rx="5" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5"/>
 <circle cx="4.8" cy="4.8" r="2.5" fill="#ffffff" stroke="#1f2328" stroke-width="0.3"/>
@@ -530,7 +530,7 @@
 </svg>
 </g>
 <g class="dev" data-key="systemcore" data-layer="frame" data-systems="can power network" data-open="1" data-open-in="power">
-<svg x="139.21" y="113.72" width="42.037" height="23.655" viewBox="-6 -6 147.5 83.0" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="132.62" y="113.72" width="42.037" height="23.655" viewBox="-6 -6 147.5 83.0" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <rect x="0" y="0" width="135.5" height="71.5" rx="4" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5"/>
 <circle cx="3.75" cy="3.75" r="2.25" fill="#ffffff" stroke="#1f2328" stroke-width="0.3"/>
@@ -652,8 +652,8 @@
 
 </svg>
 </g>
-<g class="dev" data-key="indexer-tunnel-bottom" data-layer="can_s1" data-systems="can power" data-open="1" data-open-in="can">
-<svg x="197.40" y="41.50" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<g class="dev" data-key="indexer-tunnel-bottom" data-layer="can_s1" data-systems="can power" data-open="0">
+<svg x="189.31" y="41.50" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <path d="M -19.6 22.7 A 30.05 30.05 0 1 1 19.6 22.7 L 7.5 33.4 L -7.5 33.4 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M -14.1995 -24.641 L 14.1995 -24.641" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
@@ -687,7 +687,7 @@
 </svg>
 </g>
 <g class="dev" data-key="indexer-roller" data-layer="can_s1" data-systems="can power" data-open="1" data-open-in="power">
-<svg x="229.23" y="41.50" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="219.65" y="41.50" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <path d="M -19.6 22.7 A 30.05 30.05 0 1 1 19.6 22.7 L 7.5 33.4 L -7.5 33.4 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M -14.1995 -24.641 L 14.1995 -24.641" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
@@ -720,8 +720,8 @@
 
 </svg>
 </g>
-<g class="dev" data-key="indexer-tunnel-top" data-layer="can_s1" data-systems="can power" data-open="1" data-open-in="can">
-<svg x="261.07" y="41.50" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<g class="dev" data-key="indexer-tunnel-top" data-layer="can_s1" data-systems="can power" data-open="0">
+<svg x="247.75" y="41.50" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <path d="M -19.6 22.7 A 30.05 30.05 0 1 1 19.6 22.7 L 7.5 33.4 L -7.5 33.4 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M -14.1995 -24.641 L 14.1995 -24.641" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
@@ -754,8 +754,8 @@
 
 </svg>
 </g>
-<g class="dev" data-key="intake-rack-turret-side" data-layer="can_s4" data-systems="can power" data-open="1" data-open-in="can">
-<svg x="317.56" y="46.07" width="17.1" height="20.491" viewBox="-30.0 -28.0 60.0 71.9" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<g class="dev" data-key="intake-rack-turret-side" data-layer="can_s4" data-systems="can power" data-open="0">
+<svg x="298.29" y="46.07" width="17.1" height="20.491" viewBox="-30.0 -28.0 60.0 71.9" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <path d="M -15.6 15.6 A 22 22 0 1 1 15.6 15.6 L 5.5 25.4 L -5.5 25.4 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M -9.592 -18.04 L 9.592 -18.04" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
@@ -788,8 +788,8 @@
 
 </svg>
 </g>
-<g class="dev" data-key="intake-rack-other-side" data-layer="can_s4" data-systems="can power" data-open="1" data-open-in="can">
-<svg x="351.98" y="46.07" width="17.1" height="20.491" viewBox="-30.0 -28.0 60.0 71.9" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<g class="dev" data-key="intake-rack-other-side" data-layer="can_s4" data-systems="can power" data-open="0">
+<svg x="327.54" y="46.07" width="17.1" height="20.491" viewBox="-30.0 -28.0 60.0 71.9" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <path d="M -15.6 15.6 A 22 22 0 1 1 15.6 15.6 L 5.5 25.4 L -5.5 25.4 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M -9.592 -18.04 L 9.592 -18.04" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
@@ -823,7 +823,7 @@
 </svg>
 </g>
 <g class="dev" data-key="intake-rollers" data-layer="can_s4" data-systems="can power" data-open="1" data-open-in="power">
-<svg x="380.74" y="41.50" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="353.34" y="41.50" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <path d="M -19.6 22.7 A 30.05 30.05 0 1 1 19.6 22.7 L 7.5 33.4 L -7.5 33.4 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M -14.1995 -24.641 L 14.1995 -24.641" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
@@ -857,7 +857,7 @@
 </svg>
 </g>
 <g class="dev" data-key="swerve-bl-drive" data-layer="can_s2" data-systems="can power" data-open="1" data-open-in="power">
-<svg x="193.25" y="96.79" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="186.65" y="96.79" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <path d="M -19.6 22.7 A 30.05 30.05 0 1 1 19.6 22.7 L 7.5 33.4 L -7.5 33.4 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M -14.1995 -24.641 L 14.1995 -24.641" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
@@ -891,7 +891,7 @@
 </svg>
 </g>
 <g class="dev" data-key="swerve-bl-encoder" data-layer="can_s2" data-systems="can power" data-open="1" data-open-in="power">
-<svg x="220.94" y="92.07" width="17.1" height="29.791" viewBox="-30 -18 60 104.53" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="214.34" y="92.07" width="17.1" height="29.791" viewBox="-30 -18 60 104.53" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <path d="M -12.7 0 A 12.7 12.7 0 0 1 12.7 0 L 12.7 45.03 Q 12.7 46.03 11.7 46.03 L -11.7 46.03 Q -12.7 46.03 -12.7 45.03 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <rect x="-0.9" y="-12.7" width="1.8" height="2.2" rx="0" fill="#d0d7de"/>
@@ -937,7 +937,7 @@
 </svg>
 </g>
 <g class="dev" data-key="swerve-bl-turn" data-layer="can_s2" data-systems="can power" data-open="1" data-open-in="power">
-<svg x="244.04" y="96.79" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="237.44" y="96.79" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <path d="M -19.6 22.7 A 30.05 30.05 0 1 1 19.6 22.7 L 7.5 33.4 L -7.5 33.4 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M -14.1995 -24.641 L 14.1995 -24.641" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
@@ -971,7 +971,7 @@
 </svg>
 </g>
 <g class="dev" data-key="swerve-br-turn" data-layer="can_s2" data-systems="can power" data-open="1" data-open-in="power">
-<svg x="271.73" y="96.79" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="265.13" y="96.79" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <path d="M -19.6 22.7 A 30.05 30.05 0 1 1 19.6 22.7 L 7.5 33.4 L -7.5 33.4 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M -14.1995 -24.641 L 14.1995 -24.641" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
@@ -1005,7 +1005,7 @@
 </svg>
 </g>
 <g class="dev" data-key="swerve-br-encoder" data-layer="can_s2" data-systems="can power" data-open="1" data-open-in="power">
-<svg x="299.42" y="92.07" width="17.1" height="29.791" viewBox="-30 -18 60 104.53" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="292.82" y="92.07" width="17.1" height="29.791" viewBox="-30 -18 60 104.53" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <path d="M -12.7 0 A 12.7 12.7 0 0 1 12.7 0 L 12.7 45.03 Q 12.7 46.03 11.7 46.03 L -11.7 46.03 Q -12.7 46.03 -12.7 45.03 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <rect x="-0.9" y="-12.7" width="1.8" height="2.2" rx="0" fill="#d0d7de"/>
@@ -1051,7 +1051,7 @@
 </svg>
 </g>
 <g class="dev" data-key="swerve-br-drive" data-layer="can_s2" data-systems="can power" data-open="1" data-open-in="power">
-<svg x="322.52" y="96.79" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="315.92" y="96.79" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <path d="M -19.6 22.7 A 30.05 30.05 0 1 1 19.6 22.7 L 7.5 33.4 L -7.5 33.4 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M -14.1995 -24.641 L 14.1995 -24.641" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
@@ -1085,7 +1085,7 @@
 </svg>
 </g>
 <g class="dev" data-key="swerve-fr-drive" data-layer="can_s2" data-systems="can power" data-open="1" data-open-in="power">
-<svg x="193.25" y="142.08" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="186.65" y="142.08" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <path d="M -19.6 22.7 A 30.05 30.05 0 1 1 19.6 22.7 L 7.5 33.4 L -7.5 33.4 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M -14.1995 -24.641 L 14.1995 -24.641" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
@@ -1119,7 +1119,7 @@
 </svg>
 </g>
 <g class="dev" data-key="swerve-fr-encoder" data-layer="can_s2" data-systems="can power" data-open="1" data-open-in="power">
-<svg x="220.94" y="137.36" width="17.1" height="29.791" viewBox="-30 -18 60 104.53" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="214.34" y="137.36" width="17.1" height="29.791" viewBox="-30 -18 60 104.53" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <path d="M -12.7 0 A 12.7 12.7 0 0 1 12.7 0 L 12.7 45.03 Q 12.7 46.03 11.7 46.03 L -11.7 46.03 Q -12.7 46.03 -12.7 45.03 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <rect x="-0.9" y="-12.7" width="1.8" height="2.2" rx="0" fill="#d0d7de"/>
@@ -1165,7 +1165,7 @@
 </svg>
 </g>
 <g class="dev" data-key="swerve-fr-turn" data-layer="can_s2" data-systems="can power" data-open="1" data-open-in="power">
-<svg x="244.04" y="142.08" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="237.44" y="142.08" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <path d="M -19.6 22.7 A 30.05 30.05 0 1 1 19.6 22.7 L 7.5 33.4 L -7.5 33.4 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M -14.1995 -24.641 L 14.1995 -24.641" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
@@ -1199,7 +1199,7 @@
 </svg>
 </g>
 <g class="dev" data-key="swerve-fl-turn" data-layer="can_s2" data-systems="can power" data-open="1" data-open-in="power">
-<svg x="271.73" y="142.08" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="265.13" y="142.08" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <path d="M -19.6 22.7 A 30.05 30.05 0 1 1 19.6 22.7 L 7.5 33.4 L -7.5 33.4 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M -14.1995 -24.641 L 14.1995 -24.641" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
@@ -1233,7 +1233,7 @@
 </svg>
 </g>
 <g class="dev" data-key="swerve-fl-encoder" data-layer="can_s2" data-systems="can power" data-open="1" data-open-in="power">
-<svg x="299.42" y="137.36" width="17.1" height="29.791" viewBox="-30 -18 60 104.53" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="292.82" y="137.36" width="17.1" height="29.791" viewBox="-30 -18 60 104.53" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <path d="M -12.7 0 A 12.7 12.7 0 0 1 12.7 0 L 12.7 45.03 Q 12.7 46.03 11.7 46.03 L -11.7 46.03 Q -12.7 46.03 -12.7 45.03 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <rect x="-0.9" y="-12.7" width="1.8" height="2.2" rx="0" fill="#d0d7de"/>
@@ -1279,7 +1279,7 @@
 </svg>
 </g>
 <g class="dev" data-key="swerve-fl-drive" data-layer="can_s2" data-systems="can power" data-open="1" data-open-in="power">
-<svg x="322.52" y="142.08" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="315.92" y="142.08" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <path d="M -19.6 22.7 A 30.05 30.05 0 1 1 19.6 22.7 L 7.5 33.4 L -7.5 33.4 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M -14.1995 -24.641 L 14.1995 -24.641" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
@@ -1313,7 +1313,7 @@
 </svg>
 </g>
 <g class="dev" data-key="gyro" data-layer="can_s2" data-systems="can power" data-open="0">
-<svg x="350.21" y="141.07" width="18.24" height="26.077" viewBox="-32 -28 64 91.5" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="343.61" y="141.07" width="18.24" height="26.077" viewBox="-32 -28 64 91.5" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <rect x="-22.48" y="-22.48" width="44.96" height="44.96" rx="4.5" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5"/>
 <circle cx="-14.48" cy="-14.48" r="2.42" fill="#59636e"/>
@@ -1357,8 +1357,8 @@
 
 </svg>
 </g>
-<g class="dev" data-key="shooter-vertical-roller" data-layer="can_s3" data-systems="can power" data-open="1" data-open-in="can power">
-<svg x="193.66" y="192.65" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<g class="dev" data-key="shooter-vertical-roller" data-layer="can_s3" data-systems="can power" data-open="1" data-open-in="power">
+<svg x="187.06" y="192.65" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <path d="M -19.6 22.7 A 30.05 30.05 0 1 1 19.6 22.7 L 7.5 33.4 L -7.5 33.4 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M -14.1995 -24.641 L 14.1995 -24.641" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
@@ -1391,8 +1391,8 @@
 
 </svg>
 </g>
-<g class="dev" data-key="shooter-scotty-rollers" data-layer="can_s3" data-systems="can power" data-open="1" data-open-in="can power">
-<svg x="221.75" y="192.65" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<g class="dev" data-key="shooter-scotty-rollers" data-layer="can_s3" data-systems="can power" data-open="1" data-open-in="power">
+<svg x="215.15" y="192.65" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <path d="M -19.6 22.7 A 30.05 30.05 0 1 1 19.6 22.7 L 7.5 33.4 L -7.5 33.4 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M -14.1995 -24.641 L 14.1995 -24.641" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
@@ -1426,7 +1426,7 @@
 </svg>
 </g>
 <g class="dev" data-key="turret-rotation" data-layer="can_s3" data-systems="can power" data-open="1" data-open-in="power">
-<svg x="249.85" y="192.65" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="243.25" y="192.65" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <path d="M -19.6 22.7 A 30.05 30.05 0 1 1 19.6 22.7 L 7.5 33.4 L -7.5 33.4 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M -14.1995 -24.641 L 14.1995 -24.641" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
@@ -1459,8 +1459,8 @@
 
 </svg>
 </g>
-<g class="dev" data-key="flywheel-x44-side" data-layer="can_s3" data-systems="can power" data-open="1" data-open-in="can power">
-<svg x="281.31" y="192.65" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<g class="dev" data-key="flywheel-x44-side" data-layer="can_s3" data-systems="can power" data-open="1" data-open-in="power">
+<svg x="273.25" y="192.65" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <path d="M -19.6 22.7 A 30.05 30.05 0 1 1 19.6 22.7 L 7.5 33.4 L -7.5 33.4 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M -14.1995 -24.641 L 14.1995 -24.641" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
@@ -1493,8 +1493,8 @@
 
 </svg>
 </g>
-<g class="dev" data-key="hood" data-layer="can_s3" data-systems="can power" data-open="1" data-open-in="can power">
-<svg x="317.31" y="197.22" width="17.1" height="20.491" viewBox="-30.0 -28.0 60.0 71.9" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<g class="dev" data-key="hood" data-layer="can_s3" data-systems="can power" data-open="1" data-open-in="power">
+<svg x="307.04" y="197.22" width="17.1" height="20.491" viewBox="-30.0 -28.0 60.0 71.9" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <path d="M -15.6 15.6 A 22 22 0 1 1 15.6 15.6 L 5.5 25.4 L -5.5 25.4 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M -9.592 -18.04 L 9.592 -18.04" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
@@ -1527,8 +1527,8 @@
 
 </svg>
 </g>
-<g class="dev" data-key="flywheel-other-side" data-layer="can_s3" data-systems="can power" data-open="1" data-open-in="can power">
-<svg x="348.77" y="192.65" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<g class="dev" data-key="flywheel-other-side" data-layer="can_s3" data-systems="can power" data-open="1" data-open-in="power">
+<svg x="337.75" y="192.65" width="21.688" height="25.066" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <path d="M -19.6 22.7 A 30.05 30.05 0 1 1 19.6 22.7 L 7.5 33.4 L -7.5 33.4 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M -14.1995 -24.641 L 14.1995 -24.641" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
@@ -1562,162 +1562,162 @@
 </svg>
 </g>
 <g data-layer="power" data-info="power">
-<path d="M 56.63 56.71 L 55.08 56.71 L 55.08 56.71 L 53.52 56.71" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
-<path d="M 56.63 61.24 L 55.08 61.24 L 55.08 61.24 L 53.52 61.24" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
-<path d="M 56.63 65.63 L 55.08 65.63 L 55.08 65.63 L 53.52 65.63" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
-<path d="M 56.63 70.05 L 55.08 70.05 L 55.08 70.05 L 53.52 70.05" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
-<path d="M 56.63 74.61 L 55.08 74.61 L 55.08 74.61 L 53.52 74.61" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
-<path d="M 56.63 79.74 L 55.08 79.74 L 55.08 79.74 L 53.52 79.74" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
-<path d="M 56.63 84.24 L 55.08 84.24 L 55.08 84.24 L 53.52 84.24" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
-<path d="M 56.63 88.60 L 55.08 88.60 L 55.08 88.60 L 53.52 88.60" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
-<path d="M 56.63 92.96 L 55.08 92.96 L 55.08 92.96 L 53.52 92.96" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
-<path d="M 56.63 97.35 L 55.08 97.35 L 55.08 97.35 L 53.52 97.35" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
-<path d="M 56.63 101.20 L 55.08 101.20 L 55.08 101.20 L 53.52 101.20" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
-<path d="M 56.63 103.25 L 55.08 103.25 L 55.08 103.80 L 53.52 103.80" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
-<path d="M 56.63 105.30 L 55.08 105.30 L 55.08 106.40 L 53.52 106.40" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
-<path d="M 56.63 107.35 L 55.08 107.35 L 55.08 109.00 L 53.52 109.00" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
-<path d="M 89.98 56.71 L 91.81 56.71 L 91.81 56.71 L 93.66 56.71" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
-<path d="M 89.98 61.24 L 91.81 61.24 L 91.81 61.24 L 93.66 61.24" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
-<path d="M 89.98 65.63 L 91.81 65.63 L 91.81 65.63 L 93.66 65.63" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
-<path d="M 89.98 70.05 L 91.81 70.05 L 91.81 70.05 L 93.66 70.05" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
-<path d="M 89.98 74.61 L 91.81 74.61 L 91.81 74.61 L 93.66 74.61" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
-<path d="M 89.98 79.74 L 91.81 79.74 L 91.81 79.74 L 93.66 79.74" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
-<path d="M 89.98 84.24 L 91.81 84.24 L 91.81 84.24 L 93.66 84.24" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
-<path d="M 89.98 88.60 L 91.81 88.60 L 91.81 88.60 L 93.66 88.60" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
-<path d="M 89.98 92.96 L 91.81 92.96 L 91.81 92.96 L 93.66 92.96" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
-<path d="M 89.98 97.35 L 91.81 97.35 L 91.81 97.35 L 93.66 97.35" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
-<path d="M 71.59 34.50 L 75.59 34.50" stroke="#cf222e" stroke-width="0.8" stroke-linecap="round" fill="none"/>
+<path d="M 55.31 56.71 L 53.76 56.71 L 53.76 56.71 L 52.20 56.71" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
+<path d="M 55.31 61.24 L 53.76 61.24 L 53.76 61.24 L 52.20 61.24" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
+<path d="M 55.31 65.63 L 53.76 65.63 L 53.76 65.63 L 52.20 65.63" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
+<path d="M 55.31 70.05 L 53.76 70.05 L 53.76 70.05 L 52.20 70.05" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
+<path d="M 55.31 74.61 L 53.76 74.61 L 53.76 74.61 L 52.20 74.61" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
+<path d="M 55.31 79.74 L 53.76 79.74 L 53.76 79.74 L 52.20 79.74" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
+<path d="M 55.31 84.24 L 53.76 84.24 L 53.76 84.24 L 52.20 84.24" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
+<path d="M 55.31 88.60 L 53.76 88.60 L 53.76 88.60 L 52.20 88.60" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
+<path d="M 55.31 92.96 L 53.76 92.96 L 53.76 92.96 L 52.20 92.96" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
+<path d="M 55.31 97.35 L 53.76 97.35 L 53.76 97.35 L 52.20 97.35" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
+<path d="M 55.31 101.20 L 53.76 101.20 L 53.76 101.20 L 52.20 101.20" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
+<path d="M 55.31 103.25 L 53.76 103.25 L 53.76 103.80 L 52.20 103.80" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
+<path d="M 55.31 105.30 L 53.76 105.30 L 53.76 106.40 L 52.20 106.40" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
+<path d="M 55.31 107.35 L 53.76 107.35 L 53.76 109.00 L 52.20 109.00" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
+<path d="M 88.66 56.71 L 90.50 56.71 L 90.50 56.71 L 92.34 56.71" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
+<path d="M 88.66 61.24 L 90.50 61.24 L 90.50 61.24 L 92.34 61.24" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
+<path d="M 88.66 65.63 L 90.50 65.63 L 90.50 65.63 L 92.34 65.63" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
+<path d="M 88.66 70.05 L 90.50 70.05 L 90.50 70.05 L 92.34 70.05" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
+<path d="M 88.66 74.61 L 90.50 74.61 L 90.50 74.61 L 92.34 74.61" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
+<path d="M 88.66 79.74 L 90.50 79.74 L 90.50 79.74 L 92.34 79.74" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
+<path d="M 88.66 84.24 L 90.50 84.24 L 90.50 84.24 L 92.34 84.24" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
+<path d="M 88.66 88.60 L 90.50 88.60 L 90.50 88.60 L 92.34 88.60" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
+<path d="M 88.66 92.96 L 90.50 92.96 L 90.50 92.96 L 92.34 92.96" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
+<path d="M 88.66 97.35 L 90.50 97.35 L 90.50 97.35 L 92.34 97.35" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
+<path d="M 70.27 34.50 L 74.27 34.50" stroke="#cf222e" stroke-width="0.8" stroke-linecap="round" fill="none"/>
 </g>
 <g data-layer="can_s1" data-info="can">
-<path d="M 162.53 115.43 L 162.53 105.72 L 189.75 105.72 L 189.75 69.57 L 207.79 69.57 L 207.79 64.71 L 208.70 64.71 L 208.70 69.57 L 239.62 69.57 L 239.62 64.71 L 240.53 64.71 L 240.53 69.57 L 271.45 69.57 L 271.45 64.71 L 272.37 64.71 L 272.37 69.57 L 289.90 69.57" fill="none" stroke-linejoin="round" stroke="#1f2328" stroke-width="2" stroke-linecap="round"/>
-<path d="M 162.53 115.43 L 162.53 105.72 L 189.75 105.72 L 189.75 69.57 L 207.79 69.57 L 207.79 64.71 L 208.70 64.71 L 208.70 69.57 L 239.62 69.57 L 239.62 64.71 L 240.53 64.71 L 240.53 69.57 L 271.45 69.57 L 271.45 64.71 L 272.37 64.71 L 272.37 69.57 L 289.90 69.57" fill="none" stroke-linejoin="round" stroke="#e3b341" stroke-width="1" stroke-linecap="round"/>
-<path d="M 162.53 115.43 L 162.53 105.72 L 189.75 105.72 L 189.75 69.57 L 207.79 69.57 L 207.79 64.71 L 208.70 64.71 L 208.70 69.57 L 239.62 69.57 L 239.62 64.71 L 240.53 64.71 L 240.53 69.57 L 271.45 69.57 L 271.45 64.71 L 272.37 64.71 L 272.37 69.57 L 289.90 69.57" fill="none" stroke-linejoin="round" stroke="#2da44e" stroke-width="1" stroke-dasharray="2.4 2.4"/>
-<rect x="289.90" y="66.57" width="15.00" height="6.00" rx="1" fill="#ffffff" stroke="#9a6700" stroke-width="0.6" stroke-dasharray="1.6 1"/>
-<text x="297.40" y="70.67" font-size="2.8" fill="#9a6700" text-anchor="middle" font-weight="bold">120 Ω</text>
-<path d="M 207.79 64.71 L 206.39 64.71" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 207.79 64.71 L 206.39 64.71" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 208.70 64.71 L 210.09 64.71" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 208.70 64.71 L 210.09 64.71" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 239.62 64.71 L 238.22 64.71" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 239.62 64.71 L 238.22 64.71" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 240.53 64.71 L 241.93 64.71" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 240.53 64.71 L 241.93 64.71" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 271.45 64.71 L 270.06 64.71" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 271.45 64.71 L 270.06 64.71" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 272.37 64.71 L 273.76 64.71" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 272.37 64.71 L 273.76 64.71" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 155.93 115.43 L 155.93 105.72 L 183.15 105.72 L 183.15 69.57 L 199.70 69.57 L 199.70 64.71 L 200.61 64.71 L 200.61 69.57 L 230.04 69.57 L 230.04 64.71 L 230.95 64.71 L 230.95 69.57 L 258.13 69.57 L 258.13 64.71 L 259.05 64.71 L 259.05 69.57 L 272.84 69.57" fill="none" stroke-linejoin="round" stroke="#1f2328" stroke-width="2" stroke-linecap="round"/>
+<path d="M 155.93 115.43 L 155.93 105.72 L 183.15 105.72 L 183.15 69.57 L 199.70 69.57 L 199.70 64.71 L 200.61 64.71 L 200.61 69.57 L 230.04 69.57 L 230.04 64.71 L 230.95 64.71 L 230.95 69.57 L 258.13 69.57 L 258.13 64.71 L 259.05 64.71 L 259.05 69.57 L 272.84 69.57" fill="none" stroke-linejoin="round" stroke="#e3b341" stroke-width="1" stroke-linecap="round"/>
+<path d="M 155.93 115.43 L 155.93 105.72 L 183.15 105.72 L 183.15 69.57 L 199.70 69.57 L 199.70 64.71 L 200.61 64.71 L 200.61 69.57 L 230.04 69.57 L 230.04 64.71 L 230.95 64.71 L 230.95 69.57 L 258.13 69.57 L 258.13 64.71 L 259.05 64.71 L 259.05 69.57 L 272.84 69.57" fill="none" stroke-linejoin="round" stroke="#2da44e" stroke-width="1" stroke-dasharray="2.4 2.4"/>
+<rect x="272.84" y="66.57" width="15.00" height="6.00" rx="1" fill="#ffffff" stroke="#9a6700" stroke-width="0.6" stroke-dasharray="1.6 1"/>
+<text x="280.34" y="70.67" font-size="2.8" fill="#9a6700" text-anchor="middle" font-weight="bold">120 Ω</text>
+<path d="M 199.70 64.71 L 198.30 64.71" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 199.70 64.71 L 198.30 64.71" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 200.61 64.71 L 202.00 64.71" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 200.61 64.71 L 202.00 64.71" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 230.04 64.71 L 228.64 64.71" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 230.04 64.71 L 228.64 64.71" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 230.95 64.71 L 232.35 64.71" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 230.95 64.71 L 232.35 64.71" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 258.13 64.71 L 256.74 64.71" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 258.13 64.71 L 256.74 64.71" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 259.05 64.71 L 260.44 64.71" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 259.05 64.71 L 260.44 64.71" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
 </g>
 <g data-layer="can_s4" data-info="can">
-<path d="M 174.24 115.43 L 174.24 103.72 L 185.25 103.72 L 185.25 25.00 L 307.90 25.00 L 307.90 69.57 L 325.65 69.57 L 325.65 64.71 L 326.57 64.71 L 326.57 69.57 L 360.07 69.57 L 360.07 64.71 L 360.99 64.71 L 360.99 69.57 L 391.13 69.57 L 391.13 64.71 L 392.04 64.71 L 392.04 69.57 L 405.43 69.57" fill="none" stroke-linejoin="round" stroke="#1f2328" stroke-width="2" stroke-linecap="round"/>
-<path d="M 174.24 115.43 L 174.24 103.72 L 185.25 103.72 L 185.25 25.00 L 307.90 25.00 L 307.90 69.57 L 325.65 69.57 L 325.65 64.71 L 326.57 64.71 L 326.57 69.57 L 360.07 69.57 L 360.07 64.71 L 360.99 64.71 L 360.99 69.57 L 391.13 69.57 L 391.13 64.71 L 392.04 64.71 L 392.04 69.57 L 405.43 69.57" fill="none" stroke-linejoin="round" stroke="#e3b341" stroke-width="1" stroke-linecap="round"/>
-<path d="M 174.24 115.43 L 174.24 103.72 L 185.25 103.72 L 185.25 25.00 L 307.90 25.00 L 307.90 69.57 L 325.65 69.57 L 325.65 64.71 L 326.57 64.71 L 326.57 69.57 L 360.07 69.57 L 360.07 64.71 L 360.99 64.71 L 360.99 69.57 L 391.13 69.57 L 391.13 64.71 L 392.04 64.71 L 392.04 69.57 L 405.43 69.57" fill="none" stroke-linejoin="round" stroke="#2da44e" stroke-width="1" stroke-dasharray="2.4 2.4"/>
-<rect x="405.43" y="66.57" width="15.00" height="6.00" rx="1" fill="#ffffff" stroke="#9a6700" stroke-width="0.6" stroke-dasharray="1.6 1"/>
-<text x="412.93" y="70.67" font-size="2.8" fill="#9a6700" text-anchor="middle" font-weight="bold">120 Ω</text>
-<path d="M 325.65 64.71 L 324.32 64.71" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 325.65 64.71 L 324.32 64.71" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 326.57 64.71 L 327.94 64.71" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 326.57 64.71 L 327.94 64.71" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 360.07 64.71 L 358.74 64.71" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 360.07 64.71 L 358.74 64.71" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 360.99 64.71 L 362.36 64.71" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 360.99 64.71 L 362.36 64.71" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 391.13 64.71 L 389.73 64.71" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 391.13 64.71 L 389.73 64.71" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 392.04 64.71 L 393.44 64.71" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 392.04 64.71 L 393.44 64.71" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 167.64 115.43 L 167.64 103.72 L 178.65 103.72 L 178.65 25.00 L 290.84 25.00 L 290.84 69.57 L 306.38 69.57 L 306.38 64.71 L 307.30 64.71 L 307.30 69.57 L 335.63 69.57 L 335.63 64.71 L 336.55 64.71 L 336.55 69.57 L 363.73 69.57 L 363.73 64.71 L 364.64 64.71 L 364.64 69.57 L 378.03 69.57" fill="none" stroke-linejoin="round" stroke="#1f2328" stroke-width="2" stroke-linecap="round"/>
+<path d="M 167.64 115.43 L 167.64 103.72 L 178.65 103.72 L 178.65 25.00 L 290.84 25.00 L 290.84 69.57 L 306.38 69.57 L 306.38 64.71 L 307.30 64.71 L 307.30 69.57 L 335.63 69.57 L 335.63 64.71 L 336.55 64.71 L 336.55 69.57 L 363.73 69.57 L 363.73 64.71 L 364.64 64.71 L 364.64 69.57 L 378.03 69.57" fill="none" stroke-linejoin="round" stroke="#e3b341" stroke-width="1" stroke-linecap="round"/>
+<path d="M 167.64 115.43 L 167.64 103.72 L 178.65 103.72 L 178.65 25.00 L 290.84 25.00 L 290.84 69.57 L 306.38 69.57 L 306.38 64.71 L 307.30 64.71 L 307.30 69.57 L 335.63 69.57 L 335.63 64.71 L 336.55 64.71 L 336.55 69.57 L 363.73 69.57 L 363.73 64.71 L 364.64 64.71 L 364.64 69.57 L 378.03 69.57" fill="none" stroke-linejoin="round" stroke="#2da44e" stroke-width="1" stroke-dasharray="2.4 2.4"/>
+<rect x="378.03" y="66.57" width="15.00" height="6.00" rx="1" fill="#ffffff" stroke="#9a6700" stroke-width="0.6" stroke-dasharray="1.6 1"/>
+<text x="385.53" y="70.67" font-size="2.8" fill="#9a6700" text-anchor="middle" font-weight="bold">120 Ω</text>
+<path d="M 306.38 64.71 L 305.05 64.71" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 306.38 64.71 L 305.05 64.71" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 307.30 64.71 L 308.67 64.71" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 307.30 64.71 L 308.67 64.71" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 335.63 64.71 L 334.30 64.71" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 335.63 64.71 L 334.30 64.71" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 336.55 64.71 L 337.92 64.71" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 336.55 64.71 L 337.92 64.71" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 363.73 64.71 L 362.33 64.71" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 363.73 64.71 L 362.33 64.71" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 364.64 64.71 L 366.04 64.71" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 364.64 64.71 L 366.04 64.71" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
 </g>
 <g data-layer="can_s2" data-info="can">
-<path d="M 166.40 115.43 L 166.40 107.72 L 188.25 107.72 L 188.25 124.86 L 203.64 124.86 L 203.64 120.00 L 204.55 120.00 L 204.55 124.86 L 229.49 124.86 L 229.49 119.55" fill="none" stroke-linejoin="round" stroke="#1f2328" stroke-width="2" stroke-linecap="round"/>
-<path d="M 166.40 115.43 L 166.40 107.72 L 188.25 107.72 L 188.25 124.86 L 203.64 124.86 L 203.64 120.00 L 204.55 120.00 L 204.55 124.86 L 229.49 124.86 L 229.49 119.55" fill="none" stroke-linejoin="round" stroke="#e3b341" stroke-width="1" stroke-linecap="round"/>
-<path d="M 166.40 115.43 L 166.40 107.72 L 188.25 107.72 L 188.25 124.86 L 203.64 124.86 L 203.64 120.00 L 204.55 120.00 L 204.55 124.86 L 229.49 124.86 L 229.49 119.55" fill="none" stroke-linejoin="round" stroke="#2da44e" stroke-width="1" stroke-dasharray="2.4 2.4"/>
-<path d="M 234.91 118.98 L 234.91 124.86 L 254.43 124.86 L 254.43 120.00 L 255.34 120.00 L 255.34 124.86 L 282.12 124.86 L 282.12 120.00 L 283.03 120.00 L 283.03 124.86 L 307.97 124.86 L 307.97 119.55" fill="none" stroke-linejoin="round" stroke="#1f2328" stroke-width="2" stroke-linecap="round"/>
-<path d="M 234.91 118.98 L 234.91 124.86 L 254.43 124.86 L 254.43 120.00 L 255.34 120.00 L 255.34 124.86 L 282.12 124.86 L 282.12 120.00 L 283.03 120.00 L 283.03 124.86 L 307.97 124.86 L 307.97 119.55" fill="none" stroke-linejoin="round" stroke="#e3b341" stroke-width="1" stroke-linecap="round"/>
-<path d="M 234.91 118.98 L 234.91 124.86 L 254.43 124.86 L 254.43 120.00 L 255.34 120.00 L 255.34 124.86 L 282.12 124.86 L 282.12 120.00 L 283.03 120.00 L 283.03 124.86 L 307.97 124.86 L 307.97 119.55" fill="none" stroke-linejoin="round" stroke="#2da44e" stroke-width="1" stroke-dasharray="2.4 2.4"/>
-<path d="M 313.38 118.98 L 313.38 124.86 L 332.91 124.86 L 332.91 120.00 L 333.82 120.00 L 333.82 124.86 L 370.45 124.86 L 370.45 126.26 L 192.05 126.26 L 192.05 170.15 L 203.64 170.15 L 203.64 165.30 L 204.55 165.30 L 204.55 170.15 L 229.49 170.15 L 229.49 164.84" fill="none" stroke-linejoin="round" stroke="#1f2328" stroke-width="2" stroke-linecap="round"/>
-<path d="M 313.38 118.98 L 313.38 124.86 L 332.91 124.86 L 332.91 120.00 L 333.82 120.00 L 333.82 124.86 L 370.45 124.86 L 370.45 126.26 L 192.05 126.26 L 192.05 170.15 L 203.64 170.15 L 203.64 165.30 L 204.55 165.30 L 204.55 170.15 L 229.49 170.15 L 229.49 164.84" fill="none" stroke-linejoin="round" stroke="#e3b341" stroke-width="1" stroke-linecap="round"/>
-<path d="M 313.38 118.98 L 313.38 124.86 L 332.91 124.86 L 332.91 120.00 L 333.82 120.00 L 333.82 124.86 L 370.45 124.86 L 370.45 126.26 L 192.05 126.26 L 192.05 170.15 L 203.64 170.15 L 203.64 165.30 L 204.55 165.30 L 204.55 170.15 L 229.49 170.15 L 229.49 164.84" fill="none" stroke-linejoin="round" stroke="#2da44e" stroke-width="1" stroke-dasharray="2.4 2.4"/>
-<path d="M 234.91 164.27 L 234.91 170.15 L 254.43 170.15 L 254.43 165.30 L 255.34 165.30 L 255.34 170.15 L 282.12 170.15 L 282.12 165.30 L 283.03 165.30 L 283.03 170.15 L 307.97 170.15 L 307.97 164.84" fill="none" stroke-linejoin="round" stroke="#1f2328" stroke-width="2" stroke-linecap="round"/>
-<path d="M 234.91 164.27 L 234.91 170.15 L 254.43 170.15 L 254.43 165.30 L 255.34 165.30 L 255.34 170.15 L 282.12 170.15 L 282.12 165.30 L 283.03 165.30 L 283.03 170.15 L 307.97 170.15 L 307.97 164.84" fill="none" stroke-linejoin="round" stroke="#e3b341" stroke-width="1" stroke-linecap="round"/>
-<path d="M 234.91 164.27 L 234.91 170.15 L 254.43 170.15 L 254.43 165.30 L 255.34 165.30 L 255.34 170.15 L 282.12 170.15 L 282.12 165.30 L 283.03 165.30 L 283.03 170.15 L 307.97 170.15 L 307.97 164.84" fill="none" stroke-linejoin="round" stroke="#2da44e" stroke-width="1" stroke-dasharray="2.4 2.4"/>
-<path d="M 313.38 164.27 L 313.38 170.15 L 332.91 170.15 L 332.91 165.30 L 333.82 165.30 L 333.82 170.15 L 359.90 170.15 L 359.90 165.12" fill="none" stroke-linejoin="round" stroke="#1f2328" stroke-width="2" stroke-linecap="round"/>
-<path d="M 313.38 164.27 L 313.38 170.15 L 332.91 170.15 L 332.91 165.30 L 333.82 165.30 L 333.82 170.15 L 359.90 170.15 L 359.90 165.12" fill="none" stroke-linejoin="round" stroke="#e3b341" stroke-width="1" stroke-linecap="round"/>
-<path d="M 313.38 164.27 L 313.38 170.15 L 332.91 170.15 L 332.91 165.30 L 333.82 165.30 L 333.82 170.15 L 359.90 170.15 L 359.90 165.12" fill="none" stroke-linejoin="round" stroke="#2da44e" stroke-width="1" stroke-dasharray="2.4 2.4"/>
-<path d="M 365.03 164.55 L 365.03 170.15 L 371.45 170.15" fill="none" stroke-linejoin="round" stroke="#1f2328" stroke-width="2" stroke-linecap="round"/>
-<path d="M 365.03 164.55 L 365.03 170.15 L 371.45 170.15" fill="none" stroke-linejoin="round" stroke="#e3b341" stroke-width="1" stroke-linecap="round"/>
-<path d="M 365.03 164.55 L 365.03 170.15 L 371.45 170.15" fill="none" stroke-linejoin="round" stroke="#2da44e" stroke-width="1" stroke-dasharray="2.4 2.4"/>
-<rect x="371.45" y="167.15" width="15.00" height="6.00" rx="1" fill="#ffffff" stroke="#9a6700" stroke-width="0.6" stroke-dasharray="1.6 1"/>
-<text x="378.95" y="171.25" font-size="2.8" fill="#9a6700" text-anchor="middle" font-weight="bold">120 Ω</text>
-<path d="M 203.64 120.00 L 202.24 120.00" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 203.64 120.00 L 202.24 120.00" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 204.55 120.00 L 205.95 120.00" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 204.55 120.00 L 205.95 120.00" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 254.43 120.00 L 253.03 120.00" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 254.43 120.00 L 253.03 120.00" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 255.34 120.00 L 256.74 120.00" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 255.34 120.00 L 256.74 120.00" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 282.12 120.00 L 280.72 120.00" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 282.12 120.00 L 280.72 120.00" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 283.03 120.00 L 284.43 120.00" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 283.03 120.00 L 284.43 120.00" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 332.91 120.00 L 331.51 120.00" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 332.91 120.00 L 331.51 120.00" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 333.82 120.00 L 335.21 120.00" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 333.82 120.00 L 335.21 120.00" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 203.64 165.30 L 202.24 165.30" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 203.64 165.30 L 202.24 165.30" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 204.55 165.30 L 205.95 165.30" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 204.55 165.30 L 205.95 165.30" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 254.43 165.30 L 253.03 165.30" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 254.43 165.30 L 253.03 165.30" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 255.34 165.30 L 256.74 165.30" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 255.34 165.30 L 256.74 165.30" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 282.12 165.30 L 280.72 165.30" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 282.12 165.30 L 280.72 165.30" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 283.03 165.30 L 284.43 165.30" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 283.03 165.30 L 284.43 165.30" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 332.91 165.30 L 331.51 165.30" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 332.91 165.30 L 331.51 165.30" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 333.82 165.30 L 335.21 165.30" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 333.82 165.30 L 335.21 165.30" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 159.80 115.43 L 159.80 107.72 L 181.65 107.72 L 181.65 124.86 L 197.04 124.86 L 197.04 120.00 L 197.95 120.00 L 197.95 124.86 L 222.89 124.86 L 222.89 119.55" fill="none" stroke-linejoin="round" stroke="#1f2328" stroke-width="2" stroke-linecap="round"/>
+<path d="M 159.80 115.43 L 159.80 107.72 L 181.65 107.72 L 181.65 124.86 L 197.04 124.86 L 197.04 120.00 L 197.95 120.00 L 197.95 124.86 L 222.89 124.86 L 222.89 119.55" fill="none" stroke-linejoin="round" stroke="#e3b341" stroke-width="1" stroke-linecap="round"/>
+<path d="M 159.80 115.43 L 159.80 107.72 L 181.65 107.72 L 181.65 124.86 L 197.04 124.86 L 197.04 120.00 L 197.95 120.00 L 197.95 124.86 L 222.89 124.86 L 222.89 119.55" fill="none" stroke-linejoin="round" stroke="#2da44e" stroke-width="1" stroke-dasharray="2.4 2.4"/>
+<path d="M 228.31 118.98 L 228.31 124.86 L 247.83 124.86 L 247.83 120.00 L 248.74 120.00 L 248.74 124.86 L 275.52 124.86 L 275.52 120.00 L 276.43 120.00 L 276.43 124.86 L 301.37 124.86 L 301.37 119.55" fill="none" stroke-linejoin="round" stroke="#1f2328" stroke-width="2" stroke-linecap="round"/>
+<path d="M 228.31 118.98 L 228.31 124.86 L 247.83 124.86 L 247.83 120.00 L 248.74 120.00 L 248.74 124.86 L 275.52 124.86 L 275.52 120.00 L 276.43 120.00 L 276.43 124.86 L 301.37 124.86 L 301.37 119.55" fill="none" stroke-linejoin="round" stroke="#e3b341" stroke-width="1" stroke-linecap="round"/>
+<path d="M 228.31 118.98 L 228.31 124.86 L 247.83 124.86 L 247.83 120.00 L 248.74 120.00 L 248.74 124.86 L 275.52 124.86 L 275.52 120.00 L 276.43 120.00 L 276.43 124.86 L 301.37 124.86 L 301.37 119.55" fill="none" stroke-linejoin="round" stroke="#2da44e" stroke-width="1" stroke-dasharray="2.4 2.4"/>
+<path d="M 306.78 118.98 L 306.78 124.86 L 326.31 124.86 L 326.31 120.00 L 327.22 120.00 L 327.22 124.86 L 363.85 124.86 L 363.85 126.26 L 185.45 126.26 L 185.45 170.15 L 197.04 170.15 L 197.04 165.30 L 197.95 165.30 L 197.95 170.15 L 222.89 170.15 L 222.89 164.84" fill="none" stroke-linejoin="round" stroke="#1f2328" stroke-width="2" stroke-linecap="round"/>
+<path d="M 306.78 118.98 L 306.78 124.86 L 326.31 124.86 L 326.31 120.00 L 327.22 120.00 L 327.22 124.86 L 363.85 124.86 L 363.85 126.26 L 185.45 126.26 L 185.45 170.15 L 197.04 170.15 L 197.04 165.30 L 197.95 165.30 L 197.95 170.15 L 222.89 170.15 L 222.89 164.84" fill="none" stroke-linejoin="round" stroke="#e3b341" stroke-width="1" stroke-linecap="round"/>
+<path d="M 306.78 118.98 L 306.78 124.86 L 326.31 124.86 L 326.31 120.00 L 327.22 120.00 L 327.22 124.86 L 363.85 124.86 L 363.85 126.26 L 185.45 126.26 L 185.45 170.15 L 197.04 170.15 L 197.04 165.30 L 197.95 165.30 L 197.95 170.15 L 222.89 170.15 L 222.89 164.84" fill="none" stroke-linejoin="round" stroke="#2da44e" stroke-width="1" stroke-dasharray="2.4 2.4"/>
+<path d="M 228.31 164.27 L 228.31 170.15 L 247.83 170.15 L 247.83 165.30 L 248.74 165.30 L 248.74 170.15 L 275.52 170.15 L 275.52 165.30 L 276.43 165.30 L 276.43 170.15 L 301.37 170.15 L 301.37 164.84" fill="none" stroke-linejoin="round" stroke="#1f2328" stroke-width="2" stroke-linecap="round"/>
+<path d="M 228.31 164.27 L 228.31 170.15 L 247.83 170.15 L 247.83 165.30 L 248.74 165.30 L 248.74 170.15 L 275.52 170.15 L 275.52 165.30 L 276.43 165.30 L 276.43 170.15 L 301.37 170.15 L 301.37 164.84" fill="none" stroke-linejoin="round" stroke="#e3b341" stroke-width="1" stroke-linecap="round"/>
+<path d="M 228.31 164.27 L 228.31 170.15 L 247.83 170.15 L 247.83 165.30 L 248.74 165.30 L 248.74 170.15 L 275.52 170.15 L 275.52 165.30 L 276.43 165.30 L 276.43 170.15 L 301.37 170.15 L 301.37 164.84" fill="none" stroke-linejoin="round" stroke="#2da44e" stroke-width="1" stroke-dasharray="2.4 2.4"/>
+<path d="M 306.78 164.27 L 306.78 170.15 L 326.31 170.15 L 326.31 165.30 L 327.22 165.30 L 327.22 170.15 L 353.30 170.15 L 353.30 165.12" fill="none" stroke-linejoin="round" stroke="#1f2328" stroke-width="2" stroke-linecap="round"/>
+<path d="M 306.78 164.27 L 306.78 170.15 L 326.31 170.15 L 326.31 165.30 L 327.22 165.30 L 327.22 170.15 L 353.30 170.15 L 353.30 165.12" fill="none" stroke-linejoin="round" stroke="#e3b341" stroke-width="1" stroke-linecap="round"/>
+<path d="M 306.78 164.27 L 306.78 170.15 L 326.31 170.15 L 326.31 165.30 L 327.22 165.30 L 327.22 170.15 L 353.30 170.15 L 353.30 165.12" fill="none" stroke-linejoin="round" stroke="#2da44e" stroke-width="1" stroke-dasharray="2.4 2.4"/>
+<path d="M 358.43 164.55 L 358.43 170.15 L 364.85 170.15" fill="none" stroke-linejoin="round" stroke="#1f2328" stroke-width="2" stroke-linecap="round"/>
+<path d="M 358.43 164.55 L 358.43 170.15 L 364.85 170.15" fill="none" stroke-linejoin="round" stroke="#e3b341" stroke-width="1" stroke-linecap="round"/>
+<path d="M 358.43 164.55 L 358.43 170.15 L 364.85 170.15" fill="none" stroke-linejoin="round" stroke="#2da44e" stroke-width="1" stroke-dasharray="2.4 2.4"/>
+<rect x="364.85" y="167.15" width="15.00" height="6.00" rx="1" fill="#ffffff" stroke="#9a6700" stroke-width="0.6" stroke-dasharray="1.6 1"/>
+<text x="372.35" y="171.25" font-size="2.8" fill="#9a6700" text-anchor="middle" font-weight="bold">120 Ω</text>
+<path d="M 197.04 120.00 L 195.64 120.00" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 197.04 120.00 L 195.64 120.00" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 197.95 120.00 L 199.35 120.00" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 197.95 120.00 L 199.35 120.00" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 247.83 120.00 L 246.43 120.00" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 247.83 120.00 L 246.43 120.00" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 248.74 120.00 L 250.14 120.00" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 248.74 120.00 L 250.14 120.00" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 275.52 120.00 L 274.12 120.00" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 275.52 120.00 L 274.12 120.00" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 276.43 120.00 L 277.83 120.00" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 276.43 120.00 L 277.83 120.00" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 326.31 120.00 L 324.91 120.00" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 326.31 120.00 L 324.91 120.00" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 327.22 120.00 L 328.61 120.00" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 327.22 120.00 L 328.61 120.00" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 197.04 165.30 L 195.64 165.30" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 197.04 165.30 L 195.64 165.30" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 197.95 165.30 L 199.35 165.30" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 197.95 165.30 L 199.35 165.30" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 247.83 165.30 L 246.43 165.30" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 247.83 165.30 L 246.43 165.30" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 248.74 165.30 L 250.14 165.30" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 248.74 165.30 L 250.14 165.30" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 275.52 165.30 L 274.12 165.30" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 275.52 165.30 L 274.12 165.30" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 276.43 165.30 L 277.83 165.30" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 276.43 165.30 L 277.83 165.30" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 326.31 165.30 L 324.91 165.30" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 326.31 165.30 L 324.91 165.30" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 327.22 165.30 L 328.61 165.30" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 327.22 165.30 L 328.61 165.30" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
 </g>
 <g data-layer="can_s3" data-info="can">
-<path d="M 170.37 115.43 L 170.37 109.72 L 186.75 109.72 L 186.75 220.71 L 204.05 220.71 L 204.05 215.86 L 204.96 215.86 L 204.96 220.71 L 232.14 220.71 L 232.14 215.86 L 233.05 215.86 L 233.05 220.71 L 260.24 220.71 L 260.24 215.86 L 261.15 215.86 L 261.15 220.71 L 291.69 220.71 L 291.69 215.86 L 292.61 215.86 L 292.61 220.71 L 325.41 220.71 L 325.41 215.86 L 326.32 215.86 L 326.32 220.71 L 359.16 220.71 L 359.16 215.86 L 360.07 215.86 L 360.07 220.71 L 376.86 220.71" fill="none" stroke-linejoin="round" stroke="#1f2328" stroke-width="2" stroke-linecap="round"/>
-<path d="M 170.37 115.43 L 170.37 109.72 L 186.75 109.72 L 186.75 220.71 L 204.05 220.71 L 204.05 215.86 L 204.96 215.86 L 204.96 220.71 L 232.14 220.71 L 232.14 215.86 L 233.05 215.86 L 233.05 220.71 L 260.24 220.71 L 260.24 215.86 L 261.15 215.86 L 261.15 220.71 L 291.69 220.71 L 291.69 215.86 L 292.61 215.86 L 292.61 220.71 L 325.41 220.71 L 325.41 215.86 L 326.32 215.86 L 326.32 220.71 L 359.16 220.71 L 359.16 215.86 L 360.07 215.86 L 360.07 220.71 L 376.86 220.71" fill="none" stroke-linejoin="round" stroke="#e3b341" stroke-width="1" stroke-linecap="round"/>
-<path d="M 170.37 115.43 L 170.37 109.72 L 186.75 109.72 L 186.75 220.71 L 204.05 220.71 L 204.05 215.86 L 204.96 215.86 L 204.96 220.71 L 232.14 220.71 L 232.14 215.86 L 233.05 215.86 L 233.05 220.71 L 260.24 220.71 L 260.24 215.86 L 261.15 215.86 L 261.15 220.71 L 291.69 220.71 L 291.69 215.86 L 292.61 215.86 L 292.61 220.71 L 325.41 220.71 L 325.41 215.86 L 326.32 215.86 L 326.32 220.71 L 359.16 220.71 L 359.16 215.86 L 360.07 215.86 L 360.07 220.71 L 376.86 220.71" fill="none" stroke-linejoin="round" stroke="#2da44e" stroke-width="1" stroke-dasharray="2.4 2.4"/>
-<rect x="376.86" y="217.71" width="15.00" height="6.00" rx="1" fill="#ffffff" stroke="#9a6700" stroke-width="0.6" stroke-dasharray="1.6 1"/>
-<text x="384.36" y="221.81" font-size="2.8" fill="#9a6700" text-anchor="middle" font-weight="bold">120 Ω</text>
-<path d="M 204.05 215.86 L 202.65 215.86" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 204.05 215.86 L 202.65 215.86" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 204.96 215.86 L 206.35 215.86" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 204.96 215.86 L 206.35 215.86" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 232.14 215.86 L 230.74 215.86" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 232.14 215.86 L 230.74 215.86" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 233.05 215.86 L 234.45 215.86" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 233.05 215.86 L 234.45 215.86" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 260.24 215.86 L 258.84 215.86" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 260.24 215.86 L 258.84 215.86" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 261.15 215.86 L 262.54 215.86" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 261.15 215.86 L 262.54 215.86" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 291.69 215.86 L 290.30 215.86" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 291.69 215.86 L 290.30 215.86" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 292.61 215.86 L 294.00 215.86" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 292.61 215.86 L 294.00 215.86" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 325.41 215.86 L 324.07 215.86" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 325.41 215.86 L 324.07 215.86" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 326.32 215.86 L 327.69 215.86" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 326.32 215.86 L 327.69 215.86" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 359.16 215.86 L 357.76 215.86" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 359.16 215.86 L 357.76 215.86" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 360.07 215.86 L 361.46 215.86" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 360.07 215.86 L 361.46 215.86" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 163.77 115.43 L 163.77 109.72 L 180.15 109.72 L 180.15 220.71 L 197.45 220.71 L 197.45 215.86 L 198.36 215.86 L 198.36 220.71 L 225.54 220.71 L 225.54 215.86 L 226.45 215.86 L 226.45 220.71 L 253.64 220.71 L 253.64 215.86 L 254.55 215.86 L 254.55 220.71 L 283.63 220.71 L 283.63 215.86 L 284.55 215.86 L 284.55 220.71 L 315.13 220.71 L 315.13 215.86 L 316.05 215.86 L 316.05 220.71 L 348.13 220.71 L 348.13 215.86 L 349.05 215.86 L 349.05 220.71 L 365.84 220.71" fill="none" stroke-linejoin="round" stroke="#1f2328" stroke-width="2" stroke-linecap="round"/>
+<path d="M 163.77 115.43 L 163.77 109.72 L 180.15 109.72 L 180.15 220.71 L 197.45 220.71 L 197.45 215.86 L 198.36 215.86 L 198.36 220.71 L 225.54 220.71 L 225.54 215.86 L 226.45 215.86 L 226.45 220.71 L 253.64 220.71 L 253.64 215.86 L 254.55 215.86 L 254.55 220.71 L 283.63 220.71 L 283.63 215.86 L 284.55 215.86 L 284.55 220.71 L 315.13 220.71 L 315.13 215.86 L 316.05 215.86 L 316.05 220.71 L 348.13 220.71 L 348.13 215.86 L 349.05 215.86 L 349.05 220.71 L 365.84 220.71" fill="none" stroke-linejoin="round" stroke="#e3b341" stroke-width="1" stroke-linecap="round"/>
+<path d="M 163.77 115.43 L 163.77 109.72 L 180.15 109.72 L 180.15 220.71 L 197.45 220.71 L 197.45 215.86 L 198.36 215.86 L 198.36 220.71 L 225.54 220.71 L 225.54 215.86 L 226.45 215.86 L 226.45 220.71 L 253.64 220.71 L 253.64 215.86 L 254.55 215.86 L 254.55 220.71 L 283.63 220.71 L 283.63 215.86 L 284.55 215.86 L 284.55 220.71 L 315.13 220.71 L 315.13 215.86 L 316.05 215.86 L 316.05 220.71 L 348.13 220.71 L 348.13 215.86 L 349.05 215.86 L 349.05 220.71 L 365.84 220.71" fill="none" stroke-linejoin="round" stroke="#2da44e" stroke-width="1" stroke-dasharray="2.4 2.4"/>
+<rect x="365.84" y="217.71" width="15.00" height="6.00" rx="1" fill="#ffffff" stroke="#9a6700" stroke-width="0.6" stroke-dasharray="1.6 1"/>
+<text x="373.34" y="221.81" font-size="2.8" fill="#9a6700" text-anchor="middle" font-weight="bold">120 Ω</text>
+<path d="M 197.45 215.86 L 196.05 215.86" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 197.45 215.86 L 196.05 215.86" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 198.36 215.86 L 199.75 215.86" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 198.36 215.86 L 199.75 215.86" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 225.54 215.86 L 224.14 215.86" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 225.54 215.86 L 224.14 215.86" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 226.45 215.86 L 227.85 215.86" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 226.45 215.86 L 227.85 215.86" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 253.64 215.86 L 252.24 215.86" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 253.64 215.86 L 252.24 215.86" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 254.55 215.86 L 255.94 215.86" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 254.55 215.86 L 255.94 215.86" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 283.63 215.86 L 282.24 215.86" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 283.63 215.86 L 282.24 215.86" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 284.55 215.86 L 285.94 215.86" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 284.55 215.86 L 285.94 215.86" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 315.13 215.86 L 313.80 215.86" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 315.13 215.86 L 313.80 215.86" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 316.05 215.86 L 317.42 215.86" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 316.05 215.86 L 317.42 215.86" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 348.13 215.86 L 346.74 215.86" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 348.13 215.86 L 346.74 215.86" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 349.05 215.86 L 350.44 215.86" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 349.05 215.86 L 350.44 215.86" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
 </g>
 <g data-layer="can_s0" data-info="can">
-<path d="M 158.62 115.43 L 158.62 111.72 L 135.22 111.72 L 135.22 118.12 L 65.52 118.12 L 65.52 115.45" fill="none" stroke-linejoin="round" stroke="#1f2328" stroke-width="2" stroke-linecap="round"/>
-<path d="M 158.62 115.43 L 158.62 111.72 L 135.22 111.72 L 135.22 118.12 L 65.52 118.12 L 65.52 115.45" fill="none" stroke-linejoin="round" stroke="#e3b341" stroke-width="1" stroke-linecap="round"/>
-<path d="M 158.62 115.43 L 158.62 111.72 L 135.22 111.72 L 135.22 118.12 L 65.52 118.12 L 65.52 115.45" fill="none" stroke-linejoin="round" stroke="#2da44e" stroke-width="1" stroke-dasharray="2.4 2.4"/>
+<path d="M 152.02 115.43 L 152.02 111.72 L 128.62 111.72 L 128.62 118.12 L 64.20 118.12 L 64.20 115.45" fill="none" stroke-linejoin="round" stroke="#1f2328" stroke-width="2" stroke-linecap="round"/>
+<path d="M 152.02 115.43 L 152.02 111.72 L 128.62 111.72 L 128.62 118.12 L 64.20 118.12 L 64.20 115.45" fill="none" stroke-linejoin="round" stroke="#e3b341" stroke-width="1" stroke-linecap="round"/>
+<path d="M 152.02 115.43 L 152.02 111.72 L 128.62 111.72 L 128.62 118.12 L 64.20 118.12 L 64.20 115.45" fill="none" stroke-linejoin="round" stroke="#2da44e" stroke-width="1" stroke-dasharray="2.4 2.4"/>
 </g>
 <g data-layer="network" data-info="network">
-<path d="M 179.54 123.64 L 180.74 123.64 L 180.74 227.10 L 51.33 227.10 L 51.33 257.28 L 47.60 257.28" fill="none" stroke-linejoin="round" stroke="#0969da" stroke-width="0.9" stroke-linecap="round"/>
+<path d="M 172.94 123.64 L 174.14 123.64 L 174.14 227.10 L 51.33 227.10 L 51.33 257.28 L 47.60 257.28" fill="none" stroke-linejoin="round" stroke="#0969da" stroke-width="0.9" stroke-linecap="round"/>
 <path d="M 13.71 259.70 L 12.21 259.70 L 12.21 268.40 L 104.73 268.40 L 104.73 251.37 L 106.23 251.37" fill="none" stroke-linejoin="round" stroke="#0969da" stroke-width="0.9" stroke-linecap="round"/>
 <path d="M 47.60 261.27 L 49.10 261.27 L 49.10 267.20 L 244.39 267.20 L 244.39 251.37 L 245.89 251.37" fill="none" stroke-linejoin="round" stroke="#0969da" stroke-width="0.9" stroke-linecap="round"/>
 </g>
@@ -1816,91 +1816,91 @@
 <text x="12.00" y="29.80" font-size="3.2" fill="#1f2328" text-anchor="start" font-weight="bold">Power · PDH channels in port order</text>
 </g>
 <g data-layer="power" data-systems="power">
-<rect x="52.75" y="32.00" width="18.84" height="5.00" rx="1" fill="#ffffff" stroke="#57606a" stroke-width="0.35"/>
-<text x="62.17" y="35.27" font-size="2.2" fill="#1f2328" text-anchor="middle" font-weight="bold">12 V battery</text>
+<rect x="51.43" y="32.00" width="18.84" height="5.00" rx="1" fill="#ffffff" stroke="#57606a" stroke-width="0.35"/>
+<text x="60.85" y="35.27" font-size="2.2" fill="#1f2328" text-anchor="middle" font-weight="bold">12 V battery</text>
 </g>
 <g data-layer="power" data-systems="power">
-<rect x="75.59" y="32.00" width="26.76" height="5.00" rx="1" fill="#ffffff" stroke="#57606a" stroke-width="0.35"/>
-<text x="88.97" y="35.27" font-size="2.2" fill="#1f2328" text-anchor="middle" font-weight="bold">120 A main breaker</text>
+<rect x="74.27" y="32.00" width="26.76" height="5.00" rx="1" fill="#ffffff" stroke="#57606a" stroke-width="0.35"/>
+<text x="87.65" y="35.27" font-size="2.2" fill="#1f2328" text-anchor="middle" font-weight="bold">120 A main breaker</text>
 </g>
 <g class="dev-label" data-layer="power" data-systems="can power" data-key="pdh" data-open="0">
-<text x="73.59" y="41.50" font-size="2.5" fill="#1f2328" text-anchor="middle">Power Distribution Hub</text>
+<text x="72.27" y="41.50" font-size="2.5" fill="#1f2328" text-anchor="middle">Power Distribution Hub</text>
 </g>
 <g class="dev-label" data-layer="power" data-info="can" data-key="pdh" data-open="0">
-<rect x="70.05" y="42.50" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="73.59" y="46.60" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">21</text>
+<rect x="68.73" y="42.50" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="72.27" y="46.60" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">21</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="52.92" y="57.48" font-size="2.2" fill="#1f2328" text-anchor="end">10 BL drive or BL turn · 5 / 6</text>
+<text x="51.60" y="57.48" font-size="2.2" fill="#1f2328" text-anchor="end">10 BL drive or BL turn · 5 / 6</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="52.92" y="62.01" font-size="2.2" fill="#9a6700" text-anchor="end">11 —</text>
+<text x="51.60" y="62.01" font-size="2.2" fill="#9a6700" text-anchor="end">11 —</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="52.92" y="66.40" font-size="2.2" fill="#1f2328" text-anchor="end">12 Bottom belt tunnel · 31 / 32</text>
+<text x="51.60" y="66.40" font-size="2.2" fill="#1f2328" text-anchor="end">12 Bottom belt tunnel · 32</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="52.92" y="70.82" font-size="2.2" fill="#1f2328" text-anchor="end">13 Roller drive · 30?</text>
+<text x="51.60" y="70.82" font-size="2.2" fill="#1f2328" text-anchor="end">13 Roller drive · 30?</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="52.92" y="75.38" font-size="2.2" fill="#1f2328" text-anchor="end">14 Top belt tunnel · 31 / 32</text>
+<text x="51.60" y="75.38" font-size="2.2" fill="#1f2328" text-anchor="end">14 Top belt tunnel · 31</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="52.92" y="80.51" font-size="2.2" fill="#9a6700" text-anchor="end">15 —</text>
+<text x="51.60" y="80.51" font-size="2.2" fill="#9a6700" text-anchor="end">15 —</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="52.92" y="85.01" font-size="2.2" fill="#9a6700" text-anchor="end">16 —</text>
+<text x="51.60" y="85.01" font-size="2.2" fill="#9a6700" text-anchor="end">16 —</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="52.92" y="89.37" font-size="2.2" fill="#9a6700" text-anchor="end">17 —</text>
+<text x="51.60" y="89.37" font-size="2.2" fill="#9a6700" text-anchor="end">17 —</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="52.92" y="93.73" font-size="2.2" fill="#9a6700" text-anchor="end">18 —</text>
+<text x="51.60" y="93.73" font-size="2.2" fill="#9a6700" text-anchor="end">18 —</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="52.92" y="98.12" font-size="2.2" fill="#9a6700" text-anchor="end">19 Swerve: drive or turn?</text>
+<text x="51.60" y="98.12" font-size="2.2" fill="#9a6700" text-anchor="end">19 Swerve: drive or turn?</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="52.92" y="101.97" font-size="2.2" fill="#1f2328" text-anchor="end">20 Gyro · 0</text>
+<text x="51.60" y="101.97" font-size="2.2" fill="#1f2328" text-anchor="end">20 Gyro · 0</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="52.92" y="104.57" font-size="2.2" fill="#1f2328" text-anchor="end">21 Zinc-V ×2 → Pis</text>
+<text x="51.60" y="104.57" font-size="2.2" fill="#1f2328" text-anchor="end">21 Zinc-V ×2 → Pis</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="52.92" y="107.17" font-size="2.2" fill="#9a6700" text-anchor="end">22 —</text>
+<text x="51.60" y="107.17" font-size="2.2" fill="#9a6700" text-anchor="end">22 —</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="52.92" y="109.77" font-size="2.2" fill="#9a6700" text-anchor="end">23 — (switchable)</text>
+<text x="51.60" y="109.77" font-size="2.2" fill="#9a6700" text-anchor="end">23 — (switchable)</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="94.25" y="57.48" font-size="2.2" fill="#9a6700" text-anchor="start">9 Swerve: drive or turn?</text>
+<text x="92.94" y="57.48" font-size="2.2" fill="#9a6700" text-anchor="start">9 Swerve: drive or turn?</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="94.25" y="62.01" font-size="2.2" fill="#9a6700" text-anchor="start">8 —</text>
+<text x="92.94" y="62.01" font-size="2.2" fill="#9a6700" text-anchor="start">8 —</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="94.25" y="66.40" font-size="2.2" fill="#1f2328" text-anchor="start">7 Turret-side rack · 21 / 22</text>
+<text x="92.94" y="66.40" font-size="2.2" fill="#1f2328" text-anchor="start">7 Turret-side rack · 21</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="94.25" y="70.82" font-size="2.2" fill="#9a6700" text-anchor="start">6 —</text>
+<text x="92.94" y="70.82" font-size="2.2" fill="#9a6700" text-anchor="start">6 —</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="94.25" y="75.38" font-size="2.2" fill="#9a6700" text-anchor="start">5 —</text>
+<text x="92.94" y="75.38" font-size="2.2" fill="#9a6700" text-anchor="start">5 —</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="94.25" y="80.51" font-size="2.2" fill="#9a6700" text-anchor="start">4 —</text>
+<text x="92.94" y="80.51" font-size="2.2" fill="#9a6700" text-anchor="start">4 —</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="94.25" y="85.01" font-size="2.2" fill="#9a6700" text-anchor="start">3 —</text>
+<text x="92.94" y="85.01" font-size="2.2" fill="#9a6700" text-anchor="start">3 —</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="94.25" y="89.37" font-size="2.2" fill="#1f2328" text-anchor="start">2 Other-side rack · 21 / 22</text>
+<text x="92.94" y="89.37" font-size="2.2" fill="#1f2328" text-anchor="start">2 Other-side rack · 22</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="94.25" y="93.73" font-size="2.2" fill="#9a6700" text-anchor="start">1 —</text>
+<text x="92.94" y="93.73" font-size="2.2" fill="#9a6700" text-anchor="start">1 —</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="94.25" y="98.12" font-size="2.2" fill="#9a6700" text-anchor="start">0 Swerve: drive or turn?</text>
+<text x="92.94" y="98.12" font-size="2.2" fill="#9a6700" text-anchor="start">0 Swerve: drive or turn?</text>
 </g>
 <g data-layer="power" data-info="power">
 <text x="12.00" y="122.62" font-size="2.4000000000000004" fill="#1f2328" text-anchor="start" font-weight="bold">Loads with no recorded PDH channel</text>
@@ -1909,7 +1909,7 @@
 <text x="12.00" y="125.82" font-size="2.2" fill="#9a6700" text-anchor="start">• Swerve: 10 devices (CAN 1, 2, 3, 4, 7, 8, 9, 10, 11, 12)</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="12.00" y="129.02" font-size="2.2" fill="#9a6700" text-anchor="start">• Shooter: 6 devices (CAN 40?, 41?, 42 / 43, 44, 45?)</text>
+<text x="12.00" y="129.02" font-size="2.2" fill="#9a6700" text-anchor="start">• Shooter: 6 devices (CAN 40, 41, 42, 43, 44, 45)</text>
 </g>
 <g data-layer="power" data-info="power">
 <text x="12.00" y="132.22" font-size="2.2" fill="#9a6700" text-anchor="start">• Intake: Rollers (CAN 20)</text>
@@ -1930,305 +1930,305 @@
 <text x="12.00" y="148.22" font-size="2.2" fill="#9a6700" text-anchor="start">• One of BL drive 5 and BL turn 6 is on channel 10; the other has no channel</text>
 </g>
 <g class="dev-label" data-layer="frame" data-systems="can power network" data-key="systemcore" data-open="1" data-open-in="power">
-<text x="160.23" y="141.38" font-size="2.5" fill="#1f2328" text-anchor="middle">SystemCore (Beta)</text>
+<text x="153.63" y="141.38" font-size="2.5" fill="#1f2328" text-anchor="middle">SystemCore (Beta)</text>
 </g>
 <g class="dev-label" data-layer="frame" data-info="network" data-key="systemcore" data-open="1" data-open-in="power">
-<rect x="143.68" y="142.38" width="23.46" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="155.41" y="146.48" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10.21.2.2</text>
+<rect x="137.08" y="142.38" width="23.46" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="148.81" y="146.48" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10.21.2.2</text>
 </g>
 <g class="dev-tag" data-layer="power" data-info="power" data-key="systemcore" data-open="1" data-open-in="power">
-<rect x="168.14" y="142.38" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
-<text x="172.46" y="146.18" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+<rect x="161.54" y="142.38" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="165.86" y="146.18" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
 </g>
 <g data-layer="can_s1" data-systems="can">
-<text x="193.25" y="29.80" font-size="3.2" fill="#1f2328" text-anchor="start" font-weight="bold">can_s1 · Indexer</text>
+<text x="186.65" y="29.80" font-size="3.2" fill="#1f2328" text-anchor="start" font-weight="bold">can_s1 · Indexer</text>
 </g>
-<g class="dev-label" data-layer="can_s1" data-systems="can power" data-key="indexer-tunnel-bottom" data-open="1" data-open-in="can">
-<text x="208.24" y="33.50" font-size="2.5" fill="#1f2328" text-anchor="middle">Bottom belt tunnel</text>
+<g class="dev-label" data-layer="can_s1" data-systems="can power" data-key="indexer-tunnel-bottom" data-open="0">
+<text x="200.15" y="33.50" font-size="2.5" fill="#1f2328" text-anchor="middle">Bottom belt tunnel</text>
 </g>
-<g class="dev-label" data-layer="can_s1" data-info="can" data-key="indexer-tunnel-bottom" data-open="1" data-open-in="can">
-<rect x="193.25" y="34.50" width="18.78" height="5.50" rx="1.2" fill="#fff8c5" stroke="#9a6700" stroke-width="0.35" stroke-dasharray="1 0.6"/>
-<text x="202.64" y="38.60" font-size="3.9" fill="#9a6700" text-anchor="middle" font-weight="bold">31 / 32</text>
+<g class="dev-label" data-layer="can_s1" data-info="can" data-key="indexer-tunnel-bottom" data-open="0">
+<rect x="191.01" y="34.50" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="194.55" y="38.60" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">32</text>
 </g>
-<g class="dev-tag" data-layer="power" data-info="power" data-key="indexer-tunnel-bottom" data-open="1" data-open-in="can">
-<rect x="213.03" y="34.50" width="10.20" height="5.50" rx="2.7" fill="#cf222e"/>
-<text x="218.13" y="38.30" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 12</text>
+<g class="dev-tag" data-layer="power" data-info="power" data-key="indexer-tunnel-bottom" data-open="0">
+<rect x="199.09" y="34.50" width="10.20" height="5.50" rx="2.7" fill="#cf222e"/>
+<text x="204.19" y="38.30" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 12</text>
 </g>
 <g class="dev-label" data-layer="can_s1" data-systems="can power" data-key="indexer-roller" data-open="1" data-open-in="power">
-<text x="240.08" y="33.50" font-size="2.5" fill="#1f2328" text-anchor="middle">Roller drive</text>
+<text x="230.50" y="33.50" font-size="2.5" fill="#1f2328" text-anchor="middle">Roller drive</text>
 </g>
 <g class="dev-label" data-layer="can_s1" data-info="can" data-key="indexer-roller" data-open="1" data-open-in="power">
-<rect x="230.16" y="34.50" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="233.70" y="38.60" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">30</text>
+<rect x="220.58" y="34.50" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="224.12" y="38.60" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">30</text>
 </g>
 <g class="dev-tag" data-layer="power" data-info="power" data-key="indexer-roller" data-open="1" data-open-in="power">
-<rect x="238.24" y="34.50" width="11.76" height="5.50" rx="2.7" fill="#cf222e"/>
-<text x="244.12" y="38.30" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 13?</text>
+<rect x="228.66" y="34.50" width="11.76" height="5.50" rx="2.7" fill="#cf222e"/>
+<text x="234.54" y="38.30" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 13?</text>
 </g>
-<g class="dev-label" data-layer="can_s1" data-systems="can power" data-key="indexer-tunnel-top" data-open="1" data-open-in="can">
-<text x="271.91" y="33.50" font-size="2.5" fill="#1f2328" text-anchor="middle">Top belt tunnel</text>
+<g class="dev-label" data-layer="can_s1" data-systems="can power" data-key="indexer-tunnel-top" data-open="0">
+<text x="258.59" y="33.50" font-size="2.5" fill="#1f2328" text-anchor="middle">Top belt tunnel</text>
 </g>
-<g class="dev-label" data-layer="can_s1" data-info="can" data-key="indexer-tunnel-top" data-open="1" data-open-in="can">
-<rect x="256.92" y="34.50" width="18.78" height="5.50" rx="1.2" fill="#fff8c5" stroke="#9a6700" stroke-width="0.35" stroke-dasharray="1 0.6"/>
-<text x="266.31" y="38.60" font-size="3.9" fill="#9a6700" text-anchor="middle" font-weight="bold">31 / 32</text>
+<g class="dev-label" data-layer="can_s1" data-info="can" data-key="indexer-tunnel-top" data-open="0">
+<rect x="249.45" y="34.50" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="252.99" y="38.60" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">31</text>
 </g>
-<g class="dev-tag" data-layer="power" data-info="power" data-key="indexer-tunnel-top" data-open="1" data-open-in="can">
-<rect x="276.70" y="34.50" width="10.20" height="5.50" rx="2.7" fill="#cf222e"/>
-<text x="281.80" y="38.30" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 14</text>
+<g class="dev-tag" data-layer="power" data-info="power" data-key="indexer-tunnel-top" data-open="0">
+<rect x="257.53" y="34.50" width="10.20" height="5.50" rx="2.7" fill="#cf222e"/>
+<text x="262.63" y="38.30" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 14</text>
 </g>
 <g data-layer="can_s4" data-systems="can">
-<text x="311.90" y="29.80" font-size="3.2" fill="#1f2328" text-anchor="start" font-weight="bold">can_s4 · Intake</text>
+<text x="294.84" y="29.80" font-size="3.2" fill="#1f2328" text-anchor="start" font-weight="bold">can_s4 · Intake</text>
 </g>
-<g class="dev-label" data-layer="can_s4" data-systems="can power" data-key="intake-rack-turret-side" data-open="1" data-open-in="can">
-<text x="326.11" y="38.07" font-size="2.5" fill="#1f2328" text-anchor="middle">Turret-side rack</text>
+<g class="dev-label" data-layer="can_s4" data-systems="can power" data-key="intake-rack-turret-side" data-open="0">
+<text x="306.84" y="38.07" font-size="2.5" fill="#1f2328" text-anchor="middle">Turret-side rack</text>
 </g>
-<g class="dev-label" data-layer="can_s4" data-info="can" data-key="intake-rack-turret-side" data-open="1" data-open-in="can">
-<rect x="311.90" y="39.07" width="18.78" height="5.50" rx="1.2" fill="#fff8c5" stroke="#9a6700" stroke-width="0.35" stroke-dasharray="1 0.6"/>
-<text x="321.29" y="43.17" font-size="3.9" fill="#9a6700" text-anchor="middle" font-weight="bold">21 / 22</text>
+<g class="dev-label" data-layer="can_s4" data-info="can" data-key="intake-rack-turret-side" data-open="0">
+<rect x="298.48" y="39.07" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="302.02" y="43.17" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">21</text>
 </g>
-<g class="dev-tag" data-layer="power" data-info="power" data-key="intake-rack-turret-side" data-open="1" data-open-in="can">
-<rect x="331.68" y="39.07" width="8.64" height="5.50" rx="2.7" fill="#cf222e"/>
-<text x="336.00" y="42.87" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 7</text>
+<g class="dev-tag" data-layer="power" data-info="power" data-key="intake-rack-turret-side" data-open="0">
+<rect x="306.56" y="39.07" width="8.64" height="5.50" rx="2.7" fill="#cf222e"/>
+<text x="310.88" y="42.87" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 7</text>
 </g>
-<g class="dev-label" data-layer="can_s4" data-systems="can power" data-key="intake-rack-other-side" data-open="1" data-open-in="can">
-<text x="360.53" y="38.07" font-size="2.5" fill="#1f2328" text-anchor="middle">Other-side rack</text>
+<g class="dev-label" data-layer="can_s4" data-systems="can power" data-key="intake-rack-other-side" data-open="0">
+<text x="336.09" y="38.07" font-size="2.5" fill="#1f2328" text-anchor="middle">Other-side rack</text>
 </g>
-<g class="dev-label" data-layer="can_s4" data-info="can" data-key="intake-rack-other-side" data-open="1" data-open-in="can">
-<rect x="346.32" y="39.07" width="18.78" height="5.50" rx="1.2" fill="#fff8c5" stroke="#9a6700" stroke-width="0.35" stroke-dasharray="1 0.6"/>
-<text x="355.71" y="43.17" font-size="3.9" fill="#9a6700" text-anchor="middle" font-weight="bold">21 / 22</text>
+<g class="dev-label" data-layer="can_s4" data-info="can" data-key="intake-rack-other-side" data-open="0">
+<rect x="327.73" y="39.07" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="331.27" y="43.17" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">22</text>
 </g>
-<g class="dev-tag" data-layer="power" data-info="power" data-key="intake-rack-other-side" data-open="1" data-open-in="can">
-<rect x="366.10" y="39.07" width="8.64" height="5.50" rx="2.7" fill="#cf222e"/>
-<text x="370.42" y="42.87" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 2</text>
+<g class="dev-tag" data-layer="power" data-info="power" data-key="intake-rack-other-side" data-open="0">
+<rect x="335.81" y="39.07" width="8.64" height="5.50" rx="2.7" fill="#cf222e"/>
+<text x="340.13" y="42.87" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 2</text>
 </g>
 <g class="dev-label" data-layer="can_s4" data-systems="can power" data-key="intake-rollers" data-open="1" data-open-in="power">
-<text x="391.59" y="33.50" font-size="2.5" fill="#1f2328" text-anchor="middle">Rollers</text>
+<text x="364.19" y="33.50" font-size="2.5" fill="#1f2328" text-anchor="middle">Rollers</text>
 </g>
 <g class="dev-label" data-layer="can_s4" data-info="can" data-key="intake-rollers" data-open="1" data-open-in="power">
-<rect x="383.23" y="34.50" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="386.77" y="38.60" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">20</text>
+<rect x="355.83" y="34.50" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="359.37" y="38.60" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">20</text>
 </g>
 <g class="dev-tag" data-layer="power" data-info="power" data-key="intake-rollers" data-open="1" data-open-in="power">
-<rect x="391.31" y="34.50" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
-<text x="395.63" y="38.30" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+<rect x="363.91" y="34.50" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="368.23" y="38.30" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
 </g>
 <g data-layer="can_s2" data-systems="can">
-<text x="193.25" y="80.37" font-size="3.2" fill="#1f2328" text-anchor="start" font-weight="bold">can_s2 · Swerve and gyro</text>
+<text x="186.65" y="80.37" font-size="3.2" fill="#1f2328" text-anchor="start" font-weight="bold">can_s2 · Swerve and gyro</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-systems="can power" data-key="swerve-bl-drive" data-open="1" data-open-in="power">
-<text x="204.10" y="88.79" font-size="2.5" fill="#1f2328" text-anchor="middle">BL drive</text>
+<text x="197.50" y="88.79" font-size="2.5" fill="#1f2328" text-anchor="middle">BL drive</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-info="can" data-key="swerve-bl-drive" data-open="1" data-open-in="power">
-<rect x="195.35" y="89.79" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="197.72" y="93.89" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">5</text>
+<rect x="188.75" y="89.79" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="191.12" y="93.89" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">5</text>
 </g>
 <g class="dev-tag" data-layer="power" data-info="power" data-key="swerve-bl-drive" data-open="1" data-open-in="power">
-<rect x="201.09" y="89.79" width="11.76" height="5.50" rx="2.7" fill="#cf222e"/>
-<text x="206.97" y="93.59" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 10?</text>
+<rect x="194.49" y="89.79" width="11.76" height="5.50" rx="2.7" fill="#cf222e"/>
+<text x="200.37" y="93.59" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 10?</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-systems="can power" data-key="swerve-bl-encoder" data-open="1" data-open-in="power">
-<text x="229.49" y="84.07" font-size="2.5" fill="#1f2328" text-anchor="middle">BL encoder</text>
+<text x="222.89" y="84.07" font-size="2.5" fill="#1f2328" text-anchor="middle">BL encoder</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-info="can" data-key="swerve-bl-encoder" data-open="1" data-open-in="power">
-<rect x="221.13" y="85.07" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="224.67" y="89.17" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">11</text>
+<rect x="214.53" y="85.07" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="218.07" y="89.17" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">11</text>
 </g>
 <g class="dev-tag" data-layer="power" data-info="power" data-key="swerve-bl-encoder" data-open="1" data-open-in="power">
-<rect x="229.21" y="85.07" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
-<text x="233.53" y="88.87" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+<rect x="222.61" y="85.07" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="226.93" y="88.87" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-systems="can power" data-key="swerve-bl-turn" data-open="1" data-open-in="power">
-<text x="254.89" y="88.79" font-size="2.5" fill="#1f2328" text-anchor="middle">BL turn</text>
+<text x="248.29" y="88.79" font-size="2.5" fill="#1f2328" text-anchor="middle">BL turn</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-info="can" data-key="swerve-bl-turn" data-open="1" data-open-in="power">
-<rect x="246.14" y="89.79" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="248.51" y="93.89" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">6</text>
+<rect x="239.54" y="89.79" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="241.91" y="93.89" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">6</text>
 </g>
 <g class="dev-tag" data-layer="power" data-info="power" data-key="swerve-bl-turn" data-open="1" data-open-in="power">
-<rect x="251.88" y="89.79" width="11.76" height="5.50" rx="2.7" fill="#cf222e"/>
-<text x="257.76" y="93.59" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 10?</text>
+<rect x="245.28" y="89.79" width="11.76" height="5.50" rx="2.7" fill="#cf222e"/>
+<text x="251.16" y="93.59" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 10?</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-systems="can power" data-key="swerve-br-turn" data-open="1" data-open-in="power">
-<text x="282.57" y="88.79" font-size="2.5" fill="#1f2328" text-anchor="middle">BR turn</text>
+<text x="275.97" y="88.79" font-size="2.5" fill="#1f2328" text-anchor="middle">BR turn</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-info="can" data-key="swerve-br-turn" data-open="1" data-open-in="power">
-<rect x="275.38" y="89.79" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="277.75" y="93.89" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">8</text>
+<rect x="268.78" y="89.79" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="271.15" y="93.89" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">8</text>
 </g>
 <g class="dev-tag" data-layer="power" data-info="power" data-key="swerve-br-turn" data-open="1" data-open-in="power">
-<rect x="281.12" y="89.79" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
-<text x="285.44" y="93.59" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+<rect x="274.52" y="89.79" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="278.84" y="93.59" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-systems="can power" data-key="swerve-br-encoder" data-open="1" data-open-in="power">
-<text x="307.97" y="84.07" font-size="2.5" fill="#1f2328" text-anchor="middle">BR encoder</text>
+<text x="301.37" y="84.07" font-size="2.5" fill="#1f2328" text-anchor="middle">BR encoder</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-info="can" data-key="swerve-br-encoder" data-open="1" data-open-in="power">
-<rect x="299.61" y="85.07" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="303.15" y="89.17" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">12</text>
+<rect x="293.01" y="85.07" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="296.55" y="89.17" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">12</text>
 </g>
 <g class="dev-tag" data-layer="power" data-info="power" data-key="swerve-br-encoder" data-open="1" data-open-in="power">
-<rect x="307.69" y="85.07" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
-<text x="312.01" y="88.87" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+<rect x="301.09" y="85.07" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="305.41" y="88.87" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-systems="can power" data-key="swerve-br-drive" data-open="1" data-open-in="power">
-<text x="333.36" y="88.79" font-size="2.5" fill="#1f2328" text-anchor="middle">BR drive</text>
+<text x="326.76" y="88.79" font-size="2.5" fill="#1f2328" text-anchor="middle">BR drive</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-info="can" data-key="swerve-br-drive" data-open="1" data-open-in="power">
-<rect x="326.17" y="89.79" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="328.54" y="93.89" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">7</text>
+<rect x="319.57" y="89.79" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="321.94" y="93.89" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">7</text>
 </g>
 <g class="dev-tag" data-layer="power" data-info="power" data-key="swerve-br-drive" data-open="1" data-open-in="power">
-<rect x="331.91" y="89.79" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
-<text x="336.23" y="93.59" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+<rect x="325.31" y="89.79" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="329.63" y="93.59" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-systems="can power" data-key="swerve-fr-drive" data-open="1" data-open-in="power">
-<text x="204.10" y="134.08" font-size="2.5" fill="#1f2328" text-anchor="middle">FR drive</text>
+<text x="197.50" y="134.08" font-size="2.5" fill="#1f2328" text-anchor="middle">FR drive</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-info="can" data-key="swerve-fr-drive" data-open="1" data-open-in="power">
-<rect x="196.91" y="135.08" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="199.28" y="139.18" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">3</text>
+<rect x="190.31" y="135.08" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="192.68" y="139.18" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">3</text>
 </g>
 <g class="dev-tag" data-layer="power" data-info="power" data-key="swerve-fr-drive" data-open="1" data-open-in="power">
-<rect x="202.65" y="135.08" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
-<text x="206.97" y="138.88" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+<rect x="196.05" y="135.08" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="200.37" y="138.88" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-systems="can power" data-key="swerve-fr-encoder" data-open="1" data-open-in="power">
-<text x="229.49" y="129.36" font-size="2.5" fill="#1f2328" text-anchor="middle">FR encoder</text>
+<text x="222.89" y="129.36" font-size="2.5" fill="#1f2328" text-anchor="middle">FR encoder</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-info="can" data-key="swerve-fr-encoder" data-open="1" data-open-in="power">
-<rect x="221.13" y="130.36" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="224.67" y="134.46" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10</text>
+<rect x="214.53" y="130.36" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="218.07" y="134.46" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10</text>
 </g>
 <g class="dev-tag" data-layer="power" data-info="power" data-key="swerve-fr-encoder" data-open="1" data-open-in="power">
-<rect x="229.21" y="130.36" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
-<text x="233.53" y="134.16" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+<rect x="222.61" y="130.36" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="226.93" y="134.16" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-systems="can power" data-key="swerve-fr-turn" data-open="1" data-open-in="power">
-<text x="254.89" y="134.08" font-size="2.5" fill="#1f2328" text-anchor="middle">FR turn</text>
+<text x="248.29" y="134.08" font-size="2.5" fill="#1f2328" text-anchor="middle">FR turn</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-info="can" data-key="swerve-fr-turn" data-open="1" data-open-in="power">
-<rect x="247.70" y="135.08" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="250.07" y="139.18" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">4</text>
+<rect x="241.10" y="135.08" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="243.47" y="139.18" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">4</text>
 </g>
 <g class="dev-tag" data-layer="power" data-info="power" data-key="swerve-fr-turn" data-open="1" data-open-in="power">
-<rect x="253.44" y="135.08" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
-<text x="257.76" y="138.88" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+<rect x="246.84" y="135.08" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="251.16" y="138.88" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-systems="can power" data-key="swerve-fl-turn" data-open="1" data-open-in="power">
-<text x="282.57" y="134.08" font-size="2.5" fill="#1f2328" text-anchor="middle">FL turn</text>
+<text x="275.97" y="134.08" font-size="2.5" fill="#1f2328" text-anchor="middle">FL turn</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-info="can" data-key="swerve-fl-turn" data-open="1" data-open-in="power">
-<rect x="275.38" y="135.08" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="277.75" y="139.18" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">2</text>
+<rect x="268.78" y="135.08" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="271.15" y="139.18" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">2</text>
 </g>
 <g class="dev-tag" data-layer="power" data-info="power" data-key="swerve-fl-turn" data-open="1" data-open-in="power">
-<rect x="281.12" y="135.08" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
-<text x="285.44" y="138.88" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+<rect x="274.52" y="135.08" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="278.84" y="138.88" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-systems="can power" data-key="swerve-fl-encoder" data-open="1" data-open-in="power">
-<text x="307.97" y="129.36" font-size="2.5" fill="#1f2328" text-anchor="middle">FL encoder</text>
+<text x="301.37" y="129.36" font-size="2.5" fill="#1f2328" text-anchor="middle">FL encoder</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-info="can" data-key="swerve-fl-encoder" data-open="1" data-open-in="power">
-<rect x="300.78" y="130.36" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="303.15" y="134.46" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">9</text>
+<rect x="294.18" y="130.36" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="296.55" y="134.46" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">9</text>
 </g>
 <g class="dev-tag" data-layer="power" data-info="power" data-key="swerve-fl-encoder" data-open="1" data-open-in="power">
-<rect x="306.52" y="130.36" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
-<text x="310.84" y="134.16" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+<rect x="299.92" y="130.36" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="304.24" y="134.16" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-systems="can power" data-key="swerve-fl-drive" data-open="1" data-open-in="power">
-<text x="333.36" y="134.08" font-size="2.5" fill="#1f2328" text-anchor="middle">FL drive</text>
+<text x="326.76" y="134.08" font-size="2.5" fill="#1f2328" text-anchor="middle">FL drive</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-info="can" data-key="swerve-fl-drive" data-open="1" data-open-in="power">
-<rect x="326.17" y="135.08" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="328.54" y="139.18" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+<rect x="319.57" y="135.08" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="321.94" y="139.18" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
 </g>
 <g class="dev-tag" data-layer="power" data-info="power" data-key="swerve-fl-drive" data-open="1" data-open-in="power">
-<rect x="331.91" y="135.08" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
-<text x="336.23" y="138.88" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+<rect x="325.31" y="135.08" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="329.63" y="138.88" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-systems="can power" data-key="gyro" data-open="0">
-<text x="359.33" y="133.07" font-size="2.5" fill="#1f2328" text-anchor="middle">Gyro</text>
+<text x="352.73" y="133.07" font-size="2.5" fill="#1f2328" text-anchor="middle">Gyro</text>
 </g>
 <g class="dev-label" data-layer="can_s2" data-info="can" data-key="gyro" data-open="0">
-<rect x="351.36" y="134.07" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="353.73" y="138.17" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="344.76" y="134.07" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="347.13" y="138.17" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
 </g>
 <g class="dev-tag" data-layer="power" data-info="power" data-key="gyro" data-open="0">
-<rect x="357.10" y="134.07" width="10.20" height="5.50" rx="2.7" fill="#cf222e"/>
-<text x="362.20" y="137.87" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 20</text>
+<rect x="350.50" y="134.07" width="10.20" height="5.50" rx="2.7" fill="#cf222e"/>
+<text x="355.60" y="137.87" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch 20</text>
 </g>
 <g data-layer="can_s3" data-systems="can">
-<text x="193.25" y="180.95" font-size="3.2" fill="#1f2328" text-anchor="start" font-weight="bold">can_s3 · Shooter</text>
+<text x="186.65" y="180.95" font-size="3.2" fill="#1f2328" text-anchor="start" font-weight="bold">can_s3 · Shooter</text>
 </g>
-<g class="dev-label" data-layer="can_s3" data-systems="can power" data-key="shooter-vertical-roller" data-open="1" data-open-in="can power">
-<text x="204.50" y="184.65" font-size="2.5" fill="#1f2328" text-anchor="middle">Vertical roller</text>
+<g class="dev-label" data-layer="can_s3" data-systems="can power" data-key="shooter-vertical-roller" data-open="1" data-open-in="power">
+<text x="197.90" y="184.65" font-size="2.5" fill="#1f2328" text-anchor="middle">Vertical roller</text>
 </g>
-<g class="dev-label" data-layer="can_s3" data-info="can" data-key="shooter-vertical-roller" data-open="1" data-open-in="can power">
-<rect x="194.97" y="185.65" width="9.42" height="5.50" rx="1.2" fill="#fff8c5" stroke="#9a6700" stroke-width="0.35" stroke-dasharray="1 0.6"/>
-<text x="199.68" y="189.75" font-size="3.9" fill="#9a6700" text-anchor="middle" font-weight="bold">40?</text>
+<g class="dev-label" data-layer="can_s3" data-info="can" data-key="shooter-vertical-roller" data-open="1" data-open-in="power">
+<rect x="189.54" y="185.65" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="193.08" y="189.75" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">40</text>
 </g>
-<g class="dev-tag" data-layer="power" data-info="power" data-key="shooter-vertical-roller" data-open="1" data-open-in="can power">
-<rect x="205.39" y="185.65" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
-<text x="209.71" y="189.45" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+<g class="dev-tag" data-layer="power" data-info="power" data-key="shooter-vertical-roller" data-open="1" data-open-in="power">
+<rect x="197.62" y="185.65" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="201.94" y="189.45" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
 </g>
-<g class="dev-label" data-layer="can_s3" data-systems="can power" data-key="shooter-scotty-rollers" data-open="1" data-open-in="can power">
-<text x="232.60" y="184.65" font-size="2.5" fill="#1f2328" text-anchor="middle">Scotty rollers</text>
+<g class="dev-label" data-layer="can_s3" data-systems="can power" data-key="shooter-scotty-rollers" data-open="1" data-open-in="power">
+<text x="226.00" y="184.65" font-size="2.5" fill="#1f2328" text-anchor="middle">Scotty rollers</text>
 </g>
-<g class="dev-label" data-layer="can_s3" data-info="can" data-key="shooter-scotty-rollers" data-open="1" data-open-in="can power">
-<rect x="223.07" y="185.65" width="9.42" height="5.50" rx="1.2" fill="#fff8c5" stroke="#9a6700" stroke-width="0.35" stroke-dasharray="1 0.6"/>
-<text x="227.78" y="189.75" font-size="3.9" fill="#9a6700" text-anchor="middle" font-weight="bold">45?</text>
+<g class="dev-label" data-layer="can_s3" data-info="can" data-key="shooter-scotty-rollers" data-open="1" data-open-in="power">
+<rect x="217.64" y="185.65" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="221.18" y="189.75" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">45</text>
 </g>
-<g class="dev-tag" data-layer="power" data-info="power" data-key="shooter-scotty-rollers" data-open="1" data-open-in="can power">
-<rect x="233.49" y="185.65" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
-<text x="237.81" y="189.45" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+<g class="dev-tag" data-layer="power" data-info="power" data-key="shooter-scotty-rollers" data-open="1" data-open-in="power">
+<rect x="225.72" y="185.65" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="230.04" y="189.45" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
 </g>
 <g class="dev-label" data-layer="can_s3" data-systems="can power" data-key="turret-rotation" data-open="1" data-open-in="power">
-<text x="260.69" y="184.65" font-size="2.5" fill="#1f2328" text-anchor="middle">Turret rotation</text>
+<text x="254.09" y="184.65" font-size="2.5" fill="#1f2328" text-anchor="middle">Turret rotation</text>
 </g>
 <g class="dev-label" data-layer="can_s3" data-info="can" data-key="turret-rotation" data-open="1" data-open-in="power">
-<rect x="252.33" y="185.65" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="255.87" y="189.75" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">44</text>
+<rect x="245.73" y="185.65" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="249.27" y="189.75" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">44</text>
 </g>
 <g class="dev-tag" data-layer="power" data-info="power" data-key="turret-rotation" data-open="1" data-open-in="power">
-<rect x="260.41" y="185.65" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
-<text x="264.73" y="189.45" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+<rect x="253.81" y="185.65" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="258.13" y="189.45" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
 </g>
-<g class="dev-label" data-layer="can_s3" data-systems="can power" data-key="flywheel-x44-side" data-open="1" data-open-in="can power">
-<text x="292.15" y="184.65" font-size="2.5" fill="#1f2328" text-anchor="middle">X44-side flywheel</text>
+<g class="dev-label" data-layer="can_s3" data-systems="can power" data-key="flywheel-x44-side" data-open="1" data-open-in="power">
+<text x="284.09" y="184.65" font-size="2.5" fill="#1f2328" text-anchor="middle">X44-side flywheel</text>
 </g>
-<g class="dev-label" data-layer="can_s3" data-info="can" data-key="flywheel-x44-side" data-open="1" data-open-in="can power">
-<rect x="277.94" y="185.65" width="18.78" height="5.50" rx="1.2" fill="#fff8c5" stroke="#9a6700" stroke-width="0.35" stroke-dasharray="1 0.6"/>
-<text x="287.33" y="189.75" font-size="3.9" fill="#9a6700" text-anchor="middle" font-weight="bold">42 / 43</text>
+<g class="dev-label" data-layer="can_s3" data-info="can" data-key="flywheel-x44-side" data-open="1" data-open-in="power">
+<rect x="275.73" y="185.65" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="279.27" y="189.75" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">42</text>
 </g>
-<g class="dev-tag" data-layer="power" data-info="power" data-key="flywheel-x44-side" data-open="1" data-open-in="can power">
-<rect x="297.72" y="185.65" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
-<text x="302.04" y="189.45" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+<g class="dev-tag" data-layer="power" data-info="power" data-key="flywheel-x44-side" data-open="1" data-open-in="power">
+<rect x="283.81" y="185.65" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="288.13" y="189.45" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
 </g>
-<g class="dev-label" data-layer="can_s3" data-systems="can power" data-key="hood" data-open="1" data-open-in="can power">
-<text x="325.86" y="189.22" font-size="2.5" fill="#1f2328" text-anchor="middle">Hood (Kraken X44)?</text>
+<g class="dev-label" data-layer="can_s3" data-systems="can power" data-key="hood" data-open="1" data-open-in="power">
+<text x="315.59" y="189.22" font-size="2.5" fill="#1f2328" text-anchor="middle">Hood (Kraken X44)</text>
 </g>
-<g class="dev-label" data-layer="can_s3" data-info="can" data-key="hood" data-open="1" data-open-in="can power">
-<rect x="316.33" y="190.22" width="9.42" height="5.50" rx="1.2" fill="#fff8c5" stroke="#9a6700" stroke-width="0.35" stroke-dasharray="1 0.6"/>
-<text x="321.04" y="194.32" font-size="3.9" fill="#9a6700" text-anchor="middle" font-weight="bold">41?</text>
+<g class="dev-label" data-layer="can_s3" data-info="can" data-key="hood" data-open="1" data-open-in="power">
+<rect x="307.23" y="190.22" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="310.77" y="194.32" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">41</text>
 </g>
-<g class="dev-tag" data-layer="power" data-info="power" data-key="hood" data-open="1" data-open-in="can power">
-<rect x="326.75" y="190.22" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
-<text x="331.07" y="194.02" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+<g class="dev-tag" data-layer="power" data-info="power" data-key="hood" data-open="1" data-open-in="power">
+<rect x="315.31" y="190.22" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="319.63" y="194.02" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
 </g>
-<g class="dev-label" data-layer="can_s3" data-systems="can power" data-key="flywheel-other-side" data-open="1" data-open-in="can power">
-<text x="359.61" y="184.65" font-size="2.5" fill="#1f2328" text-anchor="middle">Other-side flywheel</text>
+<g class="dev-label" data-layer="can_s3" data-systems="can power" data-key="flywheel-other-side" data-open="1" data-open-in="power">
+<text x="348.59" y="184.65" font-size="2.5" fill="#1f2328" text-anchor="middle">Other-side flywheel</text>
 </g>
-<g class="dev-label" data-layer="can_s3" data-info="can" data-key="flywheel-other-side" data-open="1" data-open-in="can power">
-<rect x="345.40" y="185.65" width="18.78" height="5.50" rx="1.2" fill="#fff8c5" stroke="#9a6700" stroke-width="0.35" stroke-dasharray="1 0.6"/>
-<text x="354.79" y="189.75" font-size="3.9" fill="#9a6700" text-anchor="middle" font-weight="bold">42 / 43</text>
+<g class="dev-label" data-layer="can_s3" data-info="can" data-key="flywheel-other-side" data-open="1" data-open-in="power">
+<rect x="340.23" y="185.65" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="343.77" y="189.75" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">43</text>
 </g>
-<g class="dev-tag" data-layer="power" data-info="power" data-key="flywheel-other-side" data-open="1" data-open-in="can power">
-<rect x="365.18" y="185.65" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
-<text x="369.50" y="189.45" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
+<g class="dev-tag" data-layer="power" data-info="power" data-key="flywheel-other-side" data-open="1" data-open-in="power">
+<rect x="348.31" y="185.65" width="8.64" height="5.50" rx="2.7" fill="#9a6700"/>
+<text x="352.63" y="189.45" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">ch ?</text>
 </g>
 <g data-layer="can_s3" data-info="can">
-<text x="193.25" y="225.41" font-size="2.2" fill="#cf222e" text-anchor="start" font-weight="bold">Code mismatch: the hood (41) and turret rotation (44) are on can_s1 in the 18:39 build. These 2 motors get no commands.</text>
+<text x="186.65" y="225.41" font-size="2.2" fill="#cf222e" text-anchor="start" font-weight="bold">Code mismatch: the 18:39 build and GitHub main (2026-10-08) put the hood (41) and turret rotation (44) on can_s1. These 2 motors get no commands.</text>
 </g>
 <g class="hl" data-key="radio" data-layer="network" display="none">
 <rect x="10.50" y="236.02" width="40.33" height="31.88" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
@@ -2252,84 +2252,84 @@
 <rect x="291.15" y="232.60" width="37.50" height="35.30" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="pdh" data-layer="power" display="none">
-<rect x="53.42" y="37.50" width="40.33" height="80.62" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="52.10" y="37.50" width="40.34" height="80.62" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="systemcore" data-layer="frame" display="none">
-<rect x="137.71" y="112.22" width="45.04" height="37.16" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="131.12" y="112.22" width="45.04" height="37.16" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="indexer-tunnel-bottom" data-layer="can_s1" display="none">
-<rect x="191.75" y="29.50" width="32.98" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="185.15" y="29.50" width="30.00" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="indexer-roller" data-layer="can_s1" display="none">
-<rect x="227.73" y="29.50" width="24.69" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="218.15" y="29.50" width="24.69" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="indexer-tunnel-top" data-layer="can_s1" display="none">
-<rect x="255.42" y="29.50" width="32.98" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="245.84" y="29.50" width="25.50" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="intake-rack-turret-side" data-layer="can_s4" display="none">
-<rect x="310.40" y="34.07" width="31.42" height="33.99" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="293.34" y="34.07" width="27.00" height="33.99" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="intake-rack-other-side" data-layer="can_s4" display="none">
-<rect x="344.82" y="34.07" width="31.42" height="33.99" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="323.34" y="34.07" width="25.50" height="33.99" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="intake-rollers" data-layer="can_s4" display="none">
-<rect x="379.24" y="29.50" width="24.69" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="351.84" y="29.50" width="24.69" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="swerve-bl-drive" data-layer="can_s2" display="none">
-<rect x="191.75" y="84.79" width="24.69" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="185.15" y="84.79" width="24.69" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="swerve-bl-encoder" data-layer="can_s2" display="none">
-<rect x="219.44" y="80.07" width="20.10" height="43.29" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="212.84" y="80.07" width="20.10" height="43.29" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="swerve-bl-turn" data-layer="can_s2" display="none">
-<rect x="242.54" y="84.79" width="24.69" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="235.94" y="84.79" width="24.69" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="swerve-br-turn" data-layer="can_s2" display="none">
-<rect x="270.23" y="84.79" width="24.69" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="263.63" y="84.79" width="24.69" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="swerve-br-encoder" data-layer="can_s2" display="none">
-<rect x="297.92" y="80.07" width="20.10" height="43.29" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="291.32" y="80.07" width="20.10" height="43.29" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="swerve-br-drive" data-layer="can_s2" display="none">
-<rect x="321.02" y="84.79" width="24.69" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="314.42" y="84.79" width="24.69" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="swerve-fr-drive" data-layer="can_s2" display="none">
-<rect x="191.75" y="130.08" width="24.69" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="185.15" y="130.08" width="24.69" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="swerve-fr-encoder" data-layer="can_s2" display="none">
-<rect x="219.44" y="125.36" width="20.10" height="43.29" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="212.84" y="125.36" width="20.10" height="43.29" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="swerve-fr-turn" data-layer="can_s2" display="none">
-<rect x="242.54" y="130.08" width="24.69" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="235.94" y="130.08" width="24.69" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="swerve-fl-turn" data-layer="can_s2" display="none">
-<rect x="270.23" y="130.08" width="24.69" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="263.63" y="130.08" width="24.69" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="swerve-fl-encoder" data-layer="can_s2" display="none">
-<rect x="297.92" y="125.36" width="20.10" height="43.29" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="291.32" y="125.36" width="20.10" height="43.29" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="swerve-fl-drive" data-layer="can_s2" display="none">
-<rect x="321.02" y="130.08" width="24.69" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="314.42" y="130.08" width="24.69" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="gyro" data-layer="can_s2" display="none">
-<rect x="348.71" y="129.07" width="21.24" height="39.58" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="342.11" y="129.07" width="21.24" height="39.58" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="shooter-vertical-roller" data-layer="can_s3" display="none">
-<rect x="191.75" y="180.65" width="25.50" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="185.15" y="180.65" width="25.50" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="shooter-scotty-rollers" data-layer="can_s3" display="none">
-<rect x="220.25" y="180.65" width="24.69" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="213.65" y="180.65" width="24.69" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="turret-rotation" data-layer="can_s3" display="none">
-<rect x="247.94" y="180.65" width="25.50" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="241.34" y="180.65" width="25.50" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="flywheel-x44-side" data-layer="can_s3" display="none">
-<rect x="276.44" y="180.65" width="31.42" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="269.84" y="180.65" width="28.50" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="hood" data-layer="can_s3" display="none">
-<rect x="310.86" y="185.22" width="30.00" height="33.99" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="301.34" y="185.22" width="28.50" height="33.99" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="flywheel-other-side" data-layer="can_s3" display="none">
-<rect x="343.86" y="180.65" width="31.50" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="332.84" y="180.65" width="31.50" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 </svg>
