@@ -1,4 +1,5 @@
 import { Link } from 'react-router';
+import { PdhTag } from '../components/PdhTag';
 import { Segmented } from '../components/Segmented';
 import { SubsystemView } from '../components/SubsystemView';
 import { useMechanical, useWiring } from '../content/hooks';
@@ -65,7 +66,7 @@ export default function Mechanical() {
                       <td data-label="Device" className={styles.deviceCell}><Link to={`${pagePath(robot.id, 'wiring')}?device=${encodeURIComponent(d.key)}`}>{d.role || d.key}</Link></td>
                       <td data-label="CAN" className="mono">{d.can ? `${d.can.bus} · ${d.can.id ?? '?'}` : ''}</td>
                       <td data-label="Type">{[d.type, d.icon ? MOTOR[d.icon] : null].filter(Boolean).join(' · ')}</td>
-                      <td data-label="PDH" className={d.derived.pdh_tag[1] === 'amber' ? `mono ${styles.amberText}` : 'mono'}>{d.derived.pdh_tag[0]}</td>
+                      <td data-label="PDH" className={d.derived.pdh_tag[1] === 'amber' ? `mono ${styles.amberText}` : 'mono'}><PdhTag text={d.derived.pdh_tag[0]} /></td>
                       <td data-label="Open items" className={`${styles.amberText} ${styles.openCell}`}>{d.derived.open_reasons.join(', ')}</td>
                     </tr>
                   ))}

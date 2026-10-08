@@ -22,6 +22,9 @@ test('search "43" finds the motor with CAN ID 42 / 43 and opens it', async () =>
   expect(screen.getByText('1 match')).toBeInTheDocument();
   expect(screen.getByRole('heading', { level: 2, name: 'X44-side flywheel' })).toBeInTheDocument();
   expect(where()).toMatch(/[?&]device=flywheel-x44-side/);
+  const pdh = screen.getByText('PDH').nextElementSibling as HTMLElement;
+  expect(pdh).toHaveTextContent(/^10$/);
+  expect(pdh.querySelector('svg')).not.toBeNull();
 });
 
 test('?device= opens the device panel', async () => {

@@ -4,6 +4,7 @@ import { panelRows } from '../logic/wiring';
 import { pagePath } from '../shell/paths';
 import { useRobot } from '../shell/robot-context';
 import styles from './DevicePanel.module.css';
+import { PdhTag } from './PdhTag';
 
 interface Props {
   device: Device;
@@ -43,7 +44,7 @@ export function DevicePanel({ device, from, note, onClose }: Props) {
         {rows.map((r) => (
           <div key={r.label} className={r.amber ? `${styles.row} ${styles.amber}` : styles.row}>
             <dt>{r.label}</dt>
-            <dd>{r.value}</dd>
+            <dd>{r.label === 'PDH' ? <PdhTag text={r.value} /> : r.value}</dd>
           </div>
         ))}
       </dl>

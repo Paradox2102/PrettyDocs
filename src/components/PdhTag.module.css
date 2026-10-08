@@ -1,0 +1,2 @@
+.tag { display: inline-flex; align-items: center; gap: 3px; white-space: nowrap; }
+.bolt { flex: none; color: var(--power); }

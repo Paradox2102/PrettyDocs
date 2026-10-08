@@ -98,11 +98,11 @@ test('power and network layer colours', () => {
 
 test('the hover label shows the PDH channel', () => {
   const motor = { bus: 'can_s1', can_id: '30', role: 'Roller drive', mechanism: 'Indexer roller drive',
-                  motor: 'Kraken X60', status: 's', comment: null, pdh: 'ch 13?' };
-  assert.deepEqual(labelLines(motor).slice(2, 4), ['Indexer roller drive · Kraken X60', 'PDH ch 13?']);
+                  motor: 'Kraken X60', status: 's', comment: null, pdh: '13?' };
+  assert.deepEqual(labelLines(motor).slice(2, 4), ['Indexer roller drive · Kraken X60', 'PDH 13?']);
   const radio = { bus: null, role: 'VH-109 radio', mechanism: 'Control', device_type: 'VH-109 radio', ip: '10.21.2.1',
-                  status: 'in the device registry', pdh: 'ch ?' };
-  assert.deepEqual(labelLines(radio), ['VH-109 radio', 'Control · VH-109 radio', 'PDH ch ?', 'IP 10.21.2.1',
+                  status: 'in the device registry', pdh: '?' };
+  assert.deepEqual(labelLines(radio), ['VH-109 radio', 'Control · VH-109 radio', 'PDH ?', 'IP 10.21.2.1',
                                        'Status: in the device registry']);
   assert.ok(!labelLines({ ...motor, pdh: null }).some((l) => l.startsWith('PDH')));
 });
@@ -190,4 +190,12 @@ test('the power-transfer shade of each mechanism: same hue, darker, stronger, an
     return L.driveShade(c);
   });
   assert.equal(new Set(shades).size, shades.length);
+});
+
+test('a power tag in 3D draws a lightning bolt before its channel; other tags do not (user, 2026-10-08)', async () => {
+  assert.equal(L.layerTagClass('power'), 'chain-num pdh');
+  assert.equal(L.layerTagClass('network'), 'chain-num');
+  const { readFileSync } = await import('node:fs');
+  const css = readFileSync(`${process.cwd()}/src/three/Labels.css`, 'utf8');
+  assert.match(css, /\.chain-num\.pdh::before \{[^}]*mask:[^}]*\}/);
 });

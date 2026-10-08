@@ -27,7 +27,7 @@ export const WIRING: WiringData = {
       key: 'flywheel-x44-side', icon: 'kraken-x44', type: 'Talon FX', role: 'X44-side flywheel', mechanism: 'Shooter',
       can: { bus: 'can_s3', id: '42 / 43', id_uncertain: true, code_name: 'flywheelLeader' },
       power: { pdh_channel: 10, pdh_uncertain: false },
-      derived: derived({ wire_order: '3 of 6 on can_s3', pdh_tag: ['ch 10', 'red'], open: true,
+      derived: derived({ wire_order: '3 of 6 on can_s3', pdh_tag: ['10', 'red'], open: true,
         open_reasons: ['CAN ID not confirmed'], top_bbox: [100, 100, 10, 10] }),
     },
     'camera-front-left': {
@@ -40,12 +40,12 @@ export const WIRING: WiringData = {
       key: 'left-pi', icon: 'orangepi-5-pro', type: 'Orange Pi 5 Pro', role: 'Orange Pi 5 Pro · left-pi',
       mechanism: 'Vision', network: { ip: '10.21.2.12', name: 'left-pi' },
       power: { pdh_channel: null, fed_by: 'zinc-v-1', pdh_uncertain: true },
-      derived: derived({ pdh_tag: ['ch 21 via Zinc-V', 'red'], fed_by_role: 'Zinc-V #1' }),
+      derived: derived({ pdh_tag: ['21 via Zinc-V', 'red'], fed_by_role: 'Zinc-V #1' }),
     },
     'swerve-fl-drive': {
       key: 'swerve-fl-drive', icon: 'kraken-x60', type: 'Talon FX', role: 'FL drive', mechanism: 'Swerve',
       can: { bus: 'can_s2', id: '1', id_uncertain: false }, power: { pdh_channel: 2 },
-      derived: derived({ pdh_tag: ['ch 2', 'red'] }),
+      derived: derived({ pdh_tag: ['2', 'red'] }),
     },
   },
 };
@@ -104,7 +104,7 @@ export const SCENE = {
   devices: [
     { key: 'can_s2:0', kind: 'motor', bus: 'can_s2', chain_index: 0, can_id: '1', role: 'FL drive', mechanism: 'Swerve',
       device_type: 'Talon FX', motor: 'Kraken X60', status: 's', anchor: [0.2, 0.3, 0.1], box: [], registry_key: 'swerve-fl-drive',
-      pdh: 'ch 2', mesh: MESH, layers: ['power'] },
+      pdh: '2', mesh: MESH, layers: ['power'] },
     { key: 'electronics:camera-front-left', kind: 'electronics', bus: null, role: 'front_left', mechanism: 'Vision',
       device_type: 'OV9281', status: 's', anchor: [0.1, 0, 0.4], box: [], registry_key: 'camera-front-left', pdh: null,
       mesh: MESH, layers: ['network', 'electronics'] },

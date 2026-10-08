@@ -21,6 +21,13 @@ test('the table lists every device', async () => {
   expect(bodyRows()).toHaveLength(4);
 });
 
+test('the PDH column shows a lightning bolt and the channel, never "ch"', async () => {
+  await open('/2026-offseason/devices');
+  const cells = [...document.querySelectorAll('td[data-label="PDH"]')].filter((c) => c.textContent);
+  expect(cells.map((c) => c.textContent).sort()).toEqual(['10', '2', '21 via Zinc-V']);
+  expect(cells.every((c) => c.querySelector('svg'))).toBe(true);
+});
+
 test('search "43" leaves only the matching rows', async () => {
   const user = userEvent.setup();
   await open('/2026-offseason/devices');

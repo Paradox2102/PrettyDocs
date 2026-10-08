@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { DevicePanel } from '../components/DevicePanel';
+import { PdhTag } from '../components/PdhTag';
 import { useWiring } from '../content/hooks';
 import { chipCounts, deviceRows, filterRows, sortRows, type Chip, type SortCol, type SortDir } from '../logic/devices';
 import { search } from '../logic/wiring';
@@ -102,7 +103,7 @@ export default function Devices() {
                 <td data-label="Mechanism">{r.mechanism}</td>
                 <td data-label="Type">{r.type}</td>
                 <td data-label="CAN" className="mono">{r.can}</td>
-                <td data-label="PDH" className={r.pdhStyle === 'amber' ? `mono ${styles.amber}` : 'mono'}>{r.pdh}</td>
+                <td data-label="PDH" className={r.pdhStyle === 'amber' ? `mono ${styles.amber}` : 'mono'}><PdhTag text={r.pdh} /></td>
                 <td data-label="IP" className="mono">{r.ip}</td>
                 <td data-label="Open items" className={styles.open}>
                   {r.open.length ? <span title={r.open.join(', ')}>{r.open.join(', ')}</span> : null}

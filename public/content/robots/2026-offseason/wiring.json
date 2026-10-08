@@ -1,5 +1,5 @@
 {
- "built": "2026-10-08T15:33:39-07:00",
+ "built": "2026-10-08T15:51:04-07:00",
  "devices": {
   "battery": {
    "key": "battery",
@@ -78,7 +78,7 @@
    "derived": {
     "wire_order": null,
     "pdh_tag": [
-     "ch ?",
+     "?",
      "amber"
     ],
     "cad_comment": null,
@@ -95,9 +95,9 @@
      37.16
     ],
     "top_bbox": [
-     91.62,
+     93.88,
      115.8,
-     80.71,
+     78.46,
      57.99
     ]
    }
@@ -122,7 +122,7 @@
    "derived": {
     "wire_order": null,
     "pdh_tag": [
-     "ch ?",
+     "?",
      "amber"
     ],
     "cad_comment": null,
@@ -141,7 +141,7 @@
     "top_bbox": [
      227.44,
      166.8,
-     112.74,
+     110.48,
      68.35
     ]
    }
@@ -239,7 +239,7 @@
    "derived": {
     "wire_order": "1 of 3 on can_s1",
     "pdh_tag": [
-     "ch 12",
+     "12",
      "red"
     ],
     "cad_comment": "Motor Name: bottom Belt Tunnel",
@@ -282,7 +282,7 @@
    "derived": {
     "wire_order": "2 of 3 on can_s1",
     "pdh_tag": [
-     "ch 13?",
+     "13?",
      "red"
     ],
     "cad_comment": "Motor name: Roller drive",
@@ -301,7 +301,7 @@
     "top_bbox": [
      264.88,
      215.56,
-     62.03,
+     60.19,
      15.6
     ]
    }
@@ -329,7 +329,7 @@
    "derived": {
     "wire_order": "3 of 3 on can_s1",
     "pdh_tag": [
-     "ch 14",
+     "14",
      "red"
     ],
     "cad_comment": "not attached to a part: 'Motor Name: Top Belt Tunnel'",
@@ -372,7 +372,7 @@
    "derived": {
     "wire_order": "1 of 13 on can_s2",
     "pdh_tag": [
-     "ch 10?",
+     "10?",
      "red"
     ],
     "cad_comment": "Location: BL Drive / Loop: S2 / CAN ID: 5",
@@ -389,9 +389,9 @@
      38.57
     ],
     "top_bbox": [
-     107.22,
+     109.48,
      184.4,
-     52.45,
+     50.2,
      27.42
     ]
    }
@@ -417,7 +417,7 @@
    "derived": {
     "wire_order": "2 of 13 on can_s2",
     "pdh_tag": [
-     "ch ?",
+     "?",
      "amber"
     ],
     "cad_comment": null,
@@ -434,9 +434,9 @@
      43.29
     ],
     "top_bbox": [
-     108.0,
+     109.72,
      204.8,
-     55.18,
+     53.46,
      22.06
     ]
    }
@@ -462,7 +462,7 @@
    "derived": {
     "wire_order": "3 of 13 on can_s2",
     "pdh_tag": [
-     "ch 10?",
+     "10?",
      "red"
     ],
     "cad_comment": "Location: BL Turn / Loop: S2 / CAN ID: 6",
@@ -479,9 +479,9 @@
      38.57
     ],
     "top_bbox": [
-     107.22,
+     109.48,
      216.25,
-     72.46,
+     70.21,
      20.94
     ]
    }
@@ -507,7 +507,7 @@
    "derived": {
     "wire_order": "4 of 13 on can_s2",
     "pdh_tag": [
-     "ch ?",
+     "?",
      "amber"
     ],
     "cad_comment": "Location: BR Turn / Loop: S2 / CAN ID: 8",
@@ -526,7 +526,7 @@
     "top_bbox": [
      272.13,
      177.0,
-     49.33,
+     47.07,
      34.82
     ]
    }
@@ -552,7 +552,7 @@
    "derived": {
     "wire_order": "5 of 13 on can_s2",
     "pdh_tag": [
-     "ch ?",
+     "?",
      "amber"
     ],
     "cad_comment": null,
@@ -571,7 +571,7 @@
     "top_bbox": [
      268.62,
      207.6,
-     55.18,
+     53.46,
      19.26
     ]
    }
@@ -597,7 +597,7 @@
    "derived": {
     "wire_order": "6 of 13 on can_s2",
     "pdh_tag": [
-     "ch ?",
+     "?",
      "amber"
     ],
     "cad_comment": "Location: BR Drive / Loop: S2 / CAN ID: 7",
@@ -616,7 +616,7 @@
     "top_bbox": [
      252.12,
      197.4,
-     69.34,
+     67.09,
      34.41
     ]
    }
@@ -642,7 +642,7 @@
    "derived": {
     "wire_order": "7 of 13 on can_s2",
     "pdh_tag": [
-     "ch ?",
+     "?",
      "amber"
     ],
     "cad_comment": "Location: FR Drive / Loop: S2 / CAN ID: 3",
@@ -661,7 +661,7 @@
     "top_bbox": [
      272.13,
      95.4,
-     49.33,
+     47.07,
      44.41
     ]
    }
@@ -687,7 +687,7 @@
    "derived": {
     "wire_order": "8 of 13 on can_s2",
     "pdh_tag": [
-     "ch ?",
+     "?",
      "amber"
     ],
     "cad_comment": null,
@@ -706,7 +706,7 @@
     "top_bbox": [
      268.62,
      75.0,
-     55.18,
+     53.46,
      48.31
     ]
    }
@@ -732,7 +732,7 @@
    "derived": {
     "wire_order": "9 of 13 on can_s2",
     "pdh_tag": [
-     "ch ?",
+     "?",
      "amber"
     ],
     "cad_comment": "Location: FR Turn / Loop: S2 / CAN ID: 4",
@@ -751,7 +751,7 @@
     "top_bbox": [
      252.12,
      64.8,
-     69.34,
+     67.09,
      55.0
     ]
    }
@@ -777,7 +777,7 @@
    "derived": {
     "wire_order": "10 of 13 on can_s2",
     "pdh_tag": [
-     "ch ?",
+     "?",
      "amber"
     ],
     "cad_comment": "Location: FL Turn / Loop: S2 / CAN ID: 2",
@@ -794,9 +794,9 @@
      38.57
     ],
     "top_bbox": [
-     110.34,
+     112.6,
      105.6,
-     49.33,
+     47.08,
      34.21
     ]
    }
@@ -822,7 +822,7 @@
    "derived": {
     "wire_order": "11 of 13 on can_s2",
     "pdh_tag": [
-     "ch ?",
+     "?",
      "amber"
     ],
     "cad_comment": null,
@@ -867,7 +867,7 @@
    "derived": {
     "wire_order": "12 of 13 on can_s2",
     "pdh_tag": [
-     "ch ?",
+     "?",
      "amber"
     ],
     "cad_comment": "Location: FL Drive / Loop: S2 / CAN ID: 1",
@@ -884,9 +884,9 @@
      38.57
     ],
     "top_bbox": [
-     110.34,
+     112.6,
      64.8,
-     69.34,
+     67.09,
      55.0
     ]
    }
@@ -912,7 +912,7 @@
    "derived": {
     "wire_order": "13 of 13 on can_s2",
     "pdh_tag": [
-     "ch 20",
+     "20",
      "red"
     ],
     "cad_comment": null,
@@ -927,9 +927,9 @@
      39.58
     ],
     "top_bbox": [
-     108.78,
+     111.04,
      75.0,
-     115.7,
+     113.44,
      99.99
     ]
    }
@@ -957,7 +957,7 @@
    "derived": {
     "wire_order": "1 of 6 on can_s3",
     "pdh_tag": [
-     "ch ?",
+     "?",
      "amber"
     ],
     "cad_comment": "Motor Name: Vertical Roller",
@@ -1004,7 +1004,7 @@
    "derived": {
     "wire_order": "2 of 6 on can_s3",
     "pdh_tag": [
-     "ch ?",
+     "?",
      "amber"
     ],
     "cad_comment": "Motor Name: Scotty Rollers",
@@ -1049,7 +1049,7 @@
    "derived": {
     "wire_order": "3 of 6 on can_s3",
     "pdh_tag": [
-     "ch ?",
+     "?",
      "amber"
     ],
     "cad_comment": "Motor name: turret rotation",
@@ -1096,7 +1096,7 @@
    "derived": {
     "wire_order": "4 of 6 on can_s3",
     "pdh_tag": [
-     "ch ?",
+     "?",
      "amber"
     ],
     "cad_comment": "Motor Name: x44 side flywheel",
@@ -1143,7 +1143,7 @@
    "derived": {
     "wire_order": "5 of 6 on can_s3",
     "pdh_tag": [
-     "ch ?",
+     "?",
      "amber"
     ],
     "cad_comment": "Motor name: Turret x44",
@@ -1190,7 +1190,7 @@
    "derived": {
     "wire_order": "6 of 6 on can_s3",
     "pdh_tag": [
-     "ch ?",
+     "?",
      "amber"
     ],
     "cad_comment": "Motor name: other side flywheel",
@@ -1238,7 +1238,7 @@
    "derived": {
     "wire_order": "1 of 3 on can_s4",
     "pdh_tag": [
-     "ch 7",
+     "7",
      "red"
     ],
     "cad_comment": "Motor name: turret side rack",
@@ -1284,7 +1284,7 @@
    "derived": {
     "wire_order": "2 of 3 on can_s4",
     "pdh_tag": [
-     "ch 2",
+     "2",
      "red"
     ],
     "cad_comment": "Motor Name: non turret side rack",
@@ -1327,7 +1327,7 @@
    "derived": {
     "wire_order": "3 of 3 on can_s4",
     "pdh_tag": [
-     "ch ?",
+     "?",
      "amber"
     ],
     "cad_comment": "not attached to a part: 'Motor Name: Rollers'",
@@ -1346,7 +1346,7 @@
     "top_bbox": [
      266.4,
      39.52,
-     57.4,
+     55.15,
      16.25
     ]
    }
@@ -1366,7 +1366,7 @@
    "derived": {
     "wire_order": null,
     "pdh_tag": [
-     "ch 21",
+     "21",
      "red"
     ],
     "cad_comment": null,
@@ -1408,7 +1408,7 @@
    "derived": {
     "wire_order": null,
     "pdh_tag": [
-     "ch 21 via Zinc-V",
+     "21 via Zinc-V",
      "red"
     ],
     "cad_comment": null,
@@ -1422,13 +1422,13 @@
     "bbox": [
      91.33,
      234.31,
-     57.16,
+     54.9,
      33.59
     ],
     "top_bbox": [
      254.93,
      85.2,
-     106.31,
+     104.05,
      73.97
     ]
    }
@@ -1460,7 +1460,7 @@
     "fed_by_role": null,
     "attached_to_role": "Orange Pi 5 Pro · left-pi",
     "bbox": [
-     151.5,
+     149.24,
      232.6,
      37.5,
      35.3
@@ -1500,7 +1500,7 @@
     "fed_by_role": null,
     "attached_to_role": "Orange Pi 5 Pro · left-pi",
     "bbox": [
-     192.0,
+     189.74,
      232.6,
      36.0,
      35.3
@@ -1530,7 +1530,7 @@
    "derived": {
     "wire_order": null,
     "pdh_tag": [
-     "ch 21 via Zinc-V",
+     "21 via Zinc-V",
      "red"
     ],
     "cad_comment": null,
@@ -1544,7 +1544,7 @@
     "top_bbox": [
      223.2,
      136.2,
-     111.24,
+     108.99,
      87.49
     ]
    }
@@ -1574,7 +1574,7 @@
    "derived": {
     "wire_order": null,
     "pdh_tag": [
-     "ch 21 via Zinc-V",
+     "21 via Zinc-V",
      "red"
     ],
     "cad_comment": null,
@@ -1586,15 +1586,15 @@
     "fed_by_role": "Zinc-V #2",
     "attached_to_role": null,
     "bbox": [
-     231.0,
+     228.74,
      234.31,
-     57.16,
+     54.91,
      33.59
     ],
     "top_bbox": [
-     70.56,
+     72.82,
      166.8,
-     142.3,
+     140.05,
      57.39
     ]
    }
@@ -1626,7 +1626,7 @@
     "fed_by_role": null,
     "attached_to_role": "Orange Pi 5 Pro · right-pi",
     "bbox": [
-     291.15,
+     286.64,
      232.6,
      37.5,
      35.3
@@ -1658,7 +1658,7 @@
    "derived": {
     "wire_order": null,
     "pdh_tag": [
-     "ch ?",
+     "?",
      "amber"
     ],
     "cad_comment": null,

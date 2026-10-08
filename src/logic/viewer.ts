@@ -132,6 +132,11 @@ export function meshParts(tris: number, driveTris: number | undefined): { start:
   return parts.filter((p) => p.count > 0);
 }
 
+/** The class of a layer tag in 3D: a power tag adds the lightning bolt (Labels.css) before its PDH channel. */
+export function layerTagClass(layerId: string): string {
+  return layerId === 'power' ? 'chain-num pdh' : 'chain-num';
+}
+
 /** The bubble on a CAN device: its CAN ID ("21/22" for an open pair). The wire order is in the hover label. */
 export function canTag(device: { can_id?: string | null; chain_index?: number }): string {
   const id = (device.can_id ?? '').replace(/\s*\/\s*/g, '/');

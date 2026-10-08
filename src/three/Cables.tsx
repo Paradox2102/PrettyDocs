@@ -2,7 +2,7 @@ import { useEffect, useMemo } from 'react';
 import { CurvePath, LineCurve3, TubeGeometry, Vector3 } from 'three';
 import type { Scene, SceneBus, SceneDevice, SceneLayer, Vec3 } from '../content/types';
 import { Label } from './Labels';
-import { AMBER, BUS_COLORS, cableLabel, canTag, cablePoints, LAYER_COLORS, layerCables, USB_COLOR } from '../logic/viewer';
+import { AMBER, BUS_COLORS, cableLabel, canTag, cablePoints, LAYER_COLORS, layerCables, layerTagClass, USB_COLOR } from '../logic/viewer';
 
 /** Metres above the anchor, so a layer tag does not cover a chain number. */
 const TAG_LIFT: Record<string, number> = { power: 0.03, network: 0.055 };
@@ -84,7 +84,7 @@ function Layer({ layer, byKey, systemcore }: { layer: SceneLayer; byKey: Record<
         const p = anchorOf(t.device);
         if (!p) return null;
         return <Label key={`t${i}`} at={[p[0], p[1], p[2] + (TAG_LIFT[layer.id] ?? 0)]}
-          color={t.style === 'amber' ? AMBER : color} text={t.text} />;
+          color={t.style === 'amber' ? AMBER : color} text={t.text} className={layerTagClass(layer.id)} />;
       })}
     </group>
   );

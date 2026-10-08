@@ -18,7 +18,7 @@ test('a device with no CAN and power: null gives empty cells and no systems', ()
 test('a motor row has its bus, ID, channel and type', () => {
   const m = byKey('flywheel-x44-side');
   expect(m.can).toBe('can_s3 · 42 / 43');
-  expect(m.pdh).toBe('ch 10');
+  expect(m.pdh).toBe('10');
   expect(m.pdhStyle).toBe('red');
   expect(m.type).toBe('Talon FX · Kraken X44');
   expect([...m.systems].sort()).toEqual(['can', 'power']);
@@ -56,5 +56,5 @@ test('CAN sorts by bus, then by number, and empty cells go last', () => {
 });
 
 test('PDH sorts by channel number', () => {
-  expect(sortRows(rows, 'pdh', 'asc').map((r) => r.pdh).filter(Boolean)).toEqual(['ch 2', 'ch 10', 'ch 21 via Zinc-V']);
+  expect(sortRows(rows, 'pdh', 'asc').map((r) => r.pdh).filter(Boolean)).toEqual(['2', '10', '21 via Zinc-V']);
 });
