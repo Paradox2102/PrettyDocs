@@ -147,7 +147,7 @@
 <g class="dev" data-key="intake-rollers" data-systems="can power" data-open="1" data-open-in="power">
 <rect x="267.90" y="41.02" width="23.46" height="13.25" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
 </g>
-<g class="dev" data-key="radio" data-systems="power network" data-open="1" data-open-in="power">
+<g class="dev" data-key="radio" data-systems="power network" data-open="0">
 <rect x="228.94" y="222.42" width="24.36" height="11.24" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
 </g>
 <g class="dev" data-key="left-pi" data-systems="power network" data-open="1" data-open-in="power network">
@@ -159,7 +159,7 @@
 <g class="dev" data-key="zinc-v-1" data-systems="power" data-open="0">
 <rect x="271.36" y="168.45" width="4.54" height="14.81" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
 </g>
-<g class="dev" data-key="zinc-v-2" data-systems="power" data-open="1" data-open-in="power">
+<g class="dev" data-key="zinc-v-2" data-systems="power" data-open="0">
 <rect x="224.70" y="207.38" width="4.54" height="14.81" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
 </g>
 <g class="dev" data-key="led-brick" data-systems="power" data-open="1" data-open-in="power">
@@ -186,7 +186,7 @@
 <g class="cad-part">
 <rect x="140.15" y="186.15" width="7.92" height="8.38" rx="0.6" fill="#ffffff" stroke="#afb8c1" stroke-width="0.25" stroke-dasharray="0.8 0.6"/>
 </g>
-<g class="dev" data-key="systemcore" data-systems="can power network" data-open="1" data-open-in="power">
+<g class="dev" data-key="systemcore" data-systems="can power network" data-open="0">
 <rect x="155.94" y="144.02" width="14.89" height="28.27" rx="0.6" fill="#eaeef2" stroke="#57606a" stroke-width="0.25"/>
 </g>
 <g class="wire" data-layer="can_s0" data-info="can">
@@ -232,13 +232,13 @@
 <path d="M 215.73 168.03 L 150.51 146.50" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round"/>
 <path d="M 215.73 168.03 L 281.29 146.48" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round"/>
 <path d="M 215.73 168.03 L 279.63 47.66" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
-<path d="M 215.73 168.03 L 241.12 228.02" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+<path d="M 215.73 168.03 L 241.12 228.02" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round"/>
 <path d="M 273.63 175.86 L 266.17 150.85" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="1.4 1"/>
 <path d="M 226.97 214.79 L 201.64 215.86" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="1.4 1"/>
 <path d="M 215.73 168.03 L 273.63 175.86" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round"/>
-<path d="M 273.63 175.86 L 226.97 214.79" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="1.4 1"/>
+<path d="M 273.63 175.86 L 226.97 214.79" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round"/>
 <path d="M 215.73 168.03 L 260.04 175.52" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
-<path d="M 215.73 168.03 L 163.38 158.16" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+<path d="M 215.73 168.03 L 163.38 158.16" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round"/>
 </g>
 <g class="wire" data-layer="network" data-info="network">
 <path d="M 163.38 158.16 L 241.12 228.02" fill="none" stroke-linejoin="round" stroke="#0969da" stroke-width="1.1" stroke-linecap="round"/>
@@ -332,7 +332,7 @@
 <g class="dev-dot" data-key="intake-rollers" data-systems="can power" data-open="1" data-open-in="power">
 <circle cx="279.63" cy="47.66" r="0.8" fill="#1f2328"/>
 </g>
-<g class="dev-dot" data-key="radio" data-systems="power network" data-open="1" data-open-in="power">
+<g class="dev-dot" data-key="radio" data-systems="power network" data-open="0">
 <circle cx="241.12" cy="228.02" r="0.8" fill="#1f2328"/>
 </g>
 <g class="dev-dot" data-key="left-pi" data-systems="power network" data-open="1" data-open-in="power network">
@@ -344,7 +344,7 @@
 <g class="dev-dot" data-key="zinc-v-1" data-systems="power" data-open="0">
 <circle cx="273.63" cy="175.86" r="0.8" fill="#1f2328"/>
 </g>
-<g class="dev-dot" data-key="zinc-v-2" data-systems="power" data-open="1" data-open-in="power">
+<g class="dev-dot" data-key="zinc-v-2" data-systems="power" data-open="0">
 <circle cx="226.97" cy="214.79" r="0.8" fill="#1f2328"/>
 </g>
 <g class="dev-dot" data-key="led-brick" data-systems="power" data-open="1" data-open-in="power">
@@ -371,7 +371,7 @@
 <g class="cad-dot">
 <circle cx="144.10" cy="190.33" r="0.8" fill="#afb8c1"/>
 </g>
-<g class="dev-dot" data-key="systemcore" data-systems="can power network" data-open="1" data-open-in="power">
+<g class="dev-dot" data-key="systemcore" data-systems="can power network" data-open="0">
 <circle cx="163.38" cy="158.16" r="0.8" fill="#1f2328"/>
 </g>
 <g class="dev-label" data-systems="can power" data-key="pdh" data-open="0">
@@ -707,18 +707,18 @@
 <path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(314.86 48.58) scale(0.1170)"/>
 <text x="317.09" y="50.45" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">?</text>
 </g>
-<g class="dev-label" data-systems="power network" data-key="radio" data-open="1" data-open-in="power">
+<g class="dev-label" data-systems="power network" data-key="radio" data-open="0">
 <path d="M 304.58 169.80 L 296.58 169.80 L 241.12 228.02" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
 <text x="305.58" y="170.80" font-size="2.5" fill="#1f2328" text-anchor="start">VH-109 radio</text>
 </g>
-<g class="dev-label" data-info="network" data-key="radio" data-open="1" data-open-in="power">
+<g class="dev-label" data-info="network" data-key="radio" data-open="0">
 <rect x="305.58" y="171.80" width="23.46" height="5.50" rx="1.2" fill="#1f2328"/>
 <text x="317.31" y="175.90" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10.21.2.1</text>
 </g>
-<g class="dev-tag" data-info="power" data-key="radio" data-open="1" data-open-in="power">
-<rect x="330.04" y="171.80" width="5.41" height="5.50" rx="2.7" fill="#9a6700"/>
+<g class="dev-tag" data-info="power" data-key="radio" data-open="0">
+<rect x="330.04" y="171.80" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
 <path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(331.24 173.73) scale(0.1170)"/>
-<text x="333.47" y="175.60" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">?</text>
+<text x="334.25" y="175.60" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">22</text>
 </g>
 <g class="dev-label" data-systems="power network" data-key="left-pi" data-open="1" data-open-in="power network">
 <path d="M 304.58 88.20 L 296.58 88.20 L 266.17 150.85" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
@@ -755,11 +755,11 @@
 <path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(306.78 153.33) scale(0.1170)"/>
 <text x="309.79" y="155.20" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">21</text>
 </g>
-<g class="dev-label" data-systems="power" data-key="zinc-v-2" data-open="1" data-open-in="power">
+<g class="dev-label" data-systems="power" data-key="zinc-v-2" data-open="0">
 <path d="M 304.58 139.20 L 296.58 139.20 L 226.97 214.79" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
 <text x="305.58" y="140.20" font-size="2.5" fill="#9a6700" text-anchor="start">Zinc-V #2?</text>
 </g>
-<g class="dev-tag" data-info="power" data-key="zinc-v-2" data-open="1" data-open-in="power">
+<g class="dev-tag" data-info="power" data-key="zinc-v-2" data-open="0">
 <rect x="305.58" y="141.20" width="24.13" height="5.50" rx="2.7" fill="#cf222e"/>
 <path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(306.78 143.13) scale(0.1170)"/>
 <text x="318.37" y="145.00" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">21 via Zinc-V</text>
@@ -801,18 +801,18 @@
 <path d="M 127.22 183.70 L 135.22 183.70 L 144.10 190.33" fill="none" stroke-linejoin="round" stroke="#afb8c1" stroke-width="0.2" stroke-linecap="round"/>
 <text x="126.22" y="184.70" font-size="2.5" fill="#57606a" text-anchor="end">Camera 4 · not on the robot</text>
 </g>
-<g class="dev-label" data-systems="can power network" data-key="systemcore" data-open="1" data-open-in="power">
+<g class="dev-label" data-systems="can power network" data-key="systemcore" data-open="0">
 <path d="M 127.22 118.80 L 135.22 118.80 L 163.38 158.16" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
 <text x="126.22" y="119.80" font-size="2.5" fill="#1f2328" text-anchor="end">SystemCore (Beta)</text>
 </g>
-<g class="dev-label" data-info="network" data-key="systemcore" data-open="1" data-open-in="power">
-<rect x="96.35" y="120.80" width="23.46" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="108.08" y="124.90" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10.21.2.2</text>
+<g class="dev-label" data-info="network" data-key="systemcore" data-open="0">
+<rect x="94.79" y="120.80" width="23.46" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="106.52" y="124.90" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10.21.2.2</text>
 </g>
-<g class="dev-tag" data-info="power" data-key="systemcore" data-open="1" data-open-in="power">
-<rect x="120.81" y="120.80" width="5.41" height="5.50" rx="2.7" fill="#9a6700"/>
-<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(122.01 122.73) scale(0.1170)"/>
-<text x="124.24" y="124.60" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">?</text>
+<g class="dev-tag" data-info="power" data-key="systemcore" data-open="0">
+<rect x="119.25" y="120.80" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(120.45 122.73) scale(0.1170)"/>
+<text x="123.46" y="124.60" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">23</text>
 </g>
 <g >
 <rect x="10.00" y="243.40" width="411.80" height="26.00" rx="2.5" fill="none" stroke="#d0d7de" stroke-width="0.5"/>
@@ -933,7 +933,7 @@
 <rect x="266.40" y="39.52" width="26.46" height="16.25" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="radio" display="none">
-<rect x="304.08" y="166.80" width="32.87" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="304.08" y="166.80" width="34.43" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 <rect x="227.44" y="220.92" width="27.36" height="14.24" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="left-pi" display="none">
@@ -981,7 +981,7 @@
 <rect x="279.65" y="224.11" width="10.79" height="9.47" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="systemcore" display="none">
-<rect x="94.85" y="115.80" width="32.87" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="93.29" y="115.80" width="34.43" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 <rect x="154.44" y="142.52" width="17.89" height="31.27" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 </svg>

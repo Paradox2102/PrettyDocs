@@ -1,5 +1,5 @@
 {
- "built": "2026-10-08T15:53:55-07:00",
+ "built": "2026-10-08T16:19:54-07:00",
  "devices": {
   "battery": {
    "key": "battery",
@@ -66,7 +66,7 @@
    "role": "SystemCore (Beta)",
    "mechanism": "Control",
    "power": {
-    "pdh_channel": null,
+    "pdh_channel": 23,
     "note": "PWR/BRIDGE input; no published fuse size"
    },
    "network": {
@@ -75,17 +75,18 @@
     "mac": "88:a2:9e:52:3b:f9",
     "host_note": "SystemCore (robot.local, roboRIO-2102-FRC.local)"
    },
+   "notes": [
+    "PDH channel 23 (user, 2026-10-08)."
+   ],
    "derived": {
     "wire_order": null,
     "pdh_tag": [
-     "?",
-     "amber"
+     "23",
+     "red"
     ],
     "cad_comment": null,
-    "open": true,
-    "open_reasons": [
-     "PDH channel not recorded"
-    ],
+    "open": false,
+    "open_reasons": [],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
@@ -95,9 +96,9 @@
      37.16
     ],
     "top_bbox": [
-     94.85,
+     93.29,
      115.8,
-     77.49,
+     79.05,
      57.99
     ]
    }
@@ -109,7 +110,7 @@
    "role": "VH-109 radio",
    "mechanism": "Control",
    "power": {
-    "pdh_channel": null,
+    "pdh_channel": 22,
     "note": "WPILib: low-current channel, 10 A fuse"
    },
    "network": {
@@ -119,17 +120,18 @@
     "mac_note": "not in the neighbour table",
     "host_note": "VH-109 radio (radio-2.local)"
    },
+   "notes": [
+    "PDH channel 22 (user, 2026-10-08)."
+   ],
    "derived": {
     "wire_order": null,
     "pdh_tag": [
-     "?",
-     "amber"
+     "22",
+     "red"
     ],
     "cad_comment": null,
-    "open": true,
-    "open_reasons": [
-     "PDH channel not recorded"
-    ],
+    "open": false,
+    "open_reasons": [],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
@@ -141,7 +143,7 @@
     "top_bbox": [
      227.44,
      166.8,
-     109.51,
+     111.07,
      68.35
     ]
    }
@@ -908,7 +910,9 @@
     "pdh_channel": 20,
     "pdh_uncertain": false
    },
-   "notes": [],
+   "notes": [
+    "PDH channel 20 confirmed (user, 2026-10-08)."
+   ],
    "derived": {
     "wire_order": "13 of 13 on can_s2",
     "pdh_tag": [
@@ -1361,7 +1365,8 @@
     "pdh_channel": 21
    },
    "notes": [
-    "CAD part Zinc-V Step-Down Regulator <2> is a guess: the Zinc-V nearest left-pi, the Pi it feeds. Need to confirm (user, 2026-10-08)."
+    "CAD part Zinc-V Step-Down Regulator <2> is a guess: the Zinc-V nearest left-pi, the Pi it feeds. Need to confirm (user, 2026-10-08).",
+    "PDH channel 21, shared with Zinc-V #2 (user, 2026-10-08)."
    ],
    "derived": {
     "wire_order": null,
@@ -1522,10 +1527,11 @@
    "power": {
     "pdh_channel": null,
     "fed_by": "zinc-v-1",
-    "pdh_uncertain": true
+    "pdh_uncertain": false
    },
    "notes": [
-    "CAD part Zinc-V Step-Down Regulator <1> is a guess: the Zinc-V nearest right-pi, the Pi it feeds. Need to confirm (user, 2026-10-08)."
+    "CAD part Zinc-V Step-Down Regulator <1> is a guess: the Zinc-V nearest right-pi, the Pi it feeds. Need to confirm (user, 2026-10-08).",
+    "Both Zinc-Vs are on PDH channel 21 (user, 2026-10-08). Drawn daisy-chained from Zinc-V #1 (its second input); the daisy chain itself is not checked."
    ],
    "derived": {
     "wire_order": null,
@@ -1534,10 +1540,8 @@
      "red"
     ],
     "cad_comment": null,
-    "open": true,
-    "open_reasons": [
-     "PDH channel not sure"
-    ],
+    "open": false,
+    "open_reasons": [],
     "fed_by_role": "Zinc-V #1",
     "attached_to_role": null,
     "bbox": null,

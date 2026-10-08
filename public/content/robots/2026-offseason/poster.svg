@@ -25,7 +25,7 @@
 <g data-layer="can_s3" data-systems="can">
 <rect x="184.65" y="177.15" width="197.19" height="50.27" rx="2.5" fill="#fffbe6" stroke="#d4a72c" stroke-width="0.5"/>
 </g>
-<g class="dev" data-key="radio" data-layer="network" data-systems="power network" data-open="1" data-open-in="power">
+<g class="dev" data-key="radio" data-layer="network" data-systems="power network" data-open="0">
 <svg x="12.00" y="248.02" width="37.335" height="18.382" viewBox="-8 -6 131 64.5" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <rect x="0" y="0" width="114.9" height="54" rx="3" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5"/>
@@ -529,7 +529,7 @@
 
 </svg>
 </g>
-<g class="dev" data-key="systemcore" data-layer="frame" data-systems="can power network" data-open="1" data-open-in="power">
+<g class="dev" data-key="systemcore" data-layer="frame" data-systems="can power network" data-open="0">
 <svg x="132.62" y="113.72" width="42.037" height="23.655" viewBox="-6 -6 147.5 83.0" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <rect x="0" y="0" width="135.5" height="71.5" rx="4" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5"/>
@@ -1574,8 +1574,8 @@
 <path d="M 55.31 97.35 L 53.76 97.35 L 53.76 97.35 L 52.20 97.35" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
 <path d="M 55.31 101.20 L 53.76 101.20 L 53.76 101.20 L 52.20 101.20" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
 <path d="M 55.31 103.25 L 53.76 103.25 L 53.76 103.80 L 52.20 103.80" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
-<path d="M 55.31 105.30 L 53.76 105.30 L 53.76 106.40 L 52.20 106.40" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
-<path d="M 55.31 107.35 L 53.76 107.35 L 53.76 109.00 L 52.20 109.00" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
+<path d="M 55.31 105.30 L 53.76 105.30 L 53.76 106.40 L 52.20 106.40" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
+<path d="M 55.31 107.35 L 53.76 107.35 L 53.76 109.00 L 52.20 109.00" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
 <path d="M 88.66 56.71 L 90.50 56.71 L 90.50 56.71 L 92.34 56.71" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
 <path d="M 88.66 61.24 L 90.50 61.24 L 90.50 61.24 L 92.34 61.24" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.3" stroke-linecap="round"/>
 <path d="M 88.66 65.63 L 90.50 65.63 L 90.50 65.63 L 92.34 65.63" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
@@ -1763,17 +1763,17 @@
 <g data-layer="network" data-systems="network">
 <text x="12.00" y="232.90" font-size="3.2" fill="#1f2328" text-anchor="start" font-weight="bold">Network</text>
 </g>
-<g class="dev-label" data-layer="network" data-systems="power network" data-key="radio" data-open="1" data-open-in="power">
+<g class="dev-label" data-layer="network" data-systems="power network" data-key="radio" data-open="0">
 <text x="30.67" y="240.02" font-size="2.5" fill="#1f2328" text-anchor="middle">VH-109 radio</text>
 </g>
-<g class="dev-label" data-layer="network" data-info="network" data-key="radio" data-open="1" data-open-in="power">
-<rect x="15.73" y="241.02" width="23.46" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="27.46" y="245.12" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10.21.2.1</text>
+<g class="dev-label" data-layer="network" data-info="network" data-key="radio" data-open="0">
+<rect x="14.95" y="241.02" width="23.46" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="26.68" y="245.12" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10.21.2.1</text>
 </g>
-<g class="dev-tag" data-layer="power" data-info="power" data-key="radio" data-open="1" data-open-in="power">
-<rect x="40.19" y="241.02" width="5.41" height="5.50" rx="2.7" fill="#9a6700"/>
-<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(41.39 242.95) scale(0.1170)"/>
-<text x="43.62" y="244.82" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">?</text>
+<g class="dev-tag" data-layer="power" data-info="power" data-key="radio" data-open="0">
+<rect x="39.41" y="241.02" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(40.61 242.95) scale(0.1170)"/>
+<text x="43.62" y="244.82" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">22</text>
 </g>
 <g class="dev-label" data-layer="network" data-systems="network" data-key="ds-laptop" data-open="0">
 <text x="71.08" y="246.40" font-size="2.5" fill="#1f2328" text-anchor="middle">Driver station laptop</text>
@@ -1870,10 +1870,10 @@
 <text x="51.60" y="104.57" font-size="2.2" fill="#1f2328" text-anchor="end">21 Zinc-V ×2 → Pis</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="51.60" y="107.17" font-size="2.2" fill="#9a6700" text-anchor="end">22 —</text>
+<text x="51.60" y="107.17" font-size="2.2" fill="#1f2328" text-anchor="end">22 VH-109 radio</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="51.60" y="109.77" font-size="2.2" fill="#9a6700" text-anchor="end">23 — (switchable)</text>
+<text x="51.60" y="109.77" font-size="2.2" fill="#1f2328" text-anchor="end">23 SystemCore (Beta)</text>
 </g>
 <g data-layer="power" data-info="power">
 <text x="92.94" y="57.48" font-size="2.2" fill="#9a6700" text-anchor="start">9 Swerve: drive or turn?</text>
@@ -1918,31 +1918,25 @@
 <text x="12.00" y="132.22" font-size="2.2" fill="#9a6700" text-anchor="start">• Intake: Rollers (CAN 20)</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="12.00" y="135.42" font-size="2.2" fill="#9a6700" text-anchor="start">• SystemCore (PWR/BRIDGE input; no published fuse size)</text>
+<text x="12.00" y="135.42" font-size="2.2" fill="#9a6700" text-anchor="start">• Protooma 5 V 10 A converter (no LEDs connected yet)</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="12.00" y="138.62" font-size="2.2" fill="#9a6700" text-anchor="start">• VH-109 radio (WPILib: low-current channel, 10 A fuse)</text>
+<text x="12.00" y="138.62" font-size="2.2" fill="#9a6700" text-anchor="start">• 3 of the swerve motors above are on channels 0, 9 and 19 (not known which)</text>
 </g>
 <g data-layer="power" data-info="power">
-<text x="12.00" y="141.82" font-size="2.2" fill="#9a6700" text-anchor="start">• Protooma 5 V 10 A converter (no LEDs connected yet)</text>
+<text x="12.00" y="141.82" font-size="2.2" fill="#9a6700" text-anchor="start">• One of BL drive 5 and BL turn 6 is on channel 10; the other has no channel</text>
 </g>
-<g data-layer="power" data-info="power">
-<text x="12.00" y="145.02" font-size="2.2" fill="#9a6700" text-anchor="start">• 3 of the swerve motors above are on channels 0, 9 and 19 (not known which)</text>
-</g>
-<g data-layer="power" data-info="power">
-<text x="12.00" y="148.22" font-size="2.2" fill="#9a6700" text-anchor="start">• One of BL drive 5 and BL turn 6 is on channel 10; the other has no channel</text>
-</g>
-<g class="dev-label" data-layer="frame" data-systems="can power network" data-key="systemcore" data-open="1" data-open-in="power">
+<g class="dev-label" data-layer="frame" data-systems="can power network" data-key="systemcore" data-open="0">
 <text x="153.63" y="141.38" font-size="2.5" fill="#1f2328" text-anchor="middle">SystemCore (Beta)</text>
 </g>
-<g class="dev-label" data-layer="frame" data-info="network" data-key="systemcore" data-open="1" data-open-in="power">
-<rect x="138.70" y="142.38" width="23.46" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="150.43" y="146.48" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10.21.2.2</text>
+<g class="dev-label" data-layer="frame" data-info="network" data-key="systemcore" data-open="0">
+<rect x="137.92" y="142.38" width="23.46" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="149.65" y="146.48" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10.21.2.2</text>
 </g>
-<g class="dev-tag" data-layer="power" data-info="power" data-key="systemcore" data-open="1" data-open-in="power">
-<rect x="163.16" y="142.38" width="5.41" height="5.50" rx="2.7" fill="#9a6700"/>
-<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(164.36 144.30) scale(0.1170)"/>
-<text x="166.59" y="146.18" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">?</text>
+<g class="dev-tag" data-layer="power" data-info="power" data-key="systemcore" data-open="0">
+<rect x="162.38" y="142.38" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(163.58 144.30) scale(0.1170)"/>
+<text x="166.59" y="146.18" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">23</text>
 </g>
 <g data-layer="can_s1" data-systems="can">
 <text x="186.65" y="29.80" font-size="3.2" fill="#1f2328" text-anchor="start" font-weight="bold">can_s1 · Indexer</text>
