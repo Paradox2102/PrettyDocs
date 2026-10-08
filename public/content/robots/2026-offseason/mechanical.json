@@ -129,8 +129,7 @@
     {
      "label": "Flywheel drive",
      "value": "0.55:1 (flywheel shaft about 1.8x motor speed)",
-     "source": "Printed motor pulley (G4012) to a 14T pulley on a 35T belt, then 40T to 22T spur gears. CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)",
-     "uncertain": "The printed motor pulley has no tooth count in its name; its belt gives 13.5 teeth (14 teeth gives 0.55:1, 13 gives 0.59:1)"
+     "source": "Printed motor pulley (G4012, 14T, counted on the robot 2026-10-08) to a 14T pulley on a 35T belt, then 40T to 22T spur gears. CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)"
     },
     {
      "label": "Scotty (sushi) rollers drive",
