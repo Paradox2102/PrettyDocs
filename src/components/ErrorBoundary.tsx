@@ -3,6 +3,8 @@ import styles from './ErrorBoundary.module.css';
 
 interface Props {
   title: string;
+  /** Shown in place of the message box, for a part of a page that can fail quietly (the overview hero). */
+  fallback?: ReactNode;
   onRetry?: () => void;
   children: ReactNode;
 }
@@ -27,6 +29,7 @@ export class ErrorBoundary extends Component<Props, State> {
   render() {
     const { error } = this.state;
     if (!error) return this.props.children;
+    if (this.props.fallback !== undefined) return this.props.fallback;
     return (
       <div className={styles.box} role="alert">
         <p className={styles.title}>{this.props.title}</p>

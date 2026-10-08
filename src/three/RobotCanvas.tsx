@@ -63,7 +63,7 @@ export default function RobotCanvas({ scene, mode, selected = NO_SELECTION, ghos
         </>
       )}
       <Controls target={f.center} enabled={!showcase} autoRotate={showcase && !reduced} />
-      {showcase ? null : <CameraRig view={view} nonce={viewNonce} focus={focus} center={f.center} radius={f.radius} />}
+      <CameraRig view={view} nonce={viewNonce} focus={focus} center={f.center} radius={f.radius} />
     </Canvas>
   );
 }

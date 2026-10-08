@@ -1,0 +1,19 @@
+/* The hero sits on engineering paper: a 24 px grid in the line color, so the robot reads as a drawing on a sheet. */
+.hero {
+  position: relative; margin: 0; height: min(56vh, 560px); min-height: 320px; border: 1px solid var(--line);
+  border-radius: 12px; overflow: hidden; background-color: var(--surface);
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 24px 24px; background-position: -1px -1px;
+}
+.canvas { position: absolute !important; inset: 0; }
+.placeholder { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 12px; }
+.outline { width: 120px; height: 120px; fill: none; stroke: var(--muted); stroke-width: 1; stroke-dasharray: 3 3; opacity: 0.6; }
+.note { margin: 0; color: var(--muted); font-size: 14px; }
+.caption { position: absolute; right: 14px; bottom: 12px; }
+.caption a {
+  display: inline-block; padding: 7px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface);
+  font-weight: 600; font-size: 14px; text-decoration: none;
+}
+.caption a:hover { border-color: var(--muted); }
