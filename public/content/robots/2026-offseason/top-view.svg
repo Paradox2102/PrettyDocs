@@ -61,6 +61,47 @@
 <g >
 <text x="229.64" y="258.10" font-size="2.2" fill="#1f2328" text-anchor="start">Front = intake side, as in the code (the CAD calls it the back)</text>
 </g>
+<g >
+<text x="318.80" y="247.80" font-size="2.6" fill="#1f2328" text-anchor="start" font-weight="bold">Badges and tags</text>
+</g>
+<g class="legend-sample" data-sample="badge:21">
+<rect x="318.80" y="249.00" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="322.34" y="253.10" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">21</text>
+</g>
+<g >
+<text x="329.72" y="253.00" font-size="2.2" fill="#1f2328" text-anchor="start">CAN ID confirmed</text>
+</g>
+<g class="legend-sample" data-sample="badge:41?">
+<rect x="318.80" y="255.40" width="9.42" height="5.50" rx="1.2" fill="#fff8c5" stroke="#9a6700" stroke-width="0.35" stroke-dasharray="1 0.6"/>
+<text x="323.51" y="259.50" font-size="3.9" fill="#9a6700" text-anchor="middle" font-weight="bold">41?</text>
+</g>
+<g >
+<text x="329.72" y="259.40" font-size="2.2" fill="#1f2328" text-anchor="start">CAN ID not confirmed</text>
+</g>
+<g class="legend-sample" data-sample="tag:12">
+<rect x="318.80" y="261.80" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(320.00 263.73) scale(0.1170)"/>
+<text x="323.01" y="265.60" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">12</text>
+</g>
+<g >
+<text x="329.72" y="265.80" font-size="2.2" fill="#1f2328" text-anchor="start">PDH channel recorded</text>
+</g>
+<g class="legend-sample" data-sample="tag:10?">
+<rect x="360.12" y="249.00" width="8.53" height="5.50" rx="2.7" fill="#cf222e"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(361.32 250.93) scale(0.1170)"/>
+<text x="365.11" y="252.80" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">10?</text>
+</g>
+<g >
+<text x="370.15" y="253.00" font-size="2.2" fill="#1f2328" text-anchor="start">Motor not confirmed</text>
+</g>
+<g class="legend-sample" data-sample="tag:?">
+<rect x="360.12" y="255.40" width="5.41" height="5.50" rx="2.7" fill="#9a6700"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(361.32 257.33) scale(0.1170)"/>
+<text x="363.55" y="259.20" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">?</text>
+</g>
+<g >
+<text x="370.15" y="259.40" font-size="2.2" fill="#1f2328" text-anchor="start">No channel recorded</text>
+</g>
 <g class="robot">
 <rect x="139.88" y="100.01" width="152.04" height="137.36" rx="3" fill="#f6f8fa" stroke="#8c959f" stroke-width="0.6"/>
 <rect x="138.22" y="36.00" width="155.36" height="128.02" rx="2" fill="none" stroke="#8c959f" stroke-width="0.4" stroke-dasharray="1.5 1"/>

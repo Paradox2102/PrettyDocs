@@ -2,10 +2,10 @@
 <title>Robot wiring · Team 2102</title>
 <rect width="100%" height="100%" fill="#ffffff"/>
 <g data-layer="frame">
-<rect x="346.52" y="229.10" width="75.28" height="40.30" rx="2.5" fill="#ffffff" stroke="#d0d7de" stroke-width="0.5"/>
+<rect x="333.90" y="229.10" width="87.90" height="40.30" rx="2.5" fill="#ffffff" stroke="#d0d7de" stroke-width="0.5"/>
 </g>
 <g data-layer="network" data-systems="network">
-<rect x="10.00" y="229.10" width="332.52" height="40.30" rx="2.5" fill="#ddf4ff" stroke="#0969da" stroke-width="0.5"/>
+<rect x="10.00" y="229.10" width="319.90" height="40.30" rx="2.5" fill="#ddf4ff" stroke="#0969da" stroke-width="0.5"/>
 </g>
 <g data-layer="power" data-systems="power">
 <rect x="10.00" y="26.00" width="116.62" height="199.10" rx="2.5" fill="#fff5f5" stroke="#cf222e" stroke-width="0.5"/>
@@ -1728,37 +1728,75 @@
 <text x="10.00" y="22.50" font-size="3.0" fill="#57606a" text-anchor="start">CAN, power and network on one sheet · data 2026-10-07 · code 18:39 build · bus check 18:39 · icons at 28.5 %, text at print size</text>
 </g>
 <g data-layer="frame">
-<text x="348.52" y="232.90" font-size="3.2" fill="#1f2328" text-anchor="start" font-weight="bold">Legend</text>
+<text x="335.90" y="232.90" font-size="3.2" fill="#1f2328" text-anchor="start" font-weight="bold">Legend</text>
+</g>
+<g class="legend-sample" data-sample="badge:21">
+<rect x="335.90" y="234.50" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="339.44" y="238.60" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">21</text>
 </g>
 <g data-layer="frame">
-<text x="348.52" y="237.60" font-size="2.2" fill="#1f2328" text-anchor="start">Dark ID badge: CAN ID confirmed</text>
+<text x="346.82" y="238.50" font-size="2.2" fill="#1f2328" text-anchor="start">CAN ID confirmed</text>
+</g>
+<g class="legend-sample" data-sample="badge:41?">
+<rect x="335.90" y="240.90" width="9.42" height="5.50" rx="1.2" fill="#fff8c5" stroke="#9a6700" stroke-width="0.35" stroke-dasharray="1 0.6"/>
+<text x="340.61" y="245.00" font-size="3.9" fill="#9a6700" text-anchor="middle" font-weight="bold">41?</text>
 </g>
 <g data-layer="frame">
-<text x="348.52" y="240.70" font-size="2.2" fill="#1f2328" text-anchor="start">Dashed amber badge: CAN ID not confirmed</text>
+<text x="346.82" y="244.90" font-size="2.2" fill="#1f2328" text-anchor="start">CAN ID not confirmed</text>
+</g>
+<g class="legend-sample" data-sample="tag:12">
+<rect x="335.90" y="247.30" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(337.10 249.23) scale(0.1170)"/>
+<text x="340.11" y="251.10" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">12</text>
 </g>
 <g data-layer="frame">
-<text x="348.52" y="243.80" font-size="2.2" fill="#1f2328" text-anchor="start">Red bolt tag: PDH channel recorded</text>
+<text x="346.82" y="251.30" font-size="2.2" fill="#1f2328" text-anchor="start">PDH channel recorded</text>
+</g>
+<g class="legend-sample" data-sample="tag:10?">
+<rect x="335.90" y="253.70" width="8.53" height="5.50" rx="2.7" fill="#cf222e"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(337.10 255.63) scale(0.1170)"/>
+<text x="340.89" y="257.50" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">10?</text>
 </g>
 <g data-layer="frame">
-<text x="348.52" y="246.90" font-size="2.2" fill="#1f2328" text-anchor="start">Red bolt "10?": channel known, motor not sure</text>
+<text x="346.82" y="257.70" font-size="2.2" fill="#1f2328" text-anchor="start">Motor not confirmed</text>
+</g>
+<g class="legend-sample" data-sample="tag:?">
+<rect x="335.90" y="260.10" width="5.41" height="5.50" rx="2.7" fill="#9a6700"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(337.10 262.03) scale(0.1170)"/>
+<text x="339.33" y="263.90" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">?</text>
 </g>
 <g data-layer="frame">
-<text x="348.52" y="250.00" font-size="2.2" fill="#1f2328" text-anchor="start">Amber bolt "?": no channel recorded</text>
+<text x="346.82" y="264.10" font-size="2.2" fill="#1f2328" text-anchor="start">No channel recorded</text>
+</g>
+<g class="legend-sample" data-sample="can">
+<path d="M 378.22 237.25 L 386.22 237.25" fill="none" stroke-linejoin="round" stroke="#1f2328" stroke-width="2.8" stroke-linecap="round"/>
+<path d="M 378.22 237.25 L 386.22 237.25" fill="none" stroke-linejoin="round" stroke="#e3b341" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M 378.22 237.25 L 386.22 237.25" fill="none" stroke-linejoin="round" stroke="#2da44e" stroke-width="1.8" stroke-dasharray="2.4 2.4"/>
 </g>
 <g data-layer="frame">
-<text x="348.52" y="253.10" font-size="2.2" fill="#1f2328" text-anchor="start">Wires: CAN yellow/green, power red, Ethernet blue</text>
+<text x="394.72" y="238.50" font-size="2.2" fill="#1f2328" text-anchor="start">CAN bus</text>
+</g>
+<g class="legend-sample" data-sample="power">
+<path d="M 378.22 243.65 L 386.22 243.65" stroke="#cf222e" stroke-width="0.8" stroke-linecap="round" fill="none"/>
 </g>
 <g data-layer="frame">
-<text x="348.52" y="256.20" font-size="2.2" fill="#1f2328" text-anchor="start">Robot subnet 10.21.2.0/24 (VH-109 radio is the router)</text>
+<text x="394.72" y="244.90" font-size="2.2" fill="#1f2328" text-anchor="start">Power</text>
+</g>
+<g class="legend-sample" data-sample="eth">
+<path d="M 378.22 250.05 L 386.22 250.05" stroke="#0969da" stroke-width="0.9" stroke-linecap="round" fill="none"/>
 </g>
 <g data-layer="frame">
-<text x="348.52" y="259.30" font-size="2.2" fill="#1f2328" text-anchor="start">Dashed 120 Ω box: terminator not confirmed</text>
+<text x="394.72" y="251.30" font-size="2.2" fill="#1f2328" text-anchor="start">Ethernet</text>
+</g>
+<g class="legend-sample" data-sample="terminator">
+<rect x="378.22" y="253.45" width="15.00" height="6.00" rx="1" fill="#ffffff" stroke="#9a6700" stroke-width="0.6" stroke-dasharray="1.6 1"/>
+<text x="385.72" y="257.55" font-size="2.8" fill="#9a6700" text-anchor="middle" font-weight="bold">120 Ω</text>
 </g>
 <g data-layer="frame">
-<text x="348.52" y="262.40" font-size="2.2" fill="#1f2328" text-anchor="start">Data: devices.json and the map JSONs, 2026-10-07</text>
+<text x="394.72" y="257.70" font-size="2.2" fill="#1f2328" text-anchor="start">Terminator not sure</text>
 </g>
 <g data-layer="frame">
-<text x="348.52" y="265.50" font-size="2.2" fill="#1f2328" text-anchor="start">Icons at 28.5 %, text at print size</text>
+<text x="378.22" y="263.10" font-size="2.2" fill="#1f2328" text-anchor="start">Radio subnet 10.21.2.0/24</text>
 </g>
 <g data-layer="network" data-systems="network">
 <text x="12.00" y="232.90" font-size="3.2" fill="#1f2328" text-anchor="start" font-weight="bold">Network</text>
