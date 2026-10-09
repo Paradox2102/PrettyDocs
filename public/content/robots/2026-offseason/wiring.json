@@ -1,5 +1,5 @@
 {
- "built": "2026-10-08T21:18:39-07:00",
+ "built": "2026-10-08T23:07:14-07:00",
  "devices": {
   "battery": {
    "key": "battery",
@@ -90,10 +90,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     132.43,
-     111.42,
-     46.51,
-     37.98
+     125.17,
+     110.82,
+     45.77,
+     37.57
     ],
     "top_bbox": [
      93.29,
@@ -136,9 +136,9 @@
     "attached_to_role": null,
     "bbox": [
      10.5,
-     235.37,
-     41.64,
-     32.53
+     233.69,
+     40.99,
+     32.2
     ],
     "top_bbox": [
      227.44,
@@ -205,10 +205,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     52.1,
+     46.82,
      37.5,
-     41.65,
-     82.97
+     40.99,
+     81.8
     ],
     "top_bbox": [
      91.72,
@@ -251,10 +251,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     187.94,
+     179.94,
      29.5,
      30.0,
-     39.45
+     39.01
     ],
     "top_bbox": [
      232.63,
@@ -296,10 +296,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     220.94,
+     212.94,
      29.5,
-     25.45,
-     39.45
+     25.07,
+     39.01
     ],
     "top_bbox": [
      264.88,
@@ -342,10 +342,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     249.39,
+     241.01,
      29.5,
      25.5,
-     39.45
+     39.01
     ],
     "top_bbox": [
      266.42,
@@ -369,33 +369,33 @@
     "code_name": "bl_drive"
    },
    "power": {
-    "pdh_channel": 10,
-    "pdh_uncertain": true
+    "pdh_channel": 18,
+    "pdh_uncertain": false
    },
-   "notes": [],
+   "notes": [
+    "PDH channel 18 (user, 2026-10-08)."
+   ],
    "derived": {
     "wire_order": "1 of 13 on can_s2",
     "pdh_tag": [
-     "10?",
+     "18",
      "red"
     ],
     "cad_comment": "Location: BL Drive / Loop: S2 / CAN ID: 5",
-    "open": true,
-    "open_reasons": [
-     "PDH channel not sure"
-    ],
+    "open": false,
+    "open_reasons": [],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     187.94,
-     85.84,
-     25.45,
-     39.45
+     179.94,
+     85.31,
+     25.07,
+     39.01
     ],
     "top_bbox": [
-     110.45,
+     112.01,
      184.4,
-     49.22,
+     47.66,
      27.42
     ]
    }
@@ -424,7 +424,7 @@
    "derived": {
     "wire_order": "2 of 13 on can_s2",
     "pdh_tag": [
-     "10? via Talon FX",
+     "19 via Talon FX",
      "red"
     ],
     "cad_comment": null,
@@ -433,15 +433,15 @@
     "fed_by_role": "BL turn",
     "attached_to_role": null,
     "bbox": [
-     216.39,
-     80.95,
-     39.89,
-     44.34
+     208.01,
+     80.51,
+     38.33,
+     43.81
     ],
     "top_bbox": [
-     87.83,
+     89.39,
      204.8,
-     75.35,
+     73.79,
      22.06
     ]
    }
@@ -460,33 +460,33 @@
     "code_name": "bl_steer"
    },
    "power": {
-    "pdh_channel": 10,
-    "pdh_uncertain": true
+    "pdh_channel": 19,
+    "pdh_uncertain": false
    },
-   "notes": [],
+   "notes": [
+    "PDH channel 19 (user, 2026-10-08)."
+   ],
    "derived": {
     "wire_order": "3 of 13 on can_s2",
     "pdh_tag": [
-     "10?",
+     "19",
      "red"
     ],
     "cad_comment": "Location: BL Turn / Loop: S2 / CAN ID: 6",
-    "open": true,
-    "open_reasons": [
-     "PDH channel not sure"
-    ],
+    "open": false,
+    "open_reasons": [],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     259.28,
-     85.84,
-     25.45,
-     39.45
+     249.35,
+     85.31,
+     25.07,
+     39.01
     ],
     "top_bbox": [
-     110.45,
+     112.01,
      216.25,
-     69.24,
+     67.68,
      20.94
     ]
    }
@@ -505,33 +505,33 @@
     "code_name": "br_steer"
    },
    "power": {
-    "pdh_channel": null,
+    "pdh_channel": 10,
     "pdh_uncertain": false
    },
-   "notes": [],
+   "notes": [
+    "PDH channel 10 (user, 2026-10-08)."
+   ],
    "derived": {
     "wire_order": "4 of 13 on can_s2",
     "pdh_tag": [
-     "?",
-     "amber"
+     "10",
+     "red"
     ],
     "cad_comment": "Location: BR Turn / Loop: S2 / CAN ID: 8",
-    "open": true,
-    "open_reasons": [
-     "PDH channel not recorded"
-    ],
+    "open": false,
+    "open_reasons": [],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     287.73,
-     85.84,
-     25.45,
-     39.45
+     277.42,
+     85.31,
+     25.07,
+     39.01
     ],
     "top_bbox": [
      272.13,
      177.0,
-     46.1,
+     47.66,
      34.82
     ]
    }
@@ -560,26 +560,24 @@
    "derived": {
     "wire_order": "5 of 13 on can_s2",
     "pdh_tag": [
-     "? via Talon FX",
-     "amber"
+     "10 via Talon FX",
+     "red"
     ],
     "cad_comment": null,
-    "open": true,
-    "open_reasons": [
-     "PDH channel not recorded"
-    ],
+    "open": false,
+    "open_reasons": [],
     "fed_by_role": "BR turn",
     "attached_to_role": null,
     "bbox": [
-     316.18,
-     80.95,
-     36.77,
-     44.34
+     305.49,
+     80.51,
+     38.33,
+     43.81
     ],
     "top_bbox": [
      268.62,
      207.6,
-     72.23,
+     73.79,
      19.26
     ]
    }
@@ -598,33 +596,33 @@
     "code_name": "br_drive"
    },
    "power": {
-    "pdh_channel": null,
+    "pdh_channel": 11,
     "pdh_uncertain": false
    },
-   "notes": [],
+   "notes": [
+    "PDH channel 11 (user, 2026-10-08)."
+   ],
    "derived": {
     "wire_order": "6 of 13 on can_s2",
     "pdh_tag": [
-     "?",
-     "amber"
+     "11",
+     "red"
     ],
     "cad_comment": "Location: BR Drive / Loop: S2 / CAN ID: 7",
-    "open": true,
-    "open_reasons": [
-     "PDH channel not recorded"
-    ],
+    "open": false,
+    "open_reasons": [],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     355.95,
-     85.84,
-     25.45,
-     39.45
+     346.82,
+     85.31,
+     25.07,
+     39.01
     ],
     "top_bbox": [
      252.12,
      197.4,
-     66.96,
+     67.68,
      34.41
     ]
    }
@@ -643,28 +641,28 @@
     "code_name": "fr_drive"
    },
    "power": {
-    "pdh_channel": null,
+    "pdh_channel": 8,
     "pdh_uncertain": false
    },
-   "notes": [],
+   "notes": [
+    "PDH channel 8 (user, 2026-10-08)."
+   ],
    "derived": {
     "wire_order": "7 of 13 on can_s2",
     "pdh_tag": [
-     "?",
-     "amber"
+     "8",
+     "red"
     ],
     "cad_comment": "Location: FR Drive / Loop: S2 / CAN ID: 3",
-    "open": true,
-    "open_reasons": [
-     "PDH channel not recorded"
-    ],
+    "open": false,
+    "open_reasons": [],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     187.94,
-     132.17,
-     25.45,
-     39.45
+     179.94,
+     131.13,
+     25.07,
+     39.01
     ],
     "top_bbox": [
      272.13,
@@ -698,21 +696,19 @@
    "derived": {
     "wire_order": "8 of 13 on can_s2",
     "pdh_tag": [
-     "? via Talon FX",
-     "amber"
+     "9 via Talon FX",
+     "red"
     ],
     "cad_comment": null,
-    "open": true,
-    "open_reasons": [
-     "PDH channel not recorded"
-    ],
+    "open": false,
+    "open_reasons": [],
     "fed_by_role": "FR turn",
     "attached_to_role": null,
     "bbox": [
-     216.39,
-     127.28,
+     208.01,
+     126.32,
      36.77,
-     44.34
+     43.81
     ],
     "top_bbox": [
      268.62,
@@ -736,28 +732,28 @@
     "code_name": "fr_steer"
    },
    "power": {
-    "pdh_channel": null,
+    "pdh_channel": 9,
     "pdh_uncertain": false
    },
-   "notes": [],
+   "notes": [
+    "PDH channel 9 (user, 2026-10-08)."
+   ],
    "derived": {
     "wire_order": "9 of 13 on can_s2",
     "pdh_tag": [
-     "?",
-     "amber"
+     "9",
+     "red"
     ],
     "cad_comment": "Location: FR Turn / Loop: S2 / CAN ID: 4",
-    "open": true,
-    "open_reasons": [
-     "PDH channel not recorded"
-    ],
+    "open": false,
+    "open_reasons": [],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     256.16,
-     132.17,
-     25.45,
-     39.45
+     247.79,
+     131.13,
+     25.07,
+     39.01
     ],
     "top_bbox": [
      252.12,
@@ -781,28 +777,28 @@
     "code_name": "fl_steer"
    },
    "power": {
-    "pdh_channel": null,
+    "pdh_channel": 1,
     "pdh_uncertain": false
    },
-   "notes": [],
+   "notes": [
+    "PDH channel 1 (user, 2026-10-08)."
+   ],
    "derived": {
     "wire_order": "10 of 13 on can_s2",
     "pdh_tag": [
-     "?",
-     "amber"
+     "1",
+     "red"
     ],
     "cad_comment": "Location: FL Turn / Loop: S2 / CAN ID: 2",
-    "open": true,
-    "open_reasons": [
-     "PDH channel not recorded"
-    ],
+    "open": false,
+    "open_reasons": [],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     284.61,
-     132.17,
-     25.45,
-     39.45
+     275.86,
+     131.13,
+     25.07,
+     39.01
     ],
     "top_bbox": [
      113.57,
@@ -836,21 +832,19 @@
    "derived": {
     "wire_order": "11 of 13 on can_s2",
     "pdh_tag": [
-     "? via Talon FX",
-     "amber"
+     "1 via Talon FX",
+     "red"
     ],
     "cad_comment": null,
-    "open": true,
-    "open_reasons": [
-     "PDH channel not recorded"
-    ],
+    "open": false,
+    "open_reasons": [],
     "fed_by_role": "FL turn",
     "attached_to_role": null,
     "bbox": [
-     313.06,
-     127.28,
+     303.93,
+     126.32,
      34.43,
-     44.34
+     43.81
     ],
     "top_bbox": [
      93.29,
@@ -874,28 +868,28 @@
     "code_name": "fl_drive"
    },
    "power": {
-    "pdh_channel": null,
+    "pdh_channel": 0,
     "pdh_uncertain": false
    },
-   "notes": [],
+   "notes": [
+    "PDH channel 0 (user, 2026-10-08)."
+   ],
    "derived": {
     "wire_order": "12 of 13 on can_s2",
     "pdh_tag": [
-     "?",
-     "amber"
+     "0",
+     "red"
     ],
     "cad_comment": "Location: FL Drive / Loop: S2 / CAN ID: 1",
-    "open": true,
-    "open_reasons": [
-     "PDH channel not recorded"
-    ],
+    "open": false,
+    "open_reasons": [],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     350.49,
-     132.17,
-     25.45,
-     39.45
+     341.36,
+     131.13,
+     25.07,
+     39.01
     ],
     "top_bbox": [
      112.72,
@@ -937,10 +931,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     378.94,
-     131.13,
-     21.88,
-     40.49
+     369.43,
+     130.1,
+     21.56,
+     40.03
     ],
     "top_bbox": [
      112.01,
@@ -984,10 +978,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     187.94,
-     183.62,
+     179.94,
+     182.13,
      25.5,
-     39.45
+     39.01
     ],
     "top_bbox": [
      102.22,
@@ -1031,10 +1025,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     216.44,
-     183.62,
-     25.45,
-     39.45
+     208.44,
+     182.13,
+     25.07,
+     39.01
     ],
     "top_bbox": [
      103.72,
@@ -1076,10 +1070,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     244.89,
-     183.62,
+     236.51,
+     182.13,
      25.5,
-     39.45
+     39.01
     ],
     "top_bbox": [
      208.52,
@@ -1123,10 +1117,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     273.39,
-     183.62,
+     265.01,
+     182.13,
      28.5,
-     39.45
+     39.01
     ],
     "top_bbox": [
      99.22,
@@ -1171,10 +1165,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     304.89,
-     188.35,
+     296.51,
+     186.79,
      28.5,
-     34.71
+     34.35
     ],
     "top_bbox": [
      99.22,
@@ -1219,10 +1213,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     336.39,
-     183.62,
+     328.01,
+     182.13,
      31.5,
-     39.45
+     39.01
     ],
     "top_bbox": [
      96.22,
@@ -1265,10 +1259,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     296.89,
-     34.23,
+     288.51,
+     34.15,
      27.0,
-     34.71
+     34.35
     ],
     "top_bbox": [
      100.72,
@@ -1311,10 +1305,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     326.89,
-     34.23,
+     318.51,
+     34.15,
      25.5,
-     34.71
+     34.35
     ],
     "top_bbox": [
      268.08,
@@ -1356,10 +1350,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     355.39,
+     347.01,
      29.5,
-     25.45,
-     39.45
+     25.07,
+     39.01
     ],
     "top_bbox": [
      266.4,
@@ -1439,10 +1433,10 @@
     "fed_by_role": "Zinc-V #1",
     "attached_to_role": null,
     "bbox": [
-     92.64,
-     233.6,
+     91.99,
+     231.95,
      53.93,
-     34.3
+     33.94
     ],
     "top_bbox": [
      254.93,
@@ -1479,10 +1473,10 @@
     "fed_by_role": null,
     "attached_to_role": "Orange Pi 5 Pro · left-pi",
     "bbox": [
-     149.58,
-     231.83,
+     148.92,
+     230.21,
      37.5,
-     36.07
+     35.69
     ],
     "top_bbox": [
      258.88,
@@ -1519,10 +1513,10 @@
     "fed_by_role": null,
     "attached_to_role": "Orange Pi 5 Pro · left-pi",
     "bbox": [
-     190.08,
-     231.83,
+     189.42,
+     230.21,
      36.0,
-     36.07
+     35.69
     ],
     "top_bbox": [
      279.65,
@@ -1604,10 +1598,10 @@
     "fed_by_role": "Zinc-V #2",
     "attached_to_role": null,
     "bbox": [
-     229.08,
-     233.6,
+     228.42,
+     231.95,
      53.93,
-     34.3
+     33.94
     ],
     "top_bbox": [
      73.79,
@@ -1644,10 +1638,10 @@
     "fed_by_role": null,
     "attached_to_role": "Orange Pi 5 Pro · right-pi",
     "bbox": [
-     286.01,
-     231.83,
+     285.36,
+     230.21,
      37.5,
-     36.07
+     35.69
     ],
     "top_bbox": [
      90.22,
@@ -1720,8 +1714,8 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     55.14,
-     242.4,
+     54.49,
+     240.4,
      34.5,
      25.5
     ],
