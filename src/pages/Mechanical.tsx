@@ -21,20 +21,20 @@ export default function Mechanical() {
   const has3d = robot.docs.includes('3d');
 
   return (
-    <div className={styles.page}>
+    <div className={has3d ? styles.page : `${styles.page} ${styles.no3d}`}>
       <title>{pageTitle('Mechanical', robot.name)}</title>
-      <header className={styles.head}>
-        <p className={styles.eyebrow}>{robot.name}</p>
-        <h1 className={styles.h1}>Mechanical</h1>
-        <p className={styles.lead}>Ratios, current limits, devices and service notes for each subsystem.</p>
-        <div className={styles.switch}>
-          <Segmented label="Subsystem" name="subsystem" value={sub.id}
-            options={mech.subsystems.map((s) => ({ value: s.id, label: s.name }))}
-            onChange={(id) => update({ hash: `#${id}` })} />
-        </div>
-      </header>
+      <div className={styles.side}>
+        <header className={styles.head}>
+          <p className={styles.eyebrow}>{robot.name}</p>
+          <h1 className={styles.h1}>Mechanical</h1>
+          <p className={styles.lead}>Ratios, current limits, devices and service notes for each subsystem.</p>
+          <div className={styles.switch}>
+            <Segmented label="Subsystem" name="subsystem" value={sub.id}
+              options={mech.subsystems.map((s) => ({ value: s.id, label: s.name }))}
+              onChange={(id) => update({ hash: `#${id}` })} />
+          </div>
+        </header>
 
-      <div className={has3d ? styles.body : `${styles.body} ${styles.no3d}`}>
         <section className={styles.text} aria-labelledby="sub-h">
           <h2 id="sub-h" className={styles.h2}>{sub.name}</h2>
           <p className={styles.summary}>{sub.summary}</p>
@@ -82,14 +82,14 @@ export default function Mechanical() {
 
           <p className={styles.updated}>Facts updated {formatBuilt(mech.updated)}</p>
         </section>
-
-        {has3d ? (
-          <div className={styles.view}>
-            <SubsystemView robot={robot.id} groups={sub.groups} devices={devices.map((d) => d.key)}
-              label={`${sub.name} in 3D`} />
-          </div>
-        ) : null}
       </div>
+
+      {has3d ? (
+        <div className={styles.view}>
+          <SubsystemView robot={robot.id} groups={sub.groups} devices={devices.map((d) => d.key)}
+            label={`${sub.name} in 3D`} />
+        </div>
+      ) : null}
     </div>
   );
 }
