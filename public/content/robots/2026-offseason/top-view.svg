@@ -264,15 +264,15 @@
 <path d="M 151.89 132.01 L 156.11 116.24" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round"/>
 <path d="M 215.73 168.03 L 171.88 112.02" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round"/>
 <path d="M 215.73 168.03 L 215.90 168.03" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round"/>
-<path d="M 215.73 168.03 L 164.41 178.82" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
-<path d="M 215.73 168.03 L 150.97 214.75" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
-<path d="M 215.73 168.03 L 216.66 222.69" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
-<path d="M 215.73 168.03 L 168.59 179.14" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
-<path d="M 215.73 168.03 L 176.42 175.25" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
-<path d="M 215.73 168.03 L 168.59 220.93" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+<path d="M 215.73 168.03 L 164.41 178.82" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="1.4 1"/>
+<path d="M 215.73 168.03 L 150.97 214.75" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="1.4 1"/>
+<path d="M 215.73 168.03 L 216.66 222.69" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="1.4 1"/>
+<path d="M 215.73 168.03 L 168.59 179.14" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="1.4 1"/>
+<path d="M 215.73 168.03 L 176.42 175.25" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="1.4 1"/>
+<path d="M 215.73 168.03 L 168.59 220.93" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="1.4 1"/>
 <path d="M 215.73 168.03 L 150.51 146.50" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round"/>
 <path d="M 215.73 168.03 L 281.29 146.48" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round"/>
-<path d="M 215.73 168.03 L 279.63 47.66" fill="none" stroke-linejoin="round" stroke="#9a6700" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="0.4 0.9"/>
+<path d="M 215.73 168.03 L 279.63 47.66" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="1.4 1"/>
 <path d="M 215.73 168.03 L 241.12 228.02" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round"/>
 <path d="M 273.63 175.86 L 266.17 150.85" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="1.4 1"/>
 <path d="M 226.97 214.79 L 201.64 215.86" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.35" stroke-linecap="round" stroke-dasharray="1.4 1"/>
@@ -480,13 +480,13 @@
 <text x="126.22" y="208.80" font-size="2.5" fill="#1f2328" text-anchor="end">BL encoder</text>
 </g>
 <g class="dev-label" data-info="can" data-key="swerve-bl-encoder" data-open="0">
-<rect x="90.89" y="209.80" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="94.43" y="213.90" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">11</text>
+<rect x="111.17" y="209.80" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="114.71" y="213.90" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">11</text>
 </g>
 <g class="dev-tag" data-info="power" data-key="swerve-bl-encoder" data-open="0">
-<rect x="98.97" y="209.80" width="27.25" height="5.50" rx="2.7" fill="#cf222e"/>
-<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(100.17 211.73) scale(0.1170)"/>
-<text x="113.32" y="213.60" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">19 via Talon FX</text>
+<rect x="119.25" y="209.80" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(120.45 211.73) scale(0.1170)"/>
+<text x="123.46" y="213.60" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">19</text>
 </g>
 <g class="dev-label" data-systems="can power" data-key="swerve-bl-turn" data-open="0">
 <path d="M 127.22 228.20 L 135.22 228.20 L 171.88 224.03" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
@@ -523,9 +523,9 @@
 <text x="309.12" y="216.70" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">12</text>
 </g>
 <g class="dev-tag" data-info="power" data-key="swerve-br-encoder" data-open="0">
-<rect x="313.66" y="212.60" width="27.25" height="5.50" rx="2.7" fill="#cf222e"/>
+<rect x="313.66" y="212.60" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
 <path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(314.86 214.53) scale(0.1170)"/>
-<text x="328.01" y="216.40" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">10 via Talon FX</text>
+<text x="317.87" y="216.40" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">10</text>
 </g>
 <g class="dev-label" data-systems="can power" data-key="swerve-br-drive" data-open="0">
 <path d="M 304.58 200.40 L 296.58 200.40 L 259.92 224.03" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
@@ -562,9 +562,9 @@
 <text x="309.12" y="84.10" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10</text>
 </g>
 <g class="dev-tag" data-info="power" data-key="swerve-fr-encoder" data-open="0">
-<rect x="313.66" y="80.00" width="25.69" height="5.50" rx="2.7" fill="#cf222e"/>
+<rect x="313.66" y="80.00" width="5.41" height="5.50" rx="2.7" fill="#cf222e"/>
 <path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(314.86 81.93) scale(0.1170)"/>
-<text x="327.23" y="83.80" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">9 via Talon FX</text>
+<text x="317.09" y="83.80" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">9</text>
 </g>
 <g class="dev-label" data-systems="can power" data-key="swerve-fr-turn" data-open="0">
 <path d="M 304.58 67.80 L 296.58 67.80 L 259.92 112.02" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
@@ -597,13 +597,13 @@
 <text x="126.22" y="89.20" font-size="2.5" fill="#1f2328" text-anchor="end">FL encoder</text>
 </g>
 <g class="dev-label" data-info="can" data-key="swerve-fl-encoder" data-open="0">
-<rect x="94.79" y="90.20" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="97.16" y="94.30" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">9</text>
+<rect x="115.07" y="90.20" width="4.74" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="117.44" y="94.30" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">9</text>
 </g>
 <g class="dev-tag" data-info="power" data-key="swerve-fl-encoder" data-open="0">
-<rect x="100.53" y="90.20" width="25.69" height="5.50" rx="2.7" fill="#cf222e"/>
-<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(101.73 92.13) scale(0.1170)"/>
-<text x="114.10" y="94.00" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">1 via Talon FX</text>
+<rect x="120.81" y="90.20" width="5.41" height="5.50" rx="2.7" fill="#cf222e"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(122.01 92.13) scale(0.1170)"/>
+<text x="124.24" y="94.00" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
 </g>
 <g class="dev-label" data-systems="can power" data-key="swerve-fl-drive" data-open="0">
 <path d="M 127.22 67.80 L 135.22 67.80 L 171.88 112.02" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
@@ -636,26 +636,26 @@
 <text x="126.22" y="160.60" font-size="2.5" fill="#1f2328" text-anchor="end">Vertical roller</text>
 </g>
 <g class="dev-label" data-info="can" data-key="shooter-vertical-roller" data-open="1" data-open-in="power">
-<rect x="112.73" y="161.60" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="116.27" y="165.70" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">40</text>
+<rect x="111.17" y="161.60" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="114.71" y="165.70" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">40</text>
 </g>
 <g class="dev-tag" data-info="power" data-key="shooter-vertical-roller" data-open="1" data-open-in="power">
-<rect x="120.81" y="161.60" width="5.41" height="5.50" rx="2.7" fill="#9a6700"/>
-<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(122.01 163.53) scale(0.1170)"/>
-<text x="124.24" y="165.40" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">?</text>
+<rect x="119.25" y="161.60" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(120.45 163.53) scale(0.1170)"/>
+<text x="123.46" y="165.40" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">3?</text>
 </g>
 <g class="dev-label" data-systems="can power" data-key="shooter-scotty-rollers" data-open="1" data-open-in="power">
 <path d="M 127.22 197.60 L 135.22 197.60 L 150.97 214.75" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
 <text x="126.22" y="198.60" font-size="2.5" fill="#1f2328" text-anchor="end">Scotty rollers</text>
 </g>
 <g class="dev-label" data-info="can" data-key="shooter-scotty-rollers" data-open="1" data-open-in="power">
-<rect x="112.73" y="199.60" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="116.27" y="203.70" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">45</text>
+<rect x="111.17" y="199.60" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="114.71" y="203.70" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">45</text>
 </g>
 <g class="dev-tag" data-info="power" data-key="shooter-scotty-rollers" data-open="1" data-open-in="power">
-<rect x="120.81" y="199.60" width="5.41" height="5.50" rx="2.7" fill="#9a6700"/>
-<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(122.01 201.53) scale(0.1170)"/>
-<text x="124.24" y="203.40" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">?</text>
+<rect x="119.25" y="199.60" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(120.45 201.53) scale(0.1170)"/>
+<text x="123.46" y="203.40" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">4?</text>
 </g>
 <g class="dev-label" data-systems="can power" data-key="turret-rotation" data-open="1" data-open-in="power">
 <path d="M 304.58 108.60 L 296.58 108.60 L 216.66 222.69" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
@@ -666,48 +666,48 @@
 <text x="309.12" y="114.70" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">44</text>
 </g>
 <g class="dev-tag" data-info="power" data-key="turret-rotation" data-open="1" data-open-in="power">
-<rect x="313.66" y="110.60" width="5.41" height="5.50" rx="2.7" fill="#9a6700"/>
+<rect x="313.66" y="110.60" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
 <path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(314.86 112.53) scale(0.1170)"/>
-<text x="317.09" y="114.40" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">?</text>
+<text x="317.87" y="114.40" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">5?</text>
 </g>
 <g class="dev-label" data-systems="can power" data-key="flywheel-x44-side" data-open="1" data-open-in="power">
 <path d="M 127.22 149.40 L 135.22 149.40 L 168.59 179.14" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
 <text x="126.22" y="150.40" font-size="2.5" fill="#1f2328" text-anchor="end">X44-side flywheel</text>
 </g>
 <g class="dev-label" data-info="can" data-key="flywheel-x44-side" data-open="1" data-open-in="power">
-<rect x="112.73" y="151.40" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="116.27" y="155.50" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">42</text>
+<rect x="109.61" y="151.40" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="113.15" y="155.50" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">42</text>
 </g>
 <g class="dev-tag" data-info="power" data-key="flywheel-x44-side" data-open="1" data-open-in="power">
-<rect x="120.81" y="151.40" width="5.41" height="5.50" rx="2.7" fill="#9a6700"/>
-<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(122.01 153.33) scale(0.1170)"/>
-<text x="124.24" y="155.20" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">?</text>
+<rect x="117.69" y="151.40" width="8.53" height="5.50" rx="2.7" fill="#cf222e"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(118.89 153.33) scale(0.1170)"/>
+<text x="122.68" y="155.20" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">15?</text>
 </g>
 <g class="dev-label" data-systems="can power" data-key="hood" data-open="1" data-open-in="power">
 <path d="M 127.22 139.20 L 135.22 139.20 L 176.42 175.25" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
 <text x="126.22" y="140.20" font-size="2.5" fill="#1f2328" text-anchor="end">Hood (Kraken X44)</text>
 </g>
 <g class="dev-label" data-info="can" data-key="hood" data-open="1" data-open-in="power">
-<rect x="112.73" y="141.20" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="116.27" y="145.30" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">41</text>
+<rect x="109.61" y="141.20" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="113.15" y="145.30" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">41</text>
 </g>
 <g class="dev-tag" data-info="power" data-key="hood" data-open="1" data-open-in="power">
-<rect x="120.81" y="141.20" width="5.41" height="5.50" rx="2.7" fill="#9a6700"/>
-<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(122.01 143.13) scale(0.1170)"/>
-<text x="124.24" y="145.00" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">?</text>
+<rect x="117.69" y="141.20" width="8.53" height="5.50" rx="2.7" fill="#cf222e"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(118.89 143.13) scale(0.1170)"/>
+<text x="122.68" y="145.00" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">16?</text>
 </g>
 <g class="dev-label" data-systems="can power" data-key="flywheel-other-side" data-open="1" data-open-in="power">
 <path d="M 127.22 218.00 L 135.22 218.00 L 168.59 220.93" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
 <text x="126.22" y="219.00" font-size="2.5" fill="#1f2328" text-anchor="end">Other-side flywheel</text>
 </g>
 <g class="dev-label" data-info="can" data-key="flywheel-other-side" data-open="1" data-open-in="power">
-<rect x="112.73" y="220.00" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="116.27" y="224.10" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">43</text>
+<rect x="109.61" y="220.00" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="113.15" y="224.10" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">43</text>
 </g>
 <g class="dev-tag" data-info="power" data-key="flywheel-other-side" data-open="1" data-open-in="power">
-<rect x="120.81" y="220.00" width="5.41" height="5.50" rx="2.7" fill="#9a6700"/>
-<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(122.01 221.93) scale(0.1170)"/>
-<text x="124.24" y="223.80" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">?</text>
+<rect x="117.69" y="220.00" width="8.53" height="5.50" rx="2.7" fill="#cf222e"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(118.89 221.93) scale(0.1170)"/>
+<text x="122.68" y="223.80" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">17?</text>
 </g>
 <g class="dev-label" data-systems="can power" data-key="intake-rack-turret-side" data-open="0">
 <path d="M 127.22 129.00 L 135.22 129.00 L 150.51 146.50" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
@@ -744,9 +744,9 @@
 <text x="309.12" y="50.76" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">20</text>
 </g>
 <g class="dev-tag" data-info="power" data-key="intake-rollers" data-open="1" data-open-in="power">
-<rect x="313.66" y="46.66" width="5.41" height="5.50" rx="2.7" fill="#9a6700"/>
+<rect x="313.66" y="46.66" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
 <path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(314.86 48.58) scale(0.1170)"/>
-<text x="317.09" y="50.45" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">?</text>
+<text x="317.87" y="50.45" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">6?</text>
 </g>
 <g class="dev-label" data-systems="power network" data-key="radio" data-open="0">
 <path d="M 304.58 169.80 L 296.58 169.80 L 241.12 228.02" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
@@ -770,22 +770,22 @@
 <text x="318.48" y="94.30" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10.21.2.12</text>
 </g>
 <g class="dev-tag" data-info="power" data-key="left-pi" data-open="1" data-open-in="power network">
-<rect x="332.38" y="90.20" width="24.13" height="5.50" rx="2.7" fill="#cf222e"/>
+<rect x="332.38" y="90.20" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
 <path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(333.58 92.13) scale(0.1170)"/>
-<text x="345.17" y="94.00" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">21 via Zinc-V</text>
+<text x="336.59" y="94.00" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">21</text>
 </g>
 <g class="dev-label" data-systems="power network" data-key="right-pi" data-open="1" data-open-in="power network">
 <path d="M 127.22 169.80 L 135.22 169.80 L 201.64 215.86" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
 <text x="126.22" y="170.80" font-size="2.5" fill="#9a6700" text-anchor="end">Orange Pi 5 Pro · right-pi?</text>
 </g>
 <g class="dev-label" data-info="network" data-key="right-pi" data-open="1" data-open-in="power network">
-<rect x="75.29" y="171.80" width="25.80" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="88.19" y="175.90" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10.21.2.11</text>
+<rect x="92.45" y="171.80" width="25.80" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="105.35" y="175.90" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10.21.2.11</text>
 </g>
 <g class="dev-tag" data-info="power" data-key="right-pi" data-open="1" data-open-in="power network">
-<rect x="102.09" y="171.80" width="24.13" height="5.50" rx="2.7" fill="#cf222e"/>
-<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(103.29 173.73) scale(0.1170)"/>
-<text x="114.88" y="175.60" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">21 via Zinc-V</text>
+<rect x="119.25" y="171.80" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(120.45 173.73) scale(0.1170)"/>
+<text x="123.46" y="175.60" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">21</text>
 </g>
 <g class="dev-label" data-systems="power" data-key="zinc-v-1" data-open="0">
 <path d="M 304.58 149.40 L 296.58 149.40 L 273.63 175.86" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
@@ -801,9 +801,9 @@
 <text x="305.58" y="140.20" font-size="2.5" fill="#9a6700" text-anchor="start">Zinc-V #2?</text>
 </g>
 <g class="dev-tag" data-info="power" data-key="zinc-v-2" data-open="0">
-<rect x="305.58" y="141.20" width="24.13" height="5.50" rx="2.7" fill="#cf222e"/>
+<rect x="305.58" y="141.20" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
 <path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(306.78 143.13) scale(0.1170)"/>
-<text x="318.37" y="145.00" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">21 via Zinc-V</text>
+<text x="309.79" y="145.00" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">21</text>
 </g>
 <g class="dev-label" data-systems="power" data-key="led-brick" data-open="1" data-open-in="power">
 <path d="M 304.58 129.00 L 296.58 129.00 L 260.04 175.52" fill="none" stroke-linejoin="round" stroke="#57606a" stroke-width="0.2" stroke-linecap="round"/>
@@ -890,7 +890,7 @@
 <rect x="144.11" y="196.24" width="15.56" height="15.58" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="swerve-bl-encoder" display="none">
-<rect x="89.39" y="204.80" width="38.33" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="109.67" y="204.80" width="18.05" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 <rect x="149.07" y="212.75" width="14.11" height="14.11" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="swerve-bl-turn" display="none">
@@ -902,7 +902,7 @@
 <rect x="272.13" y="196.24" width="15.56" height="15.58" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="swerve-br-encoder" display="none">
-<rect x="304.08" y="207.60" width="38.33" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="304.08" y="207.60" width="18.05" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 <rect x="268.62" y="212.75" width="14.11" height="14.11" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="swerve-br-drive" display="none">
@@ -914,7 +914,7 @@
 <rect x="272.13" y="124.23" width="15.56" height="15.58" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="swerve-fr-encoder" display="none">
-<rect x="304.08" y="75.00" width="36.77" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="304.08" y="75.00" width="18.00" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 <rect x="268.62" y="109.20" width="14.11" height="14.11" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="swerve-fr-turn" display="none">
@@ -926,7 +926,7 @@
 <rect x="144.11" y="124.23" width="15.56" height="15.58" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="swerve-fl-encoder" display="none">
-<rect x="93.29" y="85.20" width="34.43" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="109.72" y="85.20" width="18.00" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 <rect x="149.07" y="109.20" width="14.11" height="14.11" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="swerve-fl-drive" display="none">
@@ -970,7 +970,7 @@
 <rect x="268.08" y="140.05" width="26.44" height="12.87" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="intake-rollers" display="none">
-<rect x="304.08" y="41.66" width="16.49" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="304.08" y="41.66" width="18.05" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 <rect x="266.40" y="39.52" width="26.46" height="16.25" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="radio" display="none">
@@ -978,11 +978,11 @@
 <rect x="227.44" y="220.92" width="27.36" height="14.24" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="left-pi" display="none">
-<rect x="304.08" y="85.20" width="53.93" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="304.08" y="85.20" width="42.00" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 <rect x="254.93" y="142.52" width="22.49" height="16.65" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="right-pi" display="none">
-<rect x="73.79" y="166.80" width="53.93" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="84.22" y="166.80" width="43.50" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 <rect x="190.40" y="207.54" width="22.47" height="16.65" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="zinc-v-1" display="none">
@@ -990,7 +990,7 @@
 <rect x="269.86" y="166.95" width="7.54" height="17.81" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="zinc-v-2" display="none">
-<rect x="304.08" y="136.20" width="27.13" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="304.08" y="136.20" width="18.00" height="12.00" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 <rect x="223.20" y="205.88" width="7.54" height="17.81" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="led-brick" display="none">

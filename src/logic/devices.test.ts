@@ -56,5 +56,5 @@ test('CAN sorts by bus, then by number, and empty cells go last', () => {
 });
 
 test('PDH sorts by channel number', () => {
-  expect(sortRows(rows, 'pdh', 'asc').map((r) => r.pdh).filter(Boolean)).toEqual(['2', '10', '21 via Zinc-V']);
+  expect(sortRows(rows, 'pdh', 'asc').map((r) => r.pdh).filter(Boolean)).toEqual(['2', '10', '21']);
 });

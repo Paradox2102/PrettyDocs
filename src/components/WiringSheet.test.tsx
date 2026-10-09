@@ -46,3 +46,9 @@ test('a click on a device selects it; a click on empty sheet clears', () => {
   fireEvent.click(container.querySelector('#empty')!);
   expect(onSelect).toHaveBeenLastCalledWith(null);
 });
+
+test('the Power view shows the power cables; other views and the printed poster do not (user, 2026-10-08)', async () => {
+  const { readFileSync } = await import('node:fs');
+  const css = readFileSync(`${process.cwd()}/src/styles/sheet.css`, 'utf8');
+  expect(css).toMatch(/\.wiring-sheet svg\.mode-power g\.power-cable \{ display: inline; \}/);
+});

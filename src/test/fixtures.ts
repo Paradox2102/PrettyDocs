@@ -40,7 +40,7 @@ export const WIRING: WiringData = {
       key: 'left-pi', icon: 'orangepi-5-pro', type: 'Orange Pi 5 Pro', role: 'Orange Pi 5 Pro · left-pi',
       mechanism: 'Vision', network: { ip: '10.21.2.12', name: 'left-pi' },
       power: { pdh_channel: null, fed_by: 'zinc-v-1', pdh_uncertain: true },
-      derived: derived({ pdh_tag: ['21 via Zinc-V', 'red'], fed_by_role: 'Zinc-V #1' }),
+      derived: derived({ pdh_tag: ['21', 'red'], fed_by_role: 'Zinc-V #1' }),
     },
     'swerve-fl-drive': {
       key: 'swerve-fl-drive', icon: 'kraken-x60', type: 'Talon FX', role: 'FL drive', mechanism: 'Swerve',

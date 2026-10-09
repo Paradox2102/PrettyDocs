@@ -1,6 +1,8 @@
 /* Rules for the injected wiring SVGs (from the old robot-wiring.html). The SVG classes are set by WiringSheet. */
 .wiring-sheet [data-key] { cursor: pointer; }
 .wiring-sheet svg g.hl.on { display: inline; }
+/* The power cables are hidden in the SVG (display="none") and show only in the Power view (user, 2026-10-08). */
+.wiring-sheet svg.mode-power g.power-cable { display: inline; }
 /* One system's view: the wires, IDs, tags and channel labels of the other systems hide (data-info), and the
    devices, labels and frames that are not part of this system fade (data-systems). */
 .wiring-sheet svg.mode-can [data-info]:not([data-info="can"]),

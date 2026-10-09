@@ -8,7 +8,7 @@ const motor = (key, role, id, extra = {}) => ({
   key, role, type: 'Talon FX', icon: 'kraken-x60',
   can: { bus: 'can_s3', id, id_uncertain: id.includes('/') || id.includes('?') },
   power: { pdh_channel: null },
-  derived: { wire_order: '1 of 6 on can_s3', pdh_tag: ['ch ?', 'amber'], open: true, open_reasons: [] },
+  derived: { wire_order: '1 of 6 on can_s3', pdh_tag: ['?', 'amber'], open: true, open_reasons: [] },
   ...extra,
 });
 
@@ -19,13 +19,13 @@ const DEVICES = {
   'turret-rotation': motor('turret-rotation', 'Turret rotation', '44'),
   'shooter-scotty-rollers': motor('shooter-scotty-rollers', 'Scotty rollers', '45?', {
     can: { bus: 'can_s3', id: '45?', id_uncertain: true, code_name: 'goUp' },
-    derived: { wire_order: '2 of 6 on can_s3', pdh_tag: ['ch ?', 'amber'], cad_comment: 'Motor Name: Scotty Rollers',
+    derived: { wire_order: '2 of 6 on can_s3', pdh_tag: ['?', 'amber'], cad_comment: 'Motor Name: Scotty Rollers',
                open: true, open_reasons: ['CAN ID not confirmed', 'PDH channel not recorded'] },
   }),
   'left-pi': { key: 'left-pi', role: 'Orange Pi 5 Pro · left-pi', type: 'Orange Pi 5 Pro',
                network: { ip: '10.21.2.12', name: 'NT client left-pi', radio_port: 'eth_aux1', radio_port_uncertain: true },
                power: { pdh_channel: null, fed_by: 'zinc-v-1', pdh_uncertain: true },
-               derived: { pdh_tag: ['ch 21 via Zinc-V', 'red'], fed_by_role: 'Zinc-V #1', open: true,
+               derived: { pdh_tag: ['21', 'red'], fed_by_role: 'Zinc-V #1', open: true,
                           open_reasons: ['PDH channel not sure'] } },
   'camera-front-left': { key: 'camera-front-left', role: 'front_left', type: 'OV9281 (B0332)', attached_to: 'left-pi',
                          attached_uncertain: true, power: null,
@@ -35,7 +35,7 @@ const DEVICES = {
            power: { pdh_channel: null, note: 'WPILib: low-current channel, 10 A fuse' },
            network: { ip: '10.21.2.1', name: 'radio-2.local', mac: null, mac_note: 'not in the neighbour table',
                       host_note: 'VH-109 radio (radio-2.local)' },
-           derived: { pdh_tag: ['ch ?', 'amber'], open: true, open_reasons: ['PDH channel not recorded'] } },
+           derived: { pdh_tag: ['?', 'amber'], open: true, open_reasons: ['PDH channel not recorded'] } },
   'swerve-fl-drive': motor('swerve-fl-drive', 'FL drive', '1', { can: { bus: 'can_s2', id: '1', id_uncertain: false } }),
   battery: { key: 'battery', role: '12 V battery', type: 'Battery', power: null,
              derived: { pdh_tag: ['', 'none'], open: false, open_reasons: [] } },
@@ -79,7 +79,7 @@ test('isOpen reads derived.open', () => {
 test('panel rows for an uncertain device', () => {
   const rows = panelRows(DEVICES['shooter-scotty-rollers']);
   assert.deepEqual(rows.find((r) => r.label === 'CAN'), { label: 'CAN', value: 'can_s3 · 45? (not confirmed)', amber: true });
-  assert.deepEqual(rows.find((r) => r.label === 'PDH'), { label: 'PDH', value: 'ch ? (not recorded)', amber: true });
+  assert.deepEqual(rows.find((r) => r.label === 'PDH'), { label: 'PDH', value: '? (not recorded)', amber: true });
   assert.deepEqual(rows.map((r) => r.label), ['Type', 'CAN', 'Code', 'Wire order', 'PDH', 'CAD', 'Open']);
 });
 

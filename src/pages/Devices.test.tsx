@@ -24,7 +24,7 @@ test('the table lists every device', async () => {
 test('the PDH column shows a lightning bolt and the channel, never "ch"', async () => {
   await open('/2026-offseason/devices');
   const cells = [...document.querySelectorAll('td[data-label="PDH"]')].filter((c) => c.textContent);
-  expect(cells.map((c) => c.textContent).sort()).toEqual(['10', '2', '21 via Zinc-V']);
+  expect(cells.map((c) => c.textContent).sort()).toEqual(['10', '2', '21']);
   expect(cells.every((c) => c.querySelector('svg'))).toBe(true);
 });
 

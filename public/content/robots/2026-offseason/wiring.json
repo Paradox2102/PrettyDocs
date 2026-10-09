@@ -1,5 +1,5 @@
 {
- "built": "2026-10-08T23:07:14-07:00",
+ "built": "2026-10-08T23:43:01-07:00",
  "devices": {
   "battery": {
    "key": "battery",
@@ -90,9 +90,9 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     125.17,
+     130.81,
      110.82,
-     45.77,
+     45.78,
      37.57
     ],
     "top_bbox": [
@@ -205,7 +205,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     46.82,
+     52.46,
      37.5,
      40.99,
      81.8
@@ -251,7 +251,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     179.94,
+     185.59,
      29.5,
      30.0,
      39.01
@@ -296,7 +296,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     212.94,
+     218.59,
      29.5,
      25.07,
      39.01
@@ -342,7 +342,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     241.01,
+     246.65,
      29.5,
      25.5,
      39.01
@@ -387,7 +387,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     179.94,
+     185.59,
      85.31,
      25.07,
      39.01
@@ -424,7 +424,7 @@
    "derived": {
     "wire_order": "2 of 13 on can_s2",
     "pdh_tag": [
-     "19 via Talon FX",
+     "19",
      "red"
     ],
     "cad_comment": null,
@@ -433,15 +433,15 @@
     "fed_by_role": "BL turn",
     "attached_to_role": null,
     "bbox": [
-     208.01,
+     213.65,
      80.51,
-     38.33,
+     20.4,
      43.81
     ],
     "top_bbox": [
-     89.39,
+     109.67,
      204.8,
-     73.79,
+     53.51,
      22.06
     ]
    }
@@ -478,7 +478,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     249.35,
+     237.05,
      85.31,
      25.07,
      39.01
@@ -523,7 +523,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     277.42,
+     265.12,
      85.31,
      25.07,
      39.01
@@ -560,7 +560,7 @@
    "derived": {
     "wire_order": "5 of 13 on can_s2",
     "pdh_tag": [
-     "10 via Talon FX",
+     "10",
      "red"
     ],
     "cad_comment": null,
@@ -569,15 +569,15 @@
     "fed_by_role": "BR turn",
     "attached_to_role": null,
     "bbox": [
-     305.49,
+     293.19,
      80.51,
-     38.33,
+     20.4,
      43.81
     ],
     "top_bbox": [
      268.62,
      207.6,
-     73.79,
+     53.51,
      19.26
     ]
    }
@@ -614,7 +614,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     346.82,
+     316.59,
      85.31,
      25.07,
      39.01
@@ -659,7 +659,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     179.94,
+     185.59,
      131.13,
      25.07,
      39.01
@@ -696,7 +696,7 @@
    "derived": {
     "wire_order": "8 of 13 on can_s2",
     "pdh_tag": [
-     "9 via Talon FX",
+     "9",
      "red"
     ],
     "cad_comment": null,
@@ -705,15 +705,15 @@
     "fed_by_role": "FR turn",
     "attached_to_role": null,
     "bbox": [
-     208.01,
+     213.65,
      126.32,
-     36.77,
+     20.4,
      43.81
     ],
     "top_bbox": [
      268.62,
      75.0,
-     72.23,
+     53.46,
      48.31
     ]
    }
@@ -750,7 +750,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     247.79,
+     237.05,
      131.13,
      25.07,
      39.01
@@ -795,7 +795,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     275.86,
+     265.12,
      131.13,
      25.07,
      39.01
@@ -832,7 +832,7 @@
    "derived": {
     "wire_order": "11 of 13 on can_s2",
     "pdh_tag": [
-     "1 via Talon FX",
+     "1",
      "red"
     ],
     "cad_comment": null,
@@ -841,15 +841,15 @@
     "fed_by_role": "FL turn",
     "attached_to_role": null,
     "bbox": [
-     303.93,
+     293.19,
      126.32,
-     34.43,
+     20.4,
      43.81
     ],
     "top_bbox": [
-     93.29,
+     109.72,
      85.2,
-     69.89,
+     53.46,
      38.11
     ]
    }
@@ -886,7 +886,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     341.36,
+     316.59,
      131.13,
      25.07,
      39.01
@@ -931,7 +931,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     369.43,
+     344.66,
      130.1,
      21.56,
      40.03
@@ -958,27 +958,28 @@
     "code_name": "kicker"
    },
    "power": {
-    "pdh_channel": null,
-    "pdh_uncertain": false
+    "pdh_channel": 3,
+    "pdh_uncertain": true
    },
    "notes": [
-    "CAN ID 40 on can_s3 confirmed by a blink test with the robot on (user, 2026-10-08); code name kicker (Constants.java)."
+    "CAN ID 40 on can_s3 confirmed by a blink test with the robot on (user, 2026-10-08); code name kicker (Constants.java).",
+    "PDH channel 3 is a placeholder: a free port picked until the real channel is recorded (user, 2026-10-08)."
    ],
    "derived": {
     "wire_order": "1 of 6 on can_s3",
     "pdh_tag": [
-     "?",
-     "amber"
+     "3?",
+     "red"
     ],
     "cad_comment": "Motor Name: Vertical Roller",
     "open": true,
     "open_reasons": [
-     "PDH channel not recorded"
+     "PDH channel not sure"
     ],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     179.94,
+     185.59,
      182.13,
      25.5,
      39.01
@@ -1005,27 +1006,28 @@
     "code_name": "goUp"
    },
    "power": {
-    "pdh_channel": null,
-    "pdh_uncertain": false
+    "pdh_channel": 4,
+    "pdh_uncertain": true
    },
    "notes": [
-    "CAN ID 45 on can_s3 confirmed by a blink test with the robot on (user, 2026-10-08); code name goUp (Constants.java)."
+    "CAN ID 45 on can_s3 confirmed by a blink test with the robot on (user, 2026-10-08); code name goUp (Constants.java).",
+    "PDH channel 4 is a placeholder: a free port picked until the real channel is recorded (user, 2026-10-08)."
    ],
    "derived": {
     "wire_order": "2 of 6 on can_s3",
     "pdh_tag": [
-     "?",
-     "amber"
+     "4?",
+     "red"
     ],
     "cad_comment": "Motor Name: Scotty Rollers",
     "open": true,
     "open_reasons": [
-     "PDH channel not recorded"
+     "PDH channel not sure"
     ],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     208.44,
+     214.09,
      182.13,
      25.07,
      39.01
@@ -1052,25 +1054,27 @@
     "code_name": "shooterAzimuth"
    },
    "power": {
-    "pdh_channel": null,
-    "pdh_uncertain": false
+    "pdh_channel": 5,
+    "pdh_uncertain": true
    },
-   "notes": [],
+   "notes": [
+    "PDH channel 5 is a placeholder: a free port picked until the real channel is recorded (user, 2026-10-08)."
+   ],
    "derived": {
     "wire_order": "3 of 6 on can_s3",
     "pdh_tag": [
-     "?",
-     "amber"
+     "5?",
+     "red"
     ],
     "cad_comment": "Motor name: turret rotation",
     "open": true,
     "open_reasons": [
-     "PDH channel not recorded"
+     "PDH channel not sure"
     ],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     236.51,
+     242.15,
      182.13,
      25.5,
      39.01
@@ -1097,27 +1101,28 @@
     "code_name": "shooterLeader"
    },
    "power": {
-    "pdh_channel": null,
-    "pdh_uncertain": false
+    "pdh_channel": 15,
+    "pdh_uncertain": true
    },
    "notes": [
-    "CAN ID 42 on can_s3 confirmed by a blink test with the robot on (user, 2026-10-08); code name shooterLeader (Constants.java)."
+    "CAN ID 42 on can_s3 confirmed by a blink test with the robot on (user, 2026-10-08); code name shooterLeader (Constants.java).",
+    "PDH channel 15 is a placeholder: a free port picked until the real channel is recorded (user, 2026-10-08)."
    ],
    "derived": {
     "wire_order": "4 of 6 on can_s3",
     "pdh_tag": [
-     "?",
-     "amber"
+     "15?",
+     "red"
     ],
     "cad_comment": "Motor Name: x44 side flywheel",
     "open": true,
     "open_reasons": [
-     "PDH channel not recorded"
+     "PDH channel not sure"
     ],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     265.01,
+     270.65,
      182.13,
      28.5,
      39.01
@@ -1144,28 +1149,29 @@
     "code_name": "hood"
    },
    "power": {
-    "pdh_channel": null,
-    "pdh_uncertain": false
+    "pdh_channel": 16,
+    "pdh_uncertain": true
    },
    "notes": [
     "CAN ID 41 on can_s3 confirmed by a blink test with the robot on (user, 2026-10-08); code name hood (Constants.java).",
-    "GitHub main af85e4eb (2026-10-09) creates the hood on k_canBus3 (CAN_S3), which matches the wiring."
+    "GitHub main af85e4eb (2026-10-09) creates the hood on k_canBus3 (CAN_S3), which matches the wiring.",
+    "PDH channel 16 is a placeholder: a free port picked until the real channel is recorded (user, 2026-10-08)."
    ],
    "derived": {
     "wire_order": "5 of 6 on can_s3",
     "pdh_tag": [
-     "?",
-     "amber"
+     "16?",
+     "red"
     ],
     "cad_comment": "Motor name: Turret x44",
     "open": true,
     "open_reasons": [
-     "PDH channel not recorded"
+     "PDH channel not sure"
     ],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     296.51,
+     302.15,
      186.79,
      28.5,
      34.35
@@ -1192,28 +1198,29 @@
     "code_name": "shooterFollower"
    },
    "power": {
-    "pdh_channel": null,
-    "pdh_uncertain": false
+    "pdh_channel": 17,
+    "pdh_uncertain": true
    },
    "notes": [
     "CAN ID 43 on can_s3 confirmed by a blink test with the robot on (user, 2026-10-08); code name shooterFollower (Constants.java).",
-    "GitHub main af85e4eb (2026-10-09) makes it follow shooterLeader (42), opposed."
+    "GitHub main af85e4eb (2026-10-09) makes it follow shooterLeader (42), opposed.",
+    "PDH channel 17 is a placeholder: a free port picked until the real channel is recorded (user, 2026-10-08)."
    ],
    "derived": {
     "wire_order": "6 of 6 on can_s3",
     "pdh_tag": [
-     "?",
-     "amber"
+     "17?",
+     "red"
     ],
     "cad_comment": "Motor name: other side flywheel",
     "open": true,
     "open_reasons": [
-     "PDH channel not recorded"
+     "PDH channel not sure"
     ],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     328.01,
+     333.65,
      182.13,
      31.5,
      39.01
@@ -1259,7 +1266,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     288.51,
+     294.15,
      34.15,
      27.0,
      34.35
@@ -1305,7 +1312,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     318.51,
+     324.15,
      34.15,
      25.5,
      34.35
@@ -1332,25 +1339,27 @@
     "code_name": "intakeRoller"
    },
    "power": {
-    "pdh_channel": null,
-    "pdh_uncertain": false
+    "pdh_channel": 6,
+    "pdh_uncertain": true
    },
-   "notes": [],
+   "notes": [
+    "PDH channel 6 is a placeholder: a free port picked until the real channel is recorded (user, 2026-10-08)."
+   ],
    "derived": {
     "wire_order": "3 of 3 on can_s4",
     "pdh_tag": [
-     "?",
-     "amber"
+     "6?",
+     "red"
     ],
     "cad_comment": "not attached to a part: 'Motor Name: Rollers'",
     "open": true,
     "open_reasons": [
-     "PDH channel not recorded"
+     "PDH channel not sure"
     ],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     347.01,
+     352.65,
      29.5,
      25.07,
      39.01
@@ -1358,7 +1367,7 @@
     "top_bbox": [
      266.4,
      39.52,
-     54.18,
+     55.74,
      16.25
     ]
    }
@@ -1387,7 +1396,12 @@
     "open_reasons": [],
     "fed_by_role": null,
     "attached_to_role": null,
-    "bbox": null,
+    "bbox": [
+     19.5,
+     155.74,
+     26.78,
+     23.24
+    ],
     "top_bbox": [
      269.86,
      146.4,
@@ -1421,7 +1435,7 @@
    "derived": {
     "wire_order": null,
     "pdh_tag": [
-     "21 via Zinc-V",
+     "21",
      "red"
     ],
     "cad_comment": null,
@@ -1435,13 +1449,13 @@
     "bbox": [
      91.99,
      231.95,
-     53.93,
+     40.5,
      33.94
     ],
     "top_bbox": [
      254.93,
      85.2,
-     103.08,
+     91.15,
      73.97
     ]
    }
@@ -1473,7 +1487,7 @@
     "fed_by_role": null,
     "attached_to_role": "Orange Pi 5 Pro · left-pi",
     "bbox": [
-     148.92,
+     135.49,
      230.21,
      37.5,
      35.69
@@ -1513,7 +1527,7 @@
     "fed_by_role": null,
     "attached_to_role": "Orange Pi 5 Pro · left-pi",
     "bbox": [
-     189.42,
+     175.99,
      230.21,
      36.0,
      35.69
@@ -1544,7 +1558,7 @@
    "derived": {
     "wire_order": null,
     "pdh_tag": [
-     "21 via Zinc-V",
+     "21",
      "red"
     ],
     "cad_comment": null,
@@ -1552,11 +1566,16 @@
     "open_reasons": [],
     "fed_by_role": "Zinc-V #1",
     "attached_to_role": null,
-    "bbox": null,
+    "bbox": [
+     19.5,
+     131.5,
+     26.78,
+     23.24
+    ],
     "top_bbox": [
      223.2,
      136.2,
-     108.01,
+     98.88,
      87.49
     ]
    }
@@ -1586,7 +1605,7 @@
    "derived": {
     "wire_order": null,
     "pdh_tag": [
-     "21 via Zinc-V",
+     "21",
      "red"
     ],
     "cad_comment": null,
@@ -1598,15 +1617,15 @@
     "fed_by_role": "Zinc-V #2",
     "attached_to_role": null,
     "bbox": [
-     228.42,
+     214.99,
      231.95,
-     53.93,
+     42.0,
      33.94
     ],
     "top_bbox": [
-     73.79,
+     84.22,
      166.8,
-     139.08,
+     128.64,
      57.39
     ]
    }
@@ -1638,7 +1657,7 @@
     "fed_by_role": null,
     "attached_to_role": "Orange Pi 5 Pro · right-pi",
     "bbox": [
-     285.36,
+     259.99,
      230.21,
      37.5,
      35.69
