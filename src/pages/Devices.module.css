@@ -1,4 +1,6 @@
-.page { padding: 32px clamp(16px, 4vw, 48px) 48px; max-width: 1400px; }
+/* From 900 px the page fills the window under the top bar and the table scrolls inside it, its header row in view; from
+   1400 px a picked device's panel sits beside the table, not over it (user, 2026-10-08). Phones: the page scrolls. */
+.page { padding: 32px clamp(16px, 4vw, 48px) 48px; }
 .eyebrow { margin: 0 0 6px; font: 600 11px/1 var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
 .h1 { font-size: clamp(30px, 4vw, 40px); }
 .lead { margin: 8px 0 0; color: var(--muted); max-width: 60ch; }
@@ -42,6 +44,16 @@
 
 .panel { position: fixed; z-index: 25; top: calc(var(--bar-h) + 16px); right: 16px; bottom: 16px; width: min(380px, calc(100vw - 32px)); display: grid; align-content: start; }
 .panel > * { max-height: 100%; }
+
+@media (min-width: 900px) {
+  .page { display: flex; flex-direction: column; height: calc(100dvh - var(--bar-h)); padding-bottom: 24px; }
+  .body { flex: 1 1 auto; min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .tableWrap { align-self: start; max-height: 100%; overflow: auto; }
+}
+@media (min-width: 1400px) {
+  .withPanel { grid-template-columns: minmax(0, 1fr) 380px; }
+  .withPanel .panel { position: static; width: auto; height: 100%; min-height: 0; }
+}
 
 @media (max-width: 899px) {
   .panel { inset: auto 8px calc(68px + env(safe-area-inset-bottom)) 8px; width: auto; top: auto; max-height: 70vh; }

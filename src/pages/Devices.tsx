@@ -77,49 +77,51 @@ export default function Devices() {
         {rows.length} of {all.length} devices
       </p>
 
-      <div className={styles.tableWrap}>
-        <table className={styles.table}>
-          <thead>
-            <tr>
-              {COLUMNS.map((c) => (
-                <th key={c.col} scope="col"
-                  aria-sort={sort?.col === c.col ? (sort.dir === 'asc' ? 'ascending' : 'descending') : undefined}>
-                  <button type="button" onClick={() => sortBy(c.col)}>
-                    {c.label}
-                    <span className={styles.arrow} aria-hidden="true">
-                      {sort?.col === c.col ? (sort.dir === 'asc' ? '↑' : '↓') : ''}
-                    </span>
-                  </button>
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {rows.map((r) => (
-              <tr key={r.key} onClick={() => select(r.key)} data-selected={r.key === key || undefined}>
-                <td data-label="Device" className={styles.role}>
-                  <button type="button" onClick={(e) => { e.stopPropagation(); select(r.key); }}>{r.role}</button>
-                </td>
-                <td data-label="Mechanism">{r.mechanism}</td>
-                <td data-label="Type">{r.type}</td>
-                <td data-label="CAN" className="mono">{r.can}</td>
-                <td data-label="PDH" className={r.pdhStyle === 'amber' ? `mono ${styles.amber}` : 'mono'}><PdhTag text={r.pdh} /></td>
-                <td data-label="IP" className="mono">{r.ip}</td>
-                <td data-label="Open items" className={styles.open}>
-                  {r.open.length ? <span title={r.open.join(', ')}>{r.open.join(', ')}</span> : null}
-                </td>
+      <div className={device ? `${styles.body} ${styles.withPanel}` : styles.body}>
+        <div className={styles.tableWrap}>
+          <table className={styles.table}>
+            <thead>
+              <tr>
+                {COLUMNS.map((c) => (
+                  <th key={c.col} scope="col"
+                    aria-sort={sort?.col === c.col ? (sort.dir === 'asc' ? 'ascending' : 'descending') : undefined}>
+                    <button type="button" onClick={() => sortBy(c.col)}>
+                      {c.label}
+                      <span className={styles.arrow} aria-hidden="true">
+                        {sort?.col === c.col ? (sort.dir === 'asc' ? '↑' : '↓') : ''}
+                      </span>
+                    </button>
+                  </th>
+                ))}
               </tr>
-            ))}
-          </tbody>
-        </table>
-        {rows.length === 0 ? <p className={styles.empty}>No device matches.</p> : null}
-      </div>
-
-      {device ? (
-        <div className={styles.panel}>
-          <DevicePanel device={device} from="devices" onClose={() => select(null)} />
+            </thead>
+            <tbody>
+              {rows.map((r) => (
+                <tr key={r.key} onClick={() => select(r.key)} data-selected={r.key === key || undefined}>
+                  <td data-label="Device" className={styles.role}>
+                    <button type="button" onClick={(e) => { e.stopPropagation(); select(r.key); }}>{r.role}</button>
+                  </td>
+                  <td data-label="Mechanism">{r.mechanism}</td>
+                  <td data-label="Type">{r.type}</td>
+                  <td data-label="CAN" className="mono">{r.can}</td>
+                  <td data-label="PDH" className={r.pdhStyle === 'amber' ? `mono ${styles.amber}` : 'mono'}><PdhTag text={r.pdh} /></td>
+                  <td data-label="IP" className="mono">{r.ip}</td>
+                  <td data-label="Open items" className={styles.open}>
+                    {r.open.length ? <span title={r.open.join(', ')}>{r.open.join(', ')}</span> : null}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          {rows.length === 0 ? <p className={styles.empty}>No device matches.</p> : null}
         </div>
-      ) : null}
+
+        {device ? (
+          <div className={styles.panel}>
+            <DevicePanel device={device} from="devices" onClose={() => select(null)} />
+          </div>
+        ) : null}
+      </div>
     </div>
   );
 }

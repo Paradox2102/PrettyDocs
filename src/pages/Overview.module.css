@@ -1,9 +1,16 @@
-.page { padding: clamp(24px, 4vw, 56px) clamp(16px, 4vw, 56px) 56px; max-width: 1440px; }
+/* Wide: the page is one window tall: a reading-width intro beside the 3D robot, which takes the rest of the width and
+   all the height the doc cards leave (user, 2026-10-08). Under 1100 px: intro, robot, cards, and the page scrolls. */
+.page { padding: clamp(24px, 4vw, 56px) clamp(16px, 4vw, 56px) 56px; }
 
-.top { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(24px, 3vw, 48px); align-items: center; }
+.top { display: grid; grid-template-columns: minmax(0, min(34rem, 42%)) minmax(0, 1fr); gap: clamp(24px, 3vw, 48px); align-items: center; }
+@media (min-width: 1100px) {
+  .page { display: flex; flex-direction: column; min-height: calc(100dvh - var(--bar-h)); padding-bottom: 32px; }
+  .top { flex: 1 1 auto; --hero-h: 100%; }
+  .docs { flex: none; }
+}
 .noHero { grid-template-columns: minmax(0, 1fr); }
 .eyebrow { margin: 0 0 14px; font: 600 12px/1 var(--font-mono); letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-ink); }
-.name { font-size: clamp(2.75rem, 6.5vw, 5.5rem); line-height: 0.95; letter-spacing: -0.01em; }
+.name { font-size: clamp(2.75rem, 6vw, 5.5rem); line-height: 0.95; letter-spacing: -0.01em; }
 .season { margin: 14px 0 0; font: 13px/1.4 var(--font-mono); color: var(--muted); }
 .summary { margin: 16px 0 0; font-size: 18px; max-width: 42ch; }
 
@@ -17,7 +24,7 @@
 
 .docs { margin-top: clamp(32px, 5vw, 64px); }
 .h2 { margin-bottom: 14px; font: 600 12px/1 var(--font-mono); letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
-.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }  /* a short row stretches */
 .card {
   display: grid; align-content: start; gap: 10px; padding: 18px; border: 1px solid var(--line); border-radius: 10px;
   background: var(--surface); text-decoration: none; transition: border-color 120ms, transform 120ms;
@@ -32,7 +39,7 @@
 .openCard:hover { border-color: var(--warn-fg); }
 
 @media (max-width: 1099px) {
-  .top { grid-template-columns: minmax(0, 1fr); }
+  .top { grid-template-columns: minmax(0, 1fr); --hero-h: min(56vh, 560px); }
 }
 @media (max-width: 520px) {
   .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
