@@ -1,5 +1,5 @@
 {
- "built": "2026-10-08T17:37:03-07:00",
+ "built": "2026-10-08T21:15:52-07:00",
  "devices": {
   "battery": {
    "key": "battery",
@@ -236,7 +236,8 @@
     "pdh_uncertain": false
    },
    "notes": [
-    "CAN ID 32 on can_s1 confirmed by a blink test with the robot on (user, 2026-10-08); code name indexerConveyorFollower (Constants.java)."
+    "CAN ID 32 on can_s1 confirmed by a blink test with the robot on (user, 2026-10-08); code name indexerConveyorFollower (Constants.java).",
+    "GitHub main af85e4eb (2026-10-09): IndexerConveyorSubsystem calls it m_indexerConveyorBottom. The two conveyor motors now run separately (no follower)."
    ],
    "derived": {
     "wire_order": "1 of 3 on can_s1",
@@ -326,7 +327,8 @@
     "pdh_uncertain": false
    },
    "notes": [
-    "CAN ID 31 on can_s1 confirmed by a blink test with the robot on (user, 2026-10-08); code name indexerConveyorLeader (Constants.java)."
+    "CAN ID 31 on can_s1 confirmed by a blink test with the robot on (user, 2026-10-08); code name indexerConveyorLeader (Constants.java).",
+    "GitHub main af85e4eb (2026-10-09): IndexerConveyorSubsystem calls it m_indexerConveyorTop. The two conveyor motors now run separately (no follower); run() is commented out and launch() no longer runs the conveyor."
    ],
    "derived": {
     "wire_order": "3 of 3 on can_s1",
@@ -413,32 +415,33 @@
    },
    "power": {
     "pdh_channel": null,
-    "pdh_uncertain": false
+    "pdh_uncertain": false,
+    "fed_by": "swerve-bl-turn"
    },
-   "notes": [],
+   "notes": [
+    "Powered from the BL turn motor: the encoder is chained off it (user, 2026-10-08)."
+   ],
    "derived": {
     "wire_order": "2 of 13 on can_s2",
     "pdh_tag": [
-     "?",
-     "amber"
+     "10? via Talon FX",
+     "red"
     ],
     "cad_comment": null,
-    "open": true,
-    "open_reasons": [
-     "PDH channel not recorded"
-    ],
-    "fed_by_role": null,
+    "open": false,
+    "open_reasons": [],
+    "fed_by_role": "BL turn",
     "attached_to_role": null,
     "bbox": [
      212.84,
      80.07,
-     20.1,
+     39.89,
      43.29
     ],
     "top_bbox": [
-     109.72,
+     87.83,
      204.8,
-     53.46,
+     75.35,
      22.06
     ]
    }
@@ -475,7 +478,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     235.94,
+     255.73,
      84.79,
      24.69,
      38.57
@@ -520,7 +523,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     263.63,
+     283.42,
      84.79,
      24.69,
      38.57
@@ -548,13 +551,16 @@
    },
    "power": {
     "pdh_channel": null,
-    "pdh_uncertain": false
+    "pdh_uncertain": false,
+    "fed_by": "swerve-br-turn"
    },
-   "notes": [],
+   "notes": [
+    "Powered from the BR turn motor: the encoder is chained off it (user, 2026-10-08)."
+   ],
    "derived": {
     "wire_order": "5 of 13 on can_s2",
     "pdh_tag": [
-     "?",
+     "? via Talon FX",
      "amber"
     ],
     "cad_comment": null,
@@ -562,18 +568,18 @@
     "open_reasons": [
      "PDH channel not recorded"
     ],
-    "fed_by_role": null,
+    "fed_by_role": "BR turn",
     "attached_to_role": null,
     "bbox": [
-     291.32,
+     311.11,
      80.07,
-     20.1,
+     36.77,
      43.29
     ],
     "top_bbox": [
      268.62,
      207.6,
-     53.46,
+     72.23,
      19.26
     ]
    }
@@ -610,7 +616,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     314.42,
+     350.88,
      84.79,
      24.69,
      38.57
@@ -683,13 +689,16 @@
    },
    "power": {
     "pdh_channel": null,
-    "pdh_uncertain": false
+    "pdh_uncertain": false,
+    "fed_by": "swerve-fr-turn"
    },
-   "notes": [],
+   "notes": [
+    "Powered from the FR turn motor: the encoder is chained off it (user, 2026-10-08)."
+   ],
    "derived": {
     "wire_order": "8 of 13 on can_s2",
     "pdh_tag": [
-     "?",
+     "? via Talon FX",
      "amber"
     ],
     "cad_comment": null,
@@ -697,18 +706,18 @@
     "open_reasons": [
      "PDH channel not recorded"
     ],
-    "fed_by_role": null,
+    "fed_by_role": "FR turn",
     "attached_to_role": null,
     "bbox": [
      212.84,
      125.36,
-     20.1,
+     36.77,
      43.29
     ],
     "top_bbox": [
      268.62,
      75.0,
-     53.46,
+     72.23,
      48.31
     ]
    }
@@ -745,7 +754,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     235.94,
+     252.61,
      130.08,
      24.69,
      38.57
@@ -790,7 +799,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     263.63,
+     280.3,
      130.08,
      24.69,
      38.57
@@ -818,13 +827,16 @@
    },
    "power": {
     "pdh_channel": null,
-    "pdh_uncertain": false
+    "pdh_uncertain": false,
+    "fed_by": "swerve-fl-turn"
    },
-   "notes": [],
+   "notes": [
+    "Powered from the FL turn motor: the encoder is chained off it (user, 2026-10-08)."
+   ],
    "derived": {
     "wire_order": "11 of 13 on can_s2",
     "pdh_tag": [
-     "?",
+     "? via Talon FX",
      "amber"
     ],
     "cad_comment": null,
@@ -832,18 +844,18 @@
     "open_reasons": [
      "PDH channel not recorded"
     ],
-    "fed_by_role": null,
+    "fed_by_role": "FL turn",
     "attached_to_role": null,
     "bbox": [
-     291.32,
+     307.99,
      125.36,
-     20.1,
+     34.43,
      43.29
     ],
     "top_bbox": [
-     109.72,
+     93.29,
      85.2,
-     53.46,
+     69.89,
      38.11
     ]
    }
@@ -880,7 +892,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     314.42,
+     345.42,
      130.08,
      24.69,
      38.57
@@ -925,7 +937,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     342.11,
+     373.11,
      129.07,
      21.24,
      39.58
@@ -1049,7 +1061,9 @@
     "pdh_channel": null,
     "pdh_uncertain": false
    },
-   "notes": [],
+   "notes": [
+    "GitHub main af85e4eb (2026-10-09) still creates it on k_canBus1 (CAN_S1). It is wired on can_s3, so it gets no commands."
+   ],
    "derived": {
     "wire_order": "3 of 6 on can_s3",
     "pdh_tag": [
@@ -1142,7 +1156,8 @@
     "pdh_uncertain": false
    },
    "notes": [
-    "CAN ID 41 on can_s3 confirmed by a blink test with the robot on (user, 2026-10-08); code name hood (Constants.java)."
+    "CAN ID 41 on can_s3 confirmed by a blink test with the robot on (user, 2026-10-08); code name hood (Constants.java).",
+    "GitHub main af85e4eb (2026-10-09) creates the hood on k_canBus3 (CAN_S3), which matches the wiring."
    ],
    "derived": {
     "wire_order": "5 of 6 on can_s3",
@@ -1189,7 +1204,8 @@
     "pdh_uncertain": false
    },
    "notes": [
-    "CAN ID 43 on can_s3 confirmed by a blink test with the robot on (user, 2026-10-08); code name shooterFollower (Constants.java)."
+    "CAN ID 43 on can_s3 confirmed by a blink test with the robot on (user, 2026-10-08); code name shooterFollower (Constants.java).",
+    "GitHub main af85e4eb (2026-10-09) makes it follow shooterLeader (42), opposed. Before, it was set to follow itself (43)."
    ],
    "derived": {
     "wire_order": "6 of 6 on can_s3",
@@ -1657,7 +1673,8 @@
    "notes": [
     "Protooma DC 12/24 V to 5 V, 10 A (50 W) step-down converter: amazon.com/dp/B0B9XMNB7M.",
     "No LEDs are connected yet: the team ran out of time (user, 2026-10-08).",
-    "Its PDH channel, if it has one, is not recorded."
+    "Its PDH channel, if it has one, is not recorded.",
+    "GitHub main af85e4eb (2026-10-09): LightSubsystem drives addressable LEDs on port 0 (LightConstants.k_lightPort; the code comment says \"may be different on actual robot\")."
    ],
    "derived": {
     "wire_order": null,

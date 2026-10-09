@@ -40,31 +40,31 @@
     {
      "label": "Drive gear ratio in the robot code",
      "value": "7.36:1",
-     "source": "TunerConstants.kDriveGearRatio = 7.3636 (robot code main f1fdf68)",
+     "source": "TunerConstants.kDriveGearRatio = 7.3636 (robot code main af85e4e)",
      "uncertain": "X2-12 is 5.68:1. Odometry and the top speed use this value; check the module and the code"
     },
     {
      "label": "Steer gear ratio in the robot code",
      "value": "5.68:1",
-     "source": "TunerConstants.kSteerGearRatio = 5.68 (robot code main f1fdf68)",
+     "source": "TunerConstants.kSteerGearRatio = 5.68 (robot code main af85e4e)",
      "uncertain": "WCP gives 12.1:1 for the X2 steering; 5.68:1 is the X2-12 drive ratio"
     },
     {
      "label": "Coupling ratio in the robot code",
      "value": "3.82",
-     "source": "TunerConstants.kCoupleRatio = 3.8182 (robot code main f1fdf68)",
+     "source": "TunerConstants.kCoupleRatio = 3.8182 (robot code main af85e4e)",
      "uncertain": "The robot code's swerve ratios do not match X2-12; check this value with them"
     },
     {
      "label": "Wheel diameter",
      "value": "4.33 in",
-     "source": "TunerConstants.kWheelRadius = 2.167 in (robot code main f1fdf68)",
+     "source": "TunerConstants.kWheelRadius = 2.167 in (robot code main af85e4e)",
      "uncertain": "The X2 wheel is 4 in OD (WCP); the code value can be a measured one"
     },
     {
      "label": "Top speed at 12 V",
      "value": "4.54 m/s",
-     "source": "TunerConstants.kSpeedAt12Volts = 4.54 m/s (robot code main f1fdf68)",
+     "source": "TunerConstants.kSpeedAt12Volts = 4.54 m/s (robot code main af85e4e)",
      "uncertain": "Set with the code's 7.36:1 drive ratio; X2-12 free speed is 18.42 ft/s (5.61 m/s)"
     },
     {
@@ -76,17 +76,17 @@
     {
      "label": "Drive supply current limit",
      "value": "60 A",
-     "source": "TunerConstants driveInitialConfigs, SupplyCurrentLimit 60 A (robot code main f1fdf68)"
+     "source": "TunerConstants driveInitialConfigs, SupplyCurrentLimit 60 A (robot code main af85e4e)"
     },
     {
      "label": "Steer stator current limit",
      "value": "60 A",
-     "source": "TunerConstants steerInitialConfigs, StatorCurrentLimit 60 A (robot code main f1fdf68)"
+     "source": "TunerConstants steerInitialConfigs, StatorCurrentLimit 60 A (robot code main af85e4e)"
     },
     {
      "label": "Slip current",
      "value": "120 A",
-     "source": "TunerConstants.kSlipCurrent = 120 A (robot code main f1fdf68)"
+     "source": "TunerConstants.kSlipCurrent = 120 A (robot code main af85e4e)"
     },
     {
      "label": "Encoders",
@@ -120,23 +120,24 @@
     {
      "label": "Roller supply current limit",
      "value": "25 A",
-     "source": "IntakeConstants.k_rollerSupplyLimit = 25 (robot code main f1fdf68)"
+     "source": "IntakeConstants.k_rollerSupplyLimit = 25 (robot code main af85e4e)"
     },
     {
      "label": "Extension supply current limit (leader motor, CAN 21)",
      "value": "30 A",
-     "source": "IntakeConstants.k_extensionSupplyLimit = 30 (robot code main f1fdf68)",
+     "source": "IntakeConstants.k_extensionSupplyLimit = 30 (robot code main af85e4e)",
      "uncertain": "The code gives the follower rack motor no current limit config"
     },
     {
      "label": "Roller speed, intake",
      "value": "40 rps",
-     "source": "IntakeConstants.k_inRPS = 40 (robot code main f1fdf68)"
+     "source": "IntakeConstants.k_inRPS = 40 (robot code main af85e4e)",
+     "uncertain": "The driver controls run IntakeRollerSubsystem.testRun at 70 % instead (left trigger in, right bumper out)"
     },
     {
      "label": "Roller speed, outtake",
      "value": "30 rps (reverse)",
-     "source": "IntakeConstants.k_outRPS = -30 (robot code main f1fdf68)"
+     "source": "IntakeConstants.k_outRPS = -30 (robot code main af85e4e)"
     }
    ],
    "notes": []
@@ -170,30 +171,31 @@
     },
     {
      "label": "Belt tunnel motors",
-     "value": "Top tunnel CAN 31 leads, bottom tunnel CAN 32 follows (opposed)",
-     "source": "IndexerConveyorSubsystem: Follower(indexerConveyorLeader, MotorAlignmentValue.Opposed); CANIDConstants.indexerConveyorLeader = 31, indexerConveyorFollower = 32 (robot code main f1fdf68); device registry (wiring/devices.json, 2026-10-08)"
+     "value": "Top tunnel CAN 31 and bottom tunnel CAN 32 run separately (no follower)",
+     "source": "IndexerConveyorSubsystem: m_indexerConveyorTop (indexerConveyorLeader, 31), m_indexerConveyorBottom (indexerConveyorFollower, 32), the Follower removed (robot code main af85e4e); device registry (wiring/devices.json, 2026-10-08)"
     },
     {
-     "label": "Roller speed",
-     "value": "50 rps in; -40 rps to clear a jam",
-     "source": "IndexerConstants.k_rollerInRPS = 50, k_rollerOutRPS = -40; IndexerRollerSubsystem.isJammed (robot code main f1fdf68)",
-     "uncertain": "run(false) also asks for +50 rps: both sides of its in/out choice use k_rollerInRPS"
+     "label": "Roller drive command",
+     "value": "100 % in or out (test command)",
+     "source": "IndexerRollerSubsystem.testRun(in): setThrottle(±1); RobotContainer right trigger, right bumper, face left (robot code main af85e4e)",
+     "uncertain": "run() still asks for +50 rps both ways (k_rollerInRPS on both sides of its in/out choice); the jam reverse (k_rollerOutRPS -40) is commented out"
     },
     {
-     "label": "Belt tunnel speed",
-     "value": "20 rps in, 40 rps out (reverse)",
-     "source": "IndexerConstants.k_conveyorInRPS = 20, k_conveyorOutRPS = -40 (robot code main f1fdf68)"
+     "label": "Belt tunnel command",
+     "value": "Top 100 %, bottom 90 % (test command)",
+     "source": "IndexerConveyorSubsystem.testRun(): setThrottle 1.0 top, 0.9 bottom; RobotContainer right trigger, once the shooter is at speed (robot code main af85e4e)",
+     "uncertain": "run() with k_conveyorInRPS 20 / k_conveyorOutRPS -40 is commented out, and launch() no longer runs the conveyor"
     },
     {
      "label": "Roller supply current limit",
      "value": "25 A",
-     "source": "IndexerConstants.k_rollerSupplyLimit = 25 (robot code main f1fdf68)"
+     "source": "IndexerConstants.k_rollerSupplyLimit = 25 (robot code main af85e4e)"
     },
     {
      "label": "Belt tunnel supply current limit",
      "value": "none applied (18 A defined)",
-     "source": "IndexerConstants.k_conveyorSupplyLimit = 18, k_conveyorLimitConfig (robot code main f1fdf68)",
-     "uncertain": "The static block applies k_rollerLimitConfig to the roller config twice and never applies k_conveyorLimitConfig"
+     "source": "IndexerConstants.k_conveyorSupplyLimit = 18, k_conveyorLimitConfig; IndexerConveyorSubsystem (robot code main af85e4e)",
+     "uncertain": "The conveyor motors get no config at all: the apply call is commented out, and k_conveyorLimitConfig is never applied"
     }
    ],
    "notes": []
@@ -212,7 +214,13 @@
     {
      "label": "Turret reduction",
      "value": "67.86:1",
-     "source": "12T to 60T spur gears (5:1), 14T to 28T pulleys on a 45T belt (2:1), 14T driving gear to the 95T turret gear (6.79:1). The turret gears' tooth counts come from their diameters and centre distance (module 2.54); ShooterConstants.k_shooterGearReduction = 67.86 (robot code main f1fdf68) agrees. CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)"
+     "source": "12T to 60T spur gears (5:1), 14T to 28T pulleys on a 45T belt (2:1), 14T driving gear to the 95T turret gear (6.79:1). The turret gears' tooth counts come from their diameters and centre distance (module 2.54); ShooterConstants.k_shooterGearReduction = 67.86 (robot code main af85e4e) agrees. CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)"
+    },
+    {
+     "label": "Turret motor CAN bus in the code",
+     "value": "can_s1 (wired on can_s3)",
+     "source": "TurretAimSubsystem: k_CANBus = CANIDConstants.k_canBus1, shooterAzimuth (44) (robot code main af85e4e); device registry (wiring/devices.json)",
+     "uncertain": "The turret (CAN 44) gets no commands until TurretAimSubsystem uses k_canBus3"
     },
     {
      "label": "Flywheel drive",
@@ -238,28 +246,28 @@
     {
      "label": "Flywheel supply current limit (leader motor, CAN 42)",
      "value": "37 A",
-     "source": "ShooterConstants.k_shooterSupplyLimit = 37 (robot code main f1fdf68)",
+     "source": "ShooterConstants.k_shooterSupplyLimit = 37 (robot code main af85e4e)",
      "uncertain": "The code gives the follower flywheel motor no current limit config"
     },
     {
      "label": "Turret aim supply current limit",
      "value": "29 A",
-     "source": "ShooterConstants.k_aimingSupplyLimit = 29 (robot code main f1fdf68)"
+     "source": "ShooterConstants.k_aimingSupplyLimit = 29 (robot code main af85e4e)"
     },
     {
      "label": "Hood supply current limit",
      "value": "26 A",
-     "source": "ShooterConstants.k_hoodSupplyLimit = 26 (robot code main f1fdf68)"
+     "source": "ShooterConstants.k_hoodSupplyLimit = 26 (robot code main af85e4e)"
     },
     {
      "label": "Kicker supply current limit",
      "value": "23 A",
-     "source": "ShooterConstants.k_kickerSupplyLimit = 23 (robot code main f1fdf68)"
+     "source": "ShooterConstants.k_kickerSupplyLimit = 23 (robot code main af85e4e)"
     },
     {
      "label": "Secondary kicker supply current limit",
      "value": "23 A",
-     "source": "ShooterConstants.k_secondaryKickerSupplyLimit = 23 (robot code main f1fdf68)"
+     "source": "ShooterConstants.k_secondaryKickerSupplyLimit = 23 (robot code main af85e4e)"
     }
    ],
    "notes": []
