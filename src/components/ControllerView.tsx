@@ -37,7 +37,12 @@ export function ControllerView({ model, view, bindings, selected, onSelect }: Pr
             </Suspense>
           </ErrorBoundary>
         ) : note('This browser cannot show 3D.')}
-        {webgl ? <figcaption className={styles.caption}>Drag to turn · scroll or pinch to zoom · click a button</figcaption> : null}
+        {webgl ? (
+          <figcaption className={styles.caption}>
+            <span>Drag to turn · scroll or pinch to zoom · click a button</span>
+            {model.credit3d ? <Credit c={model.credit3d} /> : null}
+          </figcaption>
+        ) : null}
       </figure>
     );
   }
@@ -49,5 +54,14 @@ export function ControllerView({ model, view, bindings, selected, onSelect }: Pr
       </div>
       <figcaption className={styles.caption}>{v.caption}{compact ? ' Tap a button.' : ''}</figcaption>
     </figure>
+  );
+}
+
+function Credit({ c }: { c: NonNullable<ControllerModel['credit3d']> }) {
+  return (
+    <span className={styles.credit}>
+      {c.note} 3D model: <a href={c.link} target="_blank" rel="noreferrer">{c.title}</a> by {c.author},{' '}
+      <a href={c.licenseLink} target="_blank" rel="noreferrer">{c.license}</a>; {c.changes}.
+    </span>
   );
 }

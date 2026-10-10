@@ -32,6 +32,15 @@ export const WOLVERINE_V2: ControllerModel = {
   maker: 'Razer',
   link: 'https://www.amazon.com/dp/B09CKFSRK7',
   outline: OUTLINE,
+  credit3d: {
+    note: 'Stand-in: an Xbox controller, which has the same layout. M1, M2 and Share are added.',
+    title: 'Xbox controller free',
+    author: 'AT design studio',
+    link: 'https://sketchfab.com/3d-models/xbox-controller-free-913641c8ac254ca8bbc182d69487ff45',
+    license: 'CC BY 4.0',
+    licenseLink: 'https://creativecommons.org/licenses/by/4.0/',
+    changes: 'split into one part per button and simplified',
+  },
   inputs: [
     { id: 'ls', name: 'Left stick', short: 'LS', kind: 'stick' },
     { id: 'rs', name: 'Right stick', short: 'RS', kind: 'stick' },

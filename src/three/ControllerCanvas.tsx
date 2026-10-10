@@ -1,10 +1,10 @@
 import { Canvas, useThree, type ThreeEvent } from '@react-three/fiber';
-import { useEffect, useMemo, useState } from 'react';
+import { use, useEffect, useMemo, useState } from 'react';
 import { Box3, Color, Mesh, MeshStandardMaterial, Object3D, Sphere, Vector3 } from 'three';
 import { CSS2DRenderer } from 'three/addons/renderers/CSS2DRenderer.js';
 import type { Vec3 } from '../content/types';
 import { Background, Controls, FrameLoop } from './canvas-parts';
-import { BUILDERS } from './controllers';
+import { loadModel } from './controllers';
 import { PART_COLOR } from './controllers/parts';
 import { Label, LabelLayer } from './Labels';
 import { useCssColor } from './theme-color';
@@ -33,10 +33,13 @@ function inputOf(o: Object3D | null): string | null {
   return null;
 }
 
-/** One controller model in 3D. Bound inputs are in the accent color with their label; a click selects an input. */
+/**
+ * One controller model in 3D. Bound inputs are in the accent color with their label; a click selects an input. The
+ * model is loaded once per page load and kept (loadModel), so it is not disposed here.
+ */
 export default function ControllerCanvas({ model: modelId, labels, names, selected, onSelect, className }:
   ControllerCanvasProps) {
-  const model = useMemo(() => BUILDERS[modelId](), [modelId]);
+  const model = use(loadModel(modelId));
   const parts = useMemo(() => {
     model.updateMatrixWorld(true);
     const out = new Map<string, { obj: Object3D; top: Vec3 }>();
@@ -64,22 +67,14 @@ export default function ControllerCanvas({ model: modelId, labels, names, select
         if (!(o instanceof Mesh)) return;
         const m = o.material as MeshStandardMaterial;
         const bound = labels.has(id);
-        m.color.set(bound ? on : PART_COLOR);
-        if (id === selected) m.emissive.copy(bound ? on : new Color(0x8a929b)).multiplyScalar(0.45);
-        else if (id === hover) m.emissive.setScalar(0.12);
-        else m.emissive.setScalar(0);
+        m.color.copy(bound ? on : ((m.userData.base as Color | undefined) ?? new Color(PART_COLOR)));
+        // A glow as well as the color: under a dark clear cap (the Xbox face buttons) the color alone reads dim.
+        const glow = id === selected ? 0.55 : bound ? 0.22 : 0;
+        if (glow) m.emissive.copy(bound ? on : new Color(0x8a929b)).multiplyScalar(glow);
+        else m.emissive.setScalar(id === hover ? 0.12 : 0);
       });
     }
   }, [parts, labels, selected, hover, accent]);
-
-  useEffect(() => () => {
-    model.traverse((o) => {
-      if (o instanceof Mesh) {
-        o.geometry.dispose();
-        (o.material as MeshStandardMaterial).dispose();
-      }
-    });
-  }, [model]);
 
   const pick = (e: ThreeEvent<MouseEvent>) => {
     e.stopPropagation();

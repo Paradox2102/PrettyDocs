@@ -51,6 +51,9 @@ export interface ControllerModel {
   link: string;
   inputs: InputDef[];
   views: { front: ViewDef; back: ViewDef };
+  /** Where the 3D model comes from, when it is not built in code. CC BY asks for all of these and a note of changes. */
+  credit3d?: { note: string; title: string; author: string; link: string; license: string; licenseLink: string;
+    changes: string };
   /** The body outline of the front (or top) view; the SVG path and the 3D extrusion both use it. */
   outline: Pt[];
 }

@@ -28,7 +28,7 @@ Success:
 | Readers | Both, with layers: plain by default, code on a switch (user) |
 | Joystick | Drawn with every input marked "not used", until the code binds it (user) |
 | Wolverine M1, M2 | Drawn as "not mapped" (user: not used or not known) |
-| 3D model | Built in code from three.js shapes; no downloaded mesh (user) |
+| 3D model | Built in code from three.js shapes (user). Changed 2026-10-10 (user): the gamepad uses the free Sketchfab "Xbox controller free" (CC BY 4.0) as a stand-in, split into one part per input; the built-in model is the fallback. The joystick stays built in |
 | Content source | `controls.json` per robot, kept by hand in PrettyDocs, as `mechanical.json` is |
 | Controller geometry | In the site code, one module per controller model; a robot's file names the model |
 

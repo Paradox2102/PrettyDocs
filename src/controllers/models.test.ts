@@ -1,8 +1,18 @@
-import { Object3D } from 'three';
+import { readFileSync } from 'node:fs';
+import { Object3D, type Group } from 'three';
 import { describe, expect, test } from 'vitest';
-import { BUILDERS } from '../three/controllers';
+import { BUILT_IN } from '../three/controllers';
+import { fromXboxGlb } from '../three/controllers/xbox-stand-in';
 import { MODELS } from './models';
 import { outlinePath } from './outline';
+
+function inputsOf(g: Group): string[] {
+  const found: string[] = [];
+  g.traverse((o: Object3D) => {
+    if (typeof o.userData.input === 'string') found.push(o.userData.input);
+  });
+  return found.sort();
+}
 
 describe.each(Object.values(MODELS))('$id', (model) => {
   const ids = model.inputs.map((n) => n.id);
@@ -22,12 +32,8 @@ describe.each(Object.values(MODELS))('$id', (model) => {
       expect(new Set(marks).size).toBe(marks.length);
     }
   });
-  test('the 3D model has exactly one object for each input', () => {
-    const found: string[] = [];
-    BUILDERS[model.id]().traverse((o: Object3D) => {
-      if (typeof o.userData.input === 'string') found.push(o.userData.input);
-    });
-    expect(found.sort()).toEqual([...ids].sort());
+  test('the built-in 3D model has exactly one object for each input', () => {
+    expect(inputsOf(BUILT_IN[model.id]())).toEqual([...ids].sort());
   });
   test('the outline has at least three points', () => {
     expect(model.outline.length).toBeGreaterThanOrEqual(3);
@@ -39,4 +45,23 @@ test('outlinePath draws a closed smooth path through the points', () => {
   expect(d.startsWith('M0 0')).toBe(true);
   expect(d.match(/C/g)).toHaveLength(4);
   expect(d.endsWith('Z')).toBe(true);
+});
+
+test('the Xbox stand-in model has exactly one object for each Wolverine V2 input, with its own materials', async () => {
+  const file = readFileSync(`${process.cwd()}/src/three/controllers/xbox-controller.glb`);
+  // A copy made with this realm's ArrayBuffer: GLTFLoader checks `instanceof ArrayBuffer`.
+  const bytes = new ArrayBuffer(file.byteLength);
+  new Uint8Array(bytes).set(file);
+  const g = await fromXboxGlb(bytes);
+  expect(inputsOf(g)).toEqual(MODELS['razer-wolverine-v2'].inputs.map((n) => n.id).sort());
+  // A bound input is recoloured, so no two inputs may share a material.
+  const owner = new Map<unknown, string>();
+  g.traverse((o) => {
+    let id: string | undefined;
+    for (let p: Object3D | null = o; p; p = p.parent) if (typeof p.userData.input === 'string') { id = p.userData.input; break; }
+    const m = (o as { material?: unknown }).material;
+    if (!id || !m) return;
+    expect(owner.get(m) ?? id).toBe(id);
+    owner.set(m, id);
+  });
 });
