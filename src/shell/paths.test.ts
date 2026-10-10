@@ -18,3 +18,10 @@ test('a full timestamp keeps its local day', () => {
 test('text that is not a date comes back as it is', () => {
   expect(formatBuilt('soon')).toBe('soon');
 });
+
+test('the controls page has a path and a nav label', async () => {
+  const { pageOf, pagePath, PAGE_LABELS } = await import('./paths');
+  expect(pageOf('/2026-offseason/controls')).toBe('controls');
+  expect(pagePath('r', 'controls')).toBe('/r/controls');
+  expect(PAGE_LABELS.controls).toBe('Controls');
+});

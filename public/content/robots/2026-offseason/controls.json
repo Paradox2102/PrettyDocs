@@ -1,0 +1,87 @@
+{
+ "updated": "2026-10-10",
+ "source": "RobotContainer.java and the subsystems it calls, robot code main 1ae9dacd (2026-10-10)",
+ "controllers": [
+  {
+   "id": "gamepad",
+   "name": "Driver gamepad",
+   "model": "razer-wolverine-v2",
+   "port": 0,
+   "code_name": "m_controller (CommandGamepad)",
+   "summary": "Drives the robot and runs the intake, indexer and shooter.",
+   "bindings": [
+    {
+     "input": "ls",
+     "label": "Drive",
+     "how": "axis",
+     "action": "Moves the robot field-relative: push up to drive away from the driver. The push is squared for fine control, with a 10 % dead band.",
+     "code": "setDefaultCommand(applyRequest(getDrive().withVelocityX(getLeftY() * |getLeftY()| * MaxSpeed).withVelocityY(getLeftX() * |getLeftX()| * MaxSpeed)...))"
+    },
+    {
+     "input": "rs",
+     "label": "Turn",
+     "how": "axis",
+     "action": "Left and right turn the robot, up to 0.75 turn per second. Squared, with a 10 % dead band. Up and down do nothing.",
+     "code": "withRotationalRate(-getRightX() * |getRightX()| * MaxAngularRate)"
+    },
+    {
+     "input": "lb",
+     "label": "Extend intake",
+     "how": "press",
+     "action": "Drives the intake out until it stops moving.",
+     "code": "leftBumper().onTrue(m_intakeExtension.extendIntake())"
+    },
+    {
+     "input": "lt",
+     "label": "Intake",
+     "how": "hold",
+     "action": "Runs the intake roller in.",
+     "code": "leftTrigger().whileTrue(m_intakeRoller.testRun(true))"
+    },
+    {
+     "input": "rb",
+     "label": "Shoot",
+     "how": "hold",
+     "action": "Spins the flywheel up. While it is at speed, the conveyor, both kickers and the indexer roller feed balls into it.",
+     "code": "rightBumper().whileTrue(parallel(m_shooterSubsystem.staticShoot(), repeatingSequence(either(parallel(m_indexerConveyor.testRun(), m_kickerSubsystem.testRun(), m_secondaryKicker.testRun(), m_indexerRollerSubsystem.testRun(true)), none(), m_shooterSubsystem::m_isAtSpeed))))"
+    },
+    {
+     "input": "rt",
+     "label": "Reverse rollers",
+     "how": "hold",
+     "action": "Runs the intake roller and the indexer roller out, to clear a jam.",
+     "code": "rightTrigger().whileTrue(parallel(m_intakeRoller.testRun(false), m_indexerRollerSubsystem.testRun(false)))"
+    },
+    {
+     "input": "x",
+     "label": "Indexer in",
+     "how": "hold",
+     "action": "Runs the indexer roller in.",
+     "code": "faceLeft().whileTrue(m_indexerRollerSubsystem.testRun(true))"
+    },
+    {
+     "input": "y",
+     "label": "Reset pose",
+     "how": "press",
+     "action": "Sets the field pose to the origin with the heading for the alliance color.",
+     "code": "faceUp().onTrue(... m_swerveSubsystem.resetPose(new Pose2d(0, 0, ...isRedAlliance() ...)))"
+    }
+   ],
+   "notes": [
+    "M1 and M2 copy other buttons through the Razer app, so the robot code cannot see them. This map shows them as not used."
+   ]
+  },
+  {
+   "id": "joystick",
+   "name": "Joystick",
+   "model": "logitech-extreme-3d-pro",
+   "port": 1,
+   "code_name": "m_joystick (CommandJoystick)",
+   "summary": "Plugged in on port 1. Nothing is bound to it yet.",
+   "bindings": [],
+   "notes": [
+    "The code declares m_joystick on port 1 but binds nothing to it yet."
+   ]
+  }
+ ]
+}

@@ -1,5 +1,5 @@
-import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { useEffect, useEffectEvent, useLayoutEffect, useMemo } from 'react';
+import { Canvas, useThree } from '@react-three/fiber';
+import { useEffect, useEffectEvent, useMemo } from 'react';
 import { Object3D, Vector3 } from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { CSS2DRenderer } from 'three/addons/renderers/CSS2DRenderer.js';
@@ -7,11 +7,10 @@ import type { Scene, Vec3 } from '../content/types';
 import { frame, frameGroups, sceneByRegistryKey } from '../logic/scene';
 import { subsystemStyle, type StyleItem } from '../logic/viewer';
 import { CanLoops, DeviceTags, LayerCables } from './Cables';
-import { controlSettings } from './controls';
+import { Background, Controls, FrameLoop } from './canvas-parts';
 import { cameraPosition, VIEWS, type ViewName } from './cameraViews';
 import { RobotModel, type DeviceEvent } from './RobotModel';
 import { useCssColor, useReducedMotion } from './theme-color';
-import { drawFrame } from './frame';
 import { Label, LabelLayer } from './Labels';
 
 // The CAD and the robot code use +z up.
@@ -97,44 +96,6 @@ export default function RobotCanvas({ scene, mode, selected = NO_SELECTION, ghos
       <CameraRig view={view} nonce={viewNonce} focus={focus} center={center} radius={radius} />
     </Canvas>
   );
-}
-
-/** three's OrbitControls, registered as the canvas's default controls so CameraRig can reach them. */
-function Controls({ target, enabled, autoRotate }: { target: Vec3; enabled: boolean; autoRotate: boolean }) {
-  const camera = useThree((s) => s.camera);
-  const gl = useThree((s) => s.gl);
-  const set = useThree((s) => s.set);
-  const controls = useMemo(() => new OrbitControls(camera, gl.domElement), [camera, gl]);
-  useEffect(() => {
-    set({ controls });
-    return () => {
-      set({ controls: null });
-      controls.dispose();
-    };
-  }, [controls, set]);
-  useLayoutEffect(() => {
-    Object.assign(controls, controlSettings(enabled, autoRotate));
-  }, [controls, enabled, autoRotate]);
-  useEffect(() => {
-    controls.target.set(...target);
-    controls.update();
-  }, [controls, target]);
-  return null;
-}
-
-/**
- * Owns the frame: priority 1 turns off R3F's own render, so the order is fixed (drawFrame: camera, scene, labels).
- * Controls come from the canvas state, because the Controls component registers them there.
- */
-function FrameLoop({ labels }: { labels: CSS2DRenderer | null }) {
-  useFrame((state, delta) => drawFrame({ scene: state.scene, camera: state.camera,
-    controls: state.controls as OrbitControls | null, gl: state.gl, labels }, delta), 1);
-  return null;
-}
-
-function Background({ token }: { token: string }) {
-  const bg = useCssColor(token);
-  return <color attach="background" args={[bg || '#f4f6f9']} />;
 }
 
 /** A 48 in square floor on z = 0: 3 in minor and 12 in major lines. GridHelper lies in XZ, so it is turned. */

@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest';
-import { ContentError, validateIndex, validateMechanical, validateScene, validateWiring } from './validate';
-import { INDEX, MECHANICAL, WIRING } from '../test/fixtures';
+import { ContentError, validateControls, validateIndex, validateMechanical, validateScene, validateWiring } from './validate';
+import { CONTROLS, INDEX, MECHANICAL, WIRING } from '../test/fixtures';
 
 const clone = <T,>(x: T): T => structuredClone(x);
 const SCENE = { meta: { document: 'd', microversion: 'm', cell_mm: 4, built: 'b', triangles: 1 }, groups: [],
@@ -90,5 +90,39 @@ describe('validateMechanical', () => {
   });
   test('an empty subsystem list is refused', () => {
     expect(() => validateMechanical({ updated: 'x', subsystems: [] })).toThrow(/subsystems/);
+  });
+});
+
+describe('validateControls', () => {
+  const MODELS = {
+    'razer-wolverine-v2': { inputs: [{ id: 'ls' }, { id: 'rb' }, { id: 'lt' }] },
+    'logitech-extreme-3d-pro': { inputs: [{ id: 'b1' }] },
+  };
+  type Doc = { controllers: { id: string; model: string; bindings: { input: string; how: string }[] }[] };
+  const bad = (change: (c: Doc) => void) => {
+    const c = clone(CONTROLS) as unknown as Doc;
+    change(c);
+    return () => validateControls(c, MODELS);
+  };
+  test('a good file passes and comes back unchanged', () => {
+    expect(validateControls(clone(CONTROLS), MODELS)).toEqual(CONTROLS);
+  });
+  test('an unknown model is refused', () => {
+    expect(bad((c) => { c.controllers[0].model = 'xbox-elite'; })).toThrow(/controllers\[0\]\.model/);
+  });
+  test('an input the model does not have is refused', () => {
+    expect(bad((c) => { c.controllers[0].bindings[1].input = 'paddle'; })).toThrow(/controllers\[0\]\.bindings\[1\]\.input/);
+  });
+  test('two bindings on one input are refused', () => {
+    expect(bad((c) => { c.controllers[0].bindings[1].input = 'ls'; })).toThrow(/controllers\[0\]\.bindings\[1\]\.input/);
+  });
+  test('an unknown how is refused', () => {
+    expect(bad((c) => { c.controllers[0].bindings[0].how = 'toggle'; })).toThrow(/controllers\[0\]\.bindings\[0\]\.how/);
+  });
+  test('controller ids must be unique', () => {
+    expect(bad((c) => { c.controllers[1].id = 'gamepad'; })).toThrow(/controllers/);
+  });
+  test('a controller with no bindings is valid', () => {
+    expect(validateControls(clone(CONTROLS), MODELS).controllers[1].bindings).toEqual([]);
   });
 });

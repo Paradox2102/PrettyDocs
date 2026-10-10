@@ -1,6 +1,6 @@
 // Shape checks for the content files. They check the fields the pages read and name the path of the first bad
 // field, so a broken export says where it broke.
-import { DOC_KINDS, type MechanicalData, type RobotIndex, type Scene, type WiringData } from './types';
+import { DOC_KINDS, HOWS, type ControlsData, type MechanicalData, type RobotIndex, type Scene, type WiringData } from './types';
 
 export class ContentError extends Error {
   name = 'ContentError';
@@ -113,4 +113,41 @@ export function validateMechanical(x: unknown): MechanicalData {
   });
   if (new Set(ids).size !== ids.length) fail('subsystems', 'subsystem ids must be unique');
   return x as MechanicalData;
+}
+
+/** The part of a controller model the validator needs: its input ids. */
+export type ModelInputs = Record<string, { inputs: { id: string }[] }>;
+
+export function validateControls(x: unknown, models: ModelInputs): ControlsData {
+  const c = obj(x, 'controls.json');
+  str(c.updated, 'updated');
+  str(c.source, 'source');
+  const ctrls = arr(c.controllers, 'controllers');
+  if (ctrls.length === 0) fail('controllers', 'must list at least one controller');
+  const ids = ctrls.map((k, i) => {
+    const path = `controllers[${i}]`;
+    const ctrl = obj(k, path);
+    const id = str(ctrl.id, `${path}.id`);
+    if (!ROBOT_ID.test(id)) fail(`${path}.id`, `"${id}" must match ${ROBOT_ID}`);
+    for (const f of ['name', 'code_name', 'summary']) str(ctrl[f], `${path}.${f}`);
+    if (!Number.isInteger(ctrl.port) || (ctrl.port as number) < 0) fail(`${path}.port`, 'must be a whole number from 0');
+    const modelId = str(ctrl.model, `${path}.model`);
+    const model = Object.hasOwn(models, modelId) ? models[modelId] : fail(`${path}.model`, `unknown controller model "${modelId}"`);
+    const known = new Set(model.inputs.map((n) => n.id));
+    const used = new Set<string>();
+    arr(ctrl.bindings, `${path}.bindings`).forEach((b, j) => {
+      const bp = `${path}.bindings[${j}]`;
+      const binding = obj(b, bp);
+      const input = str(binding.input, `${bp}.input`);
+      if (!known.has(input)) fail(`${bp}.input`, `"${input}" is not an input of ${modelId}`);
+      if (used.has(input)) fail(`${bp}.input`, `"${input}" has two bindings`);
+      used.add(input);
+      for (const f of ['label', 'action', 'code']) str(binding[f], `${bp}.${f}`);
+      if (!(HOWS as unknown[]).includes(binding.how)) fail(`${bp}.how`, `must be one of ${HOWS.join(', ')}`);
+    });
+    strList(ctrl.notes, `${path}.notes`);
+    return id;
+  });
+  if (new Set(ids).size !== ids.length) fail('controllers', 'controller ids must be unique');
+  return x as ControlsData;
 }

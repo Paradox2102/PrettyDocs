@@ -8,6 +8,8 @@
   --line: #d8dee8;
   --accent: #a67c00;
   --accent-ink: #7a5b00;
+  /* Text on an --accent fill (a bound button's letter on the controls page). */
+  --on-accent: #0b1220;
   --power: #cf222e;
   --warn-bg: #fff4dc;
   --warn-fg: #6b4a00;
@@ -30,6 +32,7 @@
     --line: #243049;
     --accent: #f0b429;
     --accent-ink: #f0b429;
+    --on-accent: #0b1220;
     --power: #ff6b6b;
     --warn-bg: #3a2e12;
     --warn-fg: #f3d58c;
@@ -45,6 +48,7 @@
   --line: #243049;
   --accent: #f0b429;
   --accent-ink: #f0b429;
+  --on-accent: #0b1220;
   --power: #ff6b6b;
   --warn-bg: #3a2e12;
   --warn-fg: #f3d58c;

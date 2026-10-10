@@ -13,6 +13,7 @@ const CARDS: Record<DocKind, { title: string; text: string }> = {
   '3d': { title: '3D', text: 'The CAD model with each CAN loop, power cable and network link drawn in place.' },
   devices: { title: 'Devices', text: 'Every device with its CAN ID, PDH channel and IP address. Search, filter and sort.' },
   mechanical: { title: 'Mechanical', text: 'Swerve, intake and shooter: ratios, current limits, devices and service notes.' },
+  controls: { title: 'Controls', text: 'What each button on the driver gamepad and the joystick does, drawn front, back and in 3D.' },
 };
 
 export default function Overview() {

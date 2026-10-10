@@ -3,7 +3,8 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, test } from 'vitest';
-import { validateIndex, validateMechanical, validateScene, validateWiring } from './validate';
+import { MODELS } from '../controllers/models';
+import { validateControls, validateIndex, validateMechanical, validateScene, validateWiring } from './validate';
 import type { DocKind } from './types';
 
 const CONTENT = join(process.cwd(), 'public', 'content');
@@ -12,6 +13,7 @@ const NEEDS: Record<DocKind, string[]> = {
   '3d': ['scene.json'],
   devices: ['wiring.json'],
   mechanical: ['mechanical.json', 'wiring.json'],
+  controls: ['controls.json'],
 };
 
 const index = validateIndex(JSON.parse(readFileSync(join(CONTENT, 'robots.json'), 'utf8')));
@@ -27,6 +29,7 @@ describe.each(index.robots.map((r) => [r.id, r]))('robot %s', (_id, robot) => {
     if (file === 'wiring.json') validateWiring(JSON.parse(text));
     else if (file === 'scene.json') validateScene(JSON.parse(text));
     else if (file === 'mechanical.json') validateMechanical(JSON.parse(text));
+    else if (file === 'controls.json') validateControls(JSON.parse(text), MODELS);
     else expect(text.startsWith('<svg')).toBe(true);
   });
 });

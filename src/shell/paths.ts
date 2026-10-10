@@ -8,6 +8,7 @@ export const PAGE_LABELS: Record<PageKind, string> = {
   '3d': '3D',
   devices: 'Devices',
   mechanical: 'Mechanical',
+  controls: 'Controls',
 };
 
 export function pagePath(robot: string, page: PageKind): string {
@@ -18,7 +19,7 @@ export function pagePath(robot: string, page: PageKind): string {
 export function pageOf(pathname: string): PageKind | null {
   const rest = pathname.split('/').filter(Boolean).slice(1);
   if (rest.length === 0) return 'overview';
-  if (rest.length === 1 && (rest[0] === 'wiring' || rest[0] === '3d' || rest[0] === 'devices' || rest[0] === 'mechanical')) {
+  if (rest.length === 1 && (rest[0] === 'wiring' || rest[0] === '3d' || rest[0] === 'devices' || rest[0] === 'mechanical' || rest[0] === 'controls')) {
     return rest[0];
   }
   return null;

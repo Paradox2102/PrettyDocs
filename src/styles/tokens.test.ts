@@ -32,4 +32,7 @@ describe.each(Object.entries(THEMES))('%s theme', (_name, t) => {
     expect(contrast(t.accent, t.bg)).toBeGreaterThanOrEqual(3);
     expect(contrast(t.accent, t.surface)).toBeGreaterThanOrEqual(3);
   });
+  test('--on-accent text has 4.5:1 on --accent', () => {
+    expect(contrast(t['on-accent'], t.accent)).toBeGreaterThanOrEqual(4.5);
+  });
 });

@@ -92,8 +92,8 @@ export interface SceneDevice {
   layers?: string[];
 }
 
-export type DocKind = 'wiring' | '3d' | 'devices' | 'mechanical';
-export const DOC_KINDS: DocKind[] = ['wiring', '3d', 'devices', 'mechanical'];
+export type DocKind = 'wiring' | '3d' | 'devices' | 'mechanical' | 'controls';
+export const DOC_KINDS: DocKind[] = ['wiring', '3d', 'devices', 'mechanical', 'controls'];
 
 export interface RobotEntry {
   id: string;
@@ -173,4 +173,37 @@ export interface Subsystem {
 export interface MechanicalData {
   updated: string;
   subsystems: Subsystem[];
+}
+
+/** How an input acts: hold (whileTrue), press (onTrue), axis (a stick or trigger read as a number). */
+export type How = 'hold' | 'press' | 'axis';
+export const HOWS: How[] = ['hold', 'press', 'axis'];
+
+/** One controller input and what it does. `input` is an input id of the controller's model (src/controllers). */
+export interface Binding {
+  input: string;
+  label: string;
+  how: How;
+  action: string;
+  code: string;
+}
+
+export interface ControllerDoc {
+  id: string;
+  name: string;
+  /** A model id from src/controllers/models.ts. */
+  model: string;
+  port: number;
+  code_name: string;
+  summary: string;
+  bindings: Binding[];
+  notes: string[];
+}
+
+/** controls.json: kept by hand in PrettyDocs, not written by the export. */
+export interface ControlsData {
+  updated: string;
+  /** The code the bindings were checked against. */
+  source: string;
+  controllers: ControllerDoc[];
 }

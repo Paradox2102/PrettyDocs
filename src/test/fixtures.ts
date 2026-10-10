@@ -9,7 +9,7 @@ export function robotEntry(id: string, extra: Partial<RobotIndex['robots'][numbe
 
 export const INDEX: RobotIndex = {
   latest: '2026-offseason',
-  robots: [robotEntry('2026-offseason', { docs: ['wiring', '3d', 'devices', 'mechanical'] }),
+  robots: [robotEntry('2026-offseason', { docs: ['wiring', '3d', 'devices', 'mechanical', 'controls'] }),
     robotEntry('2025-robot', { name: '2025 Robot', docs: ['wiring', 'devices'] })]
     .map((r) => ({ ...r, docs: [...r.docs] })),
 };
@@ -84,7 +84,27 @@ export const MECHANICAL = {
   ],
 };
 
+/** A gamepad with two bindings and a joystick with none (models from src/controllers). */
+export const CONTROLS = {
+  updated: '2026-10-10',
+  source: 'RobotContainer.java, robot code main 1ae9dacd',
+  controllers: [
+    { id: 'gamepad', name: 'Driver gamepad', model: 'razer-wolverine-v2', port: 0, code_name: 'm_controller (CommandGamepad)',
+      summary: 'Drives and runs every mechanism.',
+      bindings: [
+        { input: 'ls', label: 'Drive', how: 'axis', action: 'Moves the robot, field-relative.', code: 'getLeftY(), getLeftX()' },
+        { input: 'rb', label: 'Shoot', how: 'hold', action: 'Spins the flywheel and feeds at speed.', code: 'rightBumper().whileTrue(...)' },
+        { input: 'lt', label: 'Intake', how: 'hold', action: 'Runs the intake roller in.', code: 'leftTrigger().whileTrue(...)' },
+      ],
+      notes: [] },
+    { id: 'joystick', name: 'Joystick', model: 'logitech-extreme-3d-pro', port: 1, code_name: 'm_joystick (CommandJoystick)',
+      summary: 'Not used yet.', bindings: [],
+      notes: ['The code declares m_joystick on port 1 but binds nothing yet.'] },
+  ],
+};
+
 export const SITE_FILES = {
+  '/content/robots/2026-offseason/controls.json': CONTROLS,
   '/content/robots/2026-offseason/mechanical.json': MECHANICAL,
   '/content/robots.json': INDEX,
   '/content/robots/2026-offseason/wiring.json': WIRING,
