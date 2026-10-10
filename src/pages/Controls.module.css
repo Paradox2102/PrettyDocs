@@ -1,5 +1,5 @@
 /* As the Mechanical page: the reading column at the left, the drawing in the rest of the window, held in place while
-   the list scrolls. Under 1100 px: heading, drawing, list. */
+   the list scrolls. Under 1280 px (not 1100: the callouts need the width): heading, drawing, list. */
 .page {
   display: grid; grid-template-columns: minmax(0, min(34rem, 42%)) minmax(0, 1fr); gap: clamp(20px, 3vw, 40px);
   align-items: start; padding: 32px clamp(16px, 4vw, 48px) 48px;
@@ -22,7 +22,7 @@
 
 .list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
 .row {
-  display: grid; grid-template-columns: 4.5rem minmax(0, 1fr) auto; gap: 12px; align-items: start; width: 100%;
+  display: grid; grid-template-columns: minmax(4.5rem, max-content) minmax(0, 1fr) auto; gap: 12px; align-items: start; width: 100%;
   padding: 10px 8px; border: 0; border-bottom: 1px solid var(--line); border-left: 3px solid transparent;
   background: none; text-align: left; cursor: pointer;
 }
@@ -48,7 +48,7 @@
 .empty { margin: 0; color: var(--muted); }
 .updated { margin: 28px 0 0; font: 12px/1.4 var(--font-mono); color: var(--muted); }
 
-@media (max-width: 1099px) {
+@media (max-width: 1279px) {
   .page { grid-template-columns: minmax(0, 1fr); }
   .side { display: contents; }
   .head { order: 0; }
@@ -57,6 +57,6 @@
 }
 @media (max-width: 699px) {
   .pair { grid-template-columns: minmax(0, 1fr); }
-  .row { grid-template-columns: 3.6rem minmax(0, 1fr); }
+  .row { grid-template-columns: minmax(3.6rem, max-content) minmax(0, 1fr); }
   .how { grid-column: 2; justify-self: start; }
 }

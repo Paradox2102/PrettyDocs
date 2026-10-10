@@ -83,6 +83,7 @@ export default function ControllerCanvas({ model: modelId, labels, names, select
 
   const pick = (e: ThreeEvent<MouseEvent>) => {
     e.stopPropagation();
+    if (e.delta > 4) return; // a drag to turn the model, not a click
     const id = inputOf(e.object);
     if (id) onSelect(id);
   };

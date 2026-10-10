@@ -105,9 +105,10 @@ Wolverine V2 (Xbox layout): A, B, X, Y, LB, RB, LT, RT, left and right sticks an
 from behind, with the triggers, bumpers, M1 and M2 between them (reviews place M1 and M2 on the top edge
 between the triggers and bumpers), and the USB-C port.
 
-Extreme 3D Pro: buttons 1 (trigger) to 12, the hat, stick X and Y, twist and throttle. Front view: from
-the pilot's seat, with the stick head (buttons 3 to 6, hat), thumb button 2, base buttons 7 to 12 and the
-throttle. Back view: from the far side, with the trigger.
+Extreme 3D Pro: buttons 1 (trigger) to 12, the hat, stick X and Y, twist and throttle. Its two views are
+titled Top and Side (changed in the build: a straight front view hides the head buttons). Top: from above,
+pilot at the bottom, with the head (buttons 3 to 6, hat, thumb button 2), base buttons 7 to 12 and the
+throttle. Side: from the pilot's left, with the trigger, the thumb button and the stick.
 
 The body outline of each front view is one list of points; the SVG path and the 3D extrusion both use it.
 
@@ -116,14 +117,14 @@ The body outline of each front view is one list of points; the SVG path and the 
 Route `/:robot/controls`, doc kind `controls`, nav label "Controls", a gamepad icon, an Overview card.
 
 Layout, as the Mechanical page: a reading column on the left and the drawing on the right, held in place
-while the list scrolls. Under 1100 px: heading, drawing, list.
+while the list scrolls. Under 1280 px (the callouts need the width): heading, drawing, list.
 
 Left column:
 
 1. Eyebrow (robot name), H1 "Controls", lead sentence.
 2. Controller switch (Segmented): one option per controller. The hash keeps it (`#joystick`).
 3. View switch: Front, Back, 3D (`?view=`). Detail switch: Plain, Code (`?detail=code`).
-4. Controller heading: name, model with a link to the product page, port and code name.
+4. Controller heading: name, model with a link to the product page, port; the code name only with Code on.
 5. Binding list: one row per binding, ordered as the model's inputs. A row: the short input name in a
    key cap, the label, the action, and a How badge (Hold, Press, Stick). With Code on, the code line in
    mono under the action.

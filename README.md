@@ -17,7 +17,7 @@ Node 24 or newer.
 
 ## Update a robot's docs
 
-The export writes `public/content/`. Do not edit its files by hand, except `mechanical.json` (see below), which the export leaves alone. `robots.json` lists the robots in selector order and names the latest one; the export keeps any page kinds it does not write, such as `"mechanical"`.
+The export writes `public/content/`. Do not edit its files by hand, except `mechanical.json` and `controls.json` (see below), which the export leaves alone. `robots.json` lists the robots in selector order and names the latest one; the export keeps any page kinds it does not write, such as `"mechanical"` and `"controls"`.
 
 1. Rebuild the wiring outputs in the wiring tools (`~/systemcore/wiring`): after a change to `devices.json`, or after a new CAD export (`build_scene.py`).
 2. Export into this repo:
@@ -41,6 +41,10 @@ Each robot has a folder `public/content/robots/<id>/` with `wiring.json`, `poste
 - `notes`: service steps, one sentence each.
 
 Change `updated` when you edit it, and add `"mechanical"` to the robot's `docs` in `robots.json`. `npm run check` fails if a mechanism or group name does not exist in the export.
+
+### Controls page
+
+`public/content/robots/<id>/controls.json` is kept by hand. Each controller names a `model` (an id in `src/controllers/models.ts`: `razer-wolverine-v2`, `logitech-extreme-3d-pro`), its driver station `port`, and its `bindings`: `input` (an input id of the model), `label` (one to three words), `how` (`hold`, `press` or `axis`), `action` (one plain sentence) and `code` (the binding as written). Check the bindings against `RobotContainer.java` and set `source` to the commit you read. A new controller model needs a data module in `src/controllers/` and a 3D builder in `src/three/controllers/`; `npm run check` fails if an input has no drawing or no 3D part.
 
 ## Deploy
 

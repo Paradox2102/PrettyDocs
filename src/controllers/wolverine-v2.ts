@@ -15,6 +15,11 @@ const EDGE: Pt[] = [
   [-24, 18], [-50, 24], [-75, 16], [-81, 0],
 ];
 
+/** A ring (even-odd fill): the stick around its press button. */
+const ring = (x: number, y: number, r: number, hole: number) =>
+  `M${x - r} ${y}a${r} ${r} 0 1 0 ${2 * r} 0a${r} ${r} 0 1 0 ${-2 * r} 0Z` +
+  `M${x - hole} ${y}a${hole} ${hole} 0 1 0 ${2 * hole} 0a${hole} ${hole} 0 1 0 ${-2 * hole} 0Z`;
+
 const cross = (x: number, y: number, arm: number, w: number) => {
   const [a, h] = [arm / 2, w / 2];
   return `M${x - h} ${y - a}H${x + h}V${y - h}H${x + a}V${y + h}H${x + h}V${y + a}H${x - h}V${y + h}H${x - a}` +
@@ -61,7 +66,7 @@ export const WOLVERINE_V2: ControllerModel = {
       ],
       marks: [
         { input: 'xbox', shape: 'circle', x: 0, y: -36, r: 6.5, side: 'left' },
-        { input: 'ls', shape: 'circle', x: -42, y: -18, r: 10, side: 'left' },
+        { input: 'ls', shape: 'path', x: -42, y: -18, d: ring(-42, -18, 10, 4.5), side: 'left' },
         { input: 'ls-press', shape: 'circle', x: -42, y: -18, r: 3.5, side: 'left' },
         { input: 'view', shape: 'circle', x: -13, y: -19, r: 3, side: 'left' },
         { input: 'share', shape: 'rect', x: 0, y: -12, w: 6, h: 3.5, side: 'left' },
@@ -71,7 +76,7 @@ export const WOLVERINE_V2: ControllerModel = {
         { input: 'x', shape: 'circle', x: 33, y: -18, r: 5, glyph: 'X', side: 'right' },
         { input: 'b', shape: 'circle', x: 55, y: -18, r: 5, glyph: 'B', side: 'right' },
         { input: 'a', shape: 'circle', x: 44, y: -7, r: 5, glyph: 'A', side: 'right' },
-        { input: 'rs', shape: 'circle', x: 22, y: 12, r: 10, side: 'right' },
+        { input: 'rs', shape: 'path', x: 22, y: 12, d: ring(22, 12, 10, 4.5), side: 'right' },
         { input: 'rs-press', shape: 'circle', x: 22, y: 12, r: 3.5, side: 'right' },
       ],
     },

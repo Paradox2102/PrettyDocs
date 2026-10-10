@@ -10,9 +10,11 @@
 .hit { fill: none; stroke: transparent; stroke-width: 7; pointer-events: stroke; }
 .bound .shape { fill: var(--accent); stroke: var(--accent-ink); }
 .bound .line { fill: none; stroke: var(--accent); }
-.mark:hover .shape, .mark:focus-visible .shape { stroke: var(--ink); stroke-width: 1; }
+.mark:hover .shape { stroke: var(--ink); stroke-width: 1; }
 .selected .shape { stroke: var(--ink); stroke-width: 1.4; }
 .selected .line { stroke: var(--ink); stroke-width: 2; }
+/* Keyboard focus: a dashed ring, thicker than the selection, so the two never look the same. */
+.mark:focus-visible .shape { stroke: var(--accent-ink); stroke-width: 1.8; stroke-dasharray: 2 1.2; }
 .glyph { font: 600 5px/1 var(--font-mono); text-anchor: middle; fill: var(--muted); pointer-events: none; }
 .bound .glyph { fill: var(--on-accent); }
 

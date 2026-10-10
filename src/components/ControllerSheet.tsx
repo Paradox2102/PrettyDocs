@@ -102,5 +102,5 @@ function MarkShape({ m }: { m: Mark }) {
       <path d={m.d} className={styles.hit} />
       <path d={m.d} className={`${styles.shape} ${styles.line}`} />
     </>
-  ) : <path d={m.d} className={styles.shape} />;
+  ) : <path d={m.d} className={styles.shape} fillRule="evenodd" />;
 }
