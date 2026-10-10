@@ -22,7 +22,7 @@ export interface ControllerCanvasProps {
 
 /** Where the camera starts, as a direction from the model's centre: in front of and above the driver's hands. */
 const START_DIR: Record<string, Vec3> = {
-  'razer-wolverine-v2': [0, -1, 1.25],
+  'razer-wolverine-v2': [0.25, -0.75, 1.4],
   'logitech-extreme-3d-pro': [0.55, -1, 0.7],
 };
 const FOV = 32;
@@ -44,7 +44,8 @@ export default function ControllerCanvas({ model: modelId, labels, names, select
       const id = o.userData.input;
       if (typeof id !== 'string') return;
       const b = new Box3().setFromObject(o);
-      out.set(id, { obj: o, top: [(b.min.x + b.max.x) / 2, (b.min.y + b.max.y) / 2, b.max.z + 0.005] });
+      const [dx, dy, dz] = (o.userData.labelOffset as Vec3).map((mm) => mm / 1000);
+      out.set(id, { obj: o, top: [(b.min.x + b.max.x) / 2 + dx, (b.min.y + b.max.y) / 2 + dy, b.max.z + 0.005 + dz] });
     });
     return out;
   }, [model]);

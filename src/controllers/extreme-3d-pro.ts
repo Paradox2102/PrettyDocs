@@ -14,8 +14,6 @@ const GRIP_SIDE: Pt[] = [
   [-30, -30], [-34, -58],
 ];
 
-const BASE_SIDE: Pt[] = [[-92, 64], [0, 60], [92, 64], [96, 82], [88, 96], [0, 98], [-88, 96], [-96, 82]];
-
 const button = (n: number, name?: string): InputDef => ({ id: `b${n}`, name: name ?? `Button ${n}`, short: String(n),
   kind: 'button' });
 
@@ -69,7 +67,7 @@ export const EXTREME_3D_PRO: ControllerModel = {
       caption: 'From the pilot’s left: the front of the stick is on the left.',
       box: [-96, -82, 96, 98],
       paths: [
-        { d: outlinePath(BASE_SIDE), tone: 'body' },
+        { d: roundRect(0, 80, 190, 34, 12), tone: 'body' },
         { d: outlinePath(GRIP_SIDE), tone: 'body' },
       ],
       marks: [

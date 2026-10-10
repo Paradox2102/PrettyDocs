@@ -6,4 +6,4 @@
 .canvas { position: absolute !important; inset: 0; }
 .note { position: absolute; inset: 0; display: grid; place-items: center; padding: 24px; color: var(--muted); text-align: center; }
 .note p { margin: 0; }
-.caption { position: relative; z-index: 2; padding: 0 14px 10px; font-size: 12px; color: var(--muted); pointer-events: none; }
+.caption { grid-row: 2; position: relative; z-index: 2; padding: 0 14px 10px; font-size: 12px; color: var(--muted); pointer-events: none; }

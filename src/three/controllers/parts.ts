@@ -4,7 +4,7 @@ import { BoxGeometry, BufferGeometry, CylinderGeometry, ExtrudeGeometry, Group, 
 import { smoothSegments } from '../../controllers/outline';
 import type { Pt } from '../../controllers/types';
 
-export const BODY_COLOR = 0x2b2f36;
+export const BODY_COLOR = 0x363b44;
 export const PART_COLOR = 0x17191d;
 
 export type V3 = [number, number, number];
@@ -44,12 +44,19 @@ export const ring = (r: number, tube: number, at: V3) => placed(new TorusGeometr
 export function inputPart(id: string, ...meshes: Mesh[]): Group {
   const g = new Group();
   g.userData.input = id;
+  g.userData.labelOffset = [0, 0, 0];
   g.name = id;
   const m = material(PART_COLOR);
   for (const mesh of meshes) {
     mesh.material = m;
     g.add(mesh);
   }
+  return g;
+}
+
+/** Moves an input's 3D label from the top of the input by `mm`, so that labels of close inputs do not cover each other. */
+export function labelOffset(g: Group, mm: V3): Group {
+  g.userData.labelOffset = mm;
   return g;
 }
 

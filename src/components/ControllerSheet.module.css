@@ -21,7 +21,7 @@
 .dot { fill: var(--muted); }
 .callout.bound .leader { stroke: var(--ink); opacity: 0.55; }
 .callout.selected .leader { stroke: var(--ink); stroke-width: 0.8; opacity: 1; }
-.label { font: 600 6px/1 var(--font-display); fill: var(--ink); }
-.sub { font: 4.2px/1 var(--font-mono); fill: var(--muted); }
-.unused { font: 4.4px/1 var(--font-mono); fill: var(--muted); opacity: 0.85; }
+.label { font: 600 7px/1 var(--font-display); fill: var(--ink); }
+.sub { font: 4.8px/1 var(--font-mono); fill: var(--muted); }
+.unused { font: 4.8px/1 var(--font-mono); fill: var(--muted); opacity: 0.85; }
 .callout.selected .label { fill: var(--accent-ink); }

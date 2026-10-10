@@ -19,7 +19,7 @@ interface Props {
 const COLUMN = 80;
 const ELBOW = 5;
 const TEXT = 12;
-const GAP = 13;
+const GAP = 15;
 
 /**
  * One view of a controller as SVG: the body, a mark per input (accent when bound), and callouts with leader lines in
@@ -63,7 +63,7 @@ export function ControllerSheet({ model, view, bindings, selected, onSelect, com
               {b ? (
                 <>
                   <tspan className={styles.label} x={left ? tx - 1 : tx + 1} dy="-0.6">{b.label}</tspan>
-                  <tspan className={styles.sub} x={left ? tx - 1 : tx + 1} dy="5.6">{`${input.short} · ${howLabel(b, input)}`}</tspan>
+                  <tspan className={styles.sub} x={left ? tx - 1 : tx + 1} dy="6.2">{`${input.short} · ${howLabel(b, input)}`}</tspan>
                 </>
               ) : (
                 <tspan className={styles.unused} x={left ? tx - 1 : tx + 1} dy="1.6">{`${input.short} · not used`}</tspan>
