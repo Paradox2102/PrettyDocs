@@ -29,6 +29,7 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 - [Sensors and encoders](#sensors-and-encoders) (16)
 - [Vision and coprocessors](#vision-and-coprocessors) (11)
 - [Pneumatics](#pneumatics) (6)
+- [Driver station](#driver-station) (1)
 
 ## Robot controllers
 
@@ -143,3 +144,9 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 | <img src="pneumatics/rev/rev-pressure-sensor.svg" alt="" height="64"> | [rev-pressure-sensor.svg](pneumatics/rev/rev-pressure-sensor.svg) | Analog Pressure Sensor | REV Robotics | current |
 | <img src="pneumatics/rev/rev-ph.svg" alt="" height="64"> | [rev-ph.svg](pneumatics/rev/rev-ph.svg) | Pneumatic Hub (PH) | REV Robotics | current |
 | <img src="pneumatics/viair/viair-90c.svg" alt="" height="64"> | [viair-90c.svg](pneumatics/viair/viair-90c.svg) | 90C Compressor | VIAIR | current |
+
+## Driver station
+
+| Icon | File | Device | Vendor | Status |
+|---|---|---|---|---|
+| <img src="driver-station/dell/dell-latitude.svg" alt="" height="64"> | [dell-latitude.svg](driver-station/dell/dell-latitude.svg) | Dell Latitude 5450 (14 inch business laptop, driver station) | Dell | current |

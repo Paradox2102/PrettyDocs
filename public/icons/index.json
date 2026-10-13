@@ -46,6 +46,11 @@
    "id": "pneumatics",
    "name": "Pneumatics",
    "count": 6
+  },
+  {
+   "id": "driver-station",
+   "name": "Driver station",
+   "count": 1
   }
  ],
  "icons": [
@@ -4763,6 +4768,77 @@
      "y": -38.6,
      "kind": "power",
      "label": "− lead (black), ring terminal: to PH/PCM COMPRESSOR −"
+    }
+   ]
+  },
+  {
+   "slug": "dell-latitude",
+   "name": "Dell Latitude 5450 (14 inch business laptop, driver station)",
+   "type": "driver-station",
+   "vendor": "dell",
+   "vendor_name": "Dell",
+   "part_number": "Latitude 5450 (regulatory model not recorded)",
+   "status": "current",
+   "path": "driver-station/dell/dell-latitude.svg",
+   "size_mm": [
+    511.35,
+    302.5
+   ],
+   "view_box": [
+    -95,
+    -6,
+    511.35,
+    320
+   ],
+   "anchors": [
+    {
+     "port": "ethernet",
+     "x": 0.1,
+     "y": 216,
+     "kind": "ethernet",
+     "label": "RJ45: 1 Gbps Ethernet to the field radio or tether"
+    },
+    {
+     "port": "usb_a_1",
+     "x": -0.22,
+     "y": 229,
+     "kind": "usb",
+     "label": "USB-A 3.2 Gen 1: joystick or gamepad"
+    },
+    {
+     "port": "usb_c_data",
+     "x": -1.73,
+     "y": 243,
+     "kind": "signal",
+     "label": "USB-C Thunderbolt 4 / USB4 / DisplayPort / PD (second power-capable port)"
+    },
+    {
+     "port": "usb_c_power",
+     "x": -4.24,
+     "y": 257,
+     "kind": "power",
+     "label": "USB-C Thunderbolt 4 power input: 60 W adapter for full speed, 65 W for ExpressCharge, 27 W minimum"
+    },
+    {
+     "port": "audio",
+     "x": 318.25,
+     "y": 216,
+     "kind": "signal",
+     "label": "Universal audio jack (headset), not used in FRC"
+    },
+    {
+     "port": "usb_a_2",
+     "x": 321.93,
+     "y": 231,
+     "kind": "usb",
+     "label": "USB-A 3.2 Gen 1 with PowerShare: joystick or gamepad"
+    },
+    {
+     "port": "hdmi",
+     "x": 326.8,
+     "y": 247,
+     "kind": "signal",
+     "label": "HDMI 2.1: external display (not used for FRC control)"
     }
    ]
   }

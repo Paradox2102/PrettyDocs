@@ -1,5 +1,5 @@
 {
- "built": "2026-10-13T16:36:21-07:00",
+ "built": "2026-10-13T16:51:18-07:00",
  "devices": {
   "battery": {
    "key": "battery",
@@ -145,7 +145,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     10.5,
+     48.0,
      233.37,
      41.64,
      32.53
@@ -1731,7 +1731,7 @@
   },
   "ds-laptop": {
    "key": "ds-laptop",
-   "icon": null,
+   "icon": "dell-latitude",
    "type": "Laptop",
    "role": "Driver station laptop",
    "mechanism": "Off-robot",
@@ -1739,6 +1739,8 @@
     "ip": "10.21.2.200",
     "name": null,
     "mac": "e4:b9:7a:03:c4:2e",
+    "radio_port": "eth_ds",
+    "radio_port_note": "Ethernet to the radio's DS port (user, 2026-10-13)",
     "host_note": "Driver station laptop: the Elastic dashboard connects from it (journal, 18:39)"
    },
    "derived": {
@@ -1753,10 +1755,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     55.14,
-     240.4,
+     10.5,
+     234.55,
      34.5,
-     25.5
+     31.35
     ],
     "top_bbox": null
    }
