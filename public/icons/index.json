@@ -1,6 +1,53 @@
 {
  "license": "CC-BY-4.0",
  "attribution": "FRC Team 2102 Paradox",
+ "types": [
+  {
+   "id": "controllers",
+   "name": "Robot controllers",
+   "count": 2
+  },
+  {
+   "id": "power",
+   "name": "Power",
+   "count": 9
+  },
+  {
+   "id": "motor-controllers",
+   "name": "Motor controllers",
+   "count": 7
+  },
+  {
+   "id": "motors",
+   "name": "Motors",
+   "count": 9
+  },
+  {
+   "id": "communication",
+   "name": "Radio and CAN",
+   "count": 4
+  },
+  {
+   "id": "lights",
+   "name": "Lights",
+   "count": 3
+  },
+  {
+   "id": "sensors",
+   "name": "Sensors and encoders",
+   "count": 16
+  },
+  {
+   "id": "vision",
+   "name": "Vision and coprocessors",
+   "count": 11
+  },
+  {
+   "id": "pneumatics",
+   "name": "Pneumatics",
+   "count": 6
+  }
+ ],
  "icons": [
   {
    "slug": "systemcore",

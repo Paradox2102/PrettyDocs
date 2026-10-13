@@ -1,0 +1,42 @@
+/* The icon gallery. The drawings have dark bodies and dark caption text, so each sits on a white tile in both themes. */
+.page { max-width: 1280px; margin: 0 auto; padding: clamp(20px, 4vw, 48px) clamp(16px, 3vw, 32px) 64px; }
+
+.intro { max-width: 72ch; margin-bottom: 32px; }
+.eyebrow { margin: 0 0 6px; font: 600 13px/1 var(--font-mono); letter-spacing: 0.08em; color: var(--accent-ink); text-transform: uppercase; }
+.title { font-size: clamp(32px, 5vw, 48px); margin-bottom: 14px; }
+.lead { margin: 0 0 10px; color: var(--muted); }
+.lead a { color: var(--ink); }
+
+.contents { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
+.contents a {
+  display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px;
+  color: var(--ink); text-decoration: none; font-weight: 500; background: var(--surface);
+}
+.contents a:hover { border-color: var(--muted); }
+.count { font: 12px/1 var(--font-mono); color: var(--muted); }
+
+.section { margin-top: 40px; scroll-margin-top: calc(var(--bar-h) + 16px); }
+.sectionTitle { font-size: 26px; padding-bottom: 10px; margin-bottom: 18px; border-bottom: 1px solid var(--line); }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+
+.card { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); overflow: hidden; }
+.tile { display: grid; place-items: center; aspect-ratio: 1; padding: 12px; background: #fff; border-bottom: 1px solid var(--line); }
+.tile img { max-width: 100%; max-height: 100%; }
+
+.meta { display: flex; flex-direction: column; gap: 2px; padding: 12px 14px 14px; flex: 1; }
+.name { font-size: 17px; line-height: 1.2; }
+.vendor { margin: 0; color: var(--muted); font-size: 14px; }
+.legacy {
+  align-self: flex-start; margin: 6px 0 0; padding: 2px 8px; border-radius: 4px;
+  background: var(--warn-bg); color: var(--warn-fg); font-size: 12px; font-weight: 600;
+}
+.download {
+  align-self: flex-start; margin-top: auto; padding-top: 10px; color: var(--accent-ink); font-weight: 600; text-decoration: none;
+}
+.download:hover { text-decoration: underline; }
+
+@media (max-width: 899px) {
+  .page { padding-bottom: calc(64px + env(safe-area-inset-bottom)); }
+  .grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+}

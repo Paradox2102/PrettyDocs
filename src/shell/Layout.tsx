@@ -33,6 +33,7 @@ export function Layout() {
         </nav>
         <div className={styles.tools}>
           <p className={styles.built}>Data built {formatBuilt(robot.built)}</p>
+          <Link to="/icons" className={styles.siteLink}>Icons</Link>
           <RobotSelect />
           <ThemeButton />
         </div>

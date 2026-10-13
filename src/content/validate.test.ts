@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest';
-import { ContentError, validateControls, validateIndex, validateMechanical, validateScene, validateWiring } from './validate';
-import { CONTROLS, INDEX, MECHANICAL, WIRING } from '../test/fixtures';
+import { ContentError, validateControls, validateIcons, validateIndex, validateMechanical, validateScene, validateWiring } from './validate';
+import { CONTROLS, ICONS, INDEX, MECHANICAL, WIRING } from '../test/fixtures';
 
 const clone = <T,>(x: T): T => structuredClone(x);
 const SCENE = { meta: { document: 'd', microversion: 'm', cell_mm: 4, built: 'b', triangles: 1 }, groups: [],
@@ -124,5 +124,39 @@ describe('validateControls', () => {
   });
   test('a controller with no bindings is valid', () => {
     expect(validateControls(clone(CONTROLS), MODELS).controllers[1].bindings).toEqual([]);
+  });
+});
+
+describe('validateIcons', () => {
+  test('a good icon index passes and comes back unchanged', () => {
+    expect(validateIcons(clone(ICONS))).toEqual(ICONS);
+  });
+  test('an icon of a type that the types list does not name is refused', () => {
+    const bad = clone(ICONS);
+    bad.icons[0].type = 'motors';
+    expect(() => validateIcons(bad)).toThrow(/icons\[0\]\.type/);
+  });
+  test('an icon path must be type/vendor/slug.svg', () => {
+    const bad = clone(ICONS);
+    bad.icons[1].path = '../../content/robots.json';
+    expect(() => validateIcons(bad)).toThrow(/icons\[1\]\.path/);
+  });
+  test('the status is current or legacy', () => {
+    const bad = clone(ICONS) as unknown as { icons: { status: string }[] };
+    bad.icons[2].status = 'beta';
+    expect(() => validateIcons(bad)).toThrow(/icons\[2\]\.status/);
+  });
+  test('size_mm is two numbers', () => {
+    const bad = clone(ICONS) as unknown as { icons: { size_mm: unknown }[] };
+    bad.icons[0].size_mm = [1];
+    expect(() => validateIcons(bad)).toThrow(/icons\[0\]\.size_mm/);
+  });
+});
+
+describe('validateIndex reserved ids', () => {
+  test('a robot id that is a site path is refused', () => {
+    const bad = clone(INDEX);
+    bad.robots[0].id = 'icons';
+    expect(() => validateIndex(bad)).toThrow(/robots\[0\]\.id/);
   });
 });

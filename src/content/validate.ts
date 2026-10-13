@@ -1,12 +1,15 @@
 // Shape checks for the content files. They check the fields the pages read and name the path of the first bad
 // field, so a broken export says where it broke.
-import { DOC_KINDS, HOWS, type ControlsData, type MechanicalData, type RobotIndex, type Scene, type WiringData } from './types';
+import { DOC_KINDS, HOWS, type ControlsData, type IconIndex, type MechanicalData, type RobotIndex, type Scene, type WiringData } from './types';
 
 export class ContentError extends Error {
   name = 'ContentError';
 }
 
 const ROBOT_ID = /^[a-z0-9][a-z0-9-]*$/;
+/** Site paths: a robot with one of these ids could not be reached at /<id>. */
+const RESERVED_IDS = ['icons', 'assets', 'content'];
+const ICON_PATH = /^[a-z0-9-]+\/[a-z0-9-]+\/[a-z0-9-]+\.svg$/;
 
 type Obj = Record<string, unknown>;
 const isObj = (x: unknown): x is Obj => typeof x === 'object' && x !== null && !Array.isArray(x);
@@ -32,6 +35,7 @@ export function validateIndex(x: unknown): RobotIndex {
     const robot = obj(r, `robots[${i}]`);
     const id = str(robot.id, `robots[${i}].id`);
     if (!ROBOT_ID.test(id)) fail(`robots[${i}].id`, `"${id}" must match ${ROBOT_ID}`);
+    if (RESERVED_IDS.includes(id)) fail(`robots[${i}].id`, `"${id}" is a site path`);
     for (const k of ['name', 'season', 'summary', 'built']) str(robot[k], `robots[${i}].${k}`);
     const docs = arr(robot.docs, `robots[${i}].docs`);
     for (const d of docs) {
@@ -43,6 +47,34 @@ export function validateIndex(x: unknown): RobotIndex {
   const latest = str(index.latest, 'latest');
   if (!ids.includes(latest)) fail('latest', `"${latest}" is not in the robot list`);
   return x as RobotIndex;
+}
+
+const isNumList = (x: unknown, n: number) => Array.isArray(x) && x.length === n && x.every((v) => typeof v === 'number');
+
+export function validateIcons(x: unknown): IconIndex {
+  const index = obj(x, 'icons/index.json');
+  str(index.license, 'license');
+  str(index.attribution, 'attribution');
+  const types = arr(index.types, 'types').map((t, i) => {
+    const type = obj(t, `types[${i}]`);
+    str(type.name, `types[${i}].name`);
+    if (typeof type.count !== 'number') fail(`types[${i}].count`, 'must be a number');
+    return str(type.id, `types[${i}].id`);
+  });
+  arr(index.icons, 'icons').forEach((ic, i) => {
+    const p = `icons[${i}]`;
+    const icon = obj(ic, p);
+    for (const k of ['slug', 'name', 'vendor', 'vendor_name']) str(icon[k], `${p}.${k}`);
+    const type = str(icon.type, `${p}.type`);
+    if (!types.includes(type)) fail(`${p}.type`, `"${type}" is not in the types list`);
+    const path = str(icon.path, `${p}.path`);
+    if (!ICON_PATH.test(path)) fail(`${p}.path`, `"${path}" must be <type>/<vendor>/<slug>.svg`);
+    if (icon.status !== 'current' && icon.status !== 'legacy') fail(`${p}.status`, 'must be "current" or "legacy"');
+    if (!isNumList(icon.size_mm, 2)) fail(`${p}.size_mm`, 'must be two numbers');
+    if (!isNumList(icon.view_box, 4)) fail(`${p}.view_box`, 'must be four numbers');
+    arr(icon.anchors, `${p}.anchors`);
+  });
+  return x as IconIndex;
 }
 
 export function validateWiring(x: unknown): WiringData {

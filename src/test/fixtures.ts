@@ -103,7 +103,28 @@ export const CONTROLS = {
   ],
 };
 
+const anchor = (port: string, kind: string) => ({ port, x: 0, y: 0, kind, label: port });
+
+/** A small icon collection: two types, three icons, one legacy. */
+export const ICONS = {
+  license: 'CC-BY-4.0',
+  attribution: 'FRC Team 2102 Paradox',
+  types: [{ id: 'power', name: 'Power', count: 1 }, { id: 'communication', name: 'Radio and CAN', count: 2 }],
+  icons: [
+    { slug: 'rev-pdh', name: 'Power Distribution Hub (PDH)', type: 'power', vendor: 'rev', vendor_name: 'REV Robotics',
+      part_number: 'REV-11-1850', status: 'current', path: 'power/rev/rev-pdh.svg', size_mm: [131, 236.4],
+      view_box: [-10, -6, 131, 248], anchors: [anchor('ch0', 'power')] },
+    { slug: 'canivore', name: 'CANivore', type: 'communication', vendor: 'ctre', vendor_name: 'CTR Electronics',
+      part_number: '20-976418', status: 'current', path: 'communication/ctre/canivore.svg', size_mm: [50, 70],
+      view_box: [0, 0, 50, 80], anchors: [anchor('can', 'can')] },
+    { slug: 'vh-109', name: 'VH-109 Radio', type: 'communication', vendor: 'vivid-hosting', vendor_name: 'Vivid-Hosting',
+      part_number: null, status: 'legacy', path: 'communication/vivid-hosting/vh-109.svg', size_mm: [131, 69.5],
+      view_box: [-8, -6, 131, 75], anchors: [anchor('eth_ds', 'ethernet')] },
+  ],
+};
+
 export const SITE_FILES = {
+  '/icons/index.json': ICONS,
   '/content/robots/2026-offseason/controls.json': CONTROLS,
   '/content/robots/2026-offseason/mechanical.json': MECHANICAL,
   '/content/robots.json': INDEX,

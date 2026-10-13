@@ -4,11 +4,13 @@ import { ErrorBoundary } from './components/ErrorBoundary';
 import { Loading } from './components/Loading';
 import { forget, INDEX_URL } from './content/load';
 import Devices from './pages/Devices';
+import Icons from './pages/Icons';
 import Controls from './pages/Controls';
 import Mechanical from './pages/Mechanical';
 import Overview from './pages/Overview';
 import Wiring from './pages/Wiring';
 import { DocGate, LatestRedirect, RobotRoute } from './shell/RobotRoute';
+import { SiteLayout } from './shell/SiteLayout';
 import { NotFound } from './pages/NotFound';
 
 const Viewer3D = lazy(() => import('./pages/Viewer3D'));
@@ -19,6 +21,7 @@ export function AppRoutes() {
       <Suspense fallback={<Loading />}>
         <Routes>
           <Route index element={<LatestRedirect />} />
+          <Route path="icons" element={<SiteLayout><Icons /></SiteLayout>} />
           <Route path=":robot" element={<RobotRoute />}>
             <Route index element={<Overview />} />
             <Route path="wiring" element={<DocGate doc="wiring"><Wiring /></DocGate>} />

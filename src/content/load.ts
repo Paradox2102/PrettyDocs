@@ -2,6 +2,7 @@
 // every render. A failed promise stays cached too, so the error reaches the ErrorBoundary instead of a new fetch
 // on every retry render; Retry calls forget() and the next render fetches again.
 export const INDEX_URL = '/content/robots.json';
+export const ICONS_URL = '/icons/index.json';
 
 export type ContentFile = 'wiring.json' | 'poster.svg' | 'top-view.svg' | 'scene.json' | 'mechanical.json' | 'controls.json';
 

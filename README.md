@@ -2,7 +2,7 @@
 
 Robot documentation for Team 2102 Paradox, published at **https://docs.team2102.org**.
 
-**Device icons:** [`public/icons/`](public/icons/README.md) is a collection of SVG drawings of common FRC devices (controllers, power, motor controllers, motors, sensors, vision, pneumatics and more), in `<type>/<vendor>/` folders at one SVG unit per millimetre. They are free to use under [CC BY 4.0](public/icons/LICENSE.md): credit FRC Team 2102 Paradox.
+**Device icons:** [`public/icons/`](public/icons/README.md) is a collection of SVG drawings of common FRC devices (controllers, power, motor controllers, motors, sensors, vision, pneumatics and more), in `<type>/<vendor>/` folders at one SVG unit per millimetre. They are free to use under [CC BY 4.0](public/icons/LICENSE.md): credit FRC Team 2102 Paradox. The site shows them all at [docs.team2102.org/icons](https://docs.team2102.org/icons), read from `public/icons/index.json`.
 
 The site shows each robot's wiring (CAN, power and network sheets), a 3D model with every CAN loop, power cable and network link, and a searchable device table. It opens on the latest robot; the selector in the side rail (or the top bar on a phone) switches robots.
 

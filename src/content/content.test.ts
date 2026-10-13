@@ -4,7 +4,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, test } from 'vitest';
 import { MODELS } from '../controllers/models';
-import { validateControls, validateIndex, validateMechanical, validateScene, validateWiring } from './validate';
+import { validateControls, validateIcons, validateIndex, validateMechanical, validateScene, validateWiring } from './validate';
 import type { DocKind } from './types';
 
 const CONTENT = join(process.cwd(), 'public', 'content');
@@ -57,3 +57,16 @@ describe.each(index.robots.filter((r) => r.docs.includes('mechanical')).map((r) 
         });
     }
   });
+
+describe('icon collection', () => {
+  const ICONS = join(process.cwd(), 'public', 'icons');
+  const icons = validateIcons(JSON.parse(readFileSync(join(ICONS, 'index.json'), 'utf8')));
+
+  test('every icon in index.json exists', () => {
+    const missing = icons.icons.filter((i) => !existsSync(join(ICONS, i.path))).map((i) => i.path);
+    expect(missing).toEqual([]);
+  });
+  test('each type count matches its icons', () => {
+    for (const t of icons.types) expect(icons.icons.filter((i) => i.type === t.id).length, t.id).toBe(t.count);
+  });
+});

@@ -109,6 +109,45 @@ export interface RobotIndex {
   robots: RobotEntry[];
 }
 
+// public/icons/index.json: the FRC device icon collection (CC BY 4.0), written by the same export.
+export type IconStatus = 'current' | 'legacy';
+
+export interface IconAnchor {
+  port: string;
+  x: number;
+  y: number;
+  kind: string;
+  label: string;
+}
+
+export interface IconRecord {
+  slug: string;
+  name: string;
+  type: string;
+  vendor: string;
+  vendor_name: string;
+  part_number: string | null;
+  status: IconStatus;
+  /** <type>/<vendor>/<slug>.svg under /icons/ */
+  path: string;
+  size_mm: [number, number];
+  view_box: [number, number, number, number];
+  anchors: IconAnchor[];
+}
+
+export interface IconType {
+  id: string;
+  name: string;
+  count: number;
+}
+
+export interface IconIndex {
+  license: string;
+  attribution: string;
+  types: IconType[];
+  icons: IconRecord[];
+}
+
 export interface WiringData {
   built: string;
   view: [number, number, number, number];
