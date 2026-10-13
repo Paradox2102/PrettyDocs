@@ -56,7 +56,7 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 | <img src="motor-controllers/ctre/talon-srx.svg" alt="" height="64"> | [talon-srx.svg](motor-controllers/ctre/talon-srx.svg) | Talon SRX | CTR Electronics | legacy (not sold) |
 | <img src="motor-controllers/ctre/victor-spx.svg" alt="" height="64"> | [victor-spx.svg](motor-controllers/ctre/victor-spx.svg) | Victor SPX | CTR Electronics | legacy (not sold) |
 | <img src="motor-controllers/rev/servo-hub.svg" alt="" height="64"> | [servo-hub.svg](motor-controllers/rev/servo-hub.svg) | Servo Hub | REV Robotics | current |
-| <img src="motor-controllers/rev/spark-flex.svg" alt="" height="64"> | [spark-flex.svg](motor-controllers/rev/spark-flex.svg) | SPARK Flex Motor Controller | REV Robotics | current |
+| <img src="motor-controllers/rev/spark-flex-dock.svg" alt="" height="64"> | [spark-flex-dock.svg](motor-controllers/rev/spark-flex-dock.svg) | SPARK Flex + Flex Dock | REV Robotics | current |
 | <img src="motor-controllers/rev/spark-max.svg" alt="" height="64"> | [spark-max.svg](motor-controllers/rev/spark-max.svg) | SPARK MAX Motor Controller | REV Robotics | current |
 | <img src="motor-controllers/thrifty-bot/thrifty-nova.svg" alt="" height="64"> | [thrifty-nova.svg](motor-controllers/thrifty-bot/thrifty-nova.svg) | Thrifty Nova | The Thrifty Bot | current |
 
@@ -70,7 +70,7 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 | <img src="motors/rev/neo-2.svg" alt="" height="64"> | [neo-2.svg](motors/rev/neo-2.svg) | NEO 2.0 Brushless Motor | REV Robotics | current |
 | <img src="motors/rev/neo-550.svg" alt="" height="64"> | [neo-550.svg](motors/rev/neo-550.svg) | NEO 550 Brushless Motor | REV Robotics | current |
 | <img src="motors/rev/neo.svg" alt="" height="64"> | [neo.svg](motors/rev/neo.svg) | NEO Brushless Motor V1.1 | REV Robotics | legacy (not sold) |
-| <img src="motors/rev/neo-vortex.svg" alt="" height="64"> | [neo-vortex.svg](motors/rev/neo-vortex.svg) | NEO Vortex Brushless Motor | REV Robotics | current |
+| <img src="motors/rev/neo-vortex-spark-flex.svg" alt="" height="64"> | [neo-vortex-spark-flex.svg](motors/rev/neo-vortex-spark-flex.svg) | NEO Vortex + SPARK Flex | REV Robotics | current |
 | <img src="motors/wcp/kraken-x44.svg" alt="" height="64"> | [kraken-x44.svg](motors/wcp/kraken-x44.svg) | Kraken X44 Powered by Talon FX | WestCoast Products | current |
 | <img src="motors/wcp/kraken-x60.svg" alt="" height="64"> | [kraken-x60.svg](motors/wcp/kraken-x60.svg) | Kraken X60 Powered by Talon FX | WestCoast Products | current |
 
