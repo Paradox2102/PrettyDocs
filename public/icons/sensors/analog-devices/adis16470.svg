@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-4 -5 98 51" width="98mm" height="51mm" font-family="Helvetica, Arial, sans-serif">
 <title>ADI ADIS16470 IMU board</title>
-<desc>Drawn by FRC Team 2102 Paradox. License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). https://docs.team2102.org/icons/</desc>
+<desc>Drawn by FRC Team 2102 Paradox. Public domain: CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/). https://docs.team2102.org/icons/</desc>
 <path d="M 0.8 22.5 L 65.5 22.5 L 65.5 0.8 Q 65.5 0 66.3 0 L 89.2 0 Q 90 0 90 0.8 L 90 32.2 Q 90 33 89.2 33 L 0.8 33 Q 0 33 0 32.2 L 0 23.3 Q 0 22.5 0.8 22.5 Z" fill="#1f6f3f" stroke="#1f2328" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
 <circle cx="8.5" cy="29.15" r="2.25" fill="#c9a227"/>
 <circle cx="8.5" cy="29.15" r="1.6" fill="#ffffff"/>

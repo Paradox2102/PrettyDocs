@@ -48,9 +48,12 @@ test('a legacy icon is tagged, a current one is not', async () => {
   expect(within(screen.getByRole('article', { name: 'CANivore' })).queryByText(/legacy/i)).toBeNull();
 });
 
-test('the page names the license and links the license and the index', async () => {
+test('the page says public domain, no credit needed, and links the license and the index', async () => {
   await renderRouted(<AppRoutes />, '/icons');
-  expect(screen.getByRole('link', { name: /CC BY 4.0/ })).toHaveAttribute('href', '/icons/LICENSE.md');
+  expect(screen.getByRole('link', { name: /CC0 1\.0/ })).toHaveAttribute('href', '/icons/LICENSE.md');
+  expect(screen.getByText(/no credit needed/i)).toBeInTheDocument();
+  expect(screen.getByText(/please do not present them as your own work/i)).toBeInTheDocument();
+  expect(screen.queryByText(/CC BY/)).toBeNull();
   expect(screen.getByRole('link', { name: /index\.json/ })).toHaveAttribute('href', '/icons/index.json');
   expect(screen.getByText(/FRC Team 2102 Paradox/)).toBeInTheDocument();
 });

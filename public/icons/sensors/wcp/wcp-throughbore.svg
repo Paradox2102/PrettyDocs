@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -18 60 116" width="60mm" height="116mm" font-family="Helvetica, Arial, sans-serif">
 <title>WCP ThroughBore encoder</title>
-<desc>Drawn by FRC Team 2102 Paradox. License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). https://docs.team2102.org/icons/</desc>
+<desc>Drawn by FRC Team 2102 Paradox. Public domain: CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/). https://docs.team2102.org/icons/</desc>
 <path d="M -12.7 0 A 12.7 12.7 0 0 1 12.7 0 L 12.7 45.03 Q 12.7 46.03 11.7 46.03 L -11.7 46.03 Q -12.7 46.03 -12.7 45.03 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <rect x="-0.9" y="-12.7" width="1.8" height="2.2" rx="0" fill="#d0d7de"/>
 <circle cx="0" cy="0" r="10.5" fill="#2b3036" stroke="#d0d7de" stroke-width="1"/>

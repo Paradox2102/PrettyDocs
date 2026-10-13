@@ -12,7 +12,8 @@ Use them in your own diagrams, docs and posters.
 - To get one icon, open it here and use **Download raw file**, or get it from
   `https://docs.team2102.org/icons/<type>/<vendor>/<file>`.
 
-**License:** [CC BY 4.0](LICENSE.md). Credit: "Device icons by FRC Team 2102 Paradox".
+**License:** public domain, [CC0 1.0](LICENSE.md). Use them for anything, no credit needed.
+We ask one thing (a request, not a condition): please do not present the icons as your own work.
 The product names belong to their makers.
 
 The wiring tools write this folder (`export_prettydocs.py`): do not edit these files by hand.

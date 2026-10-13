@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-31 -14 62 42" width="62mm" height="42mm" font-family="Helvetica, Arial, sans-serif">
 <title>REV Magnetic Limit Switch</title>
-<desc>Drawn by FRC Team 2102 Paradox. License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). https://docs.team2102.org/icons/</desc>
+<desc>Drawn by FRC Team 2102 Paradox. Public domain: CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/). https://docs.team2102.org/icons/</desc>
 <path d="M -18.15 -7.5 L 18.15 -7.5 L 20.75 -4.9 L 20.75 4.9 L 18.15 7.5 L -18.15 7.5 L -20.75 4.9 L -20.75 -4.9 Z" fill="#24282e" stroke="#0d1117" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
 <circle cx="-16" cy="0" r="1.7" fill="#ffffff" stroke="#0d1117" stroke-width="0.25"/>
 <circle cx="16" cy="0" r="1.7" fill="#ffffff" stroke="#0d1117" stroke-width="0.25"/>

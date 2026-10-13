@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-22 -36 44 103" width="44mm" height="103mm" font-family="Helvetica, Arial, sans-serif">
 <title>REV Analog Pressure Sensor</title>
-<desc>Drawn by FRC Team 2102 Paradox. License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). https://docs.team2102.org/icons/</desc>
+<desc>Drawn by FRC Team 2102 Paradox. Public domain: CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/). https://docs.team2102.org/icons/</desc>
 <rect x="-8" y="0" width="16" height="10" rx="0.8" fill="#16191d" stroke="#1f2328" stroke-width="0.4"/>
 <rect x="-6.55" y="10" width="13.1" height="11" rx="0" fill="#d8dee4" stroke="#1f2328" stroke-width="0.3"/>
 <path d="M -11.5 26.5 L -11.5 22.5 Q -11.5 21 -10 21 L 10 21 Q 11.6 21 11.6 22.5 L 11.6 26.5 Z" fill="#d8dee4" stroke="#1f2328" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>

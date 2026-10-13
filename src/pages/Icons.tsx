@@ -51,9 +51,9 @@ export default function Icons() {
           attach a wire to.
         </p>
         <p className={styles.lead}>
-          Free to use under <a href={`${ICONS_BASE}LICENSE.md`}>CC BY 4.0</a>. Credit: “Device icons by{' '}
-          {index.attribution}”. Scripts can read <a href={`${ICONS_BASE}index.json`}>index.json</a> for each icon's
-          size and wire ends.
+          Drawn by {index.attribution}. Public domain under <a href={`${ICONS_BASE}LICENSE.md`}>CC0 1.0</a>: use
+          them for anything, no credit needed. Please do not present them as your own work. Scripts can read{' '}
+          <a href={`${ICONS_BASE}index.json`}>index.json</a> for each icon's size and wire ends.
         </p>
         <nav aria-label="Group icons by" className={styles.switch}>
           <span className={styles.switchLabel}>Group by</span>

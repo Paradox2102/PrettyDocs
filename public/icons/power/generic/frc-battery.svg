@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 -8 197 174" width="197mm" height="174mm" font-family="Helvetica, Arial, sans-serif">
 <title>FRC Robot Battery (12 V SLA)</title>
-<desc>Drawn by FRC Team 2102 Paradox. License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). https://docs.team2102.org/icons/</desc>
+<desc>Drawn by FRC Team 2102 Paradox. Public domain: CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/). https://docs.team2102.org/icons/</desc>
 <rect x="0" y="0" width="181" height="76" rx="3" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5"/>
 <rect x="4.3" y="9.3" width="173.2" height="35.6" rx="1.5" fill="none" stroke="#aab2bd" stroke-width="0.4"/>
 <text x="90.5" y="30" font-size="6" fill="#f0f3f6" text-anchor="middle" font-weight="bold">12V  18Ah</text>
