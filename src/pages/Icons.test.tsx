@@ -1,9 +1,10 @@
 import { screen, within } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import { afterEach, beforeEach, expect, test, vi } from 'vitest';
 import { AppRoutes } from '../App';
 import { forget } from '../content/load';
 import { fakeFetch, SITE_FILES } from '../test/fixtures';
-import { renderRouted } from '../test/render';
+import { renderRouted, settle } from '../test/render';
 
 vi.mock('../components/RobotHero', () => ({ RobotHero: () => <div data-testid="hero" /> }));
 
@@ -78,4 +79,28 @@ test('a malformed hash does not break the page', async () => {
   Element.prototype.scrollIntoView = vi.fn();
   await renderRouted(<AppRoutes />, '/icons#%E0%A4%A');
   expect(screen.getByRole('heading', { level: 1, name: 'FRC device icons' })).toBeInTheDocument();
+});
+
+test('?by=vendor groups the icons by vendor, in vendor name order', async () => {
+  await renderRouted(<AppRoutes />, '/icons?by=vendor');
+  const headings = screen.getAllByRole('heading', { level: 2 }).map((h) => h.textContent);
+  expect(headings).toEqual(['CTR Electronics', 'REV Robotics', 'Vivid-Hosting']);
+  const contents = screen.getByRole('navigation', { name: 'Icon vendors' });
+  expect(within(contents).getByRole('link', { name: /REV Robotics/ })).toHaveAttribute('href', '#vendor-rev');
+});
+
+test('the group switch shows the current choice and links to the other', async () => {
+  await renderRouted(<AppRoutes />, '/icons');
+  const group = screen.getByRole('navigation', { name: 'Group icons by' });
+  expect(within(group).getByRole('link', { name: 'Type' })).toHaveAttribute('aria-current', 'true');
+  expect(within(group).getByRole('link', { name: 'Vendor' })).toHaveAttribute('href', '/icons?by=vendor');
+  await settle(() => userEvent.click(within(group).getByRole('link', { name: 'Vendor' })));
+  expect(screen.getByTestId('where')).toHaveTextContent('/icons?by=vendor');
+  expect(within(group).getByRole('link', { name: 'Vendor' })).toHaveAttribute('aria-current', 'true');
+  expect(within(group).getByRole('link', { name: 'Type' })).toHaveAttribute('href', '/icons');
+});
+
+test('an unknown ?by= value groups by type', async () => {
+  await renderRouted(<AppRoutes />, '/icons?by=color');
+  expect(screen.getAllByRole('heading', { level: 2 }).map((h) => h.textContent)).toEqual(['Power', 'Radio and CAN']);
 });

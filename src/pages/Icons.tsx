@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
-import { useLocation } from 'react-router';
+import { Link, useLocation, useSearchParams } from 'react-router';
 import { useIcons } from '../content/hooks';
 import type { IconRecord } from '../content/types';
+import { groupBy, groupIcons, type GroupBy } from '../logic/icons';
 import styles from './Icons.module.css';
 
 const ICONS_BASE = '/icons/';
@@ -30,11 +31,14 @@ function IconCard({ icon }: { icon: IconRecord }) {
 export default function Icons() {
   const index = useIcons();
   const { hash } = useLocation();
+  const [params] = useSearchParams();
+  const by = groupBy(params.get('by'));
+  const groups = groupIcons(index, by);
   // The browser jumps to a #section before the list has loaded, when the section is not there yet. This page
   // renders only after useIcons() has its data, so scroll here.
   useEffect(() => {
     if (hash.length > 1) document.getElementById(hash.slice(1))?.scrollIntoView(); // ids are plain a-z0-9-
-  }, [hash]);
+  }, [hash, by]);
   return (
     <div className={styles.page}>
       <title>Device icons · Team 2102</title>
@@ -51,21 +55,30 @@ export default function Icons() {
           {index.attribution}”. Scripts can read <a href={`${ICONS_BASE}index.json`}>index.json</a> for each icon's
           size and wire ends.
         </p>
-        <nav aria-label="Icon types">
+        <nav aria-label="Group icons by" className={styles.switch}>
+          <span className={styles.switchLabel}>Group by</span>
+          {(['type', 'vendor'] as GroupBy[]).map((b) => (
+            <Link key={b} to={b === 'vendor' ? '/icons?by=vendor' : '/icons'} aria-current={b === by ? 'true' : undefined}
+              className={b === by ? `${styles.switchItem} ${styles.switchOn}` : styles.switchItem}>
+              {b === 'type' ? 'Type' : 'Vendor'}
+            </Link>
+          ))}
+        </nav>
+        <nav aria-label={by === 'vendor' ? 'Icon vendors' : 'Icon types'}>
           <ul className={styles.contents}>
-            {index.types.map((t) => (
-              <li key={t.id}>
-                <a href={`#${t.id}`}>{t.name} <span className={styles.count}>{t.count}</span></a>
+            {groups.map((g) => (
+              <li key={g.id}>
+                <a href={`#${g.id}`}>{g.name} <span className={styles.count}>{g.icons.length}</span></a>
               </li>
             ))}
           </ul>
         </nav>
       </header>
-      {index.types.map((t) => (
-        <section key={t.id} id={t.id} className={styles.section} aria-labelledby={`type-${t.id}`}>
-          <h2 id={`type-${t.id}`} className={styles.sectionTitle}>{t.name}</h2>
+      {groups.map((g) => (
+        <section key={g.id} id={g.id} className={styles.section} aria-labelledby={`group-${g.id}`}>
+          <h2 id={`group-${g.id}`} className={styles.sectionTitle}>{g.name}</h2>
           <div className={styles.grid}>
-            {index.icons.filter((i) => i.type === t.id).map((i) => <IconCard key={i.slug} icon={i} />)}
+            {g.icons.map((i) => <IconCard key={i.slug} icon={i} />)}
           </div>
         </section>
       ))}

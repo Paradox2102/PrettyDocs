@@ -7,6 +7,12 @@
 .lead { margin: 0 0 10px; color: var(--muted); }
 .lead a { color: var(--ink); }
 
+.switch { display: inline-flex; align-items: center; gap: 4px; margin-top: 18px; padding: 3px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+.switchLabel { padding: 0 8px 0 6px; color: var(--muted); font-size: 14px; }
+.switchItem { padding: 5px 12px; border-radius: 6px; color: var(--muted); text-decoration: none; font-weight: 500; }
+.switchItem:hover { color: var(--ink); }
+.switchOn, .switchOn:hover { background: var(--accent); color: var(--on-accent); font-weight: 600; }
+
 .contents { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
 .contents a {
   display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px;
