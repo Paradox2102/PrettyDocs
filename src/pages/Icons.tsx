@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router';
 import { useIcons } from '../content/hooks';
 import type { IconRecord } from '../content/types';
 import styles from './Icons.module.css';
@@ -27,6 +29,12 @@ function IconCard({ icon }: { icon: IconRecord }) {
 /** The FRC device icon gallery: every icon of /icons/index.json, one section per type. */
 export default function Icons() {
   const index = useIcons();
+  const { hash } = useLocation();
+  // The browser jumps to a #section before the list has loaded, when the section is not there yet. This page
+  // renders only after useIcons() has its data, so scroll here.
+  useEffect(() => {
+    if (hash.length > 1) document.getElementById(hash.slice(1))?.scrollIntoView(); // ids are plain a-z0-9-
+  }, [hash]);
   return (
     <div className={styles.page}>
       <title>Device icons · Team 2102</title>

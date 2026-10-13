@@ -11,7 +11,10 @@ beforeEach(() => {
   forget();
   vi.stubGlobal('fetch', vi.fn(fakeFetch(SITE_FILES)));
 });
-afterEach(() => vi.unstubAllGlobals());
+afterEach(() => {
+  vi.unstubAllGlobals();
+  delete (Element.prototype as Partial<Element>).scrollIntoView; // jsdom has none; the hash tests add a stub
+});
 
 test('/icons is the gallery, not a robot named icons', async () => {
   await renderRouted(<AppRoutes />, '/icons');
@@ -54,4 +57,25 @@ test('the page names the license and links the license and the index', async () 
 test('the robot pages link to the icon gallery', async () => {
   await renderRouted(<AppRoutes />, '/2026-offseason');
   expect(screen.getByRole('link', { name: 'Icons' })).toHaveAttribute('href', '/icons');
+});
+
+test('a direct link to /icons#<type> scrolls to that section once the list has loaded', async () => {
+  const scrolled: Element[] = [];
+  const spy = vi.fn(function (this: Element) { scrolled.push(this); });
+  Element.prototype.scrollIntoView = spy;
+  await renderRouted(<AppRoutes />, '/icons#communication');
+  expect(scrolled.map((e) => e.id)).toEqual(['communication']);
+});
+
+test('a hash that names no section does not scroll', async () => {
+  const spy = vi.fn();
+  Element.prototype.scrollIntoView = spy;
+  await renderRouted(<AppRoutes />, '/icons#nope');
+  expect(spy).not.toHaveBeenCalled();
+});
+
+test('a malformed hash does not break the page', async () => {
+  Element.prototype.scrollIntoView = vi.fn();
+  await renderRouted(<AppRoutes />, '/icons#%E0%A4%A');
+  expect(screen.getByRole('heading', { level: 1, name: 'FRC device icons' })).toBeInTheDocument();
 });
