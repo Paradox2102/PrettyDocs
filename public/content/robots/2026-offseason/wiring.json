@@ -1,9 +1,9 @@
 {
- "built": "2026-10-08T23:43:01-07:00",
+ "built": "2026-10-13T16:16:29-07:00",
  "devices": {
   "battery": {
    "key": "battery",
-   "icon": null,
+   "icon": "frc-battery",
    "type": "Battery",
    "role": "12 V battery",
    "mechanism": "Power",
@@ -32,7 +32,7 @@
   },
   "main-breaker": {
    "key": "main-breaker",
-   "icon": null,
+   "icon": "main-breaker-120a",
    "type": "Breaker",
    "role": "120 A main breaker",
    "mechanism": "Power",
@@ -90,10 +90,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     130.81,
-     110.82,
-     45.78,
-     37.57
+     131.46,
+     111.16,
+     46.51,
+     37.98
     ],
     "top_bbox": [
      93.29,
@@ -136,9 +136,9 @@
     "attached_to_role": null,
     "bbox": [
      10.5,
-     233.69,
-     40.99,
-     32.2
+     233.37,
+     41.64,
+     32.53
     ],
     "top_bbox": [
      227.44,
@@ -150,7 +150,7 @@
   },
   "rsl": {
    "key": "rsl",
-   "icon": null,
+   "icon": "rsl",
    "type": "Allen-Bradley RSL",
    "role": "Robot Signal Light (RSL)",
    "mechanism": "Control",
@@ -207,8 +207,8 @@
     "bbox": [
      52.46,
      37.5,
-     40.99,
-     81.8
+     41.64,
+     82.97
     ],
     "top_bbox": [
      91.72,
@@ -251,10 +251,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     185.59,
+     186.98,
      29.5,
      30.0,
-     39.01
+     39.45
     ],
     "top_bbox": [
      232.63,
@@ -296,10 +296,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     218.59,
+     219.98,
      29.5,
-     25.07,
-     39.01
+     25.45,
+     39.45
     ],
     "top_bbox": [
      264.88,
@@ -342,10 +342,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     246.65,
+     248.43,
      29.5,
      25.5,
-     39.01
+     39.45
     ],
     "top_bbox": [
      266.42,
@@ -387,10 +387,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     185.59,
-     85.31,
-     25.07,
-     39.01
+     186.98,
+     85.84,
+     25.45,
+     39.45
     ],
     "top_bbox": [
      112.01,
@@ -433,10 +433,10 @@
     "fed_by_role": "BL turn",
     "attached_to_role": null,
     "bbox": [
-     213.65,
-     80.51,
-     20.4,
-     43.81
+     215.43,
+     80.95,
+     20.7,
+     44.34
     ],
     "top_bbox": [
      109.67,
@@ -478,10 +478,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     237.05,
-     85.31,
-     25.07,
-     39.01
+     239.13,
+     85.84,
+     25.45,
+     39.45
     ],
     "top_bbox": [
      112.01,
@@ -523,10 +523,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     265.12,
-     85.31,
-     25.07,
-     39.01
+     267.58,
+     85.84,
+     25.45,
+     39.45
     ],
     "top_bbox": [
      272.13,
@@ -569,10 +569,10 @@
     "fed_by_role": "BR turn",
     "attached_to_role": null,
     "bbox": [
-     293.19,
-     80.51,
-     20.4,
-     43.81
+     296.03,
+     80.95,
+     20.7,
+     44.34
     ],
     "top_bbox": [
      268.62,
@@ -614,10 +614,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     316.59,
-     85.31,
-     25.07,
-     39.01
+     319.73,
+     85.84,
+     25.45,
+     39.45
     ],
     "top_bbox": [
      252.12,
@@ -659,10 +659,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     185.59,
-     131.13,
-     25.07,
-     39.01
+     186.98,
+     132.17,
+     25.45,
+     39.45
     ],
     "top_bbox": [
      272.13,
@@ -705,10 +705,10 @@
     "fed_by_role": "FR turn",
     "attached_to_role": null,
     "bbox": [
-     213.65,
-     126.32,
-     20.4,
-     43.81
+     215.43,
+     127.28,
+     20.7,
+     44.34
     ],
     "top_bbox": [
      268.62,
@@ -750,10 +750,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     237.05,
-     131.13,
-     25.07,
-     39.01
+     239.13,
+     132.17,
+     25.45,
+     39.45
     ],
     "top_bbox": [
      252.12,
@@ -795,10 +795,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     265.12,
-     131.13,
-     25.07,
-     39.01
+     267.58,
+     132.17,
+     25.45,
+     39.45
     ],
     "top_bbox": [
      113.57,
@@ -841,10 +841,10 @@
     "fed_by_role": "FL turn",
     "attached_to_role": null,
     "bbox": [
-     293.19,
-     126.32,
-     20.4,
-     43.81
+     296.03,
+     127.28,
+     20.7,
+     44.34
     ],
     "top_bbox": [
      109.72,
@@ -886,10 +886,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     316.59,
-     131.13,
-     25.07,
-     39.01
+     319.73,
+     132.17,
+     25.45,
+     39.45
     ],
     "top_bbox": [
      112.72,
@@ -931,10 +931,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     344.66,
-     130.1,
-     21.56,
-     40.03
+     348.18,
+     131.13,
+     21.88,
+     40.49
     ],
     "top_bbox": [
      112.01,
@@ -979,10 +979,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     185.59,
-     182.13,
+     186.98,
+     183.62,
      25.5,
-     39.01
+     39.45
     ],
     "top_bbox": [
      102.22,
@@ -1027,10 +1027,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     214.09,
-     182.13,
-     25.07,
-     39.01
+     215.48,
+     183.62,
+     25.45,
+     39.45
     ],
     "top_bbox": [
      103.72,
@@ -1074,10 +1074,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     242.15,
-     182.13,
+     243.93,
+     183.62,
      25.5,
-     39.01
+     39.45
     ],
     "top_bbox": [
      208.52,
@@ -1122,10 +1122,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     270.65,
-     182.13,
+     272.43,
+     183.62,
      28.5,
-     39.01
+     39.45
     ],
     "top_bbox": [
      99.22,
@@ -1171,10 +1171,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     302.15,
-     186.79,
+     303.93,
+     188.35,
      28.5,
-     34.35
+     34.71
     ],
     "top_bbox": [
      99.22,
@@ -1220,10 +1220,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     333.65,
-     182.13,
+     335.43,
+     183.62,
      31.5,
-     39.01
+     39.45
     ],
     "top_bbox": [
      96.22,
@@ -1266,10 +1266,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     294.15,
-     34.15,
+     295.93,
+     34.23,
      27.0,
-     34.35
+     34.71
     ],
     "top_bbox": [
      100.72,
@@ -1312,10 +1312,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     324.15,
-     34.15,
+     325.93,
+     34.23,
      25.5,
-     34.35
+     34.71
     ],
     "top_bbox": [
      268.08,
@@ -1359,10 +1359,10 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     352.65,
+     354.43,
      29.5,
-     25.07,
-     39.01
+     25.45,
+     39.45
     ],
     "top_bbox": [
      266.4,
@@ -1398,9 +1398,9 @@
     "attached_to_role": null,
     "bbox": [
      19.5,
-     155.74,
-     26.78,
-     23.24
+     157.08,
+     27.19,
+     23.41
     ],
     "top_bbox": [
      269.86,
@@ -1447,10 +1447,10 @@
     "fed_by_role": "Zinc-V #1",
     "attached_to_role": null,
     "bbox": [
-     91.99,
-     231.95,
+     92.64,
+     231.6,
      40.5,
-     33.94
+     34.3
     ],
     "top_bbox": [
      254.93,
@@ -1462,7 +1462,7 @@
   },
   "camera-front-left": {
    "key": "camera-front-left",
-   "icon": "arducam-ov9281-usb",
+   "icon": "innomaker-ov9281-usb",
    "type": "innomaker OV9281 USB",
    "role": "front_left · back right",
    "mechanism": "Vision",
@@ -1487,10 +1487,10 @@
     "fed_by_role": null,
     "attached_to_role": "Orange Pi 5 Pro · left-pi",
     "bbox": [
-     135.49,
-     230.21,
+     136.14,
+     231.31,
      37.5,
-     35.69
+     34.59
     ],
     "top_bbox": [
      258.88,
@@ -1502,7 +1502,7 @@
   },
   "camera-side-left": {
    "key": "camera-side-left",
-   "icon": "arducam-ov9281-usb",
+   "icon": "innomaker-ov9281-usb",
    "type": "innomaker OV9281 USB",
    "role": "side_left · side right",
    "mechanism": "Vision",
@@ -1527,10 +1527,10 @@
     "fed_by_role": null,
     "attached_to_role": "Orange Pi 5 Pro · left-pi",
     "bbox": [
-     175.99,
-     230.21,
+     176.64,
+     231.31,
      36.0,
-     35.69
+     34.59
     ],
     "top_bbox": [
      279.65,
@@ -1568,9 +1568,9 @@
     "attached_to_role": null,
     "bbox": [
      19.5,
-     131.5,
-     26.78,
-     23.24
+     132.67,
+     27.19,
+     23.41
     ],
     "top_bbox": [
      223.2,
@@ -1617,10 +1617,10 @@
     "fed_by_role": "Zinc-V #2",
     "attached_to_role": null,
     "bbox": [
-     214.99,
-     231.95,
+     215.64,
+     231.6,
      42.0,
-     33.94
+     34.3
     ],
     "top_bbox": [
      84.22,
@@ -1632,7 +1632,7 @@
   },
   "camera-front-right": {
    "key": "camera-front-right",
-   "icon": "arducam-ov9281-usb",
+   "icon": "innomaker-ov9281-usb",
    "type": "innomaker OV9281 USB",
    "role": "front_right · back left",
    "mechanism": "Vision",
@@ -1657,10 +1657,10 @@
     "fed_by_role": null,
     "attached_to_role": "Orange Pi 5 Pro · right-pi",
     "bbox": [
-     259.99,
-     230.21,
+     260.64,
+     231.31,
      37.5,
-     35.69
+     34.59
     ],
     "top_bbox": [
      90.22,
@@ -1672,7 +1672,7 @@
   },
   "led-brick": {
    "key": "led-brick",
-   "icon": null,
+   "icon": "protooma-5v-10a",
    "type": "Protooma 5 V 10 A converter",
    "role": "LED Brick (5 V supply)",
    "mechanism": "Lights",
@@ -1733,7 +1733,7 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     54.49,
+     55.14,
      240.4,
      34.5,
      25.5
