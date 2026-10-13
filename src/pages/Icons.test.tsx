@@ -107,3 +107,32 @@ test('an unknown ?by= value groups by type', async () => {
   await renderRouted(<AppRoutes />, '/icons?by=color');
   expect(screen.getAllByRole('heading', { level: 2 }).map((h) => h.textContent)).toEqual(['Power', 'Radio and CAN']);
 });
+
+test('the search box filters the cards and hides empty sections', async () => {
+  await renderRouted(<AppRoutes />, '/icons');
+  const box = screen.getByRole('searchbox', { name: 'Search icons' });
+  await settle(() => userEvent.type(box, 'canivore'));
+  expect(screen.getAllByRole('article').map((a) => a.getAttribute('aria-labelledby'))).toEqual(['icon-canivore']);
+  expect(screen.getAllByRole('heading', { level: 2 }).map((h) => h.textContent)).toEqual(['Radio and CAN']);
+  expect(screen.getByText('1 of 3 icons')).toHaveAttribute('role', 'status');
+  expect(screen.getByTestId('where')).toHaveTextContent('/icons?q=canivore');
+});
+
+test('?q= in the URL fills the box, and the chips count the matches', async () => {
+  await renderRouted(<AppRoutes />, '/icons?by=vendor&q=ctr');
+  expect(screen.getByRole('searchbox', { name: 'Search icons' })).toHaveValue('ctr');
+  const contents = screen.getByRole('navigation', { name: 'Icon vendors' });
+  expect(within(contents).getAllByRole('link').map((l) => l.textContent)).toEqual(['CTR Electronics 1']);
+});
+
+test('a search with no match says so', async () => {
+  await renderRouted(<AppRoutes />, '/icons?q=zzz');
+  expect(screen.getByText('No icon matches “zzz”.')).toBeInTheDocument();
+  expect(screen.queryAllByRole('article')).toHaveLength(0);
+});
+
+test('switching the grouping keeps the search', async () => {
+  await renderRouted(<AppRoutes />, '/icons?q=rev');
+  const group = screen.getByRole('navigation', { name: 'Group icons by' });
+  expect(within(group).getByRole('link', { name: 'Vendor' })).toHaveAttribute('href', '/icons?by=vendor&q=rev');
+});

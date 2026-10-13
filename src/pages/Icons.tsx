@@ -1,8 +1,8 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useLocation, useSearchParams } from 'react-router';
 import { useIcons } from '../content/hooks';
 import type { IconRecord } from '../content/types';
-import { groupBy, groupIcons, type GroupBy } from '../logic/icons';
+import { filterIcons, groupBy, groupIcons, type GroupBy } from '../logic/icons';
 import styles from './Icons.module.css';
 
 const ICONS_BASE = '/icons/';
@@ -31,9 +31,28 @@ function IconCard({ icon }: { icon: IconRecord }) {
 export default function Icons() {
   const index = useIcons();
   const { hash } = useLocation();
-  const [params] = useSearchParams();
+  const [params, setParams] = useSearchParams();
   const by = groupBy(params.get('by'));
-  const groups = groupIcons(index, by);
+  // The box keeps its own value: the router applies a URL change a moment later, and a box that read the URL
+  // would lose letters typed in between. The URL follows the box, so a search can be shared.
+  const [query, setQuery] = useState(() => params.get('q') ?? '');
+  const shown = filterIcons(index, query);
+  const groups = groupIcons(shown, by);
+  // The group switch keeps the search; typing replaces the history entry instead of adding one per key.
+  const linkTo = (b: GroupBy) => {
+    const next = new URLSearchParams(b === 'vendor' ? { by: 'vendor' } : {});
+    if (query) next.set('q', query);
+    return next.size ? `/icons?${next}` : '/icons';
+  };
+  const search = (q: string) => {
+    setQuery(q);
+    setParams((p) => {
+      const next = new URLSearchParams(p);
+      if (q) next.set('q', q);
+      else next.delete('q');
+      return next;
+    }, { replace: true });
+  };
   // The browser jumps to a #section before the list has loaded, when the section is not there yet. This page
   // renders only after useIcons() has its data, so scroll here.
   useEffect(() => {
@@ -58,12 +77,19 @@ export default function Icons() {
         <nav aria-label="Group icons by" className={styles.switch}>
           <span className={styles.switchLabel}>Group by</span>
           {(['type', 'vendor'] as GroupBy[]).map((b) => (
-            <Link key={b} to={b === 'vendor' ? '/icons?by=vendor' : '/icons'} aria-current={b === by ? 'true' : undefined}
+            <Link key={b} to={linkTo(b)} aria-current={b === by ? 'true' : undefined}
               className={b === by ? `${styles.switchItem} ${styles.switchOn}` : styles.switchItem}>
               {b === 'type' ? 'Type' : 'Vendor'}
             </Link>
           ))}
         </nav>
+        <div className={styles.searchRow}>
+          <input type="search" className={styles.search} aria-label="Search icons" placeholder="Name, vendor or part number"
+            autoComplete="off" spellCheck={false} value={query} onChange={(e) => search(e.target.value)} />
+          <p role="status" className={styles.status}>
+            {query ? `${shown.icons.length} of ${index.icons.length} icons` : `${index.icons.length} icons`}
+          </p>
+        </div>
         <nav aria-label={by === 'vendor' ? 'Icon vendors' : 'Icon types'}>
           <ul className={styles.contents}>
             {groups.map((g) => (
@@ -74,6 +100,7 @@ export default function Icons() {
           </ul>
         </nav>
       </header>
+      {query && groups.length === 0 && <p className={styles.empty}>No icon matches “{query}”.</p>}
       {groups.map((g) => (
         <section key={g.id} id={g.id} className={styles.section} aria-labelledby={`group-${g.id}`}>
           <h2 id={`group-${g.id}`} className={styles.sectionTitle}>{g.name}</h2>

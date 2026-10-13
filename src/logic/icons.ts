@@ -17,9 +17,23 @@ export function groupBy(param: string | null): GroupBy {
 
 const byName = (a: IconRecord, b: IconRecord) => a.name.localeCompare(b.name);
 
+/** The icons whose name, vendor name, part number or slug contain every word of `query` (any case). */
+export function filterIcons(index: IconIndex, query: string): IconIndex {
+  const words = query.toLowerCase().split(/\s+/).filter(Boolean);
+  if (words.length === 0) return index;
+  const icons = index.icons.filter((i) => {
+    const text = [i.name, i.vendor_name, i.part_number ?? '', i.slug].join(' ').toLowerCase();
+    return words.every((w) => text.includes(w));
+  });
+  return { ...index, icons };
+}
+
+/** The groups that have icons: by type in the index's type order, or by vendor in vendor name order. */
 export function groupIcons(index: IconIndex, by: GroupBy): IconGroup[] {
   if (by === 'type') {
-    return index.types.map((t) => ({ id: t.id, name: t.name, icons: index.icons.filter((i) => i.type === t.id) }));
+    return index.types
+      .map((t) => ({ id: t.id, name: t.name, icons: index.icons.filter((i) => i.type === t.id) }))
+      .filter((g) => g.icons.length > 0);
   }
   const typeOrder = new Map(index.types.map((t, n) => [t.id, n]));
   const vendors = new Map<string, IconGroup>();

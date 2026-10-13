@@ -1,7 +1,7 @@
-import { expect, test } from 'vitest';
+import { describe, expect, test } from 'vitest';
 import { ICONS } from '../test/fixtures';
 import type { IconIndex } from '../content/types';
-import { groupBy, groupIcons } from './icons';
+import { filterIcons, groupBy, groupIcons } from './icons';
 
 const index = ICONS as IconIndex;
 
@@ -46,4 +46,27 @@ test('by vendor, the generic vendor (several makers) comes last', () => {
   expect(groupIcons(withGeneric, 'vendor').map((g) => g.id)).toEqual([
     'vendor-ctre', 'vendor-rev', 'vendor-vivid-hosting', 'vendor-zeta', 'vendor-generic',
   ]);
+});
+
+describe('filterIcons', () => {
+  test('an empty query keeps every icon', () => {
+    expect(filterIcons(index, '  ').icons).toHaveLength(index.icons.length);
+  });
+  test('matches the name, the vendor name, the part number and the slug, any case', () => {
+    expect(filterIcons(index, 'canivore').icons.map((i) => i.slug)).toEqual(['canivore']);
+    expect(filterIcons(index, 'rev robotics').icons.map((i) => i.slug)).toEqual(['rev-pdh']);
+    expect(filterIcons(index, 'REV-11-1850').icons.map((i) => i.slug)).toEqual(['rev-pdh']);
+    expect(filterIcons(index, 'vh-109').icons.map((i) => i.slug)).toEqual(['vh-109']);
+  });
+  test('every word must match (in any field)', () => {
+    expect(filterIcons(index, 'ctr canivore').icons.map((i) => i.slug)).toEqual(['canivore']);
+    expect(filterIcons(index, 'ctr radio').icons).toEqual([]);
+  });
+  test('an icon with no part number still matches by name', () => {
+    expect(filterIcons(index, 'radio').icons.map((i) => i.slug)).toEqual(['vh-109']);
+  });
+});
+
+test('groupIcons drops a group with no icons', () => {
+  expect(groupIcons(filterIcons(index, 'canivore'), 'type').map((g) => g.id)).toEqual(['communication']);
 });
