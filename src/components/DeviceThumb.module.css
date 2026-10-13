@@ -1,0 +1,7 @@
+/* The drawings have dark bodies and dark caption text, so the tile is white in both themes, like the gallery. */
+.tile {
+  flex: none; display: inline-grid; place-items: center; width: 34px; height: 34px; padding: 2px;
+  border-radius: 5px; background: #fff; border: 1px solid var(--line);
+}
+.tile:empty { background: transparent; border-color: transparent; }
+.img { max-width: 100%; max-height: 100%; }

@@ -4,6 +4,7 @@ import { PdhTag } from '../components/PdhTag';
 import { useWiring } from '../content/hooks';
 import { chipCounts, deviceRows, filterRows, sortRows, type Chip, type SortCol, type SortDir } from '../logic/devices';
 import { search } from '../logic/wiring';
+import { DeviceThumb } from '../components/DeviceThumb';
 import { pageTitle } from '../shell/paths';
 import { useRobot } from '../shell/robot-context';
 import { useUrlState } from '../shell/url-state';
@@ -99,7 +100,10 @@ export default function Devices() {
               {rows.map((r) => (
                 <tr key={r.key} onClick={() => select(r.key)} data-selected={r.key === key || undefined}>
                   <td data-label="Device" className={styles.role}>
-                    <button type="button" onClick={(e) => { e.stopPropagation(); select(r.key); }}>{r.role}</button>
+                    <span className={styles.deviceCell}>
+                      <DeviceThumb slug={r.icon} />
+                      <button type="button" onClick={(e) => { e.stopPropagation(); select(r.key); }}>{r.role}</button>
+                    </span>
                   </td>
                   <td data-label="Mechanism">{r.mechanism}</td>
                   <td data-label="Type">{r.type}</td>

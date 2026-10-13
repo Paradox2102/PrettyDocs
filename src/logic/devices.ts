@@ -10,6 +10,8 @@ export type SortDir = 'asc' | 'desc';
 export interface Row {
   key: string;
   role: string;
+  /** The device's icon slug in the icon collection, or null. */
+  icon: string | null;
   mechanism: string;
   type: string;
   can: string;
@@ -35,6 +37,7 @@ export function deviceRows(w: WiringData): Row[] {
     return {
       key: d.key,
       role: d.role || d.key,
+      icon: d.icon ?? null,
       mechanism: d.mechanism ?? '',
       type: [d.type, d.icon ? MOTOR[d.icon] : null].filter(Boolean).join(' · '),
       can: d.can ? `${d.can.bus} · ${d.can.id ?? '?'}` : '',

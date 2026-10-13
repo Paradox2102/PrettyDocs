@@ -3,7 +3,7 @@ import userEvent from '@testing-library/user-event';
 import { afterEach, beforeEach, expect, test, vi } from 'vitest';
 import { AppRoutes } from '../App';
 import { forget } from '../content/load';
-import { fakeFetch, SITE_FILES } from '../test/fixtures';
+import { fakeFetch, ICONS, SITE_FILES } from '../test/fixtures';
 import { renderRouted, settle } from '../test/render';
 
 const open = (path: string) => renderRouted(<AppRoutes />, path);
@@ -63,4 +63,38 @@ test('a header click sorts and sets aria-sort', async () => {
   await settle(() => user.click(screen.getByRole('button', { name: /^CAN/ })));
   expect(screen.getByRole('columnheader', { name: /^CAN/ })).toHaveAttribute('aria-sort', 'ascending');
   expect(bodyRows()[0]).toHaveTextContent('FL drive');
+});
+
+const KRAKENS = {
+  ...ICONS,
+  types: [{ id: 'motors', name: 'Motors', count: 2 }],
+  icons: ['kraken-x60', 'kraken-x44'].map((slug) => ({
+    ...ICONS.icons[0], slug, name: slug, type: 'motors', vendor: 'wcp', vendor_name: 'WestCoast Products',
+    path: `motors/wcp/${slug}.svg`,
+  })),
+};
+const rowOf = (role: string) => screen.getByRole('button', { name: role }).closest('tr')!;
+
+test('each device with an icon shows a small copy of it next to its name', async () => {
+  vi.stubGlobal('fetch', vi.fn(fakeFetch({ ...SITE_FILES, '/icons/index.json': KRAKENS })));
+  await open('/2026-offseason/devices');
+  const img = rowOf('FL drive').querySelector('td[data-label="Device"] img');
+  expect(img).toHaveAttribute('src', '/icons/motors/wcp/kraken-x60.svg');
+  expect(rowOf('X44-side flywheel').querySelector('img')).toHaveAttribute('src', '/icons/motors/wcp/kraken-x44.svg');
+});
+
+test('a device whose icon is not in the collection shows no picture', async () => {
+  vi.stubGlobal('fetch', vi.fn(fakeFetch({ ...SITE_FILES, '/icons/index.json': KRAKENS })));
+  await open('/2026-offseason/devices');
+  expect(rowOf('Orange Pi 5 Pro · left-pi').querySelector('img')).toBeNull();
+});
+
+test('the table still shows every device when the icon list does not load', async () => {
+  const files: Record<string, unknown> = { ...SITE_FILES };
+  delete files['/icons/index.json'];
+  vi.stubGlobal('fetch', vi.fn(fakeFetch(files)));
+  await open('/2026-offseason/devices');
+  expect(bodyRows()).toHaveLength(4);
+  expect(screen.getByRole('table').querySelector('img')).toBeNull();
+  expect(screen.queryByText(/did not load/)).toBeNull();
 });

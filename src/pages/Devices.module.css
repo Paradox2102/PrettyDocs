@@ -77,3 +77,5 @@
   .table td.role::before { display: none; }
   .open { grid-column: 1 / -1; max-width: none; }
 }
+
+.deviceCell { display: inline-flex; align-items: center; gap: 10px; }
