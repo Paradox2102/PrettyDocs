@@ -36,3 +36,14 @@ test('the ?by= value: vendor is vendor; anything else is type', () => {
   expect(groupBy(null)).toBe('type');
   expect(groupBy('color')).toBe('type');
 });
+
+test('by vendor, the generic vendor (several makers) comes last', () => {
+  const withGeneric: IconIndex = { ...index, icons: [
+    ...index.icons,
+    { ...index.icons[0], slug: 'frc-battery', name: 'FRC Robot Battery', vendor: 'generic', vendor_name: 'Several makers' },
+    { ...index.icons[0], slug: 'z-dev', name: 'Z', vendor: 'zeta', vendor_name: 'Zeta Parts' },
+  ] };
+  expect(groupIcons(withGeneric, 'vendor').map((g) => g.id)).toEqual([
+    'vendor-ctre', 'vendor-rev', 'vendor-vivid-hosting', 'vendor-zeta', 'vendor-generic',
+  ]);
+});

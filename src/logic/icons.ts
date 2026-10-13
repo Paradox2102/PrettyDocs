@@ -31,5 +31,7 @@ export function groupIcons(index: IconIndex, by: GroupBy): IconGroup[] {
   for (const g of vendors.values()) {
     g.icons.sort((a, b) => (typeOrder.get(a.type) ?? 0) - (typeOrder.get(b.type) ?? 0) || byName(a, b));
   }
-  return [...vendors.values()].sort((a, b) => a.name.localeCompare(b.name));
+  // "generic" (several makers, such as the FRC battery) is not a vendor name: it goes after the named vendors.
+  const last = (g: IconGroup) => (g.id === 'vendor-generic' ? 1 : 0);
+  return [...vendors.values()].sort((a, b) => last(a) - last(b) || a.name.localeCompare(b.name));
 }
