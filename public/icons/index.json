@@ -778,6 +778,70 @@
    ]
   },
   {
+   "slug": "poe-powertap",
+   "name": "Luma PoE PowerTap",
+   "type": "power",
+   "vendor": "luma",
+   "vendor_name": "Luma Vision",
+   "part_number": "PoE PowerTap (no part number published)",
+   "status": "current",
+   "path": "power/luma/poe-powertap.svg",
+   "size_mm": [
+    92,
+    50.6
+   ],
+   "view_box": [
+    -24,
+    -9,
+    92,
+    63
+   ],
+   "anchors": [
+    {
+     "port": "eth_out",
+     "x": -1.8,
+     "y": 26.0,
+     "kind": "ethernet",
+     "label": "ETH OUT: gigabit RJ45 pass-through, no PoE (to the device)"
+    },
+    {
+     "port": "eth_in",
+     "x": 56.9,
+     "y": 17.0,
+     "kind": "ethernet",
+     "label": "ETH IN: gigabit RJ45, 802.3at PoE in from the PSE (30 W max)"
+    },
+    {
+     "port": "out_5v",
+     "x": -11.6,
+     "y": 4.75,
+     "kind": "power",
+     "label": "5V output, 4 A max: WAGO lever terminal"
+    },
+    {
+     "port": "out_gnd_1",
+     "x": -11.6,
+     "y": 8.25,
+     "kind": "power",
+     "label": "GND (return for 5V): WAGO lever terminal"
+    },
+    {
+     "port": "out_gnd_2",
+     "x": -11.6,
+     "y": 11.75,
+     "kind": "power",
+     "label": "GND (return for 12V): WAGO lever terminal"
+    },
+    {
+     "port": "out_12v",
+     "x": -11.6,
+     "y": 15.25,
+     "kind": "power",
+     "label": "12V output, 2 A max: WAGO lever terminal"
+    }
+   ]
+  },
+  {
    "slug": "protooma-5v-10a",
    "name": "DC-DC step-down converter, 12/24 V to 5 V 10 A 50 W (\"LED brick\")",
    "type": "power",
@@ -2319,6 +2383,141 @@
    ]
   },
   {
+   "slug": "lumaswitch-2",
+   "name": "LumaSwitch 2",
+   "type": "communication",
+   "vendor": "luma",
+   "vendor_name": "Luma Vision",
+   "part_number": "LumaSwitch 2 (no part number published)",
+   "status": "current",
+   "path": "communication/luma/lumaswitch-2.svg",
+   "size_mm": [
+    100,
+    114.83
+   ],
+   "view_box": [
+    -8,
+    -22,
+    100,
+    132
+   ],
+   "anchors": [
+    {
+     "port": "eth_poe1",
+     "x": 18.35,
+     "y": 86.13,
+     "kind": "ethernet",
+     "label": "PoE 1: gigabit RJ45, 802.3at PoE out (30 W max per port, 90 W total)"
+    },
+    {
+     "port": "eth_poe2",
+     "x": 34.23,
+     "y": 86.13,
+     "kind": "ethernet",
+     "label": "PoE 2: gigabit RJ45, 802.3at PoE out (30 W max per port, 90 W total)"
+    },
+    {
+     "port": "eth_poe3",
+     "x": 50.1,
+     "y": 86.13,
+     "kind": "ethernet",
+     "label": "PoE 3: gigabit RJ45, 802.3at PoE out (30 W max per port, 90 W total)"
+    },
+    {
+     "port": "eth_poe4",
+     "x": 65.98,
+     "y": 86.13,
+     "kind": "ethernet",
+     "label": "PoE 4: gigabit RJ45, 802.3at PoE out (30 W max per port, 90 W total)"
+    },
+    {
+     "port": "eth_5",
+     "x": 18.3,
+     "y": -1.8,
+     "kind": "ethernet",
+     "label": "Port 5: gigabit RJ45, no PoE (uplink to the robot radio)"
+    },
+    {
+     "port": "usb_c",
+     "x": 63.5,
+     "y": -1.4,
+     "kind": "usb",
+     "label": "USB-C to SystemCore: port status and PoE control (coming soon)"
+    },
+    {
+     "port": "pwr_neg",
+     "x": 69.2,
+     "y": -11.6,
+     "kind": "power",
+     "label": "−: WAGO 2601 lever terminal"
+    },
+    {
+     "port": "pwr_pos",
+     "x": 72.7,
+     "y": -11.6,
+     "kind": "power",
+     "label": "+: WAGO 2601 lever terminal, 3.3-22.5 V (26-16 AWG)"
+    }
+   ]
+  },
+  {
+   "slug": "robot-radio-v2",
+   "name": "Vivid-Hosting Robot Radio V2 (FRC Radio V2)",
+   "type": "communication",
+   "vendor": "vivid-hosting",
+   "vendor_name": "Vivid-Hosting",
+   "part_number": "WCP-2212 (WCP SKU). No VH- model number is published; the vendor announcement image file is named 'VH-109 V2 Announcement'.",
+   "status": "current",
+   "path": "communication/vivid-hosting/robot-radio-v2.svg",
+   "size_mm": [
+    135.1,
+    62.6
+   ],
+   "view_box": [
+    -8,
+    -6,
+    135.1,
+    73.3
+   ],
+   "anchors": [
+    {
+     "port": "eth_ds",
+     "x": -2,
+     "y": 20,
+     "kind": "ethernet",
+     "label": "DS (gigabit, tethered driver station)"
+    },
+    {
+     "port": "eth_aux1",
+     "x": -2,
+     "y": 35.5,
+     "kind": "ethernet",
+     "label": "AUX1 (gigabit, 802.3at PoE out when powered from 12V)"
+    },
+    {
+     "port": "pwr_in",
+     "x": 121.1,
+     "y": 7.4,
+     "kind": "power",
+     "label": "12V terminal (+ / −, 4.5–60 V per vendor; 12 V for AUX PoE out)"
+    },
+    {
+     "port": "eth_robot",
+     "x": 121.1,
+     "y": 22.75,
+     "kind": "ethernet",
+     "label": "ROBOT (gigabit, passive or 802.3at PoE in) to SystemCore / roboRIO"
+    },
+    {
+     "port": "eth_aux2",
+     "x": 121.1,
+     "y": 38.25,
+     "kind": "ethernet",
+     "label": "AUX2 (gigabit, 802.3at PoE out when powered from 12V)"
+    }
+   ]
+  },
+  {
    "slug": "vh-109",
    "name": "Vivid-Hosting VH-109 FRC Robot Radio",
    "type": "communication",
@@ -3573,6 +3772,120 @@
      "y": 14.8,
      "kind": "power",
      "label": "− (black): 2-pin Weidmuller push-in terminal, 18-20 AWG"
+    }
+   ]
+  },
+  {
+   "slug": "luma-p1",
+   "name": "Luma P1",
+   "type": "vision",
+   "vendor": "luma",
+   "vendor_name": "Luma Vision",
+   "part_number": "Luma P1 (no part number published)",
+   "status": "legacy",
+   "path": "vision/luma/luma-p1.svg",
+   "size_mm": [
+    112,
+    58.2
+   ],
+   "view_box": [
+    -14,
+    -8,
+    112,
+    68
+   ],
+   "anchors": [
+    {
+     "port": "ethernet",
+     "x": 74.0,
+     "y": 16.5,
+     "kind": "ethernet",
+     "label": "Gigabit Ethernet RJ45 (passive PoE in) to the radio or a switch"
+    },
+    {
+     "port": "pwr_pos",
+     "x": 84.8,
+     "y": 28.8,
+     "kind": "power",
+     "label": "+ : 2-pin Weidmuller push-in terminal, 3.3-22.5 V (5 A or 10 A fuse on the PDH)"
+    },
+    {
+     "port": "pwr_neg",
+     "x": 84.8,
+     "y": 32.3,
+     "kind": "power",
+     "label": "− : 2-pin Weidmuller push-in terminal"
+    },
+    {
+     "port": "usb_c",
+     "x": 52.0,
+     "y": -1.6,
+     "kind": "usb",
+     "label": "USB-C (flashing with rpiboot; not the robot link)"
+    },
+    {
+     "port": "usb3_a",
+     "x": -2.0,
+     "y": 16.55,
+     "kind": "usb",
+     "label": "USB 3 Type-A (extra USB cameras or devices)"
+    }
+   ]
+  },
+  {
+   "slug": "luma-p2",
+   "name": "Luma P2",
+   "type": "vision",
+   "vendor": "luma",
+   "vendor_name": "Luma Vision",
+   "part_number": "Luma P2 (no part number published; sold with or without the 802.3at PoE module)",
+   "status": "current",
+   "path": "vision/luma/luma-p2.svg",
+   "size_mm": [
+    112,
+    58.2
+   ],
+   "view_box": [
+    -14,
+    -8,
+    112,
+    68
+   ],
+   "anchors": [
+    {
+     "port": "ethernet",
+     "x": 74.0,
+     "y": 16.5,
+     "kind": "ethernet",
+     "label": "Gigabit Ethernet RJ45 (802.3at PoE in (option)) to the radio or a switch"
+    },
+    {
+     "port": "pwr_pos",
+     "x": 84.8,
+     "y": 28.8,
+     "kind": "power",
+     "label": "+ : 2-pin Weidmuller push-in terminal, 3.3-22.5 V (5 A or 10 A fuse on the PDH)"
+    },
+    {
+     "port": "pwr_neg",
+     "x": 84.8,
+     "y": 32.3,
+     "kind": "power",
+     "label": "− : 2-pin Weidmuller push-in terminal"
+    },
+    {
+     "port": "usb_c",
+     "x": 52.0,
+     "y": -1.6,
+     "kind": "usb",
+     "label": "USB-C (flashing with rpiboot; not the robot link)"
+    },
+    {
+     "port": "usb3_a",
+     "x": -2.0,
+     "y": 16.55,
+     "kind": "usb",
+     "label": "USB 3 Type-A (extra USB cameras or devices)"
     }
    ]
   },

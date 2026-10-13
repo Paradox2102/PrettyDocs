@@ -18,13 +18,13 @@ The product names belong to their makers.
 The wiring tools write this folder (`export_prettydocs.py`): do not edit these files by hand.
 
 - [Robot controllers](#robot-controllers) (2)
-- [Power](#power) (8)
+- [Power](#power) (9)
 - [Motor controllers](#motor-controllers) (7)
 - [Motors](#motors) (9)
-- [Radio and CAN](#radio-and-can) (2)
+- [Radio and CAN](#radio-and-can) (4)
 - [Lights](#lights) (3)
 - [Sensors and encoders](#sensors-and-encoders) (16)
-- [Vision and coprocessors](#vision-and-coprocessors) (9)
+- [Vision and coprocessors](#vision-and-coprocessors) (11)
 - [Pneumatics](#pneumatics) (6)
 
 ## Robot controllers
@@ -41,6 +41,7 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 | <img src="power/ctre/ctre-pdp.svg" alt="" height="64"> | [ctre-pdp.svg](power/ctre/ctre-pdp.svg) | Power Distribution Panel (PDP) | CTR Electronics | legacy (not sold) |
 | <img src="power/ctre/ctre-vrm.svg" alt="" height="64"> | [ctre-vrm.svg](power/ctre/ctre-vrm.svg) | Voltage Regulator Module (VRM) | CTR Electronics | legacy (not sold) |
 | <img src="power/eaton/main-breaker-120a.svg" alt="" height="64"> | [main-breaker-120a.svg](power/eaton/main-breaker-120a.svg) | 120 A main circuit breaker (Eaton Bussmann Series 185 surface mount, CB185-120 / 185120F) | Eaton Bussmann | current |
+| <img src="power/luma/poe-powertap.svg" alt="" height="64"> | [poe-powertap.svg](power/luma/poe-powertap.svg) | Luma PoE PowerTap | Luma Vision | current |
 | <img src="power/protooma/protooma-5v-10a.svg" alt="" height="64"> | [protooma-5v-10a.svg](power/protooma/protooma-5v-10a.svg) | DC-DC step-down converter, 12/24 V to 5 V 10 A 50 W ("LED brick") | Protooma | current |
 | <img src="power/redux/redux-zinc-v.svg" alt="" height="64"> | [redux-zinc-v.svg](power/redux/redux-zinc-v.svg) | Zinc-V (current production: Zinc-V+ / "ZINC-V Plus") inline buck converter | Redux Robotics | current |
 | <img src="power/rev/rev-mpm.svg" alt="" height="64"> | [rev-mpm.svg](power/rev/rev-mpm.svg) | Mini Power Module (MPM) | REV Robotics | current |
@@ -78,6 +79,8 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 | Icon | File | Device | Vendor | Status |
 |---|---|---|---|---|
 | <img src="communication/ctre/canivore.svg" alt="" height="64"> | [canivore.svg](communication/ctre/canivore.svg) | CANivore (USB to CAN FD) | CTR Electronics | current |
+| <img src="communication/luma/lumaswitch-2.svg" alt="" height="64"> | [lumaswitch-2.svg](communication/luma/lumaswitch-2.svg) | LumaSwitch 2 | Luma Vision | current |
+| <img src="communication/vivid-hosting/robot-radio-v2.svg" alt="" height="64"> | [robot-radio-v2.svg](communication/vivid-hosting/robot-radio-v2.svg) | Vivid-Hosting Robot Radio V2 (FRC Radio V2) | Vivid-Hosting | current |
 | <img src="communication/vivid-hosting/vh-109.svg" alt="" height="64"> | [vh-109.svg](communication/vivid-hosting/vh-109.svg) | Vivid-Hosting VH-109 FRC Robot Radio | Vivid-Hosting | current |
 
 ## Lights
@@ -119,6 +122,8 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 | <img src="vision/innomaker/innomaker-ov9281-usb.svg" alt="" height="64"> | [innomaker-ov9281-usb.svg](vision/innomaker/innomaker-ov9281-usb.svg) | innomaker U20CAM-9281M OV9281 Global Shutter USB 2.0 UVC Camera | innomaker | current |
 | <img src="vision/limelight/limelight-3g.svg" alt="" height="64"> | [limelight-3g.svg](vision/limelight/limelight-3g.svg) | Limelight 3G | Limelight Vision | legacy (not sold) |
 | <img src="vision/limelight/limelight-4.svg" alt="" height="64"> | [limelight-4.svg](vision/limelight/limelight-4.svg) | Limelight 4 | Limelight Vision | current |
+| <img src="vision/luma/luma-p1.svg" alt="" height="64"> | [luma-p1.svg](vision/luma/luma-p1.svg) | Luma P1 | Luma Vision | legacy (not sold) |
+| <img src="vision/luma/luma-p2.svg" alt="" height="64"> | [luma-p2.svg](vision/luma/luma-p2.svg) | Luma P2 | Luma Vision | current |
 | <img src="vision/orange-pi/orangepi-5.svg" alt="" height="64"> | [orangepi-5.svg](vision/orange-pi/orangepi-5.svg) | Orange Pi 5 | Orange Pi | current |
 | <img src="vision/orange-pi/orangepi-5-pro.svg" alt="" height="64"> | [orangepi-5-pro.svg](vision/orange-pi/orangepi-5-pro.svg) | Orange Pi 5 Pro | Orange Pi | current |
 | <img src="vision/raspberry-pi/raspberry-pi-5.svg" alt="" height="64"> | [raspberry-pi-5.svg](vision/raspberry-pi/raspberry-pi-5.svg) | Raspberry Pi 5 | Raspberry Pi | current |
