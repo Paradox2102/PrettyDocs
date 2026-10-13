@@ -18,7 +18,7 @@ The product names belong to their makers.
 The wiring tools write this folder (`export_prettydocs.py`): do not edit these files by hand.
 
 - [Robot controllers](#robot-controllers) (2)
-- [Power](#power) (9)
+- [Power](#power) (10)
 - [Motor controllers](#motor-controllers) (7)
 - [Motors](#motors) (9)
 - [Radio and CAN](#radio-and-can) (4)
@@ -46,6 +46,7 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 | <img src="power/redux/redux-zinc-v.svg" alt="" height="64"> | [redux-zinc-v.svg](power/redux/redux-zinc-v.svg) | Zinc-V (current production: Zinc-V+ / "ZINC-V Plus") inline buck converter | Redux Robotics | current |
 | <img src="power/rev/rev-mpm.svg" alt="" height="64"> | [rev-mpm.svg](power/rev/rev-mpm.svg) | Mini Power Module (MPM) | REV Robotics | current |
 | <img src="power/rev/rev-pdh.svg" alt="" height="64"> | [rev-pdh.svg](power/rev/rev-pdh.svg) | Power Distribution Hub (PDH) | REV Robotics | current |
+| <img src="power/generic/frc-battery-sb120.svg" alt="" height="64"> | [frc-battery-sb120.svg](power/generic/frc-battery-sb120.svg) | FRC robot battery: 12 V 18 Ah sealed lead-acid with the FRC lead set (6 AWG leads, blue Anderson SB120) | Several makers | current |
 | <img src="power/generic/frc-battery.svg" alt="" height="64"> | [frc-battery.svg](power/generic/frc-battery.svg) | FRC robot battery: 12 V 18 Ah sealed lead-acid with the FRC lead set (6 AWG leads, red Anderson SB50) | Several makers | current |
 
 ## Motor controllers

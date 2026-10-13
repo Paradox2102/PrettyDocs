@@ -10,7 +10,7 @@
   {
    "id": "power",
    "name": "Power",
-   "count": 9
+   "count": 10
   },
   {
    "id": "motor-controllers",
@@ -1295,6 +1295,42 @@
      "y": 225.4,
      "kind": "can",
      "label": "CAN H/L pair B"
+    }
+   ]
+  },
+  {
+   "slug": "frc-battery-sb120",
+   "name": "FRC robot battery: 12 V 18 Ah sealed lead-acid with the FRC lead set (6 AWG leads, blue Anderson SB120)",
+   "type": "power",
+   "vendor": "generic",
+   "vendor_name": "Several makers",
+   "part_number": "MK Battery ES17-12 (drawn; case from the MK datasheet) or any battery that meets FRC rule R601. Connector: Anderson SB120 blue housing 6810G2 (PC) or P6810G2 (PC/PBT, listed on the housing drawing only), with 6 AWG wire contacts 1319G6.",
+   "status": "current",
+   "path": "power/generic/frc-battery-sb120.svg",
+   "size_mm": [
+    197,
+    183.5
+   ],
+   "view_box": [
+    -8,
+    -8,
+    197,
+    194
+   ],
+   "anchors": [
+    {
+     "port": "sb120_neg",
+     "x": 78.7,
+     "y": 162.5,
+     "kind": "power",
+     "label": "SB120 − (black 6 AWG lead from the battery −)"
+    },
+    {
+     "port": "sb120_pos",
+     "x": 102.3,
+     "y": 162.5,
+     "kind": "power",
+     "label": "SB120 + (red 6 AWG lead from the battery +)"
     }
    ]
   },
