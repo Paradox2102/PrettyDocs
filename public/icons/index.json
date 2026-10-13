@@ -20,7 +20,7 @@
   {
    "id": "motors",
    "name": "Motors",
-   "count": 9
+   "count": 10
   },
   {
    "id": "communication",
@@ -2340,6 +2340,35 @@
      "y": 11.5,
      "kind": "signal",
      "label": "Data port: 2x5 0.05 in locking (Samtec ISDF-05-D-M mate)"
+    }
+   ]
+  },
+  {
+   "slug": "smart-robot-servo",
+   "name": "Smart Robot Servo V2 (Balanced REV-41-3334, UltraSpeed REV-41-3336)",
+   "type": "motors",
+   "vendor": "rev",
+   "vendor_name": "REV Robotics",
+   "part_number": "REV-41-3334 (V2 Balanced); REV-41-3336 (V2 UltraSpeed). V1 was REV-41-1097 (discontinued)",
+   "status": "current",
+   "path": "motors/rev/smart-robot-servo.svg",
+   "size_mm": [
+    70,
+    106.0
+   ],
+   "view_box": [
+    -35,
+    -64,
+    70,
+    116
+   ],
+   "anchors": [
+    {
+     "port": "servo_lead",
+     "x": 10.0,
+     "y": -47.5,
+     "kind": "signal",
+     "label": "Servo lead: 3-wire 0.1 in female housing, GND / V+ / SIG, 4.8-7.4 V, 500-2500 us pulse, 300 mm"
     }
    ]
   },
