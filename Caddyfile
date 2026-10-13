@@ -15,19 +15,22 @@
 		-Server
 	}
 
-	# Hashed build files never change; content files change on each export; the app shell must always revalidate.
+	# Hashed build files never change; content files and icons change on each export; the app shell must always revalidate.
 	@assets path /assets/*
 	header @assets Cache-Control "public, max-age=31536000, immutable"
-	@content path /content/*
+	@content path /content/* /icons/*
 	header @content Cache-Control "public, max-age=300"
-	@app not path /assets/* /content/*
+	@app not path /assets/* /content/* /icons/*
 	header @app Cache-Control "no-cache"
 
-	# Build files and content are served as they are: a missing file is a 404.
+	# Build files, content and icons are served as they are: a missing file is a 404.
 	handle /assets/* {
 		file_server
 	}
 	handle /content/* {
+		file_server
+	}
+	handle /icons/* {
 		file_server
 	}
 	# Single-page app: any other path that is not a file gets index.html.

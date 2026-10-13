@@ -36,6 +36,16 @@ idx=$(curl -sS -D - -o /dev/null "$base/content/robots.json")
 missing=$(curl -sS -D - -o /dev/null "$base/content/robots/nope/wiring.json")
 [[ "$(status "$missing")" == 404 ]] && pass "a missing content file is 404 (no app fallback)" || fail "a missing content file is $(status "$missing")"
 
+icon=$(curl -sS -D - -o "$tmp/icon" "$base/icons/rev-pdh.svg")
+if [[ "$(status "$icon")" == 200 ]] && [[ "$(header "$icon" content-type)" == image/svg+xml* ]]; then
+  pass "/icons/rev-pdh.svg is an SVG"
+else
+  fail "/icons/rev-pdh.svg is $(status "$icon") $(header "$icon" content-type)"
+fi
+[[ "$(header "$icon" cache-control)" == "public, max-age=300" ]] && pass "/icons Cache-Control max-age=300" || fail "/icons Cache-Control: $(header "$icon" cache-control)"
+noicon=$(curl -sS -D - -o /dev/null "$base/icons/nope.svg")
+[[ "$(status "$noicon")" == 404 ]] && pass "a missing icon is 404 (no app fallback)" || fail "a missing icon is $(status "$noicon")"
+
 asset=$(grep -o '/assets/[^"]*\.js' "$tmp/root" | head -1)
 if [[ -n "$asset" ]]; then
   a=$(curl -sS -D - -o /dev/null "$base$asset")

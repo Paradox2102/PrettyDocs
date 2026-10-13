@@ -2,6 +2,8 @@
 
 Robot documentation for Team 2102 Paradox, published at **https://docs.team2102.org**.
 
+**Device icons:** [`public/icons/`](public/icons/) has an SVG drawing of each device on our robots (PDH, SystemCore, Kraken, CANcoder, radio and more), at one SVG unit per millimetre. Take any one you need.
+
 The site shows each robot's wiring (CAN, power and network sheets), a 3D model with every CAN loop, power cable and network link, and a searchable device table. It opens on the latest robot; the selector in the side rail (or the top bar on a phone) switches robots.
 
 ## Run it
@@ -17,7 +19,7 @@ Node 24 or newer.
 
 ## Update a robot's docs
 
-The export writes `public/content/`. Do not edit its files by hand, except `mechanical.json` and `controls.json` (see below), which the export leaves alone. `robots.json` lists the robots in selector order and names the latest one; the export keeps any page kinds it does not write, such as `"mechanical"` and `"controls"`.
+The export writes `public/content/` and `public/icons/`. Do not edit their files by hand, except `mechanical.json` and `controls.json` (see below), which the export leaves alone. `robots.json` lists the robots in selector order and names the latest one; the export keeps any page kinds it does not write, such as `"mechanical"` and `"controls"`.
 
 1. Rebuild the wiring outputs in the wiring tools (`~/systemcore/wiring`): after a change to `devices.json`, or after a new CAD export (`build_scene.py`).
 2. Export into this repo:
@@ -27,7 +29,7 @@ The export writes `public/content/`. Do not edit its files by hand, except `mech
    ```
 
    Options: `--robot <id>` (lowercase, digits and dashes), `--name`, `--season`, `--summary`, and `--no-latest` to add an older robot without making it the default.
-3. Run `npm run check`, then commit `public/content` and push to `main`.
+3. Run `npm run check`, then commit `public/content` and `public/icons`, and push to `main`.
 
 Each robot has a folder `public/content/robots/<id>/` with `wiring.json`, `poster.svg`, `top-view.svg` and `scene.json`.
 
@@ -61,7 +63,7 @@ M1, M2, Share and the stick presses are not in the Xbox model; `src/three/contro
 
 Railway builds the `Dockerfile` on every push to `main`: Node 24 runs `npm run check` and `npm run build`, then Caddy serves `dist/`. A failed check stops the deploy, and the old version stays live.
 
-- `Caddyfile`: single-page fallback, compression, cache headers (`/assets` one year, `/content` five minutes, pages no-cache) and security headers.
+- `Caddyfile`: single-page fallback, compression, cache headers (`/assets` one year, `/content` and `/icons` five minutes, pages no-cache) and security headers.
 - `.railway/railway.ts`: Railway service settings as code (Dockerfile builder, health check on `/`, restart on failure, source `main`, the `docs.team2102.org` domain). Railway does not read it on deploy. After an edit, run `railway config plan`, check that the plan destroys nothing, then run `railway config apply`. `npm run check` typechecks it.
 - `scripts/check-headers.sh <url>`: checks a running server (fallback, caching, compression, headers).
 
