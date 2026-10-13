@@ -562,8 +562,48 @@
 
 </svg>
 </g>
+<g class="dev" data-key="led-brick" data-layer="power" data-systems="power" data-open="1" data-open-in="power">
+<svg x="21.00" y="135.97" width="24.19" height="29.057" viewBox="-8 -7 82 98.5" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+
+<path d="M 9.7 0 L 56.3 0 L 66 8.9 L 66 49.1 L 56.3 58 L 9.7 58 L 0 49.1 L 0 8.9 Z" fill="#c3cad2" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 1 9.2 L 65 9.2" fill="none" stroke="#8c959f" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 1 15.2 L 65 15.2" fill="none" stroke="#8c959f" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 1 44.8 L 65 44.8" fill="none" stroke="#8c959f" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 3.50674 51.4 L 62.4933 51.4" fill="none" stroke="#8c959f" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 12.7 1.5 L 12.7 56.5" fill="none" stroke="#8c959f" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 54.1 1.5 L 54.1 56.5" fill="none" stroke="#8c959f" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="14.7" y="21.8" width="37.9" height="1.2" rx="0.6" fill="#8c959f"/>
+<rect x="14.7" y="29" width="37.9" height="1.2" rx="0.6" fill="#8c959f"/>
+<rect x="14.7" y="36.4" width="37.9" height="1.2" rx="0.6" fill="#8c959f"/>
+<circle cx="21.1" cy="7.7" r="2.9" fill="#a5aeb8" stroke="#8c959f" stroke-width="0.3"/>
+<circle cx="45.9" cy="7.7" r="2.9" fill="#a5aeb8" stroke="#8c959f" stroke-width="0.3"/>
+<circle cx="33.7" cy="29.3" r="2.9" fill="#a5aeb8" stroke="#8c959f" stroke-width="0.3"/>
+<circle cx="21.1" cy="50.8" r="2.9" fill="#a5aeb8" stroke="#8c959f" stroke-width="0.3"/>
+<circle cx="45.9" cy="50.8" r="2.9" fill="#a5aeb8" stroke="#8c959f" stroke-width="0.3"/>
+<circle cx="5.2" cy="33" r="3.4" fill="#b0b8c1" stroke="#8c959f" stroke-width="0.3"/>
+<circle cx="5.2" cy="33" r="2.4" fill="#ffffff" stroke="#1f2328" stroke-width="0.3"/>
+<circle cx="60.8" cy="33" r="3.4" fill="#b0b8c1" stroke="#8c959f" stroke-width="0.3"/>
+<circle cx="60.8" cy="33" r="2.4" fill="#ffffff" stroke="#1f2328" stroke-width="0.3"/>
+<rect x="20.3" y="57.5" width="25.1" height="3" rx="0.6" fill="#16191d"/>
+<path d="M 23.1 60.5 L 23.1 74" fill="none" stroke="#8c959f" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 23.1 60.5 L 23.1 74" fill="none" stroke="#e3b341" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 23.1 74 L 23.1 76" fill="none" stroke="#c9d1d9" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 29.7 60.5 L 29.7 74" fill="none" stroke="#8c959f" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 29.7 60.5 L 29.7 74" fill="none" stroke="#0d1117" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 29.7 74 L 29.7 76" fill="none" stroke="#c9d1d9" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 36.3 60.5 L 36.3 74" fill="none" stroke="#8c959f" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 36.3 60.5 L 36.3 74" fill="none" stroke="#0d1117" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 36.3 74 L 36.3 76" fill="none" stroke="#c9d1d9" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 42.9 60.5 L 42.9 74" fill="none" stroke="#8c959f" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 42.9 60.5 L 42.9 74" fill="none" stroke="#cf222e" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 42.9 74 L 42.9 76" fill="none" stroke="#c9d1d9" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+
+
+
+</svg>
+</g>
 <g class="dev" data-key="zinc-v-2" data-layer="power" data-systems="power" data-open="0">
-<svg x="21.00" y="144.67" width="24.19" height="9.912" viewBox="-8 -7 82 33.6" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="21.00" y="182.53" width="24.19" height="9.912" viewBox="-8 -7 82 33.6" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <rect x="0" y="0" width="65.5" height="22.6" rx="1.5" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5"/>
 <circle cx="18.8" cy="11.3" r="2.55" fill="#ffffff" stroke="#1f2328" stroke-width="0.3"/>
@@ -586,7 +626,7 @@
 </svg>
 </g>
 <g class="dev" data-key="zinc-v-1" data-layer="power" data-systems="power" data-open="0">
-<svg x="21.00" y="169.08" width="24.19" height="9.912" viewBox="-8 -7 82 33.6" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="21.00" y="206.94" width="24.19" height="9.912" viewBox="-8 -7 82 33.6" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <rect x="0" y="0" width="65.5" height="22.6" rx="1.5" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5"/>
 <circle cx="18.8" cy="11.3" r="2.55" fill="#ffffff" stroke="#1f2328" stroke-width="0.3"/>
@@ -604,6 +644,75 @@
 <rect x="61.8" y="6.8" width="4.4" height="9" rx="1.6" fill="#16191d"/>
 <rect x="63.4" y="8.4" width="1.2" height="5.8" rx="0.6" fill="#59636e"/>
 <text x="64" y="-1.8" font-size="1.9" fill="#1f2328" text-anchor="end">OUTPUT USB-C</text>
+
+
+</svg>
+</g>
+<g class="dev" data-key="battery" data-layer="power" data-systems="power" data-open="0">
+<svg x="53.19" y="168.89" width="58.115" height="49.412" viewBox="-8 -8 197 167.5" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+
+<rect x="0" y="0" width="181" height="76" rx="3" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5"/>
+<rect x="4.3" y="9.3" width="173.2" height="35.6" rx="1.5" fill="none" stroke="#aab2bd" stroke-width="0.4"/>
+<text x="90.5" y="30" font-size="6" fill="#f0f3f6" text-anchor="middle" font-weight="bold">12V  18Ah</text>
+<text x="90.5" y="37" font-size="2.6" fill="#aab2bd" text-anchor="middle">SEALED LEAD ACID</text>
+<rect x="1.4" y="50.6" width="41.8" height="24.2" rx="1.2" fill="#1f2328"/>
+<rect x="2.9" y="52" width="10" height="3" rx="0.5" fill="#0d1117"/>
+<circle cx="32.8" cy="62.7" r="3" fill="none" stroke="#f0f3f6" stroke-width="0.4"/>
+<text x="32.8" y="64.1" font-size="4" fill="#f0f3f6" text-anchor="middle" font-weight="bold">−</text>
+<rect x="13" y="57" width="9" height="12" rx="1.5" fill="#16191d" stroke="#8c959f" stroke-width="0.3"/>
+<rect x="16.5" y="57.5" width="2" height="11" rx="0.3" fill="#8c959f"/>
+<rect x="137.8" y="50.6" width="41.8" height="24.2" rx="1.2" fill="#1f2328"/>
+<rect x="139.3" y="52" width="10" height="3" rx="0.5" fill="#cf222e"/>
+<circle cx="145.4" cy="62.7" r="3" fill="none" stroke="#f0f3f6" stroke-width="0.4"/>
+<text x="145.4" y="64.1" font-size="4" fill="#f0f3f6" text-anchor="middle" font-weight="bold">+</text>
+<rect x="159" y="57" width="9" height="12" rx="1.5" fill="#16191d" stroke="#8c959f" stroke-width="0.3"/>
+<rect x="162.5" y="57.5" width="2" height="11" rx="0.3" fill="#8c959f"/>
+<path d="M 17.5 69 L 17.5 86 L 81 86 L 81 101" fill="none" stroke="#8c959f" stroke-width="5.3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 17.5 69 L 17.5 86 L 81 86 L 81 101" fill="none" stroke="#0d1117" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 163.5 69 L 163.5 86 L 100 86 L 100 101" fill="none" stroke="#8c959f" stroke-width="5.3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 163.5 69 L 163.5 86 L 100 86 L 100 101" fill="none" stroke="#cf222e" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="72.25" y="99" width="36.5" height="48" rx="2" fill="#c9252c" stroke="#7d1418" stroke-width="0.4"/>
+<rect x="76.7" y="119" width="1.6" height="22" rx="0.6" fill="#a51d24"/>
+<rect x="83.7" y="119" width="1.6" height="22" rx="0.6" fill="#a51d24"/>
+<rect x="95.7" y="119" width="1.6" height="22" rx="0.6" fill="#a51d24"/>
+<rect x="102.7" y="119" width="1.6" height="22" rx="0.6" fill="#a51d24"/>
+<rect x="83.5" y="105" width="14" height="9" rx="1" fill="#a51d24"/>
+<text x="90.5" y="111.1" font-size="3.2" fill="#f0f3f6" text-anchor="middle" font-weight="bold">SB50</text>
+<rect x="72.25" y="144.5" width="36.5" height="2.5" rx="0.6" fill="#7d1418"/>
+<text x="74.5" y="142.5" font-size="3.4" fill="#f0f3f6" text-anchor="middle" font-weight="bold">−</text>
+<text x="106.5" y="142.5" font-size="3.4" fill="#f0f3f6" text-anchor="middle" font-weight="bold">+</text>
+
+
+
+</svg>
+</g>
+<g class="dev" data-key="main-breaker" data-layer="power" data-systems="power" data-open="0">
+<svg x="92.34" y="135.32" width="18.968" height="25.075" viewBox="-8 -6 64.3 85.0" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+
+<rect x="0" y="0" width="48.26" height="73.41" rx="3" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5"/>
+<circle cx="10.8" cy="8.4" r="3.3" fill="#ffffff" stroke="#1f2328" stroke-width="0.3"/>
+<circle cx="37.46" cy="65" r="3.3" fill="#ffffff" stroke="#1f2328" stroke-width="0.3"/>
+<rect x="23.1" y="1.5" width="2" height="13.5" rx="0.8" fill="#1f2328"/>
+<rect x="23.1" y="58.4" width="2" height="13.5" rx="0.8" fill="#1f2328"/>
+<rect x="31.46" y="1.9" width="12" height="13" rx="1" fill="#6e7781" stroke="#8c959f" stroke-width="0.3"/>
+<path d="M 32.06 8.4 L 34.76 3.7 L 40.16 3.7 L 42.86 8.4 L 40.16 13.1 L 34.76 13.1 Z" fill="#d0d7de" stroke="#8c959f" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="37.46" cy="8.4" r="2.6" fill="#8c959f" stroke="#57606a" stroke-width="0.3"/>
+<text x="29.6" y="9.6" font-size="3" fill="#d9d97a" text-anchor="end" font-weight="bold">BAT</text>
+<rect x="4.8" y="58.5" width="12" height="13" rx="1" fill="#6e7781" stroke="#8c959f" stroke-width="0.3"/>
+<path d="M 5.4 65 L 8.1 60.3 L 13.5 60.3 L 16.2 65 L 13.5 69.7 L 8.1 69.7 Z" fill="#d0d7de" stroke="#8c959f" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="10.8" cy="65" r="2.6" fill="#8c959f" stroke="#57606a" stroke-width="0.3"/>
+<text x="18.7" y="66.2" font-size="3" fill="#d9d97a" text-anchor="start" font-weight="bold">AUX</text>
+<rect x="0.8" y="16.5" width="46.66" height="39.1" rx="2.5" fill="#2b3036" stroke="#1f2328" stroke-width="0.4"/>
+<circle cx="4.9" cy="21.2" r="2.1" fill="#16191d" stroke="#aab2bd" stroke-width="0.25"/>
+<circle cx="43.36" cy="21.2" r="2.1" fill="#16191d" stroke="#aab2bd" stroke-width="0.25"/>
+<circle cx="4.9" cy="50.9" r="2.1" fill="#16191d" stroke="#aab2bd" stroke-width="0.25"/>
+<circle cx="43.36" cy="50.9" r="2.1" fill="#16191d" stroke="#aab2bd" stroke-width="0.25"/>
+<text x="24.13" y="21.4" font-size="2.2" fill="#d9d97a" text-anchor="middle">185120F</text>
+<text x="24.13" y="25.3" font-size="3.2" fill="#d9d97a" text-anchor="middle" font-weight="bold">120 AMPERE</text>
+<text x="24.13" y="28.4" font-size="1.7" fill="#d9d97a" text-anchor="middle">THERMAL CIRCUIT BREAKER</text>
+<rect x="3.5" y="30" width="41.3" height="9.4" rx="4.7" fill="#16191d" stroke="#aab2bd" stroke-width="0.3"/>
+<rect x="32.6" y="32.3" width="9.6" height="4.8" rx="2.4" fill="#cf222e" stroke="#82071e" stroke-width="0.3"/>
+<text x="24.13" y="46.4" font-size="2.2" fill="#d9d97a" text-anchor="middle">WATERPROOF</text>
 
 
 </svg>
@@ -727,6 +836,52 @@
 <rect x="125.8" y="57.4" width="1.8" height="1.8" rx="0.2" fill="#59636e" stroke="#8c959f" stroke-width="0.15"/>
 <text x="126.7" y="64.6" font-size="2" fill="#f0f3f6" text-anchor="middle">1</text>
 <text x="123.9" y="45.6" font-size="2" fill="#f0f3f6" text-anchor="middle">I2C</text>
+
+
+</svg>
+</g>
+<g class="dev" data-key="rsl" data-layer="frame" data-open="0">
+<svg x="143.81" y="174.15" width="21.83" height="31.712" viewBox="-37 -6 74 107.5" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+
+<path d="M -22.5 24.6 L -22.5 13 C -22.5 4 -18 0 -12 0 L 12 0 C 18 0 22.5 4 22.5 13 L 22.5 24.6 Z" fill="#f0883e" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -20 6 L 20 6" fill="none" stroke="#f6b37a" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -20 11 L 20 11" fill="none" stroke="#f6b37a" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -20 16 L 20 16" fill="none" stroke="#f6b37a" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -20 21 L 20 21" fill="none" stroke="#f6b37a" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -15 3 L -15 23.6" fill="none" stroke="#f6b37a" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -9 3 L -9 23.6" fill="none" stroke="#f6b37a" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -3 3 L -3 23.6" fill="none" stroke="#f6b37a" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 3 3 L 3 23.6" fill="none" stroke="#f6b37a" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 9 3 L 9 23.6" fill="none" stroke="#f6b37a" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 15 3 L 15 23.6" fill="none" stroke="#f6b37a" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="-22.5" y="24.6" width="45" height="23.4" rx="1.5" fill="#1f2328" stroke="#1f2328" stroke-width="0.5"/>
+<rect x="-11" y="48" width="22" height="14" rx="0" fill="#2b3036" stroke="#1f2328" stroke-width="0.3"/>
+<path d="M -11 55 L 11 55" fill="none" stroke="#4a515b" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -11 56 L 11 56" fill="none" stroke="#4a515b" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -11 57 L 11 57" fill="none" stroke="#4a515b" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -11 58 L 11 58" fill="none" stroke="#4a515b" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -11 59 L 11 59" fill="none" stroke="#4a515b" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -11 60 L 11 60" fill="none" stroke="#4a515b" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -11 61 L 11 61" fill="none" stroke="#4a515b" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="-14.5" y="49.2" width="29" height="4.6" rx="0.6" fill="#2b3036" stroke="#1f2328" stroke-width="0.3"/>
+<rect x="-8.5" y="62" width="17" height="12" rx="0.8" fill="#16191d" stroke="#8c959f" stroke-width="0.2"/>
+<circle cx="-5" cy="66.2" r="1.8" fill="#8c959f" stroke="#1f2328" stroke-width="0.2"/>
+<path d="M -6.1 66.2 L -3.9 66.2" fill="none" stroke="#1f2328" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="-5" y="71.6" font-size="1.9" fill="#f0f3f6" text-anchor="middle" font-weight="bold">La</text>
+<circle cx="0" cy="66.2" r="1.8" fill="#8c959f" stroke="#1f2328" stroke-width="0.2"/>
+<path d="M -1.1 66.2 L 1.1 66.2" fill="none" stroke="#1f2328" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="0" y="71.6" font-size="1.9" fill="#f0f3f6" text-anchor="middle" font-weight="bold">N</text>
+<circle cx="5" cy="66.2" r="1.8" fill="#8c959f" stroke="#1f2328" stroke-width="0.2"/>
+<path d="M 3.9 66.2 L 6.1 66.2" fill="none" stroke="#1f2328" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="5" y="71.6" font-size="1.9" fill="#f0f3f6" text-anchor="middle" font-weight="bold">Lb</text>
+<path d="M -5 74 L -5 78.6 L 4.2 78.6 L 4.2 74" fill="none" stroke="#8c959f" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -5 74 L -5 78.6 L 4.2 78.6 L 4.2 74" fill="none" stroke="#cf222e" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 5 74 L 5 81 L 3.77 84 L 3.77 89" fill="none" stroke="#8c959f" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 5 74 L 5 81 L 3.77 84 L 3.77 89" fill="none" stroke="#cf222e" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 0 74 L 0 81 L 1.23 84 L 1.23 89" fill="none" stroke="#8c959f" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 0 74 L 0 81 L 1.23 84 L 1.23 89" fill="none" stroke="#0d1117" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="-0.4" y="89" width="5.8" height="4.4" rx="0.4" fill="#16191d" stroke="#8c959f" stroke-width="0.2"/>
+
 
 
 </svg>
@@ -1665,7 +1820,20 @@
 <path d="M 90.25 89.97 L 92.12 89.97 L 92.12 89.97 L 94.00 89.97" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
 <path d="M 90.25 94.49 L 92.12 94.49 L 92.12 94.49 L 94.00 94.49" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
 <path d="M 90.25 99.03 L 92.12 99.03 L 92.12 99.03 L 94.00 99.03" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-linecap="round"/>
-<path d="M 71.28 34.50 L 75.28 34.50" stroke="#cf222e" stroke-width="0.8" stroke-linecap="round" fill="none"/>
+<g class="main-link" data-key="battery" data-layer="power" data-info="power">
+<path d="M 85.05 214.62 L 85.05 219.31 L 122.96 219.31 L 122.96 139.57 L 105.75 139.57" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.8" stroke-linecap="round"/>
+</g>
+<g class="pdh-feed" data-key="pdh" data-end="batt_pos" data-layer="power" data-info="power">
+<path d="M 97.88 156.26 L 78.74 156.26 L 78.74 118.23" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.8" stroke-linecap="round"/>
+</g>
+<g class="pdh-feed" data-key="pdh" data-end="batt_neg" data-layer="power" data-info="power">
+<path d="M 79.45 214.62 L 79.45 220.71 L 124.76 220.71 L 124.76 123.17 L 83.17 123.17 L 83.17 118.23" fill="none" stroke-linejoin="round" stroke="#0d1117" stroke-width="0.8" stroke-linecap="round"/>
+</g>
+</g>
+<g class="rsl-wire" data-key="rsl" data-layer="frame" data-info="signal">
+<path d="M 136.98 135.52 L 136.98 207.86 L 155.46 207.86 L 155.46 203.47" fill="none" stroke-linejoin="round" stroke="#1f2328" stroke-width="2" stroke-linecap="round"/>
+<path d="M 136.98 135.52 L 136.98 207.86 L 155.46 207.86 L 155.46 203.47" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="1" stroke-linecap="round"/>
+<path d="M 136.98 135.52 L 136.98 207.86 L 155.46 207.86 L 155.46 203.47" fill="none" stroke-linejoin="round" stroke="#0d1117" stroke-width="1" stroke-dasharray="2.4 2.4"/>
 </g>
 <g data-layer="can_s1" data-info="can">
 <path d="M 157.10 114.43 L 157.10 104.66 L 184.98 104.66 L 184.98 70.45 L 201.51 70.45 L 201.51 65.53 L 202.45 65.53 L 202.45 70.45 L 232.23 70.45 L 232.23 65.53 L 233.17 65.53 L 233.17 70.45 L 260.70 70.45 L 260.70 65.53 L 261.65 65.53 L 261.65 70.45 L 275.43 70.45" fill="none" stroke-linejoin="round" stroke="#1f2328" stroke-width="2" stroke-linecap="round"/>
@@ -1813,28 +1981,28 @@
 <path d="M 31.36 108.21 L 13.00 108.21 L 13.00 225.81 L 52.14 225.81 L 52.14 244.57 L 48.85 244.57 L 48.85 251.05" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
 </g>
 <g class="power-cable" data-key="left-pi" data-layer="power" data-info="power" display="none">
-<path d="M 42.89 174.48 L 55.14 174.48 L 55.14 230.61 L 93.14 230.61 L 93.14 242.90 L 108.62 242.90 L 108.62 245.08" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-dasharray="1.4 1"/>
+<path d="M 42.89 212.34 L 55.14 212.34 L 55.14 230.61 L 93.14 230.61 L 93.14 242.90 L 108.62 242.90 L 108.62 245.08" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-dasharray="1.4 1"/>
 </g>
 <g class="power-cable" data-key="right-pi" data-layer="power" data-info="power" display="none">
-<path d="M 42.89 150.07 L 56.34 150.07 L 56.34 229.41 L 216.14 229.41 L 216.14 242.90 L 232.37 242.90 L 232.37 245.08" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-dasharray="1.4 1"/>
+<path d="M 42.89 187.93 L 56.34 187.93 L 56.34 229.41 L 216.14 229.41 L 216.14 242.90 L 232.37 242.90 L 232.37 245.08" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-dasharray="1.4 1"/>
 </g>
 <g class="power-cable" data-key="zinc-v-2" data-layer="power" data-info="power" display="none">
-<path d="M 22.83 172.98 L 19.50 172.98 L 19.50 149.57 L 22.83 149.57" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
+<path d="M 22.83 210.84 L 19.50 210.84 L 19.50 187.43 L 22.83 187.43" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
 </g>
 <g class="power-cable" data-key="zinc-v-1" data-layer="power" data-info="power" display="none">
-<path d="M 27.40 105.61 L 13.00 105.61 L 13.00 173.98 L 22.83 173.98" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
+<path d="M 27.40 105.61 L 13.00 105.61 L 13.00 211.84 L 22.83 211.84" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
 </g>
 <g class="power-cable" data-key="systemcore" data-layer="power" data-info="power" display="none">
-<path d="M 24.76 110.81 L 13.00 110.81 L 13.00 131.17 L 128.96 131.17 L 128.96 111.16 L 143.76 111.16 L 143.76 114.43" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
+<path d="M 24.76 110.81 L 13.00 110.81 L 13.00 169.03 L 128.96 169.03 L 128.96 111.16 L 143.76 111.16 L 143.76 114.43" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
 </g>
 <g class="power-cable" data-key="indexer-tunnel-bottom" data-layer="power" data-info="power" display="none">
-<path d="M 16.84 66.20 L 13.00 66.20 L 13.00 131.17 L 128.96 131.17 L 128.96 70.45 L 206.17 70.45 L 206.17 65.53" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
+<path d="M 16.84 66.20 L 13.00 66.20 L 13.00 169.03 L 128.96 169.03 L 128.96 70.45 L 206.17 70.45 L 206.17 65.53" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
 </g>
 <g class="power-cable" data-key="indexer-roller" data-layer="power" data-info="power" display="none">
-<path d="M 23.44 70.77 L 13.00 70.77 L 13.00 131.17 L 128.96 131.17 L 128.96 70.45 L 236.89 70.45 L 236.89 65.53" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-dasharray="1.4 1"/>
+<path d="M 23.44 70.77 L 13.00 70.77 L 13.00 169.03 L 128.96 169.03 L 128.96 70.45 L 236.89 70.45 L 236.89 65.53" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-dasharray="1.4 1"/>
 </g>
 <g class="power-cable" data-key="indexer-tunnel-top" data-layer="power" data-info="power" display="none">
-<path d="M 20.80 75.49 L 13.00 75.49 L 13.00 131.17 L 128.96 131.17 L 128.96 70.45 L 265.37 70.45 L 265.37 65.53" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
+<path d="M 20.80 75.49 L 13.00 75.49 L 13.00 169.03 L 128.96 169.03 L 128.96 70.45 L 265.37 70.45 L 265.37 65.53" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
 </g>
 <g class="power-cable" data-key="intake-rack-turret-side" data-layer="power" data-info="power" display="none">
 <path d="M 125.76 66.20 L 128.96 66.20 L 128.96 70.45 L 312.94 70.45 L 312.94 65.53" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
@@ -1846,22 +2014,22 @@
 <path d="M 115.20 70.77 L 128.96 70.77 L 128.96 70.45 L 371.34 70.45 L 371.34 65.53" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-dasharray="1.4 1"/>
 </g>
 <g class="power-cable" data-key="swerve-bl-drive" data-layer="power" data-info="power" display="none">
-<path d="M 31.36 94.49 L 13.00 94.49 L 13.00 131.17 L 128.96 131.17 L 128.96 108.16 L 182.48 108.16 L 182.48 126.78 L 203.89 126.78 L 203.89 121.86" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
+<path d="M 31.36 94.49 L 13.00 94.49 L 13.00 169.03 L 128.96 169.03 L 128.96 108.16 L 182.48 108.16 L 182.48 126.78 L 203.89 126.78 L 203.89 121.86" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
 </g>
 <g class="power-cable" data-key="swerve-bl-encoder" data-layer="power" data-info="power" display="none">
 <path d="M 256.04 121.86 L 256.04 124.58 L 220.17 124.58 L 220.17 120.09" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
 </g>
 <g class="power-cable" data-key="swerve-bl-turn" data-layer="power" data-info="power" display="none">
-<path d="M 32.68 99.03 L 13.00 99.03 L 13.00 131.17 L 128.96 131.17 L 128.96 108.16 L 182.48 108.16 L 182.48 126.78 L 256.04 126.78 L 256.04 121.86" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
+<path d="M 32.68 99.03 L 13.00 99.03 L 13.00 169.03 L 128.96 169.03 L 128.96 108.16 L 182.48 108.16 L 182.48 126.78 L 256.04 126.78 L 256.04 121.86" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
 </g>
 <g class="power-cable" data-key="swerve-br-turn" data-layer="power" data-info="power" display="none">
-<path d="M 32.68 56.96 L 13.00 56.96 L 13.00 131.17 L 128.96 131.17 L 128.96 108.16 L 182.48 108.16 L 182.48 126.78 L 284.49 126.78 L 284.49 121.86" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
+<path d="M 32.68 56.96 L 13.00 56.96 L 13.00 169.03 L 128.96 169.03 L 128.96 108.16 L 182.48 108.16 L 182.48 126.78 L 284.49 126.78 L 284.49 121.86" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
 </g>
 <g class="power-cable" data-key="swerve-br-encoder" data-layer="power" data-info="power" display="none">
 <path d="M 284.49 121.86 L 284.49 124.58 L 300.77 124.58 L 300.77 120.09" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
 </g>
 <g class="power-cable" data-key="swerve-br-drive" data-layer="power" data-info="power" display="none">
-<path d="M 31.36 61.65 L 13.00 61.65 L 13.00 131.17 L 128.96 131.17 L 128.96 108.16 L 182.48 108.16 L 182.48 126.78 L 336.64 126.78 L 336.64 121.86" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
+<path d="M 31.36 61.65 L 13.00 61.65 L 13.00 169.03 L 128.96 169.03 L 128.96 108.16 L 182.48 108.16 L 182.48 126.78 L 336.64 126.78 L 336.64 121.86" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
 </g>
 <g class="power-cable" data-key="swerve-fr-drive" data-layer="power" data-info="power" display="none">
 <path d="M 113.88 61.65 L 128.96 61.65 L 128.96 173.12 L 203.89 173.12 L 203.89 168.20" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
@@ -1882,7 +2050,7 @@
 <path d="M 113.88 99.03 L 128.96 99.03 L 128.96 173.12 L 336.64 173.12 L 336.64 168.20" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
 </g>
 <g class="power-cable" data-key="gyro" data-layer="power" data-info="power" display="none">
-<path d="M 36.64 103.01 L 13.00 103.01 L 13.00 131.17 L 128.96 131.17 L 128.96 173.12 L 354.40 173.12 L 354.40 166.73" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
+<path d="M 36.64 103.01 L 13.00 103.01 L 13.00 169.03 L 128.96 169.03 L 128.96 173.12 L 354.40 173.12 L 354.40 166.73" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
 </g>
 <g class="power-cable" data-key="shooter-vertical-roller" data-layer="power" data-info="power" display="none">
 <path d="M 125.76 85.46 L 128.96 85.46 L 128.96 224.56 L 203.92 224.56 L 203.92 219.65" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-dasharray="1.4 1"/>
@@ -1894,13 +2062,13 @@
 <path d="M 125.76 75.49 L 128.96 75.49 L 128.96 224.56 L 260.87 224.56 L 260.87 219.65" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-dasharray="1.4 1"/>
 </g>
 <g class="power-cable" data-key="flywheel-x44-side" data-layer="power" data-info="power" display="none">
-<path d="M 16.84 80.80 L 13.00 80.80 L 13.00 131.17 L 128.96 131.17 L 128.96 224.56 L 290.87 224.56 L 290.87 219.65" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-dasharray="1.4 1"/>
+<path d="M 16.84 80.80 L 13.00 80.80 L 13.00 169.03 L 128.96 169.03 L 128.96 224.56 L 290.87 224.56 L 290.87 219.65" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-dasharray="1.4 1"/>
 </g>
 <g class="power-cable" data-key="hood" data-layer="power" data-info="power" display="none">
-<path d="M 16.84 85.46 L 13.00 85.46 L 13.00 131.17 L 128.96 131.17 L 128.96 224.56 L 321.69 224.56 L 321.69 219.65" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-dasharray="1.4 1"/>
+<path d="M 16.84 85.46 L 13.00 85.46 L 13.00 169.03 L 128.96 169.03 L 128.96 224.56 L 321.69 224.56 L 321.69 219.65" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-dasharray="1.4 1"/>
 </g>
 <g class="power-cable" data-key="flywheel-other-side" data-layer="power" data-info="power" display="none">
-<path d="M 14.20 89.97 L 13.00 89.97 L 13.00 131.17 L 128.96 131.17 L 128.96 224.56 L 355.37 224.56 L 355.37 219.65" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-dasharray="1.4 1"/>
+<path d="M 14.20 89.97 L 13.00 89.97 L 13.00 169.03 L 128.96 169.03 L 128.96 224.56 L 355.37 224.56 L 355.37 219.65" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-dasharray="1.4 1"/>
 </g>
 <g data-layer="frame">
 <text x="10.00" y="17.00" font-size="7.0" fill="#1f2328" text-anchor="start" font-weight="bold">Robot wiring · Team 2102</text>
@@ -2043,14 +2211,6 @@
 <g data-layer="power" data-systems="power">
 <text x="12.00" y="29.80" font-size="3.2" fill="#1f2328" text-anchor="start" font-weight="bold">Power · PDH channels in port order</text>
 </g>
-<g data-layer="power" data-systems="power">
-<rect x="52.44" y="32.00" width="18.84" height="5.00" rx="1" fill="#ffffff" stroke="#57606a" stroke-width="0.35"/>
-<text x="61.86" y="35.27" font-size="2.2" fill="#1f2328" text-anchor="middle" font-weight="bold">12 V battery</text>
-</g>
-<g data-layer="power" data-systems="power">
-<rect x="75.28" y="32.00" width="26.76" height="5.00" rx="1" fill="#ffffff" stroke="#57606a" stroke-width="0.35"/>
-<text x="88.66" y="35.27" font-size="2.2" fill="#1f2328" text-anchor="middle" font-weight="bold">120 A main breaker</text>
-</g>
 <g class="dev-label" data-layer="power" data-systems="can power" data-key="pdh" data-open="0">
 <text x="73.28" y="41.50" font-size="2.5" fill="#1f2328" text-anchor="middle">Power Distribution Hub</text>
 </g>
@@ -2130,27 +2290,35 @@
 <g data-layer="power" data-info="power">
 <text x="94.60" y="99.80" font-size="2.2" fill="#1f2328" text-anchor="start">0 FL drive · 1</text>
 </g>
-<g data-layer="power" data-info="power">
-<text x="15.00" y="124.97" font-size="2.4000000000000004" fill="#1f2328" text-anchor="start" font-weight="bold">Loads with no recorded PDH channel</text>
+<g class="dev-label" data-layer="power" data-systems="power" data-key="led-brick" data-open="1" data-open-in="power">
+<text x="33.09" y="127.97" font-size="2.5" fill="#1f2328" text-anchor="middle">LED Brick (5 V supply)</text>
 </g>
-<g data-layer="power" data-info="power">
-<text x="15.00" y="128.17" font-size="2.2" fill="#9a6700" text-anchor="start">• Protooma 5 V 10 A converter (no LEDs connected yet)</text>
+<g class="dev-tag" data-layer="power" data-info="power" data-key="led-brick" data-open="1" data-open-in="power">
+<rect x="29.89" y="128.97" width="5.41" height="5.50" rx="2.7" fill="#9a6700"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(31.09 130.90) scale(0.1170)"/>
+<text x="33.32" y="132.77" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">?</text>
 </g>
 <g class="dev-label" data-layer="power" data-systems="power" data-key="zinc-v-2" data-open="0">
-<text x="33.09" y="136.67" font-size="2.5" fill="#1f2328" text-anchor="middle">Zinc-V #2</text>
+<text x="33.09" y="174.53" font-size="2.5" fill="#1f2328" text-anchor="middle">Zinc-V #2</text>
 </g>
 <g class="dev-tag" data-layer="power" data-info="power" data-key="zinc-v-2" data-open="0">
-<rect x="29.11" y="137.67" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
-<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(30.31 139.60) scale(0.1170)"/>
-<text x="33.32" y="141.47" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">21</text>
+<rect x="29.11" y="175.53" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(30.31 177.46) scale(0.1170)"/>
+<text x="33.32" y="179.33" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">21</text>
 </g>
 <g class="dev-label" data-layer="power" data-systems="power" data-key="zinc-v-1" data-open="0">
-<text x="33.09" y="161.08" font-size="2.5" fill="#1f2328" text-anchor="middle">Zinc-V #1</text>
+<text x="33.09" y="198.94" font-size="2.5" fill="#1f2328" text-anchor="middle">Zinc-V #1</text>
 </g>
 <g class="dev-tag" data-layer="power" data-info="power" data-key="zinc-v-1" data-open="0">
-<rect x="29.11" y="162.08" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
-<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(30.31 164.01) scale(0.1170)"/>
-<text x="33.32" y="165.88" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">21</text>
+<rect x="29.11" y="199.94" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(30.31 201.87) scale(0.1170)"/>
+<text x="33.32" y="203.74" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">21</text>
+</g>
+<g class="dev-label" data-layer="power" data-systems="power" data-key="battery" data-open="0">
+<text x="82.25" y="160.89" font-size="2.5" fill="#1f2328" text-anchor="middle">12 V battery</text>
+</g>
+<g class="dev-label" data-layer="power" data-systems="power" data-key="main-breaker" data-open="0">
+<text x="101.82" y="127.32" font-size="2.5" fill="#1f2328" text-anchor="middle">120 A main breaker</text>
 </g>
 <g class="dev-label" data-layer="frame" data-systems="can power network" data-key="systemcore" data-open="0">
 <text x="154.72" y="141.15" font-size="2.5" fill="#1f2328" text-anchor="middle">SystemCore (Beta)</text>
@@ -2163,6 +2331,9 @@
 <rect x="163.46" y="142.15" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
 <path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(164.66 144.07) scale(0.1170)"/>
 <text x="167.68" y="145.95" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">23</text>
+</g>
+<g class="dev-label" data-layer="frame" data-key="rsl" data-open="0">
+<text x="154.72" y="166.15" font-size="2.5" fill="#1f2328" text-anchor="middle">Robot Signal Light (RSL)</text>
 </g>
 <g data-layer="can_s1" data-systems="can">
 <text x="188.48" y="29.80" font-size="3.2" fill="#1f2328" text-anchor="start" font-weight="bold">can_s1 · Indexer</text>
@@ -2500,14 +2671,26 @@
 <g class="hl" data-key="pdh" data-layer="power" display="none">
 <rect x="52.46" y="37.50" width="41.64" height="82.97" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
+<g class="hl" data-key="led-brick" data-layer="power" display="none">
+<rect x="15.09" y="123.97" width="36.00" height="42.56" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
 <g class="hl" data-key="zinc-v-2" data-layer="power" display="none">
-<rect x="19.50" y="132.67" width="27.19" height="23.41" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="19.50" y="170.53" width="27.19" height="23.41" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="zinc-v-1" data-layer="power" display="none">
-<rect x="19.50" y="157.08" width="27.19" height="23.41" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="19.50" y="194.94" width="27.19" height="23.41" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="battery" data-layer="power" display="none">
+<rect x="51.69" y="156.89" width="61.12" height="62.91" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="main-breaker" data-layer="power" display="none">
+<rect x="86.82" y="123.32" width="30.00" height="38.57" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="systemcore" data-layer="frame" display="none">
 <rect x="131.46" y="111.16" width="46.51" height="37.98" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="rsl" data-layer="frame" display="none">
+<rect x="135.22" y="162.15" width="39.00" height="45.21" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="indexer-tunnel-bottom" data-layer="can_s1" display="none">
 <rect x="186.98" y="29.50" width="30.00" height="39.45" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>

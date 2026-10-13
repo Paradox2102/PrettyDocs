@@ -1,5 +1,5 @@
 {
- "built": "2026-10-13T16:16:29-07:00",
+ "built": "2026-10-13T16:36:21-07:00",
  "devices": {
   "battery": {
    "key": "battery",
@@ -21,7 +21,12 @@
     "open_reasons": [],
     "fed_by_role": null,
     "attached_to_role": null,
-    "bbox": null,
+    "bbox": [
+     51.69,
+     156.89,
+     61.12,
+     62.91
+    ],
     "top_bbox": [
      207.97,
      61.1,
@@ -50,7 +55,12 @@
     "open_reasons": [],
     "fed_by_role": null,
     "attached_to_role": null,
-    "bbox": null,
+    "bbox": [
+     86.82,
+     123.32,
+     30.0,
+     38.57
+    ],
     "top_bbox": [
      97.72,
      177.0,
@@ -169,7 +179,12 @@
     "open_reasons": [],
     "fed_by_role": null,
     "attached_to_role": null,
-    "bbox": null,
+    "bbox": [
+     135.22,
+     162.15,
+     39.0,
+     45.21
+    ],
     "top_bbox": [
      270.03,
      223.37,
@@ -1398,7 +1413,7 @@
     "attached_to_role": null,
     "bbox": [
      19.5,
-     157.08,
+     194.94,
      27.19,
      23.41
     ],
@@ -1568,7 +1583,7 @@
     "attached_to_role": null,
     "bbox": [
      19.5,
-     132.67,
+     170.53,
      27.19,
      23.41
     ],
@@ -1700,7 +1715,12 @@
     ],
     "fed_by_role": null,
     "attached_to_role": null,
-    "bbox": null,
+    "bbox": [
+     15.09,
+     123.97,
+     36.0,
+     42.56
+    ],
     "top_bbox": [
      252.54,
      126.0,
