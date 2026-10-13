@@ -74,15 +74,20 @@ export default function Icons() {
           them for anything, no credit needed. Please do not present them as your own work. Scripts can read{' '}
           <a href={`${ICONS_BASE}index.json`}>index.json</a> for each icon's size and wire ends.
         </p>
-        <nav aria-label="Group icons by" className={styles.switch}>
-          <span className={styles.switchLabel}>Group by</span>
-          {(['type', 'vendor'] as GroupBy[]).map((b) => (
-            <Link key={b} to={linkTo(b)} aria-current={b === by ? 'true' : undefined}
-              className={b === by ? `${styles.switchItem} ${styles.switchOn}` : styles.switchItem}>
-              {b === 'type' ? 'Type' : 'Vendor'}
-            </Link>
-          ))}
-        </nav>
+        <div className={styles.actions}>
+          <nav aria-label="Group icons by" className={styles.switch}>
+            <span className={styles.switchLabel}>Group by</span>
+            {(['type', 'vendor'] as GroupBy[]).map((b) => (
+              <Link key={b} to={linkTo(b)} aria-current={b === by ? 'true' : undefined}
+                className={b === by ? `${styles.switchItem} ${styles.switchOn}` : styles.switchItem}>
+                {b === 'type' ? 'Type' : 'Vendor'}
+              </Link>
+            ))}
+          </nav>
+          <a className={styles.downloadAll} href={`${ICONS_BASE}frc-device-icons.zip`} download="frc-device-icons.zip">
+            Download all ({index.icons.length} icons, ZIP)
+          </a>
+        </div>
         <div className={styles.searchRow}>
           <input type="search" className={styles.search} aria-label="Search icons" placeholder="Name, vendor or part number"
             autoComplete="off" spellCheck={false} value={query} onChange={(e) => search(e.target.value)} />

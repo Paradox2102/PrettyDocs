@@ -136,3 +136,11 @@ test('switching the grouping keeps the search', async () => {
   const group = screen.getByRole('navigation', { name: 'Group icons by' });
   expect(within(group).getByRole('link', { name: 'Vendor' })).toHaveAttribute('href', '/icons?by=vendor&q=rev');
 });
+
+test('a Download all link gets every icon as one ZIP', async () => {
+  await renderRouted(<AppRoutes />, '/icons');
+  const all = screen.getByRole('link', { name: /Download all/ });
+  expect(all).toHaveAttribute('href', '/icons/frc-device-icons.zip');
+  expect(all).toHaveAttribute('download', 'frc-device-icons.zip');
+  expect(all).toHaveTextContent('3 icons');
+});

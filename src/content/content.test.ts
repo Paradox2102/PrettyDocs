@@ -66,6 +66,11 @@ describe('icon collection', () => {
     const missing = icons.icons.filter((i) => !existsSync(join(ICONS, i.path))).map((i) => i.path);
     expect(missing).toEqual([]);
   });
+  test('the ZIP of every icon exists and is a ZIP file', () => {
+    const zip = join(ICONS, 'frc-device-icons.zip');
+    expect(existsSync(zip), `${zip} is missing: run the export`).toBe(true);
+    expect(readFileSync(zip).subarray(0, 4)).toEqual(Buffer.from([0x50, 0x4b, 0x03, 0x04]));
+  });
   test('each type count matches its icons', () => {
     for (const t of icons.types) expect(icons.icons.filter((i) => i.type === t.id).length, t.id).toBe(t.count);
   });

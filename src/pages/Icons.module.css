@@ -7,6 +7,13 @@
 .lead { margin: 0 0 10px; color: var(--muted); }
 .lead a { color: var(--ink); }
 
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-top: 18px; }
+.actions .switch { margin-top: 0; }
+.downloadAll {
+  display: inline-flex; align-items: center; padding: 8px 14px; border-radius: 8px; background: var(--accent);
+  color: var(--on-accent); font-weight: 600; text-decoration: none;
+}
+.downloadAll:hover { filter: brightness(1.08); }
 .switch { display: inline-flex; align-items: center; gap: 4px; margin-top: 18px; padding: 3px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
 .switchLabel { padding: 0 8px 0 6px; color: var(--muted); font-size: 14px; }
 .switchItem { padding: 5px 12px; border-radius: 6px; color: var(--muted); text-decoration: none; font-weight: 500; }

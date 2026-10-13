@@ -11,6 +11,8 @@ Use them in your own diagrams, docs and posters.
   and wire ends, for scripts.
 - To get one icon, open it here and use **Download raw file**, or get it from
   `https://docs.team2102.org/icons/<type>/<vendor>/<file>`.
+- To get them all, download [frc-device-icons.zip](frc-device-icons.zip) (every icon, with this README,
+  the license and `index.json`).
 
 **License:** public domain, [CC0 1.0](LICENSE.md). Use them for anything, no credit needed.
 We ask one thing (a request, not a condition): please do not present the icons as your own work.
