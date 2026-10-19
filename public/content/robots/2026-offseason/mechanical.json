@@ -45,7 +45,7 @@
     {
      "label": "Drive gears in the CAD",
      "value": "X1-10 parts: 10T pinion (WCP-1008), 54T/38T central gear (WCP-1713), 18T second stage gear (WCP-0432)",
-     "source": "Part names WCP-1008 (10T pinion), WCP-1713 Rev1 and WCP-0432 Rev1 in the Onshape export of Main Assembly microversion e5d5f77 (wiring/cad3d/raw/export.gltf); part numbers from the WCP Swerve X2 kit contents and ratio kits",
+     "source": "Part names WCP-1008 (10T pinion), WCP-1713 Rev1 and WCP-0432 Rev1 in the Onshape export of Main Assembly microversion 99c6770 (wiring/cad3d/raw/export.gltf); part numbers from the WCP Swerve X2 kit contents and ratio kits",
      "uncertain": "The team runs X2-12 (12T pinion, 16T second stage gear); the CAD swerve gears are likely out of date"
     },
     {
@@ -85,12 +85,12 @@
     {
      "label": "Roller reduction",
      "value": "1.5:1",
-     "source": "24T pulley on the motor (CAN 20) to a 36T pulley on a 60T belt; the rollers are linked 1:1 by 36T pulleys on 65T belts. CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)"
+     "source": "24T pulley on the motor (CAN 20) to a 36T pulley on a 60T belt; the rollers are linked 1:1 by 36T pulleys on 65T belts. CAD part names and positions, Onshape Main Assembly microversion 99c6770 (wiring/gear-trains.json)"
     },
     {
      "label": "Rack drive reduction",
      "value": "2.8:1 per side",
-     "source": "10T spur gear on each Kraken X44 to a 28T spur gear, which drives the toothed rack plate. CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)"
+     "source": "10T spur gear on each Kraken X44 to a 28T spur gear, which drives the toothed rack plate. CAD part names and positions, Onshape Main Assembly microversion 99c6770 (wiring/gear-trains.json)"
     },
     {
      "label": "Roller supply current limit",
@@ -118,7 +118,7 @@
   {
    "id": "indexer",
    "name": "Indexer",
-   "summary": "Three Kraken X60 motors on can_s1: the roller drive (CAN 30), the top belt tunnel (CAN 31) and the bottom belt tunnel (CAN 32).",
+   "summary": "Three motors on can_s1: a Kraken X60 roller drive (CAN 30) and two Kraken X44 belt tunnel motors, top (CAN 31) and bottom (CAN 32).",
    "mechanisms": [
     "Indexer"
    ],
@@ -129,18 +129,18 @@
     {
      "label": "Roller drive reduction",
      "value": "2.42:1 to the 58T shaft",
-     "source": "24T spur gear on the motor (CAN 30) to 58T spur gears (20 DP; two 58T gears in mesh). CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)"
+     "source": "24T spur gear on the motor (CAN 30) to 58T spur gears (20 DP; two 58T gears in mesh). CAD part names and positions, Onshape Main Assembly microversion 99c6770 (wiring/gear-trains.json)"
     },
     {
      "label": "Roller outputs",
      "value": "2.42:1 and 3.41:1",
-     "source": "From the 58T shaft: a 24T pulley to a 24T roller pulley (1:1, 2.42:1 overall), and a 17T pulley to 24T roller pulleys (3.41:1 overall), the next roller linked 1:1 by belt. CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)"
+     "source": "From the 58T shaft: a 24T pulley to a 24T roller pulley (1:1, 2.42:1 overall), and a 17T pulley to 24T roller pulleys (3.41:1 overall), the next roller linked 1:1 by belt. CAD part names and positions, Onshape Main Assembly microversion 99c6770 (wiring/gear-trains.json)"
     },
     {
      "label": "Belt tunnel drive",
-     "value": "24T pulley on each motor, then not known",
-     "source": "Bottom tunnel: 24T to 24T pulleys (1:1) to the shaft of the printed pulley G3031. Top tunnel: a 1.22 in wide 24T pulley (G3220) on the motor. CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)",
-     "uncertain": "G3031 (\"Weird Pulley\") and the parts after the top tunnel's pulley have no tooth counts in their names"
+     "value": "Bottom: 2:1 to G3031; top: not known",
+     "source": "Bottom tunnel: 20T spur gear on the Kraken X44 (CAN 32) to a 40T spur gear, then a 40T idler gear (20 DP) to the shaft of the printed pulley G3031. Top tunnel (CAN 31): no gear or pulley found on the motor axis. The team changed both motors from Kraken X60 to Kraken X44 (2026-10-19). CAD part names and positions, Onshape Main Assembly microversion 99c6770 (wiring/gear-trains.json)",
+     "uncertain": "G3031 (\"Weird Pulley\") has no tooth count in its name, and the CAD shows no drive part on the top tunnel motor"
     },
     {
      "label": "Belt tunnel motors",
@@ -184,7 +184,7 @@
     {
      "label": "Turret reduction",
      "value": "67.86:1",
-     "source": "12T to 60T spur gears (5:1), 14T to 28T pulleys on a 45T belt (2:1), 14T driving gear to the 95T turret gear (6.79:1). The turret gears' tooth counts come from their diameters and centre distance (module 2.54); ShooterConstants.k_shooterGearReduction = 67.86 (robot code main af85e4e) agrees. CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)"
+     "source": "12T to 60T spur gears (5:1), 14T to 28T pulleys on a 45T belt (2:1), 14T driving gear to the 95T turret gear (6.79:1). The turret gears' tooth counts come from their diameters and centre distance (module 2.54); ShooterConstants.k_shooterGearReduction = 67.86 (robot code main af85e4e) agrees. CAD part names and positions, Onshape Main Assembly microversion 99c6770 (wiring/gear-trains.json)"
     },
     {
      "label": "Flywheel drive",
@@ -193,18 +193,18 @@
     },
     {
      "label": "Scotty (sushi) rollers drive",
-     "value": "1.15:1",
-     "source": "16T pulley on the motor to 16T pulleys on a 105T belt (1:1), then 26T to 30T spur gears. CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)"
+     "value": "1:1",
+     "source": "16T pulley on the motor to a 16T pulley (1:1), a 15T pulley on that shaft to a 15T pulley (1:1), then 24T to 24T spur gears (1:1). The 26T to 30T spur gears are no longer in the CAD. CAD part names and positions, Onshape Main Assembly microversion 99c6770 (wiring/gear-trains.json)"
     },
     {
      "label": "Vertical roller drive",
      "value": "1:1",
-     "source": "20T pulley on the motor to a 20T pulley on a 75T belt. CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)"
+     "source": "20T pulley on the motor to a 20T pulley on a 75T belt. CAD part names and positions, Onshape Main Assembly microversion 99c6770 (wiring/gear-trains.json)"
     },
     {
      "label": "Hood drive",
      "value": "5:1 planetary, then not known",
-     "source": "Kraken X44 into a REV MAXPlanetary with one 5:1 slice; then WCP-2140 and two 9T helical gears (module 2.54). CAD part names and positions, Onshape Main Assembly microversion e5d5f77 (wiring/gear-trains.json)",
+     "source": "Kraken X44 into a REV MAXPlanetary with one 5:1 slice; then WCP-2140 and two 9T helical gears (module 2.54). CAD part names and positions, Onshape Main Assembly microversion 99c6770 (wiring/gear-trains.json)",
      "uncertain": "The parts after the planetary have no tooth counts in their names"
     },
     {

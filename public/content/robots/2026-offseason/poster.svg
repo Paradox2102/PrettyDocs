@@ -142,7 +142,7 @@
 </svg>
 </g>
 <g class="dev" data-key="radio" data-layer="network" data-systems="power network" data-open="0">
-<svg x="49.50" y="245.37" width="38.645" height="19.027" viewBox="-8 -6 131 64.5" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="48.21" y="245.37" width="38.645" height="19.027" viewBox="-8 -6 131 64.5" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <rect x="0" y="0" width="114.9" height="54" rx="3" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5"/>
 <text x="57.45" y="27" font-size="7" fill="#f0f3f6" text-anchor="middle" font-weight="bold">VH-109</text>
@@ -188,7 +188,7 @@
 </svg>
 </g>
 <g class="dev" data-key="left-pi" data-layer="network" data-systems="power network" data-open="1" data-open-in="power network">
-<svg x="97.26" y="243.60" width="31.27" height="20.797" viewBox="-10 -8 106 70.5" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="94.67" y="243.60" width="31.27" height="20.797" viewBox="-10 -8 106 70.5" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <rect x="0" y="0" width="89" height="56" rx="3" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5"/>
 <circle cx="23.3" cy="3" r="1.4" fill="#ffffff" stroke="#1f2328" stroke-width="0.2"/>
@@ -274,7 +274,7 @@
 </svg>
 </g>
 <g class="dev" data-key="camera-front-left" data-layer="network" data-systems="network" data-open="1" data-open-in="network">
-<svg x="145.45" y="243.31" width="18.88" height="21.092" viewBox="-16 -6 64 71.5" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="141.57" y="243.31" width="18.88" height="21.092" viewBox="-16 -6 64 71.5" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <rect x="0" y="0" width="32" height="32" rx="1.5" fill="#1d2024" stroke="#1f2328" stroke-width="0.5"/>
 <circle cx="2" cy="2" r="1.75" fill="#c9cdd1"/>
@@ -316,7 +316,7 @@
 </svg>
 </g>
 <g class="dev" data-key="camera-side-left" data-layer="network" data-systems="network" data-open="1" data-open-in="network">
-<svg x="185.20" y="243.31" width="18.88" height="21.092" viewBox="-16 -6 64 71.5" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="180.03" y="243.31" width="18.88" height="21.092" viewBox="-16 -6 64 71.5" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <rect x="0" y="0" width="32" height="32" rx="1.5" fill="#1d2024" stroke="#1f2328" stroke-width="0.5"/>
 <circle cx="2" cy="2" r="1.75" fill="#c9cdd1"/>
@@ -358,7 +358,7 @@
 </svg>
 </g>
 <g class="dev" data-key="right-pi" data-layer="network" data-systems="power network" data-open="1" data-open-in="power network">
-<svg x="221.01" y="243.60" width="31.27" height="20.797" viewBox="-10 -8 106 70.5" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="214.54" y="243.60" width="31.27" height="20.797" viewBox="-10 -8 106 70.5" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <rect x="0" y="0" width="89" height="56" rx="3" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5"/>
 <circle cx="23.3" cy="3" r="1.4" fill="#ffffff" stroke="#1f2328" stroke-width="0.2"/>
@@ -444,7 +444,49 @@
 </svg>
 </g>
 <g class="dev" data-key="camera-front-right" data-layer="network" data-systems="network" data-open="1" data-open-in="network">
-<svg x="269.95" y="243.31" width="18.88" height="21.092" viewBox="-16 -6 64 71.5" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="262.19" y="243.31" width="18.88" height="21.092" viewBox="-16 -6 64 71.5" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+
+<rect x="0" y="0" width="32" height="32" rx="1.5" fill="#1d2024" stroke="#1f2328" stroke-width="0.5"/>
+<circle cx="2" cy="2" r="1.75" fill="#c9cdd1"/>
+<circle cx="2" cy="2" r="1.05" fill="#ffffff" stroke="#1f2328" stroke-width="0.2"/>
+<circle cx="30" cy="2" r="1.75" fill="#c9cdd1"/>
+<circle cx="30" cy="2" r="1.05" fill="#ffffff" stroke="#1f2328" stroke-width="0.2"/>
+<circle cx="2" cy="30" r="1.75" fill="#c9cdd1"/>
+<circle cx="2" cy="30" r="1.05" fill="#ffffff" stroke="#1f2328" stroke-width="0.2"/>
+<circle cx="30" cy="30" r="1.75" fill="#c9cdd1"/>
+<circle cx="30" cy="30" r="1.05" fill="#ffffff" stroke="#1f2328" stroke-width="0.2"/>
+<circle cx="16" cy="16" r="7" fill="none" stroke="#aab2bd" stroke-width="0.4" stroke-dasharray="1 0.8"/>
+<text x="16" y="15.6" font-size="1.8" fill="#aab2bd" text-anchor="middle">lens on</text>
+<text x="16" y="17.9" font-size="1.8" fill="#aab2bd" text-anchor="middle">front side</text>
+<circle cx="7" cy="16" r="0.9" fill="#8c959f" stroke="#1f2328" stroke-width="0.15"/>
+<circle cx="25" cy="16" r="0.9" fill="#8c959f" stroke="#1f2328" stroke-width="0.15"/>
+<circle cx="18.6" cy="3" r="0.75" fill="#c9cdd1" stroke="#1f2328" stroke-width="0.15"/>
+<circle cx="21.03" cy="3" r="0.75" fill="#c9cdd1" stroke="#1f2328" stroke-width="0.15"/>
+<text x="22.63" y="3.7" font-size="1.8" fill="#f0f3f6" text-anchor="middle">+</text>
+<text x="19.815" y="6.6" font-size="1.5" fill="#aab2bd" text-anchor="middle">STROBE</text>
+<circle cx="11.1" cy="3" r="0.75" fill="#c9cdd1" stroke="#1f2328" stroke-width="0.15"/>
+<circle cx="13.7" cy="3" r="0.75" fill="#c9cdd1" stroke="#1f2328" stroke-width="0.15"/>
+<text x="9.5" y="3.7" font-size="1.8" fill="#f0f3f6" text-anchor="middle">+</text>
+<text x="12.4" y="6.6" font-size="1.5" fill="#aab2bd" text-anchor="middle">FSIN</text>
+<text x="16" y="25.4" font-size="1.8" fill="#f0f3f6" text-anchor="middle">USB (1.25 mm 5-pin)</text>
+<rect x="18" y="27.6" width="8.2" height="3.4" rx="0.3" fill="#f6f8fa" stroke="#1f2328" stroke-width="0.2"/>
+<rect x="19.27" y="28.3" width="0.7" height="2" rx="0" fill="#0d1117" stroke="#8c959f" stroke-width="0.1"/>
+<rect x="20.52" y="28.3" width="0.7" height="2" rx="0" fill="#0d1117" stroke="#8c959f" stroke-width="0.1"/>
+<rect x="21.75" y="28.3" width="0.7" height="2" rx="0" fill="#2da44e" stroke="#8c959f" stroke-width="0.1"/>
+<rect x="23.01" y="28.3" width="0.7" height="2" rx="0" fill="#ffffff" stroke="#8c959f" stroke-width="0.1"/>
+<rect x="24.24" y="28.3" width="0.7" height="2" rx="0" fill="#cf222e" stroke="#8c959f" stroke-width="0.1"/>
+<path d="M 22.1 31 L 22.1 42" fill="none" stroke="#8c959f" stroke-width="2.7" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 22.1 31 L 22.1 42" fill="none" stroke="#16191d" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="18.6" y="42" width="7" height="4" rx="0.8" fill="#16191d"/>
+<rect x="19.1" y="46" width="6" height="12" rx="0.4" fill="#8c959f" stroke="#1f2328" stroke-width="0.2"/>
+<rect x="20.1" y="48" width="4" height="2.5" rx="0" fill="#0d1117"/>
+
+
+
+</svg>
+</g>
+<g class="dev" data-key="camera-side-right" data-layer="network" data-systems="network" data-open="1" data-open-in="network">
+<svg x="300.64" y="243.31" width="18.88" height="21.092" viewBox="-16 -6 64 71.5" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
 <rect x="0" y="0" width="32" height="32" rx="1.5" fill="#1d2024" stroke="#1f2328" stroke-width="0.5"/>
 <circle cx="2" cy="2" r="1.75" fill="#c9cdd1"/>
@@ -999,34 +1041,34 @@
 </svg>
 </g>
 <g class="dev" data-key="indexer-tunnel-bottom" data-layer="can_s1" data-systems="can power" data-open="0">
-<svg x="190.75" y="41.50" width="22.449" height="25.945" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="193.13" y="46.23" width="17.7" height="21.21" viewBox="-30.0 -28.0 60.0 71.9" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
-<path d="M -19.6 22.7 A 30.05 30.05 0 1 1 19.6 22.7 L 7.5 33.4 L -7.5 33.4 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M -14.1995 -24.641 L 14.1995 -24.641" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M -18.46 -21.035 L 18.46 -21.035" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M -21.4792 -17.429 L 21.4792 -17.429" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M -23.682 -13.823 L 23.682 -13.823" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M -25.2598 -10.217 L 25.2598 -10.217" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M -26.3138 -6.611 L 26.3138 -6.611" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
-<text x="0" y="3.9" font-size="3" fill="#f0f3f6" text-anchor="middle" font-weight="bold">TALON FX</text>
-<rect x="-27.85" y="6.1" width="5.5" height="1.6" rx="0.4" fill="#f0883e"/>
-<rect x="22.35" y="6.1" width="5.5" height="1.6" rx="0.4" fill="#f0883e"/>
-<path d="M -14.2 12.9 L -14.2 45.4" fill="none" stroke="#8c959f" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M -14.2 12.9 L -14.2 45.4" fill="none" stroke="#0d1117" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M 14.2 12.9 L 14.2 45.4" fill="none" stroke="#8c959f" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M 14.2 12.9 L 14.2 45.4" fill="none" stroke="#cf222e" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M -6.5 18.2 L -6.5 45.4" fill="none" stroke="#8c959f" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M -6.5 18.2 L -6.5 45.4" fill="none" stroke="#e3b341" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M 6.5 18.2 L 6.5 45.4" fill="none" stroke="#8c959f" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M 6.5 18.2 L 6.5 45.4" fill="none" stroke="#2da44e" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="-14.2" cy="12.9" r="3.45" fill="#0d1117" stroke="#8c959f" stroke-width="0.3"/>
-<text x="-14.2" y="14" font-size="3" fill="#f0f3f6" text-anchor="middle" font-weight="bold">−</text>
-<circle cx="14.2" cy="12.9" r="3.45" fill="#cf222e" stroke="#8c959f" stroke-width="0.3"/>
-<text x="14.2" y="14" font-size="3" fill="#f0f3f6" text-anchor="middle" font-weight="bold">+</text>
-<circle cx="-6.5" cy="18.2" r="2.6" fill="#e3b341" stroke="#8c959f" stroke-width="0.3"/>
-<text x="-6.5" y="19.3" font-size="2.6" fill="#1f2328" text-anchor="middle" font-weight="bold">H</text>
-<circle cx="6.5" cy="18.2" r="2.6" fill="#2da44e" stroke="#8c959f" stroke-width="0.3"/>
-<text x="6.5" y="19.3" font-size="2.6" fill="#f0f3f6" text-anchor="middle" font-weight="bold">L</text>
+<path d="M -15.6 15.6 A 22 22 0 1 1 15.6 15.6 L 5.5 25.4 L -5.5 25.4 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -9.592 -18.04 L 9.592 -18.04" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -12.7111 -15.4 L 12.7111 -15.4" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -14.9216 -12.76 L 14.9216 -12.76" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -16.5342 -10.12 L 16.5342 -10.12" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -17.6894 -7.48 L 17.6894 -7.48" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -18.461 -4.84 L 18.461 -4.84" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="0" y="-1.5" font-size="2.5" fill="#f0f3f6" text-anchor="middle" font-weight="bold">TALON FX</text>
+<rect x="-19.5" y="-1.1" width="1.6" height="5.2" rx="0.4" fill="#f0883e"/>
+<rect x="17.9" y="-1.1" width="1.6" height="5.2" rx="0.4" fill="#f0883e"/>
+<path d="M -11.8 10.1 L -11.8 37.4" fill="none" stroke="#8c959f" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -11.8 10.1 L -11.8 37.4" fill="none" stroke="#0d1117" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 11.9 10.1 L 11.9 37.4" fill="none" stroke="#8c959f" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 11.9 10.1 L 11.9 37.4" fill="none" stroke="#cf222e" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -6.3 16.2 L -6.3 37.4" fill="none" stroke="#8c959f" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -6.3 16.2 L -6.3 37.4" fill="none" stroke="#e3b341" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 6.4 16.2 L 6.4 37.4" fill="none" stroke="#8c959f" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 6.4 16.2 L 6.4 37.4" fill="none" stroke="#2da44e" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="-11.8" cy="10.1" r="3.4" fill="#0d1117" stroke="#8c959f" stroke-width="0.3"/>
+<text x="-11.8" y="11.2" font-size="3" fill="#f0f3f6" text-anchor="middle" font-weight="bold">−</text>
+<circle cx="11.9" cy="10.1" r="3.4" fill="#cf222e" stroke="#8c959f" stroke-width="0.3"/>
+<text x="11.9" y="11.2" font-size="3" fill="#f0f3f6" text-anchor="middle" font-weight="bold">+</text>
+<circle cx="-6.3" cy="16.2" r="2.6" fill="#e3b341" stroke="#8c959f" stroke-width="0.3"/>
+<text x="-6.3" y="17.3" font-size="2.6" fill="#1f2328" text-anchor="middle" font-weight="bold">H</text>
+<circle cx="6.4" cy="16.2" r="2.6" fill="#2da44e" stroke="#8c959f" stroke-width="0.3"/>
+<text x="6.4" y="17.3" font-size="2.6" fill="#f0f3f6" text-anchor="middle" font-weight="bold">L</text>
 
 
 
@@ -1067,34 +1109,34 @@
 </svg>
 </g>
 <g class="dev" data-key="indexer-tunnel-top" data-layer="can_s1" data-systems="can power" data-open="0">
-<svg x="249.95" y="41.50" width="22.449" height="25.945" viewBox="-38.05 -36.05 76.1 87.95" overflow="visible" font-family="Helvetica, Arial, sans-serif">
+<svg x="252.33" y="46.23" width="17.7" height="21.21" viewBox="-30.0 -28.0 60.0 71.9" overflow="visible" font-family="Helvetica, Arial, sans-serif">
 
-<path d="M -19.6 22.7 A 30.05 30.05 0 1 1 19.6 22.7 L 7.5 33.4 L -7.5 33.4 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M -14.1995 -24.641 L 14.1995 -24.641" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M -18.46 -21.035 L 18.46 -21.035" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M -21.4792 -17.429 L 21.4792 -17.429" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M -23.682 -13.823 L 23.682 -13.823" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M -25.2598 -10.217 L 25.2598 -10.217" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M -26.3138 -6.611 L 26.3138 -6.611" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
-<text x="0" y="3.9" font-size="3" fill="#f0f3f6" text-anchor="middle" font-weight="bold">TALON FX</text>
-<rect x="-27.85" y="6.1" width="5.5" height="1.6" rx="0.4" fill="#f0883e"/>
-<rect x="22.35" y="6.1" width="5.5" height="1.6" rx="0.4" fill="#f0883e"/>
-<path d="M -14.2 12.9 L -14.2 45.4" fill="none" stroke="#8c959f" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M -14.2 12.9 L -14.2 45.4" fill="none" stroke="#0d1117" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M 14.2 12.9 L 14.2 45.4" fill="none" stroke="#8c959f" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M 14.2 12.9 L 14.2 45.4" fill="none" stroke="#cf222e" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M -6.5 18.2 L -6.5 45.4" fill="none" stroke="#8c959f" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M -6.5 18.2 L -6.5 45.4" fill="none" stroke="#e3b341" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M 6.5 18.2 L 6.5 45.4" fill="none" stroke="#8c959f" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M 6.5 18.2 L 6.5 45.4" fill="none" stroke="#2da44e" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="-14.2" cy="12.9" r="3.45" fill="#0d1117" stroke="#8c959f" stroke-width="0.3"/>
-<text x="-14.2" y="14" font-size="3" fill="#f0f3f6" text-anchor="middle" font-weight="bold">−</text>
-<circle cx="14.2" cy="12.9" r="3.45" fill="#cf222e" stroke="#8c959f" stroke-width="0.3"/>
-<text x="14.2" y="14" font-size="3" fill="#f0f3f6" text-anchor="middle" font-weight="bold">+</text>
-<circle cx="-6.5" cy="18.2" r="2.6" fill="#e3b341" stroke="#8c959f" stroke-width="0.3"/>
-<text x="-6.5" y="19.3" font-size="2.6" fill="#1f2328" text-anchor="middle" font-weight="bold">H</text>
-<circle cx="6.5" cy="18.2" r="2.6" fill="#2da44e" stroke="#8c959f" stroke-width="0.3"/>
-<text x="6.5" y="19.3" font-size="2.6" fill="#f0f3f6" text-anchor="middle" font-weight="bold">L</text>
+<path d="M -15.6 15.6 A 22 22 0 1 1 15.6 15.6 L 5.5 25.4 L -5.5 25.4 Z" fill="#3a3f47" stroke="#1f2328" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -9.592 -18.04 L 9.592 -18.04" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -12.7111 -15.4 L 12.7111 -15.4" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -14.9216 -12.76 L 14.9216 -12.76" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -16.5342 -10.12 L 16.5342 -10.12" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -17.6894 -7.48 L 17.6894 -7.48" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -18.461 -4.84 L 18.461 -4.84" fill="none" stroke="#4a515b" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="0" y="-1.5" font-size="2.5" fill="#f0f3f6" text-anchor="middle" font-weight="bold">TALON FX</text>
+<rect x="-19.5" y="-1.1" width="1.6" height="5.2" rx="0.4" fill="#f0883e"/>
+<rect x="17.9" y="-1.1" width="1.6" height="5.2" rx="0.4" fill="#f0883e"/>
+<path d="M -11.8 10.1 L -11.8 37.4" fill="none" stroke="#8c959f" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -11.8 10.1 L -11.8 37.4" fill="none" stroke="#0d1117" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 11.9 10.1 L 11.9 37.4" fill="none" stroke="#8c959f" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 11.9 10.1 L 11.9 37.4" fill="none" stroke="#cf222e" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -6.3 16.2 L -6.3 37.4" fill="none" stroke="#8c959f" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M -6.3 16.2 L -6.3 37.4" fill="none" stroke="#e3b341" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 6.4 16.2 L 6.4 37.4" fill="none" stroke="#8c959f" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 6.4 16.2 L 6.4 37.4" fill="none" stroke="#2da44e" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="-11.8" cy="10.1" r="3.4" fill="#0d1117" stroke="#8c959f" stroke-width="0.3"/>
+<text x="-11.8" y="11.2" font-size="3" fill="#f0f3f6" text-anchor="middle" font-weight="bold">−</text>
+<circle cx="11.9" cy="10.1" r="3.4" fill="#cf222e" stroke="#8c959f" stroke-width="0.3"/>
+<text x="11.9" y="11.2" font-size="3" fill="#f0f3f6" text-anchor="middle" font-weight="bold">+</text>
+<circle cx="-6.3" cy="16.2" r="2.6" fill="#e3b341" stroke="#8c959f" stroke-width="0.3"/>
+<text x="-6.3" y="17.3" font-size="2.6" fill="#1f2328" text-anchor="middle" font-weight="bold">H</text>
+<circle cx="6.4" cy="16.2" r="2.6" fill="#2da44e" stroke="#8c959f" stroke-width="0.3"/>
+<text x="6.4" y="17.3" font-size="2.6" fill="#f0f3f6" text-anchor="middle" font-weight="bold">L</text>
 
 
 
@@ -1953,18 +1995,18 @@
 <path d="M 157.10 114.43 L 157.10 104.66 L 184.98 104.66 L 184.98 70.45 L 201.51 70.45 L 201.51 65.53 L 202.45 65.53 L 202.45 70.45 L 232.23 70.45 L 232.23 65.53 L 233.17 65.53 L 233.17 70.45 L 260.70 70.45 L 260.70 65.53 L 261.65 65.53 L 261.65 70.45 L 275.43 70.45" fill="none" stroke-linejoin="round" stroke="#2da44e" stroke-width="1" stroke-dasharray="2.4 2.4"/>
 <rect x="275.43" y="67.45" width="15.00" height="6.00" rx="1" fill="#ffffff" stroke="#1f2328" stroke-width="0.6"/>
 <text x="282.93" y="71.55" font-size="2.8" fill="#1f2328" text-anchor="middle" font-weight="bold">120 Ω</text>
-<path d="M 201.51 65.53 L 200.06 65.53" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 201.51 65.53 L 200.06 65.53" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 202.45 65.53 L 203.89 65.53" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 202.45 65.53 L 203.89 65.53" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 201.51 65.53 L 200.12 65.53" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 201.51 65.53 L 200.12 65.53" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 202.45 65.53 L 203.87 65.53" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 202.45 65.53 L 203.87 65.53" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
 <path d="M 232.23 65.53 L 230.78 65.53" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
 <path d="M 232.23 65.53 L 230.78 65.53" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
 <path d="M 233.17 65.53 L 234.62 65.53" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
 <path d="M 233.17 65.53 L 234.62 65.53" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 260.70 65.53 L 259.26 65.53" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 260.70 65.53 L 259.26 65.53" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-<path d="M 261.65 65.53 L 263.09 65.53" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-<path d="M 261.65 65.53 L 263.09 65.53" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 260.70 65.53 L 259.32 65.53" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 260.70 65.53 L 259.32 65.53" stroke="#e3b341" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+<path d="M 261.65 65.53 L 263.06 65.53" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<path d="M 261.65 65.53 L 263.06 65.53" stroke="#2da44e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
 </g>
 <g data-layer="can_s4" data-info="can">
 <path d="M 169.22 114.43 L 169.22 102.66 L 180.48 102.66 L 180.48 25.00 L 293.43 25.00 L 293.43 70.45 L 308.95 70.45 L 308.95 65.53 L 309.90 65.53 L 309.90 70.45 L 338.20 70.45 L 338.20 65.53 L 339.15 65.53 L 339.15 70.45 L 366.68 70.45 L 366.68 65.53 L 367.62 65.53 L 367.62 70.45 L 381.38 70.45" fill="none" stroke-linejoin="round" stroke="#1f2328" stroke-width="2" stroke-linecap="round"/>
@@ -2076,30 +2118,33 @@
 <path d="M 153.05 114.43 L 153.05 110.66 L 128.96 110.66 L 128.96 120.47 L 64.93 120.47 L 64.93 117.76" fill="none" stroke-linejoin="round" stroke="#2da44e" stroke-width="1" stroke-dasharray="2.4 2.4"/>
 </g>
 <g data-layer="network" data-info="network">
-<path d="M 174.71 122.93 L 175.91 122.93 L 175.91 225.81 L 90.14 225.81 L 90.14 254.96 L 86.35 254.96" fill="none" stroke-linejoin="round" stroke="#0969da" stroke-width="0.9" stroke-linecap="round"/>
-<path d="M 51.27 257.47 L 49.77 257.47 L 49.77 268.40 L 97.23 268.40 L 97.23 248.84 L 98.73 248.84" fill="none" stroke-linejoin="round" stroke="#0969da" stroke-width="0.9" stroke-linecap="round"/>
-<path d="M 86.35 259.09 L 87.85 259.09 L 87.85 267.20 L 220.98 267.20 L 220.98 248.84 L 222.48 248.84" fill="none" stroke-linejoin="round" stroke="#0969da" stroke-width="0.9" stroke-linecap="round"/>
+<path d="M 174.71 122.93 L 175.91 122.93 L 175.91 225.81 L 88.85 225.81 L 88.85 254.96 L 85.05 254.96" fill="none" stroke-linejoin="round" stroke="#0969da" stroke-width="0.9" stroke-linecap="round"/>
+<path d="M 49.98 257.47 L 48.48 257.47 L 48.48 268.40 L 94.65 268.40 L 94.65 248.84 L 96.15 248.84" fill="none" stroke-linejoin="round" stroke="#0969da" stroke-width="0.9" stroke-linecap="round"/>
+<path d="M 85.05 259.09 L 86.55 259.09 L 86.55 267.20 L 214.51 267.20 L 214.51 248.84 L 216.01 248.84" fill="none" stroke-linejoin="round" stroke="#0969da" stroke-width="0.9" stroke-linecap="round"/>
 </g>
 <g class="ds-tether" data-key="ds-laptop" data-layer="network" data-info="network">
-<path d="M 51.27 252.75 L 46.30 252.75 L 46.30 265.40 L 16.78 265.40 L 16.78 259.65 L 18.28 259.65" fill="none" stroke-linejoin="round" stroke="#0969da" stroke-width="0.9" stroke-linecap="round"/>
+<path d="M 49.98 252.75 L 45.65 252.75 L 45.65 265.40 L 16.78 265.40 L 16.78 259.65 L 18.28 259.65" fill="none" stroke-linejoin="round" stroke="#0969da" stroke-width="0.9" stroke-linecap="round"/>
 </g>
 <g class="usb" data-key="camera-front-left" data-layer="network" data-info="network">
-<path d="M 156.69 262.19 L 156.69 265.00 L 98.23 265.00 L 98.23 255.64 L 98.73 255.64" fill="none" stroke-linejoin="round" stroke="#8250df" stroke-width="0.6" stroke-dasharray="1.4 1"/>
+<path d="M 152.81 262.19 L 152.81 265.00 L 95.65 265.00 L 95.65 255.64 L 96.15 255.64" fill="none" stroke-linejoin="round" stroke="#8250df" stroke-width="0.6" stroke-dasharray="1.4 1"/>
 </g>
 <g class="usb" data-key="camera-side-left" data-layer="network" data-info="network">
-<path d="M 196.44 262.19 L 196.44 266.00 L 97.73 266.00 L 97.73 253.69 L 98.73 253.69" fill="none" stroke-linejoin="round" stroke="#8250df" stroke-width="0.6" stroke-dasharray="1.4 1"/>
+<path d="M 191.26 262.19 L 191.26 266.00 L 95.15 266.00 L 95.15 253.69 L 96.15 253.69" fill="none" stroke-linejoin="round" stroke="#8250df" stroke-width="0.6" stroke-dasharray="1.4 1"/>
 </g>
 <g class="usb" data-key="camera-front-right" data-layer="network" data-info="network">
-<path d="M 281.19 262.19 L 281.19 266.00 L 221.98 266.00 L 221.98 253.69 L 222.48 253.69" fill="none" stroke-linejoin="round" stroke="#8250df" stroke-width="0.6" stroke-dasharray="1.4 1"/>
+<path d="M 273.42 262.19 L 273.42 265.00 L 215.51 265.00 L 215.51 255.64 L 216.01 255.64" fill="none" stroke-linejoin="round" stroke="#8250df" stroke-width="0.6" stroke-dasharray="1.4 1"/>
+</g>
+<g class="usb" data-key="camera-side-right" data-layer="network" data-info="network">
+<path d="M 311.88 262.19 L 311.88 266.00 L 215.01 266.00 L 215.01 253.69 L 216.01 253.69" fill="none" stroke-linejoin="round" stroke="#8250df" stroke-width="0.6" stroke-dasharray="1.4 1"/>
 </g>
 <g class="power-cable" data-key="radio" data-layer="power" data-info="power" display="none">
-<path d="M 31.36 108.21 L 13.00 108.21 L 13.00 225.81 L 89.64 225.81 L 89.64 244.57 L 86.35 244.57 L 86.35 251.05" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
+<path d="M 31.36 108.21 L 13.00 108.21 L 13.00 225.81 L 88.35 225.81 L 88.35 244.57 L 85.05 244.57 L 85.05 251.05" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
 </g>
 <g class="power-cable" data-key="left-pi" data-layer="power" data-info="power" display="none">
-<path d="M 42.89 212.34 L 92.64 212.34 L 92.64 230.61 L 93.14 230.61 L 93.14 242.90 L 108.62 242.90 L 108.62 245.08" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-dasharray="1.4 1"/>
+<path d="M 42.89 212.34 L 91.35 212.34 L 91.35 230.61 L 90.56 230.61 L 90.56 242.90 L 106.03 242.90 L 106.03 245.08" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-dasharray="1.4 1"/>
 </g>
 <g class="power-cable" data-key="right-pi" data-layer="power" data-info="power" display="none">
-<path d="M 42.89 187.93 L 93.84 187.93 L 93.84 229.41 L 216.14 229.41 L 216.14 242.90 L 232.37 242.90 L 232.37 245.08" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-dasharray="1.4 1"/>
+<path d="M 42.89 187.93 L 92.55 187.93 L 92.55 229.41 L 209.67 229.41 L 209.67 242.90 L 225.89 242.90 L 225.89 245.08" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-dasharray="1.4 1"/>
 </g>
 <g class="power-cable" data-key="zinc-v-2" data-layer="power" data-info="power" display="none">
 <path d="M 22.83 210.84 L 19.50 210.84 L 19.50 187.43 L 22.83 187.43" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
@@ -2111,13 +2156,13 @@
 <path d="M 24.76 110.81 L 13.00 110.81 L 13.00 169.03 L 128.96 169.03 L 128.96 111.16 L 143.76 111.16 L 143.76 114.43" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
 </g>
 <g class="power-cable" data-key="indexer-tunnel-bottom" data-layer="power" data-info="power" display="none">
-<path d="M 16.84 66.20 L 13.00 66.20 L 13.00 169.03 L 128.96 169.03 L 128.96 70.45 L 206.17 70.45 L 206.17 65.53" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
+<path d="M 16.84 66.20 L 13.00 66.20 L 13.00 169.03 L 128.96 169.03 L 128.96 70.45 L 205.49 70.45 L 205.49 65.53" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
 </g>
 <g class="power-cable" data-key="indexer-roller" data-layer="power" data-info="power" display="none">
 <path d="M 23.44 70.77 L 13.00 70.77 L 13.00 169.03 L 128.96 169.03 L 128.96 70.45 L 236.89 70.45 L 236.89 65.53" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6" stroke-dasharray="1.4 1"/>
 </g>
 <g class="power-cable" data-key="indexer-tunnel-top" data-layer="power" data-info="power" display="none">
-<path d="M 20.80 75.49 L 13.00 75.49 L 13.00 169.03 L 128.96 169.03 L 128.96 70.45 L 265.37 70.45 L 265.37 65.53" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
+<path d="M 20.80 75.49 L 13.00 75.49 L 13.00 169.03 L 128.96 169.03 L 128.96 70.45 L 264.69 70.45 L 264.69 65.53" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
 </g>
 <g class="power-cable" data-key="intake-rack-turret-side" data-layer="power" data-info="power" display="none">
 <path d="M 125.76 66.20 L 128.96 66.20 L 128.96 70.45 L 312.94 70.45 L 312.94 65.53" fill="none" stroke-linejoin="round" stroke="#cf222e" stroke-width="0.6"/>
@@ -2279,49 +2324,52 @@
 <text x="27.75" y="243.65" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10.21.2.200</text>
 </g>
 <g class="dev-label" data-layer="network" data-systems="power network" data-key="radio" data-open="0">
-<text x="68.82" y="237.37" font-size="2.5" fill="#1f2328" text-anchor="middle">VH-109 radio</text>
+<text x="67.53" y="237.37" font-size="2.5" fill="#1f2328" text-anchor="middle">VH-109 radio</text>
 </g>
 <g class="dev-label" data-layer="network" data-info="network" data-key="radio" data-open="0">
-<rect x="53.11" y="238.37" width="23.46" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="64.84" y="242.47" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10.21.2.1</text>
+<rect x="51.81" y="238.37" width="23.46" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="63.54" y="242.47" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10.21.2.1</text>
 </g>
 <g class="dev-tag" data-layer="power" data-info="power" data-key="radio" data-open="0">
-<rect x="77.57" y="238.37" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
-<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(78.77 240.30) scale(0.1170)"/>
-<text x="81.78" y="242.17" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">22</text>
+<rect x="76.27" y="238.37" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(77.47 240.30) scale(0.1170)"/>
+<text x="80.48" y="242.17" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">22</text>
 </g>
 <g class="dev-label" data-layer="network" data-systems="power network" data-key="left-pi" data-open="1" data-open-in="power network">
-<text x="112.89" y="235.60" font-size="2.5" fill="#1f2328" text-anchor="middle">Orange Pi 5 Pro · left-pi</text>
+<text x="110.31" y="235.60" font-size="2.5" fill="#1f2328" text-anchor="middle">Orange Pi 5 Pro · left-pi</text>
 </g>
 <g class="dev-label" data-layer="network" data-info="network" data-key="left-pi" data-open="1" data-open-in="power network">
-<rect x="96.01" y="236.60" width="25.80" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="108.91" y="240.70" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10.21.2.12</text>
+<rect x="93.42" y="236.60" width="25.80" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="106.32" y="240.70" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10.21.2.12</text>
 </g>
 <g class="dev-tag" data-layer="power" data-info="power" data-key="left-pi" data-open="1" data-open-in="power network">
-<rect x="122.81" y="236.60" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
-<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(124.01 238.53) scale(0.1170)"/>
-<text x="127.02" y="240.40" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">21</text>
+<rect x="120.22" y="236.60" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(121.42 238.53) scale(0.1170)"/>
+<text x="124.43" y="240.40" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">21</text>
 </g>
 <g class="dev-label" data-layer="network" data-systems="network" data-key="camera-front-left" data-open="1" data-open-in="network">
-<text x="154.89" y="235.31" font-size="2.5" fill="#1f2328" text-anchor="middle">front_left · back right</text>
+<text x="151.01" y="235.31" font-size="2.5" fill="#1f2328" text-anchor="middle">front_left · back right</text>
 </g>
 <g class="dev-label" data-layer="network" data-systems="network" data-key="camera-side-left" data-open="1" data-open-in="network">
-<text x="194.64" y="235.31" font-size="2.5" fill="#1f2328" text-anchor="middle">side_left · side right</text>
+<text x="189.47" y="235.31" font-size="2.5" fill="#1f2328" text-anchor="middle">side_left · side right</text>
 </g>
 <g class="dev-label" data-layer="network" data-systems="power network" data-key="right-pi" data-open="1" data-open-in="power network">
-<text x="236.64" y="235.60" font-size="2.5" fill="#1f2328" text-anchor="middle">Orange Pi 5 Pro · right-pi</text>
+<text x="230.17" y="235.60" font-size="2.5" fill="#1f2328" text-anchor="middle">Orange Pi 5 Pro · right-pi</text>
 </g>
 <g class="dev-label" data-layer="network" data-info="network" data-key="right-pi" data-open="1" data-open-in="power network">
-<rect x="219.76" y="236.60" width="25.80" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="232.66" y="240.70" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10.21.2.11</text>
+<rect x="213.28" y="236.60" width="25.80" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="226.18" y="240.70" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">10.21.2.11</text>
 </g>
 <g class="dev-tag" data-layer="power" data-info="power" data-key="right-pi" data-open="1" data-open-in="power network">
-<rect x="246.56" y="236.60" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
-<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(247.76 238.53) scale(0.1170)"/>
-<text x="250.77" y="240.40" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">21</text>
+<rect x="240.08" y="236.60" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(241.28 238.53) scale(0.1170)"/>
+<text x="244.30" y="240.40" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">21</text>
 </g>
 <g class="dev-label" data-layer="network" data-systems="network" data-key="camera-front-right" data-open="1" data-open-in="network">
-<text x="279.39" y="235.31" font-size="2.5" fill="#1f2328" text-anchor="middle">front_right · back left</text>
+<text x="271.63" y="235.31" font-size="2.5" fill="#1f2328" text-anchor="middle">front_right · back left</text>
+</g>
+<g class="dev-label" data-layer="network" data-systems="network" data-key="camera-side-right" data-open="1" data-open-in="network">
+<text x="310.08" y="235.31" font-size="2.5" fill="#1f2328" text-anchor="middle">side_right · side left</text>
 </g>
 <g data-layer="power" data-systems="power">
 <text x="12.00" y="29.80" font-size="3.2" fill="#1f2328" text-anchor="start" font-weight="bold">Power · PDH channels in port order</text>
@@ -2454,16 +2502,16 @@
 <text x="188.48" y="29.80" font-size="3.2" fill="#1f2328" text-anchor="start" font-weight="bold">can_s1 · Indexer</text>
 </g>
 <g class="dev-label" data-layer="can_s1" data-systems="can power" data-key="indexer-tunnel-bottom" data-open="0">
-<text x="201.98" y="33.50" font-size="2.5" fill="#1f2328" text-anchor="middle">Bottom belt tunnel</text>
+<text x="201.98" y="38.23" font-size="2.5" fill="#1f2328" text-anchor="middle">Bottom belt tunnel</text>
 </g>
 <g class="dev-label" data-layer="can_s1" data-info="can" data-key="indexer-tunnel-bottom" data-open="0">
-<rect x="194.45" y="34.50" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="197.99" y="38.60" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">32</text>
+<rect x="194.45" y="39.23" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="197.99" y="43.33" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">32</text>
 </g>
 <g class="dev-tag" data-layer="power" data-info="power" data-key="indexer-tunnel-bottom" data-open="0">
-<rect x="202.53" y="34.50" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
-<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(203.73 36.43) scale(0.1170)"/>
-<text x="206.74" y="38.30" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">12</text>
+<rect x="202.53" y="39.23" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(203.73 41.16) scale(0.1170)"/>
+<text x="206.74" y="43.03" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">12</text>
 </g>
 <g class="dev-label" data-layer="can_s1" data-systems="can power" data-key="indexer-roller" data-open="1" data-open-in="power">
 <text x="232.70" y="33.50" font-size="2.5" fill="#1f2328" text-anchor="middle">Roller drive</text>
@@ -2478,16 +2526,16 @@
 <text x="237.47" y="38.30" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">13?</text>
 </g>
 <g class="dev-label" data-layer="can_s1" data-systems="can power" data-key="indexer-tunnel-top" data-open="0">
-<text x="261.18" y="33.50" font-size="2.5" fill="#1f2328" text-anchor="middle">Top belt tunnel</text>
+<text x="261.18" y="38.23" font-size="2.5" fill="#1f2328" text-anchor="middle">Top belt tunnel</text>
 </g>
 <g class="dev-label" data-layer="can_s1" data-info="can" data-key="indexer-tunnel-top" data-open="0">
-<rect x="253.65" y="34.50" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
-<text x="257.19" y="38.60" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">31</text>
+<rect x="253.65" y="39.23" width="7.08" height="5.50" rx="1.2" fill="#1f2328"/>
+<text x="257.19" y="43.33" font-size="3.9" fill="#ffffff" text-anchor="middle" font-weight="bold">31</text>
 </g>
 <g class="dev-tag" data-layer="power" data-info="power" data-key="indexer-tunnel-top" data-open="0">
-<rect x="261.73" y="34.50" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
-<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(262.93 36.43) scale(0.1170)"/>
-<text x="265.94" y="38.30" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">14</text>
+<rect x="261.73" y="39.23" width="6.97" height="5.50" rx="2.7" fill="#cf222e"/>
+<path class="bolt" d="M6.5 0L1 9H4.6L3.4 16L9 6.6H5.4L7.4 0Z" fill="#ffffff" transform="translate(262.93 41.16) scale(0.1170)"/>
+<text x="265.94" y="43.03" font-size="2.6" fill="#ffffff" text-anchor="middle" font-weight="bold">14</text>
 </g>
 <g data-layer="can_s4" data-systems="can">
 <text x="297.43" y="29.80" font-size="3.2" fill="#1f2328" text-anchor="start" font-weight="bold">can_s4 · Intake</text>
@@ -2766,22 +2814,25 @@
 <rect x="10.50" y="234.55" width="34.50" height="31.35" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="radio" data-layer="network" display="none">
-<rect x="48.00" y="233.37" width="41.64" height="32.53" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="46.71" y="233.37" width="41.64" height="32.53" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="left-pi" data-layer="network" display="none">
-<rect x="92.64" y="231.60" width="40.50" height="34.30" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="90.06" y="231.60" width="40.50" height="34.30" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="camera-front-left" data-layer="network" display="none">
-<rect x="136.14" y="231.31" width="37.50" height="34.59" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="132.26" y="231.31" width="37.50" height="34.59" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="camera-side-left" data-layer="network" display="none">
-<rect x="176.64" y="231.31" width="36.00" height="34.59" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="171.47" y="231.31" width="36.00" height="34.59" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="right-pi" data-layer="network" display="none">
-<rect x="215.64" y="231.60" width="42.00" height="34.30" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="209.17" y="231.60" width="42.00" height="34.30" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="camera-front-right" data-layer="network" display="none">
-<rect x="260.64" y="231.31" width="37.50" height="34.59" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="252.88" y="231.31" width="37.50" height="34.59" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+</g>
+<g class="hl" data-key="camera-side-right" data-layer="network" display="none">
+<rect x="292.08" y="231.31" width="36.00" height="34.59" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="pdh" data-layer="power" display="none">
 <rect x="52.46" y="37.50" width="41.64" height="82.97" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
@@ -2808,13 +2859,13 @@
 <rect x="135.22" y="162.15" width="39.00" height="45.21" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="indexer-tunnel-bottom" data-layer="can_s1" display="none">
-<rect x="186.98" y="29.50" width="30.00" height="39.45" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="186.98" y="34.23" width="30.00" height="34.71" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="indexer-roller" data-layer="can_s1" display="none">
 <rect x="219.98" y="29.50" width="25.45" height="39.45" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="indexer-tunnel-top" data-layer="can_s1" display="none">
-<rect x="248.43" y="29.50" width="25.50" height="39.45" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
+<rect x="248.43" y="34.23" width="25.50" height="34.71" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
 </g>
 <g class="hl" data-key="intake-rack-turret-side" data-layer="can_s4" display="none">
 <rect x="295.93" y="34.23" width="27.00" height="34.71" rx="1.5" fill="none" stroke="#bf3989" stroke-width="0.8"/>
