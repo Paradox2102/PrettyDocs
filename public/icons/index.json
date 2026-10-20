@@ -20,7 +20,7 @@
   {
    "id": "motors",
    "name": "Motors",
-   "count": 10
+   "count": 12
   },
   {
    "id": "communication",
@@ -2378,6 +2378,56 @@
    ]
   },
   {
+   "slug": "kraken-x44-powerpole-flipped",
+   "name": "Kraken X44 + Flipped PowerPole Adapter Board (low profile)",
+   "type": "motors",
+   "vendor": "wcp",
+   "vendor_name": "WestCoast Products",
+   "part_number": "WCP-1904-001 (flipped adapter board) + WCP-1904-002 (cover), fitted on a Kraken X44 (WCP-0941)",
+   "status": "current",
+   "path": "motors/wcp/kraken-x44-powerpole-flipped.svg",
+   "size_mm": [
+    80,
+    88.3
+   ],
+   "view_box": [
+    -40,
+    -27,
+    80,
+    99.5
+   ],
+   "anchors": [
+    {
+     "port": "power",
+     "x": 0,
+     "y": 50.8,
+     "kind": "power",
+     "label": "PP45 power in: red housing + (right), black housing − (left); mates Powerwerx 1327 red / 1327G6 black"
+    },
+    {
+     "port": "can_a",
+     "x": -24.98,
+     "y": 27.28,
+     "kind": "can",
+     "label": "2-pin male Molex SL: CAN H (yellow) / CAN L (green), one in or out of the daisy chain (mates Molex 50579402)"
+    },
+    {
+     "port": "can_b",
+     "x": -19.58,
+     "y": 32.98,
+     "kind": "can",
+     "label": "2-pin male Molex SL: CAN H (yellow) / CAN L (green), one in or out of the daisy chain (mates Molex 50579402)"
+    },
+    {
+     "port": "can_power",
+     "x": 21.97,
+     "y": 30.07,
+     "kind": "can",
+     "label": "4-pin male Molex SL, pins: − (GND), CAN H, CAN L, + (12 V): CAN plus 12 V for a CANcoder (mates Molex 50579404)"
+    }
+   ]
+  },
+  {
    "slug": "kraken-x44",
    "name": "Kraken X44 Powered by Talon FX",
    "type": "motors",
@@ -2431,6 +2481,70 @@
      "y": 37.4,
      "kind": "can",
      "label": "CAN pair in/out (H/L terminals take two rings each)"
+    }
+   ]
+  },
+  {
+   "slug": "kraken-x60-powerpole",
+   "name": "Kraken X60 + PowerPole Adapter Board",
+   "type": "motors",
+   "vendor": "wcp",
+   "vendor_name": "WestCoast Products",
+   "part_number": "WCP-1380-901 (adapter board) + WCP-1380-001 (cover), fitted on a Kraken X60 (WCP-0940)",
+   "status": "current",
+   "path": "motors/wcp/kraken-x60-powerpole.svg",
+   "size_mm": [
+    80,
+    102.8
+   ],
+   "view_box": [
+    -40,
+    -34,
+    80,
+    114
+   ],
+   "anchors": [
+    {
+     "port": "power",
+     "x": 0,
+     "y": 58.3,
+     "kind": "power",
+     "label": "PP45 power in: red housing + (right), black housing − (left); mates Powerwerx 1327 red / 1327G6 black"
+    },
+    {
+     "port": "can_power",
+     "x": 0,
+     "y": 31.2,
+     "kind": "can",
+     "label": "4-pin male Molex SL, pins left to right: − (GND), CAN H, CAN L, + (12 V): CAN plus 12 V for a CANcoder (mates Molex 50579404)"
+    },
+    {
+     "port": "can_a",
+     "x": -20.52,
+     "y": 39.62,
+     "kind": "can",
+     "label": "2-pin male Molex SL: CAN H (yellow) / CAN L (green), one in or out of the daisy chain (mates Molex 50579402)"
+    },
+    {
+     "port": "can_b",
+     "x": 20.52,
+     "y": 39.62,
+     "kind": "can",
+     "label": "2-pin male Molex SL: CAN H (yellow) / CAN L (green), one in or out of the daisy chain (mates Molex 50579402)"
+    },
+    {
+     "port": "can_c",
+     "x": -3.48,
+     "y": 27.0,
+     "kind": "can",
+     "label": "Weidmuller poles 1-2: L (green) then H (yellow), CAN pair wired straight to the Talon FX CAN screws"
+    },
+    {
+     "port": "can_d",
+     "x": 3.48,
+     "y": 27.0,
+     "kind": "can",
+     "label": "Weidmuller poles 3-4: L (green) then H (yellow), CAN pair wired straight to the Talon FX CAN screws"
     }
    ]
   },

@@ -23,7 +23,7 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 - [Robot controllers](#robot-controllers) (2)
 - [Power](#power) (10)
 - [Motor controllers](#motor-controllers) (7)
-- [Motors](#motors) (10)
+- [Motors](#motors) (12)
 - [Radio and CAN](#radio-and-can) (8)
 - [Lights](#lights) (3)
 - [Sensors and encoders](#sensors-and-encoders) (17)
@@ -77,7 +77,9 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 | <img src="motors/rev/neo.svg" alt="" height="64"> | [neo.svg](motors/rev/neo.svg) | NEO Brushless Motor V1.1 | REV Robotics | legacy (not sold) |
 | <img src="motors/rev/neo-vortex-spark-flex.svg" alt="" height="64"> | [neo-vortex-spark-flex.svg](motors/rev/neo-vortex-spark-flex.svg) | NEO Vortex + SPARK Flex | REV Robotics | current |
 | <img src="motors/rev/smart-robot-servo.svg" alt="" height="64"> | [smart-robot-servo.svg](motors/rev/smart-robot-servo.svg) | Smart Robot Servo V2 (Balanced REV-41-3334, UltraSpeed REV-41-3336) | REV Robotics | current |
+| <img src="motors/wcp/kraken-x44-powerpole-flipped.svg" alt="" height="64"> | [kraken-x44-powerpole-flipped.svg](motors/wcp/kraken-x44-powerpole-flipped.svg) | Kraken X44 + Flipped PowerPole Adapter Board (low profile) | WestCoast Products | current |
 | <img src="motors/wcp/kraken-x44.svg" alt="" height="64"> | [kraken-x44.svg](motors/wcp/kraken-x44.svg) | Kraken X44 Powered by Talon FX | WestCoast Products | current |
+| <img src="motors/wcp/kraken-x60-powerpole.svg" alt="" height="64"> | [kraken-x60-powerpole.svg](motors/wcp/kraken-x60-powerpole.svg) | Kraken X60 + PowerPole Adapter Board | WestCoast Products | current |
 | <img src="motors/wcp/kraken-x60.svg" alt="" height="64"> | [kraken-x60.svg](motors/wcp/kraken-x60.svg) | Kraken X60 Powered by Talon FX | WestCoast Products | current |
 
 ## Radio and CAN
