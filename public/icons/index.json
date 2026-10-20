@@ -25,7 +25,7 @@
   {
    "id": "communication",
    "name": "Radio and CAN",
-   "count": 4
+   "count": 8
   },
   {
    "id": "lights",
@@ -35,12 +35,12 @@
   {
    "id": "sensors",
    "name": "Sensors and encoders",
-   "count": 16
+   "count": 17
   },
   {
    "id": "vision",
    "name": "Vision and coprocessors",
-   "count": 11
+   "count": 12
   },
   {
    "id": "pneumatics",
@@ -2613,6 +2613,171 @@
    ]
   },
   {
+   "slug": "swyft-canender-molex",
+   "name": "SWYFT CANender (Molex SL)",
+   "type": "communication",
+   "vendor": "swyft",
+   "vendor_name": "SWYFT Robotics",
+   "part_number": "SR-CAN-40 (single), SR-CAN-41 (4-pack)",
+   "status": "current",
+   "path": "communication/swyft/swyft-canender-molex.svg",
+   "size_mm": [
+    64,
+    51.5
+   ],
+   "view_box": [
+    -32,
+    -12,
+    64,
+    58
+   ],
+   "anchors": [
+    {
+     "port": "can",
+     "x": 0,
+     "y": 28,
+     "kind": "can",
+     "label": "Molex SL 2-circuit: CAN H and CAN L (mating housing 50579402, 22-24 AWG terminals)"
+    }
+   ]
+  },
+  {
+   "slug": "swyft-canender-wago",
+   "name": "SWYFT CANender (Wago)",
+   "type": "communication",
+   "vendor": "swyft",
+   "vendor_name": "SWYFT Robotics",
+   "part_number": "SR-CAN-30 (single), SR-CAN-31 (4-pack)",
+   "status": "current",
+   "path": "communication/swyft/swyft-canender-wago.svg",
+   "size_mm": [
+    64,
+    43.5
+   ],
+   "view_box": [
+    -32,
+    -12,
+    64,
+    50
+   ],
+   "anchors": [
+    {
+     "port": "can",
+     "x": 0,
+     "y": 22,
+     "kind": "can",
+     "label": "Wago lever terminal: CAN H and CAN L wire entries (26-16 AWG, strip 0.33 in)"
+    }
+   ]
+  },
+  {
+   "slug": "swyft-direct-v2",
+   "name": "SWYFT CANnect Direct V2",
+   "type": "communication",
+   "vendor": "swyft",
+   "vendor_name": "SWYFT Robotics",
+   "part_number": "SR-CANNECT-V2-DIRECT (drawing SR-CAN-DIRECT-02)",
+   "status": "current",
+   "path": "communication/swyft/swyft-direct-v2.svg",
+   "size_mm": [
+    79,
+    58.5
+   ],
+   "view_box": [
+    -4,
+    -12,
+    79,
+    71
+   ],
+   "anchors": [
+    {
+     "port": "power",
+     "x": 40.95,
+     "y": -7.11,
+     "kind": "power",
+     "label": "Lever connector PWR | GND: 12 V and ground for sensors (max 1.5 A per module, do not power motors)"
+    },
+    {
+     "port": "can",
+     "x": 27.62,
+     "y": -7.11,
+     "kind": "can",
+     "label": "Lever connector YLW GRN | YLW GRN (top edge): two CAN pairs, CAN H yellow and CAN L green, stub 12 in or less"
+    },
+    {
+     "port": "can_b",
+     "x": 26.34,
+     "y": 40.0,
+     "kind": "can",
+     "label": "Lever connector YLW GRN | YLW GRN (bottom edge, left block): two CAN pairs, stub 12 in or less"
+    },
+    {
+     "port": "can_c",
+     "x": 43.35,
+     "y": 40.0,
+     "kind": "can",
+     "label": "Lever connector YLW GRN | YLW GRN (bottom edge, right block): two CAN pairs, stub 12 in or less"
+    },
+    {
+     "port": "ethernet",
+     "x": 1.4,
+     "y": 16.38,
+     "kind": "ethernet",
+     "label": "RJ45 CANNECT IN: CAN + 12 V (CANnect, not Ethernet)"
+    },
+    {
+     "port": "ethernet_out",
+     "x": 69.53,
+     "y": 16.38,
+     "kind": "ethernet",
+     "label": "RJ45 CANNECT OUT: CAN + 12 V (CANnect, not Ethernet)"
+    }
+   ]
+  },
+  {
+   "slug": "swyft-inject-v2",
+   "name": "SWYFT CANnect Inject V2",
+   "type": "communication",
+   "vendor": "swyft",
+   "vendor_name": "SWYFT Robotics",
+   "part_number": "SR-CANNECT-V2-INJECT (drawing SR-CAN-INJECT-02)",
+   "status": "current",
+   "path": "communication/swyft/swyft-inject-v2.svg",
+   "size_mm": [
+    66,
+    38.5
+   ],
+   "view_box": [
+    -21,
+    -3,
+    66,
+    50
+   ],
+   "anchors": [
+    {
+     "port": "power",
+     "x": -7.74,
+     "y": 11.75,
+     "kind": "power",
+     "label": "Lever connector PWR | GND: 12 V in from a fused circuit (22-24 AWG; max 1.5 A per module)"
+    },
+    {
+     "port": "can",
+     "x": -7.74,
+     "y": 19.37,
+     "kind": "can",
+     "label": "Lever connector YLW | GRN: robot CAN bus, CAN H (yellow) and CAN L (green)"
+    },
+    {
+     "port": "ethernet",
+     "x": 35.2,
+     "y": 16.15,
+     "kind": "ethernet",
+     "label": "RJ45: CAN + 12 V (CANnect, not Ethernet)"
+    }
+   ]
+  },
+  {
    "slug": "robot-radio-v2",
    "name": "Vivid-Hosting Robot Radio V2 (FRC Radio V2)",
    "type": "communication",
@@ -3626,6 +3791,49 @@
    ]
   },
   {
+   "slug": "swyft-sense-limit-switch",
+   "name": "SWYFT Sense Magnetic Limit Switch (V1.1)",
+   "type": "sensors",
+   "vendor": "swyft",
+   "vendor_name": "SWYFT Robotics",
+   "part_number": "SR-LIMIT-01",
+   "status": "current",
+   "path": "sensors/swyft/swyft-sense-limit-switch.svg",
+   "size_mm": [
+    76,
+    56.5
+   ],
+   "view_box": [
+    -14,
+    -5,
+    76,
+    70
+   ],
+   "anchors": [
+    {
+     "port": "gnd",
+     "x": 30.0,
+     "y": 8.0,
+     "kind": "signal",
+     "label": "JST PH 4-pin: GND"
+    },
+    {
+     "port": "vcc",
+     "x": 30.0,
+     "y": 15.5,
+     "kind": "power",
+     "label": "JST PH 4-pin: VCC (3.3-5 V)"
+    },
+    {
+     "port": "digital",
+     "x": 30.0,
+     "y": 23.0,
+     "kind": "signal",
+     "label": "JST PH 4-pin: Digital output, active low (LED on near a magnet)"
+    }
+   ]
+  },
+  {
    "slug": "thrifty-encoder",
    "name": "Thrifty Absolute Magnetic Encoder",
    "type": "sensors",
@@ -4251,6 +4459,35 @@
      "y": 45.8,
      "kind": "ethernet",
      "label": "Gigabit Ethernet RJ45 (PoE+ with a PoE+ HAT)"
+    }
+   ]
+  },
+  {
+   "slug": "swyft-usb-camera",
+   "name": "SWYFT USB Camera (OV9281-class, locking USB-C)",
+   "type": "vision",
+   "vendor": "swyft",
+   "vendor_name": "SWYFT Robotics",
+   "part_number": "SR-CAMERA-OV9281-USBC-01",
+   "status": "current",
+   "path": "vision/swyft/swyft-usb-camera.svg",
+   "size_mm": [
+    60,
+    96.5
+   ],
+   "view_box": [
+    -30,
+    -22,
+    60,
+    108
+   ],
+   "anchors": [
+    {
+     "port": "usb",
+     "x": 0,
+     "y": 66,
+     "kind": "usb",
+     "label": "Locking USB-C on the camera to USB-A (USB 2.0 UVC, 5 V from the host)"
     }
    ]
   },

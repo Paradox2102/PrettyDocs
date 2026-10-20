@@ -24,10 +24,10 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 - [Power](#power) (10)
 - [Motor controllers](#motor-controllers) (7)
 - [Motors](#motors) (10)
-- [Radio and CAN](#radio-and-can) (4)
+- [Radio and CAN](#radio-and-can) (8)
 - [Lights](#lights) (3)
-- [Sensors and encoders](#sensors-and-encoders) (16)
-- [Vision and coprocessors](#vision-and-coprocessors) (11)
+- [Sensors and encoders](#sensors-and-encoders) (17)
+- [Vision and coprocessors](#vision-and-coprocessors) (12)
 - [Pneumatics](#pneumatics) (6)
 - [Driver station](#driver-station) (1)
 
@@ -86,6 +86,10 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 |---|---|---|---|---|
 | <img src="communication/ctre/canivore.svg" alt="" height="64"> | [canivore.svg](communication/ctre/canivore.svg) | CANivore (USB to CAN FD) | CTR Electronics | current |
 | <img src="communication/luma/lumaswitch-2.svg" alt="" height="64"> | [lumaswitch-2.svg](communication/luma/lumaswitch-2.svg) | LumaSwitch 2 | Luma Vision | current |
+| <img src="communication/swyft/swyft-canender-molex.svg" alt="" height="64"> | [swyft-canender-molex.svg](communication/swyft/swyft-canender-molex.svg) | SWYFT CANender (Molex SL) | SWYFT Robotics | current |
+| <img src="communication/swyft/swyft-canender-wago.svg" alt="" height="64"> | [swyft-canender-wago.svg](communication/swyft/swyft-canender-wago.svg) | SWYFT CANender (Wago) | SWYFT Robotics | current |
+| <img src="communication/swyft/swyft-direct-v2.svg" alt="" height="64"> | [swyft-direct-v2.svg](communication/swyft/swyft-direct-v2.svg) | SWYFT CANnect Direct V2 | SWYFT Robotics | current |
+| <img src="communication/swyft/swyft-inject-v2.svg" alt="" height="64"> | [swyft-inject-v2.svg](communication/swyft/swyft-inject-v2.svg) | SWYFT CANnect Inject V2 | SWYFT Robotics | current |
 | <img src="communication/vivid-hosting/robot-radio-v2.svg" alt="" height="64"> | [robot-radio-v2.svg](communication/vivid-hosting/robot-radio-v2.svg) | Vivid-Hosting Robot Radio V2 (FRC Radio V2) | Vivid-Hosting | current |
 | <img src="communication/vivid-hosting/vh-109.svg" alt="" height="64"> | [vh-109.svg](communication/vivid-hosting/vh-109.svg) | Vivid-Hosting VH-109 FRC Robot Radio | Vivid-Hosting | current |
 
@@ -115,6 +119,7 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 | <img src="sensors/rev/rev-through-bore.svg" alt="" height="64"> | [rev-through-bore.svg](sensors/rev/rev-through-bore.svg) | Through Bore Encoder (V1) | REV Robotics | legacy (not sold) |
 | <img src="sensors/rev/rev-through-bore-v2.svg" alt="" height="64"> | [rev-through-bore-v2.svg](sensors/rev/rev-through-bore-v2.svg) | Through Bore Encoder V2 | REV Robotics | current |
 | <img src="sensors/studica/navx2-mxp.svg" alt="" height="64"> | [navx2-mxp.svg](sensors/studica/navx2-mxp.svg) | navX2-MXP Robotics Navigation Sensor | Studica | current |
+| <img src="sensors/swyft/swyft-sense-limit-switch.svg" alt="" height="64"> | [swyft-sense-limit-switch.svg](sensors/swyft/swyft-sense-limit-switch.svg) | SWYFT Sense Magnetic Limit Switch (V1.1) | SWYFT Robotics | current |
 | <img src="sensors/thrifty-bot/thrifty-encoder.svg" alt="" height="64"> | [thrifty-encoder.svg](sensors/thrifty-bot/thrifty-encoder.svg) | Thrifty Absolute Magnetic Encoder | The Thrifty Bot | current |
 | <img src="sensors/wcp/wcp-throughbore.svg" alt="" height="64"> | [wcp-throughbore.svg](sensors/wcp/wcp-throughbore.svg) | WCP ThroughBore Powered by CANcoder (1/2" Hex) | WestCoast Products | current |
 
@@ -133,6 +138,7 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 | <img src="vision/orange-pi/orangepi-5.svg" alt="" height="64"> | [orangepi-5.svg](vision/orange-pi/orangepi-5.svg) | Orange Pi 5 | Orange Pi | current |
 | <img src="vision/orange-pi/orangepi-5-pro.svg" alt="" height="64"> | [orangepi-5-pro.svg](vision/orange-pi/orangepi-5-pro.svg) | Orange Pi 5 Pro | Orange Pi | current |
 | <img src="vision/raspberry-pi/raspberry-pi-5.svg" alt="" height="64"> | [raspberry-pi-5.svg](vision/raspberry-pi/raspberry-pi-5.svg) | Raspberry Pi 5 | Raspberry Pi | current |
+| <img src="vision/swyft/swyft-usb-camera.svg" alt="" height="64"> | [swyft-usb-camera.svg](vision/swyft/swyft-usb-camera.svg) | SWYFT USB Camera (OV9281-class, locking USB-C) | SWYFT Robotics | current |
 
 ## Pneumatics
 
