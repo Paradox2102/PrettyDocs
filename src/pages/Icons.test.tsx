@@ -1,4 +1,4 @@
-import { screen, within } from '@testing-library/react';
+import { cleanup, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { afterEach, beforeEach, expect, test, vi } from 'vitest';
 import { AppRoutes } from '../App';
@@ -154,7 +154,8 @@ function stubDialog() {
     this.removeAttribute('open');
     this.dispatchEvent(new Event('close'));
   };
-  return () => { delete proto.showModal; delete proto.close; };
+  // Unmount first: a page left with an open dialog closes it as it unmounts, and needs close() for that.
+  return () => { cleanup(); delete proto.showModal; delete proto.close; };
 }
 
 test('a click on a drawing opens it large in a dialog, and Close closes it', async () => {
@@ -185,6 +186,81 @@ test('a click outside the drawing closes the dialog; a click on the drawing does
     expect(screen.getByRole('dialog', { name: 'CANivore' })).toBeInTheDocument();
     await userEvent.click(dialog); // the target is the dialog itself: the backdrop
     expect(screen.queryByRole('dialog')).toBeNull();
+  } finally {
+    unstub();
+  }
+});
+
+test('an open drawing is in the URL as ?icon=<slug>, and closing it takes it out', async () => {
+  const unstub = stubDialog();
+  try {
+    await renderRouted(<AppRoutes />, '/icons');
+    await settle(() => userEvent.click(screen.getByRole('button', { name: 'Enlarge the VH-109 Radio drawing' })));
+    expect(screen.getByTestId('where')).toHaveTextContent(/^\/icons\?icon=vh-109$/);
+    await settle(() => userEvent.click(screen.getByRole('button', { name: 'Close' })));
+    expect(screen.queryByRole('dialog')).toBeNull();
+    expect(screen.getByTestId('where')).toHaveTextContent(/^\/icons$/);
+  } finally {
+    unstub();
+  }
+});
+
+test('a direct link with ?icon= opens that drawing on load', async () => {
+  const unstub = stubDialog();
+  try {
+    await renderRouted(<AppRoutes />, '/icons?icon=canivore');
+    const dialog = screen.getByRole('dialog', { name: 'CANivore' });
+    expect(dialog).toHaveAttribute('open');
+    expect(within(dialog).getByRole('img')).toHaveAttribute('src', '/icons/communication/ctre/canivore.svg');
+  } finally {
+    unstub();
+  }
+});
+
+test('opening and closing a drawing keeps q and by', async () => {
+  const unstub = stubDialog();
+  try {
+    await renderRouted(<AppRoutes />, '/icons?by=vendor&q=ctr');
+    await settle(() => userEvent.click(screen.getByRole('button', { name: 'Enlarge the CANivore drawing' })));
+    expect(screen.getByTestId('where')).toHaveTextContent(/^\/icons\?by=vendor&q=ctr&icon=canivore$/);
+    await settle(() => userEvent.click(screen.getByRole('button', { name: 'Close' })));
+    expect(screen.getByTestId('where')).toHaveTextContent(/^\/icons\?by=vendor&q=ctr$/);
+    expect(screen.getByRole('searchbox', { name: 'Search icons' })).toHaveValue('ctr');
+    expect(screen.getByRole('link', { name: 'Vendor' })).toHaveAttribute('aria-current', 'true');
+  } finally {
+    unstub();
+  }
+});
+
+test('a search typed with a drawing in the URL keeps the drawing param', async () => {
+  const unstub = stubDialog();
+  try {
+    await renderRouted(<AppRoutes />, '/icons?icon=canivore');
+    await settle(() => userEvent.click(screen.getByRole('button', { name: 'Close' })));
+    await settle(() => userEvent.type(screen.getByRole('searchbox', { name: 'Search icons' }), 'rev'));
+    expect(screen.getByTestId('where')).toHaveTextContent(/^\/icons\?q=rev$/);
+  } finally {
+    unstub();
+  }
+});
+
+test('?icon= opens the drawing even when the search does not match it', async () => {
+  const unstub = stubDialog();
+  try {
+    await renderRouted(<AppRoutes />, '/icons?q=zzz&icon=vh-109');
+    expect(screen.getByRole('dialog', { name: 'VH-109 Radio' })).toBeInTheDocument();
+    expect(screen.getByText('No icon matches “zzz”.')).toBeInTheDocument();
+  } finally {
+    unstub();
+  }
+});
+
+test('an unknown ?icon= slug opens nothing', async () => {
+  const unstub = stubDialog();
+  try {
+    await renderRouted(<AppRoutes />, '/icons?icon=nope');
+    expect(screen.queryByRole('dialog')).toBeNull();
+    expect(screen.getAllByRole('article')).toHaveLength(3);
   } finally {
     unstub();
   }

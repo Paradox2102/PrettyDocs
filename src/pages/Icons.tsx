@@ -73,7 +73,19 @@ export default function Icons() {
   // The box keeps its own value: the router applies a URL change a moment later, and a box that read the URL
   // would lose letters typed in between. The URL follows the box, so a search can be shared.
   const [query, setQuery] = useState(() => params.get('q') ?? '');
-  const [enlarged, setEnlarged] = useState<IconRecord | null>(null);
+  // The open drawing lives in ?icon=<slug>, so a link can share it. It is looked up in the whole index, so a link
+  // with a search that does not match the icon still opens it. An unknown slug opens nothing.
+  const iconSlug = params.get('icon');
+  const enlarged = iconSlug ? index.icons.find((i) => i.slug === iconSlug) ?? null : null;
+  // Opening and closing replace the history entry, like typing in the search box; q and by stay as they are.
+  const setEnlarged = (icon: IconRecord | null) => {
+    setParams((p) => {
+      const next = new URLSearchParams(p);
+      if (icon) next.set('icon', icon.slug);
+      else next.delete('icon');
+      return next;
+    }, { replace: true });
+  };
   const shown = filterIcons(index, query);
   const groups = groupIcons(shown, by);
   // The group switch keeps the search; typing replaces the history entry instead of adding one per key.
