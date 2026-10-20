@@ -2698,25 +2698,46 @@
      "label": "Lever connector PWR | GND: 12 V and ground for sensors (max 1.5 A per module, do not power motors)"
     },
     {
-     "port": "can",
-     "x": 27.62,
+     "port": "can_a",
+     "x": 23.81,
      "y": -7.11,
      "kind": "can",
-     "label": "Lever connector YLW GRN | YLW GRN (top edge): two CAN pairs, CAN H yellow and CAN L green, stub 12 in or less"
+     "label": "Lever connector YLW GRN (top edge, left pair): CAN pair, CAN H yellow and CAN L green, stub 12 in or less"
     },
     {
      "port": "can_b",
-     "x": 26.34,
-     "y": 40.0,
+     "x": 31.44,
+     "y": -7.11,
      "kind": "can",
-     "label": "Lever connector YLW GRN | YLW GRN (bottom edge, left block): two CAN pairs, stub 12 in or less"
+     "label": "Lever connector YLW GRN (top edge, right pair): CAN pair, CAN H yellow and CAN L green, stub 12 in or less"
     },
     {
      "port": "can_c",
-     "x": 43.35,
+     "x": 22.51,
      "y": 40.0,
      "kind": "can",
-     "label": "Lever connector YLW GRN | YLW GRN (bottom edge, right block): two CAN pairs, stub 12 in or less"
+     "label": "Lever connector YLW GRN (bottom edge, left block, left pair): CAN pair, CAN H yellow and CAN L green, stub 12 in or less"
+    },
+    {
+     "port": "can_d",
+     "x": 30.16,
+     "y": 40.0,
+     "kind": "can",
+     "label": "Lever connector YLW GRN (bottom edge, left block, right pair): CAN pair, CAN H yellow and CAN L green, stub 12 in or less"
+    },
+    {
+     "port": "can_e",
+     "x": 39.53,
+     "y": 40.0,
+     "kind": "can",
+     "label": "Lever connector YLW GRN (bottom edge, right block, left pair): CAN pair, CAN H yellow and CAN L green, stub 12 in or less"
+    },
+    {
+     "port": "can_f",
+     "x": 47.17,
+     "y": 40.0,
+     "kind": "can",
+     "label": "Lever connector YLW GRN (bottom edge, right block, right pair): CAN pair, CAN H yellow and CAN L green, stub 12 in or less"
     },
     {
      "port": "ethernet",
