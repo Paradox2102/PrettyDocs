@@ -43,8 +43,36 @@
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
 
 .card { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); overflow: hidden; }
-.tile { display: grid; place-items: center; aspect-ratio: 1; padding: 12px; background: #fff; border-bottom: 1px solid var(--line); }
+.tile {
+  display: grid; place-items: center; width: 100%; aspect-ratio: 1; padding: 12px; border: 0; border-bottom: 1px solid var(--line);
+  background: #fff; cursor: zoom-in;
+}
+.tile:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
 .tile img { max-width: 100%; max-height: 100%; }
+
+/* The enlarged view: most of the screen, the drawing on white, scaled to fit. */
+.viewer {
+  width: min(94vw, 1400px); height: 92dvh; max-width: none; max-height: none; margin: auto; padding: 0;
+  border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); color: var(--ink);
+}
+.viewer::backdrop { background: rgb(11 18 32 / 0.72); }
+:global(html):has(.viewer[open]) { overflow: hidden; }
+.viewerBox { display: flex; flex-direction: column; height: 100%; }
+.viewerBar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; padding: 12px 16px; border-bottom: 1px solid var(--line); }
+.viewerBar > div { flex: 1; min-width: 0; }
+.viewerBar .download { margin-top: 0; padding-top: 0; }
+.viewerName { font-size: 20px; line-height: 1.2; }
+.viewerClose {
+  padding: 6px 14px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink);
+  font: inherit; font-weight: 600; cursor: pointer;
+}
+.viewerClose:hover { border-color: var(--muted); }
+.viewerClose:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+/* The image is laid over the panel, so its size comes from the panel and never from the drawing. */
+.viewerTile { position: relative; flex: 1; min-height: 0; background: #fff; }
+.viewerTile img {
+  position: absolute; inset: 0; width: 100%; height: 100%; padding: clamp(12px, 3vw, 32px); box-sizing: border-box; object-fit: contain;
+}
 
 .meta { display: flex; flex-direction: column; gap: 2px; padding: 12px 14px 14px; flex: 1; }
 .name { font-size: 17px; line-height: 1.2; }
@@ -61,4 +89,6 @@
 @media (max-width: 899px) {
   .page { padding-bottom: calc(64px + env(safe-area-inset-bottom)); }
   .grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .viewerBar > div { flex-basis: 100%; }
+  .viewerClose { margin-left: auto; }
 }

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation, useSearchParams } from 'react-router';
 import { useIcons } from '../content/hooks';
 import type { IconRecord } from '../content/types';
@@ -7,14 +7,15 @@ import styles from './Icons.module.css';
 
 const ICONS_BASE = '/icons/';
 
-function IconCard({ icon }: { icon: IconRecord }) {
+function IconCard({ icon, onEnlarge }: { icon: IconRecord; onEnlarge: (icon: IconRecord) => void }) {
   const url = ICONS_BASE + icon.path;
   const titleId = `icon-${icon.slug}`;
   return (
     <article className={styles.card} aria-labelledby={titleId}>
-      <div className={styles.tile}>
+      <button type="button" className={styles.tile} onClick={() => onEnlarge(icon)}
+        aria-label={`Enlarge the ${icon.name} drawing`}>
         <img src={url} alt={`Drawing of the ${icon.name}`} loading="lazy" />
-      </div>
+      </button>
       <div className={styles.meta}>
         <h3 id={titleId} className={styles.name}>{icon.name}</h3>
         <p className={styles.vendor}>{icon.vendor_name}</p>
@@ -27,6 +28,42 @@ function IconCard({ icon }: { icon: IconRecord }) {
   );
 }
 
+/** One icon drawn to fill most of the screen. A modal <dialog>: Esc, the Close button or a click outside the
+ *  drawing closes it, and the browser keeps the focus inside while it is open. */
+function IconViewer({ icon, onClose }: { icon: IconRecord; onClose: () => void }) {
+  const ref = useRef<HTMLDialogElement>(null);
+  const closeRef = useRef<HTMLButtonElement>(null);
+  const url = ICONS_BASE + icon.path;
+  useEffect(() => {
+    const d = ref.current;
+    if (!d) return;
+    d.showModal();
+    closeRef.current?.focus(); // the browser focuses the first link; Close is the likely next key
+    return () => { if (d.open) d.close(); };
+  }, []);
+  return (
+    // A click on the dialog itself (not on its content) is a click on the backdrop.
+    <dialog ref={ref} className={styles.viewer} aria-labelledby="viewer-title" onClose={onClose}
+      onClick={(e) => { if (e.target === e.currentTarget) e.currentTarget.close(); }}>
+      <div className={styles.viewerBox}>
+        <header className={styles.viewerBar}>
+          <div>
+            <h2 id="viewer-title" className={styles.viewerName}>{icon.name}</h2>
+            <p className={styles.vendor}>{icon.vendor_name}</p>
+          </div>
+          <a className={styles.download} href={url} download={`${icon.slug}.svg`}>
+            Download SVG<span className="visually-hidden"> of {icon.name}</span>
+          </a>
+          <button ref={closeRef} type="button" className={styles.viewerClose} onClick={() => ref.current?.close()}>Close</button>
+        </header>
+        <div className={styles.viewerTile}>
+          <img src={url} alt={`Drawing of the ${icon.name}`} />
+        </div>
+      </div>
+    </dialog>
+  );
+}
+
 /** The FRC device icon gallery: every icon of /icons/index.json, one section per type. */
 export default function Icons() {
   const index = useIcons();
@@ -36,6 +73,7 @@ export default function Icons() {
   // The box keeps its own value: the router applies a URL change a moment later, and a box that read the URL
   // would lose letters typed in between. The URL follows the box, so a search can be shared.
   const [query, setQuery] = useState(() => params.get('q') ?? '');
+  const [enlarged, setEnlarged] = useState<IconRecord | null>(null);
   const shown = filterIcons(index, query);
   const groups = groupIcons(shown, by);
   // The group switch keeps the search; typing replaces the history entry instead of adding one per key.
@@ -110,10 +148,11 @@ export default function Icons() {
         <section key={g.id} id={g.id} className={styles.section} aria-labelledby={`group-${g.id}`}>
           <h2 id={`group-${g.id}`} className={styles.sectionTitle}>{g.name}</h2>
           <div className={styles.grid}>
-            {g.icons.map((i) => <IconCard key={i.slug} icon={i} />)}
+            {g.icons.map((i) => <IconCard key={i.slug} icon={i} onEnlarge={setEnlarged} />)}
           </div>
         </section>
       ))}
+      {enlarged && <IconViewer key={enlarged.slug} icon={enlarged} onClose={() => setEnlarged(null)} />}
     </div>
   );
 }

@@ -144,3 +144,48 @@ test('a Download all link gets every icon as one ZIP', async () => {
   expect(all).toHaveAttribute('download', 'frc-device-icons.zip');
   expect(all).toHaveTextContent('3 icons');
 });
+
+// jsdom has no modal dialog: give it showModal and close (close fires the close event, as a browser does).
+function stubDialog() {
+  const proto = HTMLDialogElement.prototype as Partial<HTMLDialogElement>;
+  proto.showModal = function (this: HTMLDialogElement) { this.setAttribute('open', ''); };
+  proto.close = function (this: HTMLDialogElement) {
+    if (!this.hasAttribute('open')) return;
+    this.removeAttribute('open');
+    this.dispatchEvent(new Event('close'));
+  };
+  return () => { delete proto.showModal; delete proto.close; };
+}
+
+test('a click on a drawing opens it large in a dialog, and Close closes it', async () => {
+  const unstub = stubDialog();
+  try {
+    await renderRouted(<AppRoutes />, '/icons');
+    expect(screen.queryByRole('dialog')).toBeNull();
+    await userEvent.click(screen.getByRole('button', { name: 'Enlarge the VH-109 Radio drawing' }));
+    const dialog = screen.getByRole('dialog', { name: 'VH-109 Radio' });
+    expect(within(dialog).getByRole('img', { name: 'Drawing of the VH-109 Radio' }))
+      .toHaveAttribute('src', '/icons/communication/vivid-hosting/vh-109.svg');
+    expect(within(dialog).getByText('Vivid-Hosting')).toBeInTheDocument();
+    expect(within(dialog).getByRole('link', { name: /Download/ })).toHaveAttribute('download', 'vh-109.svg');
+    await userEvent.click(within(dialog).getByRole('button', { name: 'Close' }));
+    expect(screen.queryByRole('dialog')).toBeNull();
+  } finally {
+    unstub();
+  }
+});
+
+test('a click outside the drawing closes the dialog; a click on the drawing does not', async () => {
+  const unstub = stubDialog();
+  try {
+    await renderRouted(<AppRoutes />, '/icons');
+    await userEvent.click(screen.getByRole('button', { name: 'Enlarge the CANivore drawing' }));
+    const dialog = screen.getByRole('dialog', { name: 'CANivore' });
+    await userEvent.click(within(dialog).getByRole('img'));
+    expect(screen.getByRole('dialog', { name: 'CANivore' })).toBeInTheDocument();
+    await userEvent.click(dialog); // the target is the dialog itself: the backdrop
+    expect(screen.queryByRole('dialog')).toBeNull();
+  } finally {
+    unstub();
+  }
+});
