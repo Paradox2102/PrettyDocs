@@ -23,7 +23,7 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 - [Robot controllers](#robot-controllers) (2)
 - [Power](#power) (10)
 - [Motor controllers](#motor-controllers) (7)
-- [Motors](#motors) (13)
+- [Motors](#motors) (14)
 - [Radio and CAN](#radio-and-can) (8)
 - [Lights](#lights) (3)
 - [Sensors and encoders](#sensors-and-encoders) (17)
@@ -69,6 +69,7 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 
 | Icon | File | Device | Vendor | Status |
 |---|---|---|---|---|
+| <img src="motors/actuonix/actuonix-l16-p.svg" alt="" height="64"> | [actuonix-l16-p.svg](motors/actuonix/actuonix-l16-p.svg) | Actuonix L16-P Micro Linear Actuator (potentiometer feedback) | Actuonix Motion Devices | current |
 | <img src="motors/andymark/cim.svg" alt="" height="64"> | [cim.svg](motors/andymark/cim.svg) | CIM Motor 2.5 in. | AndyMark | current |
 | <img src="motors/ctre/falcon-500.svg" alt="" height="64"> | [falcon-500.svg](motors/ctre/falcon-500.svg) | Falcon 500 Powered by Talon FX | CTR Electronics | legacy (not sold) |
 | <img src="motors/ctre/minion.svg" alt="" height="64"> | [minion.svg](motors/ctre/minion.svg) | Minion Brushless Motor | CTR Electronics | current |

@@ -20,7 +20,7 @@
   {
    "id": "motors",
    "name": "Motors",
-   "count": 13
+   "count": 14
   },
   {
    "id": "communication",
@@ -1995,6 +1995,49 @@
      "y": 11.35,
      "kind": "signal",
      "label": "I/O data port: 10-pin 2x5 (encoders, limit switches)"
+    }
+   ]
+  },
+  {
+   "slug": "actuonix-l16-p",
+   "name": "Actuonix L16-P Micro Linear Actuator (potentiometer feedback)",
+   "type": "motors",
+   "vendor": "actuonix",
+   "vendor_name": "Actuonix Motion Devices",
+   "part_number": "L16-100-63-12-P",
+   "status": "current",
+   "path": "motors/actuonix/actuonix-l16-p.svg",
+   "size_mm": [
+    254,
+    49.5
+   ],
+   "view_box": [
+    -12,
+    -30,
+    254,
+    61
+   ],
+   "anchors": [
+    {
+     "port": "feedback",
+     "x": 210.0,
+     "y": -19.81,
+     "kind": "signal",
+     "label": "Plug pins 1 and 2: potentiometer reference - (orange) and wiper (purple). Read the wiper on an analog input; reference + is pin 5 (feedback_ref)"
+    },
+    {
+     "port": "feedback_ref",
+     "x": 210.0,
+     "y": -10.92,
+     "kind": "signal",
+     "label": "Plug pin 5: potentiometer reference + (yellow), to the analog input's supply (it is below the motor pair)"
+    },
+    {
+     "port": "power",
+     "x": 210.0,
+     "y": -14.73,
+     "kind": "power",
+     "label": "Plug pins 3 and 4: motor leads, red V+ and black V- (reverse polarity to reverse). A motor controller drives them"
     }
    ]
   },
