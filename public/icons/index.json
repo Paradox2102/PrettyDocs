@@ -4873,7 +4873,7 @@
    "type": "sensors",
    "vendor": "thrifty-bot",
    "vendor_name": "The Thrifty Bot",
-   "part_number": "TTB-0365 (Thrifty drawing TTB-0365 rev A, 07/31/26)",
+   "part_number": "TTB-0365",
    "status": "current",
    "path": "sensors/thrifty-bot/thrifty-through-bore.svg",
    "size_mm": [
