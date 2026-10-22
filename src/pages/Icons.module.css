@@ -26,6 +26,15 @@
   background: var(--surface); color: var(--ink); font: inherit;
 }
 .search:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.legacyToggle {
+  display: inline-flex; align-items: center; gap: 8px; color: var(--muted); font-size: 14px; cursor: pointer; user-select: none;
+}
+.legacyToggle input { width: 16px; height: 16px; margin: 0; accent-color: var(--accent); cursor: pointer; }
+.legacyToggle:hover { color: var(--ink); }
+.linkButton {
+  padding: 0; border: 0; background: none; color: var(--accent-ink); font: inherit; font-weight: 600; cursor: pointer;
+  text-decoration: underline;
+}
 .status { margin: 0; color: var(--muted); font: 13px/1.4 var(--font-mono); }
 .empty { margin: 8px 0 0; color: var(--muted); }
 

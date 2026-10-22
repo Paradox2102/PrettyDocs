@@ -28,6 +28,11 @@ export function filterIcons(index: IconIndex, query: string): IconIndex {
   return { ...index, icons };
 }
 
+/** The icons to show: legacy icons (no longer sold) only when `showLegacy` is on. */
+export function hideLegacy(index: IconIndex, showLegacy: boolean): IconIndex {
+  return showLegacy ? index : { ...index, icons: index.icons.filter((i) => i.status !== 'legacy') };
+}
+
 /** The groups that have icons: by type in the index's type order, or by vendor in vendor name order. */
 export function groupIcons(index: IconIndex, by: GroupBy): IconGroup[] {
   if (by === 'type') {

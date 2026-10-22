@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation, useSearchParams } from 'react-router';
 import { useIcons } from '../content/hooks';
 import type { IconRecord } from '../content/types';
-import { filterIcons, groupBy, groupIcons, type GroupBy } from '../logic/icons';
+import { filterIcons, groupBy, groupIcons, hideLegacy, type GroupBy } from '../logic/icons';
 import styles from './Icons.module.css';
 
 const ICONS_BASE = '/icons/';
@@ -86,12 +86,27 @@ export default function Icons() {
       return next;
     }, { replace: true });
   };
-  const shown = filterIcons(index, query);
+  // Legacy icons (no longer sold) are hidden unless ?legacy=1; a search that only matches hidden ones says so.
+  const showLegacy = params.get('legacy') === '1';
+  const legacyCount = index.icons.filter((i) => i.status === 'legacy').length;
+  const matched = filterIcons(index, query);
+  const shown = hideLegacy(matched, showLegacy);
+  const hiddenMatches = matched.icons.length - shown.icons.length;
   const groups = groupIcons(shown, by);
-  // The group switch keeps the search; typing replaces the history entry instead of adding one per key.
+  const setShowLegacy = (on: boolean) => {
+    setParams((p) => {
+      const next = new URLSearchParams(p);
+      if (on) next.set('legacy', '1');
+      else next.delete('legacy');
+      return next;
+    }, { replace: true });
+  };
+  // The group switch keeps the search and the legacy switch; typing replaces the history entry instead of adding
+  // one per key.
   const linkTo = (b: GroupBy) => {
     const next = new URLSearchParams(b === 'vendor' ? { by: 'vendor' } : {});
     if (query) next.set('q', query);
+    if (showLegacy) next.set('legacy', '1');
     return next.size ? `/icons?${next}` : '/icons';
   };
   const search = (q: string) => {
@@ -141,8 +156,14 @@ export default function Icons() {
         <div className={styles.searchRow}>
           <input type="search" className={styles.search} aria-label="Search icons" placeholder="Name, vendor or part number"
             autoComplete="off" spellCheck={false} value={query} onChange={(e) => search(e.target.value)} />
+          <label className={styles.legacyToggle}>
+            <input type="checkbox" checked={showLegacy} onChange={(e) => setShowLegacy(e.target.checked)} />
+            Show legacy devices <span className={styles.count}>{legacyCount}</span>
+          </label>
           <p role="status" className={styles.status}>
-            {query ? `${shown.icons.length} of ${index.icons.length} icons` : `${index.icons.length} icons`}
+            {shown.icons.length === index.icons.length
+              ? `${index.icons.length} icons`
+              : `${shown.icons.length} of ${index.icons.length} icons`}
           </p>
         </div>
         <nav aria-label={by === 'vendor' ? 'Icon vendors' : 'Icon types'}>
@@ -155,7 +176,15 @@ export default function Icons() {
           </ul>
         </nav>
       </header>
-      {query && groups.length === 0 && <p className={styles.empty}>No icon matches “{query}”.</p>}
+      {query && groups.length === 0 && hiddenMatches === 0 && <p className={styles.empty}>No icon matches “{query}”.</p>}
+      {groups.length === 0 && hiddenMatches > 0 && (
+        <p className={styles.empty}>
+          Only {hiddenMatches === 1 ? 'a legacy device matches' : `${hiddenMatches} legacy devices match`} “{query}”.{' '}
+          <button type="button" className={styles.linkButton} onClick={() => setShowLegacy(true)}>
+            Show legacy devices
+          </button>
+        </p>
+      )}
       {groups.map((g) => (
         <section key={g.id} id={g.id} className={styles.section} aria-labelledby={`group-${g.id}`}>
           <h2 id={`group-${g.id}`} className={styles.sectionTitle}>{g.name}</h2>

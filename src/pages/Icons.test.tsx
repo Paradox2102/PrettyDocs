@@ -23,17 +23,17 @@ test('/icons is the gallery, not a robot named icons', async () => {
   expect(screen.queryByText(/Robot not found/i)).toBeNull();
 });
 
-test('one section per type, in the index order, with the count', async () => {
+test('one section per type, in the index order, with the count of shown icons', async () => {
   await renderRouted(<AppRoutes />, '/icons');
   const headings = screen.getAllByRole('heading', { level: 2 }).map((h) => h.textContent);
   expect(headings).toEqual(['Power', 'Radio and CAN']);
   const contents = screen.getByRole('navigation', { name: 'Icon types' });
   expect(within(contents).getByRole('link', { name: /Radio and CAN/ })).toHaveAttribute('href', '#communication');
-  expect(within(contents).getByRole('link', { name: /Radio and CAN/ })).toHaveTextContent('2');
+  expect(within(contents).getByRole('link', { name: /Radio and CAN/ })).toHaveTextContent('1'); // VH-109 is legacy
 });
 
 test('each icon has its picture, its vendor and a download link', async () => {
-  await renderRouted(<AppRoutes />, '/icons');
+  await renderRouted(<AppRoutes />, '/icons?legacy=1');
   const radio = screen.getByRole('article', { name: 'VH-109 Radio' });
   expect(within(radio).getByRole('img')).toHaveAttribute('src', '/icons/communication/vivid-hosting/vh-109.svg');
   expect(within(radio).getByText('Vivid-Hosting')).toBeInTheDocument();
@@ -43,7 +43,7 @@ test('each icon has its picture, its vendor and a download link', async () => {
 });
 
 test('a legacy icon is tagged, a current one is not', async () => {
-  await renderRouted(<AppRoutes />, '/icons');
+  await renderRouted(<AppRoutes />, '/icons?legacy=1');
   expect(within(screen.getByRole('article', { name: 'VH-109 Radio' })).getByText(/legacy/i)).toBeInTheDocument();
   expect(within(screen.getByRole('article', { name: 'CANivore' })).queryByText(/legacy/i)).toBeNull();
 });
@@ -85,7 +85,7 @@ test('a malformed hash does not break the page', async () => {
 });
 
 test('?by=vendor groups the icons by vendor, in vendor name order', async () => {
-  await renderRouted(<AppRoutes />, '/icons?by=vendor');
+  await renderRouted(<AppRoutes />, '/icons?by=vendor&legacy=1');
   const headings = screen.getAllByRole('heading', { level: 2 }).map((h) => h.textContent);
   expect(headings).toEqual(['CTR Electronics', 'REV Robotics', 'Vivid-Hosting']);
   const contents = screen.getByRole('navigation', { name: 'Icon vendors' });
@@ -161,7 +161,7 @@ function stubDialog() {
 test('a click on a drawing opens it large in a dialog, and Close closes it', async () => {
   const unstub = stubDialog();
   try {
-    await renderRouted(<AppRoutes />, '/icons');
+    await renderRouted(<AppRoutes />, '/icons?legacy=1');
     expect(screen.queryByRole('dialog')).toBeNull();
     await userEvent.click(screen.getByRole('button', { name: 'Enlarge the VH-109 Radio drawing' }));
     const dialog = screen.getByRole('dialog', { name: 'VH-109 Radio' });
@@ -195,8 +195,8 @@ test('an open drawing is in the URL as ?icon=<slug>, and closing it takes it out
   const unstub = stubDialog();
   try {
     await renderRouted(<AppRoutes />, '/icons');
-    await settle(() => userEvent.click(screen.getByRole('button', { name: 'Enlarge the VH-109 Radio drawing' })));
-    expect(screen.getByTestId('where')).toHaveTextContent(/^\/icons\?icon=vh-109$/);
+    await settle(() => userEvent.click(screen.getByRole('button', { name: 'Enlarge the CANivore drawing' })));
+    expect(screen.getByTestId('where')).toHaveTextContent(/^\/icons\?icon=canivore$/);
     await settle(() => userEvent.click(screen.getByRole('button', { name: 'Close' })));
     expect(screen.queryByRole('dialog')).toBeNull();
     expect(screen.getByTestId('where')).toHaveTextContent(/^\/icons$/);
@@ -260,7 +260,51 @@ test('an unknown ?icon= slug opens nothing', async () => {
   try {
     await renderRouted(<AppRoutes />, '/icons?icon=nope');
     expect(screen.queryByRole('dialog')).toBeNull();
-    expect(screen.getAllByRole('article')).toHaveLength(3);
+    expect(screen.getAllByRole('article')).toHaveLength(2); // the legacy VH-109 is hidden
+  } finally {
+    unstub();
+  }
+});
+
+test('legacy icons are hidden by default, and the switch shows them and puts legacy=1 in the URL', async () => {
+  await renderRouted(<AppRoutes />, '/icons');
+  expect(screen.queryByRole('article', { name: 'VH-109 Radio' })).toBeNull();
+  expect(screen.getByText('2 of 3 icons')).toHaveAttribute('role', 'status');
+  const toggle = screen.getByRole('checkbox', { name: /Show legacy devices/ });
+  expect(toggle).not.toBeChecked();
+  expect(toggle.closest('label')).toHaveTextContent('1'); // one legacy icon in the collection
+  await settle(() => userEvent.click(toggle));
+  expect(screen.getByRole('article', { name: 'VH-109 Radio' })).toBeInTheDocument();
+  expect(screen.getByTestId('where')).toHaveTextContent(/^\/icons\?legacy=1$/);
+  expect(screen.getByText('3 icons')).toHaveAttribute('role', 'status');
+  await settle(() => userEvent.click(screen.getByRole('checkbox', { name: /Show legacy devices/ })));
+  expect(screen.queryByRole('article', { name: 'VH-109 Radio' })).toBeNull();
+  expect(screen.getByTestId('where')).toHaveTextContent(/^\/icons$/);
+});
+
+test('?legacy=1 in a link shows legacy icons, and switching the grouping keeps it', async () => {
+  await renderRouted(<AppRoutes />, '/icons?q=radio&legacy=1');
+  expect(screen.getByRole('checkbox', { name: /Show legacy devices/ })).toBeChecked();
+  expect(screen.getByRole('article', { name: 'VH-109 Radio' })).toBeInTheDocument();
+  const group = screen.getByRole('navigation', { name: 'Group icons by' });
+  expect(within(group).getByRole('link', { name: 'Vendor' })).toHaveAttribute('href', '/icons?by=vendor&q=radio&legacy=1');
+});
+
+test('a search that matches only hidden legacy icons says so and offers to show them', async () => {
+  await renderRouted(<AppRoutes />, '/icons?q=vh-109');
+  expect(screen.queryByText(/No icon matches/)).toBeNull();
+  expect(screen.getByText(/Only a legacy device matches/)).toBeInTheDocument();
+  await settle(() => userEvent.click(screen.getByRole('button', { name: 'Show legacy devices' })));
+  expect(screen.getByRole('article', { name: 'VH-109 Radio' })).toBeInTheDocument();
+  expect(screen.getByTestId('where')).toHaveTextContent(/^\/icons\?q=vh-109&legacy=1$/);
+});
+
+test('a direct link to a hidden legacy drawing still opens it', async () => {
+  const unstub = stubDialog();
+  try {
+    await renderRouted(<AppRoutes />, '/icons?icon=vh-109');
+    expect(screen.getByRole('dialog', { name: 'VH-109 Radio' })).toHaveAttribute('open');
+    expect(screen.queryByRole('article', { name: 'VH-109 Radio' })).toBeNull();
   } finally {
     unstub();
   }

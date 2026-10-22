@@ -1,7 +1,7 @@
 import { describe, expect, test } from 'vitest';
 import { ICONS } from '../test/fixtures';
 import type { IconIndex } from '../content/types';
-import { filterIcons, groupBy, groupIcons } from './icons';
+import { filterIcons, groupBy, groupIcons, hideLegacy } from './icons';
 
 const index = ICONS as IconIndex;
 
@@ -69,4 +69,10 @@ describe('filterIcons', () => {
 
 test('groupIcons drops a group with no icons', () => {
   expect(groupIcons(filterIcons(index, 'canivore'), 'type').map((g) => g.id)).toEqual(['communication']);
+});
+
+test('hideLegacy drops legacy icons unless showLegacy is on', () => {
+  expect(hideLegacy(index, false).icons.map((i) => i.slug)).not.toContain('vh-109');
+  expect(hideLegacy(index, false).icons).toHaveLength(index.icons.length - 1);
+  expect(hideLegacy(index, true)).toBe(index);
 });
