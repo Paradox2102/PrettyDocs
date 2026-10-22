@@ -21,8 +21,8 @@ The product names belong to their makers.
 The wiring tools write this folder (`export_prettydocs.py`): do not edit these files by hand.
 
 - [Robot controllers](#robot-controllers) (2)
-- [Power](#power) (10)
-- [Motor controllers](#motor-controllers) (7)
+- [Power](#power) (11)
+- [Motor controllers](#motor-controllers) (10)
 - [Motors](#motors) (14)
 - [Radio and CAN](#radio-and-can) (8)
 - [Lights](#lights) (3)
@@ -52,16 +52,20 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 | <img src="power/rev/rev-pdh.svg" alt="" height="64"> | [rev-pdh.svg](power/rev/rev-pdh.svg) | Power Distribution Hub (PDH) | REV Robotics | current |
 | <img src="power/generic/frc-battery-sb120.svg" alt="" height="64"> | [frc-battery-sb120.svg](power/generic/frc-battery-sb120.svg) | FRC robot battery: 12 V 18 Ah sealed lead-acid with the FRC lead set (6 AWG leads, blue Anderson SB120) | Several makers | current |
 | <img src="power/generic/frc-battery.svg" alt="" height="64"> | [frc-battery.svg](power/generic/frc-battery.svg) | FRC robot battery: 12 V 18 Ah sealed lead-acid with the FRC lead set (6 AWG leads, red Anderson SB50) | Several makers | current |
+| <img src="power/thrifty-bot/thrifty-powerhub.svg" alt="" height="64"> | [thrifty-powerhub.svg](power/thrifty-bot/thrifty-powerhub.svg) | PowerHub | The Thrifty Bot | current |
 
 ## Motor controllers
 
 | Icon | File | Device | Vendor | Status |
 |---|---|---|---|---|
+| <img src="motor-controllers/andymark/koors40-can.svg" alt="" height="64"> | [koors40-can.svg](motor-controllers/andymark/koors40-can.svg) | AndyMark Koors40 Brushed DC Motor Controller (CAN + PWM) | AndyMark | current |
+| <img src="motor-controllers/andymark/koors40-pwm.svg" alt="" height="64"> | [koors40-pwm.svg](motor-controllers/andymark/koors40-pwm.svg) | AndyMark Koors40 Brushed DC Motor Controller (PWM only) | AndyMark | current |
 | <img src="motor-controllers/ctre/talon-fxs.svg" alt="" height="64"> | [talon-fxs.svg](motor-controllers/ctre/talon-fxs.svg) | Talon FXS | CTR Electronics | current |
 | <img src="motor-controllers/ctre/talon-srx.svg" alt="" height="64"> | [talon-srx.svg](motor-controllers/ctre/talon-srx.svg) | Talon SRX | CTR Electronics | legacy (not sold) |
 | <img src="motor-controllers/ctre/victor-spx.svg" alt="" height="64"> | [victor-spx.svg](motor-controllers/ctre/victor-spx.svg) | Victor SPX | CTR Electronics | legacy (not sold) |
 | <img src="motor-controllers/rev/servo-hub.svg" alt="" height="64"> | [servo-hub.svg](motor-controllers/rev/servo-hub.svg) | Servo Hub | REV Robotics | current |
 | <img src="motor-controllers/rev/spark-flex-dock.svg" alt="" height="64"> | [spark-flex-dock.svg](motor-controllers/rev/spark-flex-dock.svg) | SPARK Flex + Flex Dock | REV Robotics | current |
+| <img src="motor-controllers/rev/spark-lite.svg" alt="" height="64"> | [spark-lite.svg](motor-controllers/rev/spark-lite.svg) | SPARK Lite Motor Controller | REV Robotics | current |
 | <img src="motor-controllers/rev/spark-max.svg" alt="" height="64"> | [spark-max.svg](motor-controllers/rev/spark-max.svg) | SPARK MAX Motor Controller | REV Robotics | current |
 | <img src="motor-controllers/thrifty-bot/thrifty-nova.svg" alt="" height="64"> | [thrifty-nova.svg](motor-controllers/thrifty-bot/thrifty-nova.svg) | Thrifty Nova | The Thrifty Bot | current |
 

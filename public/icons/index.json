@@ -10,12 +10,12 @@
   {
    "id": "power",
    "name": "Power",
-   "count": 10
+   "count": 11
   },
   {
    "id": "motor-controllers",
    "name": "Motor controllers",
-   "count": 7
+   "count": 10
   },
   {
    "id": "motors",
@@ -1376,6 +1376,345 @@
    ]
   },
   {
+   "slug": "thrifty-powerhub",
+   "name": "PowerHub",
+   "type": "power",
+   "vendor": "thrifty-bot",
+   "vendor_name": "The Thrifty Bot",
+   "part_number": "TTB-0375",
+   "status": "current",
+   "path": "power/thrifty-bot/thrifty-powerhub.svg",
+   "size_mm": [
+    266.1,
+    148.6
+   ],
+   "view_box": [
+    -17,
+    -14,
+    266.1,
+    158.8
+   ],
+   "anchors": [
+    {
+     "port": "ch0",
+     "x": 63.5,
+     "y": 122.1,
+     "kind": "power",
+     "label": "High-current channel 0 (WAGO 2606 red + black pair, ATO breaker)"
+    },
+    {
+     "port": "ch1",
+     "x": 77.5,
+     "y": 122.1,
+     "kind": "power",
+     "label": "High-current channel 1 (WAGO 2606 red + black pair, ATO breaker)"
+    },
+    {
+     "port": "ch2",
+     "x": 91.5,
+     "y": 122.1,
+     "kind": "power",
+     "label": "High-current channel 2 (WAGO 2606 red + black pair, ATO breaker)"
+    },
+    {
+     "port": "ch3",
+     "x": 105.5,
+     "y": 122.1,
+     "kind": "power",
+     "label": "High-current channel 3 (WAGO 2606 red + black pair, ATO breaker)"
+    },
+    {
+     "port": "ch4",
+     "x": 119.5,
+     "y": 122.1,
+     "kind": "power",
+     "label": "High-current channel 4 (WAGO 2606 red + black pair, ATO breaker)"
+    },
+    {
+     "port": "ch5",
+     "x": 133.5,
+     "y": 122.1,
+     "kind": "power",
+     "label": "High-current channel 5 (WAGO 2606 red + black pair, ATO breaker)"
+    },
+    {
+     "port": "ch6",
+     "x": 149.5,
+     "y": 122.1,
+     "kind": "power",
+     "label": "High-current channel 6 (WAGO 2606 red + black pair, ATO breaker)"
+    },
+    {
+     "port": "ch7",
+     "x": 163.5,
+     "y": 122.1,
+     "kind": "power",
+     "label": "High-current channel 7 (WAGO 2606 red + black pair, ATO breaker)"
+    },
+    {
+     "port": "ch8",
+     "x": 177.5,
+     "y": 122.1,
+     "kind": "power",
+     "label": "High-current channel 8 (WAGO 2606 red + black pair, ATO breaker)"
+    },
+    {
+     "port": "ch9",
+     "x": 191.5,
+     "y": 122.1,
+     "kind": "power",
+     "label": "High-current channel 9 (WAGO 2606 red + black pair, ATO breaker)"
+    },
+    {
+     "port": "ch10",
+     "x": 205.5,
+     "y": 122.1,
+     "kind": "power",
+     "label": "High-current channel 10 (WAGO 2606 red + black pair, ATO breaker)"
+    },
+    {
+     "port": "ch11",
+     "x": 219.5,
+     "y": 122.1,
+     "kind": "power",
+     "label": "High-current channel 11 (WAGO 2606 red + black pair, ATO breaker)"
+    },
+    {
+     "port": "ch12",
+     "x": 63.5,
+     "y": -5,
+     "kind": "power",
+     "label": "High-current channel 12 (WAGO 2606 red + black pair, ATO breaker)"
+    },
+    {
+     "port": "ch13",
+     "x": 77.5,
+     "y": -5,
+     "kind": "power",
+     "label": "High-current channel 13 (WAGO 2606 red + black pair, ATO breaker)"
+    },
+    {
+     "port": "ch14",
+     "x": 91.5,
+     "y": -5,
+     "kind": "power",
+     "label": "High-current channel 14 (WAGO 2606 red + black pair, ATO breaker)"
+    },
+    {
+     "port": "ch15",
+     "x": 105.5,
+     "y": -5,
+     "kind": "power",
+     "label": "High-current channel 15 (WAGO 2606 red + black pair, ATO breaker)"
+    },
+    {
+     "port": "ch16",
+     "x": 119.5,
+     "y": -5,
+     "kind": "power",
+     "label": "High-current channel 16 (WAGO 2606 red + black pair, ATO breaker)"
+    },
+    {
+     "port": "ch17",
+     "x": 133.5,
+     "y": -5,
+     "kind": "power",
+     "label": "High-current channel 17 (WAGO 2606 red + black pair, ATO breaker)"
+    },
+    {
+     "port": "ch18",
+     "x": 149.5,
+     "y": -5,
+     "kind": "power",
+     "label": "High-current channel 18 (WAGO 2606 red + black pair, ATO breaker)"
+    },
+    {
+     "port": "ch19",
+     "x": 163.5,
+     "y": -5,
+     "kind": "power",
+     "label": "High-current channel 19 (WAGO 2606 red + black pair, ATO breaker)"
+    },
+    {
+     "port": "ch20",
+     "x": 177.5,
+     "y": -5,
+     "kind": "power",
+     "label": "High-current channel 20 (WAGO 2606 red + black pair, ATO breaker)"
+    },
+    {
+     "port": "ch21",
+     "x": 191.5,
+     "y": -5,
+     "kind": "power",
+     "label": "High-current channel 21 (WAGO 2606 red + black pair, ATO breaker)"
+    },
+    {
+     "port": "ch22",
+     "x": 205.5,
+     "y": -5,
+     "kind": "power",
+     "label": "High-current channel 22 (WAGO 2606 red + black pair, ATO breaker)"
+    },
+    {
+     "port": "ch23",
+     "x": 219.5,
+     "y": -5,
+     "kind": "power",
+     "label": "High-current channel 23 (WAGO 2606 red + black pair, ATO breaker)"
+    },
+    {
+     "port": "battery_pos",
+     "x": -9,
+     "y": 38,
+     "kind": "power",
+     "label": "BATTERY INPUT + (M6 screw terminal)"
+    },
+    {
+     "port": "battery_neg",
+     "x": -9,
+     "y": 79,
+     "kind": "power",
+     "label": "BATTERY INPUT − (M6 screw terminal)"
+    },
+    {
+     "port": "usb",
+     "x": 44.5,
+     "y": 25,
+     "kind": "usb",
+     "label": "USB-C (logging and configuration)"
+    },
+    {
+     "port": "can_a",
+     "x": 33,
+     "y": 65,
+     "kind": "can",
+     "label": "CAN H/L pair A"
+    },
+    {
+     "port": "can_b",
+     "x": 44,
+     "y": 65,
+     "kind": "can",
+     "label": "CAN H/L pair B"
+    }
+   ]
+  },
+  {
+   "slug": "koors40-can",
+   "name": "AndyMark Koors40 Brushed DC Motor Controller (CAN + PWM)",
+   "type": "motor-controllers",
+   "vendor": "andymark",
+   "vendor_name": "AndyMark",
+   "part_number": "am-5600_can",
+   "status": "current",
+   "path": "motor-controllers/andymark/koors40-can.svg",
+   "size_mm": [
+    124,
+    43.5
+   ],
+   "view_box": [
+    -26,
+    -6,
+    124,
+    53.7
+   ],
+   "anchors": [
+    {
+     "port": "motor_neg",
+     "x": -14,
+     "y": 19.5,
+     "kind": "power",
+     "label": "M− (green, bare end) to motor −"
+    },
+    {
+     "port": "motor_pos",
+     "x": -14,
+     "y": 25.5,
+     "kind": "power",
+     "label": "M+ (white, bare end) to motor +"
+    },
+    {
+     "port": "vbat_neg",
+     "x": 74.0,
+     "y": 6.5,
+     "kind": "power",
+     "label": "V− (black, bare end) to battery negative"
+    },
+    {
+     "port": "vbat_pos",
+     "x": 74.0,
+     "y": 24.5,
+     "kind": "power",
+     "label": "V+ (red, bare end) to battery positive, 40 A breaker or smaller"
+    },
+    {
+     "port": "can_a",
+     "x": 74.0,
+     "y": 14.5,
+     "kind": "can",
+     "label": "CAN pair: yellow H / green L, twisted. For PWM use: yellow = signal, green = ground"
+    }
+   ]
+  },
+  {
+   "slug": "koors40-pwm",
+   "name": "AndyMark Koors40 Brushed DC Motor Controller (PWM only)",
+   "type": "motor-controllers",
+   "vendor": "andymark",
+   "vendor_name": "AndyMark",
+   "part_number": "am-5600",
+   "status": "current",
+   "path": "motor-controllers/andymark/koors40-pwm.svg",
+   "size_mm": [
+    124,
+    43.5
+   ],
+   "view_box": [
+    -26,
+    -6,
+    124,
+    53.7
+   ],
+   "anchors": [
+    {
+     "port": "motor_neg",
+     "x": -14,
+     "y": 19.5,
+     "kind": "power",
+     "label": "M− (green, bare end) to motor −"
+    },
+    {
+     "port": "motor_pos",
+     "x": -14,
+     "y": 25.5,
+     "kind": "power",
+     "label": "M+ (white, bare end) to motor +"
+    },
+    {
+     "port": "vbat_neg",
+     "x": 74.0,
+     "y": 6.5,
+     "kind": "power",
+     "label": "V− (black, bare end) to battery negative"
+    },
+    {
+     "port": "vbat_pos",
+     "x": 74.0,
+     "y": 24.5,
+     "kind": "power",
+     "label": "V+ (red, bare end) to battery positive, 40 A breaker or smaller"
+    },
+    {
+     "port": "pwm",
+     "x": 74.0,
+     "y": 14.5,
+     "kind": "signal",
+     "label": "PWM pair: white and black, twisted (signal and ground not published), servo pulse 1000-2000 µs from a roboRIO PWM port"
+    }
+   ]
+  },
+  {
    "slug": "talon-fxs",
    "name": "Talon FXS",
    "type": "motor-controllers",
@@ -1804,6 +2143,91 @@
      "y": -0.9,
      "kind": "signal",
      "label": "Encoder port: 6-pin JST PH (NEO / NEO 550 hall sensor, or brushed ABI quadrature)"
+    }
+   ]
+  },
+  {
+   "slug": "spark-lite",
+   "name": "SPARK Lite Motor Controller",
+   "type": "motor-controllers",
+   "vendor": "rev",
+   "vendor_name": "REV Robotics",
+   "part_number": "REV-11-3350",
+   "status": "current",
+   "path": "motor-controllers/rev/spark-lite.svg",
+   "size_mm": [
+    66,
+    143.5
+   ],
+   "view_box": [
+    -20.64,
+    -30,
+    79.39,
+    153.7
+   ],
+   "anchors": [
+    {
+     "port": "vbat_pos",
+     "x": -2,
+     "y": 92.5,
+     "kind": "power",
+     "label": "V+ (red 12 AWG, 15 cm, bare end), 40 A PDH channel"
+    },
+    {
+     "port": "vbat_neg",
+     "x": 40,
+     "y": 92.5,
+     "kind": "power",
+     "label": "V− (black 12 AWG, 15 cm, bare end)"
+    },
+    {
+     "port": "motor_a",
+     "x": 3.0,
+     "y": -22.5,
+     "kind": "power",
+     "label": "Motor A (red 12 AWG) to NEO red or brushed M+"
+    },
+    {
+     "port": "motor_b",
+     "x": 15.4,
+     "y": -22.5,
+     "kind": "power",
+     "label": "Motor B (black 12 AWG) to NEO black or brushed M−"
+    },
+    {
+     "port": "motor_c",
+     "x": 28.2,
+     "y": -22.5,
+     "kind": "power",
+     "label": "Motor C (white 12 AWG) to NEO white, unused for brushed"
+    },
+    {
+     "port": "can_a",
+     "x": 12,
+     "y": 102.4,
+     "kind": "can",
+     "label": "SPARK CAN Cable V2: yellow H / green L, male 0.1 in 3-pin housing"
+    },
+    {
+     "port": "can_b",
+     "x": 29,
+     "y": 102.4,
+     "kind": "can",
+     "label": "SPARK CAN Cable V2: yellow H / green L, female 0.1 in 3-pin housing"
+    },
+    {
+     "port": "can_pwm",
+     "x": 23.05,
+     "y": 67.0,
+     "kind": "can",
+     "label": "CAN/PWM port: JST-PH 4-pin (H L H L, or PWM signal/ground)"
+    },
+    {
+     "port": "encoder",
+     "x": 15.5,
+     "y": 1.2,
+     "kind": "signal",
+     "label": "ENCODER port: JST-PH 6-pin (NEO / NEO 550 hall sensor cable, brushed quadrature encoder)"
     }
    ]
   },
