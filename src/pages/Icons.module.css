@@ -43,12 +43,16 @@
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
 
 .card { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); overflow: hidden; }
+/* The image is laid over the square tile and scaled to fit, so a tall or wide drawing never grows past it (a grid
+   cell does not cap an SVG's height with max-height). */
 .tile {
-  display: grid; place-items: center; width: 100%; aspect-ratio: 1; padding: 12px; border: 0; border-bottom: 1px solid var(--line);
+  position: relative; display: block; width: 100%; aspect-ratio: 1; padding: 0; border: 0; border-bottom: 1px solid var(--line);
   background: #fff; cursor: zoom-in;
 }
 .tile:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
-.tile img { max-width: 100%; max-height: 100%; }
+.tile img {
+  position: absolute; inset: 0; width: 100%; height: 100%; padding: 12px; box-sizing: border-box; object-fit: contain;
+}
 
 /* The enlarged view: most of the screen, the drawing on white, scaled to fit. */
 .viewer {
