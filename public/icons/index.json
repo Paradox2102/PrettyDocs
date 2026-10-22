@@ -10,7 +10,7 @@
   {
    "id": "power",
    "name": "Power",
-   "count": 13
+   "count": 14
   },
   {
    "id": "motor-controllers",
@@ -1413,6 +1413,119 @@
      "y": 225.4,
      "kind": "can",
      "label": "CAN H/L pair B"
+    }
+   ]
+  },
+  {
+   "slug": "rev-spm",
+   "name": "Servo Power Module",
+   "type": "power",
+   "vendor": "rev",
+   "vendor_name": "REV Robotics",
+   "part_number": "REV-11-1144",
+   "status": "legacy",
+   "path": "power/rev/rev-spm.svg",
+   "size_mm": [
+    80,
+    119.0
+   ],
+   "view_box": [
+    -40,
+    -50,
+    80,
+    129.2
+   ],
+   "anchors": [
+    {
+     "port": "servo_0",
+     "x": -29.0,
+     "y": -35.6,
+     "kind": "signal",
+     "label": "Servo output 1 (icon numbering): 3-pin 0.1 in header, - ground at the outer edge, + 6 V in the middle, ~ signal toward the LED column; carries 6 V"
+    },
+    {
+     "port": "pwm_in_0",
+     "x": 29.0,
+     "y": -35.6,
+     "kind": "signal",
+     "label": "PWM input 1 (icon numbering): 3-pin 0.1 in header, ~ signal toward the LED column, + in the middle, - ground at the outer edge; PWM from a controller, passed straight through to servo output 1"
+    },
+    {
+     "port": "servo_1",
+     "x": -29.0,
+     "y": -30.52,
+     "kind": "signal",
+     "label": "Servo output 2 (icon numbering): 3-pin 0.1 in header, - ground at the outer edge, + 6 V in the middle, ~ signal toward the LED column; carries 6 V"
+    },
+    {
+     "port": "pwm_in_1",
+     "x": 29.0,
+     "y": -30.52,
+     "kind": "signal",
+     "label": "PWM input 2 (icon numbering): 3-pin 0.1 in header, ~ signal toward the LED column, + in the middle, - ground at the outer edge; PWM from a controller, passed straight through to servo output 2"
+    },
+    {
+     "port": "servo_2",
+     "x": -29.0,
+     "y": -25.44,
+     "kind": "signal",
+     "label": "Servo output 3 (icon numbering): 3-pin 0.1 in header, - ground at the outer edge, + 6 V in the middle, ~ signal toward the LED column; carries 6 V"
+    },
+    {
+     "port": "pwm_in_2",
+     "x": 29.0,
+     "y": -25.44,
+     "kind": "signal",
+     "label": "PWM input 3 (icon numbering): 3-pin 0.1 in header, ~ signal toward the LED column, + in the middle, - ground at the outer edge; PWM from a controller, passed straight through to servo output 3"
+    },
+    {
+     "port": "servo_3",
+     "x": -29.0,
+     "y": -20.36,
+     "kind": "signal",
+     "label": "Servo output 4 (icon numbering): 3-pin 0.1 in header, - ground at the outer edge, + 6 V in the middle, ~ signal toward the LED column; carries 6 V"
+    },
+    {
+     "port": "pwm_in_3",
+     "x": 29.0,
+     "y": -20.36,
+     "kind": "signal",
+     "label": "PWM input 4 (icon numbering): 3-pin 0.1 in header, ~ signal toward the LED column, + in the middle, - ground at the outer edge; PWM from a controller, passed straight through to servo output 4"
+    },
+    {
+     "port": "servo_4",
+     "x": -29.0,
+     "y": -15.28,
+     "kind": "signal",
+     "label": "Servo output 5 (icon numbering): 3-pin 0.1 in header, - ground at the outer edge, + 6 V in the middle, ~ signal toward the LED column; carries 6 V"
+    },
+    {
+     "port": "pwm_in_4",
+     "x": 29.0,
+     "y": -15.28,
+     "kind": "signal",
+     "label": "PWM input 5 (icon numbering): 3-pin 0.1 in header, ~ signal toward the LED column, + in the middle, - ground at the outer edge; PWM from a controller, passed straight through to servo output 5"
+    },
+    {
+     "port": "servo_5",
+     "x": -29.0,
+     "y": -10.2,
+     "kind": "signal",
+     "label": "Servo output 6 (icon numbering): 3-pin 0.1 in header, - ground at the outer edge, + 6 V in the middle, ~ signal toward the LED column; carries 6 V"
+    },
+    {
+     "port": "pwm_in_5",
+     "x": 29.0,
+     "y": -10.2,
+     "kind": "signal",
+     "label": "PWM input 6 (icon numbering): 3-pin 0.1 in header, ~ signal toward the LED column, + in the middle, - ground at the outer edge; PWM from a controller, passed straight through to servo output 6"
+    },
+    {
+     "port": "power",
+     "x": 0,
+     "y": 58.0,
+     "kind": "power",
+     "label": "12 V input: two screw terminals for #6 or M3 ring or fork terminals on 18 AWG or larger wire, + on the left, - on the right as printed; 7-20 V, 12 V nominal"
     }
    ]
   },
