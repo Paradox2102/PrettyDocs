@@ -35,7 +35,7 @@
   {
    "id": "sensors",
    "name": "Sensors and encoders",
-   "count": 17
+   "count": 18
   },
   {
    "id": "vision",
@@ -4864,6 +4864,49 @@
      "y": 11.82,
      "kind": "signal",
      "label": "3-pin 0.1 in header S / 5V / GND; 36 in PWM-style cable (white / red / black) to roboRIO ANALOG IN"
+    }
+   ]
+  },
+  {
+   "slug": "thrifty-through-bore",
+   "name": "Thrifty Through Bore Encoder",
+   "type": "sensors",
+   "vendor": "thrifty-bot",
+   "vendor_name": "The Thrifty Bot",
+   "part_number": "TTB-0365 (Thrifty drawing TTB-0365 rev A, 07/31/26)",
+   "status": "current",
+   "path": "sensors/thrifty-bot/thrifty-through-bore.svg",
+   "size_mm": [
+    62,
+    124.26
+   ],
+   "view_box": [
+    -31,
+    -36,
+    62,
+    134.46
+   ],
+   "anchors": [
+    {
+     "port": "pwr",
+     "x": 19.0,
+     "y": 73.76,
+     "kind": "power",
+     "label": "Molex SL: red V+ / black GND (5-32 V; 12 V nominal), harness end"
+    },
+    {
+     "port": "can_a",
+     "x": -19.0,
+     "y": 73.76,
+     "kind": "can",
+     "label": "Molex SL CAN connector A: yellow H / green L, harness end (CAN 1 Mbps or CAN FD)"
+    },
+    {
+     "port": "can_b",
+     "x": -7.0,
+     "y": 73.76,
+     "kind": "can",
+     "label": "Molex SL CAN connector B: yellow H / green L, harness end (CAN 1 Mbps or CAN FD)"
     }
    ]
   },

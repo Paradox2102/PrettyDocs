@@ -26,7 +26,7 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 - [Motors](#motors) (14)
 - [Radio and CAN](#radio-and-can) (8)
 - [Lights](#lights) (3)
-- [Sensors and encoders](#sensors-and-encoders) (17)
+- [Sensors and encoders](#sensors-and-encoders) (18)
 - [Vision and coprocessors](#vision-and-coprocessors) (12)
 - [Pneumatics](#pneumatics) (6)
 - [Driver station](#driver-station) (1)
@@ -132,6 +132,7 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 | <img src="sensors/studica/navx2-mxp.svg" alt="" height="64"> | [navx2-mxp.svg](sensors/studica/navx2-mxp.svg) | navX2-MXP Robotics Navigation Sensor | Studica | current |
 | <img src="sensors/swyft/swyft-sense-limit-switch.svg" alt="" height="64"> | [swyft-sense-limit-switch.svg](sensors/swyft/swyft-sense-limit-switch.svg) | SWYFT Sense Magnetic Limit Switch (V1.1) | SWYFT Robotics | current |
 | <img src="sensors/thrifty-bot/thrifty-encoder.svg" alt="" height="64"> | [thrifty-encoder.svg](sensors/thrifty-bot/thrifty-encoder.svg) | Thrifty Absolute Magnetic Encoder | The Thrifty Bot | current |
+| <img src="sensors/thrifty-bot/thrifty-through-bore.svg" alt="" height="64"> | [thrifty-through-bore.svg](sensors/thrifty-bot/thrifty-through-bore.svg) | Thrifty Through Bore Encoder | The Thrifty Bot | current |
 | <img src="sensors/wcp/wcp-throughbore.svg" alt="" height="64"> | [wcp-throughbore.svg](sensors/wcp/wcp-throughbore.svg) | WCP ThroughBore Powered by CANcoder (1/2" Hex) | WestCoast Products | current |
 
 ## Vision and coprocessors
