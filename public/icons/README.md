@@ -21,7 +21,7 @@ The product names belong to their makers.
 The wiring tools write this folder (`export_prettydocs.py`): do not edit these files by hand.
 
 - [Robot controllers](#robot-controllers) (2)
-- [Power](#power) (11)
+- [Power](#power) (13)
 - [Motor controllers](#motor-controllers) (10)
 - [Motors](#motors) (14)
 - [Radio and CAN](#radio-and-can) (8)
@@ -45,6 +45,7 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 | <img src="power/ctre/ctre-pdp.svg" alt="" height="64"> | [ctre-pdp.svg](power/ctre/ctre-pdp.svg) | Power Distribution Panel (PDP) | CTR Electronics | legacy (not sold) |
 | <img src="power/ctre/ctre-vrm.svg" alt="" height="64"> | [ctre-vrm.svg](power/ctre/ctre-vrm.svg) | Voltage Regulator Module (VRM) | CTR Electronics | legacy (not sold) |
 | <img src="power/eaton/main-breaker-120a.svg" alt="" height="64"> | [main-breaker-120a.svg](power/eaton/main-breaker-120a.svg) | 120 A main circuit breaker (Eaton Bussmann Series 185 surface mount, CB185-120 / 185120F) | Eaton Bussmann | current |
+| <img src="power/gobilda/gobilda-servo-power-injector.svg" alt="" height="64"> | [gobilda-servo-power-injector.svg](power/gobilda/gobilda-servo-power-injector.svg) | 6V Servo Power Injector (6 Channel, 8-15V Input) | goBILDA | current |
 | <img src="power/luma/poe-powertap.svg" alt="" height="64"> | [poe-powertap.svg](power/luma/poe-powertap.svg) | Luma PoE PowerTap | Luma Vision | current |
 | <img src="power/protooma/protooma-5v-10a.svg" alt="" height="64"> | [protooma-5v-10a.svg](power/protooma/protooma-5v-10a.svg) | DC-DC step-down converter, 12/24 V to 5 V 10 A 50 W ("LED brick") | Protooma | current |
 | <img src="power/redux/redux-zinc-v.svg" alt="" height="64"> | [redux-zinc-v.svg](power/redux/redux-zinc-v.svg) | Zinc-V (current production: Zinc-V+ / "ZINC-V Plus") inline buck converter | Redux Robotics | current |
@@ -52,6 +53,7 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 | <img src="power/rev/rev-pdh.svg" alt="" height="64"> | [rev-pdh.svg](power/rev/rev-pdh.svg) | Power Distribution Hub (PDH) | REV Robotics | current |
 | <img src="power/generic/frc-battery-sb120.svg" alt="" height="64"> | [frc-battery-sb120.svg](power/generic/frc-battery-sb120.svg) | FRC robot battery: 12 V 18 Ah sealed lead-acid with the FRC lead set (6 AWG leads, blue Anderson SB120) | Several makers | current |
 | <img src="power/generic/frc-battery.svg" alt="" height="64"> | [frc-battery.svg](power/generic/frc-battery.svg) | FRC robot battery: 12 V 18 Ah sealed lead-acid with the FRC lead set (6 AWG leads, red Anderson SB50) | Several makers | current |
+| <img src="power/studica/studica-servo-power-block.svg" alt="" height="64"> | [studica-servo-power-block.svg](power/studica/studica-servo-power-block.svg) | Servo Power Block | Studica | current |
 | <img src="power/thrifty-bot/thrifty-powerhub.svg" alt="" height="64"> | [thrifty-powerhub.svg](power/thrifty-bot/thrifty-powerhub.svg) | PowerHub | The Thrifty Bot | current |
 
 ## Motor controllers

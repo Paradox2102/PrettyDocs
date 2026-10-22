@@ -10,7 +10,7 @@
   {
    "id": "power",
    "name": "Power",
-   "count": 11
+   "count": 13
   },
   {
    "id": "motor-controllers",
@@ -830,6 +830,119 @@
    ]
   },
   {
+   "slug": "gobilda-servo-power-injector",
+   "name": "6V Servo Power Injector (6 Channel, 8-15V Input)",
+   "type": "power",
+   "vendor": "gobilda",
+   "vendor_name": "goBILDA",
+   "part_number": "3125-0001-0001",
+   "status": "current",
+   "path": "power/gobilda/gobilda-servo-power-injector.svg",
+   "size_mm": [
+    70,
+    71.0
+   ],
+   "view_box": [
+    -46,
+    -35,
+    79.51,
+    81.2
+   ],
+   "anchors": [
+    {
+     "port": "servo_0",
+     "x": -6.35,
+     "y": -29.5,
+     "kind": "signal",
+     "label": "Servo output 1 (printed 1): 3-pin 0.1 in header, rows - + S from the outer edge, pins face up; carries 6 V"
+    },
+    {
+     "port": "pwm_in_0",
+     "x": -6.35,
+     "y": 29.5,
+     "kind": "signal",
+     "label": "Signal input 1 (printed 1): 2-pin header, S and - only (no + pin), pins face up; PWM from a controller or servo hub, passed straight through to output 1"
+    },
+    {
+     "port": "servo_1",
+     "x": -3.81,
+     "y": -29.5,
+     "kind": "signal",
+     "label": "Servo output 2 (printed 2): 3-pin 0.1 in header, rows - + S from the outer edge, pins face up; carries 6 V"
+    },
+    {
+     "port": "pwm_in_1",
+     "x": -3.81,
+     "y": 29.5,
+     "kind": "signal",
+     "label": "Signal input 2 (printed 2): 2-pin header, S and - only (no + pin), pins face up; PWM from a controller or servo hub, passed straight through to output 2"
+    },
+    {
+     "port": "servo_2",
+     "x": -1.27,
+     "y": -29.5,
+     "kind": "signal",
+     "label": "Servo output 3 (printed 3): 3-pin 0.1 in header, rows - + S from the outer edge, pins face up; carries 6 V"
+    },
+    {
+     "port": "pwm_in_2",
+     "x": -1.27,
+     "y": 29.5,
+     "kind": "signal",
+     "label": "Signal input 3 (printed 3): 2-pin header, S and - only (no + pin), pins face up; PWM from a controller or servo hub, passed straight through to output 3"
+    },
+    {
+     "port": "servo_3",
+     "x": 1.27,
+     "y": -29.5,
+     "kind": "signal",
+     "label": "Servo output 4 (printed 4): 3-pin 0.1 in header, rows - + S from the outer edge, pins face up; carries 6 V"
+    },
+    {
+     "port": "pwm_in_3",
+     "x": 1.27,
+     "y": 29.5,
+     "kind": "signal",
+     "label": "Signal input 4 (printed 4): 2-pin header, S and - only (no + pin), pins face up; PWM from a controller or servo hub, passed straight through to output 4"
+    },
+    {
+     "port": "servo_4",
+     "x": 3.81,
+     "y": -29.5,
+     "kind": "signal",
+     "label": "Servo output 5 (printed 5): 3-pin 0.1 in header, rows - + S from the outer edge, pins face up; carries 6 V"
+    },
+    {
+     "port": "pwm_in_4",
+     "x": 3.81,
+     "y": 29.5,
+     "kind": "signal",
+     "label": "Signal input 5 (printed 5): 2-pin header, S and - only (no + pin), pins face up; PWM from a controller or servo hub, passed straight through to output 5"
+    },
+    {
+     "port": "servo_5",
+     "x": 6.35,
+     "y": -29.5,
+     "kind": "signal",
+     "label": "Servo output 6 (printed 6): 3-pin 0.1 in header, rows - + S from the outer edge, pins face up; carries 6 V"
+    },
+    {
+     "port": "pwm_in_5",
+     "x": 6.35,
+     "y": 29.5,
+     "kind": "signal",
+     "label": "Signal input 6 (printed 6): 2-pin header, S and - only (no + pin), pins face up; PWM from a controller or servo hub, passed straight through to output 6"
+    },
+    {
+     "port": "power",
+     "x": -38,
+     "y": 0,
+     "kind": "power",
+     "label": "XT30 power input (mating XT30 plug, + on the side of the output header): 8-15 V, about 12 V nominal"
+    }
+   ]
+  },
+  {
    "slug": "poe-powertap",
    "name": "Luma PoE PowerTap",
    "type": "power",
@@ -1372,6 +1485,147 @@
      "y": 147,
      "kind": "power",
      "label": "SB50 + (red 6 AWG lead from the battery +)"
+    }
+   ]
+  },
+  {
+   "slug": "studica-servo-power-block",
+   "name": "Servo Power Block",
+   "type": "power",
+   "vendor": "studica",
+   "vendor_name": "Studica",
+   "part_number": "75006",
+   "status": "current",
+   "path": "power/studica/studica-servo-power-block.svg",
+   "size_mm": [
+    82,
+    70.0
+   ],
+   "view_box": [
+    -6,
+    -5,
+    82,
+    80.2
+   ],
+   "anchors": [
+    {
+     "port": "pwm_in_0",
+     "x": 18.65,
+     "y": 7.2,
+     "kind": "signal",
+     "label": "PWM input 0: 3-pin 0.1 in header (- + S, top to bottom), signal passes to servo_0"
+    },
+    {
+     "port": "servo_0",
+     "x": 10.4,
+     "y": 7.2,
+     "kind": "signal",
+     "label": "Servo output 0: 3-pin 0.1 in header (- + S, top to bottom), carries 6 V servo power (10 A shared by all 8)"
+    },
+    {
+     "port": "pwm_in_4",
+     "x": 51.35,
+     "y": 7.2,
+     "kind": "signal",
+     "label": "PWM input 4: 3-pin 0.1 in header (- + S, top to bottom), signal passes to servo_4"
+    },
+    {
+     "port": "servo_4",
+     "x": 59.6,
+     "y": 7.2,
+     "kind": "signal",
+     "label": "Servo output 4: 3-pin 0.1 in header (- + S, top to bottom), carries 6 V servo power (10 A shared by all 8)"
+    },
+    {
+     "port": "pwm_in_1",
+     "x": 18.65,
+     "y": 17.45,
+     "kind": "signal",
+     "label": "PWM input 1: 3-pin 0.1 in header (- + S, top to bottom), signal passes to servo_1"
+    },
+    {
+     "port": "servo_1",
+     "x": 10.4,
+     "y": 17.45,
+     "kind": "signal",
+     "label": "Servo output 1: 3-pin 0.1 in header (- + S, top to bottom), carries 6 V servo power (10 A shared by all 8)"
+    },
+    {
+     "port": "pwm_in_5",
+     "x": 51.35,
+     "y": 17.45,
+     "kind": "signal",
+     "label": "PWM input 5: 3-pin 0.1 in header (- + S, top to bottom), signal passes to servo_5"
+    },
+    {
+     "port": "servo_5",
+     "x": 59.6,
+     "y": 17.45,
+     "kind": "signal",
+     "label": "Servo output 5: 3-pin 0.1 in header (- + S, top to bottom), carries 6 V servo power (10 A shared by all 8)"
+    },
+    {
+     "port": "pwm_in_2",
+     "x": 18.65,
+     "y": 27.7,
+     "kind": "signal",
+     "label": "PWM input 2: 3-pin 0.1 in header (- + S, top to bottom), signal passes to servo_2"
+    },
+    {
+     "port": "servo_2",
+     "x": 10.4,
+     "y": 27.7,
+     "kind": "signal",
+     "label": "Servo output 2: 3-pin 0.1 in header (- + S, top to bottom), carries 6 V servo power (10 A shared by all 8)"
+    },
+    {
+     "port": "pwm_in_6",
+     "x": 51.35,
+     "y": 27.7,
+     "kind": "signal",
+     "label": "PWM input 6: 3-pin 0.1 in header (- + S, top to bottom), signal passes to servo_6"
+    },
+    {
+     "port": "servo_6",
+     "x": 59.6,
+     "y": 27.7,
+     "kind": "signal",
+     "label": "Servo output 6: 3-pin 0.1 in header (- + S, top to bottom), carries 6 V servo power (10 A shared by all 8)"
+    },
+    {
+     "port": "pwm_in_3",
+     "x": 18.65,
+     "y": 37.95,
+     "kind": "signal",
+     "label": "PWM input 3: 3-pin 0.1 in header (- + S, top to bottom), signal passes to servo_3"
+    },
+    {
+     "port": "servo_3",
+     "x": 10.4,
+     "y": 37.95,
+     "kind": "signal",
+     "label": "Servo output 3: 3-pin 0.1 in header (- + S, top to bottom), carries 6 V servo power (10 A shared by all 8)"
+    },
+    {
+     "port": "pwm_in_7",
+     "x": 51.35,
+     "y": 37.95,
+     "kind": "signal",
+     "label": "PWM input 7: 3-pin 0.1 in header (- + S, top to bottom), signal passes to servo_7"
+    },
+    {
+     "port": "servo_7",
+     "x": 59.6,
+     "y": 37.95,
+     "kind": "signal",
+     "label": "Servo output 7: 3-pin 0.1 in header (- + S, top to bottom), carries 6 V servo power (10 A shared by all 8)"
+    },
+    {
+     "port": "power",
+     "x": 35.0,
+     "y": 55.1,
+     "kind": "power",
+     "label": "12VDC IN: 2-pin JST VH style header (3.96 mm pitch), - left, + right as printed; 12 V nominal"
     }
    ]
   },
