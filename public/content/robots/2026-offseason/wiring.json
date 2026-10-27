@@ -1,5 +1,5 @@
 {
- "built": "2026-10-19T16:36:42-07:00",
+ "built": "2026-10-27T10:01:29-07:00",
  "devices": {
   "battery": {
    "key": "battery",
@@ -28,10 +28,10 @@
      62.91
     ],
     "top_bbox": [
-     205.06,
-     52.32,
-     153.48,
-     57.09
+     207.86,
+     61.1,
+     117.34,
+     88.69
     ]
    }
   },
@@ -62,10 +62,10 @@
      38.57
     ],
     "top_bbox": [
-     64.27,
-     160.23,
-     59.61,
-     17.49
+     97.61,
+     180.7,
+     54.33,
+     16.9
     ]
    }
   },
@@ -100,16 +100,16 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     131.46,
+     128.82,
      111.16,
      46.51,
      37.98
     ],
     "top_bbox": [
-     59.83,
-     100.32,
-     93.02,
-     43.38
+     93.17,
+     115.8,
+     79.05,
+     57.99
     ]
    }
   },
@@ -151,10 +151,10 @@
      32.53
     ],
     "top_bbox": [
-     232.87,
-     212.31,
-     139.1,
-     19.05
+     227.33,
+     166.8,
+     111.3,
+     68.35
     ]
    }
   },
@@ -180,16 +180,16 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     135.22,
+     132.58,
      162.15,
      39.0,
      45.21
     ],
     "top_bbox": [
-     293.7,
-     215.82,
-     82.83,
-     21.38
+     269.91,
+     223.37,
+     73.28,
+     13.83
     ]
    }
   },
@@ -220,16 +220,16 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     52.46,
+     47.18,
      37.5,
      41.64,
      82.97
     ],
     "top_bbox": [
-     58.27,
-     117.48,
-     192.78,
-     37.26
+     91.61,
+     95.4,
+     149.35,
+     86.12
     ]
    }
   },
@@ -248,35 +248,42 @@
    },
    "power": {
     "pdh_channel": 12,
-    "pdh_uncertain": false
+    "pdh_pair": [
+     12,
+     14
+    ],
+    "pdh_uncertain": true
    },
    "notes": [
     "CAN ID 32 on can_s1 confirmed by a blink test with the robot on (user, 2026-10-08); code name indexerConveyorFollower (Constants.java).",
-    "GitHub main af85e4eb (2026-10-09): IndexerConveyorSubsystem calls it m_indexerConveyorBottom. The two conveyor motors now run separately (no follower).",
-    "Kraken X44 since 2026-10-19 (user); the team swapped the X60 for an X44. CAD: G3000 - Indexer Main / Kraken X44 Brushless Motor <3>."
+    "GitHub main af85e4eb (2026-10-09): IndexerConveyorSubsystem calls it m_indexerConveyorBottom.",
+    "Kraken X44 since 2026-10-19 (user); the team swapped the X60 for an X44. CAD: G3000 - Indexer Main / Kraken X44 Brushless Motor <3>.",
+    "GitHub main 8fd2c1a9 (2026-10-25): the bottom conveyor motor (32) follows the top one (31), aligned. As a leader/follower pair they draw the same current, so the logs cannot tell their channels apart (neither ran in the 2026-10-23 logs). The tag shows 12/14 and the drawing keeps ch 12. Paired on 2026-10-25 (user)."
    ],
    "derived": {
     "wire_order": "1 of 3 on can_s1",
     "pdh_tag": [
-     "12",
+     "12/14",
      "red"
     ],
     "cad_comment": "Motor Name: bottom Belt Tunnel",
-    "open": false,
-    "open_reasons": [],
+    "open": true,
+    "open_reasons": [
+     "PDH channel one of two"
+    ],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     186.98,
+     184.34,
      34.23,
      30.0,
      34.71
     ],
     "top_bbox": [
-     239.25,
+     231.8,
      156.6,
-     128.28,
-     62.46
+     102.4,
+     69.94
     ]
    }
   },
@@ -312,16 +319,16 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     219.98,
+     217.34,
      29.5,
      25.45,
      39.45
     ],
     "top_bbox": [
-     286.36,
-     204.66,
-     72.18,
-     21.0
+     264.77,
+     215.56,
+     60.43,
+     15.6
     ]
    }
   },
@@ -340,35 +347,42 @@
    },
    "power": {
     "pdh_channel": 14,
-    "pdh_uncertain": false
+    "pdh_pair": [
+     12,
+     14
+    ],
+    "pdh_uncertain": true
    },
    "notes": [
     "CAN ID 31 on can_s1 confirmed by a blink test with the robot on (user, 2026-10-08); code name indexerConveyorLeader (Constants.java).",
-    "GitHub main af85e4eb (2026-10-09): IndexerConveyorSubsystem calls it m_indexerConveyorTop. The two conveyor motors now run separately (no follower).",
-    "Kraken X44 since 2026-10-19 (user); the team swapped the X60 for an X44. CAD: G3000 - Indexer Main / Kraken X44 Brushless Motor <1>."
+    "GitHub main af85e4eb (2026-10-09): IndexerConveyorSubsystem calls it m_indexerConveyorTop.",
+    "Kraken X44 since 2026-10-19 (user); the team swapped the X60 for an X44. CAD: G3000 - Indexer Main / Kraken X44 Brushless Motor <1>.",
+    "GitHub main 8fd2c1a9 (2026-10-25): the bottom conveyor motor (32) follows the top one (31), aligned. As a leader/follower pair they draw the same current, so the logs cannot tell their channels apart (neither ran in the 2026-10-23 logs). The tag shows 12/14 and the drawing keeps ch 14. Paired on 2026-10-25 (user)."
    ],
    "derived": {
     "wire_order": "3 of 3 on can_s1",
     "pdh_tag": [
-     "14",
+     "12/14",
      "red"
     ],
     "cad_comment": "not attached to a part: 'Motor Name: Top Belt Tunnel'",
-    "open": false,
-    "open_reasons": [],
+    "open": true,
+    "open_reasons": [
+     "PDH channel one of two"
+    ],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     248.43,
+     245.79,
      34.23,
      25.5,
      34.71
     ],
     "top_bbox": [
-     287.68,
-     177.0,
-     75.36,
-     42.06
+     265.69,
+     187.2,
+     64.0,
+     39.34
     ]
    }
   },
@@ -404,16 +418,16 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     186.98,
+     184.34,
      85.84,
      25.45,
      39.45
     ],
     "top_bbox": [
-     78.55,
-     174.2,
-     56.21,
-     23.83
+     111.89,
+     184.4,
+     47.66,
+     27.42
     ]
    }
   },
@@ -450,16 +464,16 @@
     "fed_by_role": "BL turn",
     "attached_to_role": null,
     "bbox": [
-     215.43,
+     212.79,
      80.95,
      20.7,
      44.34
     ],
     "top_bbox": [
-     76.21,
-     200.64,
-     63.56,
-     18.87
+     109.55,
+     204.8,
+     53.51,
+     22.06
     ]
    }
   },
@@ -495,16 +509,16 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     239.13,
+     236.49,
      85.84,
      25.45,
      39.45
     ],
     "top_bbox": [
-     78.55,
-     205.65,
-     84.8,
-     31.55
+     111.89,
+     216.25,
+     67.68,
+     20.94
     ]
    }
   },
@@ -522,16 +536,16 @@
     "code_name": "br_steer"
    },
    "power": {
-    "pdh_channel": 10,
+    "pdh_channel": 11,
     "pdh_uncertain": false
    },
    "notes": [
-    "PDH channel 10 (user, 2026-10-08)."
+    "PDH channel 11: the other channel of the BR module pair, because the BR drive is on ch 10 (2026-10-23 logs). Talon 8 itself draws too little current for a clear fit (best ch 11, r 0.25). The user had ch 10 (2026-10-08); swapped with BR drive on 2026-10-25."
    ],
    "derived": {
     "wire_order": "4 of 13 on can_s2",
     "pdh_tag": [
-     "10",
+     "11",
      "red"
     ],
     "cad_comment": "Location: BR Turn / Loop: S2 / CAN ID: 8",
@@ -540,16 +554,16 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     267.58,
+     264.94,
      85.84,
      25.45,
      39.45
     ],
     "top_bbox": [
-     296.7,
-     166.8,
-     56.54,
-     31.23
+     272.01,
+     177.0,
+     47.89,
+     34.82
     ]
    }
   },
@@ -577,7 +591,7 @@
    "derived": {
     "wire_order": "5 of 13 on can_s2",
     "pdh_tag": [
-     "10",
+     "11",
      "red"
     ],
     "cad_comment": null,
@@ -586,16 +600,16 @@
     "fed_by_role": "BR turn",
     "attached_to_role": null,
     "bbox": [
-     296.03,
+     293.39,
      80.95,
      20.7,
      44.34
     ],
     "top_bbox": [
-     291.69,
-     197.4,
-     63.89,
-     22.11
+     268.51,
+     207.6,
+     53.74,
+     19.26
     ]
    }
   },
@@ -613,16 +627,16 @@
     "code_name": "br_drive"
    },
    "power": {
-    "pdh_channel": 11,
+    "pdh_channel": 10,
     "pdh_uncertain": false
    },
    "notes": [
-    "PDH channel 11 (user, 2026-10-08)."
+    "PDH channel 10 from the logs (analysis/pdh_map.py, 16 logs of 2026-10-23): Talon 7 SupplyCurrent fits ch 10 (r 0.87, 136 active samples) and not ch 11 (r 0.15 in the 21:10 log). The user had ch 11 (2026-10-08); swapped with BR turn on 2026-10-25."
    ],
    "derived": {
     "wire_order": "6 of 13 on can_s2",
     "pdh_tag": [
-     "11",
+     "10",
      "red"
     ],
     "cad_comment": "Location: BR Drive / Loop: S2 / CAN ID: 7",
@@ -631,16 +645,16 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     319.73,
+     317.09,
      85.84,
      25.45,
      39.45
     ],
     "top_bbox": [
-     268.12,
-     187.2,
-     85.13,
-     39.39
+     252.0,
+     197.4,
+     67.91,
+     34.41
     ]
    }
   },
@@ -676,16 +690,16 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     186.98,
+     184.34,
      132.17,
      25.45,
      39.45
     ],
     "top_bbox": [
-     296.7,
-     74.19,
-     55.83,
-     21.55
+     272.01,
+     95.4,
+     47.18,
+     44.41
     ]
    }
   },
@@ -722,16 +736,16 @@
     "fed_by_role": "FR turn",
     "attached_to_role": null,
     "bbox": [
-     215.43,
+     212.79,
      127.28,
      20.7,
      44.34
     ],
     "top_bbox": [
-     291.69,
-     52.71,
-     63.84,
-     29.13
+     268.51,
+     75.0,
+     53.69,
+     48.31
     ]
    }
   },
@@ -767,16 +781,16 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     239.13,
+     236.49,
      132.17,
      25.45,
      39.45
     ],
     "top_bbox": [
-     268.12,
-     45.63,
-     83.57,
-     26.01
+     252.0,
+     64.8,
+     66.35,
+     55.0
     ]
    }
   },
@@ -812,16 +826,16 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     267.58,
+     264.94,
      132.17,
      25.45,
      39.45
     ],
     "top_bbox": [
-     80.11,
-     74.19,
-     54.65,
-     20.97
+     113.45,
+     105.6,
+     46.1,
+     34.21
     ]
    }
   },
@@ -858,16 +872,16 @@
     "fed_by_role": "FL turn",
     "attached_to_role": null,
     "bbox": [
-     296.03,
+     293.39,
      127.28,
      20.7,
      44.34
     ],
     "top_bbox": [
-     76.27,
-     52.71,
-     63.51,
-     19.59
+     109.61,
+     85.2,
+     53.46,
+     38.11
     ]
    }
   },
@@ -903,16 +917,16 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     319.73,
+     317.09,
      132.17,
      25.45,
      39.45
     ],
     "top_bbox": [
-     79.27,
-     45.63,
-     84.09,
-     20.94
+     112.61,
+     64.8,
+     66.96,
+     55.0
     ]
    }
   },
@@ -948,16 +962,16 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     348.18,
+     345.54,
      131.13,
      21.88,
      40.49
     ],
     "top_bbox": [
-     78.55,
-     115.8,
-     148.79,
-     29.61
+     111.89,
+     75.0,
+     112.47,
+     99.99
     ]
    }
   },
@@ -975,17 +989,17 @@
     "code_name": "kicker"
    },
    "power": {
-    "pdh_channel": 3,
+    "pdh_channel": 16,
     "pdh_uncertain": true
    },
    "notes": [
     "CAN ID 40 on can_s3 confirmed by a blink test with the robot on (user, 2026-10-08); code name kicker (Constants.java).",
-    "PDH channel 3 is a placeholder: a free port picked until the real channel is recorded (user, 2026-10-08)."
+    "PDH channel 16 is a placeholder: the hood took its old placeholder 3 from the logs (2026-10-25). Talon 40 drew no current in the 2026-10-23 logs."
    ],
    "derived": {
     "wire_order": "1 of 6 on can_s3",
     "pdh_tag": [
-     "3?",
+     "16?",
      "red"
     ],
     "cad_comment": "Motor Name: Vertical Roller",
@@ -996,16 +1010,16 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     186.98,
+     184.34,
      183.62,
      25.5,
      39.45
     ],
     "top_bbox": [
-     68.77,
-     141.03,
-     84.39,
-     31.27
+     102.11,
+     156.6,
+     70.32,
+     30.02
     ]
    }
   },
@@ -1023,17 +1037,17 @@
     "code_name": "goUp"
    },
    "power": {
-    "pdh_channel": 4,
+    "pdh_channel": 15,
     "pdh_uncertain": true
    },
    "notes": [
     "CAN ID 45 on can_s3 confirmed by a blink test with the robot on (user, 2026-10-08); code name goUp (Constants.java).",
-    "PDH channel 4 is a placeholder: a free port picked until the real channel is recorded (user, 2026-10-08)."
+    "PDH channel 15 is a placeholder: the flywheels took its old placeholder 4 from the logs (2026-10-25). Talon 45 drew no current in the 2026-10-23 logs."
    ],
    "derived": {
     "wire_order": "2 of 6 on can_s3",
     "pdh_tag": [
-     "4?",
+     "15?",
      "red"
     ],
     "cad_comment": "Motor Name: Scotty Rollers",
@@ -1044,16 +1058,16 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     215.48,
+     212.84,
      183.62,
      25.45,
      39.45
     ],
     "top_bbox": [
-     70.27,
-     181.41,
-     66.12,
-     36.48
+     103.61,
+     194.6,
+     57.08,
+     31.12
     ]
    }
   },
@@ -1071,16 +1085,16 @@
     "code_name": "shooterAzimuth"
    },
    "power": {
-    "pdh_channel": 5,
+    "pdh_channel": 17,
     "pdh_uncertain": true
    },
    "notes": [
-    "PDH channel 5 is a placeholder: a free port picked until the real channel is recorded (user, 2026-10-08)."
+    "PDH channel 17 is a placeholder: the flywheels took its old placeholder 5 from the logs (2026-10-25). Talon 44 drew too little current in the 2026-10-23 logs."
    ],
    "derived": {
     "wire_order": "3 of 6 on can_s3",
     "pdh_tag": [
-     "5?",
+     "17?",
      "red"
     ],
     "cad_comment": "Motor name: turret rotation",
@@ -1091,16 +1105,16 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     243.93,
+     241.29,
      183.62,
      25.5,
      39.45
     ],
     "top_bbox": [
-     205.84,
-     146.4,
-     157.2,
-     78.3
+     208.4,
+     105.6,
+     121.29,
+     124.89
     ]
    }
   },
@@ -1118,37 +1132,41 @@
     "code_name": "shooterLeader"
    },
    "power": {
-    "pdh_channel": 15,
+    "pdh_channel": 4,
+    "pdh_pair": [
+     4,
+     5
+    ],
     "pdh_uncertain": true
    },
    "notes": [
     "CAN ID 42 on can_s3 confirmed by a blink test with the robot on (user, 2026-10-08); code name shooterLeader (Constants.java).",
-    "PDH channel 15 is a placeholder: a free port picked until the real channel is recorded (user, 2026-10-08)."
+    "PDH channel 4 or 5 from the logs (analysis/pdh_map.py, 16 logs of 2026-10-23): Talons 42 and 43 draw on ch 4 and 5 (r 0.97-0.98, slope about 1). As leader and follower they draw the same current, so which Talon is on which channel is not known; the tag shows 4/5 and the drawing puts it on 4 (2026-10-25). Was the placeholder 15."
    ],
    "derived": {
     "wire_order": "4 of 6 on can_s3",
     "pdh_tag": [
-     "15?",
+     "4/5",
      "red"
     ],
     "cad_comment": "Motor Name: x44 side flywheel",
     "open": true,
     "open_reasons": [
-     "PDH channel not sure"
+     "PDH channel one of two"
     ],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     272.43,
+     269.79,
      183.62,
      28.5,
      39.45
     ],
     "top_bbox": [
-     65.77,
-     129.93,
-     92.88,
-     36.51
+     99.11,
+     146.4,
+     75.36,
+     43.31
     ]
    }
   },
@@ -1166,18 +1184,18 @@
     "code_name": "hood"
    },
    "power": {
-    "pdh_channel": 16,
+    "pdh_channel": 3,
     "pdh_uncertain": true
    },
    "notes": [
     "CAN ID 41 on can_s3 confirmed by a blink test with the robot on (user, 2026-10-08); code name hood (Constants.java).",
     "GitHub main af85e4eb (2026-10-09) creates the hood on k_canBus3 (CAN_S3), which matches the wiring.",
-    "PDH channel 16 is a placeholder: a free port picked until the real channel is recorded (user, 2026-10-08)."
+    "PDH channel 3 from the logs (analysis/pdh_map.py, 16 logs of 2026-10-23): Talon 41 fits ch 3 (r 0.75), but it drew only 2.7 A at most, so the fit is weak (2026-10-25). Was the placeholder 16."
    ],
    "derived": {
     "wire_order": "5 of 6 on can_s3",
     "pdh_tag": [
-     "16?",
+     "3?",
      "red"
     ],
     "cad_comment": "Motor name: Turret x44",
@@ -1188,16 +1206,16 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     303.93,
+     301.29,
      188.35,
      28.5,
      34.71
     ],
     "top_bbox": [
-     65.77,
-     138.21,
-     111.72,
-     16.44
+     99.11,
+     136.2,
+     89.93,
+     45.17
     ]
    }
   },
@@ -1215,38 +1233,42 @@
     "code_name": "shooterFollower"
    },
    "power": {
-    "pdh_channel": 17,
+    "pdh_channel": 5,
+    "pdh_pair": [
+     4,
+     5
+    ],
     "pdh_uncertain": true
    },
    "notes": [
     "CAN ID 43 on can_s3 confirmed by a blink test with the robot on (user, 2026-10-08); code name shooterFollower (Constants.java).",
     "GitHub main af85e4eb (2026-10-09) makes it follow shooterLeader (42), opposed.",
-    "PDH channel 17 is a placeholder: a free port picked until the real channel is recorded (user, 2026-10-08)."
+    "PDH channel 4 or 5 from the logs (analysis/pdh_map.py, 16 logs of 2026-10-23): Talons 42 and 43 draw on ch 4 and 5 (r 0.97-0.98, slope about 1). As leader and follower they draw the same current, so which Talon is on which channel is not known; the tag shows 4/5 and the drawing puts it on 5 (2026-10-25). Was the placeholder 17."
    ],
    "derived": {
     "wire_order": "6 of 6 on can_s3",
     "pdh_tag": [
-     "17?",
+     "4/5",
      "red"
     ],
     "cad_comment": "Motor name: other side flywheel",
     "open": true,
     "open_reasons": [
-     "PDH channel not sure"
+     "PDH channel one of two"
     ],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     335.43,
+     332.79,
      183.62,
      31.5,
      39.45
     ],
     "top_bbox": [
-     62.77,
-     197.04,
-     95.4,
-     36.63
+     96.11,
+     210.35,
+     78.36,
+     26.46
     ]
    }
   },
@@ -1265,34 +1287,41 @@
    },
    "power": {
     "pdh_channel": 7,
-    "pdh_uncertain": false
+    "pdh_pair": [
+     2,
+     7
+    ],
+    "pdh_uncertain": true
    },
    "notes": [
     "left side (CAD)",
-    "CAN ID 21 on can_s4 confirmed by a blink test with the robot on (user, 2026-10-08); code name intakeExtensionLeader (Constants.java)."
+    "CAN ID 21 on can_s4 confirmed by a blink test with the robot on (user, 2026-10-08); code name intakeExtensionLeader (Constants.java).",
+    "PDH channel 2 or 7 from the logs (analysis/pdh_map.py, 16 logs of 2026-10-23): Talons 21 and 22 draw on ch 2 and 7 (r 0.71-0.78). As leader and follower they draw the same current, so which Talon is on which channel is not known; the tag shows 2/7 and the drawing keeps the user's ch 7 (2026-10-08). Paired on 2026-10-25."
    ],
    "derived": {
     "wire_order": "1 of 3 on can_s4",
     "pdh_tag": [
-     "7",
+     "2/7",
      "red"
     ],
     "cad_comment": "Motor name: turret side rack",
-    "open": false,
-    "open_reasons": [],
+    "open": true,
+    "open_reasons": [
+     "PDH channel one of two"
+    ],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     295.93,
+     293.29,
      34.23,
      27.0,
      34.71
     ],
     "top_bbox": [
-     67.27,
-     95.4,
-     73.29,
-     18.51
+     100.61,
+     126.0,
+     63.0,
+     26.94
     ]
    }
   },
@@ -1311,34 +1340,41 @@
    },
    "power": {
     "pdh_channel": 2,
-    "pdh_uncertain": false
+    "pdh_pair": [
+     2,
+     7
+    ],
+    "pdh_uncertain": true
    },
    "notes": [
     "right side (CAD)",
-    "CAN ID 22 on can_s4 confirmed by a blink test with the robot on (user, 2026-10-08); code name intakeExtensionFollower (Constants.java)."
+    "CAN ID 22 on can_s4 confirmed by a blink test with the robot on (user, 2026-10-08); code name intakeExtensionFollower (Constants.java).",
+    "PDH channel 2 or 7 from the logs (analysis/pdh_map.py, 16 logs of 2026-10-23): Talons 21 and 22 draw on ch 2 and 7 (r 0.71-0.78). As leader and follower they draw the same current, so which Talon is on which channel is not known; the tag shows 2/7 and the drawing keeps the user's ch 2 (2026-10-08). Paired on 2026-10-25."
    ],
    "derived": {
     "wire_order": "2 of 3 on can_s4",
     "pdh_tag": [
-     "2",
+     "2/7",
      "red"
     ],
     "cad_comment": "Motor Name: non turret side rack",
-    "open": false,
-    "open_reasons": [],
+    "open": true,
+    "open_reasons": [
+     "PDH channel one of two"
+    ],
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     325.93,
+     323.29,
      34.23,
      25.5,
      34.71
     ],
     "top_bbox": [
-     290.91,
-     95.4,
-     72.12,
-     18.48
+     267.96,
+     115.8,
+     61.73,
+     37.12
     ]
    }
   },
@@ -1376,16 +1412,16 @@
     "fed_by_role": null,
     "attached_to_role": null,
     "bbox": [
-     354.43,
+     351.79,
      29.5,
      25.45,
      39.45
     ],
     "top_bbox": [
-     288.51,
-     44.46,
-     67.07,
-     21.96
+     266.28,
+     39.52,
+     55.97,
+     16.25
     ]
    }
   },
@@ -1420,10 +1456,10 @@
      23.41
     ],
     "top_bbox": [
-     293.47,
-     126.0,
-     62.07,
-     33.36
+     269.75,
+     146.4,
+     52.45,
+     38.35
     ]
    }
   },
@@ -1470,10 +1506,10 @@
      34.3
     ],
     "top_bbox": [
-     272.13,
-     100.32,
-     107.4,
-     22.5
+     254.81,
+     85.2,
+     91.38,
+     73.97
     ]
    }
   },
@@ -1510,10 +1546,10 @@
      34.59
     ],
     "top_bbox": [
-     277.77,
-     217.5,
-     97.26,
-     23.4
+     258.76,
+     224.55,
+     82.93,
+     16.35
     ]
    }
   },
@@ -1550,10 +1586,10 @@
      34.59
     ],
     "top_bbox": [
-     307.44,
-     216.87,
-     66.09,
-     16.63
+     279.53,
+     224.11,
+     60.66,
+     9.47
     ]
    }
   },
@@ -1590,10 +1626,10 @@
      23.41
     ],
     "top_bbox": [
-     226.81,
+     223.08,
      136.2,
-     128.73,
-     78.78
+     99.11,
+     87.49
     ]
    }
   },
@@ -1640,10 +1676,10 @@
      34.3
     ],
     "top_bbox": [
-     50.77,
-     184.4,
-     159.99,
-     31.3
+     84.11,
+     170.5,
+     128.64,
+     53.69
     ]
    }
   },
@@ -1681,10 +1717,10 @@
      34.59
     ],
     "top_bbox": [
-     56.77,
-     217.92,
-     89.04,
-     22.98
+     90.11,
+     224.84,
+     77.18,
+     16.06
     ]
    }
   },
@@ -1722,10 +1758,10 @@
      34.59
     ],
     "top_bbox": [
-     56.77,
-     134.55,
-     65.49,
-     15.0
+     90.11,
+     166.48,
+     60.69,
+     11.4
     ]
    }
   },
@@ -1766,10 +1802,10 @@
      42.56
     ],
     "top_bbox": [
-     268.71,
-     115.8,
-     104.82,
-     42.51
+     252.42,
+     126.0,
+     87.77,
+     58.02
     ]
    }
   },
