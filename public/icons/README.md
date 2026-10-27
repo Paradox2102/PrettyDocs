@@ -25,7 +25,7 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 - [Motor controllers](#motor-controllers) (10)
 - [Motors](#motors) (14)
 - [Radio and CAN](#radio-and-can) (8)
-- [Lights](#lights) (3)
+- [Lights](#lights) (7)
 - [Sensors and encoders](#sensors-and-encoders) (18)
 - [Vision and coprocessors](#vision-and-coprocessors) (12)
 - [Pneumatics](#pneumatics) (6)
@@ -110,6 +110,10 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 |---|---|---|---|---|
 | <img src="lights/allen-bradley/rsl.svg" alt="" height="64"> | [rsl.svg](lights/allen-bradley/rsl.svg) | Robot Signal Light (Allen-Bradley 855PB panel-mount LED beacon, 45 mm, amber, 12 V) | Allen-Bradley (Rockwell Automation) | current |
 | <img src="lights/ctre/candle.svg" alt="" height="64"> | [candle.svg](lights/ctre/candle.svg) | CANdle (CAN LED controller and 5 V regulator) | CTR Electronics | current |
+| <img src="lights/lumyn/connectorx.svg" alt="" height="64"> | [connectorx.svg](lights/lumyn/connectorx.svg) | ConnectorX | Lumyn Labs | current |
+| <img src="lights/lumyn/connectorx-animate.svg" alt="" height="64"> | [connectorx-animate.svg](lights/lumyn/connectorx-animate.svg) | ConnectorX Animate | Lumyn Labs | current |
+| <img src="lights/lumyn/lumyn-led-matrix.svg" alt="" height="64"> | [lumyn-led-matrix.svg](lights/lumyn/lumyn-led-matrix.svg) | LED Matrix (WS2812B, for ConnectorX) | Lumyn Labs | current |
+| <img src="lights/lumyn/lumyn-led-strip.svg" alt="" height="64"> | [lumyn-led-strip.svg](lights/lumyn/lumyn-led-strip.svg) | LED Strip (WS2812B, for ConnectorX) | Lumyn Labs | current |
 | <img src="lights/rev/blinkin.svg" alt="" height="64"> | [blinkin.svg](lights/rev/blinkin.svg) | Blinkin LED Driver | REV Robotics | current |
 
 ## Sensors and encoders

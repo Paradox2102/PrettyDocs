@@ -30,7 +30,7 @@
   {
    "id": "lights",
    "name": "Lights",
-   "count": 3
+   "count": 7
   },
   {
    "id": "sensors",
@@ -4007,6 +4007,297 @@
      "y": 51.4,
      "kind": "power",
      "label": "-Vout (gray, 18 AWG): ground return for all outputs"
+    }
+   ]
+  },
+  {
+   "slug": "connectorx",
+   "name": "ConnectorX",
+   "type": "lights",
+   "vendor": "lumyn",
+   "vendor_name": "Lumyn Labs",
+   "part_number": "SKU 00001 (variants: With Headers, Without Headers)",
+   "status": "current",
+   "path": "lights/lumyn/connectorx.svg",
+   "size_mm": [
+    92,
+    85.5
+   ],
+   "view_box": [
+    -46,
+    -39,
+    92,
+    96
+   ],
+   "anchors": [
+    {
+     "port": "usb",
+     "x": 41.5,
+     "y": 0.3,
+     "kind": "usb",
+     "label": "USB-C: Lumyn Studio, firmware and host link (data cable; logic power only)"
+    },
+    {
+     "port": "pwr_in",
+     "x": 23.65,
+     "y": -36.5,
+     "kind": "power",
+     "label": "+12V IN screw terminal: robot 12 V (red +, black GND) from a fused PDH or PDP channel; no fuse or reverse-polarity protection on the board"
+    },
+    {
+     "port": "led_chan1",
+     "x": -4.95,
+     "y": 38.98,
+     "kind": "signal",
+     "label": "CHAN 1: 3-pin JST VH 3.96 mm, GND / DATA / 5V, WS2812B strip (5 V, 320 LEDs max)"
+    },
+    {
+     "port": "uart",
+     "x": -26.75,
+     "y": 22.4,
+     "kind": "signal",
+     "label": "UART header: 3.3V, TX, RX, GND from pin 1 (3.3 V logic, UART module or host link)"
+    },
+    {
+     "port": "spi",
+     "x": 17.65,
+     "y": 22.8,
+     "kind": "signal",
+     "label": "SPI header: GND, CS0, SCK, CIPO, COPI, 3.3V from pin 1 (3.3 V logic, SPI modules)"
+    },
+    {
+     "port": "i2c_header",
+     "x": -18.68,
+     "y": -16.9,
+     "kind": "signal",
+     "label": "I2C header: SCL, SDA, 3.3V, GND from pin 1 (shares one I2C bus with the Qwiic ports and SCREEN)"
+    },
+    {
+     "port": "screen",
+     "x": -20.9,
+     "y": -7.5,
+     "kind": "signal",
+     "label": "SCREEN socket: GND, 3.3V, SCL, SDA from pin 1 (I2C display)"
+    },
+    {
+     "port": "dio0",
+     "x": -30.8,
+     "y": -21.9,
+     "kind": "signal",
+     "label": "DIO0 header: 3.3V, PIN, GND from pin 1 (digital input module)"
+    },
+    {
+     "port": "dio1",
+     "x": -26.55,
+     "y": -21.9,
+     "kind": "signal",
+     "label": "DIO1 header: 3.3V, PIN, GND from pin 1 (digital input module)"
+    },
+    {
+     "port": "aio0",
+     "x": -10.7,
+     "y": -21.9,
+     "kind": "signal",
+     "label": "AIO0 header: 3.3V, PIN, GND from pin 1 (analog input module)"
+    },
+    {
+     "port": "aio1",
+     "x": -6.63,
+     "y": -21.9,
+     "kind": "signal",
+     "label": "AIO1 header: 3.3V, PIN, GND from pin 1 (analog input module)"
+    },
+    {
+     "port": "qwiic_a",
+     "x": -18.68,
+     "y": -23.6,
+     "kind": "signal",
+     "label": "Qwiic port A: JST SH 4-pin, GND, 3.3V, SDA, SCL from pin 1 (I2C module)"
+    },
+    {
+     "port": "qwiic_b",
+     "x": -16.29,
+     "y": 23.6,
+     "kind": "signal",
+     "label": "Qwiic port B: JST SH 4-pin, GND, 3.3V, SDA, SCL from pin 1 (I2C module)"
+    }
+   ]
+  },
+  {
+   "slug": "connectorx-animate",
+   "name": "ConnectorX Animate",
+   "type": "lights",
+   "vendor": "lumyn",
+   "vendor_name": "Lumyn Labs",
+   "part_number": "SKU 00002",
+   "status": "current",
+   "path": "lights/lumyn/connectorx-animate.svg",
+   "size_mm": [
+    92,
+    92.5
+   ],
+   "view_box": [
+    -46,
+    -46,
+    92,
+    103
+   ],
+   "anchors": [
+    {
+     "port": "usb",
+     "x": 41.5,
+     "y": -0.4,
+     "kind": "usb",
+     "label": "USB-C: Lumyn Studio, firmware and host link (data cable; logic power only)"
+    },
+    {
+     "port": "pwr_in",
+     "x": 12.3,
+     "y": -36.5,
+     "kind": "power",
+     "label": "+12V IN screw terminal: robot 12 V (red +, black GND) from a fused PDH or PDP channel; no fuse or reverse-polarity protection on the board"
+    },
+    {
+     "port": "led_chan2",
+     "x": -26.58,
+     "y": 38.86,
+     "kind": "signal",
+     "label": "CHAN 2: 3-pin JST VH 3.96 mm, GND / DATA / 5V, WS2812B strip (5 V, 320 LEDs max)"
+    },
+    {
+     "port": "led_chan1",
+     "x": -11.16,
+     "y": 38.92,
+     "kind": "signal",
+     "label": "CHAN 1: 3-pin JST VH 3.96 mm, GND / DATA / 5V, WS2812B strip (5 V, 320 LEDs max)"
+    },
+    {
+     "port": "led_chan3",
+     "x": -26.35,
+     "y": -39.06,
+     "kind": "signal",
+     "label": "CHAN 3: 3-pin JST VH 3.96 mm, GND / DATA / 5V, WS2812B strip (5 V, 320 LEDs max)"
+    },
+    {
+     "port": "led_chan4",
+     "x": -10.3,
+     "y": -38.96,
+     "kind": "signal",
+     "label": "CHAN 4: 3-pin JST VH 3.96 mm, GND / DATA / 5V, WS2812B strip (5 V, 320 LEDs max)"
+    },
+    {
+     "port": "screen",
+     "x": -23.65,
+     "y": -7.3,
+     "kind": "signal",
+     "label": "SCREEN socket: GND, 3.3V, SCL, SDA from pin 1 (I2C modules, up to two)"
+    }
+   ]
+  },
+  {
+   "slug": "lumyn-led-matrix",
+   "name": "LED Matrix (WS2812B, for ConnectorX)",
+   "type": "lights",
+   "vendor": "lumyn",
+   "vendor_name": "Lumyn Labs",
+   "part_number": "02001",
+   "status": "current",
+   "path": "lights/lumyn/lumyn-led-matrix.svg",
+   "size_mm": [
+    264,
+    127.5
+   ],
+   "view_box": [
+    -4,
+    -50,
+    264,
+    138
+   ],
+   "anchors": [
+    {
+     "port": "in_v5",
+     "x": 14.0,
+     "y": -31.8,
+     "kind": "power",
+     "label": "Input lead, +5 V (red wire)"
+    },
+    {
+     "port": "in_data",
+     "x": 16.5,
+     "y": -31.8,
+     "kind": "signal",
+     "label": "Input lead, DATA (green wire)"
+    },
+    {
+     "port": "in_gnd",
+     "x": 19.0,
+     "y": -31.8,
+     "kind": "power",
+     "label": "Input lead, GND (white wire)"
+    },
+    {
+     "port": "out_v5",
+     "x": 219.0,
+     "y": -30.0,
+     "kind": "power",
+     "label": "Output lead, +5 V (red wire)"
+    },
+    {
+     "port": "out_data",
+     "x": 221.5,
+     "y": -30.0,
+     "kind": "signal",
+     "label": "Output lead, DATA (green wire)"
+    },
+    {
+     "port": "out_gnd",
+     "x": 224.0,
+     "y": -30.0,
+     "kind": "power",
+     "label": "Output lead, GND (white wire)"
+    }
+   ]
+  },
+  {
+   "slug": "lumyn-led-strip",
+   "name": "LED Strip (WS2812B, for ConnectorX)",
+   "type": "lights",
+   "vendor": "lumyn",
+   "vendor_name": "Lumyn Labs",
+   "part_number": "03042",
+   "status": "current",
+   "path": "lights/lumyn/lumyn-led-strip.svg",
+   "size_mm": [
+    160,
+    32.0
+   ],
+   "view_box": [
+    0,
+    -9,
+    160,
+    44
+   ],
+   "anchors": [
+    {
+     "port": "v5",
+     "x": 18.4,
+     "y": 2.5,
+     "kind": "power",
+     "label": "+5 V (red wire): 5 V from the ConnectorX regulator, shared by every LED on the channel"
+    },
+    {
+     "port": "data",
+     "x": 18.4,
+     "y": 5.0,
+     "kind": "signal",
+     "label": "DATA (green wire): WS2812B data in, 3.3 V logic from the ConnectorX channel"
+    },
+    {
+     "port": "gnd",
+     "x": 18.4,
+     "y": 7.5,
+     "kind": "power",
+     "label": "GND (white wire): ground return to the ConnectorX"
     }
    ]
   },
