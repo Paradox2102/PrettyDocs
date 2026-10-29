@@ -21,7 +21,7 @@ The product names belong to their makers.
 The wiring tools write this folder (`export_prettydocs.py`): do not edit these files by hand.
 
 - [Robot controllers](#robot-controllers) (2)
-- [Power](#power) (14)
+- [Power](#power) (15)
 - [Motor controllers](#motor-controllers) (10)
 - [Motors](#motors) (14)
 - [Radio and CAN](#radio-and-can) (9)
@@ -46,6 +46,7 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 | <img src="power/ctre/ctre-vrm.svg" alt="" height="64"> | [ctre-vrm.svg](power/ctre/ctre-vrm.svg) | Voltage Regulator Module (VRM) | CTR Electronics | legacy (not sold) |
 | <img src="power/eaton/main-breaker-120a.svg" alt="" height="64"> | [main-breaker-120a.svg](power/eaton/main-breaker-120a.svg) | 120 A Main Breaker | Eaton Bussmann | current |
 | <img src="power/gobilda/gobilda-servo-power-injector.svg" alt="" height="64"> | [gobilda-servo-power-injector.svg](power/gobilda/gobilda-servo-power-injector.svg) | Servo Power Injector | goBILDA | current |
+| <img src="power/larkspur/marigold-5.svg" alt="" height="64"> | [marigold-5.svg](power/larkspur/marigold-5.svg) | Marigold-5 Buck Converter | Larkspur Industries | current |
 | <img src="power/luma/poe-powertap.svg" alt="" height="64"> | [poe-powertap.svg](power/luma/poe-powertap.svg) | Luma PoE PowerTap | Luma Vision | current |
 | <img src="power/protooma/protooma-5v-10a.svg" alt="" height="64"> | [protooma-5v-10a.svg](power/protooma/protooma-5v-10a.svg) | LED Brick (5V Step-Down) | Protooma | current |
 | <img src="power/redux/redux-zinc-v.svg" alt="" height="64"> | [redux-zinc-v.svg](power/redux/redux-zinc-v.svg) | Zinc-V Buck Converter | Redux Robotics | current |
