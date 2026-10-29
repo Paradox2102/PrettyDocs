@@ -25,7 +25,7 @@
   {
    "id": "communication",
    "name": "Radio and CAN",
-   "count": 8
+   "count": 9
   },
   {
    "id": "lights",
@@ -3635,6 +3635,36 @@
      "y": -11.6,
      "kind": "power",
      "label": "+: WAGO 2601 lever terminal, 3.3-22.5 V (26-16 AWG)"
+    }
+   ]
+  },
+  {
+   "slug": "can-terminator",
+   "name": "CAN Terminator (120 Ω)",
+   "description": "Plain 120 ohm axial resistor that goes across CAN H and CAN L at the far end of a CAN bus; the AndyMark am-4111, the CTRE 25-pack or any 120 ohm resistor from a parts store works",
+   "type": "communication",
+   "vendor": "generic",
+   "vendor_name": "Several makers",
+   "part_number": "Any 120 ohm axial resistor, 1/4 W or 1/2 W, 5 % or better. AndyMark am-4111 (120 ohm, 0.5 W, 5 %); CTRE 120 Ohm Axial Resistors 25-pack (0.25 W carbon film, 5 %); typical 1/4 W part: Yageo CFR-25JB-52-120R.",
+   "status": "current",
+   "path": "communication/generic/can-terminator.svg",
+   "size_mm": [
+    60,
+    31.5
+   ],
+   "view_box": [
+    -30,
+    -6,
+    60,
+    41.7
+   ],
+   "anchors": [
+    {
+     "port": "can",
+     "x": 0,
+     "y": 19,
+     "kind": "can",
+     "label": "CAN H and CAN L wire pair to the two leads of the 120 Ω resistor (no polarity, either way round)"
     }
    ]
   },

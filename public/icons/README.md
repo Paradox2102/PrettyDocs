@@ -24,7 +24,7 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 - [Power](#power) (14)
 - [Motor controllers](#motor-controllers) (10)
 - [Motors](#motors) (14)
-- [Radio and CAN](#radio-and-can) (8)
+- [Radio and CAN](#radio-and-can) (9)
 - [Lights](#lights) (7)
 - [Sensors and encoders](#sensors-and-encoders) (18)
 - [Vision and coprocessors](#vision-and-coprocessors) (12)
@@ -97,6 +97,7 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 |---|---|---|---|---|
 | <img src="communication/ctre/canivore.svg" alt="" height="64"> | [canivore.svg](communication/ctre/canivore.svg) | CANivore (USB to CAN FD) | CTR Electronics | current |
 | <img src="communication/luma/lumaswitch-2.svg" alt="" height="64"> | [lumaswitch-2.svg](communication/luma/lumaswitch-2.svg) | LumaSwitch 2 | Luma Vision | current |
+| <img src="communication/generic/can-terminator.svg" alt="" height="64"> | [can-terminator.svg](communication/generic/can-terminator.svg) | CAN Terminator (120 Ω) | Several makers | current |
 | <img src="communication/swyft/swyft-canender-molex.svg" alt="" height="64"> | [swyft-canender-molex.svg](communication/swyft/swyft-canender-molex.svg) | SWYFT CANender (Molex SL) | SWYFT Robotics | current |
 | <img src="communication/swyft/swyft-canender-wago.svg" alt="" height="64"> | [swyft-canender-wago.svg](communication/swyft/swyft-canender-wago.svg) | SWYFT CANender (Wago) | SWYFT Robotics | current |
 | <img src="communication/swyft/swyft-direct-v2.svg" alt="" height="64"> | [swyft-direct-v2.svg](communication/swyft/swyft-direct-v2.svg) | SWYFT CANnect Direct V2 | SWYFT Robotics | current |
