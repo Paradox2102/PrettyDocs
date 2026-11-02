@@ -21,7 +21,7 @@ The product names belong to their makers.
 The wiring tools write this folder (`export_prettydocs.py`): do not edit these files by hand.
 
 - [Robot controllers](#robot-controllers) (2)
-- [Power](#power) (15)
+- [Power](#power) (16)
 - [Motor controllers](#motor-controllers) (10)
 - [Motors](#motors) (14)
 - [Radio and CAN](#radio-and-can) (9)
@@ -57,6 +57,7 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 | <img src="power/generic/frc-battery.svg" alt="" height="64"> | [frc-battery.svg](power/generic/frc-battery.svg) | Battery (6AWG - SB50) | Several makers | current |
 | <img src="power/studica/studica-servo-power-block.svg" alt="" height="64"> | [studica-servo-power-block.svg](power/studica/studica-servo-power-block.svg) | Servo Power Block | Studica | current |
 | <img src="power/thrifty-bot/thrifty-powerhub.svg" alt="" height="64"> | [thrifty-powerhub.svg](power/thrifty-bot/thrifty-powerhub.svg) | PowerHub | The Thrifty Bot | current |
+| <img src="power/thrifty-bot/thriftiest-voltage-regulator.svg" alt="" height="64"> | [thriftiest-voltage-regulator.svg](power/thrifty-bot/thriftiest-voltage-regulator.svg) | Thriftiest Voltage Regulator | The Thrifty Bot | current |
 
 ## Motor controllers
 
