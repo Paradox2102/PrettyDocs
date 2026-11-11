@@ -21,7 +21,7 @@ The product names belong to their makers.
 The wiring tools write this folder (`export_prettydocs.py`): do not edit these files by hand.
 
 - [Robot controllers](#robot-controllers) (2)
-- [Power](#power) (16)
+- [Power](#power) (17)
 - [Motor controllers](#motor-controllers) (10)
 - [Motors](#motors) (14)
 - [Radio and CAN](#radio-and-can) (9)
@@ -42,6 +42,7 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 
 | Icon | File | Device | Vendor | Status |
 |---|---|---|---|---|
+| <img src="power/ctre/ctre-pdp-2.svg" alt="" height="64"> | [ctre-pdp-2.svg](power/ctre/ctre-pdp-2.svg) | Power Distribution Panel (PDP 2.0) | CTR Electronics | current |
 | <img src="power/ctre/ctre-pdp.svg" alt="" height="64"> | [ctre-pdp.svg](power/ctre/ctre-pdp.svg) | Power Distribution Panel (PDP) | CTR Electronics | legacy (not sold) |
 | <img src="power/ctre/ctre-vrm.svg" alt="" height="64"> | [ctre-vrm.svg](power/ctre/ctre-vrm.svg) | Voltage Regulator Module (VRM) | CTR Electronics | legacy (not sold) |
 | <img src="power/eaton/main-breaker-120a.svg" alt="" height="64"> | [main-breaker-120a.svg](power/eaton/main-breaker-120a.svg) | 120 A Main Breaker | Eaton Bussmann | current |
