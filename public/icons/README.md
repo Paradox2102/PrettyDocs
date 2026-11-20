@@ -26,7 +26,7 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 - [Motors](#motors) (14)
 - [Radio and CAN](#radio-and-can) (9)
 - [Lights](#lights) (7)
-- [Sensors and encoders](#sensors-and-encoders) (18)
+- [Sensors and encoders](#sensors-and-encoders) (19)
 - [Vision and coprocessors](#vision-and-coprocessors) (12)
 - [Pneumatics](#pneumatics) (6)
 - [Driver station](#driver-station) (1)
@@ -129,6 +129,7 @@ The wiring tools write this folder (`export_prettydocs.py`): do not edit these f
 | <img src="sensors/ctre/candi.svg" alt="" height="64"> | [candi.svg](sensors/ctre/candi.svg) | CANdi (CAN digital input) | CTR Electronics | current |
 | <img src="sensors/ctre/canrange.svg" alt="" height="64"> | [canrange.svg](sensors/ctre/canrange.svg) | CANrange (CAN time-of-flight distance sensor) | CTR Electronics | current |
 | <img src="sensors/ctre/pigeon2.svg" alt="" height="64"> | [pigeon2.svg](sensors/ctre/pigeon2.svg) | Pigeon 2.0 IMU | CTR Electronics | current |
+| <img src="sensors/ctre/pigeon3.svg" alt="" height="64"> | [pigeon3.svg](sensors/ctre/pigeon3.svg) | Pigeon 3.0 IMU | CTR Electronics | current |
 | <img src="sensors/redux/canandgyro.svg" alt="" height="64"> | [canandgyro.svg](sensors/redux/canandgyro.svg) | Boron Canandgyro (6-axis IMU) | Redux Robotics | current |
 | <img src="sensors/redux/canandcolor.svg" alt="" height="64"> | [canandcolor.svg](sensors/redux/canandcolor.svg) | Canandcolor Color Sensor | Redux Robotics | current |
 | <img src="sensors/redux/canandmag.svg" alt="" height="64"> | [canandmag.svg](sensors/redux/canandmag.svg) | Helium Canandmag (magnetic absolute encoder) | Redux Robotics | current |
